@@ -1,0 +1,623 @@
+{
+  "id": "open-glass-ui",
+  "name": "OpenGlass UI",
+  "aliases": [
+    "OpenGlass",
+    "open-glass",
+    "moekoelueker/open-glass-ui",
+    "liquid-glass",
+    "ogui"
+  ],
+  "summary": "Open-source Liquid Glass React system \u2014 40 accessible components, CSS-first.",
+  "homeUrl": "https://moelueker.com/liquid-glass",
+  "docsUrl": "https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md",
+  "repoUrl": "https://github.com/moekoelueker/open-glass-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install open-glass-ui react react-dom",
+    "packages": [
+      "open-glass-ui"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://moelueker.com/liquid-glass#components",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 40 native-DOM recipes.",
+    "Live demos share one catalog page (/liquid-glass#components) rather than per-route docs \u2014 same gallery-anchor pattern as glasscn.",
+    "GitHub docs/*.md are primary written API docs; marketing site is the interactive demo.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:05:00-04:00",
+  "components": [
+    {
+      "id": "open-glass-ui-button",
+      "libraryId": "open-glass-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "ogui button",
+        "open glass button"
+      ],
+      "summary": "Primary glass action button.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Button",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Button, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <Button variant=\"primary\">Create project</Button>\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Button` (slug `button`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Button, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-switch",
+      "libraryId": "open-glass-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "ogui switch"
+      ],
+      "summary": "Glass on/off switch with label.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Switch",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Switch, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <Switch label=\"Quiet notifications\" defaultChecked />\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Switch` (slug `switch`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Switch, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-dock",
+      "libraryId": "open-glass-ui",
+      "slug": "dock",
+      "name": "Dock",
+      "aliases": [
+        "ogui dock"
+      ],
+      "summary": "Glass magnification-style dock.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Dock",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Dock, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <Dock />\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Dock` (slug `dock`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Dock, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-tabs",
+      "libraryId": "open-glass-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "ogui tabs"
+      ],
+      "summary": "Glass tabbed panels.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Tabs",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Tabs, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <Tabs label=\"Account\" items={[{value:\"profile\",label:\"Profile\",content:<p>\u2026</p>}]} />\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Tabs` (slug `tabs`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Tabs, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-card",
+      "libraryId": "open-glass-ui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "ogui card"
+      ],
+      "summary": "Glass content card surface.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Card",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Card, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <Card>\u2026</Card>\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Card` (slug `card`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Card, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-dialog",
+      "libraryId": "open-glass-ui",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "ogui dialog",
+        "open glass modal"
+      ],
+      "summary": "Accessible glass dialog overlay.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Dialog",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Dialog, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <Dialog>\u2026</Dialog>\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Dialog` (slug `dialog`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Dialog, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-drawer",
+      "libraryId": "open-glass-ui",
+      "slug": "drawer",
+      "name": "Drawer",
+      "aliases": [
+        "ogui drawer"
+      ],
+      "summary": "Glass slide-over drawer.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal",
+        "menu"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Drawer",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Drawer, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <Drawer>\u2026</Drawer>\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Drawer` (slug `drawer`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Drawer, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-toast",
+      "libraryId": "open-glass-ui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "ogui toast"
+      ],
+      "summary": "Glass toast queue via GlassSystemProvider.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Toast",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Toast, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  // GlassSystemProvider includes global toast queue\nimport { GlassSystemProvider, Button } from \"open-glass-ui\"\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Toast` (slug `toast`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Toast, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-tooltip",
+      "libraryId": "open-glass-ui",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "ogui tooltip"
+      ],
+      "summary": "Glass tooltip for hover/focus hints.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "glass",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Tooltip",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Tooltip, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <Tooltip>\u2026</Tooltip>\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Tooltip` (slug `tooltip`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Tooltip, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-slider",
+      "libraryId": "open-glass-ui",
+      "slug": "slider",
+      "name": "Slider",
+      "aliases": [
+        "ogui slider"
+      ],
+      "summary": "Glass range slider control.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Slider",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Slider, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <Slider />\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Slider` (slug `slider`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Slider, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-accordion",
+      "libraryId": "open-glass-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "ogui accordion"
+      ],
+      "summary": "Glass disclosure accordion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu",
+        "section"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/Accordion",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { Accordion, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <Accordion>\u2026</Accordion>\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `Accordion` (slug `accordion`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { Accordion, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    },
+    {
+      "id": "open-glass-ui-text-field",
+      "libraryId": "open-glass-ui",
+      "slug": "text-field",
+      "name": "TextField",
+      "aliases": [
+        "ogui textfield",
+        "ogui input"
+      ],
+      "summary": "Glass labeled text field.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "open-glass-ui/TextField",
+        "iframeSrc": "https://moelueker.com/liquid-glass#components",
+        "aspectRatio": "16/9",
+        "peerNotes": "Live specimens share the catalog section on /liquid-glass#components (same pattern as glasscn single-page gallery). Import styles.css once; wrap with GlassSystemProvider."
+      },
+      "copyCode": "npm install open-glass-ui react react-dom\nimport \"open-glass-ui/styles.css\";\nimport { TextField, GlassSystemProvider } from \"open-glass-ui\"\n\n<GlassSystemProvider renderer=\"auto\" theme={{ appearance: \"system\" }}>\n  <TextField label=\"Email\" />\n</GlassSystemProvider>",
+      "copyPrompt": {
+        "text": "Use OpenGlass UI free MIT React component `TextField` (slug `text-field`) from the live catalog https://moelueker.com/liquid-glass#components. Install with `npm install open-glass-ui react react-dom`, then `import \"open-glass-ui/styles.css\"` and `import { TextField, GlassSystemProvider } from \"open-glass-ui\"`. Component docs: https://github.com/moekoelueker/open-glass-ui/blob/main/docs/COMPONENTS.md. npm: https://www.npmjs.com/package/open-glass-ui (v0.3.0). Home/demo: https://moelueker.com/liquid-glass. Repo: https://github.com/moekoelueker/open-glass-ui. License: MIT (https://raw.githubusercontent.com/moekoelueker/open-glass-ui/main/LICENSE; Copyright (c) 2026 Moe Luker). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install open-glass-ui react react-dom",
+        "packages": [
+          "open-glass-ui"
+        ]
+      }
+    }
+  ]
+}

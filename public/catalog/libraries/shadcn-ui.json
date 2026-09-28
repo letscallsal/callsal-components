@@ -1,0 +1,547 @@
+{
+  "id": "shadcn-ui",
+  "name": "shadcn/ui",
+  "aliases": [
+    "shadcn",
+    "shadcn-ui",
+    "ui.shadcn"
+  ],
+  "summary": "Open-source React/Next UI primitives (Tailwind) installed via the shadcn registry CLI.",
+  "homeUrl": "https://ui.shadcn.com",
+  "docsUrl": "https://ui.shadcn.com/docs",
+  "repoUrl": "https://github.com/shadcn-ui/ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add <component>",
+    "registryUrl": "https://ui.shadcn.com/r/styles/new-york/registry.json"
+  },
+  "adapter": {
+    "kind": "dynamic-import",
+    "module": "shadcn-ui",
+    "iframeSrcTemplate": "https://ui.shadcn.com/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "class-variance-authority",
+      "clsx",
+      "tailwind-merge",
+      "lucide-react"
+    ],
+    "budgetKb": 250
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 11 free registry:ui primitives of ~54 new-york registry:ui items (~363 total registry items including examples/blocks); not a full inventory.",
+    "Library adapter prefers dynamic-import per ARCHITECTURE §5 but component demos use iframe→docs until Build smoke-certifies dynamic-import mounts.",
+    "Official docs often show `pnpm dlx shadcn@latest add …`; catalog uses portable `npx shadcn@latest` equivalent from the same CLI docs.",
+    "Docs URLs `/docs/components/{slug}` currently 307-redirect to `/docs/components/base/{slug}` (Base UI style path); iframeSrc keeps the short canonical path.",
+    "`form` exists in registry (`/r/styles/new-york/form.json`) but `/docs/components/form` 308-redirects to `/docs/forms` hub — excluded from this verified set to keep demo==component docs.",
+    "`sonner` remains a separate registry:ui item; live `/docs/components/sonner` and `/toast` both resolve to the Toast docs using `add toast` — catalogued under slug `toast` only.",
+    "Per-component registry JSON is style-scoped (`/r/styles/new-york/{slug}.json`); projects may use new-york-v4 or other styles after init."
+  ],
+  "featured": true,
+  "updatedAt": "2026-09-28T14:23:36-04:00",
+  "components": [
+    {
+      "id": "shadcn-ui-button",
+      "libraryId": "shadcn-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "btn",
+        "cta button",
+        "shadcn button"
+      ],
+      "summary": "Displays a button or a component that looks like a button.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "button",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/button",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add button\n\nimport { Button } from \"@/components/ui/button\"\n\n<Button variant=\"outline\">Button</Button>",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Button` (slug `button`) from https://ui.shadcn.com/docs/components/button. Install with `npx shadcn@latest add button` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/button.json. Import from `@/components/ui/button` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add button",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/button.json",
+        "registryItem": "button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "shadcn-ui-card",
+      "libraryId": "shadcn-ui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "content card",
+        "panel card",
+        "shadcn card"
+      ],
+      "summary": "Displays a card with header, content, and footer.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "card",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/card",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add card\n\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle,\n} from \"@/components/ui/card\"\n\n<Card>\n  <CardHeader>\n    <CardTitle>Card Title</CardTitle>\n    <CardDescription>Card Description</CardDescription>\n  </CardHeader>\n  <CardContent>\n    <p>Card Content</p>\n  </CardContent>\n  <CardFooter>\n    <p>Card Footer</p>\n  </CardFooter>\n</Card>",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Card` (slug `card`) from https://ui.shadcn.com/docs/components/card. Install with `npx shadcn@latest add card` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/card.json. Import from `@/components/ui/card` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add card",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/card.json",
+        "registryItem": "card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "shadcn-ui-dialog",
+      "libraryId": "shadcn-ui",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "modal",
+        "dialog modal",
+        "shadcn dialog"
+      ],
+      "summary": "A window overlaid on the primary window, rendering underlying content inert.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "dialog",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/dialog",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add dialog\n\nimport {\n  Dialog,\n  DialogContent,\n  DialogDescription,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger,\n} from \"@/components/ui/dialog\"\n\n<Dialog>\n  <DialogTrigger>Open</DialogTrigger>\n  <DialogContent>\n    <DialogHeader>\n      <DialogTitle>Are you absolutely sure?</DialogTitle>\n      <DialogDescription>\n        This action cannot be undone. This will permanently delete your account\n        and remove your data from our servers.\n      </DialogDescription>\n    </DialogHeader>\n  </DialogContent>\n</Dialog>",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Dialog` (slug `dialog`) from https://ui.shadcn.com/docs/components/dialog. Install with `npx shadcn@latest add dialog` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/dialog.json. Import from `@/components/ui/dialog` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add dialog",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/dialog.json",
+        "registryItem": "dialog"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "shadcn-ui-input",
+      "libraryId": "shadcn-ui",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "text input",
+        "text field",
+        "shadcn input"
+      ],
+      "summary": "A text input component for forms and user data entry.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "input",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/input",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add input\n\nimport { Input } from \"@/components/ui/input\"\n\n<Input type=\"email\" placeholder=\"Email\" />",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Input` (slug `input`) from https://ui.shadcn.com/docs/components/input. Install with `npx shadcn@latest add input` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/input.json. Import from `@/components/ui/input` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add input",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/input.json",
+        "registryItem": "input"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "shadcn-ui-dropdown-menu",
+      "libraryId": "shadcn-ui",
+      "slug": "dropdown-menu",
+      "name": "Dropdown Menu",
+      "aliases": [
+        "dropdown",
+        "context actions menu",
+        "shadcn dropdown"
+      ],
+      "summary": "Displays a menu of actions or functions, triggered by a button.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "dropdown-menu",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/dropdown-menu",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add dropdown-menu\n\nimport { Button } from \"@/components/ui/button\"\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuGroup,\n  DropdownMenuItem,\n  DropdownMenuLabel,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger,\n} from \"@/components/ui/dropdown-menu\"\n\n<DropdownMenu>\n  <DropdownMenuTrigger render={<Button variant=\"outline\" />}>\n    Open\n  </DropdownMenuTrigger>\n  <DropdownMenuContent>\n    <DropdownMenuGroup>\n      <DropdownMenuLabel>My Account</DropdownMenuLabel>\n      <DropdownMenuItem>Profile</DropdownMenuItem>\n      <DropdownMenuItem>Billing</DropdownMenuItem>\n    </DropdownMenuGroup>\n    <DropdownMenuSeparator />\n    <DropdownMenuGroup>\n      <DropdownMenuItem>Team</DropdownMenuItem>\n      <DropdownMenuItem>Subscription</DropdownMenuItem>\n    </DropdownMenuGroup>\n  </DropdownMenuContent>\n</DropdownMenu>",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Dropdown Menu` (slug `dropdown-menu`) from https://ui.shadcn.com/docs/components/dropdown-menu. Install with `npx shadcn@latest add dropdown-menu` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/dropdown-menu.json. Import from `@/components/ui/dropdown-menu` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only. Docs usage may use Base UI-style `DropdownMenuTrigger render={<Button … />}`; older Radix examples use `asChild` — follow the installed style for your project.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add dropdown-menu",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/dropdown-menu.json",
+        "registryItem": "dropdown-menu"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "shadcn-ui-select",
+      "libraryId": "shadcn-ui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select menu",
+        "dropdown select",
+        "shadcn select"
+      ],
+      "summary": "Displays a list of options for the user to pick from—triggered by a button.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "select",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/select",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add select\n\nimport {\n  Select,\n  SelectContent,\n  SelectGroup,\n  SelectItem,\n  SelectTrigger,\n  SelectValue,\n} from \"@/components/ui/select\"\n\nconst items = [\n  { label: \"Light\", value: \"light\" },\n  { label: \"Dark\", value: \"dark\" },\n  { label: \"System\", value: \"system\" },\n]\n\n<Select items={items}>\n  <SelectTrigger className=\"w-[180px]\">\n    <SelectValue placeholder=\"Theme\" />\n  </SelectTrigger>\n  <SelectContent>\n    <SelectGroup>\n      {items.map((item) => (\n        <SelectItem key={item.value} value={item.value}>\n          {item.label}\n        </SelectItem>\n      ))}\n    </SelectGroup>\n  </SelectContent>\n</Select>",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Select` (slug `select`) from https://ui.shadcn.com/docs/components/select. Install with `npx shadcn@latest add select` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/select.json. Import from `@/components/ui/select` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only. Current docs pass an `items` array to `Select` and map `SelectItem`s; match the installed registry style.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add select",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/select.json",
+        "registryItem": "select"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "shadcn-ui-checkbox",
+      "libraryId": "shadcn-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "tick box",
+        "check box",
+        "shadcn checkbox"
+      ],
+      "summary": "A control that toggles between checked and not checked.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "checkbox",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/checkbox",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add checkbox\n\nimport { Checkbox } from \"@/components/ui/checkbox\"\n\n<Checkbox />",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Checkbox` (slug `checkbox`) from https://ui.shadcn.com/docs/components/checkbox. Install with `npx shadcn@latest add checkbox` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/checkbox.json. Import from `@/components/ui/checkbox` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add checkbox",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/checkbox.json",
+        "registryItem": "checkbox"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "shadcn-ui-switch",
+      "libraryId": "shadcn-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "toggle switch",
+        "on off switch",
+        "shadcn switch"
+      ],
+      "summary": "A control that toggles between checked and not checked.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "switch",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/switch",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add switch\n\nimport { Switch } from \"@/components/ui/switch\"\n\n<Switch />",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Switch` (slug `switch`) from https://ui.shadcn.com/docs/components/switch. Install with `npx shadcn@latest add switch` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/switch.json. Import from `@/components/ui/switch` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add switch",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/switch.json",
+        "registryItem": "switch"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "shadcn-ui-toast",
+      "libraryId": "shadcn-ui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "toaster",
+        "notification toast",
+        "sonner",
+        "shadcn toast"
+      ],
+      "summary": "A succinct message that is displayed temporarily.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "toast",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "Mount `<Toaster />` from `@/components/ui/toast` in the root layout. Registry also still lists `sonner` (`npx shadcn@latest add sonner`); live docs for both slugs currently resolve to the Toast page using `add toast`."
+      },
+      "copyCode": "npx shadcn@latest add toast\n\n// app/layout.tsx\nimport { Toaster } from \"@/components/ui/toast\"\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\">\n      <body>\n        <main>{children}</main>\n        <Toaster />\n      </body>\n    </html>\n  )\n}\n\n// usage\nimport { toast } from \"@/components/ui/toast\"\n\ntoast.add({\n  title: \"Event created\",\n  description: \"Sunday, December 3 at 9:00 AM\",\n})",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Toast` (slug `toast`) from https://ui.shadcn.com/docs/components/toast. Install with `npx shadcn@latest add toast` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/toast.json. Import from `@/components/ui/toast` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only. Add `<Toaster />` in the root layout. Live docs currently use `toast.add({ title, description })` from `@/components/ui/toast`. Older Sonner-based installs (`add sonner`) remain in the registry as a separate item.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add toast",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/toast.json",
+        "registryItem": "toast"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "shadcn-ui-tabs",
+      "libraryId": "shadcn-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tab panel",
+        "tabbed content",
+        "shadcn tabs"
+      ],
+      "summary": "A set of layered tab panels displayed one at a time.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "layout",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tabs",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/tabs",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add tabs\n\nimport { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\"\n\n<Tabs defaultValue=\"account\" className=\"w-[400px]\">\n  <TabsList>\n    <TabsTrigger value=\"account\">Account</TabsTrigger>\n    <TabsTrigger value=\"password\">Password</TabsTrigger>\n  </TabsList>\n  <TabsContent value=\"account\">Make changes to your account here.</TabsContent>\n  <TabsContent value=\"password\">Change your password here.</TabsContent>\n</Tabs>",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Tabs` (slug `tabs`) from https://ui.shadcn.com/docs/components/tabs. Install with `npx shadcn@latest add tabs` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/tabs.json. Import from `@/components/ui/tabs` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add tabs",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/tabs.json",
+        "registryItem": "tabs"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "shadcn-ui-sheet",
+      "libraryId": "shadcn-ui",
+      "slug": "sheet",
+      "name": "Sheet",
+      "aliases": [
+        "side sheet",
+        "drawer sheet",
+        "slide-over",
+        "shadcn sheet"
+      ],
+      "summary": "Extends Dialog to show complementary content from a screen edge.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "sheet",
+        "iframeSrc": "https://ui.shadcn.com/docs/components/sheet",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add sheet\n\nimport {\n  Sheet,\n  SheetContent,\n  SheetDescription,\n  SheetHeader,\n  SheetTitle,\n  SheetTrigger,\n} from \"@/components/ui/sheet\"\n\n<Sheet>\n  <SheetTrigger>Open</SheetTrigger>\n  <SheetContent>\n    <SheetHeader>\n      <SheetTitle>Are you absolutely sure?</SheetTitle>\n      <SheetDescription>This action cannot be undone.</SheetDescription>\n    </SheetHeader>\n  </SheetContent>\n</Sheet>",
+      "copyPrompt": {
+        "text": "Use shadcn/ui free component `Sheet` (slug `sheet`) from https://ui.shadcn.com/docs/components/sheet. Install with `npx shadcn@latest add sheet` after `npx shadcn@latest init` in a React/Next + Tailwind project. Registry item: https://ui.shadcn.com/r/styles/new-york/sheet.json. Import from `@/components/ui/sheet` after CLI add (path may follow project aliases). This component is on the free open-source shadcn/ui registry (MIT; https://github.com/shadcn-ui/ui/blob/main/LICENSE.md). Requires React + Tailwind; many items also pull Radix UI (or Base UI) primitives via the CLI. Prefer free registry only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add sheet",
+        "registryUrl": "https://ui.shadcn.com/r/styles/new-york/sheet.json",
+        "registryItem": "sheet"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

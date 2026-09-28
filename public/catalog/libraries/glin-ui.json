@@ -1,0 +1,632 @@
+{
+  "id": "glin-ui",
+  "name": "Glin UI",
+  "aliases": [
+    "glinui",
+    "GLINCKER/glinui",
+    "@glinui/ui",
+    "Glin",
+    "Liquid Glass Glin"
+  ],
+  "summary": "Liquid Glass React components on Radix and Tailwind \u2014 package or CLI copy.",
+  "homeUrl": "https://glinui.com",
+  "docsUrl": "https://glinui.com/docs/components",
+  "repoUrl": "https://github.com/GLINCKER/glinui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "pnpm dlx @glinui/cli@latest add {name}",
+    "packages": [
+      "@glinui/ui",
+      "@glinui/tokens"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://glinui.com/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 700
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 76+ production components \u2014 not full inventory.",
+    "Vue path is tokens-only; React/@glinui/ui is the primary ingest surface.",
+    "Some primitives also listed under /docs/components/radix/* \u2014 this batch uses the public /docs/components/{slug} docs routes that return HTTP 200.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:05:00-04:00",
+  "components": [
+    {
+      "id": "glin-ui-glass-card",
+      "libraryId": "glin-ui",
+      "slug": "glass-card",
+      "name": "Glass Card",
+      "aliases": [
+        "glin glass card",
+        "frosted card"
+      ],
+      "summary": "Frosted card with depth-aware blur and refraction edges.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/GlassCard",
+        "iframeSrc": "https://glinui.com/docs/components/glass-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add glass-card\n# or: npx glinui add glass-card\n\nimport { GlassCard } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<GlassCard />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Glass Card` (slug `glass-card`) from https://glinui.com/docs/components/glass-card. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { GlassCard } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add glass-card` / `npx glinui add glass-card`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add glass-card",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-liquid-button",
+      "libraryId": "glin-ui",
+      "slug": "liquid-button",
+      "name": "Liquid Button",
+      "aliases": [
+        "glin liquid button"
+      ],
+      "summary": "Button with fluid hover lift, press squish, and radial shine.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "liquid-glass",
+        "glow",
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/LiquidButton",
+        "iframeSrc": "https://glinui.com/docs/components/liquid-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add liquid-button\n# or: npx glinui add liquid-button\n\nimport { LiquidButton } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<LiquidButton />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Liquid Button` (slug `liquid-button`) from https://glinui.com/docs/components/liquid-button. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { LiquidButton } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add liquid-button` / `npx glinui add liquid-button`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add liquid-button",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-glass-navbar",
+      "libraryId": "glin-ui",
+      "slug": "glass-navbar",
+      "name": "Glass Navbar",
+      "aliases": [
+        "glin glass navbar",
+        "frosted nav"
+      ],
+      "summary": "Glassmorphic navigation bar with blur and refraction.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [
+        "glass",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/GlassNavbar",
+        "iframeSrc": "https://glinui.com/docs/components/glass-navbar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add glass-navbar\n# or: npx glinui add glass-navbar\n\nimport { GlassNavbar } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<GlassNavbar />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Glass Navbar` (slug `glass-navbar`) from https://glinui.com/docs/components/glass-navbar. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { GlassNavbar } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add glass-navbar` / `npx glinui add glass-navbar`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add glass-navbar",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-glass-dock",
+      "libraryId": "glin-ui",
+      "slug": "glass-dock",
+      "name": "Glass Dock",
+      "aliases": [
+        "glin glass dock",
+        "mac dock"
+      ],
+      "summary": "macOS-style glass dock with magnification.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "glass",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/GlassDock",
+        "iframeSrc": "https://glinui.com/docs/components/glass-dock",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add glass-dock\n# or: npx glinui add glass-dock\n\nimport { GlassDock } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<GlassDock />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Glass Dock` (slug `glass-dock`) from https://glinui.com/docs/components/glass-dock. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { GlassDock } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add glass-dock` / `npx glinui add glass-dock`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add glass-dock",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-glass-toggle",
+      "libraryId": "glin-ui",
+      "slug": "glass-toggle",
+      "name": "Glass Toggle",
+      "aliases": [
+        "glin glass toggle"
+      ],
+      "summary": "Glass-styled toggle control.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/GlassToggle",
+        "iframeSrc": "https://glinui.com/docs/components/glass-toggle",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add glass-toggle\n# or: npx glinui add glass-toggle\n\nimport { GlassToggle } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<GlassToggle />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Glass Toggle` (slug `glass-toggle`) from https://glinui.com/docs/components/glass-toggle. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { GlassToggle } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add glass-toggle` / `npx glinui add glass-toggle`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add glass-toggle",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-glass-breadcrumb",
+      "libraryId": "glin-ui",
+      "slug": "glass-breadcrumb",
+      "name": "Glass Breadcrumb",
+      "aliases": [
+        "glin glass breadcrumb"
+      ],
+      "summary": "Glass breadcrumb navigation trail.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/GlassBreadcrumb",
+        "iframeSrc": "https://glinui.com/docs/components/glass-breadcrumb",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add glass-breadcrumb\n# or: npx glinui add glass-breadcrumb\n\nimport { GlassBreadcrumb } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<GlassBreadcrumb />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Glass Breadcrumb` (slug `glass-breadcrumb`) from https://glinui.com/docs/components/glass-breadcrumb. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { GlassBreadcrumb } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add glass-breadcrumb` / `npx glinui add glass-breadcrumb`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add glass-breadcrumb",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-button",
+      "libraryId": "glin-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "glin button"
+      ],
+      "summary": "Radix-backed button with glass/liquid/matte/glow variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/Button",
+        "iframeSrc": "https://glinui.com/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add button\n# or: npx glinui add button\n\nimport { Button } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<Button />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Button` (slug `button`) from https://glinui.com/docs/components/button. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { Button } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add button` / `npx glinui add button`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add button",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-input",
+      "libraryId": "glin-ui",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "glin input"
+      ],
+      "summary": "Text input with glass surface variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/Input",
+        "iframeSrc": "https://glinui.com/docs/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add input\n# or: npx glinui add input\n\nimport { Input } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<Input />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Input` (slug `input`) from https://glinui.com/docs/components/input. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { Input } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add input` / `npx glinui add input`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add input",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-badge",
+      "libraryId": "glin-ui",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "glin badge"
+      ],
+      "summary": "Badge with glass and semantic color variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/Badge",
+        "iframeSrc": "https://glinui.com/docs/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add badge\n# or: npx glinui add badge\n\nimport { Badge } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<Badge />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Badge` (slug `badge`) from https://glinui.com/docs/components/badge. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { Badge } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add badge` / `npx glinui add badge`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add badge",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-card",
+      "libraryId": "glin-ui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "glin card"
+      ],
+      "summary": "Compound card with glass-capable surfaces.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/Card",
+        "iframeSrc": "https://glinui.com/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add card\n# or: npx glinui add card\n\nimport { Card } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<Card />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Card` (slug `card`) from https://glinui.com/docs/components/card. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { Card } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add card` / `npx glinui add card`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add card",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-aurora-background",
+      "libraryId": "glin-ui",
+      "slug": "aurora-background",
+      "name": "Aurora Background",
+      "aliases": [
+        "glin aurora",
+        "aurora bg"
+      ],
+      "summary": "Animated aurora gradient background.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "aurora",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/AuroraBackground",
+        "iframeSrc": "https://glinui.com/docs/components/aurora-background",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add aurora-background\n# or: npx glinui add aurora-background\n\nimport { AuroraBackground } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<AuroraBackground />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Aurora Background` (slug `aurora-background`) from https://glinui.com/docs/components/aurora-background. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { AuroraBackground } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add aurora-background` / `npx glinui add aurora-background`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add aurora-background",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    },
+    {
+      "id": "glin-ui-border-beam",
+      "libraryId": "glin-ui",
+      "slug": "border-beam",
+      "name": "Border Beam",
+      "aliases": [
+        "glin border beam",
+        "beam border"
+      ],
+      "summary": "Animated beam traveling along a border.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "background"
+      ],
+      "effectType": [
+        "beam",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glinui/ui/BorderBeam",
+        "iframeSrc": "https://glinui.com/docs/components/border-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install @glinui/ui + @glinui/tokens; import @glinui/tokens/theme.css once"
+      },
+      "copyCode": "pnpm add @glinui/ui @glinui/tokens\n# or CLI: pnpm dlx @glinui/cli@latest add border-beam\n# or: npx glinui add border-beam\n\nimport { BorderBeam } from \"@glinui/ui\"\nimport \"@glinui/tokens/theme.css\"\n\n<BorderBeam />",
+      "copyPrompt": {
+        "text": "Use Glin UI free MIT React component `Border Beam` (slug `border-beam`) from https://glinui.com/docs/components/border-beam. Install with `pnpm add @glinui/ui @glinui/tokens` then `import { BorderBeam } from \"@glinui/ui\"` and `import \"@glinui/tokens/theme.css\"`, or copy source via `pnpm dlx @glinui/cli@latest add border-beam` / `npx glinui add border-beam`. Getting started: https://glinui.com/docs/getting-started. Home: https://glinui.com. Repo: https://github.com/GLINCKER/glinui. License: MIT (https://raw.githubusercontent.com/GLINCKER/glinui/main/LICENSE; Copyright (c) 2026 Glincker LLC). Pricing free. npm: @glinui/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx @glinui/cli@latest add border-beam",
+        "packages": [
+          "@glinui/ui",
+          "@glinui/tokens"
+        ]
+      }
+    }
+  ]
+}

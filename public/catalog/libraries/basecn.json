@@ -1,0 +1,570 @@
+{
+  "id": "basecn",
+  "name": "basecn",
+  "aliases": [
+    "basecn.dev",
+    "akash3444/basecn",
+    "shadcn Base UI"
+  ],
+  "summary": "shadcn/ui-style React components rebuilt on Base UI — copy source and own it.",
+  "homeUrl": "https://www.basecn.dev",
+  "docsUrl": "https://basecn.dev/docs/get-started/introduction",
+  "repoUrl": "https://github.com/akash3444/basecn",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://basecn.dev/r/{name}.json",
+    "registryUrl": "https://basecn.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://basecn.dev/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "@base-ui/react",
+      "tailwindcss",
+      "class-variance-authority"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of ~50+ documented components — not full inventory.",
+    "Replacement for SKIPPED base-ui-net (Angular/Ply) in Packet 044 queue.",
+    "Depends on Base UI (@base-ui/react), not Radix — migration notes on site.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:38:34-04:00",
+  "components": [
+    {
+      "id": "basecn-button",
+      "libraryId": "basecn",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "basecn button",
+        "base ui button"
+      ],
+      "summary": "Button rebuilt on Base UI with familiar shadcn-style variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/button",
+        "iframeSrc": "https://basecn.dev/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/button.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/button\nimport { Button } from \"@/components/ui/button\"\n\n<Button />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Button` (slug `button`) from https://basecn.dev/docs/components/button. Install with `npx shadcn@latest add https://basecn.dev/r/button.json` or `npx shadcn@latest add @basecn/button` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/button.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/button.json",
+        "registryUrl": "https://basecn.dev/r/button.json",
+        "registryItem": "button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-dialog",
+      "libraryId": "basecn",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "basecn dialog",
+        "modal dialog"
+      ],
+      "summary": "Accessible dialog overlay built on Base UI primitives.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/dialog",
+        "iframeSrc": "https://basecn.dev/docs/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/dialog.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/dialog\nimport { Dialog } from \"@/components/ui/dialog\"\n\n<Dialog />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Dialog` (slug `dialog`) from https://basecn.dev/docs/components/dialog. Install with `npx shadcn@latest add https://basecn.dev/r/dialog.json` or `npx shadcn@latest add @basecn/dialog` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/dialog.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/dialog.json",
+        "registryUrl": "https://basecn.dev/r/dialog.json",
+        "registryItem": "dialog"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-card",
+      "libraryId": "basecn",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "basecn card"
+      ],
+      "summary": "Card with header, content, and footer sections.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/card",
+        "iframeSrc": "https://basecn.dev/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/card.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/card\nimport { Card } from \"@/components/ui/card\"\n\n<Card />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Card` (slug `card`) from https://basecn.dev/docs/components/card. Install with `npx shadcn@latest add https://basecn.dev/r/card.json` or `npx shadcn@latest add @basecn/card` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/card.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/card.json",
+        "registryUrl": "https://basecn.dev/r/card.json",
+        "registryItem": "card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-accordion",
+      "libraryId": "basecn",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "basecn accordion"
+      ],
+      "summary": "Collapsible panels with headings on Base UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/accordion",
+        "iframeSrc": "https://basecn.dev/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/accordion.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/accordion\nimport { Accordion } from \"@/components/ui/accordion\"\n\n<Accordion />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Accordion` (slug `accordion`) from https://basecn.dev/docs/components/accordion. Install with `npx shadcn@latest add https://basecn.dev/r/accordion.json` or `npx shadcn@latest add @basecn/accordion` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/accordion.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/accordion.json",
+        "registryUrl": "https://basecn.dev/r/accordion.json",
+        "registryItem": "accordion"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-tabs",
+      "libraryId": "basecn",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "basecn tabs"
+      ],
+      "summary": "Tabbed panels displayed one at a time.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/tabs",
+        "iframeSrc": "https://basecn.dev/docs/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/tabs.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/tabs\nimport { Tabs } from \"@/components/ui/tabs\"\n\n<Tabs />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Tabs` (slug `tabs`) from https://basecn.dev/docs/components/tabs. Install with `npx shadcn@latest add https://basecn.dev/r/tabs.json` or `npx shadcn@latest add @basecn/tabs` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/tabs.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/tabs.json",
+        "registryUrl": "https://basecn.dev/r/tabs.json",
+        "registryItem": "tabs"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-select",
+      "libraryId": "basecn",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "basecn select",
+        "dropdown select"
+      ],
+      "summary": "Option list select triggered by a button.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/select",
+        "iframeSrc": "https://basecn.dev/docs/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/select.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/select\nimport { Select } from \"@/components/ui/select\"\n\n<Select />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Select` (slug `select`) from https://basecn.dev/docs/components/select. Install with `npx shadcn@latest add https://basecn.dev/r/select.json` or `npx shadcn@latest add @basecn/select` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/select.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/select.json",
+        "registryUrl": "https://basecn.dev/r/select.json",
+        "registryItem": "select"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-switch",
+      "libraryId": "basecn",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "basecn switch",
+        "toggle switch"
+      ],
+      "summary": "Boolean toggle control on Base UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/switch",
+        "iframeSrc": "https://basecn.dev/docs/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/switch.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/switch\nimport { Switch } from \"@/components/ui/switch\"\n\n<Switch />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Switch` (slug `switch`) from https://basecn.dev/docs/components/switch. Install with `npx shadcn@latest add https://basecn.dev/r/switch.json` or `npx shadcn@latest add @basecn/switch` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/switch.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/switch.json",
+        "registryUrl": "https://basecn.dev/r/switch.json",
+        "registryItem": "switch"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-tooltip",
+      "libraryId": "basecn",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "basecn tooltip"
+      ],
+      "summary": "Hover/focus popup with supplementary info.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/tooltip",
+        "iframeSrc": "https://basecn.dev/docs/components/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/tooltip.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/tooltip\nimport { Tooltip } from \"@/components/ui/tooltip\"\n\n<Tooltip />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Tooltip` (slug `tooltip`) from https://basecn.dev/docs/components/tooltip. Install with `npx shadcn@latest add https://basecn.dev/r/tooltip.json` or `npx shadcn@latest add @basecn/tooltip` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/tooltip.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/tooltip.json",
+        "registryUrl": "https://basecn.dev/r/tooltip.json",
+        "registryItem": "tooltip"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-avatar",
+      "libraryId": "basecn",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "basecn avatar"
+      ],
+      "summary": "Stylable avatar image/fallback component.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/avatar",
+        "iframeSrc": "https://basecn.dev/docs/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/avatar.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/avatar\nimport { Avatar } from \"@/components/ui/avatar\"\n\n<Avatar />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Avatar` (slug `avatar`) from https://basecn.dev/docs/components/avatar. Install with `npx shadcn@latest add https://basecn.dev/r/avatar.json` or `npx shadcn@latest add @basecn/avatar` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/avatar.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/avatar.json",
+        "registryUrl": "https://basecn.dev/r/avatar.json",
+        "registryItem": "avatar"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-badge",
+      "libraryId": "basecn",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "basecn badge"
+      ],
+      "summary": "Badge or badge-styled label.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/badge",
+        "iframeSrc": "https://basecn.dev/docs/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/badge.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/badge\nimport { Badge } from \"@/components/ui/badge\"\n\n<Badge />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Badge` (slug `badge`) from https://basecn.dev/docs/components/badge. Install with `npx shadcn@latest add https://basecn.dev/r/badge.json` or `npx shadcn@latest add @basecn/badge` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/badge.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/badge.json",
+        "registryUrl": "https://basecn.dev/r/badge.json",
+        "registryItem": "badge"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-input",
+      "libraryId": "basecn",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "basecn input"
+      ],
+      "summary": "Form input field with Base UI foundation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/input",
+        "iframeSrc": "https://basecn.dev/docs/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/input.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/input\nimport { Input } from \"@/components/ui/input\"\n\n<Input />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Input` (slug `input`) from https://basecn.dev/docs/components/input. Install with `npx shadcn@latest add https://basecn.dev/r/input.json` or `npx shadcn@latest add @basecn/input` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/input.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/input.json",
+        "registryUrl": "https://basecn.dev/r/input.json",
+        "registryItem": "input"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "basecn-sheet",
+      "libraryId": "basecn",
+      "slug": "sheet",
+      "name": "Sheet",
+      "aliases": [
+        "basecn sheet",
+        "side panel"
+      ],
+      "summary": "Side sheet extending dialog for complementary content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@basecn/sheet",
+        "iframeSrc": "https://basecn.dev/docs/components/sheet",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @base-ui/react + shadcn-style utils (cn)"
+      },
+      "copyCode": "npx shadcn@latest add https://basecn.dev/r/sheet.json\n\n# or with registries.@basecn configured:\n# npx shadcn@latest add @basecn/sheet\nimport { Sheet } from \"@/components/ui/sheet\"\n\n<Sheet />",
+      "copyPrompt": {
+        "text": "Use basecn free MIT component `Sheet` (slug `sheet`) from https://basecn.dev/docs/components/sheet. Install with `npx shadcn@latest add https://basecn.dev/r/sheet.json` or `npx shadcn@latest add @basecn/sheet` after configuring `\"registries\": {\"@basecn\": \"https://basecn.dev/r/{name}.json\"}` in components.json. Registry item: https://basecn.dev/r/sheet.json. Built on Base UI (`@base-ui/react`) with shadcn-style copy-paste ownership. Requires React/Next + Tailwind. License: MIT (https://raw.githubusercontent.com/akash3444/basecn/main/LICENSE; Copyright (c) 2025 basecn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://basecn.dev/r/sheet.json",
+        "registryUrl": "https://basecn.dev/r/sheet.json",
+        "registryItem": "sheet"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

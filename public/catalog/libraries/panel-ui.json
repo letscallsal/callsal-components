@@ -1,0 +1,588 @@
+{
+  "id": "panel-ui",
+  "name": "Panel UI",
+  "aliases": [
+    "PanelUI",
+    "panelui",
+    "panelui.dev",
+    "panelui-native",
+    "panel-ui/PanelUI"
+  ],
+  "summary": "Accessible React Native/Expo UI on Tailwind (Uniwind) and Reanimated; npm or CLI copy.",
+  "homeUrl": "https://panelui.dev",
+  "docsUrl": "https://panelui.dev/docs",
+  "repoUrl": "https://github.com/panel-ui/PanelUI",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react-native"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npx expo install panelui-native",
+    "packages": [
+      "panelui-native"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://panelui.dev/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-native",
+      "uniwind",
+      "tailwindcss",
+      "react-native-reanimated",
+      "react-native-gesture-handler",
+      "react-native-safe-area-context",
+      "react-native-svg"
+    ],
+    "budgetKb": 800
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 136 documented component modules.",
+    "Primary runtime is React Native / Expo (not web React); iframe demos are the Next.js docs site.",
+    "CLI copy-paste via panelui-cli also supported; registry at panelui.dev/r/{name}.json.",
+    "iframe demos only; no Expo Go / device smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:20:00-04:00",
+  "components": [
+    {
+      "id": "panel-ui-button",
+      "libraryId": "panel-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "panelui button",
+        "panel-ui button",
+        "Button"
+      ],
+      "summary": "Pressable action with variants, sizes, loading state and icon slots.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Button",
+        "iframeSrc": "https://panelui.dev/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add button\n\nimport { Button } from \"panelui-native\"\n\n<Button />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Button` (slug `button`) from https://panelui.dev/docs/components/button. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add button`. Registry item: https://panelui.dev/r/button.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add button",
+        "registryUrl": "https://panelui.dev/r/button.json",
+        "registryItem": "button"
+      }
+    },
+    {
+      "id": "panel-ui-card",
+      "libraryId": "panel-ui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "panelui card",
+        "panel-ui card",
+        "Card"
+      ],
+      "summary": "Content surface with header, body and footer.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Card",
+        "iframeSrc": "https://panelui.dev/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add card\n\nimport { Card } from \"panelui-native\"\n\n<Card />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Card` (slug `card`) from https://panelui.dev/docs/components/card. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add card`. Registry item: https://panelui.dev/r/card.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add card",
+        "registryUrl": "https://panelui.dev/r/card.json",
+        "registryItem": "card"
+      }
+    },
+    {
+      "id": "panel-ui-input",
+      "libraryId": "panel-ui",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "panelui input",
+        "panel-ui input",
+        "Input"
+      ],
+      "summary": "Text field with label, description and error message.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Input",
+        "iframeSrc": "https://panelui.dev/docs/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add input\n\nimport { Input } from \"panelui-native\"\n\n<Input />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Input` (slug `input`) from https://panelui.dev/docs/components/input. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add input`. Registry item: https://panelui.dev/r/input.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add input",
+        "registryUrl": "https://panelui.dev/r/input.json",
+        "registryItem": "input"
+      }
+    },
+    {
+      "id": "panel-ui-dialog",
+      "libraryId": "panel-ui",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "panelui dialog",
+        "panel-ui dialog",
+        "Dialog"
+      ],
+      "summary": "Modal dialog with a backdrop and footer actions.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Dialog",
+        "iframeSrc": "https://panelui.dev/docs/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add dialog\n\nimport { Dialog } from \"panelui-native\"\n\n<Dialog />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Dialog` (slug `dialog`) from https://panelui.dev/docs/components/dialog. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add dialog`. Registry item: https://panelui.dev/r/dialog.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add dialog",
+        "registryUrl": "https://panelui.dev/r/dialog.json",
+        "registryItem": "dialog"
+      }
+    },
+    {
+      "id": "panel-ui-avatar",
+      "libraryId": "panel-ui",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "panelui avatar",
+        "panel-ui avatar",
+        "Avatar"
+      ],
+      "summary": "User image with initials fallback, badge overlay, and stack.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Avatar",
+        "iframeSrc": "https://panelui.dev/docs/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add avatar\n\nimport { Avatar } from \"panelui-native\"\n\n<Avatar />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Avatar` (slug `avatar`) from https://panelui.dev/docs/components/avatar. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add avatar`. Registry item: https://panelui.dev/r/avatar.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add avatar",
+        "registryUrl": "https://panelui.dev/r/avatar.json",
+        "registryItem": "avatar"
+      }
+    },
+    {
+      "id": "panel-ui-badge",
+      "libraryId": "panel-ui",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "panelui badge",
+        "panel-ui badge",
+        "Badge"
+      ],
+      "summary": "Compact status label, dot, or notification count.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Badge",
+        "iframeSrc": "https://panelui.dev/docs/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add badge\n\nimport { Badge } from \"panelui-native\"\n\n<Badge />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Badge` (slug `badge`) from https://panelui.dev/docs/components/badge. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add badge`. Registry item: https://panelui.dev/r/badge.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add badge",
+        "registryUrl": "https://panelui.dev/r/badge.json",
+        "registryItem": "badge"
+      }
+    },
+    {
+      "id": "panel-ui-checkbox",
+      "libraryId": "panel-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "panelui checkbox",
+        "panel-ui checkbox",
+        "Checkbox"
+      ],
+      "summary": "Animated checkbox as a row or selectable card.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Checkbox",
+        "iframeSrc": "https://panelui.dev/docs/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add checkbox\n\nimport { Checkbox } from \"panelui-native\"\n\n<Checkbox />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Checkbox` (slug `checkbox`) from https://panelui.dev/docs/components/checkbox. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add checkbox`. Registry item: https://panelui.dev/r/checkbox.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add checkbox",
+        "registryUrl": "https://panelui.dev/r/checkbox.json",
+        "registryItem": "checkbox"
+      }
+    },
+    {
+      "id": "panel-ui-switch",
+      "libraryId": "panel-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "panelui switch",
+        "panel-ui switch",
+        "Switch"
+      ],
+      "summary": "Animated on/off toggle.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Switch",
+        "iframeSrc": "https://panelui.dev/docs/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add switch\n\nimport { Switch } from \"panelui-native\"\n\n<Switch />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Switch` (slug `switch`) from https://panelui.dev/docs/components/switch. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add switch`. Registry item: https://panelui.dev/r/switch.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add switch",
+        "registryUrl": "https://panelui.dev/r/switch.json",
+        "registryItem": "switch"
+      }
+    },
+    {
+      "id": "panel-ui-tabs",
+      "libraryId": "panel-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "panelui tabs",
+        "panel-ui tabs",
+        "Tabs"
+      ],
+      "summary": "Segmented navigation with an animated indicator.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Tabs",
+        "iframeSrc": "https://panelui.dev/docs/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add tabs\n\nimport { Tabs } from \"panelui-native\"\n\n<Tabs />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Tabs` (slug `tabs`) from https://panelui.dev/docs/components/tabs. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add tabs`. Registry item: https://panelui.dev/r/tabs.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add tabs",
+        "registryUrl": "https://panelui.dev/r/tabs.json",
+        "registryItem": "tabs"
+      }
+    },
+    {
+      "id": "panel-ui-toast",
+      "libraryId": "panel-ui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "panelui toast",
+        "panel-ui toast",
+        "Toast"
+      ],
+      "summary": "Transient notification queue with swipe to dismiss.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Toast",
+        "iframeSrc": "https://panelui.dev/docs/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add toast\n\nimport { Toast } from \"panelui-native\"\n\n<Toast />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Toast` (slug `toast`) from https://panelui.dev/docs/components/toast. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add toast`. Registry item: https://panelui.dev/r/toast.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add toast",
+        "registryUrl": "https://panelui.dev/r/toast.json",
+        "registryItem": "toast"
+      }
+    },
+    {
+      "id": "panel-ui-accordion",
+      "libraryId": "panel-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "panelui accordion",
+        "panel-ui accordion",
+        "Accordion"
+      ],
+      "summary": "Collapsible sections with single or multiple selection.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "layout",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Accordion",
+        "iframeSrc": "https://panelui.dev/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add accordion\n\nimport { Accordion } from \"panelui-native\"\n\n<Accordion />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Accordion` (slug `accordion`) from https://panelui.dev/docs/components/accordion. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add accordion`. Registry item: https://panelui.dev/r/accordion.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add accordion",
+        "registryUrl": "https://panelui.dev/r/accordion.json",
+        "registryItem": "accordion"
+      }
+    },
+    {
+      "id": "panel-ui-marquee",
+      "libraryId": "panel-ui",
+      "slug": "marquee",
+      "name": "Marquee",
+      "aliases": [
+        "panelui marquee",
+        "panel-ui marquee",
+        "Marquee"
+      ],
+      "summary": "Content that travels across its container on a loop.",
+      "frameworks": [
+        "react-native"
+      ],
+      "uiCategory": [
+        "marquee"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "panelui-native/Marquee",
+        "iframeSrc": "https://panelui.dev/docs/components/marquee",
+        "aspectRatio": "16/9",
+        "peerNotes": "Expo SDK 57+ / React Native. npm panelui-native or CLI copy-paste via panelui-cli. Uniwind + Reanimated peers."
+      },
+      "copyCode": "npx expo install panelui-native\n# or copy source: npx panelui-cli@latest init && npx panelui-cli@latest add marquee\n\nimport { Marquee } from \"panelui-native\"\n\n<Marquee />",
+      "copyPrompt": {
+        "text": "Use PanelUI free MIT React Native/Expo component `Marquee` (slug `marquee`) from https://panelui.dev/docs/components/marquee. Install with `npx expo install panelui-native` (plus Uniwind/Reanimated peers per https://panelui.dev/docs/installation) or copy source with `npx panelui-cli@latest add marquee`. Registry item: https://panelui.dev/r/marquee.json. Home: https://panelui.dev. Docs: https://panelui.dev/docs. Repo: https://github.com/panel-ui/PanelUI. License: MIT (https://raw.githubusercontent.com/panel-ui/PanelUI/main/LICENSE; Copyright (c) 2026 Khalid Abdi). Pricing free. Primary target is Expo / React Native (not web React).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx panelui-cli@latest add marquee",
+        "registryUrl": "https://panelui.dev/r/marquee.json",
+        "registryItem": "marquee"
+      }
+    }
+  ]
+}

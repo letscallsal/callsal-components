@@ -1,0 +1,619 @@
+{
+  "id": "primer-react",
+  "name": "Primer React",
+  "aliases": [
+    "primer-react",
+    "Primer React",
+    "Primer",
+    "@primer/react",
+    "GitHub Primer"
+  ],
+  "summary": "GitHub’s MIT Primer design-system React components with interactive product docs demos.",
+  "homeUrl": "https://primer.style/",
+  "docsUrl": "https://primer.style/product/getting-started/react/",
+  "repoUrl": "https://github.com/primer/react",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install @primer/react",
+    "packages": [
+      "@primer/react"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://primer.style/product/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "styled-components"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of many Primer React components — not the full Primer stack (CSS, Rails, etc.).",
+    "Requires ThemeProvider + BaseStyles; historically styled-components peer (verify current peer deps for installed version).",
+    "Product docs URLs use kebab component paths (e.g. text-input, action-menu).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:15:00-04:00",
+  "components": [
+    {
+      "id": "primer-react-button",
+      "libraryId": "primer-react",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "Button",
+        "Primer Button",
+        "@primer/react Button",
+        "button"
+      ],
+      "summary": "Primer action button with variants and sizes.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, Button } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <Button variant=\"primary\">Activate</Button>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `Button` (slug `button`) from https://primer.style/product/components/button. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-dialog",
+      "libraryId": "primer-react",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "Dialog",
+        "Primer Dialog",
+        "@primer/react Dialog",
+        "dialog"
+      ],
+      "summary": "Modal dialog surface for focused tasks.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, Button, Dialog } from \"@primer/react\";\nimport { useState } from \"react\";\n\nexport default function Example() {\n  const [open, setOpen] = useState(false);\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <Button onClick={() => setOpen(true)}>Open</Button>\n        {open && (\n          <Dialog title=\"Confirm\" onClose={() => setOpen(false)}>\n            <p>Dialog body</p>\n          </Dialog>\n        )}\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `Dialog` (slug `dialog`) from https://primer.style/product/components/dialog. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-action-menu",
+      "libraryId": "primer-react",
+      "slug": "action-menu",
+      "name": "ActionMenu",
+      "aliases": [
+        "action-menu",
+        "ActionMenu",
+        "Primer ActionMenu",
+        "@primer/react ActionMenu",
+        "action-menu"
+      ],
+      "summary": "Action menu for contextual commands.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/action-menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, ActionMenu } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <ActionMenu>Primer ActionMenu</ActionMenu>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `ActionMenu` (slug `action-menu`) from https://primer.style/product/components/action-menu. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-form-control",
+      "libraryId": "primer-react",
+      "slug": "form-control",
+      "name": "FormControl",
+      "aliases": [
+        "form-control",
+        "FormControl",
+        "Primer FormControl",
+        "@primer/react FormControl",
+        "form-control"
+      ],
+      "summary": "Form control wrapper with label and validation.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/form-control",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, FormControl } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <FormControl>Primer FormControl</FormControl>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `FormControl` (slug `form-control`) from https://primer.style/product/components/form-control. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-nav-list",
+      "libraryId": "primer-react",
+      "slug": "nav-list",
+      "name": "NavList",
+      "aliases": [
+        "nav-list",
+        "NavList",
+        "Primer NavList",
+        "@primer/react NavList",
+        "nav-list"
+      ],
+      "summary": "Navigation list for sidebars and menus.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/nav-list",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, NavList } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <NavList>Primer NavList</NavList>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `NavList` (slug `nav-list`) from https://primer.style/product/components/nav-list. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-select",
+      "libraryId": "primer-react",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "Select",
+        "Primer Select",
+        "@primer/react Select",
+        "select"
+      ],
+      "summary": "Select input for choosing options.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, Select } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <Select>Primer Select</Select>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `Select` (slug `select`) from https://primer.style/product/components/select. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-text-input",
+      "libraryId": "primer-react",
+      "slug": "text-input",
+      "name": "TextInput",
+      "aliases": [
+        "text-input",
+        "TextInput",
+        "Primer TextInput",
+        "@primer/react TextInput",
+        "text-input"
+      ],
+      "summary": "Text input field.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/text-input",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, TextInput } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <TextInput>Primer TextInput</TextInput>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `TextInput` (slug `text-input`) from https://primer.style/product/components/text-input. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-banner",
+      "libraryId": "primer-react",
+      "slug": "banner",
+      "name": "Banner",
+      "aliases": [
+        "banner",
+        "Banner",
+        "Primer Banner",
+        "@primer/react Banner",
+        "banner"
+      ],
+      "summary": "Page-level banner / alert.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "toast",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/banner",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, Banner } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <Banner>Primer Banner</Banner>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `Banner` (slug `banner`) from https://primer.style/product/components/banner. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-progress-bar",
+      "libraryId": "primer-react",
+      "slug": "progress-bar",
+      "name": "ProgressBar",
+      "aliases": [
+        "progress-bar",
+        "ProgressBar",
+        "Primer ProgressBar",
+        "@primer/react ProgressBar",
+        "progress-bar"
+      ],
+      "summary": "Progress indicator bar.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/progress-bar",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, ProgressBar } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <ProgressBar>Primer ProgressBar</ProgressBar>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `ProgressBar` (slug `progress-bar`) from https://primer.style/product/components/progress-bar. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-tree-view",
+      "libraryId": "primer-react",
+      "slug": "tree-view",
+      "name": "TreeView",
+      "aliases": [
+        "tree-view",
+        "TreeView",
+        "Primer TreeView",
+        "@primer/react TreeView",
+        "tree-view"
+      ],
+      "summary": "Hierarchical tree view navigation.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/tree-view",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, TreeView } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <TreeView>Primer TreeView</TreeView>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `TreeView` (slug `tree-view`) from https://primer.style/product/components/tree-view. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-segmented-control",
+      "libraryId": "primer-react",
+      "slug": "segmented-control",
+      "name": "SegmentedControl",
+      "aliases": [
+        "segmented-control",
+        "SegmentedControl",
+        "Primer SegmentedControl",
+        "@primer/react SegmentedControl",
+        "segmented-control"
+      ],
+      "summary": "Segmented control for mutually exclusive options.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/segmented-control",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, SegmentedControl } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <SegmentedControl>Primer SegmentedControl</SegmentedControl>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `SegmentedControl` (slug `segmented-control`) from https://primer.style/product/components/segmented-control. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    },
+    {
+      "id": "primer-react-underline-nav",
+      "libraryId": "primer-react",
+      "slug": "underline-nav",
+      "name": "UnderlineNav",
+      "aliases": [
+        "underline-nav",
+        "UnderlineNav",
+        "Primer UnderlineNav",
+        "@primer/react UnderlineNav",
+        "underline-nav"
+      ],
+      "summary": "Underline-style navigation tabs.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "primer-react",
+        "iframeSrc": "https://primer.style/product/components/underline-nav",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT @primer/react (GitHub Primer). Docs pages host live demos + copyable examples. Wrap with ThemeProvider + BaseStyles."
+      },
+      "copyCode": "npm install @primer/react\n\nimport { ThemeProvider, BaseStyles, UnderlineNav } from \"@primer/react\";\n\nexport default function Example() {\n  return (\n    <ThemeProvider>\n      <BaseStyles>\n        <UnderlineNav>Primer UnderlineNav</UnderlineNav>\n      </BaseStyles>\n    </ThemeProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Primer React free MIT component `UnderlineNav` (slug `underline-nav`) from https://primer.style/product/components/underline-nav. Install with `npm install @primer/react`. Import from `@primer/react` and wrap the app with `ThemeProvider` + `BaseStyles`. Home: https://primer.style/. Docs: https://primer.style/product/getting-started/react/. Repo: https://github.com/primer/react. License: MIT (https://raw.githubusercontent.com/primer/react/main/LICENSE; Copyright (c) 2018 GitHub, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @primer/react",
+        "packages": [
+          "@primer/react"
+        ]
+      }
+    }
+  ]
+}

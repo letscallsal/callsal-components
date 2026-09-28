@@ -1,0 +1,615 @@
+{
+  "id": "bag-ui",
+  "name": "Bag UI",
+  "aliases": [
+    "bag-ui",
+    "Bag UI",
+    "BagUI",
+    "Bag/UI",
+    "bagui"
+  ],
+  "summary": "MIT shadcn registry of React marketing/app blocks; freemium with 18 free-tier items.",
+  "homeUrl": "https://www.bagui.pro/",
+  "docsUrl": "https://www.bagui.pro/",
+  "repoUrl": "https://github.com/anelkabag/bag-ui",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://www.bagui.pro/r/{name}.json",
+    "registryUrl": "https://www.bagui.pro/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.bagui.pro/blocks/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "motion"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Freemium: registry mixes free and pro tiers — this ingest includes free-tier only (18 free of 40).",
+    "Pilot includes 12 of 18 free blocks.",
+    "Some registry item descriptions appear templated/duplicate on the public registry JSON.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:15:00-04:00",
+  "components": [
+    {
+      "id": "bag-ui-hero4",
+      "libraryId": "bag-ui",
+      "slug": "hero4",
+      "name": "Hero 4",
+      "aliases": [
+        "hero4",
+        "Hero 4",
+        "BagUI Hero 4",
+        "bag-ui hero4",
+        "Bag/UI Hero 4"
+      ],
+      "summary": "Hero with navbar and animated event dashboard preview.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "hero",
+        "section"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/hero4",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/hero4.json\n\n# Free-tier Bag/UI block `hero4` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `hero4` (`Hero 4`) from https://www.bagui.pro/blocks/hero4. Install with `npx shadcn@latest add https://www.bagui.pro/r/hero4.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/hero4.json",
+        "registryUrl": "https://www.bagui.pro/r/hero4.json",
+        "registryItem": "hero4"
+      }
+    },
+    {
+      "id": "bag-ui-navbar2",
+      "libraryId": "bag-ui",
+      "slug": "navbar2",
+      "name": "Navbar 2",
+      "aliases": [
+        "navbar2",
+        "Navbar 2",
+        "BagUI Navbar 2",
+        "bag-ui navbar2",
+        "Bag/UI Navbar 2"
+      ],
+      "summary": "Modern responsive navbar with animated interactions.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/navbar2",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/navbar2.json\n\n# Free-tier Bag/UI block `navbar2` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `navbar2` (`Navbar 2`) from https://www.bagui.pro/blocks/navbar2. Install with `npx shadcn@latest add https://www.bagui.pro/r/navbar2.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/navbar2.json",
+        "registryUrl": "https://www.bagui.pro/r/navbar2.json",
+        "registryItem": "navbar2"
+      }
+    },
+    {
+      "id": "bag-ui-faq1",
+      "libraryId": "bag-ui",
+      "slug": "faq1",
+      "name": "FAQ 1",
+      "aliases": [
+        "faq1",
+        "FAQ 1",
+        "BagUI FAQ 1",
+        "bag-ui faq1",
+        "Bag/UI FAQ 1"
+      ],
+      "summary": "FAQ section with collapsible items.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "section",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/faq1",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/faq1.json\n\n# Free-tier Bag/UI block `faq1` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `faq1` (`FAQ 1`) from https://www.bagui.pro/blocks/faq1. Install with `npx shadcn@latest add https://www.bagui.pro/r/faq1.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/faq1.json",
+        "registryUrl": "https://www.bagui.pro/r/faq1.json",
+        "registryItem": "faq1"
+      }
+    },
+    {
+      "id": "bag-ui-cta-1",
+      "libraryId": "bag-ui",
+      "slug": "cta-1",
+      "name": "CTA 1",
+      "aliases": [
+        "cta-1",
+        "CTA 1",
+        "BagUI CTA 1",
+        "bag-ui cta-1",
+        "Bag/UI CTA 1"
+      ],
+      "summary": "Call-to-action section block.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "section",
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/cta-1",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/cta-1.json\n\n# Free-tier Bag/UI block `cta-1` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `cta-1` (`CTA 1`) from https://www.bagui.pro/blocks/cta-1. Install with `npx shadcn@latest add https://www.bagui.pro/r/cta-1.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/cta-1.json",
+        "registryUrl": "https://www.bagui.pro/r/cta-1.json",
+        "registryItem": "cta-1"
+      }
+    },
+    {
+      "id": "bag-ui-feature-1",
+      "libraryId": "bag-ui",
+      "slug": "feature-1",
+      "name": "Feature 1",
+      "aliases": [
+        "feature-1",
+        "Feature 1",
+        "BagUI Feature 1",
+        "bag-ui feature-1",
+        "Bag/UI Feature 1"
+      ],
+      "summary": "Feature highlight section.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "section",
+        "bento"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/feature-1",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/feature-1.json\n\n# Free-tier Bag/UI block `feature-1` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `feature-1` (`Feature 1`) from https://www.bagui.pro/blocks/feature-1. Install with `npx shadcn@latest add https://www.bagui.pro/r/feature-1.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/feature-1.json",
+        "registryUrl": "https://www.bagui.pro/r/feature-1.json",
+        "registryItem": "feature-1"
+      }
+    },
+    {
+      "id": "bag-ui-feature-2",
+      "libraryId": "bag-ui",
+      "slug": "feature-2",
+      "name": "Feature 2",
+      "aliases": [
+        "feature-2",
+        "Feature 2",
+        "BagUI Feature 2",
+        "bag-ui feature-2",
+        "Bag/UI Feature 2"
+      ],
+      "summary": "Alternate feature section layout.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "section",
+        "bento"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/feature-2",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/feature-2.json\n\n# Free-tier Bag/UI block `feature-2` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `feature-2` (`Feature 2`) from https://www.bagui.pro/blocks/feature-2. Install with `npx shadcn@latest add https://www.bagui.pro/r/feature-2.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/feature-2.json",
+        "registryUrl": "https://www.bagui.pro/r/feature-2.json",
+        "registryItem": "feature-2"
+      }
+    },
+    {
+      "id": "bag-ui-pricing-1",
+      "libraryId": "bag-ui",
+      "slug": "pricing-1",
+      "name": "Pricing 1",
+      "aliases": [
+        "pricing-1",
+        "Pricing 1",
+        "BagUI Pricing 1",
+        "bag-ui pricing-1",
+        "Bag/UI Pricing 1"
+      ],
+      "summary": "Pricing plans section.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "section",
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/pricing-1",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/pricing-1.json\n\n# Free-tier Bag/UI block `pricing-1` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `pricing-1` (`Pricing 1`) from https://www.bagui.pro/blocks/pricing-1. Install with `npx shadcn@latest add https://www.bagui.pro/r/pricing-1.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/pricing-1.json",
+        "registryUrl": "https://www.bagui.pro/r/pricing-1.json",
+        "registryItem": "pricing-1"
+      }
+    },
+    {
+      "id": "bag-ui-footer1",
+      "libraryId": "bag-ui",
+      "slug": "footer1",
+      "name": "Footer 1",
+      "aliases": [
+        "footer1",
+        "Footer 1",
+        "BagUI Footer 1",
+        "bag-ui footer1",
+        "Bag/UI Footer 1"
+      ],
+      "summary": "Site footer block.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "section",
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/footer1",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/footer1.json\n\n# Free-tier Bag/UI block `footer1` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `footer1` (`Footer 1`) from https://www.bagui.pro/blocks/footer1. Install with `npx shadcn@latest add https://www.bagui.pro/r/footer1.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/footer1.json",
+        "registryUrl": "https://www.bagui.pro/r/footer1.json",
+        "registryItem": "footer1"
+      }
+    },
+    {
+      "id": "bag-ui-sidebar1",
+      "libraryId": "bag-ui",
+      "slug": "sidebar1",
+      "name": "Sidebar 1",
+      "aliases": [
+        "sidebar1",
+        "Sidebar 1",
+        "BagUI Sidebar 1",
+        "bag-ui sidebar1",
+        "Bag/UI Sidebar 1"
+      ],
+      "summary": "App sidebar navigation block.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/sidebar1",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/sidebar1.json\n\n# Free-tier Bag/UI block `sidebar1` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `sidebar1` (`Sidebar 1`) from https://www.bagui.pro/blocks/sidebar1. Install with `npx shadcn@latest add https://www.bagui.pro/r/sidebar1.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/sidebar1.json",
+        "registryUrl": "https://www.bagui.pro/r/sidebar1.json",
+        "registryItem": "sidebar1"
+      }
+    },
+    {
+      "id": "bag-ui-chat-app1",
+      "libraryId": "bag-ui",
+      "slug": "chat-app1",
+      "name": "Chat App 1",
+      "aliases": [
+        "chat-app1",
+        "Chat App 1",
+        "BagUI Chat App 1",
+        "bag-ui chat-app1",
+        "Bag/UI Chat App 1"
+      ],
+      "summary": "Dashboard chat app block.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "layout",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/chat-app1",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/chat-app1.json\n\n# Free-tier Bag/UI block `chat-app1` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `chat-app1` (`Chat App 1`) from https://www.bagui.pro/blocks/chat-app1. Install with `npx shadcn@latest add https://www.bagui.pro/r/chat-app1.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/chat-app1.json",
+        "registryUrl": "https://www.bagui.pro/r/chat-app1.json",
+        "registryItem": "chat-app1"
+      }
+    },
+    {
+      "id": "bag-ui-testimonial-1",
+      "libraryId": "bag-ui",
+      "slug": "testimonial-1",
+      "name": "Testimonial 1",
+      "aliases": [
+        "testimonial-1",
+        "Testimonial 1",
+        "BagUI Testimonial 1",
+        "bag-ui testimonial-1",
+        "Bag/UI Testimonial 1"
+      ],
+      "summary": "Testimonials section.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "section",
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/testimonial-1",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/testimonial-1.json\n\n# Free-tier Bag/UI block `testimonial-1` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `testimonial-1` (`Testimonial 1`) from https://www.bagui.pro/blocks/testimonial-1. Install with `npx shadcn@latest add https://www.bagui.pro/r/testimonial-1.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/testimonial-1.json",
+        "registryUrl": "https://www.bagui.pro/r/testimonial-1.json",
+        "registryItem": "testimonial-1"
+      }
+    },
+    {
+      "id": "bag-ui-contact-1",
+      "libraryId": "bag-ui",
+      "slug": "contact-1",
+      "name": "Contact 1",
+      "aliases": [
+        "contact-1",
+        "Contact 1",
+        "BagUI Contact 1",
+        "bag-ui contact-1",
+        "Bag/UI Contact 1"
+      ],
+      "summary": "Contact form section.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bag-ui",
+        "iframeSrc": "https://www.bagui.pro/blocks/contact-1",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Bag/UI freemium registry — this item is access.tier=free only. Install via shadcn CLI URL. Pro blocks excluded."
+      },
+      "copyCode": "npx shadcn@latest add https://www.bagui.pro/r/contact-1.json\n\n# Free-tier Bag/UI block `contact-1` — copy-paste React/shadcn registry item.\n# After install, import the generated block component from your components path.\n",
+      "copyPrompt": {
+        "text": "Use Bag/UI free MIT React/shadcn block `contact-1` (`Contact 1`) from https://www.bagui.pro/blocks/contact-1. Install with `npx shadcn@latest add https://www.bagui.pro/r/contact-1.json`. Registry: https://www.bagui.pro/r/registry.json. Home: https://www.bagui.pro. Repo: https://github.com/anelkabag/bag-ui. License: MIT (https://raw.githubusercontent.com/anelkabag/bag-ui/main/LICENCE.md; Copyright (c) 2023 Anelka Bag). Pricing freemium — free-tier blocks only (`proOnly: false`); do not ingest Pro-tier registry items.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.bagui.pro/r/contact-1.json",
+        "registryUrl": "https://www.bagui.pro/r/contact-1.json",
+        "registryItem": "contact-1"
+      }
+    }
+  ]
+}

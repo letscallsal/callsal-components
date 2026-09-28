@@ -1,0 +1,591 @@
+{
+  "id": "radix-ui",
+  "name": "Radix UI",
+  "aliases": [
+    "radix-ui",
+    "Radix UI",
+    "Radix Primitives",
+    "radix-ui/primitives",
+    "@radix-ui"
+  ],
+  "summary": "Unstyled accessible React primitives with interactive docs demos and a unified npm package.",
+  "homeUrl": "https://www.radix-ui.com",
+  "docsUrl": "https://www.radix-ui.com/primitives/docs/overview/getting-started",
+  "repoUrl": "https://github.com/radix-ui/primitives",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install radix-ui@latest",
+    "packages": [
+      "radix-ui"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.radix-ui.com/primitives/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Headless/unstyled \u2014 demos require consumer CSS; docs anatomy/examples are copyable.",
+    "Pilot includes 12 primitives \u2014 Themes (styled) layer exists separately; this ingest is Primitives-only.",
+    "Kept under P2 headless KEEP rule (public docs \u2192 interactive demos + copyable install/code \u22658).",
+    "Unified package is `radix-ui`; legacy `@radix-ui/react-*` packages still exist.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:05:00-04:00",
+  "components": [
+    {
+      "id": "radix-ui-dialog",
+      "libraryId": "radix-ui",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "modal",
+        "radix dialog",
+        "radix-ui Dialog"
+      ],
+      "summary": "Accessible dialog overlay.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { Dialog } from \"radix-ui\";\n\nexport default () => (\n  <Dialog.Root>\n    <Dialog.Trigger>Open</Dialog.Trigger>\n    <Dialog.Portal>\n      <Dialog.Overlay />\n      <Dialog.Content>\n        <Dialog.Title>Edit profile</Dialog.Title>\n        <Dialog.Description>Make changes to your profile here.</Dialog.Description>\n        <Dialog.Close>Close</Dialog.Close>\n      </Dialog.Content>\n    </Dialog.Portal>\n  </Dialog.Root>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Dialog` (slug `dialog`) from https://www.radix-ui.com/primitives/docs/components/dialog. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/dialog. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-checkbox",
+      "libraryId": "radix-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "radix checkbox",
+        "radix-ui Checkbox"
+      ],
+      "summary": "Accessible checkbox with indeterminate support.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { Checkbox } from \"radix-ui\";\n\nexport default () => (\n  <Checkbox.Root>\n    <Checkbox.Indicator />\n  </Checkbox.Root>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Checkbox` (slug `checkbox`) from https://www.radix-ui.com/primitives/docs/components/checkbox. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/checkbox. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-switch",
+      "libraryId": "radix-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "switch",
+        "toggle",
+        "radix switch",
+        "radix-ui Switch"
+      ],
+      "summary": "Accessible switch toggle.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { Switch } from \"radix-ui\";\n\nexport default () => (\n  <Switch.Root>\n    <Switch.Thumb />\n  </Switch.Root>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Switch` (slug `switch`) from https://www.radix-ui.com/primitives/docs/components/switch. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/switch. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-accordion",
+      "libraryId": "radix-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "radix accordion",
+        "radix-ui Accordion"
+      ],
+      "summary": "Accessible accordion.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { Accordion } from \"radix-ui\";\n\nexport default () => (\n  <Accordion.Root type=\"single\" collapsible>\n    <Accordion.Item value=\"item-1\">\n      <Accordion.Header>\n        <Accordion.Trigger>Is it accessible?</Accordion.Trigger>\n      </Accordion.Header>\n      <Accordion.Content>Yes. It adheres to the WAI-ARIA design pattern.</Accordion.Content>\n    </Accordion.Item>\n  </Accordion.Root>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Accordion` (slug `accordion`) from https://www.radix-ui.com/primitives/docs/components/accordion. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/accordion. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-dropdown-menu",
+      "libraryId": "radix-ui",
+      "slug": "dropdown-menu",
+      "name": "Dropdown Menu",
+      "aliases": [
+        "dropdown-menu",
+        "menu",
+        "radix dropdown",
+        "radix-ui DropdownMenu"
+      ],
+      "summary": "Accessible dropdown menu.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/dropdown-menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { DropdownMenu } from \"radix-ui\";\n\nexport default () => (\n  <DropdownMenu.Root>\n    <DropdownMenu.Trigger>Options</DropdownMenu.Trigger>\n    <DropdownMenu.Portal>\n      <DropdownMenu.Content>\n        <DropdownMenu.Item>Profile</DropdownMenu.Item>\n        <DropdownMenu.Item>Settings</DropdownMenu.Item>\n        <DropdownMenu.Separator />\n        <DropdownMenu.Item>Logout</DropdownMenu.Item>\n      </DropdownMenu.Content>\n    </DropdownMenu.Portal>\n  </DropdownMenu.Root>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Dropdown Menu` (slug `dropdown-menu`) from https://www.radix-ui.com/primitives/docs/components/dropdown-menu. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/dropdown-menu. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-popover",
+      "libraryId": "radix-ui",
+      "slug": "popover",
+      "name": "Popover",
+      "aliases": [
+        "popover",
+        "radix popover",
+        "radix-ui Popover"
+      ],
+      "summary": "Accessible popover.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/popover",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { Popover } from \"radix-ui\";\n\nexport default () => (\n  <Popover.Root>\n    <Popover.Trigger>More info</Popover.Trigger>\n    <Popover.Portal>\n      <Popover.Content>\n        Some more info\u2026\n        <Popover.Arrow />\n      </Popover.Content>\n    </Popover.Portal>\n  </Popover.Root>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Popover` (slug `popover`) from https://www.radix-ui.com/primitives/docs/components/popover. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/popover. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-select",
+      "libraryId": "radix-ui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "radix select",
+        "radix-ui Select"
+      ],
+      "summary": "Accessible select.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { Select } from \"radix-ui\";\n\nexport default () => (\n  <Select.Root>\n    <Select.Trigger>\n      <Select.Value placeholder=\"Select a fruit\u2026\" />\n      <Select.Icon />\n    </Select.Trigger>\n    <Select.Portal>\n      <Select.Content>\n        <Select.Viewport>\n          <Select.Item value=\"apple\">\n            <Select.ItemText>Apple</Select.ItemText>\n          </Select.Item>\n          <Select.Item value=\"banana\">\n            <Select.ItemText>Banana</Select.ItemText>\n          </Select.Item>\n        </Select.Viewport>\n      </Select.Content>\n    </Select.Portal>\n  </Select.Root>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Select` (slug `select`) from https://www.radix-ui.com/primitives/docs/components/select. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/select. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-tabs",
+      "libraryId": "radix-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "radix tabs",
+        "radix-ui Tabs"
+      ],
+      "summary": "Accessible tabs.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { Tabs } from \"radix-ui\";\n\nexport default () => (\n  <Tabs.Root defaultValue=\"tab1\">\n    <Tabs.List aria-label=\"tabs example\">\n      <Tabs.Trigger value=\"tab1\">One</Tabs.Trigger>\n      <Tabs.Trigger value=\"tab2\">Two</Tabs.Trigger>\n      <Tabs.Trigger value=\"tab3\">Three</Tabs.Trigger>\n    </Tabs.List>\n    <Tabs.Content value=\"tab1\">Tab one content</Tabs.Content>\n    <Tabs.Content value=\"tab2\">Tab two content</Tabs.Content>\n    <Tabs.Content value=\"tab3\">Tab three content</Tabs.Content>\n  </Tabs.Root>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Tabs` (slug `tabs`) from https://www.radix-ui.com/primitives/docs/components/tabs. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/tabs. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-tooltip",
+      "libraryId": "radix-ui",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "tooltip",
+        "radix tooltip",
+        "radix-ui Tooltip"
+      ],
+      "summary": "Accessible tooltip.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { Tooltip } from \"radix-ui\";\n\nexport default () => (\n  <Tooltip.Provider>\n    <Tooltip.Root>\n      <Tooltip.Trigger>Hover</Tooltip.Trigger>\n      <Tooltip.Portal>\n        <Tooltip.Content>\n          Add to library\n          <Tooltip.Arrow />\n        </Tooltip.Content>\n      </Tooltip.Portal>\n    </Tooltip.Root>\n  </Tooltip.Provider>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Tooltip` (slug `tooltip`) from https://www.radix-ui.com/primitives/docs/components/tooltip. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/tooltip. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-slider",
+      "libraryId": "radix-ui",
+      "slug": "slider",
+      "name": "Slider",
+      "aliases": [
+        "slider",
+        "radix slider",
+        "radix-ui Slider"
+      ],
+      "summary": "Accessible slider.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/slider",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { Slider } from \"radix-ui\";\n\nexport default () => (\n  <Slider.Root defaultValue={[50]} max={100} step={1}>\n    <Slider.Track>\n      <Slider.Range />\n    </Slider.Track>\n    <Slider.Thumb />\n  </Slider.Root>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Slider` (slug `slider`) from https://www.radix-ui.com/primitives/docs/components/slider. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/slider. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-toast",
+      "libraryId": "radix-ui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "toast",
+        "radix toast",
+        "radix-ui Toast"
+      ],
+      "summary": "Accessible toast notification.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport * as React from \"react\";\nimport { Toast } from \"radix-ui\";\n\nexport default () => {\n  const [open, setOpen] = React.useState(false);\n  return (\n    <Toast.Provider>\n      <button onClick={() => setOpen(true)}>Notify</button>\n      <Toast.Root open={open} onOpenChange={setOpen}>\n        <Toast.Title>Scheduled</Toast.Title>\n        <Toast.Description>Meeting in 5 minutes.</Toast.Description>\n        <Toast.Close>Dismiss</Toast.Close>\n      </Toast.Root>\n      <Toast.Viewport />\n    </Toast.Provider>\n  );\n};",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Toast` (slug `toast`) from https://www.radix-ui.com/primitives/docs/components/toast. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/toast. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    },
+    {
+      "id": "radix-ui-progress",
+      "libraryId": "radix-ui",
+      "slug": "progress",
+      "name": "Progress",
+      "aliases": [
+        "progress",
+        "radix progress",
+        "radix-ui Progress"
+      ],
+      "summary": "Accessible progress bar.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "radix-ui",
+        "iframeSrc": "https://www.radix-ui.com/primitives/docs/components/progress",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT primitives (WorkOS). Style yourself. Docs page hosts live interactive demo + copyable anatomy/examples. Unified `radix-ui` package."
+      },
+      "copyCode": "npm install radix-ui@latest\n\nimport { Progress } from \"radix-ui\";\n\nexport default () => (\n  <Progress.Root value={66}>\n    <Progress.Indicator style={{ transform: \"translateX(-34%)\" }} />\n  </Progress.Root>\n);",
+      "copyPrompt": {
+        "text": "Use Radix UI free MIT React primitive `Progress` (slug `progress`) from https://www.radix-ui.com/primitives/docs/components/progress. Install with `npm install radix-ui@latest`. Import from `radix-ui` (or `radix-ui/{slug}` subpath). Headless \u2014 bring your own styles. Home: https://www.radix-ui.com. Docs: https://www.radix-ui.com/primitives/docs/components/progress. Repo: https://github.com/radix-ui/primitives. License: MIT (https://raw.githubusercontent.com/radix-ui/primitives/main/LICENSE; Copyright (c) 2022 WorkOS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install radix-ui@latest",
+        "packages": [
+          "radix-ui"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "id": "layouts",
+  "name": "Layouts",
+  "aliases": [
+    "uselayouts",
+    "use-layouts",
+    "uselayouts.com",
+    "iurvish/uselayouts"
+  ],
+  "summary": "Free MIT open-source animated React UI layouts and micro-interactions.",
+  "homeUrl": "https://uselayouts.com",
+  "docsUrl": "https://uselayouts.com/docs",
+  "repoUrl": "https://github.com/iurvish/uselayouts",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @uselayouts/<component>",
+    "registryUrl": "https://uselayouts.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://uselayouts.com/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "motion"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 64 registry items — not a full inventory.",
+    "Import paths after CLI follow project aliases; registry example files live under registry/default/example/{slug}.tsx.",
+    "Some comps need @hugeicons/react / lucide-react / framer-motion vs motion peers.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:25:00-04:00",
+  "components": [
+    {
+      "id": "layouts-3d-book",
+      "libraryId": "layouts",
+      "slug": "3d-book",
+      "name": "3D Book",
+      "aliases": [
+        "interactive book",
+        "page flip book"
+      ],
+      "summary": "Interactive 3D book with page-flip animations.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "card"
+      ],
+      "effectType": [
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/3d-book",
+        "iframeSrc": "https://uselayouts.com/docs/components/3d-book",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/3d-book\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/3d-book.tsx).\n// Primary export from registry source: InteractiveBook\nimport { InteractiveBook } from \"@/components/3d-book\"\n\n<InteractiveBook />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `3D Book` (slug `3d-book`) from https://uselayouts.com/docs/components/3d-book. Install with `npx shadcn@latest add @uselayouts/3d-book` (or `npx shadcn@latest add https://uselayouts.com/r/3d-book.json`). Registry item: https://uselayouts.com/r/3d-book.json. Requires React + TypeScript + Tailwind CSS; peers: motion. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/3d-book",
+        "registryUrl": "https://uselayouts.com/r/3d-book.json",
+        "registryItem": "@uselayouts/3d-book"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-tactile-button",
+      "libraryId": "layouts",
+      "slug": "tactile-button",
+      "name": "Tactile Button",
+      "aliases": [
+        "liquid glass button",
+        "rocker button"
+      ],
+      "summary": "Liquid-glass rocker button that tilts into its well when pressed.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "liquid-glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/tactile-button",
+        "iframeSrc": "https://uselayouts.com/docs/components/tactile-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/tactile-button\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/tactile-button.tsx).\n// Primary export from registry source: TactileButton\nimport { TactileButton } from \"@/components/tactile-button\"\n\n<TactileButton />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Tactile Button` (slug `tactile-button`) from https://uselayouts.com/docs/components/tactile-button. Install with `npx shadcn@latest add @uselayouts/tactile-button` (or `npx shadcn@latest add https://uselayouts.com/r/tactile-button.json`). Registry item: https://uselayouts.com/r/tactile-button.json. Requires React + TypeScript + Tailwind CSS; peers: motion. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/tactile-button",
+        "registryUrl": "https://uselayouts.com/r/tactile-button.json",
+        "registryItem": "@uselayouts/tactile-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-gooey-navbar",
+      "libraryId": "layouts",
+      "slug": "gooey-navbar",
+      "name": "Gooey Navbar",
+      "aliases": [
+        "liquid nav",
+        "gooey pill nav"
+      ],
+      "summary": "Pill nav that melts into its neighbor on hover with liquid bridges.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [
+        "gooey",
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/gooey-navbar",
+        "iframeSrc": "https://uselayouts.com/docs/components/gooey-navbar",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/gooey-navbar\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/gooey-navbar.tsx).\n// Primary export from registry source: GooeyNavbar\nimport { GooeyNavbar } from \"@/components/gooey-navbar\"\n\n<GooeyNavbar />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Gooey Navbar` (slug `gooey-navbar`) from https://uselayouts.com/docs/components/gooey-navbar. Install with `npx shadcn@latest add @uselayouts/gooey-navbar` (or `npx shadcn@latest add https://uselayouts.com/r/gooey-navbar.json`). Registry item: https://uselayouts.com/r/gooey-navbar.json. Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/gooey-navbar",
+        "registryUrl": "https://uselayouts.com/r/gooey-navbar.json",
+        "registryItem": "@uselayouts/gooey-navbar"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-bento-card",
+      "libraryId": "layouts",
+      "slug": "bento-card",
+      "name": "Bento Card",
+      "aliases": [
+        "glass bento tile",
+        "dashboard bento card"
+      ],
+      "summary": "Glass bento tile with tabs that swap dashboard previews.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "bento",
+        "card"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/bento-card",
+        "iframeSrc": "https://uselayouts.com/docs/components/bento-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion + @hugeicons/react"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/bento-card\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/bento-card.tsx).\n// Primary export from registry source: BentoCard\nimport { BentoCard } from \"@/components/bento-card\"\n\n<BentoCard />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Bento Card` (slug `bento-card`) from https://uselayouts.com/docs/components/bento-card. Install with `npx shadcn@latest add @uselayouts/bento-card` (or `npx shadcn@latest add https://uselayouts.com/r/bento-card.json`). Registry item: https://uselayouts.com/r/bento-card.json. Requires React + TypeScript + Tailwind CSS; peers: motion + @hugeicons/react. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/bento-card",
+        "registryUrl": "https://uselayouts.com/r/bento-card.json",
+        "registryItem": "@uselayouts/bento-card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-holographic-referral-card",
+      "libraryId": "layouts",
+      "slug": "holographic-referral-card",
+      "name": "Holographic Referral Card",
+      "aliases": [
+        "holographic card",
+        "invite card tilt"
+      ],
+      "summary": "Dark invite card that tilts in 3D with a holographic glow follow.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "3d",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/holographic-referral-card",
+        "iframeSrc": "https://uselayouts.com/docs/components/holographic-referral-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/holographic-referral-card\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/holographic-referral-card.tsx).\n// Primary export from registry source: HolographicReferralCard\nimport { HolographicReferralCard } from \"@/components/holographic-referral-card\"\n\n<HolographicReferralCard />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Holographic Referral Card` (slug `holographic-referral-card`) from https://uselayouts.com/docs/components/holographic-referral-card. Install with `npx shadcn@latest add @uselayouts/holographic-referral-card` (or `npx shadcn@latest add https://uselayouts.com/r/holographic-referral-card.json`). Registry item: https://uselayouts.com/r/holographic-referral-card.json. Requires React + TypeScript + Tailwind CSS; peers: motion. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/holographic-referral-card",
+        "registryUrl": "https://uselayouts.com/r/holographic-referral-card.json",
+        "registryItem": "@uselayouts/holographic-referral-card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-perspective-text-scroll",
+      "libraryId": "layouts",
+      "slug": "perspective-text-scroll",
+      "name": "Perspective Text Scroll",
+      "aliases": [
+        "3d text scroll",
+        "perspective scroll text"
+      ],
+      "summary": "Perspective text that responds to scroll depth.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "scroll",
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/perspective-text-scroll",
+        "iframeSrc": "https://uselayouts.com/docs/components/perspective-text-scroll",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/perspective-text-scroll\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/perspective-text-scroll.tsx).\n// Primary export from registry source: PerspectiveText\nimport { PerspectiveText } from \"@/components/perspective-text-scroll\"\n\n<PerspectiveText />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Perspective Text Scroll` (slug `perspective-text-scroll`) from https://uselayouts.com/docs/components/perspective-text-scroll. Install with `npx shadcn@latest add @uselayouts/perspective-text-scroll` (or `npx shadcn@latest add https://uselayouts.com/r/perspective-text-scroll.json`). Registry item: https://uselayouts.com/r/perspective-text-scroll.json. Requires React + TypeScript + Tailwind CSS; peers: motion. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/perspective-text-scroll",
+        "registryUrl": "https://uselayouts.com/r/perspective-text-scroll.json",
+        "registryItem": "@uselayouts/perspective-text-scroll"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-pop-tilt-cards",
+      "libraryId": "layouts",
+      "slug": "pop-tilt-cards",
+      "name": "Pop Tilt Cards",
+      "aliases": [
+        "fanned cards",
+        "pop tilt deck"
+      ],
+      "summary": "Fanned pastel deck — hover one card and neighbors tilt away.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/pop-tilt-cards",
+        "iframeSrc": "https://uselayouts.com/docs/components/pop-tilt-cards",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/pop-tilt-cards\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/pop-tilt-cards.tsx).\n// Primary export from registry source: PopTiltCards\nimport { PopTiltCards } from \"@/components/pop-tilt-cards\"\n\n<PopTiltCards />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Pop Tilt Cards` (slug `pop-tilt-cards`) from https://uselayouts.com/docs/components/pop-tilt-cards. Install with `npx shadcn@latest add @uselayouts/pop-tilt-cards` (or `npx shadcn@latest add https://uselayouts.com/r/pop-tilt-cards.json`). Registry item: https://uselayouts.com/r/pop-tilt-cards.json. Requires React + TypeScript + Tailwind CSS; peers: motion. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/pop-tilt-cards",
+        "registryUrl": "https://uselayouts.com/r/pop-tilt-cards.json",
+        "registryItem": "@uselayouts/pop-tilt-cards"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-liquid-index",
+      "libraryId": "layouts",
+      "slug": "liquid-index",
+      "name": "Liquid Index",
+      "aliases": [
+        "webgl liquid index",
+        "liquid gradient list"
+      ],
+      "summary": "Feature list whose hover badge is a WebGL liquid gradient.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "layout",
+        "menu"
+      ],
+      "effectType": [
+        "liquid-glass",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/liquid-index",
+        "iframeSrc": "https://uselayouts.com/docs/components/liquid-index",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/liquid-index\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/liquid-index.tsx).\n// Primary export from registry source: LiquidIndex\nimport { LiquidIndex } from \"@/components/liquid-index\"\n\n<LiquidIndex />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Liquid Index` (slug `liquid-index`) from https://uselayouts.com/docs/components/liquid-index. Install with `npx shadcn@latest add @uselayouts/liquid-index` (or `npx shadcn@latest add https://uselayouts.com/r/liquid-index.json`). Registry item: https://uselayouts.com/r/liquid-index.json. Requires React + TypeScript + Tailwind CSS; peers: motion. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/liquid-index",
+        "registryUrl": "https://uselayouts.com/r/liquid-index.json",
+        "registryItem": "@uselayouts/liquid-index"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-magnified-bento",
+      "libraryId": "layouts",
+      "slug": "magnified-bento",
+      "name": "Magnified Bento",
+      "aliases": [
+        "lens bento",
+        "magnifying bento"
+      ],
+      "summary": "Bento tile of skill chips with a draggable glass magnifying lens.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "bento"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/magnified-bento",
+        "iframeSrc": "https://uselayouts.com/docs/components/magnified-bento",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion + @hugeicons/react"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/magnified-bento\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/magnified-bento.tsx).\n// Primary export from registry source: MagnifiedBento\nimport { MagnifiedBento } from \"@/components/magnified-bento\"\n\n<MagnifiedBento />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Magnified Bento` (slug `magnified-bento`) from https://uselayouts.com/docs/components/magnified-bento. Install with `npx shadcn@latest add @uselayouts/magnified-bento` (or `npx shadcn@latest add https://uselayouts.com/r/magnified-bento.json`). Registry item: https://uselayouts.com/r/magnified-bento.json. Requires React + TypeScript + Tailwind CSS; peers: motion + @hugeicons/react. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/magnified-bento",
+        "registryUrl": "https://uselayouts.com/r/magnified-bento.json",
+        "registryItem": "@uselayouts/magnified-bento"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-scroll-split-cards",
+      "libraryId": "layouts",
+      "slug": "scroll-split-cards",
+      "name": "Scroll Split Cards",
+      "aliases": [
+        "scroll split panels",
+        "photo split cards"
+      ],
+      "summary": "Photograph that splits into three panels on scroll, then flips to copy.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "section"
+      ],
+      "effectType": [
+        "scroll",
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/scroll-split-cards",
+        "iframeSrc": "https://uselayouts.com/docs/components/scroll-split-cards",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion/framer-motion"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/scroll-split-cards\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/scroll-split-cards.tsx).\n// Primary export from registry source: ScrollSplitCards\nimport { ScrollSplitCards } from \"@/components/scroll-split-cards\"\n\n<ScrollSplitCards />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Scroll Split Cards` (slug `scroll-split-cards`) from https://uselayouts.com/docs/components/scroll-split-cards. Install with `npx shadcn@latest add @uselayouts/scroll-split-cards` (or `npx shadcn@latest add https://uselayouts.com/r/scroll-split-cards.json`). Registry item: https://uselayouts.com/r/scroll-split-cards.json. Requires React + TypeScript + Tailwind CSS; peers: motion/framer-motion. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/scroll-split-cards",
+        "registryUrl": "https://uselayouts.com/r/scroll-split-cards.json",
+        "registryItem": "@uselayouts/scroll-split-cards"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-wheel-carousel",
+      "libraryId": "layouts",
+      "slug": "wheel-carousel",
+      "name": "Wheel Carousel",
+      "aliases": [
+        "ferris wheel carousel",
+        "wheel picker"
+      ],
+      "summary": "Ferris-wheel of names beside a large photo — drag, scroll, or arrow through.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/wheel-carousel",
+        "iframeSrc": "https://uselayouts.com/docs/components/wheel-carousel",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion + lucide-react"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/wheel-carousel\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/wheel-carousel.tsx).\n// Primary export from registry source: WheelCarousel\nimport { WheelCarousel } from \"@/components/wheel-carousel\"\n\n<WheelCarousel />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Wheel Carousel` (slug `wheel-carousel`) from https://uselayouts.com/docs/components/wheel-carousel. Install with `npx shadcn@latest add @uselayouts/wheel-carousel` (or `npx shadcn@latest add https://uselayouts.com/r/wheel-carousel.json`). Registry item: https://uselayouts.com/r/wheel-carousel.json. Requires React + TypeScript + Tailwind CSS; peers: motion + lucide-react. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/wheel-carousel",
+        "registryUrl": "https://uselayouts.com/r/wheel-carousel.json",
+        "registryItem": "@uselayouts/wheel-carousel"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "layouts-morphing-input",
+      "libraryId": "layouts",
+      "slug": "morphing-input",
+      "name": "Morphing Input",
+      "aliases": [
+        "morphing search input",
+        "flip placeholder input"
+      ],
+      "summary": "Search field with flipping placeholder letters and morphing mode icon.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@uselayouts/morphing-input",
+        "iframeSrc": "https://uselayouts.com/docs/components/morphing-input",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion + @hugeicons/react"
+      },
+      "copyCode": "npx shadcn@latest add @uselayouts/morphing-input\n\n// Import path after CLI follows project aliases (registry example: registry/default/example/morphing-input.tsx).\n// Primary export from registry source: AnimatedPlaceholder\nimport { AnimatedPlaceholder } from \"@/components/morphing-input\"\n\n<AnimatedPlaceholder />",
+      "copyPrompt": {
+        "text": "Use useLayouts free component `Morphing Input` (slug `morphing-input`) from https://uselayouts.com/docs/components/morphing-input. Install with `npx shadcn@latest add @uselayouts/morphing-input` (or `npx shadcn@latest add https://uselayouts.com/r/morphing-input.json`). Registry item: https://uselayouts.com/r/morphing-input.json. Requires React + TypeScript + Tailwind CSS; peers: motion + @hugeicons/react. License: MIT (https://raw.githubusercontent.com/iurvish/uselayouts/main/LICENSE). Pricing free — open-source animated layouts.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uselayouts/morphing-input",
+        "registryUrl": "https://uselayouts.com/r/morphing-input.json",
+        "registryItem": "@uselayouts/morphing-input"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

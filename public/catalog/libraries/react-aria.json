@@ -1,0 +1,619 @@
+{
+  "id": "react-aria",
+  "name": "React Aria",
+  "aliases": [
+    "react-aria",
+    "React Aria",
+    "React Aria Components",
+    "react-aria-components",
+    "RAC",
+    "Adobe React Aria"
+  ],
+  "summary": "Adobe\u2019s accessible unstyled React hooks and components layer with interactive docs demos.",
+  "homeUrl": "https://react-spectrum.adobe.com/react-aria/",
+  "docsUrl": "https://react-aria.adobe.com/getting-started",
+  "repoUrl": "https://github.com/adobe/react-spectrum",
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install react-aria-components",
+    "packages": [
+      "react-aria-components"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://react-aria.adobe.com/{Component}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Headless/unstyled \u2014 demos require consumer CSS; docs examples include styling starters.",
+    "Pilot includes 12 of 50+ React Aria Components \u2014 not full React Spectrum / Spectrum design system wholesale.",
+    "Kept under P2 headless KEEP rule (public docs \u2192 interactive demos + copyable install/code \u22658).",
+    "Canonical docs now also at react-aria.adobe.com; home still react-spectrum.adobe.com/react-aria/.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:04:00-04:00",
+  "components": [
+    {
+      "id": "react-aria-button",
+      "libraryId": "react-aria",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "button",
+        "react-aria Button",
+        "react aria Button",
+        "RAC Button"
+      ],
+      "summary": "Accessible pressable button with mouse, touch, and keyboard support.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/Button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { Button } from \"react-aria-components\";\n\nexport default () => (\n  <Button onPress={() => alert(\"Pressed\")}>\n    Press me\n  </Button>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `Button` (slug `button`) from https://react-aria.adobe.com/Button. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-checkbox",
+      "libraryId": "react-aria",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "checkbox",
+        "react-aria Checkbox",
+        "react aria Checkbox",
+        "RAC Checkbox"
+      ],
+      "summary": "Accessible checkbox with indeterminate and validation support.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/Checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { Checkbox } from \"react-aria-components\";\n\nexport default () => (\n  <Checkbox>Subscribe</Checkbox>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `Checkbox` (slug `checkbox`) from https://react-aria.adobe.com/Checkbox. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-switch",
+      "libraryId": "react-aria",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "switch",
+        "switch",
+        "react-aria Switch",
+        "react aria Switch",
+        "RAC Switch"
+      ],
+      "summary": "Accessible switch toggle control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/Switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { Switch } from \"react-aria-components\";\n\nexport default () => (\n  <Switch>Low power mode</Switch>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `Switch` (slug `switch`) from https://react-aria.adobe.com/Switch. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-select",
+      "libraryId": "react-aria",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "select",
+        "react-aria Select",
+        "react aria Select",
+        "RAC Select"
+      ],
+      "summary": "Accessible select with popover listbox.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/Select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { Button, Label, ListBox, ListBoxItem, Popover, Select, SelectValue } from \"react-aria-components\";\n\nexport default () => (\n  <Select>\n    <Label>Favorite animal</Label>\n    <Button><SelectValue /></Button>\n    <Popover>\n      <ListBox>\n        <ListBoxItem id=\"cat\">Cat</ListBoxItem>\n        <ListBoxItem id=\"dog\">Dog</ListBoxItem>\n      </ListBox>\n    </Popover>\n  </Select>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `Select` (slug `select`) from https://react-aria.adobe.com/Select. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-combo-box",
+      "libraryId": "react-aria",
+      "slug": "combo-box",
+      "name": "ComboBox",
+      "aliases": [
+        "combo-box",
+        "combobox",
+        "react-aria ComboBox",
+        "react aria ComboBox",
+        "RAC ComboBox"
+      ],
+      "summary": "Accessible combobox with filterable listbox.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/ComboBox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { ComboBox, Button, Input, Label, ListBox, ListBoxItem, Popover } from \"react-aria-components\";\n\nexport default () => (\n  <ComboBox>\n    <Label>Favorite Animal</Label>\n    <div>\n      <Input />\n      <Button>\u25bc</Button>\n    </div>\n    <Popover>\n      <ListBox>\n        <ListBoxItem id=\"cat\">Cat</ListBoxItem>\n        <ListBoxItem id=\"dog\">Dog</ListBoxItem>\n      </ListBox>\n    </Popover>\n  </ComboBox>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `ComboBox` (slug `combo-box`) from https://react-aria.adobe.com/ComboBox. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-tabs",
+      "libraryId": "react-aria",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "tabs",
+        "react-aria Tabs",
+        "react aria Tabs",
+        "RAC Tabs"
+      ],
+      "summary": "Accessible tabs with keyboard navigation.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/Tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { Tabs, TabList, Tab, TabPanel } from \"react-aria-components\";\n\nexport default () => (\n  <Tabs>\n    <TabList aria-label=\"History\">\n      <Tab id=\"home\">Home</Tab>\n      <Tab id=\"profile\">Profile</Tab>\n    </TabList>\n    <TabPanel id=\"home\">Home content</TabPanel>\n    <TabPanel id=\"profile\">Profile content</TabPanel>\n  </Tabs>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `Tabs` (slug `tabs`) from https://react-aria.adobe.com/Tabs. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-slider",
+      "libraryId": "react-aria",
+      "slug": "slider",
+      "name": "Slider",
+      "aliases": [
+        "slider",
+        "slider",
+        "react-aria Slider",
+        "react aria Slider",
+        "RAC Slider"
+      ],
+      "summary": "Accessible slider for numeric ranges.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/Slider",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { Slider, Label, SliderOutput, SliderTrack, SliderThumb } from \"react-aria-components\";\n\nexport default () => (\n  <Slider defaultValue={30}>\n    <Label>Opacity</Label>\n    <SliderOutput />\n    <SliderTrack>\n      <SliderThumb />\n    </SliderTrack>\n  </Slider>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `Slider` (slug `slider`) from https://react-aria.adobe.com/Slider. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-menu",
+      "libraryId": "react-aria",
+      "slug": "menu",
+      "name": "Menu",
+      "aliases": [
+        "menu",
+        "menu",
+        "react-aria Menu",
+        "react aria Menu",
+        "RAC Menu"
+      ],
+      "summary": "Accessible menu of actions or options.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/Menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { MenuTrigger, Button, Popover, Menu, MenuItem } from \"react-aria-components\";\n\nexport default () => (\n  <MenuTrigger>\n    <Button aria-label=\"Menu\">\u2630</Button>\n    <Popover>\n      <Menu onAction={(id) => alert(id)}>\n        <MenuItem id=\"new\">New\u2026</MenuItem>\n        <MenuItem id=\"open\">Open\u2026</MenuItem>\n      </Menu>\n    </Popover>\n  </MenuTrigger>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `Menu` (slug `menu`) from https://react-aria.adobe.com/Menu. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-popover",
+      "libraryId": "react-aria",
+      "slug": "popover",
+      "name": "Popover",
+      "aliases": [
+        "popover",
+        "popover",
+        "react-aria Popover",
+        "react aria Popover",
+        "RAC Popover"
+      ],
+      "summary": "Overlay positioned relative to a trigger.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/Popover",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { DialogTrigger, Button, Popover, Dialog, Heading } from \"react-aria-components\";\n\nexport default () => (\n  <DialogTrigger>\n    <Button>Open popover</Button>\n    <Popover>\n      <Dialog>\n        <Heading slot=\"title\">Help</Heading>\n        <p>Popover content.</p>\n      </Dialog>\n    </Popover>\n  </DialogTrigger>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `Popover` (slug `popover`) from https://react-aria.adobe.com/Popover. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-tooltip",
+      "libraryId": "react-aria",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "tooltip",
+        "tooltip",
+        "react-aria Tooltip",
+        "react aria Tooltip",
+        "RAC Tooltip"
+      ],
+      "summary": "Accessible tooltip for contextual help.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/Tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { TooltipTrigger, Button, Tooltip } from \"react-aria-components\";\n\nexport default () => (\n  <TooltipTrigger>\n    <Button>\ud83d\udcbe</Button>\n    <Tooltip>Save</Tooltip>\n  </TooltipTrigger>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `Tooltip` (slug `tooltip`) from https://react-aria.adobe.com/Tooltip. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-modal",
+      "libraryId": "react-aria",
+      "slug": "modal",
+      "name": "Modal",
+      "aliases": [
+        "modal",
+        "modal",
+        "react-aria Modal",
+        "react aria Modal",
+        "RAC Modal"
+      ],
+      "summary": "Modal overlay that blocks interaction outside it.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/Modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { DialogTrigger, Button, Modal, Dialog, Heading } from \"react-aria-components\";\n\nexport default () => (\n  <DialogTrigger>\n    <Button>Open modal</Button>\n    <Modal>\n      <Dialog>\n        <Heading slot=\"title\">Subscribe</Heading>\n        <p>Modal dialog content.</p>\n        <Button slot=\"close\">Close</Button>\n      </Dialog>\n    </Modal>\n  </DialogTrigger>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `Modal` (slug `modal`) from https://react-aria.adobe.com/Modal. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    },
+    {
+      "id": "react-aria-text-field",
+      "libraryId": "react-aria",
+      "slug": "text-field",
+      "name": "TextField",
+      "aliases": [
+        "text-field",
+        "textfield",
+        "react-aria TextField",
+        "react aria TextField",
+        "RAC TextField"
+      ],
+      "summary": "Accessible text field with label and description.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "react-aria",
+        "iframeSrc": "https://react-aria.adobe.com/TextField",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless Apache-2.0 React Aria Components (Adobe). Style yourself. Docs page hosts live interactive demos + copyable examples. Package `react-aria-components` only \u2014 not full React Spectrum."
+      },
+      "copyCode": "npm install react-aria-components\n\nimport { TextField, Label, Input, TextArea, FieldError } from \"react-aria-components\";\n\nexport default () => (\n  <TextField>\n    <Label>Name</Label>\n    <Input />\n    <TextArea />\n  </TextField>\n);",
+      "copyPrompt": {
+        "text": "Use React Aria free Apache-2.0 React component `TextField` (slug `text-field`) from https://react-aria.adobe.com/TextField. Install with `npm install react-aria-components`. Import from `react-aria-components`. Headless \u2014 bring your own styles. Home: https://react-spectrum.adobe.com/react-aria/. Docs: https://react-aria.adobe.com/. Repo: https://github.com/adobe/react-spectrum. License: Apache-2.0 (https://raw.githubusercontent.com/adobe/react-spectrum/main/LICENSE; Copyright 2019 Adobe). Pricing free. Do not ingest full React Spectrum design system \u2014 React Aria hooks/components layer only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install react-aria-components",
+        "packages": [
+          "react-aria-components"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "id": "velora-ui",
+  "name": "Velora UI",
+  "aliases": [
+    "Velora",
+    "velora.colorlib.com",
+    "ColorlibHQ/velora-ui"
+  ],
+  "summary": "Free MIT animated shadcn/ui components and landing templates from Colorlib.",
+  "homeUrl": "https://velora.colorlib.com",
+  "docsUrl": "https://velora.colorlib.com/components",
+  "repoUrl": "https://github.com/ColorlibHQ/velora-ui",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://velora.colorlib.com/r/{name}.json",
+    "registryUrl": "https://velora.colorlib.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://velora.colorlib.com/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "motion"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of ~100 free components — not a full inventory (blocks/templates not ingested as comps).",
+    "Pricing freemium: Free ($0 forever) covers components + complete SaaS template under MIT; Pro $99 lifetime (niche templates / Figma / private registry) excluded — Coming soon on pricing page.",
+    "Optional @velora namespace registration documented on get-started; URL install works without it.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:35:00-04:00",
+  "components": [
+    {
+      "id": "velora-ui-aurora-background",
+      "libraryId": "velora-ui",
+      "slug": "aurora-background",
+      "name": "Aurora Background",
+      "aliases": [
+        "aurora bg",
+        "aurora gradient background"
+      ],
+      "summary": "Aurora gradient background for hero and section backdrops.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "aurora",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/aurora-background",
+        "iframeSrc": "https://velora.colorlib.com/components/aurora-background",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/aurora-background.json\n\nimport { AuroraBackground } from \"@/components/velora/aurora-background\"\n\n<AuroraBackground />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Aurora Background` (slug `aurora-background`) from https://velora.colorlib.com/components/aurora-background. Install with `npx shadcn@latest add https://velora.colorlib.com/r/aurora-background.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/aurora-background`. Imports land under `@/components/velora/aurora-background`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/aurora-background.json",
+        "registryUrl": "https://velora.colorlib.com/r/aurora-background.json",
+        "registryItem": "aurora-background"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-border-beam",
+      "libraryId": "velora-ui",
+      "slug": "border-beam",
+      "name": "Border Beam",
+      "aliases": [
+        "border beam",
+        "animated border beam"
+      ],
+      "summary": "Animated beam that travels around any card or CTA border.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "beam",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/border-beam",
+        "iframeSrc": "https://velora.colorlib.com/components/border-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/border-beam.json\n\nimport { BorderBeam } from \"@/components/velora/border-beam\"\n\n<BorderBeam />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Border Beam` (slug `border-beam`) from https://velora.colorlib.com/components/border-beam. Install with `npx shadcn@latest add https://velora.colorlib.com/r/border-beam.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/border-beam`. Imports land under `@/components/velora/border-beam`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/border-beam.json",
+        "registryUrl": "https://velora.colorlib.com/r/border-beam.json",
+        "registryItem": "border-beam"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-marquee",
+      "libraryId": "velora-ui",
+      "slug": "marquee",
+      "name": "Marquee",
+      "aliases": [
+        "logo marquee",
+        "infinite marquee"
+      ],
+      "summary": "Infinite scrolling marquee with pause-on-hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "marquee"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/marquee",
+        "iframeSrc": "https://velora.colorlib.com/components/marquee",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/marquee.json\n\nimport { Marquee } from \"@/components/velora/marquee\"\n\n<Marquee />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Marquee` (slug `marquee`) from https://velora.colorlib.com/components/marquee. Install with `npx shadcn@latest add https://velora.colorlib.com/r/marquee.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/marquee`. Imports land under `@/components/velora/marquee`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/marquee.json",
+        "registryUrl": "https://velora.colorlib.com/r/marquee.json",
+        "registryItem": "marquee"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-meteors",
+      "libraryId": "velora-ui",
+      "slug": "meteors",
+      "name": "Meteors",
+      "aliases": [
+        "falling meteors",
+        "meteor streaks"
+      ],
+      "summary": "Subtle falling meteor streaks for dark sections.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/meteors",
+        "iframeSrc": "https://velora.colorlib.com/components/meteors",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/meteors.json\n\nimport { Meteors } from \"@/components/velora/meteors\"\n\n<Meteors />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Meteors` (slug `meteors`) from https://velora.colorlib.com/components/meteors. Install with `npx shadcn@latest add https://velora.colorlib.com/r/meteors.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/meteors`. Imports land under `@/components/velora/meteors`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/meteors.json",
+        "registryUrl": "https://velora.colorlib.com/r/meteors.json",
+        "registryItem": "meteors"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-particles",
+      "libraryId": "velora-ui",
+      "slug": "particles",
+      "name": "Particles",
+      "aliases": [
+        "particle field",
+        "particle background"
+      ],
+      "summary": "Particle field background effect.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/particles",
+        "iframeSrc": "https://velora.colorlib.com/components/particles",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/particles.json\n\nimport { Particles } from \"@/components/velora/particles\"\n\n<Particles />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Particles` (slug `particles`) from https://velora.colorlib.com/components/particles. Install with `npx shadcn@latest add https://velora.colorlib.com/r/particles.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/particles`. Imports land under `@/components/velora/particles`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/particles.json",
+        "registryUrl": "https://velora.colorlib.com/r/particles.json",
+        "registryItem": "particles"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-shimmer-button",
+      "libraryId": "velora-ui",
+      "slug": "shimmer-button",
+      "name": "Shimmer Button",
+      "aliases": [
+        "shimmer cta",
+        "shine button"
+      ],
+      "summary": "Button with a traveling shimmer highlight.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/shimmer-button",
+        "iframeSrc": "https://velora.colorlib.com/components/shimmer-button",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/shimmer-button.json\n\nimport { ShimmerButton } from \"@/components/velora/shimmer-button\"\n\n<ShimmerButton />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Shimmer Button` (slug `shimmer-button`) from https://velora.colorlib.com/components/shimmer-button. Install with `npx shadcn@latest add https://velora.colorlib.com/r/shimmer-button.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/shimmer-button`. Imports land under `@/components/velora/shimmer-button`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/shimmer-button.json",
+        "registryUrl": "https://velora.colorlib.com/r/shimmer-button.json",
+        "registryItem": "shimmer-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-typewriter",
+      "libraryId": "velora-ui",
+      "slug": "typewriter",
+      "name": "Typewriter",
+      "aliases": [
+        "typewriter text",
+        "typing effect"
+      ],
+      "summary": "Typewriter text effect for headlines.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/typewriter",
+        "iframeSrc": "https://velora.colorlib.com/components/typewriter",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/typewriter.json\n\nimport { Typewriter } from \"@/components/velora/typewriter\"\n\n<Typewriter />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Typewriter` (slug `typewriter`) from https://velora.colorlib.com/components/typewriter. Install with `npx shadcn@latest add https://velora.colorlib.com/r/typewriter.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/typewriter`. Imports land under `@/components/velora/typewriter`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/typewriter.json",
+        "registryUrl": "https://velora.colorlib.com/r/typewriter.json",
+        "registryItem": "typewriter"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-bento-grid",
+      "libraryId": "velora-ui",
+      "slug": "bento-grid",
+      "name": "Bento Grid",
+      "aliases": [
+        "bento layout",
+        "feature bento"
+      ],
+      "summary": "Bento grid layout with BentoGrid and BentoCard exports.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "bento",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/bento-grid",
+        "iframeSrc": "https://velora.colorlib.com/components/bento-grid",
+        "aspectRatio": "16/9",
+        "peerNotes": "lucide-react"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/bento-grid.json\n\nimport { BentoGrid, BentoCard } from \"@/components/velora/bento-grid\"\n\n<BentoGrid><BentoCard name=\"Feature\" /></BentoGrid>",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Bento Grid` (slug `bento-grid`) from https://velora.colorlib.com/components/bento-grid. Install with `npx shadcn@latest add https://velora.colorlib.com/r/bento-grid.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/bento-grid`. Imports land under `@/components/velora/bento-grid`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/bento-grid.json",
+        "registryUrl": "https://velora.colorlib.com/r/bento-grid.json",
+        "registryItem": "bento-grid"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-animated-beam",
+      "libraryId": "velora-ui",
+      "slug": "animated-beam",
+      "name": "Animated Beam",
+      "aliases": [
+        "connection beam",
+        "svg beam"
+      ],
+      "summary": "Animated beam connecting two elements with measured paths.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "beam",
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/animated-beam",
+        "iframeSrc": "https://velora.colorlib.com/components/animated-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/animated-beam.json\n\nimport { AnimatedBeam } from \"@/components/velora/animated-beam\"\n\n<AnimatedBeam />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Animated Beam` (slug `animated-beam`) from https://velora.colorlib.com/components/animated-beam. Install with `npx shadcn@latest add https://velora.colorlib.com/r/animated-beam.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/animated-beam`. Imports land under `@/components/velora/animated-beam`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/animated-beam.json",
+        "registryUrl": "https://velora.colorlib.com/r/animated-beam.json",
+        "registryItem": "animated-beam"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-orbiting-circles",
+      "libraryId": "velora-ui",
+      "slug": "orbiting-circles",
+      "name": "Orbiting Circles",
+      "aliases": [
+        "orbit integrations",
+        "orbiting icons"
+      ],
+      "summary": "Multi-ring orbiting circles for ecosystem / integration showcases.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "orb"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/orbiting-circles",
+        "iframeSrc": "https://velora.colorlib.com/components/orbiting-circles",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/orbiting-circles.json\n\nimport { OrbitingCircles } from \"@/components/velora/orbiting-circles\"\n\n<OrbitingCircles />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Orbiting Circles` (slug `orbiting-circles`) from https://velora.colorlib.com/components/orbiting-circles. Install with `npx shadcn@latest add https://velora.colorlib.com/r/orbiting-circles.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/orbiting-circles`. Imports land under `@/components/velora/orbiting-circles`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/orbiting-circles.json",
+        "registryUrl": "https://velora.colorlib.com/r/orbiting-circles.json",
+        "registryItem": "orbiting-circles"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-text-shimmer",
+      "libraryId": "velora-ui",
+      "slug": "text-shimmer",
+      "name": "Text Shimmer",
+      "aliases": [
+        "shimmer text",
+        "shine text"
+      ],
+      "summary": "Text with a shimmering light sweep.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/text-shimmer",
+        "iframeSrc": "https://velora.colorlib.com/components/text-shimmer",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/text-shimmer.json\n\nimport { TextShimmer } from \"@/components/velora/text-shimmer\"\n\n<TextShimmer />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Text Shimmer` (slug `text-shimmer`) from https://velora.colorlib.com/components/text-shimmer. Install with `npx shadcn@latest add https://velora.colorlib.com/r/text-shimmer.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/text-shimmer`. Imports land under `@/components/velora/text-shimmer`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/text-shimmer.json",
+        "registryUrl": "https://velora.colorlib.com/r/text-shimmer.json",
+        "registryItem": "text-shimmer"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "velora-ui-wavy-background",
+      "libraryId": "velora-ui",
+      "slug": "wavy-background",
+      "name": "Wavy Background",
+      "aliases": [
+        "wave background",
+        "wavy hero bg"
+      ],
+      "summary": "Wavy animated background for heroes and sections.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@velora/wavy-background",
+        "iframeSrc": "https://velora.colorlib.com/components/wavy-background",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://velora.colorlib.com/r/wavy-background.json\n\nimport { WavyBackground } from \"@/components/velora/wavy-background\"\n\n<WavyBackground />",
+      "copyPrompt": {
+        "text": "Use Velora UI free MIT component `Wavy Background` (slug `wavy-background`) from https://velora.colorlib.com/components/wavy-background. Install with `npx shadcn@latest add https://velora.colorlib.com/r/wavy-background.json` or register `@velora=https://velora.colorlib.com/r/{name}.json` then `npx shadcn@latest add @velora/wavy-background`. Imports land under `@/components/velora/wavy-background`. Requires React + TypeScript + Tailwind (Next.js 16 / Tailwind 4 stack upstream); Motion peers as listed. License: MIT (https://raw.githubusercontent.com/ColorlibHQ/velora-ui/main/LICENSE). Pricing freemium — free tier includes components + SaaS template; Pro ($99 lifetime niche templates) excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://velora.colorlib.com/r/wavy-background.json",
+        "registryUrl": "https://velora.colorlib.com/r/wavy-background.json",
+        "registryItem": "wavy-background"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

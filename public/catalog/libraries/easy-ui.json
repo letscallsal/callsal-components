@@ -1,0 +1,615 @@
+{
+  "id": "easy-ui",
+  "name": "Easy UI",
+  "aliases": [
+    "easyui",
+    "easy-ui",
+    "Surajmaurya1/easyui",
+    "easyui.site"
+  ],
+  "summary": "Free MIT micro-animated React components via official shadcn GitHub Registry.",
+  "homeUrl": "https://www.easyui.site",
+  "docsUrl": "https://www.easyui.site/docs/introduction",
+  "repoUrl": "https://github.com/Surajmaurya1/easyui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add Surajmaurya1/easyui/<component>",
+    "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.easyui.site/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "framer-motion",
+      "tailwindcss"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 106 registry items in Surajmaurya1/easyui registry.json \u2014 not a full inventory.",
+    "Installed via shadcn GitHub Registry namespace Surajmaurya1/easyui/<slug>; live site has no /r/{slug}.json \u2014 catalog registryUrl uses GitHub public/source/{slug}.json (HTTP 200).",
+    "Site /components/pricing is a Pricing *component* demo (Free $0 / Pro $29 UI cards), not a library paywall \u2014 pricing catalogued as free.",
+    "Import path after CLI: @/components/ui/{slug} (README); source files use PascalCase under src/components/ui/.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet.",
+    "glitch-text: tagged text-scramble for matrix variant; other glitch modes have no dedicated EffectType enum."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:15:00-04:00",
+  "components": [
+    {
+      "id": "easy-ui-magnetic-button",
+      "libraryId": "easy-ui",
+      "slug": "magnetic-button",
+      "name": "Magnetic Button",
+      "aliases": [
+        "magnetic proximity button",
+        "cursor pull button"
+      ],
+      "summary": "Button with proximity-based physics that pulls toward the cursor on hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/magnetic-button",
+        "iframeSrc": "https://www.easyui.site/components/magnetic-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs framer-motion."
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/magnetic-button\n\nimport { MagneticButton } from \"@/components/ui/magnetic-button\"\n\n<MagneticButton />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Magnetic Button` (slug `magnetic-button`) from https://www.easyui.site/components/magnetic-button. Install with `npx shadcn@latest add Surajmaurya1/easyui/magnetic-button` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/magnetic-button.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs framer-motion.. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/magnetic-button",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/magnetic-button.json",
+        "registryItem": "Surajmaurya1/easyui/magnetic-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-glass-navbar",
+      "libraryId": "easy-ui",
+      "slug": "glass-navbar",
+      "name": "Glass Navbar",
+      "aliases": [
+        "glassmorphic navbar",
+        "frosted nav",
+        "spring nav pills"
+      ],
+      "summary": "Responsive glassmorphic navbar with spring navigation pills and mobile drawer.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/glass-navbar",
+        "iframeSrc": "https://www.easyui.site/components/glass-navbar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs framer-motion + lucide-react."
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/glass-navbar\n\nimport { GlassNavbar } from \"@/components/ui/glass-navbar\"\n\n<GlassNavbar />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Glass Navbar` (slug `glass-navbar`) from https://www.easyui.site/components/glass-navbar. Install with `npx shadcn@latest add Surajmaurya1/easyui/glass-navbar` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/glass-navbar.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs framer-motion + lucide-react.. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/glass-navbar",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/glass-navbar.json",
+        "registryItem": "Surajmaurya1/easyui/glass-navbar"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-gooey-menu",
+      "libraryId": "easy-ui",
+      "slug": "gooey-menu",
+      "name": "Gooey Menu",
+      "aliases": [
+        "liquid dropdown",
+        "metaball menu",
+        "gooey dropdown"
+      ],
+      "summary": "Tactile liquid dropdown with SVG metaball fusion filter and spring extrusion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [
+        "gooey"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/gooey-menu",
+        "iframeSrc": "https://www.easyui.site/components/gooey-menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs framer-motion."
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/gooey-menu\n\nimport { GooeyMenu } from \"@/components/ui/gooey-menu\"\n\n<GooeyMenu />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Gooey Menu` (slug `gooey-menu`) from https://www.easyui.site/components/gooey-menu. Install with `npx shadcn@latest add Surajmaurya1/easyui/gooey-menu` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/gooey-menu.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs framer-motion.. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/gooey-menu",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/gooey-menu.json",
+        "registryItem": "Surajmaurya1/easyui/gooey-menu"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-morphing-blob",
+      "libraryId": "easy-ui",
+      "slug": "morphing-blob",
+      "name": "Morphing Blob",
+      "aliases": [
+        "svg blob background",
+        "ambient blob",
+        "cursor blob"
+      ],
+      "summary": "Ambient SVG blob background that morphs with springs and subtly follows the cursor.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/morphing-blob",
+        "iframeSrc": "https://www.easyui.site/components/morphing-blob",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs framer-motion."
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/morphing-blob\n\nimport { MorphingBlob } from \"@/components/ui/morphing-blob\"\n\n<MorphingBlob />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Morphing Blob` (slug `morphing-blob`) from https://www.easyui.site/components/morphing-blob. Install with `npx shadcn@latest add Surajmaurya1/easyui/morphing-blob` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/morphing-blob.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs framer-motion.. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/morphing-blob",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/morphing-blob.json",
+        "registryItem": "Surajmaurya1/easyui/morphing-blob"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-dot-shader",
+      "libraryId": "easy-ui",
+      "slug": "dot-shader",
+      "name": "Dot Shader",
+      "aliases": [
+        "dot matrix shader",
+        "magnetic dots",
+        "gpu dots"
+      ],
+      "summary": "GPU-accelerated interactive dot-matrix background with magnetic cursor repulsion and glow.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "shader",
+        "particles",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/dot-shader",
+        "iframeSrc": "https://www.easyui.site/components/dot-shader",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/dot-shader\n\nimport { DotShader } from \"@/components/ui/dot-shader\"\n\n<DotShader />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Dot Shader` (slug `dot-shader`) from https://www.easyui.site/components/dot-shader. Install with `npx shadcn@latest add Surajmaurya1/easyui/dot-shader` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/dot-shader.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/dot-shader",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/dot-shader.json",
+        "registryItem": "Surajmaurya1/easyui/dot-shader"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-meteors",
+      "libraryId": "easy-ui",
+      "slug": "meteors",
+      "name": "Meteors",
+      "aliases": [
+        "meteor shower",
+        "shooting stars",
+        "celestial beams"
+      ],
+      "summary": "Animated meteor shower of diagonal glowing beams for cards, badges, and heroes.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "beam",
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/meteors",
+        "iframeSrc": "https://www.easyui.site/components/meteors",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/meteors\n\nimport { Meteors } from \"@/components/ui/meteors\"\n\n<Meteors />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Meteors` (slug `meteors`) from https://www.easyui.site/components/meteors. Install with `npx shadcn@latest add Surajmaurya1/easyui/meteors` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/meteors.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/meteors",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/meteors.json",
+        "registryItem": "Surajmaurya1/easyui/meteors"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-glitch-text",
+      "libraryId": "easy-ui",
+      "slug": "glitch-text",
+      "name": "Glitch Text",
+      "aliases": [
+        "chromatic glitch",
+        "vhs text",
+        "matrix scramble text"
+      ],
+      "summary": "Multi-modal glitch typography (RGB split, cyberpunk slice, VHS, matrix scramble, voltage).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/glitch-text",
+        "iframeSrc": "https://www.easyui.site/components/glitch-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs framer-motion. Matrix variant is text-scramble; other variants are glitch (no dedicated enum)."
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/glitch-text\n\nimport { GlitchText } from \"@/components/ui/glitch-text\"\n\n<GlitchText />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Glitch Text` (slug `glitch-text`) from https://www.easyui.site/components/glitch-text. Install with `npx shadcn@latest add Surajmaurya1/easyui/glitch-text` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/glitch-text.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs framer-motion. Matrix variant is text-scramble; other variants are glitch (no dedicated enum).. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/glitch-text",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/glitch-text.json",
+        "registryItem": "Surajmaurya1/easyui/glitch-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-reveal-card",
+      "libraryId": "easy-ui",
+      "slug": "reveal-card",
+      "name": "Reveal Card",
+      "aliases": [
+        "3d product card",
+        "glare card",
+        "tilt reveal card"
+      ],
+      "summary": "Product card with cursor-driven 3D perspective rotation, dynamic glare, and revealed content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/reveal-card",
+        "iframeSrc": "https://www.easyui.site/components/reveal-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs framer-motion."
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/reveal-card\n\nimport { RevealCard } from \"@/components/ui/reveal-card\"\n\n<RevealCard />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Reveal Card` (slug `reveal-card`) from https://www.easyui.site/components/reveal-card. Install with `npx shadcn@latest add Surajmaurya1/easyui/reveal-card` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/reveal-card.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs framer-motion.. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/reveal-card",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/reveal-card.json",
+        "registryItem": "Surajmaurya1/easyui/reveal-card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-liquid-toggle",
+      "libraryId": "easy-ui",
+      "slug": "liquid-toggle",
+      "name": "Liquid Toggle",
+      "aliases": [
+        "blob toggle",
+        "liquid switch",
+        "morph toggle"
+      ],
+      "summary": "Toggle whose internal shape deforms organically (stretch/settle) rather than simple translate.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "morph",
+        "gooey"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/liquid-toggle",
+        "iframeSrc": "https://www.easyui.site/components/liquid-toggle",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs framer-motion."
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/liquid-toggle\n\nimport { LiquidToggle } from \"@/components/ui/liquid-toggle\"\n\n<LiquidToggle />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Liquid Toggle` (slug `liquid-toggle`) from https://www.easyui.site/components/liquid-toggle. Install with `npx shadcn@latest add Surajmaurya1/easyui/liquid-toggle` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/liquid-toggle.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs framer-motion.. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/liquid-toggle",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/liquid-toggle.json",
+        "registryItem": "Surajmaurya1/easyui/liquid-toggle"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-morphing-dialog",
+      "libraryId": "easy-ui",
+      "slug": "morphing-dialog",
+      "name": "Morphing Dialog",
+      "aliases": [
+        "expandable card dialog",
+        "layout morph dialog"
+      ],
+      "summary": "Expandable card trigger that fluidly morphs into a centered dialog.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal",
+        "card"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/morphing-dialog",
+        "iframeSrc": "https://www.easyui.site/components/morphing-dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs framer-motion + lucide-react."
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/morphing-dialog\n\nimport { MorphingDialog } from \"@/components/ui/morphing-dialog\"\n\n<MorphingDialog />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Morphing Dialog` (slug `morphing-dialog`) from https://www.easyui.site/components/morphing-dialog. Install with `npx shadcn@latest add Surajmaurya1/easyui/morphing-dialog` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/morphing-dialog.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs framer-motion + lucide-react.. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/morphing-dialog",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/morphing-dialog.json",
+        "registryItem": "Surajmaurya1/easyui/morphing-dialog"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-floating-action-dock",
+      "libraryId": "easy-ui",
+      "slug": "floating-action-dock",
+      "name": "Floating Action Dock",
+      "aliases": [
+        "macos dock toolbar",
+        "magnification dock",
+        "floating dock"
+      ],
+      "summary": "Floating quick-action toolbar inspired by macOS dock physics with magnification.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/floating-action-dock",
+        "iframeSrc": "https://www.easyui.site/components/floating-action-dock",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs framer-motion."
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/floating-action-dock\n\nimport { FloatingActionDock } from \"@/components/ui/floating-action-dock\"\n\n<FloatingActionDock />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Floating Action Dock` (slug `floating-action-dock`) from https://www.easyui.site/components/floating-action-dock. Install with `npx shadcn@latest add Surajmaurya1/easyui/floating-action-dock` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/floating-action-dock.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs framer-motion.. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/floating-action-dock",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/floating-action-dock.json",
+        "registryItem": "Surajmaurya1/easyui/floating-action-dock"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "easy-ui-gravity-particle-burst",
+      "libraryId": "easy-ui",
+      "slug": "gravity-particle-burst",
+      "name": "Gravity Particle Burst",
+      "aliases": [
+        "particle burst",
+        "canvas burst",
+        "pointer particles"
+      ],
+      "summary": "Pointer-triggered canvas particle burst with velocity, gravity, friction, and follow-through.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "Surajmaurya1/easyui/gravity-particle-burst",
+        "iframeSrc": "https://www.easyui.site/components/gravity-particle-burst",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs lucide-react for demo triggers."
+      },
+      "copyCode": "npx shadcn@latest add Surajmaurya1/easyui/gravity-particle-burst\n\nimport { GravityParticleBurst } from \"@/components/ui/gravity-particle-burst\"\n\n<GravityParticleBurst />",
+      "copyPrompt": {
+        "text": "Use Easy UI free component `Gravity Particle Burst` (slug `gravity-particle-burst`) from https://www.easyui.site/components/gravity-particle-burst. Install with `npx shadcn@latest add Surajmaurya1/easyui/gravity-particle-burst` after `npx shadcn@latest init`. Registry item: https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/gravity-particle-burst.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs lucide-react for demo triggers.. License: MIT (https://raw.githubusercontent.com/Surajmaurya1/easyui/main/LICENSE). Free open-source shadcn GitHub Registry (Surajmaurya1/easyui); site Pricing page is a demo UI component (Free $0 / Pro $29 cards), not a paid unlock for the library \u2014 all ingested comps are free MIT.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add Surajmaurya1/easyui/gravity-particle-burst",
+        "registryUrl": "https://raw.githubusercontent.com/Surajmaurya1/easyui/main/public/source/gravity-particle-burst.json",
+        "registryItem": "Surajmaurya1/easyui/gravity-particle-burst"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

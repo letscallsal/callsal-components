@@ -1,0 +1,614 @@
+{
+  "id": "keep-react",
+  "name": "Keep React",
+  "aliases": [
+    "keep-react",
+    "Keep React",
+    "Keep Design React",
+    "keepdesign"
+  ],
+  "summary": "MIT Tailwind + React UI kit (StaticMania) with 40+ free components and interactive docs demos.",
+  "homeUrl": "https://keep-react-pi.vercel.app/",
+  "docsUrl": "https://keep-react-pi.vercel.app/docs/getting-started/installation",
+  "repoUrl": "https://github.com/StaticMania/keep-react",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm i keep-react phosphor-react",
+    "packages": [
+      "keep-react",
+      "phosphor-react"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://keep-react-pi.vercel.app/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "phosphor-react"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Canonical npm homepage react.keepdesign.io currently redirects to an unrelated site — demos/home use GitHub homepage keep-react-pi.vercel.app instead.",
+    "Pilot includes 12 of 40+ free Keep React components.",
+    "Requires Tailwind keepTheme() + keep-react/css import.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:15:00-04:00",
+  "components": [
+    {
+      "id": "keep-react-button",
+      "libraryId": "keep-react",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "Button",
+        "Keep Button",
+        "keep-react Button"
+      ],
+      "summary": "Primary action button with color/size/shape variants.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport { Button } from \"keep-react\";\n\nexport default function Example() {\n  return <Button>Keep Button</Button>;\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Button` (slug `button`) from https://keep-react-pi.vercel.app/docs/components/button. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-accordion",
+      "libraryId": "keep-react",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "Accordion",
+        "Keep Accordion",
+        "keep-react Accordion"
+      ],
+      "summary": "Single/multiple collapsible accordion panels.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport {\n  Accordion,\n  AccordionAction,\n  AccordionContent,\n  AccordionIcon,\n  AccordionItem,\n  AccordionTitle,\n} from \"keep-react\";\n\nexport const AccordionComponent = () => {\n  return (\n    <Accordion type=\"single\" collapsible>\n      <AccordionItem value=\"item-1\">\n        <AccordionAction>\n          <AccordionTitle>What is Keep React?</AccordionTitle>\n          <AccordionIcon />\n        </AccordionAction>\n        <AccordionContent>\n          Keep React is an open-source Tailwind + React component library.\n        </AccordionContent>\n      </AccordionItem>\n    </Accordion>\n  );\n};",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Accordion` (slug `accordion`) from https://keep-react-pi.vercel.app/docs/components/accordion. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-alert",
+      "libraryId": "keep-react",
+      "slug": "alert",
+      "name": "Alert",
+      "aliases": [
+        "alert",
+        "Alert",
+        "Keep Alert",
+        "keep-react Alert"
+      ],
+      "summary": "Inline alert with color and dismiss variants.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/alert",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport { Alert } from \"keep-react\";\n\nexport default function Example() {\n  return <Alert>Keep Alert</Alert>;\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Alert` (slug `alert`) from https://keep-react-pi.vercel.app/docs/components/alert. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-avatar",
+      "libraryId": "keep-react",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "avatar",
+        "Avatar",
+        "Keep Avatar",
+        "keep-react Avatar"
+      ],
+      "summary": "User avatar with group composition support.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport { Avatar } from \"keep-react\";\n\nexport default function Example() {\n  return <Avatar>Keep Avatar</Avatar>;\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Avatar` (slug `avatar`) from https://keep-react-pi.vercel.app/docs/components/avatar. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-badge",
+      "libraryId": "keep-react",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "badge",
+        "Badge",
+        "Keep Badge",
+        "keep-react Badge"
+      ],
+      "summary": "Status and label badge with color variants.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport { Badge } from \"keep-react\";\n\nexport default function Example() {\n  return <Badge>Keep Badge</Badge>;\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Badge` (slug `badge`) from https://keep-react-pi.vercel.app/docs/components/badge. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-card",
+      "libraryId": "keep-react",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "card",
+        "Card",
+        "Keep Card",
+        "keep-react Card"
+      ],
+      "summary": "Content card surface for grouped UI.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport { Card } from \"keep-react\";\n\nexport default function Example() {\n  return <Card>Keep Card</Card>;\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Card` (slug `card`) from https://keep-react-pi.vercel.app/docs/components/card. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-modal",
+      "libraryId": "keep-react",
+      "slug": "modal",
+      "name": "Modal",
+      "aliases": [
+        "modal",
+        "Modal",
+        "Keep Modal",
+        "keep-react Modal"
+      ],
+      "summary": "Accessible modal dialog with header/footer actions.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport {\n  Button,\n  Modal,\n  ModalAction,\n  ModalContent,\n  ModalDescription,\n  ModalFooter,\n  ModalHeader,\n  ModalTitle,\n} from \"keep-react\";\n\nexport default function Example() {\n  return (\n    <Modal>\n      <ModalAction asChild>\n        <Button>Open Modal</Button>\n      </ModalAction>\n      <ModalContent>\n        <ModalHeader>\n          <ModalTitle>Update status</ModalTitle>\n          <ModalDescription>Confirm to continue.</ModalDescription>\n        </ModalHeader>\n        <ModalFooter>\n          <Button variant=\"outline\">Cancel</Button>\n          <Button>Confirm</Button>\n        </ModalFooter>\n      </ModalContent>\n    </Modal>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Modal` (slug `modal`) from https://keep-react-pi.vercel.app/docs/components/modal. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-navbar",
+      "libraryId": "keep-react",
+      "slug": "navbar",
+      "name": "Navbar",
+      "aliases": [
+        "navbar",
+        "Navbar",
+        "Keep Navbar",
+        "keep-react Navbar"
+      ],
+      "summary": "Responsive navigation bar.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/navbar",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport { Navbar } from \"keep-react\";\n\nexport default function Example() {\n  return <Navbar>Keep Navbar</Navbar>;\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Navbar` (slug `navbar`) from https://keep-react-pi.vercel.app/docs/components/navbar. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-drawer",
+      "libraryId": "keep-react",
+      "slug": "drawer",
+      "name": "Drawer",
+      "aliases": [
+        "drawer",
+        "Drawer",
+        "Keep Drawer",
+        "keep-react Drawer"
+      ],
+      "summary": "Slide-over drawer panel.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/drawer",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport { Drawer } from \"keep-react\";\n\nexport default function Example() {\n  return <Drawer>Keep Drawer</Drawer>;\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Drawer` (slug `drawer`) from https://keep-react-pi.vercel.app/docs/components/drawer. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-dropdown",
+      "libraryId": "keep-react",
+      "slug": "dropdown",
+      "name": "Dropdown",
+      "aliases": [
+        "dropdown",
+        "Dropdown",
+        "Keep Dropdown",
+        "keep-react Dropdown"
+      ],
+      "summary": "Dropdown menu for actions and navigation.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/dropdown",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport { Dropdown } from \"keep-react\";\n\nexport default function Example() {\n  return <Dropdown>Keep Dropdown</Dropdown>;\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Dropdown` (slug `dropdown`) from https://keep-react-pi.vercel.app/docs/components/dropdown. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-input",
+      "libraryId": "keep-react",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "input",
+        "Input",
+        "Keep Input",
+        "keep-react Input"
+      ],
+      "summary": "Text input field with Keep theme styles.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport { Input } from \"keep-react\";\n\nexport default function Example() {\n  return <Input>Keep Input</Input>;\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Input` (slug `input`) from https://keep-react-pi.vercel.app/docs/components/input. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    },
+    {
+      "id": "keep-react-table",
+      "libraryId": "keep-react",
+      "slug": "table",
+      "name": "Table",
+      "aliases": [
+        "table",
+        "Table",
+        "Keep Table",
+        "keep-react Table"
+      ],
+      "summary": "Data table for structured content.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "keep-react",
+        "iframeSrc": "https://keep-react-pi.vercel.app/docs/components/table",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT Keep React (npm keep-react). Docs demos on keep-react-pi.vercel.app (GitHub homepage). react.keepdesign.io currently redirects away from docs — do not iframe that host."
+      },
+      "copyCode": "npm i keep-react phosphor-react\n\nimport { Table } from \"keep-react\";\n\nexport default function Example() {\n  return <Table>Keep Table</Table>;\n}",
+      "copyPrompt": {
+        "text": "Use Keep React free MIT component `Table` (slug `table`) from https://keep-react-pi.vercel.app/docs/components/table. Install with `npm i keep-react phosphor-react` (Tailwind + keepTheme required). Import from `keep-react`. Home/docs: https://keep-react-pi.vercel.app. Repo: https://github.com/StaticMania/keep-react. License: MIT (https://raw.githubusercontent.com/StaticMania/keep-react/main/License; Copyright (c) 2023 StaticMania). Pricing free. Note: npm homepage react.keepdesign.io is hijacked — use Vercel docs host.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i keep-react phosphor-react",
+        "packages": [
+          "keep-react",
+          "phosphor-react"
+        ]
+      }
+    }
+  ]
+}

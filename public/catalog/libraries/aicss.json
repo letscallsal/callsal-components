@@ -1,0 +1,588 @@
+{
+  "id": "aicss",
+  "name": "AICSS",
+  "aliases": [
+    "aicss.dev",
+    "@aicss/react",
+    "kvnkld/aicss"
+  ],
+  "summary": "Freemium copy-paste UI for AI agents: thinking states, tool calls, streaming text, citations.",
+  "homeUrl": "https://www.aicss.dev",
+  "docsUrl": "https://www.aicss.dev",
+  "repoUrl": "https://github.com/kvnkld/aicss",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://www.aicss.dev/r/{name}.json",
+    "registryUrl": "https://www.aicss.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.aicss.dev/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free registry comps (HTTP 200 on /r/{slug}.json) \u2014 not full free inventory; Pro comps excluded.",
+    "Freemium: free MIT comps + CLI on GitHub/npm; Personal $89 once / Enterprise unlock remaining (registry returns HTTP 401 without AICSS_TOKEN).",
+    "Pro samples confirmed 401: audio-waves, image-generation, task-list, ai-agent-input, approval-card.",
+    "npm @aicss/react exports a subset of free comps; others install via shadcn registry / @aicss/cli.",
+    "Site ships React/Vue/Svelte; catalog frameworks list React/Next only.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:33:14-04:00",
+  "components": [
+    {
+      "id": "aicss-thinking-state",
+      "libraryId": "aicss",
+      "slug": "thinking-state",
+      "name": "Thinking State",
+      "aliases": [
+        "thinking label",
+        "agent thinking"
+      ],
+      "summary": "Minimal shimmering label that signals the agent is processing.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text",
+        "other"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/thinking-state",
+        "iframeSrc": "https://www.aicss.dev/components/thinking-state",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/thinking-state.json\n\n# or: npm install @aicss/react && import from package\n# or: npx @aicss/cli add thinking-state\nimport { ThinkingState } from \"@aicss/react/thinking-state\"\n\n<ThinkingState />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Thinking State` (slug `thinking-state`) from https://www.aicss.dev/components/thinking-state. Install with `npx shadcn@latest add https://www.aicss.dev/r/thinking-state.json` or `npx @aicss/cli add thinking-state` or `npm install @aicss/react` then `import { ThinkingState } from \"@aicss/react/thinking-state\"`. Registry item: https://www.aicss.dev/r/thinking-state.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/thinking-state.json",
+        "registryUrl": "https://www.aicss.dev/r/thinking-state.json",
+        "registryItem": "thinking-state"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-thinking-reasoning",
+      "libraryId": "aicss",
+      "slug": "thinking-reasoning",
+      "name": "Thinking + Reasoning",
+      "aliases": [
+        "thinking reasoning",
+        "reason panel"
+      ],
+      "summary": "Combined thinking label plus expandable reasoning content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/thinking-reasoning",
+        "iframeSrc": "https://www.aicss.dev/components/thinking-reasoning",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/thinking-reasoning.json\n\n# or: npm install @aicss/react && import from package\n# or: npx @aicss/cli add thinking-reasoning\nimport { ThinkingReasoning } from \"@aicss/react/thinking-reasoning\"\n\n<ThinkingReasoning />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Thinking + Reasoning` (slug `thinking-reasoning`) from https://www.aicss.dev/components/thinking-reasoning. Install with `npx shadcn@latest add https://www.aicss.dev/r/thinking-reasoning.json` or `npx @aicss/cli add thinking-reasoning` or `npm install @aicss/react` then `import { ThinkingReasoning } from \"@aicss/react/thinking-reasoning\"`. Registry item: https://www.aicss.dev/r/thinking-reasoning.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/thinking-reasoning.json",
+        "registryUrl": "https://www.aicss.dev/r/thinking-reasoning.json",
+        "registryItem": "thinking-reasoning"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-orbs",
+      "libraryId": "aicss",
+      "slug": "orbs",
+      "name": "Orbs",
+      "aliases": [
+        "agent orb",
+        "lattice orb"
+      ],
+      "summary": "Animated agent status orbs (lattice, lens, ring, helix, morph variants).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "orb"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/orbs",
+        "iframeSrc": "https://www.aicss.dev/components/orbs",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/orbs.json\n\n# or: npm install @aicss/react && import from package\n# or: npx @aicss/cli add orbs\nimport { Orb } from \"@aicss/react/orbs\"\n\n<Orb />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Orbs` (slug `orbs`) from https://www.aicss.dev/components/orbs. Install with `npx shadcn@latest add https://www.aicss.dev/r/orbs.json` or `npx @aicss/cli add orbs` or `npm install @aicss/react` then `import { Orb } from \"@aicss/react/orbs\"`. Registry item: https://www.aicss.dev/r/orbs.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/orbs.json",
+        "registryUrl": "https://www.aicss.dev/r/orbs.json",
+        "registryItem": "orbs"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-file-diff",
+      "libraryId": "aicss",
+      "slug": "file-diff",
+      "name": "File Diff",
+      "aliases": [
+        "code diff",
+        "agent file diff"
+      ],
+      "summary": "File diff viewer for agent code edits.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/file-diff",
+        "iframeSrc": "https://www.aicss.dev/components/file-diff",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/file-diff.json\n\n# or: npx @aicss/cli add file-diff\n# Registry ships FileDiff.tsx + CSS module (target filenames in registry JSON).\n# Import the installed FileDiff from the path your shadcn components.json aliases use.\n\n<FileDiff />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `File Diff` (slug `file-diff`) from https://www.aicss.dev/components/file-diff. Install with `npx shadcn@latest add https://www.aicss.dev/r/file-diff.json` or `npx @aicss/cli add file-diff`. Registry item: https://www.aicss.dev/r/file-diff.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/file-diff.json",
+        "registryUrl": "https://www.aicss.dev/r/file-diff.json",
+        "registryItem": "file-diff"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-text-response",
+      "libraryId": "aicss",
+      "slug": "text-response",
+      "name": "Text Response",
+      "aliases": [
+        "assistant text",
+        "response block"
+      ],
+      "summary": "Styled assistant text response container.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/text-response",
+        "iframeSrc": "https://www.aicss.dev/components/text-response",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/text-response.json\n\n# or: npm install @aicss/react && import from package\n# or: npx @aicss/cli add text-response\nimport { TextResponse } from \"@aicss/react/text-response\"\n\n<TextResponse />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Text Response` (slug `text-response`) from https://www.aicss.dev/components/text-response. Install with `npx shadcn@latest add https://www.aicss.dev/r/text-response.json` or `npx @aicss/cli add text-response` or `npm install @aicss/react` then `import { TextResponse } from \"@aicss/react/text-response\"`. Registry item: https://www.aicss.dev/r/text-response.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/text-response.json",
+        "registryUrl": "https://www.aicss.dev/r/text-response.json",
+        "registryItem": "text-response"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-streaming-text",
+      "libraryId": "aicss",
+      "slug": "streaming-text",
+      "name": "Streaming Text",
+      "aliases": [
+        "stream tokens",
+        "typewriter stream"
+      ],
+      "summary": "Streaming text output for token-by-token assistant replies.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter",
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/streaming-text",
+        "iframeSrc": "https://www.aicss.dev/components/streaming-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/streaming-text.json\n\n# or: npm install @aicss/react && import from package\n# or: npx @aicss/cli add streaming-text\nimport { StreamingText } from \"@aicss/react/streaming-text\"\n\n<StreamingText />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Streaming Text` (slug `streaming-text`) from https://www.aicss.dev/components/streaming-text. Install with `npx shadcn@latest add https://www.aicss.dev/r/streaming-text.json` or `npx @aicss/cli add streaming-text` or `npm install @aicss/react` then `import { StreamingText } from \"@aicss/react/streaming-text\"`. Registry item: https://www.aicss.dev/r/streaming-text.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/streaming-text.json",
+        "registryUrl": "https://www.aicss.dev/r/streaming-text.json",
+        "registryItem": "streaming-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-code-block",
+      "libraryId": "aicss",
+      "slug": "code-block",
+      "name": "Code Block",
+      "aliases": [
+        "aicss code",
+        "agent code block"
+      ],
+      "summary": "Code block for agent-emitted snippets.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/code-block",
+        "iframeSrc": "https://www.aicss.dev/components/code-block",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/code-block.json\n\n# or: npm install @aicss/react && import from package\n# or: npx @aicss/cli add code-block\nimport { CodeBlock } from \"@aicss/react/code-block\"\n\n<CodeBlock />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Code Block` (slug `code-block`) from https://www.aicss.dev/components/code-block. Install with `npx shadcn@latest add https://www.aicss.dev/r/code-block.json` or `npx @aicss/cli add code-block` or `npm install @aicss/react` then `import { CodeBlock } from \"@aicss/react/code-block\"`. Registry item: https://www.aicss.dev/r/code-block.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/code-block.json",
+        "registryUrl": "https://www.aicss.dev/r/code-block.json",
+        "registryItem": "code-block"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-inline-citations",
+      "libraryId": "aicss",
+      "slug": "inline-citations",
+      "name": "Inline Citations",
+      "aliases": [
+        "cite chips",
+        "rag inline cites"
+      ],
+      "summary": "Inline citation markers for grounded agent answers.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/inline-citations",
+        "iframeSrc": "https://www.aicss.dev/components/inline-citations",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/inline-citations.json\n\n# or: npx @aicss/cli add inline-citations\n# Registry ships InlineCitations.tsx + CSS module (target filenames in registry JSON).\n# Import the installed InlineCitations from the path your shadcn components.json aliases use.\n\n<InlineCitations />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Inline Citations` (slug `inline-citations`) from https://www.aicss.dev/components/inline-citations. Install with `npx shadcn@latest add https://www.aicss.dev/r/inline-citations.json` or `npx @aicss/cli add inline-citations`. Registry item: https://www.aicss.dev/r/inline-citations.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/inline-citations.json",
+        "registryUrl": "https://www.aicss.dev/r/inline-citations.json",
+        "registryItem": "inline-citations"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-data-table",
+      "libraryId": "aicss",
+      "slug": "data-table",
+      "name": "Data Table",
+      "aliases": [
+        "agent table",
+        "structured table"
+      ],
+      "summary": "Structured data table for agent tabular outputs.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/data-table",
+        "iframeSrc": "https://www.aicss.dev/components/data-table",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/data-table.json\n\n# or: npm install @aicss/react && import from package\n# or: npx @aicss/cli add data-table\nimport { DataTable } from \"@aicss/react/data-table\"\n\n<DataTable />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Data Table` (slug `data-table`) from https://www.aicss.dev/components/data-table. Install with `npx shadcn@latest add https://www.aicss.dev/r/data-table.json` or `npx @aicss/cli add data-table` or `npm install @aicss/react` then `import { DataTable } from \"@aicss/react/data-table\"`. Registry item: https://www.aicss.dev/r/data-table.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/data-table.json",
+        "registryUrl": "https://www.aicss.dev/r/data-table.json",
+        "registryItem": "data-table"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-comparison-table",
+      "libraryId": "aicss",
+      "slug": "comparison-table",
+      "name": "Comparison Table",
+      "aliases": [
+        "compare table",
+        "vs table"
+      ],
+      "summary": "Comparison table for side-by-side agent evaluations.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/comparison-table",
+        "iframeSrc": "https://www.aicss.dev/components/comparison-table",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/comparison-table.json\n\n# or: npx @aicss/cli add comparison-table\n# Registry ships ComparisonTable.tsx + CSS module (target filenames in registry JSON).\n# Import the installed ComparisonTable from the path your shadcn components.json aliases use.\n\n<ComparisonTable />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Comparison Table` (slug `comparison-table`) from https://www.aicss.dev/components/comparison-table. Install with `npx shadcn@latest add https://www.aicss.dev/r/comparison-table.json` or `npx @aicss/cli add comparison-table`. Registry item: https://www.aicss.dev/r/comparison-table.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/comparison-table.json",
+        "registryUrl": "https://www.aicss.dev/r/comparison-table.json",
+        "registryItem": "comparison-table"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-message-actions",
+      "libraryId": "aicss",
+      "slug": "message-actions",
+      "name": "Message Actions",
+      "aliases": [
+        "message toolbar",
+        "reply actions"
+      ],
+      "summary": "Action toolbar for assistant messages (copy, retry, feedback).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/message-actions",
+        "iframeSrc": "https://www.aicss.dev/components/message-actions",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/message-actions.json\n\n# or: npx @aicss/cli add message-actions\n# Registry ships MessageActions.tsx + CSS module (target filenames in registry JSON).\n# Import the installed MessageActions from the path your shadcn components.json aliases use.\n\n<MessageActions />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Message Actions` (slug `message-actions`) from https://www.aicss.dev/components/message-actions. Install with `npx shadcn@latest add https://www.aicss.dev/r/message-actions.json` or `npx @aicss/cli add message-actions`. Registry item: https://www.aicss.dev/r/message-actions.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/message-actions.json",
+        "registryUrl": "https://www.aicss.dev/r/message-actions.json",
+        "registryItem": "message-actions"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aicss-reasoning-effort",
+      "libraryId": "aicss",
+      "slug": "reasoning-effort",
+      "name": "Reasoning Effort",
+      "aliases": [
+        "effort control",
+        "think effort"
+      ],
+      "summary": "Control for selecting reasoning effort before an agent run.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@aicss/reasoning-effort",
+        "iframeSrc": "https://www.aicss.dev/components/reasoning-effort",
+        "aspectRatio": "16/9",
+        "peerNotes": "self-contained CSS; React/Vue/Svelte variants on site"
+      },
+      "copyCode": "npx shadcn@latest add https://www.aicss.dev/r/reasoning-effort.json\n\n# or: npx @aicss/cli add reasoning-effort\n# Registry ships ReasoningEffort.tsx + CSS module (target filenames in registry JSON).\n# Import the installed ReasoningEffort from the path your shadcn components.json aliases use.\n\n<ReasoningEffort />",
+      "copyPrompt": {
+        "text": "Use AICSS free MIT component `Reasoning Effort` (slug `reasoning-effort`) from https://www.aicss.dev/components/reasoning-effort. Install with `npx shadcn@latest add https://www.aicss.dev/r/reasoning-effort.json` or `npx @aicss/cli add reasoning-effort`. Registry item: https://www.aicss.dev/r/reasoning-effort.json (free tier returns HTTP 200; Pro comps return 401 without AICSS_TOKEN). Requires React (Vue/Svelte snippets also on site). Self-contained CSS \u2014 Tailwind not required in the app. License: MIT for free comps/CLI (https://raw.githubusercontent.com/kvnkld/aicss/main/LICENSE; site license page). Pricing freemium \u2014 free MIT comps only; Personal $89 / Enterprise paid unlocks excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.aicss.dev/r/reasoning-effort.json",
+        "registryUrl": "https://www.aicss.dev/r/reasoning-effort.json",
+        "registryItem": "reasoning-effort"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

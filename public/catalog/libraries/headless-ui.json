@@ -1,0 +1,595 @@
+{
+  "id": "headless-ui",
+  "name": "Headless UI",
+  "aliases": [
+    "headless-ui",
+    "Headless UI",
+    "@headlessui/react",
+    "headlessui",
+    "tailwind headless ui"
+  ],
+  "summary": "Unstyled accessible UI primitives from the Tailwind team with interactive docs demos.",
+  "homeUrl": "https://headlessui.com",
+  "docsUrl": "https://headlessui.com/react/menu",
+  "repoUrl": "https://github.com/tailwindlabs/headlessui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install @headlessui/react",
+    "packages": [
+      "@headlessui/react"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://headlessui.com/react/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Headless/unstyled \u2014 demos require consumer CSS; docs examples include Tailwind classNames.",
+    "Pilot includes 12 React components \u2014 Vue package also exists but React-primary kept.",
+    "Kept under P2 headless KEEP rule (public docs \u2192 interactive demos + copyable install/code \u22658).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:05:00-04:00",
+  "components": [
+    {
+      "id": "headless-ui-menu",
+      "libraryId": "headless-ui",
+      "slug": "menu",
+      "name": "Menu",
+      "aliases": [
+        "menu",
+        "dropdown",
+        "headlessui menu",
+        "@headlessui/react Menu"
+      ],
+      "summary": "Accessible dropdown menu.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'\n\nfunction Example() {\n  return (\n    <Menu>\n      <MenuButton>My account</MenuButton>\n      <MenuItems anchor=\"bottom\">\n        <MenuItem>\n          <a className=\"block data-focus:bg-blue-100\" href=\"/settings\">Settings</a>\n        </MenuItem>\n        <MenuItem>\n          <a className=\"block data-focus:bg-blue-100\" href=\"/support\">Support</a>\n        </MenuItem>\n        <MenuItem>\n          <a className=\"block data-focus:bg-blue-100\" href=\"/license\">License</a>\n        </MenuItem>\n      </MenuItems>\n    </Menu>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Menu` (slug `menu`) from https://headlessui.com/react/menu. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/menu. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-dialog",
+      "libraryId": "headless-ui",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "modal",
+        "headlessui dialog",
+        "@headlessui/react Dialog"
+      ],
+      "summary": "Accessible dialog / modal.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Description, Dialog, DialogPanel, DialogTitle } from '@headlessui/react'\nimport { useState } from 'react'\n\nfunction Example() {\n  let [isOpen, setIsOpen] = useState(false)\n  return (\n    <>\n      <button onClick={() => setIsOpen(true)}>Open dialog</button>\n      <Dialog open={isOpen} onClose={() => setIsOpen(false)} className=\"relative z-50\">\n        <div className=\"fixed inset-0 flex w-screen items-center justify-center p-4\">\n          <DialogPanel className=\"max-w-lg space-y-4 border bg-white p-12\">\n            <DialogTitle className=\"font-bold\">Deactivate account</DialogTitle>\n            <Description>This will permanently deactivate your account</Description>\n            <div className=\"flex gap-4\">\n              <button onClick={() => setIsOpen(false)}>Cancel</button>\n              <button onClick={() => setIsOpen(false)}>Deactivate</button>\n            </div>\n          </DialogPanel>\n        </div>\n      </Dialog>\n    </>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Dialog` (slug `dialog`) from https://headlessui.com/react/dialog. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/dialog. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-listbox",
+      "libraryId": "headless-ui",
+      "slug": "listbox",
+      "name": "Listbox",
+      "aliases": [
+        "listbox",
+        "select",
+        "headlessui listbox",
+        "@headlessui/react Listbox"
+      ],
+      "summary": "Accessible custom listbox select.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/listbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'\nimport { useState } from 'react'\n\nconst people = [\n  { id: 1, name: 'Durward Reynolds' },\n  { id: 2, name: 'Kenton Towne' },\n  { id: 3, name: 'Therese Wunsch' },\n]\n\nfunction Example() {\n  const [selectedPerson, setSelectedPerson] = useState(people[0])\n  return (\n    <Listbox value={selectedPerson} onChange={setSelectedPerson}>\n      <ListboxButton>{selectedPerson.name}</ListboxButton>\n      <ListboxOptions anchor=\"bottom\">\n        {people.map((person) => (\n          <ListboxOption key={person.id} value={person} className=\"data-focus:bg-blue-100\">\n            {person.name}\n          </ListboxOption>\n        ))}\n      </ListboxOptions>\n    </Listbox>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Listbox` (slug `listbox`) from https://headlessui.com/react/listbox. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/listbox. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-combobox",
+      "libraryId": "headless-ui",
+      "slug": "combobox",
+      "name": "Combobox",
+      "aliases": [
+        "combobox",
+        "autocomplete",
+        "headlessui combobox",
+        "@headlessui/react Combobox"
+      ],
+      "summary": "Accessible autocomplete combobox.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/combobox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Combobox, ComboboxInput, ComboboxOption, ComboboxOptions } from '@headlessui/react'\nimport { useState } from 'react'\n\nconst people = [\n  { id: 1, name: 'Durward Reynolds' },\n  { id: 2, name: 'Kenton Towne' },\n  { id: 3, name: 'Therese Wunsch' },\n]\n\nfunction Example() {\n  const [selectedPerson, setSelectedPerson] = useState(people[0])\n  const [query, setQuery] = useState('')\n  const filteredPeople =\n    query === ''\n      ? people\n      : people.filter((person) => person.name.toLowerCase().includes(query.toLowerCase()))\n  return (\n    <Combobox value={selectedPerson} onChange={setSelectedPerson} onClose={() => setQuery('')}>\n      <ComboboxInput\n        aria-label=\"Assignee\"\n        displayValue={(person) => person?.name}\n        onChange={(event) => setQuery(event.target.value)}\n      />\n      <ComboboxOptions anchor=\"bottom\" className=\"border empty:invisible\">\n        {filteredPeople.map((person) => (\n          <ComboboxOption key={person.id} value={person} className=\"data-focus:bg-blue-100\">\n            {person.name}\n          </ComboboxOption>\n        ))}\n      </ComboboxOptions>\n    </Combobox>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Combobox` (slug `combobox`) from https://headlessui.com/react/combobox. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/combobox. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-switch",
+      "libraryId": "headless-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "switch",
+        "toggle",
+        "headlessui switch",
+        "@headlessui/react Switch"
+      ],
+      "summary": "Accessible switch toggle.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Switch } from '@headlessui/react'\nimport { useState } from 'react'\n\nfunction Example() {\n  const [enabled, setEnabled] = useState(false)\n  return (\n    <Switch\n      checked={enabled}\n      onChange={setEnabled}\n      className=\"group inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition data-checked:bg-blue-600\"\n    >\n      <span className=\"size-4 translate-x-1 rounded-full bg-white transition group-data-checked:translate-x-6\" />\n    </Switch>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Switch` (slug `switch`) from https://headlessui.com/react/switch. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/switch. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-disclosure",
+      "libraryId": "headless-ui",
+      "slug": "disclosure",
+      "name": "Disclosure",
+      "aliases": [
+        "disclosure",
+        "accordion",
+        "headlessui disclosure",
+        "@headlessui/react Disclosure"
+      ],
+      "summary": "Accessible show/hide disclosure.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/disclosure",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'\n\nfunction Example() {\n  return (\n    <Disclosure>\n      <DisclosureButton className=\"py-2\">Is team pricing available?</DisclosureButton>\n      <DisclosurePanel className=\"text-gray-500\">\n        Yes! You can purchase a license that you can share with your entire team.\n      </DisclosurePanel>\n    </Disclosure>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Disclosure` (slug `disclosure`) from https://headlessui.com/react/disclosure. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/disclosure. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-popover",
+      "libraryId": "headless-ui",
+      "slug": "popover",
+      "name": "Popover",
+      "aliases": [
+        "popover",
+        "flyout",
+        "headlessui popover",
+        "@headlessui/react Popover"
+      ],
+      "summary": "Accessible popover panel.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/popover",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'\n\nfunction Example() {\n  return (\n    <Popover className=\"relative\">\n      <PopoverButton>Solutions</PopoverButton>\n      <PopoverPanel anchor=\"bottom\" className=\"flex flex-col\">\n        <a href=\"/analytics\">Analytics</a>\n        <a href=\"/engagement\">Engagement</a>\n        <a href=\"/security\">Security</a>\n        <a href=\"/integrations\">Integrations</a>\n      </PopoverPanel>\n    </Popover>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Popover` (slug `popover`) from https://headlessui.com/react/popover. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/popover. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-radio-group",
+      "libraryId": "headless-ui",
+      "slug": "radio-group",
+      "name": "Radio Group",
+      "aliases": [
+        "radio-group",
+        "radio",
+        "headlessui radio",
+        "@headlessui/react RadioGroup"
+      ],
+      "summary": "Accessible radio group.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/radio-group",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Field, Label, Radio, RadioGroup } from '@headlessui/react'\nimport { useState } from 'react'\n\nconst plans = ['Startup', 'Business', 'Enterprise']\n\nfunction Example() {\n  let [selected, setSelected] = useState(plans[0])\n  return (\n    <RadioGroup value={selected} onChange={setSelected} aria-label=\"Server size\">\n      {plans.map((plan) => (\n        <Field key={plan} className=\"flex items-center gap-2\">\n          <Radio\n            value={plan}\n            className=\"group flex size-5 items-center justify-center rounded-full border bg-white data-checked:bg-blue-400\"\n          >\n            <span className=\"invisible size-2 rounded-full bg-white group-data-checked:visible\" />\n          </Radio>\n          <Label>{plan}</Label>\n        </Field>\n      ))}\n    </RadioGroup>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Radio Group` (slug `radio-group`) from https://headlessui.com/react/radio-group. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/radio-group. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-tabs",
+      "libraryId": "headless-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "headlessui tabs",
+        "@headlessui/react Tab"
+      ],
+      "summary": "Accessible tabs.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'\n\nfunction Example() {\n  return (\n    <TabGroup>\n      <TabList>\n        <Tab>Tab 1</Tab>\n        <Tab>Tab 2</Tab>\n        <Tab>Tab 3</Tab>\n      </TabList>\n      <TabPanels>\n        <TabPanel>Content 1</TabPanel>\n        <TabPanel>Content 2</TabPanel>\n        <TabPanel>Content 3</TabPanel>\n      </TabPanels>\n    </TabGroup>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Tabs` (slug `tabs`) from https://headlessui.com/react/tabs. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/tabs. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-checkbox",
+      "libraryId": "headless-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "headlessui checkbox",
+        "@headlessui/react Checkbox"
+      ],
+      "summary": "Accessible checkbox.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Checkbox } from '@headlessui/react'\nimport { useState } from 'react'\n\nfunction Example() {\n  const [enabled, setEnabled] = useState(false)\n  return (\n    <Checkbox\n      checked={enabled}\n      onChange={setEnabled}\n      className=\"group block size-4 rounded border bg-white data-checked:bg-blue-500\"\n    >\n      <svg className=\"stroke-white opacity-0 group-data-checked:opacity-100\" viewBox=\"0 0 14 14\" fill=\"none\">\n        <path d=\"M3 8L6 11L11 3.5\" strokeWidth={2} strokeLinecap=\"round\" strokeLinejoin=\"round\" />\n      </svg>\n    </Checkbox>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Checkbox` (slug `checkbox`) from https://headlessui.com/react/checkbox. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/checkbox. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-button",
+      "libraryId": "headless-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "headlessui button",
+        "@headlessui/react Button"
+      ],
+      "summary": "Accessible button with hover/focus data states.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Button } from '@headlessui/react'\n\nfunction Example() {\n  return (\n    <Button className=\"rounded bg-sky-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500\">\n      Save changes\n    </Button>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Button` (slug `button`) from https://headlessui.com/react/button. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/button. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    },
+    {
+      "id": "headless-ui-select",
+      "libraryId": "headless-ui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "headlessui select",
+        "@headlessui/react Select"
+      ],
+      "summary": "Accessible native select wrapper.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@headlessui/react",
+        "iframeSrc": "https://headlessui.com/react/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from Tailwind Labs. Style yourself (Tailwind data-* modifiers shown in docs). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @headlessui/react\n\nimport { Select } from '@headlessui/react'\n\nfunction Example() {\n  return (\n    <Select name=\"status\" aria-label=\"Project status\">\n      <option value=\"active\">Active</option>\n      <option value=\"paused\">Paused</option>\n      <option value=\"delayed\">Delayed</option>\n      <option value=\"canceled\">Canceled</option>\n    </Select>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Headless UI free MIT React primitive `Select` (slug `select`) from https://headlessui.com/react/select. Install with `npm install @headlessui/react`. Import from `@headlessui/react`. Headless \u2014 bring your own styles. Home: https://headlessui.com. Docs: https://headlessui.com/react/select. Repo: https://github.com/tailwindlabs/headlessui. License: MIT (https://raw.githubusercontent.com/tailwindlabs/headlessui/main/LICENSE; Copyright (c) 2020 Tailwind Labs). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @headlessui/react",
+        "packages": [
+          "@headlessui/react"
+        ]
+      }
+    }
+  ]
+}

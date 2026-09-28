@@ -1,0 +1,588 @@
+{
+  "id": "fragments-ui",
+  "name": "Fragments UI",
+  "aliases": [
+    "fragments",
+    "usefragments",
+    "@usefragments/ui",
+    "fragments-sdk/ui",
+    "Fragments"
+  ],
+  "summary": "Accessible React components on Base UI for AI agents, with CLI/MCP governance.",
+  "homeUrl": "https://www.usefragments.com",
+  "docsUrl": "https://www.usefragments.com/components",
+  "repoUrl": "https://github.com/fragments-sdk/ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx @usefragments/cli add {name}",
+    "packages": [
+      "@usefragments/ui"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.usefragments.com/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 600
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 50+ documented primitives \u2014 not full inventory.",
+    "Fragments Cloud governance product is invite-only; UI kit itself is free MIT on npm/CLI.",
+    "Optional peers (recharts, react-day-picker, etc.) needed only for advanced comps \u2014 excluded here.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:05:00-04:00",
+  "components": [
+    {
+      "id": "fragments-ui-button",
+      "libraryId": "fragments-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "fragments button",
+        "fui button"
+      ],
+      "summary": "Accessible action button with variants and tones.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Button",
+        "iframeSrc": "https://www.usefragments.com/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add button\n# or: npm install @usefragments/ui\n\nimport { Button } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Button />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Button` (slug `button`) from https://www.usefragments.com/components/button. Install with `npx @usefragments/cli add button` or `npm install @usefragments/ui`, then `import { Button } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add button",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-card",
+      "libraryId": "fragments-ui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "fragments card",
+        "fui card"
+      ],
+      "summary": "Container for grouping related content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Card",
+        "iframeSrc": "https://www.usefragments.com/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add card\n# or: npm install @usefragments/ui\n\nimport { Card } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Card />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Card` (slug `card`) from https://www.usefragments.com/components/card. Install with `npx @usefragments/cli add card` or `npm install @usefragments/ui`, then `import { Card } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add card",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-input",
+      "libraryId": "fragments-ui",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "fragments input",
+        "fui input"
+      ],
+      "summary": "Single-line text input with label and validation slots.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Input",
+        "iframeSrc": "https://www.usefragments.com/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add input\n# or: npm install @usefragments/ui\n\nimport { Input } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Input />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Input` (slug `input`) from https://www.usefragments.com/components/input. Install with `npx @usefragments/cli add input` or `npm install @usefragments/ui`, then `import { Input } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add input",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-dialog",
+      "libraryId": "fragments-ui",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "fragments dialog",
+        "modal"
+      ],
+      "summary": "Modal overlay for focused interactions and confirmations.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Dialog",
+        "iframeSrc": "https://www.usefragments.com/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add dialog\n# or: npm install @usefragments/ui\n\nimport { Dialog } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Dialog />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Dialog` (slug `dialog`) from https://www.usefragments.com/components/dialog. Install with `npx @usefragments/cli add dialog` or `npm install @usefragments/ui`, then `import { Dialog } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add dialog",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-checkbox",
+      "libraryId": "fragments-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "fragments checkbox"
+      ],
+      "summary": "Binary checkbox for form fields requiring explicit submit.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Checkbox",
+        "iframeSrc": "https://www.usefragments.com/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add checkbox\n# or: npm install @usefragments/ui\n\nimport { Checkbox } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Checkbox />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Checkbox` (slug `checkbox`) from https://www.usefragments.com/components/checkbox. Install with `npx @usefragments/cli add checkbox` or `npm install @usefragments/ui`, then `import { Checkbox } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add checkbox",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-switch",
+      "libraryId": "fragments-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "fragments switch",
+        "toggle"
+      ],
+      "summary": "Immediate on/off switch for settings and preferences.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Switch",
+        "iframeSrc": "https://www.usefragments.com/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add switch\n# or: npm install @usefragments/ui\n\nimport { Switch } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Switch />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Switch` (slug `switch`) from https://www.usefragments.com/components/switch. Install with `npx @usefragments/cli add switch` or `npm install @usefragments/ui`, then `import { Switch } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add switch",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-select",
+      "libraryId": "fragments-ui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "fragments select",
+        "dropdown select"
+      ],
+      "summary": "Dropdown select for choosing from a list of options.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Select",
+        "iframeSrc": "https://www.usefragments.com/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add select\n# or: npm install @usefragments/ui\n\nimport { Select } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Select />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Select` (slug `select`) from https://www.usefragments.com/components/select. Install with `npx @usefragments/cli add select` or `npm install @usefragments/ui`, then `import { Select } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add select",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-alert",
+      "libraryId": "fragments-ui",
+      "slug": "alert",
+      "name": "Alert",
+      "aliases": [
+        "fragments alert"
+      ],
+      "summary": "Contextual feedback messages with severity levels.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Alert",
+        "iframeSrc": "https://www.usefragments.com/components/alert",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add alert\n# or: npm install @usefragments/ui\n\nimport { Alert } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Alert />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Alert` (slug `alert`) from https://www.usefragments.com/components/alert. Install with `npx @usefragments/cli add alert` or `npm install @usefragments/ui`, then `import { Alert } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add alert",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-badge",
+      "libraryId": "fragments-ui",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "fragments badge"
+      ],
+      "summary": "Compact label for status, counts, or categorization.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Badge",
+        "iframeSrc": "https://www.usefragments.com/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add badge\n# or: npm install @usefragments/ui\n\nimport { Badge } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Badge />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Badge` (slug `badge`) from https://www.usefragments.com/components/badge. Install with `npx @usefragments/cli add badge` or `npm install @usefragments/ui`, then `import { Badge } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add badge",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-avatar",
+      "libraryId": "fragments-ui",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "fragments avatar"
+      ],
+      "summary": "Visual representation of a user or entity.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Avatar",
+        "iframeSrc": "https://www.usefragments.com/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add avatar\n# or: npm install @usefragments/ui\n\nimport { Avatar } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Avatar />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Avatar` (slug `avatar`) from https://www.usefragments.com/components/avatar. Install with `npx @usefragments/cli add avatar` or `npm install @usefragments/ui`, then `import { Avatar } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add avatar",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-tabs",
+      "libraryId": "fragments-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "fragments tabs"
+      ],
+      "summary": "Switchable panels for related content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Tabs",
+        "iframeSrc": "https://www.usefragments.com/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add tabs\n# or: npm install @usefragments/ui\n\nimport { Tabs } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Tabs />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Tabs` (slug `tabs`) from https://www.usefragments.com/components/tabs. Install with `npx @usefragments/cli add tabs` or `npm install @usefragments/ui`, then `import { Tabs } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add tabs",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    },
+    {
+      "id": "fragments-ui-tooltip",
+      "libraryId": "fragments-ui",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "fragments tooltip"
+      ],
+      "summary": "Contextual help text on hover or focus.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@usefragments/ui/Tooltip",
+        "iframeSrc": "https://www.usefragments.com/components/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires react + react-dom; import @usefragments/ui/styles once for tokens"
+      },
+      "copyCode": "npx @usefragments/cli add tooltip\n# or: npm install @usefragments/ui\n\nimport { Tooltip } from \"@usefragments/ui\"\nimport \"@usefragments/ui/styles\"\n\n<Tooltip />",
+      "copyPrompt": {
+        "text": "Use Fragments UI free MIT React component `Tooltip` (slug `tooltip`) from https://www.usefragments.com/components/tooltip. Install with `npx @usefragments/cli add tooltip` or `npm install @usefragments/ui`, then `import { Tooltip } from \"@usefragments/ui\"` and `import \"@usefragments/ui/styles\"`. Docs/install: https://www.usefragments.com/components/install. Home: https://www.usefragments.com. Repo: https://github.com/fragments-sdk/ui. License: MIT (https://raw.githubusercontent.com/fragments-sdk/ui/main/LICENSE; Copyright (c) 2024-present Conan McNicholl). Pricing free. npm: @usefragments/ui.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @usefragments/cli add tooltip",
+        "packages": [
+          "@usefragments/ui"
+        ]
+      }
+    }
+  ]
+}

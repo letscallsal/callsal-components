@@ -1,0 +1,582 @@
+{
+  "id": "boldkit",
+  "name": "BoldKit",
+  "aliases": [
+    "boldkit",
+    "BoldKit",
+    "bold-kit",
+    "boldkit.dev",
+    "@boldkit"
+  ],
+  "summary": "MIT free neubrutalism React/Vue shadcn registry with 55+ comps, charts, and shapes.",
+  "homeUrl": "https://boldkit.dev/",
+  "docsUrl": "https://boldkit.dev/docs",
+  "repoUrl": "https://github.com/anibit14/boldkit",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @boldkit/{name}",
+    "registryUrl": "https://boldkit.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://boldkit.dev/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 55+ BoldKit React UI components (Vue/Nuxt variants not ingested).",
+    "Requires components.json registries.@boldkit = https://boldkit.dev/r/{name}.json for scoped deps.",
+    "Distinct from existing SoT id neobrutalism — different project/registry.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:35:00-04:00",
+  "components": [
+    {
+      "id": "boldkit-button",
+      "libraryId": "boldkit",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "Button",
+        "BoldKit Button"
+      ],
+      "summary": "Neubrutalism button with press-down animation.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Button from https://boldkit.dev/docs/components/button"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/button\n\n# Registry: https://boldkit.dev/r/button.json\n# Demo: https://boldkit.dev/docs/components/button\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Button` (slug `button`) from https://boldkit.dev/docs/components/button. Install with `npx shadcn@latest add @boldkit/button` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add button`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/button",
+        "registryUrl": "https://boldkit.dev/r/button.json"
+      }
+    },
+    {
+      "id": "boldkit-card",
+      "libraryId": "boldkit",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "card",
+        "Card"
+      ],
+      "summary": "Neubrutalism card surface with thick borders and hard shadows.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Card from https://boldkit.dev/docs/components/card"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/card\n\n# Registry: https://boldkit.dev/r/card.json\n# Demo: https://boldkit.dev/docs/components/card\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Card` (slug `card`) from https://boldkit.dev/docs/components/card. Install with `npx shadcn@latest add @boldkit/card` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add card`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/card",
+        "registryUrl": "https://boldkit.dev/r/card.json"
+      }
+    },
+    {
+      "id": "boldkit-dialog",
+      "libraryId": "boldkit",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "Dialog",
+        "modal"
+      ],
+      "summary": "Accessible dialog/modal with neubrutalism styling.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Dialog from https://boldkit.dev/docs/components/dialog"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/dialog\n\n# Registry: https://boldkit.dev/r/dialog.json\n# Demo: https://boldkit.dev/docs/components/dialog\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Dialog` (slug `dialog`) from https://boldkit.dev/docs/components/dialog. Install with `npx shadcn@latest add @boldkit/dialog` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add dialog`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/dialog",
+        "registryUrl": "https://boldkit.dev/r/dialog.json"
+      }
+    },
+    {
+      "id": "boldkit-input",
+      "libraryId": "boldkit",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "input",
+        "Input"
+      ],
+      "summary": "Text input with bold borders.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Input from https://boldkit.dev/docs/components/input"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/input\n\n# Registry: https://boldkit.dev/r/input.json\n# Demo: https://boldkit.dev/docs/components/input\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Input` (slug `input`) from https://boldkit.dev/docs/components/input. Install with `npx shadcn@latest add @boldkit/input` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add input`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/input",
+        "registryUrl": "https://boldkit.dev/r/input.json"
+      }
+    },
+    {
+      "id": "boldkit-select",
+      "libraryId": "boldkit",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "Select"
+      ],
+      "summary": "Select control with neubrutalism styling.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Select from https://boldkit.dev/docs/components/select"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/select\n\n# Registry: https://boldkit.dev/r/select.json\n# Demo: https://boldkit.dev/docs/components/select\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Select` (slug `select`) from https://boldkit.dev/docs/components/select. Install with `npx shadcn@latest add @boldkit/select` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add select`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/select",
+        "registryUrl": "https://boldkit.dev/r/select.json"
+      }
+    },
+    {
+      "id": "boldkit-tabs",
+      "libraryId": "boldkit",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "Tabs"
+      ],
+      "summary": "Tabbed navigation panels.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Tabs from https://boldkit.dev/docs/components/tabs"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/tabs\n\n# Registry: https://boldkit.dev/r/tabs.json\n# Demo: https://boldkit.dev/docs/components/tabs\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Tabs` (slug `tabs`) from https://boldkit.dev/docs/components/tabs. Install with `npx shadcn@latest add @boldkit/tabs` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add tabs`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/tabs",
+        "registryUrl": "https://boldkit.dev/r/tabs.json"
+      }
+    },
+    {
+      "id": "boldkit-toast",
+      "libraryId": "boldkit",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "toast",
+        "Toast",
+        "sonner"
+      ],
+      "summary": "Toast notifications (docs toast / registry sonner family).",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Toast from https://boldkit.dev/docs/components/toast"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/toast\n\n# Registry: https://boldkit.dev/r/toast.json\n# Demo: https://boldkit.dev/docs/components/toast\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Toast` (slug `toast`) from https://boldkit.dev/docs/components/toast. Install with `npx shadcn@latest add @boldkit/toast` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add toast`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/toast",
+        "registryUrl": "https://boldkit.dev/r/toast.json"
+      }
+    },
+    {
+      "id": "boldkit-tooltip",
+      "libraryId": "boldkit",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "tooltip",
+        "Tooltip"
+      ],
+      "summary": "Hover/focus tooltip overlay.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Tooltip from https://boldkit.dev/docs/components/tooltip"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/tooltip\n\n# Registry: https://boldkit.dev/r/tooltip.json\n# Demo: https://boldkit.dev/docs/components/tooltip\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Tooltip` (slug `tooltip`) from https://boldkit.dev/docs/components/tooltip. Install with `npx shadcn@latest add @boldkit/tooltip` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add tooltip`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/tooltip",
+        "registryUrl": "https://boldkit.dev/r/tooltip.json"
+      }
+    },
+    {
+      "id": "boldkit-avatar",
+      "libraryId": "boldkit",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "avatar",
+        "Avatar"
+      ],
+      "summary": "User avatar with fallback.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Avatar from https://boldkit.dev/docs/components/avatar"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/avatar\n\n# Registry: https://boldkit.dev/r/avatar.json\n# Demo: https://boldkit.dev/docs/components/avatar\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Avatar` (slug `avatar`) from https://boldkit.dev/docs/components/avatar. Install with `npx shadcn@latest add @boldkit/avatar` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add avatar`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/avatar",
+        "registryUrl": "https://boldkit.dev/r/avatar.json"
+      }
+    },
+    {
+      "id": "boldkit-badge",
+      "libraryId": "boldkit",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "badge",
+        "Badge"
+      ],
+      "summary": "Status and label badges.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Badge from https://boldkit.dev/docs/components/badge"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/badge\n\n# Registry: https://boldkit.dev/r/badge.json\n# Demo: https://boldkit.dev/docs/components/badge\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Badge` (slug `badge`) from https://boldkit.dev/docs/components/badge. Install with `npx shadcn@latest add @boldkit/badge` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add badge`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/badge",
+        "registryUrl": "https://boldkit.dev/r/badge.json"
+      }
+    },
+    {
+      "id": "boldkit-accordion",
+      "libraryId": "boldkit",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "Accordion"
+      ],
+      "summary": "Collapsible accordion panels.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Accordion from https://boldkit.dev/docs/components/accordion"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/accordion\n\n# Registry: https://boldkit.dev/r/accordion.json\n# Demo: https://boldkit.dev/docs/components/accordion\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Accordion` (slug `accordion`) from https://boldkit.dev/docs/components/accordion. Install with `npx shadcn@latest add @boldkit/accordion` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add accordion`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/accordion",
+        "registryUrl": "https://boldkit.dev/r/accordion.json"
+      }
+    },
+    {
+      "id": "boldkit-checkbox",
+      "libraryId": "boldkit",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "Checkbox"
+      ],
+      "summary": "Accessible checkbox control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "boldkit",
+        "iframeSrc": "https://boldkit.dev/docs/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Checkbox from https://boldkit.dev/docs/components/checkbox"
+      },
+      "copyCode": "npx shadcn@latest add @boldkit/checkbox\n\n# Registry: https://boldkit.dev/r/checkbox.json\n# Demo: https://boldkit.dev/docs/components/checkbox\n# Requires registries.@boldkit = https://boldkit.dev/r/{name}.json in components.json",
+      "copyPrompt": {
+        "text": "Use BoldKit free MIT React component `Checkbox` (slug `checkbox`) from https://boldkit.dev/docs/components/checkbox. Install with `npx shadcn@latest add @boldkit/checkbox` (registry https://boldkit.dev/r/{name}.json; add @boldkit alias first). Alt CLI: `npx boldkit add checkbox`. Home/docs: https://boldkit.dev. Repo: https://github.com/anibit14/boldkit. License: MIT (https://raw.githubusercontent.com/anibit14/boldkit/main/LICENSE; Copyright (c) 2025 BoldKit). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @boldkit/checkbox",
+        "registryUrl": "https://boldkit.dev/r/checkbox.json"
+      }
+    }
+  ]
+}

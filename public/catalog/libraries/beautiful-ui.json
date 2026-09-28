@@ -1,0 +1,575 @@
+{
+  "id": "beautiful-ui",
+  "name": "Beautiful UI",
+  "aliases": [
+    "beautifului",
+    "beautifului.dev",
+    "slev12397/beautiful-ui",
+    "Turbo Beautiful UI"
+  ],
+  "summary": "Copy-paste React primitives for AI-native interfaces \u2014 thinking, streaming, approvals, tools.",
+  "homeUrl": "https://www.beautifului.dev",
+  "docsUrl": "https://www.beautifului.dev",
+  "repoUrl": "https://github.com/slev12397/beautiful-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://www.beautifului.dev/r/{name}.json",
+    "registryUrl": "https://www.beautifului.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.beautifului.dev/#{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 20 gallery primitives (+ internal atoms) \u2014 not full inventory.",
+    "Sidebar Nav depends on commercial @central-icons-react \u2014 excluded from this batch.",
+    "Demos are single-page gallery anchors (#slug) on beautifului.dev \u2014 not per-route docs.",
+    "Foundation CSS (globals tokens) required once via /r/foundation.json.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:46:00-04:00",
+  "components": [
+    {
+      "id": "beautiful-ui-loading-state",
+      "libraryId": "beautiful-ui",
+      "slug": "loading-state",
+      "name": "Loading State",
+      "aliases": [
+        "pixel loader",
+        "beautiful ui loading"
+      ],
+      "summary": "Pixel-grid loader with shimmer and elapsed time.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/loading-state",
+        "iframeSrc": "https://www.beautifului.dev/#loading-state",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/loading-state.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Loading State` (slug `loading-state`) from https://www.beautifului.dev/#loading-state. Install with `npx shadcn@latest add https://www.beautifului.dev/r/loading-state.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/loading-state.json",
+        "registryUrl": "https://www.beautifului.dev/r/loading-state.json",
+        "registryItem": "loading-state"
+      }
+    },
+    {
+      "id": "beautiful-ui-thinking-state",
+      "libraryId": "beautiful-ui",
+      "slug": "thinking-state",
+      "name": "Thinking",
+      "aliases": [
+        "thinking traces",
+        "reasoning traces"
+      ],
+      "summary": "Expandable traces \u2014 steps, reasoning, search, coding.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/thinking-state",
+        "iframeSrc": "https://www.beautifului.dev/#thinking-state",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/thinking-state.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Thinking` (slug `thinking-state`) from https://www.beautifului.dev/#thinking-state. Install with `npx shadcn@latest add https://www.beautifului.dev/r/thinking-state.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/thinking-state.json",
+        "registryUrl": "https://www.beautifului.dev/r/thinking-state.json",
+        "registryItem": "thinking-state"
+      }
+    },
+    {
+      "id": "beautiful-ui-streaming-text",
+      "libraryId": "beautiful-ui",
+      "slug": "streaming-text",
+      "name": "Streaming Text",
+      "aliases": [
+        "streamed answer",
+        "inline sources"
+      ],
+      "summary": "Streamed answer with inline sources, actions, and follow-ups.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/streaming-text",
+        "iframeSrc": "https://www.beautifului.dev/#streaming-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/streaming-text.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Streaming Text` (slug `streaming-text`) from https://www.beautifului.dev/#streaming-text. Install with `npx shadcn@latest add https://www.beautifului.dev/r/streaming-text.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/streaming-text.json",
+        "registryUrl": "https://www.beautifului.dev/r/streaming-text.json",
+        "registryItem": "streaming-text"
+      }
+    },
+    {
+      "id": "beautiful-ui-approval-card",
+      "libraryId": "beautiful-ui",
+      "slug": "approval-card",
+      "name": "Approval Card",
+      "aliases": [
+        "HITL approval",
+        "human-in-the-loop"
+      ],
+      "summary": "Human-in-the-loop questions the agent asks before acting.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/approval-card",
+        "iframeSrc": "https://www.beautifului.dev/#approval-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/approval-card.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Approval Card` (slug `approval-card`) from https://www.beautifului.dev/#approval-card. Install with `npx shadcn@latest add https://www.beautifului.dev/r/approval-card.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/approval-card.json",
+        "registryUrl": "https://www.beautifului.dev/r/approval-card.json",
+        "registryItem": "approval-card"
+      }
+    },
+    {
+      "id": "beautiful-ui-tool-chips",
+      "libraryId": "beautiful-ui",
+      "slug": "tool-chips",
+      "name": "Tool Chips",
+      "aliases": [
+        "tool call chips"
+      ],
+      "summary": "Code edits and tool calls as compact chips.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/tool-chips",
+        "iframeSrc": "https://www.beautifului.dev/#tool-chips",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/tool-chips.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Tool Chips` (slug `tool-chips`) from https://www.beautifului.dev/#tool-chips. Install with `npx shadcn@latest add https://www.beautifului.dev/r/tool-chips.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/tool-chips.json",
+        "registryUrl": "https://www.beautifului.dev/r/tool-chips.json",
+        "registryItem": "tool-chips"
+      }
+    },
+    {
+      "id": "beautiful-ui-task-rows",
+      "libraryId": "beautiful-ui",
+      "slug": "task-rows",
+      "name": "Task Rows",
+      "aliases": [
+        "agent task status"
+      ],
+      "summary": "Live agent task status \u2014 running, failed, completed.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/task-rows",
+        "iframeSrc": "https://www.beautifului.dev/#task-rows",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/task-rows.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Task Rows` (slug `task-rows`) from https://www.beautifului.dev/#task-rows. Install with `npx shadcn@latest add https://www.beautifului.dev/r/task-rows.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/task-rows.json",
+        "registryUrl": "https://www.beautifului.dev/r/task-rows.json",
+        "registryItem": "task-rows"
+      }
+    },
+    {
+      "id": "beautiful-ui-chat-composer",
+      "libraryId": "beautiful-ui",
+      "slug": "chat-composer",
+      "name": "Chat",
+      "aliases": [
+        "chat composer",
+        "chat panel"
+      ],
+      "summary": "Tabbed chat panel with reasoning replies and a composer.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "section",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/chat-composer",
+        "iframeSrc": "https://www.beautifului.dev/#chat-composer",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/chat-composer.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Chat` (slug `chat-composer`) from https://www.beautifului.dev/#chat-composer. Install with `npx shadcn@latest add https://www.beautifului.dev/r/chat-composer.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/chat-composer.json",
+        "registryUrl": "https://www.beautifului.dev/r/chat-composer.json",
+        "registryItem": "chat-composer"
+      }
+    },
+    {
+      "id": "beautiful-ui-prompt-bar",
+      "libraryId": "beautiful-ui",
+      "slug": "prompt-bar",
+      "name": "Prompt Bar",
+      "aliases": [
+        "composer bar",
+        "model picker"
+      ],
+      "summary": "Composer with @ sources, / commands, model picker, and dictation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/prompt-bar",
+        "iframeSrc": "https://www.beautifului.dev/#prompt-bar",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/prompt-bar.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Prompt Bar` (slug `prompt-bar`) from https://www.beautifului.dev/#prompt-bar. Install with `npx shadcn@latest add https://www.beautifului.dev/r/prompt-bar.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/prompt-bar.json",
+        "registryUrl": "https://www.beautifului.dev/r/prompt-bar.json",
+        "registryItem": "prompt-bar"
+      }
+    },
+    {
+      "id": "beautiful-ui-recommendation-card",
+      "libraryId": "beautiful-ui",
+      "slug": "recommendation-card",
+      "name": "Recommendation Card",
+      "aliases": [
+        "confidence meter card"
+      ],
+      "summary": "Agent suggestion with a confidence meter and actions.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/recommendation-card",
+        "iframeSrc": "https://www.beautifului.dev/#recommendation-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/recommendation-card.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Recommendation Card` (slug `recommendation-card`) from https://www.beautifului.dev/#recommendation-card. Install with `npx shadcn@latest add https://www.beautifului.dev/r/recommendation-card.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/recommendation-card.json",
+        "registryUrl": "https://www.beautifului.dev/r/recommendation-card.json",
+        "registryItem": "recommendation-card"
+      }
+    },
+    {
+      "id": "beautiful-ui-context-cards",
+      "libraryId": "beautiful-ui",
+      "slug": "context-cards",
+      "name": "Context Cards",
+      "aliases": [
+        "retrieval chunks",
+        "RAG cards"
+      ],
+      "summary": "Retrieved knowledge chunks with their sources.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/context-cards",
+        "iframeSrc": "https://www.beautifului.dev/#context-cards",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/context-cards.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Context Cards` (slug `context-cards`) from https://www.beautifului.dev/#context-cards. Install with `npx shadcn@latest add https://www.beautifului.dev/r/context-cards.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/context-cards.json",
+        "registryUrl": "https://www.beautifului.dev/r/context-cards.json",
+        "registryItem": "context-cards"
+      }
+    },
+    {
+      "id": "beautiful-ui-diff-table",
+      "libraryId": "beautiful-ui",
+      "slug": "diff-table",
+      "name": "Diff Table",
+      "aliases": [
+        "AI proposed edits table"
+      ],
+      "summary": "AI-proposed edits sweeping through tabular data.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/diff-table",
+        "iframeSrc": "https://www.beautifului.dev/#diff-table",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/diff-table.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Diff Table` (slug `diff-table`) from https://www.beautifului.dev/#diff-table. Install with `npx shadcn@latest add https://www.beautifului.dev/r/diff-table.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/diff-table.json",
+        "registryUrl": "https://www.beautifului.dev/r/diff-table.json",
+        "registryItem": "diff-table"
+      }
+    },
+    {
+      "id": "beautiful-ui-code-block",
+      "libraryId": "beautiful-ui",
+      "slug": "code-block",
+      "name": "Code Block",
+      "aliases": [
+        "line-numbered code",
+        "unified diff"
+      ],
+      "summary": "A line-numbered listing and a unified diff.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beautiful-ui/code-block",
+        "iframeSrc": "https://www.beautifului.dev/#code-block",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires foundation CSS tokens (add https://www.beautifului.dev/r/foundation.json once)"
+      },
+      "copyCode": "npx shadcn@latest add https://www.beautifului.dev/r/code-block.json\n\n# One-time: also add foundation\n# npx shadcn@latest add https://www.beautifului.dev/r/foundation.json\n# Import the primitive from the path the CLI writes (components/primitives/...).",
+      "copyPrompt": {
+        "text": "Use Beautiful UI free MIT component `Code Block` (slug `code-block`) from https://www.beautifului.dev/#code-block. Install with `npx shadcn@latest add https://www.beautifului.dev/r/code-block.json` (pulls registryDependencies including foundation). Registry index: https://www.beautifului.dev/r/registry.json. Repo: https://github.com/slev12397/beautiful-ui. Requires React/Next + Tailwind v4 design tokens from foundation. License: MIT (https://raw.githubusercontent.com/slev12397/beautiful-ui/main/LICENSE; Copyright (c) 2026 Shane Levine). Pricing free. Also https://www.beautifului.dev/license.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.beautifului.dev/r/code-block.json",
+        "registryUrl": "https://www.beautifului.dev/r/code-block.json",
+        "registryItem": "code-block"
+      }
+    }
+  ]
+}

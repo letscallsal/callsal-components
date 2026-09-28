@@ -1,0 +1,564 @@
+{
+  "id": "spectrum-ui",
+  "name": "Spectrum UI",
+  "aliases": [
+    "spectrum-ui",
+    "Spectrum UI",
+    "spectrumui",
+    "@spectrumui",
+    "ui.spectrumhq.in"
+  ],
+  "summary": "Apache-2.0 animated React/shadcn/Tailwind component registry (250+) with live demos and MCP.",
+  "homeUrl": "https://ui.spectrumhq.in/",
+  "docsUrl": "https://ui.spectrumhq.in/docs",
+  "repoUrl": "https://github.com/arihantcodes/spectrum-ui",
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @spectrumui/{name}",
+    "registryUrl": "https://ui.spectrumhq.in/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://ui.spectrumhq.in/docs/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 250+ Spectrum UI docs components.",
+    "Some docs slugs map to multi-file registry items (e.g. demos/dependencies); install via @spectrumui/{name}.",
+    "infinite-scroll docs HTTP 200; dedicated r/infinite-scroll.json was 404 at check \u2014 use docs copy or related registry item.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:30:00-04:00",
+  "components": [
+    {
+      "id": "spectrum-ui-accordion",
+      "libraryId": "spectrum-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "Accordion"
+      ],
+      "summary": "Expandable accordion panels.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Accordion` (slug `accordion`) from https://ui.spectrumhq.in/docs/accordion"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/accordion\n\n# Registry: https://ui.spectrumhq.in/r/accordion.json\n# Demo: https://ui.spectrumhq.in/docs/accordion",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Accordion` (slug `accordion`) from https://ui.spectrumhq.in/docs/accordion. Install with `npx shadcn@latest add @spectrumui/accordion` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/accordion",
+        "registryUrl": "https://ui.spectrumhq.in/r/accordion.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-follow-button",
+      "libraryId": "spectrum-ui",
+      "slug": "follow-button",
+      "name": "Follow Button",
+      "aliases": [
+        "follow-button",
+        "FollowButton",
+        "follow"
+      ],
+      "summary": "Animated follow/unfollow button.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/follow-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Follow Button` (slug `follow-button`) from https://ui.spectrumhq.in/docs/foll"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/follow-button\n\n# Registry: https://ui.spectrumhq.in/r/follow-button.json\n# Demo: https://ui.spectrumhq.in/docs/follow-button",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Follow Button` (slug `follow-button`) from https://ui.spectrumhq.in/docs/follow-button. Install with `npx shadcn@latest add @spectrumui/follow-button` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/follow-button",
+        "registryUrl": "https://ui.spectrumhq.in/r/follow-button.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-like-button",
+      "libraryId": "spectrum-ui",
+      "slug": "like-button",
+      "name": "Like Button",
+      "aliases": [
+        "like-button",
+        "LikeButton",
+        "like"
+      ],
+      "summary": "Animated like button control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/like-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Like Button` (slug `like-button`) from https://ui.spectrumhq.in/docs/like-but"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/like-button\n\n# Registry: https://ui.spectrumhq.in/r/like-button.json\n# Live demo + source: https://ui.spectrumhq.in/docs/like-button",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Like Button` (slug `like-button`) from https://ui.spectrumhq.in/docs/like-button. Install with `npx shadcn@latest add @spectrumui/like-button` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/like-button",
+        "registryUrl": "https://ui.spectrumhq.in/r/like-button.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-animated-switch",
+      "libraryId": "spectrum-ui",
+      "slug": "animated-switch",
+      "name": "Animated Switch",
+      "aliases": [
+        "animated-switch",
+        "AnimatedSwitch",
+        "switch"
+      ],
+      "summary": "Animated on/off switch.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/animated-switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Animated Switch` (slug `animated-switch`) from https://ui.spectrumhq.in/docs/"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/animated-switch\n\n# Registry: https://ui.spectrumhq.in/r/animated-switch.json\n# Live demo + source: https://ui.spectrumhq.in/docs/animated-switch",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Animated Switch` (slug `animated-switch`) from https://ui.spectrumhq.in/docs/animated-switch. Install with `npx shadcn@latest add @spectrumui/animated-switch` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/animated-switch",
+        "registryUrl": "https://ui.spectrumhq.in/r/animated-switch.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-beam-card",
+      "libraryId": "spectrum-ui",
+      "slug": "beam-card",
+      "name": "Beam Card",
+      "aliases": [
+        "beam-card",
+        "BeamCard"
+      ],
+      "summary": "Card with beam/glow edge effect.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "beam",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/beam-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Beam Card` (slug `beam-card`) from https://ui.spectrumhq.in/docs/beam-card"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/beam-card\n\n# Registry: https://ui.spectrumhq.in/r/beam-card.json\n# Live demo + source: https://ui.spectrumhq.in/docs/beam-card",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Beam Card` (slug `beam-card`) from https://ui.spectrumhq.in/docs/beam-card. Install with `npx shadcn@latest add @spectrumui/beam-card` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/beam-card",
+        "registryUrl": "https://ui.spectrumhq.in/r/beam-card.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-floating-label-input",
+      "libraryId": "spectrum-ui",
+      "slug": "floating-label-input",
+      "name": "Floating Label Input",
+      "aliases": [
+        "floating-label-input",
+        "FloatingLabelInput",
+        "input"
+      ],
+      "summary": "Text input with floating label.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/floating-label-input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Floating Label Input` (slug `floating-label-input`) from https://ui.spectrumh"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/floating-label-input\n\n# Registry: https://ui.spectrumhq.in/r/floating-label-input.json\n# Live demo + source: https://ui.spectrumhq.in/docs/floating-label-input",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Floating Label Input` (slug `floating-label-input`) from https://ui.spectrumhq.in/docs/floating-label-input. Install with `npx shadcn@latest add @spectrumui/floating-label-input` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/floating-label-input",
+        "registryUrl": "https://ui.spectrumhq.in/r/floating-label-input.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-avatar-stack",
+      "libraryId": "spectrum-ui",
+      "slug": "avatar-stack",
+      "name": "Avatar Stack",
+      "aliases": [
+        "avatar-stack",
+        "AvatarStack"
+      ],
+      "summary": "Stacked overlapping avatars.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/avatar-stack",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Avatar Stack` (slug `avatar-stack`) from https://ui.spectrumhq.in/docs/avatar"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/avatar-stack\n\n# Registry: https://ui.spectrumhq.in/r/avatar-stack.json\n# Live demo + source: https://ui.spectrumhq.in/docs/avatar-stack",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Avatar Stack` (slug `avatar-stack`) from https://ui.spectrumhq.in/docs/avatar-stack. Install with `npx shadcn@latest add @spectrumui/avatar-stack` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/avatar-stack",
+        "registryUrl": "https://ui.spectrumhq.in/r/avatar-stack.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-hold-to-confirm",
+      "libraryId": "spectrum-ui",
+      "slug": "hold-to-confirm",
+      "name": "Hold to Confirm",
+      "aliases": [
+        "hold-to-confirm",
+        "HoldToConfirm"
+      ],
+      "summary": "Press-and-hold confirmation control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/hold-to-confirm",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Hold to Confirm` (slug `hold-to-confirm`) from https://ui.spectrumhq.in/docs/"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/hold-to-confirm\n\n# Registry: https://ui.spectrumhq.in/r/hold-to-confirm.json\n# Live demo + source: https://ui.spectrumhq.in/docs/hold-to-confirm",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Hold to Confirm` (slug `hold-to-confirm`) from https://ui.spectrumhq.in/docs/hold-to-confirm. Install with `npx shadcn@latest add @spectrumui/hold-to-confirm` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/hold-to-confirm",
+        "registryUrl": "https://ui.spectrumhq.in/r/hold-to-confirm.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-kbd-key",
+      "libraryId": "spectrum-ui",
+      "slug": "kbd-key",
+      "name": "Kbd Key",
+      "aliases": [
+        "kbd-key",
+        "Kbd",
+        "keyboard key"
+      ],
+      "summary": "Keyboard key visual chip.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/kbd-key",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Kbd Key` (slug `kbd-key`) from https://ui.spectrumhq.in/docs/kbd-key"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/kbd-key\n\n# Registry: https://ui.spectrumhq.in/r/kbd-key.json\n# Live demo + source: https://ui.spectrumhq.in/docs/kbd-key",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Kbd Key` (slug `kbd-key`) from https://ui.spectrumhq.in/docs/kbd-key. Install with `npx shadcn@latest add @spectrumui/kbd-key` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/kbd-key",
+        "registryUrl": "https://ui.spectrumhq.in/r/kbd-key.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-expandable-action-bar",
+      "libraryId": "spectrum-ui",
+      "slug": "expandable-action-bar",
+      "name": "Expandable Action Bar",
+      "aliases": [
+        "expandable-action-bar",
+        "ExpandableActionBar"
+      ],
+      "summary": "Expanding action toolbar.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu",
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/expandable-action-bar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Expandable Action Bar` (slug `expandable-action-bar`) from https://ui.spectru"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/expandable-action-bar\n\n# Registry: https://ui.spectrumhq.in/r/expandable-action-bar.json\n# Live demo + source: https://ui.spectrumhq.in/docs/expandable-action-bar",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Expandable Action Bar` (slug `expandable-action-bar`) from https://ui.spectrumhq.in/docs/expandable-action-bar. Install with `npx shadcn@latest add @spectrumui/expandable-action-bar` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/expandable-action-bar",
+        "registryUrl": "https://ui.spectrumhq.in/r/expandable-action-bar.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-data-table",
+      "libraryId": "spectrum-ui",
+      "slug": "data-table",
+      "name": "Data Table",
+      "aliases": [
+        "data-table",
+        "DataTable",
+        "table"
+      ],
+      "summary": "Data table display component.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/data-table",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Data Table` (slug `data-table`) from https://ui.spectrumhq.in/docs/data-table"
+      },
+      "copyCode": "npx shadcn@latest add @spectrumui/data-table\n\n# Registry: https://ui.spectrumhq.in/r/data-table.json\n# Live demo + source: https://ui.spectrumhq.in/docs/data-table",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Data Table` (slug `data-table`) from https://ui.spectrumhq.in/docs/data-table. Install with `npx shadcn@latest add @spectrumui/data-table` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/data-table",
+        "registryUrl": "https://ui.spectrumhq.in/r/data-table.json"
+      }
+    },
+    {
+      "id": "spectrum-ui-infinite-scroll",
+      "libraryId": "spectrum-ui",
+      "slug": "infinite-scroll",
+      "name": "Infinite Scroll",
+      "aliases": [
+        "infinite-scroll",
+        "InfiniteScroll"
+      ],
+      "summary": "Infinite scroll content loader.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other",
+        "layout"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spectrum-ui",
+        "iframeSrc": "https://ui.spectrumhq.in/docs/infinite-scroll",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Spectrum UI free Apache-2.0 component `Infinite Scroll` (slug `infinite-scroll`) from https://ui.spectrumhq.in/docs/"
+      },
+      "copyCode": "# Copy-paste from docs (registry item name may differ): https://ui.spectrumhq.in/docs/infinite-scroll\nnpx shadcn@latest add @spectrumui/infinite-scroll\n\n# Live demo + source on docs page",
+      "copyPrompt": {
+        "text": "Use Spectrum UI free Apache-2.0 component `Infinite Scroll` (slug `infinite-scroll`) from https://ui.spectrumhq.in/docs/infinite-scroll. Install with `npx shadcn@latest add @spectrumui/infinite-scroll` (registry https://ui.spectrumhq.in/r/{name}.json). Home/docs: https://ui.spectrumhq.in. Repo: https://github.com/arihantcodes/spectrum-ui. License: Apache-2.0 (https://raw.githubusercontent.com/arihantcodes/spectrum-ui/main/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @spectrumui/infinite-scroll",
+        "registryUrl": "https://ui.spectrumhq.in/r/{name}.json"
+      }
+    }
+  ]
+}

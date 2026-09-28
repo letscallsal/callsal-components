@@ -1,0 +1,556 @@
+{
+  "id": "float-ui",
+  "name": "Float UI",
+  "aliases": [
+    "floatui",
+    "floatui.com",
+    "MarsX-dev/floatui"
+  ],
+  "summary": "Free open-source Tailwind CSS UI components and templates for React (copy-paste).",
+  "homeUrl": "https://floatui.com",
+  "docsUrl": "https://floatui.com/components",
+  "repoUrl": "https://github.com/MarsX-dev/floatui",
+  "license": "Float UI Custom License",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next",
+    "vue",
+    "svelte",
+    "html"
+  ],
+  "install": {
+    "kind": "copy-paste",
+    "command": "Open https://floatui.com/components/{slug} and copy the React + Tailwind example"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://floatui.com/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot catalogs 12 category pages (each ships multiple variants) \u2014 not every preview in componentsNames.ts.",
+    "Custom license (not SPDX MIT/Apache): end-product OK; no redistributing components as a library.",
+    "Vue/Svelte/HTML variants exist; catalog frameworks list them but copyCode focuses on React.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:55:00-04:00",
+  "components": [
+    {
+      "id": "float-ui-buttons",
+      "libraryId": "float-ui",
+      "slug": "buttons",
+      "name": "Buttons",
+      "aliases": [
+        "floatui buttons",
+        "primary buttons"
+      ],
+      "summary": "Responsive Tailwind button variants (primary, secondary, icon, rounded).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/buttons",
+        "iframeSrc": "https://floatui.com/components/buttons",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/buttons, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: FUIPrimaryButtons\n\n<button className=\"px-3 py-1.5 text-sm text-white duration-150 bg-indigo-600 rounded-lg hover:bg-indigo-700 active:shadow-lg\">Button</button>",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `Buttons` (slug `buttons`) from https://floatui.com/components/buttons. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: FUIPrimaryButtons). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/buttons and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-navbars",
+      "libraryId": "float-ui",
+      "slug": "navbars",
+      "name": "Navbars",
+      "aliases": [
+        "floatui navbar",
+        "navigation"
+      ],
+      "summary": "Responsive navbar examples with submenu, search, and dropdown patterns.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/navbars",
+        "iframeSrc": "https://floatui.com/components/navbars",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/navbars, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: FUINavbarWithSearchBox\n\nCopy React/Tailwind navbar examples from https://floatui.com/components/navbars (e.g. Navbar with search box).",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `Navbars` (slug `navbars`) from https://floatui.com/components/navbars. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: FUINavbarWithSearchBox). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/navbars and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-heroes",
+      "libraryId": "float-ui",
+      "slug": "heroes",
+      "name": "Heroes",
+      "aliases": [
+        "floatui hero",
+        "hero section"
+      ],
+      "summary": "Landing-page hero sections built with Tailwind for React/Next.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "hero",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/heroes",
+        "iframeSrc": "https://floatui.com/components/heroes",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/heroes, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: hero\n\nCopy React/Tailwind hero sections from https://floatui.com/components/heroes.",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `Heroes` (slug `heroes`) from https://floatui.com/components/heroes. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: hero). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/heroes and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-cards",
+      "libraryId": "float-ui",
+      "slug": "cards",
+      "name": "Cards",
+      "aliases": [
+        "floatui cards"
+      ],
+      "summary": "Card layouts and content cards for marketing and app UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/cards",
+        "iframeSrc": "https://floatui.com/components/cards",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/cards, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: card\n\nCopy React/Tailwind card examples from https://floatui.com/components/cards.",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `Cards` (slug `cards`) from https://floatui.com/components/cards. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: card). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/cards and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-footers",
+      "libraryId": "float-ui",
+      "slug": "footers",
+      "name": "Footers",
+      "aliases": [
+        "floatui footer"
+      ],
+      "summary": "Site footer sections including newsletter and dark variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "section",
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/footers",
+        "iframeSrc": "https://floatui.com/components/footers",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/footers, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: FUIDarkFooter\n\nCopy React/Tailwind footer examples from https://floatui.com/components/footers (e.g. Dark Footer).",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `Footers` (slug `footers`) from https://floatui.com/components/footers. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: FUIDarkFooter). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/footers and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-inputs",
+      "libraryId": "float-ui",
+      "slug": "inputs",
+      "name": "Inputs",
+      "aliases": [
+        "floatui inputs",
+        "form inputs"
+      ],
+      "summary": "Styled text inputs and form controls with Tailwind.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/inputs",
+        "iframeSrc": "https://floatui.com/components/inputs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/inputs, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: input\n\nCopy React/Tailwind input examples from https://floatui.com/components/inputs.",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `Inputs` (slug `inputs`) from https://floatui.com/components/inputs. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: input). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/inputs and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-modals",
+      "libraryId": "float-ui",
+      "slug": "modals",
+      "name": "Modals",
+      "aliases": [
+        "floatui modal",
+        "dialog"
+      ],
+      "summary": "Modal/dialog patterns for React with Tailwind (Radix-friendly).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/modals",
+        "iframeSrc": "https://floatui.com/components/modals",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/modals, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: modal\n\nCopy React/Tailwind modal examples from https://floatui.com/components/modals.",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `Modals` (slug `modals`) from https://floatui.com/components/modals. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: modal). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/modals and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-faqs",
+      "libraryId": "float-ui",
+      "slug": "faqs",
+      "name": "FAQs",
+      "aliases": [
+        "floatui faq",
+        "accordion faq"
+      ],
+      "summary": "FAQ accordion/section patterns for marketing pages.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "section",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/faqs",
+        "iframeSrc": "https://floatui.com/components/faqs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/faqs, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: FUIPrimaryFaqs\n\nCopy React/Tailwind FAQ examples from https://floatui.com/components/faqs (e.g. Primary Faqs).",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `FAQs` (slug `faqs`) from https://floatui.com/components/faqs. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: FUIPrimaryFaqs). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/faqs and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-alerts",
+      "libraryId": "float-ui",
+      "slug": "alerts",
+      "name": "Alerts",
+      "aliases": [
+        "floatui alert"
+      ],
+      "summary": "Alert/banner callout components for status messages.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/alerts",
+        "iframeSrc": "https://floatui.com/components/alerts",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/alerts, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: alert\n\nCopy React/Tailwind alert examples from https://floatui.com/components/alerts.",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `Alerts` (slug `alerts`) from https://floatui.com/components/alerts. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: alert). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/alerts and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-authentication",
+      "libraryId": "float-ui",
+      "slug": "authentication",
+      "name": "Authentication",
+      "aliases": [
+        "floatui auth",
+        "login forms"
+      ],
+      "summary": "Login/signup authentication page sections.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/authentication",
+        "iframeSrc": "https://floatui.com/components/authentication",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/authentication, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: FUILoginWithGridProvider\n\nCopy React/Tailwind auth examples from https://floatui.com/components/authentication (e.g. Login with grid provider).",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `Authentication` (slug `authentication`) from https://floatui.com/components/authentication. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: FUILoginWithGridProvider). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/authentication and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-sidebars",
+      "libraryId": "float-ui",
+      "slug": "sidebars",
+      "name": "Sidebars",
+      "aliases": [
+        "floatui sidebar"
+      ],
+      "summary": "App sidebar navigation with submenu and tooltip variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/sidebars",
+        "iframeSrc": "https://floatui.com/components/sidebars",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/sidebars, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: FUISidebarWithSubmenu\n\nCopy React/Tailwind sidebar examples from https://floatui.com/components/sidebars (e.g. Sidebar with submenu).",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `Sidebars` (slug `sidebars`) from https://floatui.com/components/sidebars. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: FUISidebarWithSubmenu). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/sidebars and copy the React example"
+      }
+    },
+    {
+      "id": "float-ui-cta-sections",
+      "libraryId": "float-ui",
+      "slug": "cta-sections",
+      "name": "CTA Sections",
+      "aliases": [
+        "floatui cta",
+        "call to action"
+      ],
+      "summary": "Call-to-action marketing sections and dark CTAs.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "section",
+        "hero"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floatui/components/cta-sections",
+        "iframeSrc": "https://floatui.com/components/cta-sections",
+        "aspectRatio": "16/9",
+        "peerNotes": "Tailwind CSS required; some interactive examples use Radix primitives"
+      },
+      "copyCode": "// Float UI is copy-paste (no npm package). Open https://floatui.com/components/cta-sections, pick a variant, copy the React + Tailwind code.\n// Source previews: https://github.com/MarsX-dev/floatui/tree/main/previewsComponents\n// Example preview component: FUIDarkCta\n\nCopy React/Tailwind CTA sections from https://floatui.com/components/cta-sections (e.g. Dark Cta).",
+      "copyPrompt": {
+        "text": "Use Float UI free open-source Tailwind React component category `CTA Sections` (slug `cta-sections`) from https://floatui.com/components/cta-sections. Copy-paste from the site (React/Vue/Svelte/HTML tabs). Preview sources live in https://github.com/MarsX-dev/floatui/tree/main/previewsComponents (example: FUIDarkCta). No npm install \u2014 paste into your app and adjust Tailwind classes. License: Float UI Custom License (https://raw.githubusercontent.com/MarsX-dev/floatui/main/LICENSE.md; also https://floatui.com/license) \u2014 unlimited end products OK; do not redistribute components as a standalone library/theme/website-builder. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://floatui.com/components/cta-sections and copy the React example"
+      }
+    }
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "id": "balsa-ui",
+  "name": "Balsa UI",
+  "aliases": [
+    "balsa-ui.com",
+    "balsa",
+    "pedrobalsa/balsa-ui"
+  ],
+  "summary": "Agent-native open-code UI for React and Vue — CLI copies editable source you own.",
+  "homeUrl": "https://balsa-ui.com",
+  "docsUrl": "https://balsa-ui.com/docs",
+  "repoUrl": "https://github.com/pedrobalsa/balsa-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "vue"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx balsa-ui@latest add {name}",
+    "registryUrl": "https://balsa-ui.com/r/react/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://balsa-ui.com/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "lucide-react"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 React comps — catalog-index.json currently lists frameworks:['vue'] only; React registries live at /r/react/{slug}.json (verified HTTP 200).",
+    "Default /r/{slug}.json is Vue (shadcn-vue schema); React path /r/react/{slug}.json required for React ownership.",
+    "Site is client-rendered SPA; iframe demos rely on JS hydration.",
+    "npm package description/keywords still Vue-first; README documents React 19 (~99 items) alongside Vue 3.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:38:34-04:00",
+  "components": [
+    {
+      "id": "balsa-ui-button",
+      "libraryId": "balsa-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "balsa button",
+        "glass button"
+      ],
+      "summary": "Typed action control with solid/soft/outline/glass variants and FAB shapes.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/button",
+        "iframeSrc": "https://balsa-ui.com/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add button\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/button.json\nimport { Button } from \"@/components/ui/Button\"\n\n<Button />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Button` (slug `button`) from https://balsa-ui.com/docs/components/button. Install with `npx balsa-ui@latest add button` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/button.json`. React registry item: https://balsa-ui.com/r/react/button.json (Vue default registry is https://balsa-ui.com/r/button.json — do not use for React). Imports land under `src/components/ui/Button.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add button",
+        "registryUrl": "https://balsa-ui.com/r/react/button.json",
+        "registryItem": "button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-card",
+      "libraryId": "balsa-ui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "balsa card",
+        "surface card"
+      ],
+      "summary": "Semantic surface card with variants and action-intent color.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/card",
+        "iframeSrc": "https://balsa-ui.com/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add card\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/card.json\nimport { Card } from \"@/components/ui/Card\"\n\n<Card />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Card` (slug `card`) from https://balsa-ui.com/docs/components/card. Install with `npx balsa-ui@latest add card` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/card.json`. React registry item: https://balsa-ui.com/r/react/card.json (Vue default registry is https://balsa-ui.com/r/card.json — do not use for React). Imports land under `src/components/ui/Card.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add card",
+        "registryUrl": "https://balsa-ui.com/r/react/card.json",
+        "registryItem": "card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-modal",
+      "libraryId": "balsa-ui",
+      "slug": "modal",
+      "name": "Modal",
+      "aliases": [
+        "balsa modal",
+        "dialog"
+      ],
+      "summary": "Focused dialog/modal with typed semantic colors and glass materials.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/modal",
+        "iframeSrc": "https://balsa-ui.com/docs/components/modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add modal\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/modal.json\nimport { Modal } from \"@/components/ui/Modal\"\n\n<Modal />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Modal` (slug `modal`) from https://balsa-ui.com/docs/components/modal. Install with `npx balsa-ui@latest add modal` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/modal.json`. React registry item: https://balsa-ui.com/r/react/modal.json (Vue default registry is https://balsa-ui.com/r/modal.json — do not use for React). Imports land under `src/components/ui/Modal.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add modal",
+        "registryUrl": "https://balsa-ui.com/r/react/modal.json",
+        "registryItem": "modal"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-input",
+      "libraryId": "balsa-ui",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "balsa input",
+        "text field"
+      ],
+      "summary": "Accessible labeled input with outline/surface/soft/glass materials.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/input",
+        "iframeSrc": "https://balsa-ui.com/docs/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add input\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/input.json\nimport { Input } from \"@/components/ui/Input\"\n\n<Input />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Input` (slug `input`) from https://balsa-ui.com/docs/components/input. Install with `npx balsa-ui@latest add input` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/input.json`. React registry item: https://balsa-ui.com/r/react/input.json (Vue default registry is https://balsa-ui.com/r/input.json — do not use for React). Imports land under `src/components/ui/Input.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add input",
+        "registryUrl": "https://balsa-ui.com/r/react/input.json",
+        "registryItem": "input"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-tabs",
+      "libraryId": "balsa-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "balsa tabs"
+      ],
+      "summary": "Keyboard-accessible tab panels for local and filter switching.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/tabs",
+        "iframeSrc": "https://balsa-ui.com/docs/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add tabs\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/tabs.json\nimport { Tabs } from \"@/components/ui/Tabs\"\n\n<Tabs />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Tabs` (slug `tabs`) from https://balsa-ui.com/docs/components/tabs. Install with `npx balsa-ui@latest add tabs` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/tabs.json`. React registry item: https://balsa-ui.com/r/react/tabs.json (Vue default registry is https://balsa-ui.com/r/tabs.json — do not use for React). Imports land under `src/components/ui/Tabs.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add tabs",
+        "registryUrl": "https://balsa-ui.com/r/react/tabs.json",
+        "registryItem": "tabs"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-toast",
+      "libraryId": "balsa-ui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "balsa toast",
+        "notification"
+      ],
+      "summary": "Viewport notification stack with typed toast items.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/toast",
+        "iframeSrc": "https://balsa-ui.com/docs/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add toast\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/toast.json\nimport { Toast } from \"@/components/ui/Toast\"\n\n<Toast />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Toast` (slug `toast`) from https://balsa-ui.com/docs/components/toast. Install with `npx balsa-ui@latest add toast` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/toast.json`. React registry item: https://balsa-ui.com/r/react/toast.json (Vue default registry is https://balsa-ui.com/r/toast.json — do not use for React). Imports land under `src/components/ui/Toast.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add toast",
+        "registryUrl": "https://balsa-ui.com/r/react/toast.json",
+        "registryItem": "toast"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-tooltip",
+      "libraryId": "balsa-ui",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "balsa tooltip"
+      ],
+      "summary": "Collision-aware supplementary descriptions on hover/focus.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/tooltip",
+        "iframeSrc": "https://balsa-ui.com/docs/components/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add tooltip\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/tooltip.json\nimport { Tooltip } from \"@/components/ui/Tooltip\"\n\n<Tooltip />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Tooltip` (slug `tooltip`) from https://balsa-ui.com/docs/components/tooltip. Install with `npx balsa-ui@latest add tooltip` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/tooltip.json`. React registry item: https://balsa-ui.com/r/react/tooltip.json (Vue default registry is https://balsa-ui.com/r/tooltip.json — do not use for React). Imports land under `src/components/ui/Tooltip.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add tooltip",
+        "registryUrl": "https://balsa-ui.com/r/react/tooltip.json",
+        "registryItem": "tooltip"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-accordion",
+      "libraryId": "balsa-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "balsa accordion",
+        "disclosure"
+      ],
+      "summary": "Options-driven disclosure collection with single/multiple models.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/accordion",
+        "iframeSrc": "https://balsa-ui.com/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add accordion\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/accordion.json\nimport { Accordion } from \"@/components/ui/Accordion\"\n\n<Accordion />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Accordion` (slug `accordion`) from https://balsa-ui.com/docs/components/accordion. Install with `npx balsa-ui@latest add accordion` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/accordion.json`. React registry item: https://balsa-ui.com/r/react/accordion.json (Vue default registry is https://balsa-ui.com/r/accordion.json — do not use for React). Imports land under `src/components/ui/Accordion.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add accordion",
+        "registryUrl": "https://balsa-ui.com/r/react/accordion.json",
+        "registryItem": "accordion"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-badge",
+      "libraryId": "balsa-ui",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "balsa badge",
+        "status label"
+      ],
+      "summary": "Compact status/category label with solid/soft/outline materials.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/badge",
+        "iframeSrc": "https://balsa-ui.com/docs/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add badge\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/badge.json\nimport { Badge } from \"@/components/ui/Badge\"\n\n<Badge />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Badge` (slug `badge`) from https://balsa-ui.com/docs/components/badge. Install with `npx balsa-ui@latest add badge` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/badge.json`. React registry item: https://balsa-ui.com/r/react/badge.json (Vue default registry is https://balsa-ui.com/r/badge.json — do not use for React). Imports land under `src/components/ui/Badge.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add badge",
+        "registryUrl": "https://balsa-ui.com/r/react/badge.json",
+        "registryItem": "badge"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-text-3d",
+      "libraryId": "balsa-ui",
+      "slug": "text-3d",
+      "name": "Text 3D",
+      "aliases": [
+        "3d text",
+        "extruded text"
+      ],
+      "summary": "Palette-aware extruded display text with Three.js presets.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/text-3d",
+        "iframeSrc": "https://balsa-ui.com/docs/components/text-3d",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add text-3d\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/text-3d.json\nimport { Text3D } from \"@/components/ui/Text3D\"\n\n<Text3D />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Text 3D` (slug `text-3d`) from https://balsa-ui.com/docs/components/text-3d. Install with `npx balsa-ui@latest add text-3d` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/text-3d.json`. React registry item: https://balsa-ui.com/r/react/text-3d.json (Vue default registry is https://balsa-ui.com/r/text-3d.json — do not use for React). Imports land under `src/components/ui/Text3D.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add text-3d",
+        "registryUrl": "https://balsa-ui.com/r/react/text-3d.json",
+        "registryItem": "text-3d"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-gradient-background",
+      "libraryId": "balsa-ui",
+      "slug": "gradient-background",
+      "name": "Gradient Background",
+      "aliases": [
+        "gradient bg",
+        "procedural background"
+      ],
+      "summary": "Deterministic procedural gradient backgrounds with pattern generators.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/gradient-background",
+        "iframeSrc": "https://balsa-ui.com/docs/components/gradient-background",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add gradient-background\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/gradient-background.json\nimport { GradientBackground } from \"@/components/ui/GradientBackground\"\n\n<GradientBackground />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Gradient Background` (slug `gradient-background`) from https://balsa-ui.com/docs/components/gradient-background. Install with `npx balsa-ui@latest add gradient-background` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/gradient-background.json`. React registry item: https://balsa-ui.com/r/react/gradient-background.json (Vue default registry is https://balsa-ui.com/r/gradient-background.json — do not use for React). Imports land under `src/components/ui/GradientBackground.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add gradient-background",
+        "registryUrl": "https://balsa-ui.com/r/react/gradient-background.json",
+        "registryItem": "gradient-background"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "balsa-ui-spinner",
+      "libraryId": "balsa-ui",
+      "slug": "spinner",
+      "name": "Spinner",
+      "aliases": [
+        "balsa spinner",
+        "loading"
+      ],
+      "summary": "Accessible indeterminate loading spinner with sizes and colors.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@balsa-ui/spinner",
+        "iframeSrc": "https://balsa-ui.com/docs/components/spinner",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI also installs Vue; catalog uses React registry /r/react/{slug}.json"
+      },
+      "copyCode": "npx balsa-ui@latest add spinner\n\n# React registry (explicit):\n# npx shadcn@latest add https://balsa-ui.com/r/react/spinner.json\nimport { Spinner } from \"@/components/ui/Spinner\"\n\n<Spinner />",
+      "copyPrompt": {
+        "text": "Use Balsa UI free MIT React component `Spinner` (slug `spinner`) from https://balsa-ui.com/docs/components/spinner. Install with `npx balsa-ui@latest add spinner` (CLI detects React vs Vue) or `npx shadcn@latest add https://balsa-ui.com/r/react/spinner.json`. React registry item: https://balsa-ui.com/r/react/spinner.json (Vue default registry is https://balsa-ui.com/r/spinner.json — do not use for React). Imports land under `src/components/ui/Spinner.tsx`. Requires React 19 + Tailwind. License: MIT (https://raw.githubusercontent.com/pedrobalsa/balsa-ui/main/LICENSE; Copyright (c) 2026 Balsa UI contributors). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx balsa-ui@latest add spinner",
+        "registryUrl": "https://balsa-ui.com/r/react/spinner.json",
+        "registryItem": "spinner"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

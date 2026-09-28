@@ -1,0 +1,606 @@
+{
+  "id": "base-ui",
+  "name": "Base UI",
+  "aliases": [
+    "base-ui",
+    "Base UI",
+    "@base-ui/react",
+    "mui/base-ui",
+    "base-ui.com"
+  ],
+  "summary": "Unstyled accessible React primitives from the MUI team with interactive docs demos.",
+  "homeUrl": "https://base-ui.com",
+  "docsUrl": "https://base-ui.com/react/overview/quick-start",
+  "repoUrl": "https://github.com/mui/base-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install @base-ui/react",
+    "packages": [
+      "@base-ui/react"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://base-ui.com/react/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Headless/unstyled \u2014 docs examples use CSS modules (index.module.css).",
+    "Pilot includes 12 documented components \u2014 not full inventory.",
+    "Replacement for SKIPPED 21st-dev (freemium copy gate) in Packet 086 named batch.",
+    "Distinct from basecn (shadcn-style registry on Base UI) already in SoT.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:50:00-04:00",
+  "components": [
+    {
+      "id": "base-ui-button",
+      "libraryId": "base-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "base-ui button",
+        "base ui button",
+        "@base-ui/react/button"
+      ],
+      "summary": "Accessible unstyled button.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/button",
+        "iframeSrc": "https://base-ui.com/react/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport * as React from 'react';\nimport { Button } from '@base-ui/react/button';\nimport styles from './index.module.css';\n\nexport default function ExampleButton() {\n  return <Button className={styles.Button}>Submit</Button>;\n}",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Button` (slug `button`) from https://base-ui.com/react/components/button. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/button`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-dialog",
+      "libraryId": "base-ui",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "base-ui dialog",
+        "base ui dialog",
+        "@base-ui/react/dialog"
+      ],
+      "summary": "Accessible dialog with portal.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/dialog",
+        "iframeSrc": "https://base-ui.com/react/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport { Dialog } from '@base-ui/react/dialog';\nimport styles from './index.module.css';\n\nexport default function ExampleDialog() {\n  return (\n    <Dialog.Root>\n      <Dialog.Trigger className={styles.Button}>View notifications</Dialog.Trigger>\n      <Dialog.Portal>\n        <Dialog.Backdrop className={styles.Backdrop} />\n        <Dialog.Popup className={styles.Popup}>\n          <div className={styles.Intro}>\n            <Dialog.Title className={styles.Title}>Notifications</Dialog.Title>\n            <Dialog.Description className={styles.Description}>\n              You are all caught up. Good job!\n            </Dialog.Description>\n          </div>\n          <div className={styles.Actions}>\n            <Dialog.Close className={styles.Button}>Close</Dialog.Close>\n          </div>\n        </Dialog.Popup>\n      </Dialog.Portal>\n    </Dialog.Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Dialog` (slug `dialog`) from https://base-ui.com/react/components/dialog. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/dialog`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-menu",
+      "libraryId": "base-ui",
+      "slug": "menu",
+      "name": "Menu",
+      "aliases": [
+        "menu",
+        "base-ui menu",
+        "base ui menu",
+        "@base-ui/react/menu"
+      ],
+      "summary": "Accessible menu.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/menu",
+        "iframeSrc": "https://base-ui.com/react/components/menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport * as React from 'react';\nimport { Menu } from '@base-ui/react/menu';\nimport styles from './index.module.css';\n\nexport default function ExampleMenu() {\n  return (\n    <Menu.Root>\n      <Menu.Trigger className={styles.Button}>\n        Song <CaretDownIcon />\n      </Menu.Trigger>\n      <Menu.Portal>\n        <Menu.Positioner className={styles.Positioner} sideOffset={8} align=\"start\">\n          <Menu.Popup className={styles.Popup}>\n            <Menu.Item className={styles.Item}>Add to Library</Menu.Item>\n            <Menu.Item className={styles.Item}>Add to Playlist</Menu.Item>\n            <Menu.Separator className={styles.Separator} />\n            <Menu.Item className={styles.Item}>Play Next</Menu.Item>\n            <Menu.Item className={styles.Item}>Play Last</Menu.Item>\n            <Menu.Separator className={styles.Separator} />\n            <Menu.Item className={styles.Item}>Favorite</Menu.Item>\n            <Menu.Item className={styles.Item}>Share</Menu.Item>\n          </Menu.Popup>\n        </Menu.Positioner>\n      </Menu.Portal>\n    </Menu.Root>\n  );\n}\n\nfunction CaretDownIcon(props: React.ComponentProps<'svg'>) {\n  return (\n    <svg\n      width=\"16\"\n      height=\"16\"\n      viewBox=\"0 0 16 16\"\n      fill=\"currentColor\"\n      {...props}\n      style={{ display: 'block', ...props.style }}\n    >\n      <path d=\"M12 6H4l4 4.5z\" />\n    </svg>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Menu` (slug `menu`) from https://base-ui.com/react/components/menu. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/menu`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-select",
+      "libraryId": "base-ui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "base-ui select",
+        "base ui select",
+        "@base-ui/react/select"
+      ],
+      "summary": "Accessible select.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/select",
+        "iframeSrc": "https://base-ui.com/react/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport * as React from 'react';\nimport { Select } from '@base-ui/react/select';\nimport styles from './index.module.css';\n\nconst apples = [\n  { label: 'Gala', value: 'gala' },\n  { label: 'Fuji', value: 'fuji' },\n  { label: 'Honeycrisp', value: 'honeycrisp' },\n  { label: 'Granny Smith', value: 'granny-smith' },\n  { label: 'Pink Lady', value: 'pink-lady' },\n];\n\nexport default function ExampleSelect() {\n  return (\n    <div className={styles.Field}>\n      <Select.Root items={apples}>\n        <Select.Label className={styles.Label}>Apple</Select.Label>\n        <Select.Trigger className={styles.Select}>\n          <Select.Value className={styles.Value} placeholder=\"Select apple\" />\n          <Select.Icon>\n            <CaretUpDownIcon />\n          </Select.Icon>\n        </Select.Trigger>\n        <Select.Portal>\n          <Select.Positioner className={styles.Positioner} sideOffset={4}>\n            <Select.Popup className={styles.Popup}>\n              <Select.ScrollUpArrow className={styles.ScrollArrow}>\n                <CaretUpIcon />\n              </Select.ScrollUpArrow>\n              <Select.List className={styles.List}>\n                {apples.map(({ label, value }) => (\n                  <Select.Item key={label} value={value} className={styles.Item}>\n                    <Select.ItemIndicator className={styles.ItemIndicator}>\n                      <CheckIcon />\n                    </Select.ItemIndicator>\n                    <Select.ItemText className={styles.ItemText}>{label}</Select.ItemText>\n                  </Select.Item>\n                ))}\n              </Select.List>\n              <Select.ScrollDownArrow className={styles.ScrollArrow}>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Select` (slug `select`) from https://base-ui.com/react/components/select. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/select`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-checkbox",
+      "libraryId": "base-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "base-ui checkbox",
+        "base ui checkbox",
+        "@base-ui/react/checkbox"
+      ],
+      "summary": "Accessible checkbox.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/checkbox",
+        "iframeSrc": "https://base-ui.com/react/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport * as React from 'react';\nimport { Checkbox } from '@base-ui/react/checkbox';\nimport styles from './index.module.css';\n\nexport default function ExampleCheckbox() {\n  return (\n    <label className={styles.Label}>\n      <Checkbox.Root defaultChecked className={styles.Checkbox}>\n        <Checkbox.Indicator className={styles.Indicator}>\n          <CheckIcon />\n        </Checkbox.Indicator>\n      </Checkbox.Root>\n      Enable notifications\n    </label>\n  );\n}\n\nfunction CheckIcon(props: React.ComponentProps<'svg'>) {\n  return (\n    <svg\n      width=\"16\"\n      height=\"16\"\n      viewBox=\"0 0 16 16\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      {...props}\n      style={{ display: 'block', ...props.style }}\n    >\n      <path d=\"m2.5 8.5 4 4 7-9\" />\n    </svg>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Checkbox` (slug `checkbox`) from https://base-ui.com/react/components/checkbox. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/checkbox`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-switch",
+      "libraryId": "base-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "switch",
+        "base-ui switch",
+        "base ui switch",
+        "@base-ui/react/switch"
+      ],
+      "summary": "Accessible switch.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/switch",
+        "iframeSrc": "https://base-ui.com/react/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport { Switch } from '@base-ui/react/switch';\nimport styles from './index.module.css';\n\nexport default function ExampleSwitch() {\n  return (\n    <label className={styles.Label}>\n      <Switch.Root defaultChecked className={styles.Switch}>\n        <Switch.Thumb className={styles.Thumb} />\n      </Switch.Root>\n      Notifications\n    </label>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Switch` (slug `switch`) from https://base-ui.com/react/components/switch. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/switch`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-tabs",
+      "libraryId": "base-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "base-ui tabs",
+        "base ui tabs",
+        "@base-ui/react/tabs"
+      ],
+      "summary": "Accessible tabs.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/tabs",
+        "iframeSrc": "https://base-ui.com/react/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport { Tabs } from '@base-ui/react/tabs';\nimport styles from './index.module.css';\n\nexport default function ExampleTabs() {\n  return (\n    <Tabs.Root className={styles.Root} defaultValue=\"overview\">\n      <Tabs.List className={styles.List}>\n        <Tabs.Tab className={styles.Tab} value=\"overview\">\n          Overview\n        </Tabs.Tab>\n        <Tabs.Tab className={styles.Tab} value=\"projects\">\n          Projects\n        </Tabs.Tab>\n        <Tabs.Tab className={styles.Tab} value=\"account\">\n          Account\n        </Tabs.Tab>\n        <Tabs.Indicator className={styles.Indicator} />\n      </Tabs.List>\n      <div className={styles.PanelViewport}>\n        <Tabs.Panel className={styles.Panel} value=\"overview\">\n          <p className={styles.Paragraph}>Workspace stats and activity.</p>\n        </Tabs.Panel>\n        <Tabs.Panel className={styles.Panel} value=\"projects\">\n          <p className={styles.Paragraph}>Milestones and deadlines.</p>\n        </Tabs.Panel>\n        <Tabs.Panel className={styles.Panel} value=\"account\">\n          <p className={styles.Paragraph}>Profile and preferences.</p>\n        </Tabs.Panel>\n      </div>\n    </Tabs.Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Tabs` (slug `tabs`) from https://base-ui.com/react/components/tabs. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/tabs`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-tooltip",
+      "libraryId": "base-ui",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "tooltip",
+        "base-ui tooltip",
+        "base ui tooltip",
+        "@base-ui/react/tooltip"
+      ],
+      "summary": "Accessible tooltip.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/tooltip",
+        "iframeSrc": "https://base-ui.com/react/components/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport * as React from 'react';\nimport { Tooltip } from '@base-ui/react/tooltip';\nimport styles from './index.module.css';\n\nexport default function ExampleTooltip() {\n  return (\n    <Tooltip.Provider>\n      <div className={styles.Panel}>\n        <Tooltip.Root>\n          <Tooltip.Trigger className={styles.Button} aria-label=\"Bold\">\n            <BoldIcon aria-hidden=\"true\" />\n          </Tooltip.Trigger>\n          <Tooltip.Portal>\n            <Tooltip.Positioner sideOffset={11}>\n              <Tooltip.Popup className={styles.Popup}>\n                <Tooltip.Arrow className={styles.Arrow} />\n                Bold\n              </Tooltip.Popup>\n            </Tooltip.Positioner>\n          </Tooltip.Portal>\n        </Tooltip.Root>\n\n        <Tooltip.Root>\n          <Tooltip.Trigger className={styles.Button} aria-label=\"Italic\">\n            <ItalicIcon aria-hidden=\"true\" />\n          </Tooltip.Trigger>\n          <Tooltip.Portal>\n            <Tooltip.Positioner sideOffset={11}>\n              <Tooltip.Popup className={styles.Popup}>\n                <Tooltip.Arrow className={styles.Arrow} />\n                Italic\n              </Tooltip.Popup>\n            </Tooltip.Positioner>\n          </Tooltip.Portal>\n        </Tooltip.Root>\n\n        <Tooltip.Root>\n          <Tooltip.Trigger className={styles.Button} aria-label=\"Underline\">\n            <UnderlineIcon aria-hidden=\"true\" />\n          </Tooltip.Trigger>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Tooltip` (slug `tooltip`) from https://base-ui.com/react/components/tooltip. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/tooltip`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-popover",
+      "libraryId": "base-ui",
+      "slug": "popover",
+      "name": "Popover",
+      "aliases": [
+        "popover",
+        "base-ui popover",
+        "base ui popover",
+        "@base-ui/react/popover"
+      ],
+      "summary": "Accessible popover.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/popover",
+        "iframeSrc": "https://base-ui.com/react/components/popover",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport * as React from 'react';\nimport { Popover } from '@base-ui/react/popover';\nimport styles from './index.module.css';\n\nexport default function ExamplePopover() {\n  return (\n    <Popover.Root>\n      <Popover.Trigger className={styles.Button}>Notifications</Popover.Trigger>\n      <Popover.Portal>\n        <Popover.Positioner sideOffset={8}>\n          <Popover.Popup className={styles.Popup}>\n            <Popover.Arrow className={styles.Arrow} />\n            <Popover.Title className={styles.Title}>Notifications</Popover.Title>\n            <Popover.Description className={styles.Description}>\n              You are all caught up. Good job!\n            </Popover.Description>\n          </Popover.Popup>\n        </Popover.Positioner>\n      </Popover.Portal>\n    </Popover.Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Popover` (slug `popover`) from https://base-ui.com/react/components/popover. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/popover`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-accordion",
+      "libraryId": "base-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "base-ui accordion",
+        "base ui accordion",
+        "@base-ui/react/accordion"
+      ],
+      "summary": "Accessible accordion.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/accordion",
+        "iframeSrc": "https://base-ui.com/react/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport * as React from 'react';\nimport { Accordion } from '@base-ui/react/accordion';\nimport styles from './index.module.css';\n\nexport default function ExampleAccordion() {\n  return (\n    <Accordion.Root className={styles.Accordion}>\n      <Accordion.Item className={styles.Item}>\n        <Accordion.Header className={styles.Header}>\n          <Accordion.Trigger className={styles.Trigger}>\n            What is Base UI?\n            <PlusIcon className={styles.Icon} />\n          </Accordion.Trigger>\n        </Accordion.Header>\n        <Accordion.Panel className={styles.Panel}>\n          <div className={styles.Content}>\n            Base UI is a library of high-quality unstyled React components for design systems and\n            web apps.\n          </div>\n        </Accordion.Panel>\n      </Accordion.Item>\n\n      <Accordion.Item className={styles.Item}>\n        <Accordion.Header className={styles.Header}>\n          <Accordion.Trigger className={styles.Trigger}>\n            How do I get started?\n            <PlusIcon className={styles.Icon} />\n          </Accordion.Trigger>\n        </Accordion.Header>\n        <Accordion.Panel className={styles.Panel}>\n          <div className={styles.Content}>\n            Head to the \u201cQuick start\u201d guide in the docs. If you\u2019ve used unstyled libraries before,\n            you\u2019ll feel at home.\n          </div>\n        </Accordion.Panel>\n      </Accordion.Item>\n\n      <Accordion.Item className={styles.Item}>\n        <Accordion.Header className={styles.Header}>\n          <Accordion.Trigger className={styles.Trigger}>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Accordion` (slug `accordion`) from https://base-ui.com/react/components/accordion. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/accordion`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-slider",
+      "libraryId": "base-ui",
+      "slug": "slider",
+      "name": "Slider",
+      "aliases": [
+        "slider",
+        "base-ui slider",
+        "base ui slider",
+        "@base-ui/react/slider"
+      ],
+      "summary": "Accessible slider.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/slider",
+        "iframeSrc": "https://base-ui.com/react/components/slider",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\nimport { Slider } from '@base-ui/react/slider';\nimport styles from './index.module.css';\n\nexport default function ExampleSlider() {\n  return (\n    <Slider.Root defaultValue={25}>\n      <Slider.Control className={styles.Control}>\n        <Slider.Track className={styles.Track}>\n          <Slider.Indicator className={styles.Indicator} />\n          <Slider.Thumb aria-label=\"Volume\" className={styles.Thumb} />\n        </Slider.Track>\n      </Slider.Control>\n    </Slider.Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Slider` (slug `slider`) from https://base-ui.com/react/components/slider. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/slider`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "base-ui-progress",
+      "libraryId": "base-ui",
+      "slug": "progress",
+      "name": "Progress",
+      "aliases": [
+        "progress",
+        "base-ui progress",
+        "base ui progress",
+        "@base-ui/react/progress"
+      ],
+      "summary": "Accessible progress bar.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@base-ui/react/progress",
+        "iframeSrc": "https://base-ui.com/react/components/progress",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT from MUI team. Style yourself (CSS modules shown in docs). Distinct from basecn (shadcn-styled Base UI) already in SoT."
+      },
+      "copyCode": "pnpm add @base-ui/react\n# or: npm install @base-ui/react\n\n'use client';\nimport * as React from 'react';\nimport { Progress } from '@base-ui/react/progress';\nimport styles from './index.module.css';\n\nexport default function ExampleProgress() {\n  const [value, setValue] = React.useState(20);\n\n  // Simulate changes\n  React.useEffect(() => {\n    const interval = setInterval(() => {\n      setValue((current) => Math.min(100, Math.round(current + Math.random() * 25)));\n    }, 1000);\n    return () => clearInterval(interval);\n  }, []);\n\n  return (\n    <Progress.Root className={styles.Progress} value={value}>\n      <Progress.Label className={styles.Label}>Export data</Progress.Label>\n      <Progress.Value className={styles.Value} />\n      <Progress.Track className={styles.Track}>\n        <Progress.Indicator className={styles.Indicator} />\n      </Progress.Track>\n    </Progress.Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Base UI free MIT React primitive `Progress` (slug `progress`) from https://base-ui.com/react/components/progress. Install with `pnpm add @base-ui/react` (or npm/yarn). Import from `@base-ui/react/progress`. Headless \u2014 bring your own styles. Home: https://base-ui.com. Docs: https://base-ui.com/react/overview/quick-start. Repo: https://github.com/mui/base-ui. License: MIT (https://raw.githubusercontent.com/mui/base-ui/master/LICENSE; Copyright (c) 2019 Material-UI SAS). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @base-ui/react",
+        "packages": [
+          "@base-ui/react"
+        ]
+      }
+    }
+  ]
+}

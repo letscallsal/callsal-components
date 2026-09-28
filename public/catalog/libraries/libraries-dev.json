@@ -1,0 +1,495 @@
+{
+  "id": "libraries-dev",
+  "name": "Libraries.dev",
+  "aliases": [
+    "libraries.dev",
+    "librariesdev",
+    "jakub antalik libraries"
+  ],
+  "summary": "Freemium React UI effect libs on npm (Beam, Orb, Gooey, Metal, Image, Voice, Avatars); Pro Studio excluded.",
+  "homeUrl": "https://libraries.dev",
+  "docsUrl": "https://libraries.dev",
+  "repoUrl": "https://github.com/Jakubantalik/Libraries.dev",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install border-beam thinking-orbs liquid-gooey metal-fx img-fx voice-glow bot-avatars",
+    "packages": [
+      "border-beam",
+      "thinking-orbs",
+      "liquid-gooey",
+      "metal-fx",
+      "img-fx",
+      "voice-glow",
+      "bot-avatars"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://libraries.dev/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Free inventory is 7 MIT npm packages / 9 distinct React exports \u2014 below the 12-target; not inventing comps.",
+    "Site FAQ still says five free libs (Beam/Orb/Gooey/Metal/Image); voice-glow + bot-avatars also verified free MIT on npm and included.",
+    "Pro = Studio customization / Pro presets (Solo from $9/mo or $149 lifetime; Team higher) \u2014 excluded; no paid unlock.",
+    "img-fx requires peer `three`; metal-fx/img-fx need WebGL2.",
+    "iframe demos are playground pages (shared URL for MetalFx/MetalText/MetalBadge).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:20:00-04:00",
+  "components": [
+    {
+      "id": "libraries-dev-border-beam",
+      "libraryId": "libraries-dev",
+      "slug": "border-beam",
+      "name": "Border Beam",
+      "aliases": [
+        "border beam",
+        "beam border glow",
+        "border-beam"
+      ],
+      "summary": "Animated glow that rides the border of a wrapped React child.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "beam",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "border-beam/BorderBeam",
+        "iframeSrc": "https://libraries.dev/beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "react>=18"
+      },
+      "copyCode": "npm install border-beam\n\nimport { BorderBeam } from \"border-beam\";\n\n<BorderBeam size=\"md\" colorVariant=\"colorful\" strength={0.7}>\n  <YourCard>Content</YourCard>\n</BorderBeam>",
+      "copyPrompt": {
+        "text": "Use Libraries.dev free MIT npm package `border-beam` component `BorderBeam` from https://libraries.dev/beam. Install with `npm install border-beam`. Import `{ BorderBeam } from \"border-beam\"` and wrap a child. Props: size (md|sm|line|pulse-inner|pulse-outside), colorVariant (colorful|mono|ocean|sunset|\u2026), strength 0\u20131, theme light|dark, active boolean. Requires React 18+. License: MIT (https://raw.githubusercontent.com/Jakubantalik/Libraries.dev/main/LICENSE). Pricing freemium \u2014 free npm; Pro Studio excluded (https://libraries.dev/pro). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install border-beam",
+        "packages": [
+          "border-beam"
+        ]
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "libraries-dev-thinking-orb",
+      "libraryId": "libraries-dev",
+      "slug": "thinking-orb",
+      "name": "Thinking Orb",
+      "aliases": [
+        "thinking orbs",
+        "orb loader",
+        "thinking-orbs"
+      ],
+      "summary": "Dotted thought-orb AI loader with nine hand-tuned animation states.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "thinking-orbs/ThinkingOrb",
+        "iframeSrc": "https://libraries.dev/orbs",
+        "aspectRatio": "16/9",
+        "peerNotes": "react>=18"
+      },
+      "copyCode": "npm install thinking-orbs\n\nimport { ThinkingOrb } from \"thinking-orbs\";\n\n<ThinkingOrb state=\"searching\" size={64} />",
+      "copyPrompt": {
+        "text": "Use Libraries.dev free MIT npm package `thinking-orbs` component `ThinkingOrb` from https://libraries.dev/orbs. Install with `npm install thinking-orbs`. Import `{ ThinkingOrb } from \"thinking-orbs\"`. Props: state (working|searching|solving|listening|connecting|weaving|composing|breathing|shaping), size 64|32|20, theme auto|dark|light, speed, paused. Requires React 18+. License: MIT (https://raw.githubusercontent.com/Jakubantalik/Libraries.dev/main/LICENSE). Pricing freemium \u2014 free npm; Pro Studio excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install thinking-orbs",
+        "packages": [
+          "thinking-orbs"
+        ]
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "libraries-dev-liquid",
+      "libraryId": "libraries-dev",
+      "slug": "liquid",
+      "name": "Liquid Gooey",
+      "aliases": [
+        "liquid-gooey",
+        "gooey morph",
+        "liquid merge"
+      ],
+      "summary": "SVG-filter liquid merge: Morph, Move, Melt, and Bend between items.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "gooey",
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "liquid-gooey/Liquid",
+        "iframeSrc": "https://libraries.dev/gooey",
+        "aspectRatio": "16/9",
+        "peerNotes": "react>=18"
+      },
+      "copyCode": "npm install liquid-gooey\n\nimport { Liquid } from \"liquid-gooey\";\n\n<Liquid blur={6} contrast={18} fill=\"#fff\">\n  <Liquid.Item x={open ? -54 : 0} y={open ? -34 : 0} transition=\"bouncy\">\n    <button className=\"round-btn\">\u2026</button>\n  </Liquid.Item>\n</Liquid>",
+      "copyPrompt": {
+        "text": "Use Libraries.dev free MIT npm package `liquid-gooey` component `Liquid` (+ `Liquid.Item`) from https://libraries.dev/gooey. Install with `npm install liquid-gooey`. Import `{ Liquid } from \"liquid-gooey\"`. Effects on Liquid.Item: morph|move|melt|bend. Requires React 18+. License: MIT (https://raw.githubusercontent.com/Jakubantalik/Libraries.dev/main/LICENSE). Pricing freemium \u2014 free npm; Pro Studio excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install liquid-gooey",
+        "packages": [
+          "liquid-gooey"
+        ]
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "libraries-dev-metal-fx",
+      "libraryId": "libraries-dev",
+      "slug": "metal-fx",
+      "name": "Metal Fx",
+      "aliases": [
+        "metal-fx",
+        "liquid metal button",
+        "metal shader"
+      ],
+      "summary": "WebGL liquid-metal wrapper for buttons and circles with glow.",
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "metal",
+        "glow",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "metal-fx/MetalFx",
+        "iframeSrc": "https://libraries.dev/metal",
+        "aspectRatio": "16/9",
+        "peerNotes": "react>=18; WebGL2"
+      },
+      "copyCode": "npm install metal-fx\n\nimport { MetalFx } from \"metal-fx\";\n\n<MetalFx preset=\"chromatic\" strength={1}>\n  <button>Upgrade to Pro</button>\n</MetalFx>",
+      "copyPrompt": {
+        "text": "Use Libraries.dev free MIT npm package `metal-fx` component `MetalFx` from https://libraries.dev/metal. Install with `npm install metal-fx`. Import `{ MetalFx } from \"metal-fx\"`. Props: preset chromatic|silver|gold, variant button|circle, strength 0\u20131, theme light|dark. Requires React 18+ and WebGL2 (falls back to plain child). License: MIT (npm metal-fx / https://github.com/Jakubantalik/metal-fx). Pricing freemium \u2014 free npm; Pro Studio excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install metal-fx",
+        "packages": [
+          "metal-fx"
+        ]
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "libraries-dev-metal-text",
+      "libraryId": "libraries-dev",
+      "slug": "metal-text",
+      "name": "Metal Text",
+      "aliases": [
+        "metal text",
+        "liquid metal typography"
+      ],
+      "summary": "Liquid-metal shaded text run from metal-fx.",
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "metal",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "metal-fx/MetalText",
+        "iframeSrc": "https://libraries.dev/metal",
+        "aspectRatio": "16/9",
+        "peerNotes": "react>=18; WebGL2"
+      },
+      "copyCode": "npm install metal-fx\n\nimport { MetalText } from \"metal-fx\";\n\n<MetalText font=\"500 24px/1.2 Inter\" color=\"#E2E2E2\">Pro</MetalText>",
+      "copyPrompt": {
+        "text": "Use Libraries.dev free MIT npm package `metal-fx` export `MetalText` from https://libraries.dev/metal. Install with `npm install metal-fx`. Import `{ MetalText } from \"metal-fx\"`. License: MIT. Pricing freemium \u2014 free npm; Pro Studio excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install metal-fx",
+        "packages": [
+          "metal-fx"
+        ]
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "libraries-dev-metal-badge",
+      "libraryId": "libraries-dev",
+      "slug": "metal-badge",
+      "name": "Metal Badge",
+      "aliases": [
+        "metal badge",
+        "liquid metal badge"
+      ],
+      "summary": "Liquid-metal badge chip from metal-fx.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "metal",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "metal-fx/MetalBadge",
+        "iframeSrc": "https://libraries.dev/metal",
+        "aspectRatio": "16/9",
+        "peerNotes": "react>=18; WebGL2"
+      },
+      "copyCode": "npm install metal-fx\n\nimport { MetalBadge } from \"metal-fx\";\n\n<MetalBadge>New</MetalBadge>",
+      "copyPrompt": {
+        "text": "Use Libraries.dev free MIT npm package `metal-fx` export `MetalBadge` from https://libraries.dev/metal. Install with `npm install metal-fx`. Import `{ MetalBadge } from \"metal-fx\"`. License: MIT. Pricing freemium \u2014 free npm; Pro Studio excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install metal-fx",
+        "packages": [
+          "metal-fx"
+        ]
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "libraries-dev-image-generation",
+      "libraryId": "libraries-dev",
+      "slug": "image-generation",
+      "name": "Image Generation",
+      "aliases": [
+        "img-fx",
+        "image generation loader",
+        "pixel mosaic reveal"
+      ],
+      "summary": "WebGL pixel-mosaic loader that dissolves into real images.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "webgl",
+        "shader",
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "img-fx/ImageGeneration",
+        "iframeSrc": "https://libraries.dev/image",
+        "aspectRatio": "16/9",
+        "peerNotes": "react>=18; three peer"
+      },
+      "copyCode": "npm install img-fx three\n\nimport { ImageGeneration } from \"img-fx\";\n\n<ImageGeneration\n  preset=\"pixels-organic\"\n  images={['/img/a.jpg', '/img/b.jpg']}\n  autoReveal\n>\n  <div className=\"card\" style={{ width: 320, height: 320, borderRadius: 20 }} />\n</ImageGeneration>",
+      "copyPrompt": {
+        "text": "Use Libraries.dev free MIT npm package `img-fx` component `ImageGeneration` from https://libraries.dev/image. Install with `npm install img-fx three` (three is a peer). Import `{ ImageGeneration } from \"img-fx\"`. Presets: pixels-organic|pixels-mechanic|sweep-gradient. License: MIT (https://github.com/Jakubantalik/img-fx). Pricing freemium \u2014 free npm; Pro Studio excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install img-fx three",
+        "packages": [
+          "img-fx",
+          "three"
+        ]
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "libraries-dev-voice-beam",
+      "libraryId": "libraries-dev",
+      "slug": "voice-beam",
+      "name": "Voice Beam",
+      "aliases": [
+        "voice-glow",
+        "voice glow",
+        "mic reactive glow"
+      ],
+      "summary": "Sound-reactive colorful glow along the bottom edge of a chat input.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "glow",
+        "beam"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "voice-glow/VoiceBeam",
+        "iframeSrc": "https://libraries.dev/voice",
+        "aspectRatio": "16/9",
+        "peerNotes": "react>=18; mic optional"
+      },
+      "copyCode": "npm install voice-glow\n\nimport { VoiceBeam, useMicrophone } from \"voice-glow\";\n\nconst mic = useMicrophone();\n\n<VoiceBeam stream={mic.stream} processing={thinking}>\n  <ChatInput />\n</VoiceBeam>",
+      "copyPrompt": {
+        "text": "Use Libraries.dev free MIT npm package `voice-glow` component `VoiceBeam` from https://libraries.dev/voice. Install with `npm install voice-glow`. Import `{ VoiceBeam, useMicrophone } from \"voice-glow\"`. Drive with mic stream or level 0\u20131. License: MIT (https://raw.githubusercontent.com/Jakubantalik/Libraries.dev/main/LICENSE). Pricing freemium \u2014 free npm; Pro Studio excluded. Site FAQ highlights five libs; voice-glow is also free MIT on npm (verified).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install voice-glow",
+        "packages": [
+          "voice-glow"
+        ]
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "libraries-dev-bot-avatar",
+      "libraryId": "libraries-dev",
+      "slug": "bot-avatar",
+      "name": "Bot Avatar",
+      "aliases": [
+        "bot-avatars",
+        "agent avatar",
+        "bot face"
+      ],
+      "summary": "Animated 2D canvas bot avatars with idle/working/sleeping states.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bot-avatars/BotAvatar",
+        "iframeSrc": "https://libraries.dev/avatars",
+        "aspectRatio": "16/9",
+        "peerNotes": "react>=18; 2D canvas no WebGL"
+      },
+      "copyCode": "npm install bot-avatars\n\nimport { BotAvatar } from \"bot-avatars\";\n\n<BotAvatar type=\"clover\" state={busy ? \"working\" : \"default\"} />",
+      "copyPrompt": {
+        "text": "Use Libraries.dev free MIT npm package `bot-avatars` component `BotAvatar` from https://libraries.dev/avatars. Install with `npm install bot-avatars`. Import `{ BotAvatar } from \"bot-avatars\"`. Types include clover|flower|star|droid|\u2026; states default|working|sleeping. License: MIT (https://raw.githubusercontent.com/Jakubantalik/Libraries.dev/main/LICENSE). Pricing freemium \u2014 free npm; Pro Studio excluded. Site FAQ highlights five libs; bot-avatars is also free MIT on npm (verified).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install bot-avatars",
+        "packages": [
+          "bot-avatars"
+        ]
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

@@ -1,0 +1,662 @@
+{
+  "id": "react-bits",
+  "name": "React Bits",
+  "aliases": [
+    "reactbits",
+    "react-bits",
+    "react bits",
+    "DavidHDev/react-bits",
+    "@react-bits"
+  ],
+  "summary": "200+ free animated React components (text, backgrounds, UI, micro) via shadcn/jsrepo.",
+  "homeUrl": "https://reactbits.dev",
+  "docsUrl": "https://reactbits.dev/get-started/introduction",
+  "repoUrl": "https://github.com/DavidHDev/react-bits",
+  "license": "MIT + Commons Clause",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @react-bits/<Component>-TS-TW",
+    "registryUrl": "https://reactbits.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://reactbits.dev/{category}/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "gsap",
+      "motion",
+      "ogl",
+      "three",
+      "@react-three/fiber",
+      "@react-three/drei",
+      "@react-three/postprocessing",
+      "postprocessing",
+      "maath",
+      "tailwindcss"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free TS-TW components of ~211 TS-TW registry variants / 200+ free components on llms.txt; not a full inventory.",
+    "React Bits Pro (pro.reactbits.dev) blocks/templates/app UI/agent kit excluded \u2014 freemium; no paid unlock.",
+    "License is MIT + Commons Clause (not pure MIT SPDX) \u2014 free personal/commercial use in apps; redistribution of components as a competing library restricted. Source: LICENSE.md.",
+    "Finder gaps glass / liquid-glass / dither filled honestly via Glass Surface + Fluid Glass + Dither (free). text-scramble variants included (Scrambled Text, Decrypted Text) distinct from Fancy.",
+    "ARCHITECTURE \u00a75 allows dynamic-import or iframe; catalog uses iframe demos (heavy WebGL/R3F/ogl) \u2014 no dynamic-import smoke mounts.",
+    "CLI identifiers are PascalCase+variant (Dither-TS-TW); docs paths are kebab-case under category folders \u2014 installOverride uses registry id; iframeSrc uses docs URL.",
+    "Also installable via full URL `npx shadcn@latest add https://reactbits.dev/r/<Component>-TS-TW` or jsrepo; catalog prefers `@react-bits/...` after registry add (README + MCP docs).",
+    "Import paths assume shadcn writes registry `path` under `@/components/...`; confirm against project aliases after CLI add."
+  ],
+  "featured": true,
+  "updatedAt": "2026-09-28T14:34:29-04:00",
+  "components": [
+    {
+      "id": "react-bits-dither",
+      "libraryId": "react-bits",
+      "slug": "dither",
+      "name": "Dither",
+      "aliases": [
+        "dither background",
+        "retro dither",
+        "dithered noise",
+        "ordered dither"
+      ],
+      "summary": "Retro dithered noise shader background with mouse interaction.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "dither",
+        "shader",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/Dither-TS-TW",
+        "iframeSrc": "https://reactbits.dev/backgrounds/dither",
+        "aspectRatio": "16/9",
+        "peerNotes": "Peers: three, @react-three/fiber, @react-three/postprocessing, postprocessing."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/Dither-TS-TW\n\nimport Dither from \"@/components/Dither/Dither\"\n\n<div style={{ width: \"100%\", height: \"600px\", position: \"relative\" }}>\n  <Dither\n    waveColor={[0.5, 0.5, 0.5]}\n    disableAnimation={false}\n    enableMouseInteraction={true}\n    mouseRadius={1}\n    colorNum={4}\n    pixelSize={2}\n  />\n</div>",
+      "copyPrompt": {
+        "text": "Use React Bits free component `Dither` (docs slug `dither`) from https://reactbits.dev/backgrounds/dither. Install with `npx shadcn@latest add @react-bits/Dither-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/Dither-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/Dither/Dither` after CLI add (path may follow project aliases; registry path is `Dither/Dither.tsx`).  Requires React; install peer deps for this item as needed (three, @react-three/fiber, @react-three/postprocessing, postprocessing). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/Dither-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/Dither-TS-TW.json",
+        "registryItem": "@react-bits/Dither-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-fluid-glass",
+      "libraryId": "react-bits",
+      "slug": "fluid-glass",
+      "name": "Fluid Glass",
+      "aliases": [
+        "fluid glass",
+        "liquid glass",
+        "glassmorphism liquid",
+        "glass refraction"
+      ],
+      "summary": "Glassmorphism container with animated liquid distortion refraction.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass",
+        "webgl",
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/FluidGlass-TS-TW",
+        "iframeSrc": "https://reactbits.dev/components/fluid-glass",
+        "aspectRatio": "16/9",
+        "peerNotes": "Peers: three, @react-three/fiber, @react-three/drei, maath."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/FluidGlass-TS-TW\n\nimport FluidGlass from \"@/components/FluidGlass/FluidGlass\"\n\n<div style={{ width: \"100%\", height: \"600px\" }}>\n  <FluidGlass mode=\"lens\" />\n</div>",
+      "copyPrompt": {
+        "text": "Use React Bits free component `FluidGlass` (docs slug `fluid-glass`) from https://reactbits.dev/components/fluid-glass. Install with `npx shadcn@latest add @react-bits/FluidGlass-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/FluidGlass-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/FluidGlass/FluidGlass` after CLI add (path may follow project aliases; registry path is `FluidGlass/FluidGlass.tsx`).  Requires React; install peer deps for this item as needed (three, @react-three/fiber, @react-three/drei, maath). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only. Modes include lens/bar/cube per component props.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/FluidGlass-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/FluidGlass-TS-TW.json",
+        "registryItem": "@react-bits/FluidGlass-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-glass-surface",
+      "libraryId": "react-bits",
+      "slug": "glass-surface",
+      "name": "Glass Surface",
+      "aliases": [
+        "glass surface",
+        "apple glass",
+        "frosted glass",
+        "glassmorphism surface"
+      ],
+      "summary": "Apple-style glass surface with real-time distortion and lighting.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "other"
+      ],
+      "effectType": [
+        "glass",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/GlassSurface-TS-TW",
+        "iframeSrc": "https://reactbits.dev/components/glass-surface",
+        "aspectRatio": "16/9",
+        "peerNotes": "No registry dependencies listed; wraps children."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/GlassSurface-TS-TW\n\nimport GlassSurface from \"@/components/GlassSurface/GlassSurface\"\n\n<GlassSurface width={300} height={200} borderRadius={24}>\n  <span>Glass content</span>\n</GlassSurface>",
+      "copyPrompt": {
+        "text": "Use React Bits free component `GlassSurface` (docs slug `glass-surface`) from https://reactbits.dev/components/glass-surface. Install with `npx shadcn@latest add @react-bits/GlassSurface-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/GlassSurface-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/GlassSurface/GlassSurface` after CLI add (path may follow project aliases; registry path is `GlassSurface/GlassSurface.tsx`).  Requires React (no extra registry dependencies listed for this item). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/GlassSurface-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/GlassSurface-TS-TW.json",
+        "registryItem": "@react-bits/GlassSurface-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-scrambled-text",
+      "libraryId": "react-bits",
+      "slug": "scrambled-text",
+      "name": "Scrambled Text",
+      "aliases": [
+        "scrambled text",
+        "cursor scramble",
+        "text scramble distortion",
+        "gsap scramble"
+      ],
+      "summary": "Cursor-proximity text scramble/distortion (GSAP ScrambleText).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/ScrambledText-TS-TW",
+        "iframeSrc": "https://reactbits.dev/text-animations/scrambled-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Peers: gsap (SplitText + ScrambleTextPlugin). Wrap a <p> as children."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/ScrambledText-TS-TW\n\nimport ScrambledText from \"@/components/ScrambledText/ScrambledText\"\n\n<ScrambledText radius={100} duration={1.2} speed={0.5} scrambleChars=\".:\">\n  <p>Move your cursor over this text to scramble nearby characters.</p>\n</ScrambledText>",
+      "copyPrompt": {
+        "text": "Use React Bits free component `ScrambledText` (docs slug `scrambled-text`) from https://reactbits.dev/text-animations/scrambled-text. Install with `npx shadcn@latest add @react-bits/ScrambledText-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/ScrambledText-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/ScrambledText/ScrambledText` after CLI add (path may follow project aliases; registry path is `ScrambledText/ScrambledText.tsx`).  Requires React; install peer deps for this item as needed (gsap (SplitText, ScrambleTextPlugin)). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only. Distinct from Fancy scramble-hover/scramble-in: cursor-radius GSAP scramble.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/ScrambledText-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/ScrambledText-TS-TW.json",
+        "registryItem": "@react-bits/ScrambledText-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-decrypted-text",
+      "libraryId": "react-bits",
+      "slug": "decrypted-text",
+      "name": "Decrypted Text",
+      "aliases": [
+        "decrypted text",
+        "hacker text",
+        "decrypt scramble",
+        "glyph cycle text"
+      ],
+      "summary": "Hacker-style decryption cycling random glyphs until real text resolves.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/DecryptedText-TS-TW",
+        "iframeSrc": "https://reactbits.dev/text-animations/decrypted-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Peers: motion."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/DecryptedText-TS-TW\n\nimport DecryptedText from \"@/components/DecryptedText/DecryptedText\"\n\n<DecryptedText text=\"Welcome to React Bits\" animateOn=\"view\" sequential={true} />",
+      "copyPrompt": {
+        "text": "Use React Bits free component `DecryptedText` (docs slug `decrypted-text`) from https://reactbits.dev/text-animations/decrypted-text. Install with `npx shadcn@latest add @react-bits/DecryptedText-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/DecryptedText-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/DecryptedText/DecryptedText` after CLI add (path may follow project aliases; registry path is `DecryptedText/DecryptedText.tsx`).  Requires React; install peer deps for this item as needed (motion). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only. Distinct scramble/decrypt variant vs Fancy scramble-hover.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/DecryptedText-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/DecryptedText-TS-TW.json",
+        "registryItem": "@react-bits/DecryptedText-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-particles",
+      "libraryId": "react-bits",
+      "slug": "particles",
+      "name": "Particles",
+      "aliases": [
+        "particle background",
+        "particle system",
+        "ogl particles"
+      ],
+      "summary": "Configurable WebGL particle system background.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "particles",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/Particles-TS-TW",
+        "iframeSrc": "https://reactbits.dev/backgrounds/particles",
+        "aspectRatio": "16/9",
+        "peerNotes": "Peers: ogl."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/Particles-TS-TW\n\nimport Particles from \"@/components/Particles/Particles\"\n\n<div style={{ width: \"100%\", height: \"600px\", position: \"relative\" }}>\n  <Particles particleCount={200} particleSpread={10} speed={0.1} moveParticlesOnHover={true} />\n</div>",
+      "copyPrompt": {
+        "text": "Use React Bits free component `Particles` (docs slug `particles`) from https://reactbits.dev/backgrounds/particles. Install with `npx shadcn@latest add @react-bits/Particles-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/Particles-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/Particles/Particles` after CLI add (path may follow project aliases; registry path is `Particles/Particles.tsx`).  Requires React; install peer deps for this item as needed (ogl). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/Particles-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/Particles-TS-TW.json",
+        "registryItem": "@react-bits/Particles-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-aurora",
+      "libraryId": "react-bits",
+      "slug": "aurora",
+      "name": "Aurora",
+      "aliases": [
+        "aurora background",
+        "aurora gradient",
+        "northern lights background"
+      ],
+      "summary": "Flowing aurora gradient WebGL background.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "aurora",
+        "gradient",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/Aurora-TS-TW",
+        "iframeSrc": "https://reactbits.dev/backgrounds/aurora",
+        "aspectRatio": "16/9",
+        "peerNotes": "Peers: ogl."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/Aurora-TS-TW\n\nimport Aurora from \"@/components/Aurora/Aurora\"\n\n<div style={{ width: \"100%\", height: \"600px\", position: \"relative\" }}>\n  <Aurora colorStops={[\"#5227FF\", \"#7cff67\", \"#5227FF\"]} amplitude={1.0} blend={0.5} />\n</div>",
+      "copyPrompt": {
+        "text": "Use React Bits free component `Aurora` (docs slug `aurora`) from https://reactbits.dev/backgrounds/aurora. Install with `npx shadcn@latest add @react-bits/Aurora-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/Aurora-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/Aurora/Aurora` after CLI add (path may follow project aliases; registry path is `Aurora/Aurora.tsx`).  Requires React; install peer deps for this item as needed (ogl). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/Aurora-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/Aurora-TS-TW.json",
+        "registryItem": "@react-bits/Aurora-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-shiny-text",
+      "libraryId": "react-bits",
+      "slug": "shiny-text",
+      "name": "Shiny Text",
+      "aliases": [
+        "shiny text",
+        "metallic text sheen",
+        "shine text",
+        "reflective text"
+      ],
+      "summary": "Metallic sheen sweeps across text for a reflective highlight.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "shimmer",
+        "metal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/ShinyText-TS-TW",
+        "iframeSrc": "https://reactbits.dev/text-animations/shiny-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Peers: motion."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/ShinyText-TS-TW\n\nimport ShinyText from \"@/components/ShinyText/ShinyText\"\n\n<ShinyText text=\"Just some shiny text!\" disabled={false} speed={3} />",
+      "copyPrompt": {
+        "text": "Use React Bits free component `ShinyText` (docs slug `shiny-text`) from https://reactbits.dev/text-animations/shiny-text. Install with `npx shadcn@latest add @react-bits/ShinyText-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/ShinyText-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/ShinyText/ShinyText` after CLI add (path may follow project aliases; registry path is `ShinyText/ShinyText.tsx`).  Requires React; install peer deps for this item as needed (motion). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/ShinyText-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/ShinyText-TS-TW.json",
+        "registryItem": "@react-bits/ShinyText-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-text-type",
+      "libraryId": "react-bits",
+      "slug": "text-type",
+      "name": "Text Type",
+      "aliases": [
+        "text type",
+        "typewriter",
+        "typing text",
+        "typewriter cursor"
+      ],
+      "summary": "Typewriter effect with blinking cursor and adjustable cadence.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/TextType-TS-TW",
+        "iframeSrc": "https://reactbits.dev/text-animations/text-type",
+        "aspectRatio": "16/9",
+        "peerNotes": "Peers: gsap."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/TextType-TS-TW\n\nimport TextType from \"@/components/TextType/TextType\"\n\n<TextType text={[\"React Bits\", \"Typewriter Text\"]} typingSpeed={75} pauseDuration={1500} showCursor={true} />",
+      "copyPrompt": {
+        "text": "Use React Bits free component `TextType` (docs slug `text-type`) from https://reactbits.dev/text-animations/text-type. Install with `npx shadcn@latest add @react-bits/TextType-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/TextType-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/TextType/TextType` after CLI add (path may follow project aliases; registry path is `TextType/TextType.tsx`).  Requires React; install peer deps for this item as needed (gsap). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/TextType-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/TextType-TS-TW.json",
+        "registryItem": "@react-bits/TextType-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-particle-text",
+      "libraryId": "react-bits",
+      "slug": "particle-text",
+      "name": "Particle Text",
+      "aliases": [
+        "particle text",
+        "text particles",
+        "assemble text particles"
+      ],
+      "summary": "Text assembles from drifting particles that scatter and reform.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/ParticleText-TS-TW",
+        "iframeSrc": "https://reactbits.dev/text-animations/particle-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "No registry dependencies listed."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/ParticleText-TS-TW\n\nimport ParticleText from \"@/components/ParticleText/ParticleText\"\n\n<ParticleText text=\"React Bits\" trigger=\"mount\" color=\"#ffffff\" highlightColor=\"#8b5cf6\" />",
+      "copyPrompt": {
+        "text": "Use React Bits free component `ParticleText` (docs slug `particle-text`) from https://reactbits.dev/text-animations/particle-text. Install with `npx shadcn@latest add @react-bits/ParticleText-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/ParticleText-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/ParticleText/ParticleText` after CLI add (path may follow project aliases; registry path is `ParticleText/ParticleText.tsx`).  Requires React (no extra registry dependencies listed for this item). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/ParticleText-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/ParticleText-TS-TW.json",
+        "registryItem": "@react-bits/ParticleText-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-orb",
+      "libraryId": "react-bits",
+      "slug": "orb",
+      "name": "Orb",
+      "aliases": [
+        "energy orb",
+        "floating orb",
+        "orb background"
+      ],
+      "summary": "Floating energy orb background with customizable hover effect.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "orb",
+        "glow",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/Orb-TS-TW",
+        "iframeSrc": "https://reactbits.dev/backgrounds/orb",
+        "aspectRatio": "16/9",
+        "peerNotes": "Peers: ogl."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/Orb-TS-TW\n\nimport Orb from \"@/components/Orb/Orb\"\n\n<div style={{ width: \"100%\", height: \"600px\", position: \"relative\" }}>\n  <Orb hue={0} hoverIntensity={0.2} rotateOnHover={true} />\n</div>",
+      "copyPrompt": {
+        "text": "Use React Bits free component `Orb` (docs slug `orb`) from https://reactbits.dev/backgrounds/orb. Install with `npx shadcn@latest add @react-bits/Orb-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/Orb-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/Orb/Orb` after CLI add (path may follow project aliases; registry path is `Orb/Orb.tsx`).  Requires React; install peer deps for this item as needed (ogl). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/Orb-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/Orb-TS-TW.json",
+        "registryItem": "@react-bits/Orb-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "react-bits-meta-balls",
+      "libraryId": "react-bits",
+      "slug": "meta-balls",
+      "name": "Meta Balls",
+      "aliases": [
+        "metaballs",
+        "meta balls",
+        "liquid blobs",
+        "metaball blobs"
+      ],
+      "summary": "Liquid metaball blobs that merge and separate with implicit surfaces.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "gooey",
+        "morph",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@react-bits/MetaBalls-TS-TW",
+        "iframeSrc": "https://reactbits.dev/animations/meta-balls",
+        "aspectRatio": "16/9",
+        "peerNotes": "Peers: ogl."
+      },
+      "copyCode": "npx shadcn@latest add @react-bits/MetaBalls-TS-TW\n\nimport MetaBalls from \"@/components/MetaBalls/MetaBalls\"\n\n<div style={{ width: \"100%\", height: \"600px\", position: \"relative\" }}>\n  <MetaBalls color=\"#ffffff\" speed={0.3} ballCount={15} enableMouseInteraction={true} />\n</div>",
+      "copyPrompt": {
+        "text": "Use React Bits free component `MetaBalls` (docs slug `meta-balls`) from https://reactbits.dev/animations/meta-balls. Install with `npx shadcn@latest add @react-bits/MetaBalls-TS-TW` after adding the `@react-bits` registry (`\"@react-bits\": \"https://reactbits.dev/r/{name}.json\"`) to `components.json` (see https://reactbits.dev/get-started/installation and https://reactbits.dev/get-started/mcp). Registry item: https://reactbits.dev/r/MetaBalls-TS-TW.json. Prefer TypeScript + Tailwind variant (`-TS-TW`); other free variants: JS-CSS, JS-TW, TS-CSS. Import default export from `@/components/MetaBalls/MetaBalls` after CLI add (path may follow project aliases; registry path is `MetaBalls/MetaBalls.tsx`).  Requires React; install peer deps for this item as needed (ogl). Everything on reactbits.dev is free (MIT + Commons Clause \u2014 https://github.com/DavidHDev/react-bits/blob/main/LICENSE.md); do not pull React Bits Pro from pro.reactbits.dev unless the user has a Pro license. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager",
+          "variant"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @react-bits/MetaBalls-TS-TW",
+        "registryUrl": "https://reactbits.dev/r/MetaBalls-TS-TW.json",
+        "registryItem": "@react-bits/MetaBalls-TS-TW"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

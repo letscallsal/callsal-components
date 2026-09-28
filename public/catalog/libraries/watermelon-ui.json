@@ -1,0 +1,594 @@
+{
+  "id": "watermelon-ui",
+  "name": "Watermelon UI",
+  "aliases": [
+    "Watermelon",
+    "ui.watermelon.sh",
+    "WatermelonCorp/watermelon-platform"
+  ],
+  "summary": "Free MIT open-source React animated components, blocks, and dashboards.",
+  "homeUrl": "https://ui.watermelon.sh",
+  "docsUrl": "https://ui.watermelon.sh/animated-components",
+  "repoUrl": "https://github.com/WatermelonCorp/watermelon-platform",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://registry.watermelon.sh/r/{name}.json",
+    "registryUrl": "https://registry.watermelon.sh/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://ui.watermelon.sh/animated-components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "motion"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 131 animated-components (catalog also lists components/blocks/dashboards/templates \u2014 not fully ingested).",
+    "Registry also mirrored at https://ui.watermelon.sh/r/{name}.json; catalog prefers canonical registry.watermelon.sh.",
+    "Optional @watermelon-ui/cli exists for MCP client init; component install remains shadcn registry URL.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:26:09-04:00",
+  "components": [
+    {
+      "id": "watermelon-ui-dock",
+      "libraryId": "watermelon-ui",
+      "slug": "dock",
+      "name": "Dock",
+      "aliases": [
+        "macos dock",
+        "animated dock"
+      ],
+      "summary": "macOS-style dock with cursor-driven icon scaling and hover interactions.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/dock",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/dock",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, @hugeicons/react"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/dock.json\n\nimport { Dock } from \"@/components/watermelon/dock\"\n\n<Dock />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Dock` (slug `dock`) from https://ui.watermelon.sh/animated-components/dock. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/dock.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/dock` as `Dock`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/dock.json",
+        "registryUrl": "https://registry.watermelon.sh/r/dock.json",
+        "registryItem": "dock"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-gooey-menu",
+      "libraryId": "watermelon-ui",
+      "slug": "gooey-menu",
+      "name": "Gooey Menu",
+      "aliases": [
+        "gooey tooltip menu",
+        "expandable gooey menu"
+      ],
+      "summary": "Interactive gooey expandable menu with soft liquid motion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [
+        "gooey"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/gooey-menu",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/gooey-menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/gooey-menu.json\n\nimport { GooeyMenu } from \"@/components/watermelon/gooey-menu\"\n\n<GooeyMenu />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Gooey Menu` (slug `gooey-menu`) from https://ui.watermelon.sh/animated-components/gooey-menu. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/gooey-menu.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/gooey-menu` as `GooeyMenu`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/gooey-menu.json",
+        "registryUrl": "https://registry.watermelon.sh/r/gooey-menu.json",
+        "registryItem": "gooey-menu"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-morphing-button",
+      "libraryId": "watermelon-ui",
+      "slug": "morphing-button",
+      "name": "Morphing Button",
+      "aliases": [
+        "morph button",
+        "expanding button"
+      ],
+      "summary": "Button that morphs into an expanded interactive state.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/morphing-button",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/morphing-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, react-icons"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/morphing-button.json\n\nimport { MorphingButton } from \"@/components/watermelon/morphing-button\"\n\n<MorphingButton />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Morphing Button` (slug `morphing-button`) from https://ui.watermelon.sh/animated-components/morphing-button. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/morphing-button.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/morphing-button` as `MorphingButton`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/morphing-button.json",
+        "registryUrl": "https://registry.watermelon.sh/r/morphing-button.json",
+        "registryItem": "morphing-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-draw-signature",
+      "libraryId": "watermelon-ui",
+      "slug": "draw-signature",
+      "name": "Draw Signature",
+      "aliases": [
+        "signature pad",
+        "signature draw"
+      ],
+      "summary": "Interactive signature pad with fluid strokes and step-based workflow.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/draw-signature",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/draw-signature",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, lucide-react, react-use-measure"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/draw-signature.json\n\nimport { DrawSignatureComponent } from \"@/components/watermelon/draw-signature\"\n\n<DrawSignatureComponent />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Draw Signature` (slug `draw-signature`) from https://ui.watermelon.sh/animated-components/draw-signature. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/draw-signature.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/draw-signature` as `DrawSignatureComponent`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/draw-signature.json",
+        "registryUrl": "https://registry.watermelon.sh/r/draw-signature.json",
+        "registryItem": "draw-signature"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-fluid-tabs",
+      "libraryId": "watermelon-ui",
+      "slug": "fluid-tabs",
+      "name": "Fluid Tabs",
+      "aliases": [
+        "spring tabs",
+        "fluid tab bar"
+      ],
+      "summary": "Spring-animated tabs with floating active indicator and icon scaling.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/fluid-tabs",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/fluid-tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, react-icons"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/fluid-tabs.json\n\nimport { FluidTabs } from \"@/components/watermelon/fluid-tabs\"\n\n<FluidTabs />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Fluid Tabs` (slug `fluid-tabs`) from https://ui.watermelon.sh/animated-components/fluid-tabs. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/fluid-tabs.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/fluid-tabs` as `FluidTabs`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/fluid-tabs.json",
+        "registryUrl": "https://registry.watermelon.sh/r/fluid-tabs.json",
+        "registryItem": "fluid-tabs"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-command-search",
+      "libraryId": "watermelon-ui",
+      "slug": "command-search",
+      "name": "Command Search",
+      "aliases": [
+        "command palette",
+        "cmdk search"
+      ],
+      "summary": "Command palette with sectioned results, keyboard nav, and smooth motion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/command-search",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/command-search",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, lucide-react"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/command-search.json\n\nimport { CommandSearch } from \"@/components/watermelon/command-search\"\n\n<CommandSearch />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Command Search` (slug `command-search`) from https://ui.watermelon.sh/animated-components/command-search. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/command-search.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/command-search` as `CommandSearch`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/command-search.json",
+        "registryUrl": "https://registry.watermelon.sh/r/command-search.json",
+        "registryItem": "command-search"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-card-swipe",
+      "libraryId": "watermelon-ui",
+      "slug": "card-swipe",
+      "name": "Card Swipe",
+      "aliases": [
+        "swipe cards",
+        "card stack swipe"
+      ],
+      "summary": "Gesture-driven card stack with velocity-based swiping and pagination.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/card-swipe",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/card-swipe",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, @hugeicons/react"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/card-swipe.json\n\nimport CardSwipe from \"@/components/watermelon/card-swipe\"\n\n<CardSwipe />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Card Swipe` (slug `card-swipe`) from https://ui.watermelon.sh/animated-components/card-swipe. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/card-swipe.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/card-swipe` as `CardSwipe`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/card-swipe.json",
+        "registryUrl": "https://registry.watermelon.sh/r/card-swipe.json",
+        "registryItem": "card-swipe"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-inline-toast",
+      "libraryId": "watermelon-ui",
+      "slug": "inline-toast",
+      "name": "Inline Toast",
+      "aliases": [
+        "copy toast",
+        "inline feedback toast"
+      ],
+      "summary": "Inline toast for instant feedback with a built-in copy action.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/inline-toast",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/inline-toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, react-icons"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/inline-toast.json\n\nimport { InlineToast } from \"@/components/watermelon/inline-toast\"\n\n<InlineToast />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Inline Toast` (slug `inline-toast`) from https://ui.watermelon.sh/animated-components/inline-toast. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/inline-toast.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/inline-toast` as `InlineToast`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/inline-toast.json",
+        "registryUrl": "https://registry.watermelon.sh/r/inline-toast.json",
+        "registryItem": "inline-toast"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-knob-slider",
+      "libraryId": "watermelon-ui",
+      "slug": "knob-slider",
+      "name": "Knob Slider",
+      "aliases": [
+        "radial dial",
+        "knob dial"
+      ],
+      "summary": "Radial dial/knob with tactile feedback and blur animations.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/knob-slider",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/knob-slider",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, react-use-measure"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/knob-slider.json\n\nimport { KnobSlider } from \"@/components/watermelon/knob-slider\"\n\n<KnobSlider />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Knob Slider` (slug `knob-slider`) from https://ui.watermelon.sh/animated-components/knob-slider. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/knob-slider.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/knob-slider` as `KnobSlider`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/knob-slider.json",
+        "registryUrl": "https://registry.watermelon.sh/r/knob-slider.json",
+        "registryItem": "knob-slider"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-macos-sidebar",
+      "libraryId": "watermelon-ui",
+      "slug": "macos-sidebar",
+      "name": "macOS Sidebar",
+      "aliases": [
+        "macos sidebar",
+        "collapsible sidebar"
+      ],
+      "summary": "macOS-style collapsible sidebar with spring width transitions.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/macos-sidebar",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/macos-sidebar",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, @hugeicons/react"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/macos-sidebar.json\n\nimport { MacOSSidebar } from \"@/components/watermelon/macos-sidebar\"\n\n<MacOSSidebar />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `macOS Sidebar` (slug `macos-sidebar`) from https://ui.watermelon.sh/animated-components/macos-sidebar. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/macos-sidebar.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/macos-sidebar` as `MacOSSidebar`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/macos-sidebar.json",
+        "registryUrl": "https://registry.watermelon.sh/r/macos-sidebar.json",
+        "registryItem": "macos-sidebar"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-dialog-stack",
+      "libraryId": "watermelon-ui",
+      "slug": "dialog-stack",
+      "name": "Dialog Stack",
+      "aliases": [
+        "stacked dialogs",
+        "layered modal"
+      ],
+      "summary": "Layered modal stack with spring-weighted dialog transitions.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/dialog-stack",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/dialog-stack",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, lucide-react, @hugeicons/react"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/dialog-stack.json\n\nimport { DialogStack } from \"@/components/watermelon/dialog-stack\"\n\n<DialogStack />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Dialog Stack` (slug `dialog-stack`) from https://ui.watermelon.sh/animated-components/dialog-stack. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/dialog-stack.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/dialog-stack` as `DialogStack`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/dialog-stack.json",
+        "registryUrl": "https://registry.watermelon.sh/r/dialog-stack.json",
+        "registryItem": "dialog-stack"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "watermelon-ui-feature-tour",
+      "libraryId": "watermelon-ui",
+      "slug": "feature-tour",
+      "name": "Feature Tour",
+      "aliases": [
+        "guided tour",
+        "product tour"
+      ],
+      "summary": "Guided feature tour with blur animations and step navigation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@watermelon/feature-tour",
+        "iframeSrc": "https://ui.watermelon.sh/animated-components/feature-tour",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, lucide-react"
+      },
+      "copyCode": "npx shadcn@latest add https://registry.watermelon.sh/r/feature-tour.json\n\nimport { FeatureTour } from \"@/components/watermelon/feature-tour\"\n\n<FeatureTour />",
+      "copyPrompt": {
+        "text": "Use Watermelon UI free MIT component `Feature Tour` (slug `feature-tour`) from https://ui.watermelon.sh/animated-components/feature-tour. Install with `npx shadcn@latest add https://registry.watermelon.sh/r/feature-tour.json` (official Watermelon shadcn registry). Imports land under `@/components/watermelon/feature-tour` as `FeatureTour`. Requires React + TypeScript + Tailwind; Motion peers as listed in registry. License: MIT (https://raw.githubusercontent.com/WatermelonCorp/watermelon-platform/main/LICENSE). Pricing free \u2014 open-source community components/blocks.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://registry.watermelon.sh/r/feature-tour.json",
+        "registryUrl": "https://registry.watermelon.sh/r/feature-tour.json",
+        "registryItem": "feature-tour"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

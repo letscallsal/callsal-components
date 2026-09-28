@@ -1,0 +1,605 @@
+{
+  "id": "ariakit",
+  "name": "Ariakit",
+  "aliases": [
+    "ariakit",
+    "Ariakit React",
+    "@ariakit/react",
+    "ariakit.org",
+    "ariakit.com"
+  ],
+  "summary": "Unstyled accessible React primitives with interactive docs examples you style yourself.",
+  "homeUrl": "https://ariakit.org",
+  "docsUrl": "https://ariakit.org/components",
+  "repoUrl": "https://github.com/ariakit/ariakit",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install @ariakit/react",
+    "packages": [
+      "@ariakit/react"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://ariakit.org/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Headless/unstyled \u2014 demos require consumer CSS; docs examples include sample classNames.",
+    "Pilot includes 12 of 25 documented components.",
+    "Canonical domain also serves as ariakit.com (sitemap); catalog uses ariakit.org per queue.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:50:00-04:00",
+  "components": [
+    {
+      "id": "ariakit-button",
+      "libraryId": "ariakit",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "ariakit button",
+        "ariakit button",
+        "@ariakit/react button"
+      ],
+      "summary": "Accessible unstyled button primitive.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/button",
+        "iframeSrc": "https://ariakit.org/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport { Button } from \"@ariakit/react\";\nimport \"./button.css\";\n\nexport default function Example() {\n  return <Button className=\"ak-button ak-button-default\">Button</Button>;\n}\n\nimport { Button } from \"@ariakit/react\";\nimport \"./button.css\";\n\nexport default function Example() {\n  return <Button className=\"ak-button ak-button-default\">Button</Button>;\n}",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Button` (slug `button`) from https://ariakit.org/components/button. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-checkbox",
+      "libraryId": "ariakit",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "ariakit checkbox",
+        "ariakit checkbox",
+        "@ariakit/react checkbox"
+      ],
+      "summary": "Accessible checkbox with indeterminate support.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/checkbox",
+        "iframeSrc": "https://ariakit.org/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport { Checkbox } from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <label className=\"label\">\n      <Checkbox className=\"checkbox\" /> I have read and agree to the terms and\n      conditions\n    </label>\n  );\n}\n\nimport { Checkbox } from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <label className=\"label\">\n      <Checkbox className=\"checkbox\" /> I have read and agree to the terms and\n      conditions\n    </label>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Checkbox` (slug `checkbox`) from https://ariakit.org/components/checkbox. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-dialog",
+      "libraryId": "ariakit",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "ariakit dialog",
+        "ariakit dialog",
+        "@ariakit/react dialog"
+      ],
+      "summary": "Accessible modal dialog with focus trap.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/dialog",
+        "iframeSrc": "https://ariakit.org/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport * as Ariakit from \"@ariakit/react\";\nimport { useState } from \"react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  const [open, setOpen] = useState(false);\n  return (\n    <>\n      <Ariakit.Button onClick={() => setOpen(true)} className=\"button\">\n        Show modal\n      </Ariakit.Button>\n      <Ariakit.Dialog\n        open={open}\n        onClose={() => setOpen(false)}\n        className=\"dialog\"\n      >\n        <Ariakit.DialogHeading className=\"heading\">\n          Success\n        </Ariakit.DialogHeading>\n        <p className=\"description\">\n          Your payment has been successfully processed. We have emailed your\n          receipt.\n        </p>\n        <div>\n          <Ariakit.DialogDismiss className=\"button\">OK</Ariakit.DialogDismiss>\n        </div>\n      </Ariakit.Dialog>\n    </>\n  );\n}\n\nimport * as Ariakit from \"@ariakit/react\";\nimport { useState } from \"react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  const [open, setOpen] = useState(false);\n  return (\n    <>\n      <Ariakit.Button onClick={() => setOpen(true)} className=\"button\">\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Dialog` (slug `dialog`) from https://ariakit.org/components/dialog. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-disclosure",
+      "libraryId": "ariakit",
+      "slug": "disclosure",
+      "name": "Disclosure",
+      "aliases": [
+        "disclosure",
+        "ariakit disclosure",
+        "ariakit disclosure",
+        "@ariakit/react disclosure"
+      ],
+      "summary": "Expand/collapse disclosure (accordion-like).",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/disclosure",
+        "iframeSrc": "https://ariakit.org/components/disclosure",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <div className=\"wrapper\">\n      <Ariakit.DisclosureProvider>\n        <Ariakit.Disclosure className=\"button\">\n          What are vegetables?\n        </Ariakit.Disclosure>\n        <Ariakit.DisclosureContent className=\"content\">\n          <p>\n            Vegetables are parts of plants that are consumed by humans or other\n            animals as food. The original meaning is still commonly used and is\n            applied to plants collectively to refer to all edible plant matter,\n            including the flowers, fruits, stems, leaves, roots, and seeds.\n          </p>\n        </Ariakit.DisclosureContent>\n      </Ariakit.DisclosureProvider>\n    </div>\n  );\n}\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <div className=\"wrapper\">\n      <Ariakit.DisclosureProvider>\n        <Ariakit.Disclosure className=\"button\">\n          What are vegetables?\n        </Ariakit.Disclosure>\n        <Ariakit.DisclosureContent className=\"content\">\n          <p>\n            Vegetables are parts of plants that are consumed by humans or other\n            animals as food. The original meaning is still commonly used and is\n            applied to plants collectively to refer to all edible plant matter,\n            including the flowers, fruits, stems, leaves, roots, and seeds.\n          </p>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Disclosure` (slug `disclosure`) from https://ariakit.org/components/disclosure. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-menu",
+      "libraryId": "ariakit",
+      "slug": "menu",
+      "name": "Menu",
+      "aliases": [
+        "menu",
+        "ariakit menu",
+        "ariakit menu",
+        "@ariakit/react menu"
+      ],
+      "summary": "Accessible dropdown menu.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/menu",
+        "iframeSrc": "https://ariakit.org/components/menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <Ariakit.MenuProvider>\n      <Ariakit.MenuButton className=\"button\">\n        Actions\n        <Ariakit.MenuButtonArrow />\n      </Ariakit.MenuButton>\n      <Ariakit.Menu gutter={8} className=\"menu\">\n        <Ariakit.MenuItem className=\"menu-item\" onClick={() => alert(\"Edit\")}>\n          Edit\n        </Ariakit.MenuItem>\n        <Ariakit.MenuItem className=\"menu-item\">Share</Ariakit.MenuItem>\n        <Ariakit.MenuItem className=\"menu-item\" disabled>\n          Delete\n        </Ariakit.MenuItem>\n        <Ariakit.MenuSeparator className=\"separator\" />\n        <Ariakit.MenuItem className=\"menu-item\">Report</Ariakit.MenuItem>\n      </Ariakit.Menu>\n    </Ariakit.MenuProvider>\n  );\n}\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <Ariakit.MenuProvider>\n      <Ariakit.MenuButton className=\"button\">\n        Actions\n        <Ariakit.MenuButtonArrow />\n      </Ariakit.MenuButton>\n      <Ariakit.Menu gutter={8} className=\"menu\">\n        <Ariakit.MenuItem className=\"menu-item\" onClick={() => alert(\"Edit\")}>\n          Edit\n        </Ariakit.MenuItem>\n        <Ariakit.MenuItem className=\"menu-item\">Share</Ariakit.MenuItem>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Menu` (slug `menu`) from https://ariakit.org/components/menu. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-select",
+      "libraryId": "ariakit",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "ariakit select",
+        "ariakit select",
+        "@ariakit/react select"
+      ],
+      "summary": "Accessible custom select.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/select",
+        "iframeSrc": "https://ariakit.org/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <div className=\"wrapper\">\n      <Ariakit.SelectProvider defaultValue=\"Apple\">\n        <Ariakit.SelectLabel className=\"label\">\n          Favorite fruit\n        </Ariakit.SelectLabel>\n        <Ariakit.Select className=\"button\" />\n        <Ariakit.SelectPopover gutter={4} sameWidth className=\"popover\">\n          <Ariakit.SelectItem className=\"select-item\" value=\"Apple\" />\n          <Ariakit.SelectItem className=\"select-item\" value=\"Banana\" />\n          <Ariakit.SelectItem className=\"select-item\" value=\"Grape\" disabled />\n          <Ariakit.SelectItem className=\"select-item\" value=\"Orange\" />\n        </Ariakit.SelectPopover>\n      </Ariakit.SelectProvider>\n    </div>\n  );\n}\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <div className=\"wrapper\">\n      <Ariakit.SelectProvider defaultValue=\"Apple\">\n        <Ariakit.SelectLabel className=\"label\">\n          Favorite fruit\n        </Ariakit.SelectLabel>\n        <Ariakit.Select className=\"button\" />\n        <Ariakit.SelectPopover gutter={4} sameWidth className=\"popover\">\n          <Ariakit.SelectItem className=\"select-item\" value=\"Apple\" />\n          <Ariakit.SelectItem className=\"select-item\" value=\"Banana\" />\n          <Ariakit.SelectItem className=\"select-item\" value=\"Grape\" disabled />\n          <Ariakit.SelectItem className=\"select-item\" value=\"Orange\" />\n        </Ariakit.SelectPopover>\n      </Ariakit.SelectProvider>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Select` (slug `select`) from https://ariakit.org/components/select. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-combobox",
+      "libraryId": "ariakit",
+      "slug": "combobox",
+      "name": "Combobox",
+      "aliases": [
+        "combobox",
+        "ariakit combobox",
+        "ariakit combobox",
+        "@ariakit/react combobox"
+      ],
+      "summary": "Accessible combobox with listbox.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/combobox",
+        "iframeSrc": "https://ariakit.org/components/combobox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <Ariakit.ComboboxProvider>\n      <Ariakit.ComboboxLabel className=\"label\">\n        Your favorite fruit\n      </Ariakit.ComboboxLabel>\n      <Ariakit.Combobox placeholder=\"e.g., Apple\" className=\"combobox\" />\n      <Ariakit.ComboboxPopover gutter={4} sameWidth className=\"popover\">\n        <Ariakit.ComboboxItem className=\"combobox-item\" value=\"Apple\">\n          \ud83c\udf4e Apple\n        </Ariakit.ComboboxItem>\n        <Ariakit.ComboboxItem className=\"combobox-item\" value=\"Grape\">\n          \ud83c\udf47 Grape\n        </Ariakit.ComboboxItem>\n        <Ariakit.ComboboxItem className=\"combobox-item\" value=\"Orange\">\n          \ud83c\udf4a Orange\n        </Ariakit.ComboboxItem>\n        <Ariakit.ComboboxItem className=\"combobox-item\" value=\"Strawberry\">\n          \ud83c\udf53 Strawberry\n        </Ariakit.ComboboxItem>\n        <Ariakit.ComboboxItem className=\"combobox-item\" value=\"Watermelon\">\n          \ud83c\udf49 Watermelon\n        </Ariakit.ComboboxItem>\n      </Ariakit.ComboboxPopover>\n    </Ariakit.ComboboxProvider>\n  );\n}\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <Ariakit.ComboboxProvider>\n      <Ariakit.ComboboxLabel className=\"label\">\n        Your favorite fruit\n      </Ariakit.ComboboxLabel>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Combobox` (slug `combobox`) from https://ariakit.org/components/combobox. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-tab",
+      "libraryId": "ariakit",
+      "slug": "tab",
+      "name": "Tab",
+      "aliases": [
+        "tab",
+        "ariakit tab",
+        "ariakit tab",
+        "@ariakit/react tab"
+      ],
+      "summary": "Accessible tabs.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/tab",
+        "iframeSrc": "https://ariakit.org/components/tab",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  const defaultSelectedId = \"default-selected-tab\";\n  return (\n    <div className=\"wrapper\">\n      <Ariakit.TabProvider defaultSelectedId={defaultSelectedId}>\n        <Ariakit.TabList className=\"tab-list\" aria-label=\"Groceries\">\n          <Ariakit.Tab className=\"tab\">Fruits</Ariakit.Tab>\n          <Ariakit.Tab className=\"tab\" id={defaultSelectedId}>\n            Vegetables\n          </Ariakit.Tab>\n          <Ariakit.Tab className=\"tab\">Meat</Ariakit.Tab>\n        </Ariakit.TabList>\n        <div className=\"panels\">\n          <Ariakit.TabPanel>\n            <ul>\n              <li>\ud83c\udf4e Apple</li>\n              <li>\ud83c\udf47 Grape</li>\n              <li>\ud83c\udf4a Orange</li>\n            </ul>\n          </Ariakit.TabPanel>\n          <Ariakit.TabPanel tabId={defaultSelectedId}>\n            <ul>\n              <li>\ud83e\udd55 Carrot</li>\n              <li>\ud83e\uddc5 Onion</li>\n              <li>\ud83e\udd54 Potato</li>\n            </ul>\n          </Ariakit.TabPanel>\n          <Ariakit.TabPanel>\n            <ul>\n              <li>\ud83e\udd69 Beef</li>\n              <li>\ud83c\udf57 Chicken</li>\n              <li>\ud83e\udd53 Pork</li>\n            </ul>\n          </Ariakit.TabPanel>\n        </div>\n      </Ariakit.TabProvider>\n    </div>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Tab` (slug `tab`) from https://ariakit.org/components/tab. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-popover",
+      "libraryId": "ariakit",
+      "slug": "popover",
+      "name": "Popover",
+      "aliases": [
+        "popover",
+        "ariakit popover",
+        "ariakit popover",
+        "@ariakit/react popover"
+      ],
+      "summary": "Accessible popover anchored to a disclosure.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/popover",
+        "iframeSrc": "https://ariakit.org/components/popover",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <Ariakit.PopoverProvider>\n      <Ariakit.PopoverDisclosure className=\"button\">\n        Accept invite\n      </Ariakit.PopoverDisclosure>\n      <Ariakit.Popover className=\"popover\">\n        <Ariakit.PopoverArrow className=\"arrow\" />\n        <Ariakit.PopoverHeading className=\"heading\">\n          Team meeting\n        </Ariakit.PopoverHeading>\n        <Ariakit.PopoverDescription>\n          We are going to discuss what we have achieved on the project.\n        </Ariakit.PopoverDescription>\n        <div>\n          <p>12 Jan 2022 18:00 to 19:00</p>\n          <p>Alert 10 minutes before start</p>\n        </div>\n        <Ariakit.Button className=\"button\">Accept</Ariakit.Button>\n      </Ariakit.Popover>\n    </Ariakit.PopoverProvider>\n  );\n}\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <Ariakit.PopoverProvider>\n      <Ariakit.PopoverDisclosure className=\"button\">\n        Accept invite\n      </Ariakit.PopoverDisclosure>\n      <Ariakit.Popover className=\"popover\">\n        <Ariakit.PopoverArrow className=\"arrow\" />\n        <Ariakit.PopoverHeading className=\"heading\">\n          Team meeting\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Popover` (slug `popover`) from https://ariakit.org/components/popover. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-tooltip",
+      "libraryId": "ariakit",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "tooltip",
+        "ariakit tooltip",
+        "ariakit tooltip",
+        "@ariakit/react tooltip"
+      ],
+      "summary": "Accessible tooltip.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/tooltip",
+        "iframeSrc": "https://ariakit.org/components/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <Ariakit.TooltipProvider>\n      <Ariakit.TooltipAnchor\n        className=\"link\"\n        render={<a href=\"https://ariakit.com/components/tooltip\" />}\n      >\n        Tooltip\n      </Ariakit.TooltipAnchor>\n      <Ariakit.Tooltip className=\"tooltip\">\n        https://ariakit.com/components/tooltip\n      </Ariakit.Tooltip>\n    </Ariakit.TooltipProvider>\n  );\n}\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <Ariakit.TooltipProvider>\n      <Ariakit.TooltipAnchor\n        className=\"link\"\n        render={<a href=\"https://ariakit.com/components/tooltip\" />}\n      >\n        Tooltip\n      </Ariakit.TooltipAnchor>\n      <Ariakit.Tooltip className=\"tooltip\">\n        https://ariakit.com/components/tooltip\n      </Ariakit.Tooltip>\n    </Ariakit.TooltipProvider>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Tooltip` (slug `tooltip`) from https://ariakit.org/components/tooltip. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-hovercard",
+      "libraryId": "ariakit",
+      "slug": "hovercard",
+      "name": "Hovercard",
+      "aliases": [
+        "hovercard",
+        "ariakit hovercard",
+        "ariakit hovercard",
+        "@ariakit/react hovercard"
+      ],
+      "summary": "Accessible hover card.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/hovercard",
+        "iframeSrc": "https://ariakit.org/components/hovercard",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <div className=\"wrapper\">\n      <Ariakit.HovercardProvider>\n        <Ariakit.HovercardAnchor\n          href=\"https://bsky.app/profile/ariakit.com\"\n          className=\"anchor\"\n        >\n          @ariakit.com\n        </Ariakit.HovercardAnchor>\n        <Ariakit.Hovercard gutter={16} className=\"hovercard\">\n          <img\n            src=\"https://cdn.bsky.app/img/avatar/plain/did:plc:ohupqrl6r2hphjt64xvgysef/bafkreif7utqn7zmg64ot5iwbslvoxqf5dkgzepaqa75afqud645xxkoonu@jpeg\"\n            alt=\"Ariakit\"\n            className=\"avatar\"\n          />\n          <Ariakit.HovercardHeading className=\"username\">\n            Ariakit\n          </Ariakit.HovercardHeading>\n          <p>\n            Toolkit with accessible components, styles, and examples for your\n            next web app.\n          </p>\n          <a\n            href=\"https://bsky.app/profile/ariakit.com\"\n            className=\"button primary flat\"\n          >\n            Follow\n          </a>\n        </Ariakit.Hovercard>\n      </Ariakit.HovercardProvider>\n    </div>\n  );\n}\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Hovercard` (slug `hovercard`) from https://ariakit.org/components/hovercard. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    },
+    {
+      "id": "ariakit-radio",
+      "libraryId": "ariakit",
+      "slug": "radio",
+      "name": "Radio",
+      "aliases": [
+        "radio",
+        "ariakit radio",
+        "ariakit radio",
+        "@ariakit/react radio"
+      ],
+      "summary": "Accessible radio group.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ariakit/react/radio",
+        "iframeSrc": "https://ariakit.org/components/radio",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT. Style yourself (CSS modules / Tailwind). Docs page hosts live interactive demo + copyable example."
+      },
+      "copyCode": "npm install @ariakit/react\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <Ariakit.RadioProvider>\n      <Ariakit.RadioGroup>\n        <label className=\"label\">\n          <Ariakit.Radio className=\"radio\" value=\"apple\" />\n          apple\n        </label>\n        <label className=\"label\">\n          <Ariakit.Radio className=\"radio\" value=\"orange\" />\n          orange\n        </label>\n        <label className=\"label\">\n          <Ariakit.Radio className=\"radio\" value=\"watermelon\" />\n          watermelon\n        </label>\n      </Ariakit.RadioGroup>\n    </Ariakit.RadioProvider>\n  );\n}\n\nimport * as Ariakit from \"@ariakit/react\";\nimport \"./style.css\";\n\nexport default function Example() {\n  return (\n    <Ariakit.RadioProvider>\n      <Ariakit.RadioGroup>\n        <label className=\"label\">\n          <Ariakit.Radio className=\"radio\" value=\"apple\" />\n          apple\n        </label>\n        <label className=\"label\">\n          <Ariakit.Radio className=\"radio\" value=\"orange\" />\n          orange\n        </label>\n        <label className=\"label\">\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ariakit free MIT React primitive `Radio` (slug `radio`) from https://ariakit.org/components/radio. Install with `npm install @ariakit/react`. Import from `@ariakit/react`. Headless \u2014 bring your own styles. Home: https://ariakit.org. Docs: https://ariakit.org/components. Repo: https://github.com/ariakit/ariakit. License: MIT (https://unpkg.com/@ariakit/react/LICENSE; Copyright (c) 2025-present Ariakit FZ-LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ariakit/react",
+        "packages": [
+          "@ariakit/react"
+        ]
+      }
+    }
+  ]
+}

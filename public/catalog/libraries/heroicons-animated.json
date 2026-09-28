@@ -1,0 +1,602 @@
+{
+  "id": "heroicons-animated",
+  "name": "Heroicons Animated",
+  "aliases": [
+    "heroicons-animated",
+    "Heroicons Animated",
+    "@heroicons-animated/react",
+    "animated heroicons"
+  ],
+  "summary": "MIT animated Heroicons for React via Motion \u2014 316 free icons, shadcn registry or npm.",
+  "homeUrl": "https://www.heroicons-animated.com",
+  "docsUrl": "https://www.heroicons-animated.com",
+  "repoUrl": "https://github.com/Aniket-508/heroicons-animated",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "pnpm dlx shadcn@latest add @heroicons-animated/{name}",
+    "registryUrl": "https://www.heroicons-animated.com/r/{name}.json",
+    "packages": [
+      "@heroicons-animated/react",
+      "motion"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.heroicons-animated.com",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "motion"
+    ],
+    "budgetKb": 250
+  },
+  "status": "verified",
+  "gaps": [
+    "Narrow icon micro-interaction library (316 icons) \u2014 not a full UI kit.",
+    "Pilot includes 12 of 316 free registry icons.",
+    "No per-icon docs URLs; all iframe demos point at the interactive homepage catalog.",
+    "Also publishes Vue/Svelte packages \u2014 this ingest is React-primary only.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:04:00-04:00",
+  "components": [
+    {
+      "id": "heroicons-animated-heart",
+      "libraryId": "heroicons-animated",
+      "slug": "heart",
+      "name": "Heart Icon",
+      "aliases": [
+        "heart",
+        "Heart",
+        "HeartIcon",
+        "heroicons animated heart",
+        "animated heart"
+      ],
+      "summary": "Animated heart icon (hover pulse).",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/heart\n# or: pnpm add @heroicons-animated/react motion\n\nimport { HeartIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <HeartIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `HeartIcon` (slug `heart`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/heart` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/heart",
+        "registryUrl": "https://www.heroicons-animated.com/r/heart.json",
+        "registryItem": "heart"
+      }
+    },
+    {
+      "id": "heroicons-animated-bell",
+      "libraryId": "heroicons-animated",
+      "slug": "bell",
+      "name": "Bell Icon",
+      "aliases": [
+        "bell",
+        "Bell",
+        "BellIcon",
+        "heroicons animated bell",
+        "animated bell"
+      ],
+      "summary": "Animated bell notification icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/bell\n# or: pnpm add @heroicons-animated/react motion\n\nimport { BellIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <BellIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `BellIcon` (slug `bell`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/bell` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/bell",
+        "registryUrl": "https://www.heroicons-animated.com/r/bell.json",
+        "registryItem": "bell"
+      }
+    },
+    {
+      "id": "heroicons-animated-star",
+      "libraryId": "heroicons-animated",
+      "slug": "star",
+      "name": "Star Icon",
+      "aliases": [
+        "star",
+        "Star",
+        "StarIcon",
+        "heroicons animated star",
+        "animated star"
+      ],
+      "summary": "Animated star/favorite icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/star\n# or: pnpm add @heroicons-animated/react motion\n\nimport { StarIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <StarIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `StarIcon` (slug `star`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/star` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/star",
+        "registryUrl": "https://www.heroicons-animated.com/r/star.json",
+        "registryItem": "star"
+      }
+    },
+    {
+      "id": "heroicons-animated-sparkles",
+      "libraryId": "heroicons-animated",
+      "slug": "sparkles",
+      "name": "Sparkles Icon",
+      "aliases": [
+        "sparkles",
+        "Sparkles",
+        "SparklesIcon",
+        "heroicons animated sparkles",
+        "animated sparkles"
+      ],
+      "summary": "Animated sparkles accent icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/sparkles\n# or: pnpm add @heroicons-animated/react motion\n\nimport { SparklesIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <SparklesIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `SparklesIcon` (slug `sparkles`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/sparkles` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/sparkles",
+        "registryUrl": "https://www.heroicons-animated.com/r/sparkles.json",
+        "registryItem": "sparkles"
+      }
+    },
+    {
+      "id": "heroicons-animated-rocket-launch",
+      "libraryId": "heroicons-animated",
+      "slug": "rocket-launch",
+      "name": "RocketLaunch Icon",
+      "aliases": [
+        "rocket-launch",
+        "RocketLaunch",
+        "RocketLaunchIcon",
+        "heroicons animated rocket-launch",
+        "animated rocket-launch"
+      ],
+      "summary": "Animated rocket launch icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/rocket-launch\n# or: pnpm add @heroicons-animated/react motion\n\nimport { RocketLaunchIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <RocketLaunchIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `RocketLaunchIcon` (slug `rocket-launch`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/rocket-launch` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/rocket-launch",
+        "registryUrl": "https://www.heroicons-animated.com/r/rocket-launch.json",
+        "registryItem": "rocket-launch"
+      }
+    },
+    {
+      "id": "heroicons-animated-bolt",
+      "libraryId": "heroicons-animated",
+      "slug": "bolt",
+      "name": "Bolt Icon",
+      "aliases": [
+        "bolt",
+        "Bolt",
+        "BoltIcon",
+        "heroicons animated bolt",
+        "animated bolt"
+      ],
+      "summary": "Animated lightning bolt icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/bolt\n# or: pnpm add @heroicons-animated/react motion\n\nimport { BoltIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <BoltIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `BoltIcon` (slug `bolt`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/bolt` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/bolt",
+        "registryUrl": "https://www.heroicons-animated.com/r/bolt.json",
+        "registryItem": "bolt"
+      }
+    },
+    {
+      "id": "heroicons-animated-fire",
+      "libraryId": "heroicons-animated",
+      "slug": "fire",
+      "name": "Fire Icon",
+      "aliases": [
+        "fire",
+        "Fire",
+        "FireIcon",
+        "heroicons animated fire",
+        "animated fire"
+      ],
+      "summary": "Animated fire icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/fire\n# or: pnpm add @heroicons-animated/react motion\n\nimport { FireIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <FireIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `FireIcon` (slug `fire`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/fire` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/fire",
+        "registryUrl": "https://www.heroicons-animated.com/r/fire.json",
+        "registryItem": "fire"
+      }
+    },
+    {
+      "id": "heroicons-animated-moon",
+      "libraryId": "heroicons-animated",
+      "slug": "moon",
+      "name": "Moon Icon",
+      "aliases": [
+        "moon",
+        "Moon",
+        "MoonIcon",
+        "heroicons animated moon",
+        "animated moon"
+      ],
+      "summary": "Animated moon / dark-mode icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/moon\n# or: pnpm add @heroicons-animated/react motion\n\nimport { MoonIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <MoonIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `MoonIcon` (slug `moon`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/moon` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/moon",
+        "registryUrl": "https://www.heroicons-animated.com/r/moon.json",
+        "registryItem": "moon"
+      }
+    },
+    {
+      "id": "heroicons-animated-sun",
+      "libraryId": "heroicons-animated",
+      "slug": "sun",
+      "name": "Sun Icon",
+      "aliases": [
+        "sun",
+        "Sun",
+        "SunIcon",
+        "heroicons animated sun",
+        "animated sun"
+      ],
+      "summary": "Animated sun / light-mode icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/sun\n# or: pnpm add @heroicons-animated/react motion\n\nimport { SunIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <SunIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `SunIcon` (slug `sun`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/sun` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/sun",
+        "registryUrl": "https://www.heroicons-animated.com/r/sun.json",
+        "registryItem": "sun"
+      }
+    },
+    {
+      "id": "heroicons-animated-wifi",
+      "libraryId": "heroicons-animated",
+      "slug": "wifi",
+      "name": "Wifi Icon",
+      "aliases": [
+        "wifi",
+        "Wifi",
+        "WifiIcon",
+        "heroicons animated wifi",
+        "animated wifi"
+      ],
+      "summary": "Animated wifi signal icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/wifi\n# or: pnpm add @heroicons-animated/react motion\n\nimport { WifiIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <WifiIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `WifiIcon` (slug `wifi`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/wifi` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/wifi",
+        "registryUrl": "https://www.heroicons-animated.com/r/wifi.json",
+        "registryItem": "wifi"
+      }
+    },
+    {
+      "id": "heroicons-animated-shopping-cart",
+      "libraryId": "heroicons-animated",
+      "slug": "shopping-cart",
+      "name": "ShoppingCart Icon",
+      "aliases": [
+        "shopping-cart",
+        "ShoppingCart",
+        "ShoppingCartIcon",
+        "heroicons animated shopping-cart",
+        "animated shopping-cart"
+      ],
+      "summary": "Animated shopping cart icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/shopping-cart\n# or: pnpm add @heroicons-animated/react motion\n\nimport { ShoppingCartIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <ShoppingCartIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `ShoppingCartIcon` (slug `shopping-cart`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/shopping-cart` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/shopping-cart",
+        "registryUrl": "https://www.heroicons-animated.com/r/shopping-cart.json",
+        "registryItem": "shopping-cart"
+      }
+    },
+    {
+      "id": "heroicons-animated-magnifying-glass",
+      "libraryId": "heroicons-animated",
+      "slug": "magnifying-glass",
+      "name": "MagnifyingGlass Icon",
+      "aliases": [
+        "magnifying-glass",
+        "MagnifyingGlass",
+        "MagnifyingGlassIcon",
+        "heroicons animated magnifying-glass",
+        "animated magnifying-glass"
+      ],
+      "summary": "Animated search/magnifying-glass icon.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "heroicons-animated",
+        "iframeSrc": "https://www.heroicons-animated.com",
+        "aspectRatio": "16/9",
+        "peerNotes": "MIT animated Heroicons (Motion). Site hosts interactive hover demos for all icons. Install per-icon via shadcn registry or npm `@heroicons-animated/react`."
+      },
+      "copyCode": "pnpm dlx shadcn@latest add @heroicons-animated/magnifying-glass\n# or: pnpm add @heroicons-animated/react motion\n\nimport { MagnifyingGlassIcon } from \"@heroicons-animated/react\";\n\nexport default function Example() {\n  return <MagnifyingGlassIcon className=\"size-6\" />;\n}",
+      "copyPrompt": {
+        "text": "Use heroicons-animated free MIT React icon `MagnifyingGlassIcon` (slug `magnifying-glass`) from https://www.heroicons-animated.com. Install with `pnpm dlx shadcn@latest add @heroicons-animated/magnifying-glass` or `pnpm add @heroicons-animated/react motion`. Import from `@heroicons-animated/react`. Peer: motion. Home: https://www.heroicons-animated.com. Registry: https://www.heroicons-animated.com/r/registry.json. Repo: https://github.com/Aniket-508/heroicons-animated. License: MIT (https://raw.githubusercontent.com/Aniket-508/heroicons-animated/main/LICENSE; Copyright (c) 2026 Aniket Pawar). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "pnpm dlx shadcn@latest add @heroicons-animated/magnifying-glass",
+        "registryUrl": "https://www.heroicons-animated.com/r/magnifying-glass.json",
+        "registryItem": "magnifying-glass"
+      }
+    }
+  ]
+}

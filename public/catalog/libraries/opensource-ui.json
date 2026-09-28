@@ -1,0 +1,579 @@
+{
+  "id": "opensource-ui",
+  "name": "Opensource UI",
+  "aliases": [
+    "opensourceui",
+    "opensourceui.in",
+    "bidyut10/opensourceui",
+    "OpensourceUI"
+  ],
+  "summary": "Free MIT copy-paste React/Next widgets, forms, mockups, and backgrounds.",
+  "homeUrl": "https://opensourceui.in",
+  "docsUrl": "https://opensourceui.in/components",
+  "repoUrl": "https://github.com/bidyut10/opensourceui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "copy-paste",
+    "command": "Open https://opensourceui.in/components/{slug}, copy source; npm install clsx tailwind-merge lucide-react"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://opensourceui.in/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "clsx",
+      "tailwind-merge",
+      "lucide-react"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 200+ catalog components across 30 categories.",
+    "No shadcn registry / no Opensource UI npm package \u2014 copy-paste only.",
+    "Some components use next/image (App Router); peer apps need Next or a swap.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:05:00-04:00",
+  "components": [
+    {
+      "id": "opensource-ui-3d-button",
+      "libraryId": "opensource-ui",
+      "slug": "3d-button",
+      "name": "Tactile 3D Button",
+      "aliases": [
+        "opensource 3d button",
+        "ThreeDButton"
+      ],
+      "summary": "Tactile 3D pressable button with depth variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/3d-button",
+        "iframeSrc": "https://opensourceui.in/components/3d-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/3d-button and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { ThreeDButton } from \"@/components/3d-button\"\n\n<ThreeDButton />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Tactile 3D Button` (slug `3d-button`, export `ThreeDButton`) from https://opensourceui.in/components/3d-button. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/3d-button and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-soft-ui-button",
+      "libraryId": "opensource-ui",
+      "slug": "soft-ui-button",
+      "name": "Neumorphic Soft UI Button",
+      "aliases": [
+        "soft ui button",
+        "SoftUiButton"
+      ],
+      "summary": "Soft neumorphic button with size variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/soft-ui-button",
+        "iframeSrc": "https://opensourceui.in/components/soft-ui-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/soft-ui-button and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { SoftUiButton } from \"@/components/soft-ui-button\"\n\n<SoftUiButton />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Neumorphic Soft UI Button` (slug `soft-ui-button`, export `SoftUiButton`) from https://opensourceui.in/components/soft-ui-button. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/soft-ui-button and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-like-button",
+      "libraryId": "opensource-ui",
+      "slug": "like-button",
+      "name": "Like Toggle",
+      "aliases": [
+        "like button",
+        "LikeButton"
+      ],
+      "summary": "Heart like toggle with particle burst.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal",
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/like-button",
+        "iframeSrc": "https://opensourceui.in/components/like-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/like-button and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { LikeButton } from \"@/components/like-button\"\n\n<LikeButton />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Like Toggle` (slug `like-button`, export `LikeButton`) from https://opensourceui.in/components/like-button. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/like-button and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-aurora-background",
+      "libraryId": "opensource-ui",
+      "slug": "aurora-background",
+      "name": "Aurora Background",
+      "aliases": [
+        "aurora bg",
+        "AuroraBackground"
+      ],
+      "summary": "Aurora gradient background wrapper.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "aurora",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/aurora-background",
+        "iframeSrc": "https://opensourceui.in/components/aurora-background",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/aurora-background and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { AuroraBackground } from \"@/components/aurora-background\"\n\n<AuroraBackground />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Aurora Background` (slug `aurora-background`, export `AuroraBackground`) from https://opensourceui.in/components/aurora-background. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/aurora-background and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-app-dock",
+      "libraryId": "opensource-ui",
+      "slug": "app-dock",
+      "name": "App Dock",
+      "aliases": [
+        "app dock",
+        "AppDock"
+      ],
+      "summary": "Mobile-style app dock with icons and labels.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/app-dock",
+        "iframeSrc": "https://opensourceui.in/components/app-dock",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/app-dock and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { AppDock } from \"@/components/app-dock\"\n\n<AppDock />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `App Dock` (slug `app-dock`, export `AppDock`) from https://opensourceui.in/components/app-dock. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/app-dock and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-contact-form",
+      "libraryId": "opensource-ui",
+      "slug": "contact-form",
+      "name": "Contact Form",
+      "aliases": [
+        "contact form",
+        "ContactForm"
+      ],
+      "summary": "Validated contact form with name, email, subject, message.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/contact-form",
+        "iframeSrc": "https://opensourceui.in/components/contact-form",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/contact-form and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { ContactForm } from \"@/components/contact-form\"\n\n<ContactForm />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Contact Form` (slug `contact-form`, export `ContactForm`) from https://opensourceui.in/components/contact-form. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/contact-form and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-credit-card-glass",
+      "libraryId": "opensource-ui",
+      "slug": "credit-card-glass",
+      "name": "Credit Card Glass",
+      "aliases": [
+        "credit card glass",
+        "CreditCardGlass"
+      ],
+      "summary": "Glassmorphic credit-card visual card.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "glass",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/credit-card-glass",
+        "iframeSrc": "https://opensourceui.in/components/credit-card-glass",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/credit-card-glass and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { CreditCardGlass } from \"@/components/credit-card-glass\"\n\n<CreditCardGlass />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Credit Card Glass` (slug `credit-card-glass`, export `CreditCardGlass`) from https://opensourceui.in/components/credit-card-glass. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/credit-card-glass and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-dimple-switch",
+      "libraryId": "opensource-ui",
+      "slug": "dimple-switch",
+      "name": "Dimple Switch",
+      "aliases": [
+        "dimple switch",
+        "DimpleSwitch"
+      ],
+      "summary": "Dimple-textured toggle switch control.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/dimple-switch",
+        "iframeSrc": "https://opensourceui.in/components/dimple-switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/dimple-switch and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { DimpleSwitch } from \"@/components/dimple-switch\"\n\n<DimpleSwitch />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Dimple Switch` (slug `dimple-switch`, export `DimpleSwitch`) from https://opensourceui.in/components/dimple-switch. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/dimple-switch and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-annotated-text",
+      "libraryId": "opensource-ui",
+      "slug": "annotated-text",
+      "name": "Annotated Text",
+      "aliases": [
+        "annotated text",
+        "AnnotatedText"
+      ],
+      "summary": "Text with rough SVG underline annotations.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/annotated-text",
+        "iframeSrc": "https://opensourceui.in/components/annotated-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/annotated-text and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { AnnotatedText } from \"@/components/annotated-text\"\n\n<AnnotatedText />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Annotated Text` (slug `annotated-text`, export `AnnotatedText`) from https://opensourceui.in/components/annotated-text. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/annotated-text and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-analog-clock-minimal",
+      "libraryId": "opensource-ui",
+      "slug": "analog-clock-minimal",
+      "name": "Analog Clock Minimal",
+      "aliases": [
+        "analog clock",
+        "AnalogClockWidget"
+      ],
+      "summary": "Analog clock widget with minimal face ticks.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/analog-clock-minimal",
+        "iframeSrc": "https://opensourceui.in/components/analog-clock-minimal",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/analog-clock-minimal and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { AnalogClockWidget } from \"@/components/analog-clock-minimal\"\n\n<AnalogClockWidget />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Analog Clock Minimal` (slug `analog-clock-minimal`, export `AnalogClockWidget`) from https://opensourceui.in/components/analog-clock-minimal. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/analog-clock-minimal and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-browser",
+      "libraryId": "opensource-ui",
+      "slug": "browser",
+      "name": "Browser Mockup",
+      "aliases": [
+        "browser mockup",
+        "BrowserMockupCard"
+      ],
+      "summary": "Browser chrome mockup frame for screenshots.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/browser",
+        "iframeSrc": "https://opensourceui.in/components/browser",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/browser and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { BrowserMockupCard } from \"@/components/browser\"\n\n<BrowserMockupCard />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Browser Mockup` (slug `browser`, export `BrowserMockupCard`) from https://opensourceui.in/components/browser. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/browser and copy the React + Tailwind TypeScript source"
+      }
+    },
+    {
+      "id": "opensource-ui-apple-notification",
+      "libraryId": "opensource-ui",
+      "slug": "apple-notification",
+      "name": "Apple Notification",
+      "aliases": [
+        "apple notification",
+        "AppleNotificationBanner"
+      ],
+      "summary": "iOS-style notification banner with dismiss.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast",
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/apple-notification",
+        "iframeSrc": "https://opensourceui.in/components/apple-notification",
+        "aspectRatio": "16/9",
+        "peerNotes": "Copy-paste TypeScript + Tailwind. Needs @/lib/cn (clsx + tailwind-merge). Many comps use lucide-react; some use next/image."
+      },
+      "copyCode": "// Opensource UI is copy-paste (no library npm package).\n// 1) Open https://opensourceui.in/components/apple-notification and copy the component source.\n// 2) Copy lib/cn.ts helper; npm install clsx tailwind-merge lucide-react\n// 3) Paste into your React/Next app and fix @/ imports.\n\nimport { AppleNotificationBanner } from \"@/components/apple-notification\"\n\n<AppleNotificationBanner />",
+      "copyPrompt": {
+        "text": "Use Opensource UI free MIT React/Next component `Apple Notification` (slug `apple-notification`, export `AppleNotificationBanner`) from https://opensourceui.in/components/apple-notification. Copy-paste the TypeScript source from the page (no Opensource UI npm package). Add `lib/cn.ts` and `npm install clsx tailwind-merge lucide-react` as listed on the component page. Catalog: https://opensourceui.in/components. Home: https://opensourceui.in. Repo: https://github.com/bidyut10/opensourceui. License: MIT (https://raw.githubusercontent.com/bidyut10/opensourceui/main/LICENSE; Copyright (c) 2026 Bidyut Kundu). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://opensourceui.in/components/apple-notification and copy the React + Tailwind TypeScript source"
+      }
+    }
+  ]
+}

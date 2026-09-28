@@ -1,0 +1,620 @@
+{
+  "id": "kokonut-ui",
+  "name": "Kokonut UI",
+  "aliases": [
+    "kokonutui",
+    "kokonut",
+    "kokonut-labs/kokonutui"
+  ],
+  "summary": "Free open-source React/Tailwind/Motion components via @kokonutui shadcn registry (Pro companion excluded).",
+  "homeUrl": "https://kokonutui.com",
+  "docsUrl": "https://kokonutui.com/docs",
+  "repoUrl": "https://github.com/kokonut-labs/kokonutui",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @kokonutui/<component>",
+    "registryUrl": "https://kokonutui.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://kokonutui.com/docs/{category}/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "motion",
+      "tailwindcss",
+      "lucide-react"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free registry components of ~51 items in registry.json / 100+ claimed on site; not a full inventory.",
+    "Freemium: free OSS at kokonutui.com; Kokonut UI Pro at https://kokonutui.pro (premium components/templates) — Pro excluded; no paid unlock.",
+    "Templates listed under kokonutui.pro in llms.txt — excluded from verified free set.",
+    "Some comps (liquid-glass-card, particle-button, bento-grid) depend on shadcn/ui Button/Card and/or next/image / next/font — ensure shadcn base + Next where required.",
+    "ARCHITECTURE §5 prefers iframe for unusual/tactile motion; all demos are docs iframes.",
+    "Add `@kokonutui` registry to components.json: \"https://kokonutui.com/r/{name}.json\" (docs)."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T14:45:00-04:00",
+  "components": [
+    {
+      "id": "kokonut-ui-beams-background",
+      "libraryId": "kokonut-ui",
+      "slug": "beams-background",
+      "name": "Beams Background",
+      "aliases": [
+        "light beams background",
+        "canvas beams",
+        "animated beams bg"
+      ],
+      "summary": "Canvas background of drifting light beams with configurable intensity.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "beam"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/beams-background",
+        "iframeSrc": "https://kokonutui.com/docs/backgrounds/beams-background",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/beams-background\n\nimport BeamsBackground from \"@/components/kokonutui/beams-background\"\n\n<BeamsBackground intensity=\"strong\" className=\"min-h-[24rem] rounded-xl\" />",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Beams Background` (slug `beams-background`) from https://kokonutui.com/docs/backgrounds/beams-background. Install with `npx shadcn@latest add @kokonutui/beams-background` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/beams-background.json. Import from `@/components/kokonutui/beams-background` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/beams-background",
+        "registryUrl": "https://kokonutui.com/r/beams-background.json",
+        "registryItem": "@kokonutui/beams-background"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-background-paths",
+      "libraryId": "kokonut-ui",
+      "slug": "background-paths",
+      "name": "Background Paths",
+      "aliases": [
+        "svg path background",
+        "flowing lines hero",
+        "path draw background"
+      ],
+      "summary": "Animated flowing SVG line paths drawn across a hero section.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "hero"
+      ],
+      "effectType": [
+        "draw",
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/background-paths",
+        "iframeSrc": "https://kokonutui.com/docs/backgrounds/background-paths",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion; default export is memo()-wrapped BackgroundPaths."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/background-paths\n\nimport BackgroundPaths from \"@/components/kokonutui/background-paths\"\n\n<BackgroundPaths title=\"Background Paths\" />",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Background Paths` (slug `background-paths`) from https://kokonutui.com/docs/backgrounds/background-paths. Install with `npx shadcn@latest add @kokonutui/background-paths` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/background-paths.json. Import from `@/components/kokonutui/background-paths` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/background-paths",
+        "registryUrl": "https://kokonutui.com/r/background-paths.json",
+        "registryItem": "@kokonutui/background-paths"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-flow-field",
+      "libraryId": "kokonut-ui",
+      "slug": "flow-field",
+      "name": "Flow Field",
+      "aliases": [
+        "particle flow field",
+        "aurora particles bg",
+        "noise flow field"
+      ],
+      "summary": "Canvas particle flow field with noise-driven glowing streams; themes aurora/ember/ocean.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "particles",
+        "aurora"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/flow-field",
+        "iframeSrc": "https://kokonutui.com/docs/backgrounds/flow-field",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion. ColorTheme: aurora | ember | ocean."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/flow-field\n\nimport FlowField from \"@/components/kokonutui/flow-field\"\n\n<FlowField theme=\"aurora\" density=\"medium\" className=\"min-h-[24rem] rounded-xl\" />",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Flow Field` (slug `flow-field`) from https://kokonutui.com/docs/backgrounds/flow-field. Install with `npx shadcn@latest add @kokonutui/flow-field` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/flow-field.json. Import from `@/components/kokonutui/flow-field` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/flow-field",
+        "registryUrl": "https://kokonutui.com/r/flow-field.json",
+        "registryItem": "@kokonutui/flow-field"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-shape-hero",
+      "libraryId": "kokonut-ui",
+      "slug": "shape-hero",
+      "name": "Shape Hero",
+      "aliases": [
+        "shapes hero",
+        "geometric hero",
+        "floating shapes hero"
+      ],
+      "summary": "Hero with translucent geometric shapes that drop in and float over a gradient backdrop.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "hero",
+        "background"
+      ],
+      "effectType": [
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/shape-hero",
+        "iframeSrc": "https://kokonutui.com/docs/backgrounds/shape-hero",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion + next/font Google Pacifico — Next.js oriented."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/shape-hero\n\nimport ShapeHero from \"@/components/kokonutui/shape-hero\"\n\n<ShapeHero title1=\"Elevate Your\" title2=\"Digital Vision\" />",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Shape Hero` (slug `shape-hero`) from https://kokonutui.com/docs/backgrounds/shape-hero. Install with `npx shadcn@latest add @kokonutui/shape-hero` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/shape-hero.json. Import from `@/components/kokonutui/shape-hero` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/shape-hero",
+        "registryUrl": "https://kokonutui.com/r/shape-hero.json",
+        "registryItem": "@kokonutui/shape-hero"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-card-flip",
+      "libraryId": "kokonut-ui",
+      "slug": "card-flip",
+      "name": "Card Flip",
+      "aliases": [
+        "3d flip card",
+        "hover flip card",
+        "feature flip card"
+      ],
+      "summary": "Interactive card that flips in 3D on hover to reveal features and CTA.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/card-flip",
+        "iframeSrc": "https://kokonutui.com/docs/cards/card-flip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs lucide-react."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/card-flip\n\nimport CardFlip from \"@/components/kokonutui/card-flip\"\n\n<CardFlip title=\"Design Systems\" subtitle=\"Explore the fundamentals\" description=\"Dive deep into modern UI/UX design.\" features={[\"UI/UX\", \"Modern Design\", \"Tailwind CSS\", \"Kokonut UI\"]} />",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Card Flip` (slug `card-flip`) from https://kokonutui.com/docs/cards/card-flip. Install with `npx shadcn@latest add @kokonutui/card-flip` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/card-flip.json. Import from `@/components/kokonutui/card-flip` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/card-flip",
+        "registryUrl": "https://kokonutui.com/r/card-flip.json",
+        "registryItem": "@kokonutui/card-flip"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-liquid-glass-card",
+      "libraryId": "kokonut-ui",
+      "slug": "liquid-glass-card",
+      "name": "Liquid Glass Card",
+      "aliases": [
+        "liquid glass",
+        "glass card",
+        "refractive glass card"
+      ],
+      "summary": "Apple-inspired liquid glass card/buttons using SVG displacement filters.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "liquid-glass",
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/liquid-glass-card",
+        "iframeSrc": "https://kokonutui.com/docs/cards/liquid-glass-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Named exports LiquidGlassCard + LiquidButton; needs lucide-react, shadcn Button/Card, next/image. Default export is NotificationCenter demo — prefer named imports."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/liquid-glass-card\n\nimport { LiquidGlassCard, LiquidButton } from \"@/components/kokonutui/liquid-glass-card\"\n\n<LiquidGlassCard glassEffect={true} className=\"p-6\">\n  <LiquidButton>Glass action</LiquidButton>\n</LiquidGlassCard>",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Liquid Glass Card` (slug `liquid-glass-card`) from https://kokonutui.com/docs/cards/liquid-glass-card. Install with `npx shadcn@latest add @kokonutui/liquid-glass-card` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/liquid-glass-card.json. Import from `@/components/kokonutui/liquid-glass-card` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/liquid-glass-card",
+        "registryUrl": "https://kokonutui.com/r/liquid-glass-card.json",
+        "registryItem": "@kokonutui/liquid-glass-card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-particle-button",
+      "libraryId": "kokonut-ui",
+      "slug": "particle-button",
+      "name": "Particle Button",
+      "aliases": [
+        "particle burst button",
+        "click particles button"
+      ],
+      "summary": "Button that bursts animated particles from its center on click.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/particle-button",
+        "iframeSrc": "https://kokonutui.com/docs/buttons/particle-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Extends shadcn Button props; needs lucide-react + motion."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/particle-button\n\nimport ParticleButton from \"@/components/kokonutui/particle-button\"\n\n<ParticleButton successDuration={1000}>Click me</ParticleButton>",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Particle Button` (slug `particle-button`) from https://kokonutui.com/docs/buttons/particle-button. Install with `npx shadcn@latest add @kokonutui/particle-button` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/particle-button.json. Import from `@/components/kokonutui/particle-button` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/particle-button",
+        "registryUrl": "https://kokonutui.com/r/particle-button.json",
+        "registryItem": "@kokonutui/particle-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-attract-button",
+      "libraryId": "kokonut-ui",
+      "slug": "attract-button",
+      "name": "Attract Button",
+      "aliases": [
+        "magnet button",
+        "magnetic particles button",
+        "attract particles"
+      ],
+      "summary": "Magnetic button that pulls floating particles to its center on hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "particles",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/attract-button",
+        "iframeSrc": "https://kokonutui.com/docs/buttons/attract-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs lucide-react + motion; wraps shadcn Button."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/attract-button\n\nimport AttractButton from \"@/components/kokonutui/attract-button\"\n\n<AttractButton particleCount={12} attractRadius={50}>Attract</AttractButton>",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Attract Button` (slug `attract-button`) from https://kokonutui.com/docs/buttons/attract-button. Install with `npx shadcn@latest add @kokonutui/attract-button` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/attract-button.json. Import from `@/components/kokonutui/attract-button` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/attract-button",
+        "registryUrl": "https://kokonutui.com/r/attract-button.json",
+        "registryItem": "@kokonutui/attract-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-shimmer-text",
+      "libraryId": "kokonut-ui",
+      "slug": "shimmer-text",
+      "name": "Shimmer Text",
+      "aliases": [
+        "text shimmer",
+        "shimmer headline",
+        "gradient shimmer text"
+      ],
+      "summary": "Animated shimmer text with a looping gradient sweep across letters.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/shimmer-text",
+        "iframeSrc": "https://kokonutui.com/docs/texts/shimmer-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/shimmer-text\n\nimport ShimmerText from \"@/components/kokonutui/shimmer-text\"\n\n<ShimmerText text=\"Text Shimmer\" />",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Shimmer Text` (slug `shimmer-text`) from https://kokonutui.com/docs/texts/shimmer-text. Install with `npx shadcn@latest add @kokonutui/shimmer-text` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/shimmer-text.json. Import from `@/components/kokonutui/shimmer-text` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/shimmer-text",
+        "registryUrl": "https://kokonutui.com/r/shimmer-text.json",
+        "registryItem": "@kokonutui/shimmer-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-type-writer",
+      "libraryId": "kokonut-ui",
+      "slug": "type-writer",
+      "name": "Type Writer",
+      "aliases": [
+        "typewriter",
+        "typing text",
+        "typewriter title"
+      ],
+      "summary": "Typewriter that types and deletes multiple sequences with blinking cursor and auto loop.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/type-writer",
+        "iframeSrc": "https://kokonutui.com/docs/texts/type-writer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Default export name is TypewriterTitle (file slug type-writer). Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/type-writer\n\nimport TypewriterTitle from \"@/components/kokonutui/type-writer\"\n\n<TypewriterTitle\n  sequences={[{ text: \"Build faster\", deleteAfter: true }, { text: \"Ship polished UI\" }]}\n  typingSpeed={50}\n  autoLoop={true}\n/>",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Type Writer` (slug `type-writer`) from https://kokonutui.com/docs/texts/type-writer. Install with `npx shadcn@latest add @kokonutui/type-writer` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/type-writer.json. Import from `@/components/kokonutui/type-writer` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/type-writer",
+        "registryUrl": "https://kokonutui.com/r/type-writer.json",
+        "registryItem": "@kokonutui/type-writer"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-matrix-text",
+      "libraryId": "kokonut-ui",
+      "slug": "matrix-text",
+      "name": "Matrix Text",
+      "aliases": [
+        "matrix scramble text",
+        "binary scramble",
+        "matrix reveal text"
+      ],
+      "summary": "Matrix-style effect where letters scramble through binary characters before revealing.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/matrix-text",
+        "iframeSrc": "https://kokonutui.com/docs/texts/matrix-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/matrix-text\n\nimport MatrixText from \"@/components/kokonutui/matrix-text\"\n\n<MatrixText text=\"HelloWorld!\" initialDelay={200} />",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Matrix Text` (slug `matrix-text`) from https://kokonutui.com/docs/texts/matrix-text. Install with `npx shadcn@latest add @kokonutui/matrix-text` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/matrix-text.json. Import from `@/components/kokonutui/matrix-text` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/matrix-text",
+        "registryUrl": "https://kokonutui.com/r/matrix-text.json",
+        "registryItem": "@kokonutui/matrix-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kokonut-ui-bento-grid",
+      "libraryId": "kokonut-ui",
+      "slug": "bento-grid",
+      "name": "Bento Grid",
+      "aliases": [
+        "bento",
+        "feature bento grid",
+        "animated bento"
+      ],
+      "summary": "Responsive bento grid of feature cards with animated charts, counters, and timelines.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "bento",
+        "card"
+      ],
+      "effectType": [
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kokonutui/bento-grid",
+        "iframeSrc": "https://kokonutui.com/docs/cards/bento-grid",
+        "aspectRatio": "16/9",
+        "peerNotes": "Self-contained demo layout; registry pulls icon files + lucide-react + motion. Prefer iframe for preview."
+      },
+      "copyCode": "npx shadcn@latest add @kokonutui/bento-grid\n\nimport BentoGrid from \"@/components/kokonutui/bento-grid\"\n\n<BentoGrid />",
+      "copyPrompt": {
+        "text": "Use Kokonut UI free component `Bento Grid` (slug `bento-grid`) from https://kokonutui.com/docs/cards/bento-grid. Install with `npx shadcn@latest add @kokonutui/bento-grid` after `npx shadcn@latest init` and adding the `@kokonutui` registry (`\"@kokonutui\": \"https://kokonutui.com/r/{name}.json\"`) to `components.json` registries (see https://kokonutui.com/docs). Registry item: https://kokonutui.com/r/bento-grid.json. Import from `@/components/kokonutui/bento-grid` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or `lucide-react`. Free & open source MIT (https://raw.githubusercontent.com/kokonut-labs/kokonutui/main/LICENSE); Kokonut UI Pro (https://kokonutui.pro) is separate — prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @kokonutui/bento-grid",
+        "registryUrl": "https://kokonutui.com/r/bento-grid.json",
+        "registryItem": "@kokonutui/bento-grid"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

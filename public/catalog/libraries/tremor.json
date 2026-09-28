@@ -1,0 +1,606 @@
+{
+  "id": "tremor",
+  "name": "Tremor",
+  "aliases": [
+    "tremor",
+    "Tremor",
+    "@tremor/react",
+    "Tremor NPM",
+    "tremor.so"
+  ],
+  "summary": "React + Tailwind components for dashboards and charts; free npm core, paid blocks separate.",
+  "homeUrl": "https://tremor.so",
+  "docsUrl": "https://npm.tremor.so/docs/getting-started/installation",
+  "repoUrl": "https://github.com/tremorlabs/tremor-npm",
+  "license": "Apache-2.0",
+  "pricing": "freemium",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install @tremor/react",
+    "packages": [
+      "@tremor/react"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://npm.tremor.so/docs/{section}/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Freemium: free @tremor/react + open-source Raw on tremor.so; paid Tremor Blocks/templates excluded from this ingest.",
+    "Pilot includes 12 free npm comps of 20+ open-source set \u2014 not the 250+ paid blocks.",
+    "Requires Tailwind CSS configuration (content path must include @tremor).",
+    "Copy-paste Tremor Raw (tremor.so) is an alternate free surface; this packet uses NPM package demos.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:04:00-04:00",
+  "components": [
+    {
+      "id": "tremor-area-chart",
+      "libraryId": "tremor",
+      "slug": "area-chart",
+      "name": "AreaChart",
+      "aliases": [
+        "area-chart",
+        "AreaChart",
+        "tremor AreaChart",
+        "@tremor/react AreaChart"
+      ],
+      "summary": "Area chart with shaded series for dashboard metrics.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "chart"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/visualizations/area-chart",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { AreaChart } from \"@tremor/react\";\n\nconst chartdata = [\n  { date: \"Jan 22\", SolarPanels: 2890, Inverters: 2338 },\n  { date: \"Feb 22\", SolarPanels: 2756, Inverters: 2103 },\n];\n\nconst dataFormatter = (n) => `$${Intl.NumberFormat(\"us\").format(n)}`;\n\nexport default () => (\n  <AreaChart\n    className=\"h-80\"\n    data={chartdata}\n    index=\"date\"\n    categories={[\"SolarPanels\", \"Inverters\"]}\n    colors={[\"indigo\", \"rose\"]}\n    valueFormatter={dataFormatter}\n  />\n);",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `AreaChart` (slug `area-chart`) from https://npm.tremor.so/docs/visualizations/area-chart. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-bar-chart",
+      "libraryId": "tremor",
+      "slug": "bar-chart",
+      "name": "BarChart",
+      "aliases": [
+        "bar-chart",
+        "BarChart",
+        "tremor BarChart",
+        "@tremor/react BarChart"
+      ],
+      "summary": "Bar chart for categorical comparisons.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "chart"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/visualizations/bar-chart",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { BarChart } from \"@tremor/react\";\n\nconst chartdata = [\n  { name: \"Amphibians\", \"Number of threatened species\": 2488 },\n  { name: \"Birds\", \"Number of threatened species\": 1445 },\n];\n\nexport default () => (\n  <BarChart\n    className=\"h-72\"\n    data={chartdata}\n    index=\"name\"\n    categories={[\"Number of threatened species\"]}\n    colors={[\"blue\"]}\n  />\n);",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `BarChart` (slug `bar-chart`) from https://npm.tremor.so/docs/visualizations/bar-chart. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-line-chart",
+      "libraryId": "tremor",
+      "slug": "line-chart",
+      "name": "LineChart",
+      "aliases": [
+        "line-chart",
+        "LineChart",
+        "tremor LineChart",
+        "@tremor/react LineChart"
+      ],
+      "summary": "Line chart for trends over time.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "chart"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/visualizations/line-chart",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { LineChart } from \"@tremor/react\";\n\nconst chartdata = [\n  { date: \"Jan 22\", Price: 2890 },\n  { date: \"Feb 22\", Price: 2756 },\n];\n\nexport default () => (\n  <LineChart\n    className=\"h-80\"\n    data={chartdata}\n    index=\"date\"\n    categories={[\"Price\"]}\n    colors={[\"indigo\"]}\n  />\n);",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `LineChart` (slug `line-chart`) from https://npm.tremor.so/docs/visualizations/line-chart. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-donut-chart",
+      "libraryId": "tremor",
+      "slug": "donut-chart",
+      "name": "DonutChart",
+      "aliases": [
+        "donut-chart",
+        "DonutChart",
+        "tremor DonutChart",
+        "@tremor/react DonutChart"
+      ],
+      "summary": "Donut or pie chart for category shares.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "chart"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/visualizations/donut-chart",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { DonutChart } from \"@tremor/react\";\n\nconst sales = [\n  { name: \"New York\", sales: 980 },\n  { name: \"London\", sales: 456 },\n];\n\nexport default () => (\n  <DonutChart\n    className=\"w-40\"\n    data={sales}\n    category=\"sales\"\n    index=\"name\"\n    colors={[\"blue\", \"cyan\"]}\n  />\n);",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `DonutChart` (slug `donut-chart`) from https://npm.tremor.so/docs/visualizations/donut-chart. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-bar-list",
+      "libraryId": "tremor",
+      "slug": "bar-list",
+      "name": "BarList",
+      "aliases": [
+        "bar-list",
+        "BarList",
+        "tremor BarList",
+        "@tremor/react BarList"
+      ],
+      "summary": "Horizontal bar list for ranked metrics.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "chart",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/visualizations/bar-list",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { BarList } from \"@tremor/react\";\n\nconst data = [\n  { name: \"/home\", value: 456 },\n  { name: \"/imprint\", value: 351 },\n];\n\nexport default () => <BarList data={data} className=\"mt-2\" />;",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `BarList` (slug `bar-list`) from https://npm.tremor.so/docs/visualizations/bar-list. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-tracker",
+      "libraryId": "tremor",
+      "slug": "tracker",
+      "name": "Tracker",
+      "aliases": [
+        "tracker",
+        "Tracker",
+        "tremor Tracker",
+        "@tremor/react Tracker"
+      ],
+      "summary": "Status tracker blocks for uptime-style histories.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "chart",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/visualizations/tracker",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { Tracker } from \"@tremor/react\";\n\nconst data = [\n  { color: \"emerald\", tooltip: \"Operational\" },\n  { color: \"emerald\", tooltip: \"Operational\" },\n  { color: \"rose\", tooltip: \"Downtime\" },\n];\n\nexport default () => <Tracker data={data} className=\"mt-2\" />;",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `Tracker` (slug `tracker`) from https://npm.tremor.so/docs/visualizations/tracker. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-progress-circle",
+      "libraryId": "tremor",
+      "slug": "progress-circle",
+      "name": "ProgressCircle",
+      "aliases": [
+        "progress-circle",
+        "ProgressCircle",
+        "tremor ProgressCircle",
+        "@tremor/react ProgressCircle"
+      ],
+      "summary": "Circular progress indicator for completion ratios.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "chart",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/visualizations/progress-circle",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { ProgressCircle } from \"@tremor/react\";\n\nexport default () => (\n  <ProgressCircle value={75} size=\"md\">\n    <span className=\"text-sm font-medium text-tremor-content-strong\">75%</span>\n  </ProgressCircle>\n);",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `ProgressCircle` (slug `progress-circle`) from https://npm.tremor.so/docs/visualizations/progress-circle. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-spark-charts",
+      "libraryId": "tremor",
+      "slug": "spark-charts",
+      "name": "Spark Charts",
+      "aliases": [
+        "spark-charts",
+        "Spark Charts",
+        "tremor Spark Charts",
+        "@tremor/react Spark Charts"
+      ],
+      "summary": "Compact spark area, line, and bar charts for dense UIs.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "chart"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/visualizations/spark-charts",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { SparkAreaChart } from \"@tremor/react\";\n\nconst chartdata = [\n  { month: \"Jan 21\", Performance: 4000 },\n  { month: \"Feb 21\", Performance: 3000 },\n];\n\nexport default () => (\n  <SparkAreaChart\n    data={chartdata}\n    categories={[\"Performance\"]}\n    index=\"month\"\n    colors={[\"emerald\"]}\n    className=\"h-10 w-36\"\n  />\n);",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `Spark Charts` (slug `spark-charts`) from https://npm.tremor.so/docs/visualizations/spark-charts. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-card",
+      "libraryId": "tremor",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "card",
+        "Card",
+        "tremor Card",
+        "@tremor/react Card"
+      ],
+      "summary": "Dashboard card container with Tremor spacing defaults.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "card",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/ui/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { Card, Text, Metric, Flex, BadgeDelta } from \"@tremor/react\";\n\nexport default () => (\n  <Card className=\"max-w-xs\">\n    <Flex alignItems=\"start\">\n      <div>\n        <Text>Sales</Text>\n        <Metric>$ 34,743</Metric>\n      </div>\n      <BadgeDelta deltaType=\"moderateIncrease\">13.2%</BadgeDelta>\n    </Flex>\n  </Card>\n);",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `Card` (slug `card`) from https://npm.tremor.so/docs/ui/card. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-button",
+      "libraryId": "tremor",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "Button",
+        "tremor Button",
+        "@tremor/react Button"
+      ],
+      "summary": "Tremor dashboard button variants.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/ui/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { Button } from \"@tremor/react\";\n\nexport default () => <Button>Click me</Button>;",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `Button` (slug `button`) from https://npm.tremor.so/docs/ui/button. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-callout",
+      "libraryId": "tremor",
+      "slug": "callout",
+      "name": "Callout",
+      "aliases": [
+        "callout",
+        "Callout",
+        "tremor Callout",
+        "@tremor/react Callout"
+      ],
+      "summary": "Callout banner for tips, warnings, and status notes.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "section",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/ui/callout",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { Callout } from \"@tremor/react\";\n\nexport default () => (\n  <Callout title=\"Sales Performance\" color=\"teal\">\n    Show a helpful callout message.\n  </Callout>\n);",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `Callout` (slug `callout`) from https://npm.tremor.so/docs/ui/callout. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    },
+    {
+      "id": "tremor-badges",
+      "libraryId": "tremor",
+      "slug": "badges",
+      "name": "Badge",
+      "aliases": [
+        "badges",
+        "Badge",
+        "tremor Badge",
+        "@tremor/react Badge"
+      ],
+      "summary": "Status badges and delta badges for KPIs.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tremor",
+        "iframeSrc": "https://npm.tremor.so/docs/ui/badges",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Apache-2.0 @tremor/react (Tremor NPM). Tailwind required. Docs page hosts live demos + copyable examples. Paid Tremor Blocks/templates excluded."
+      },
+      "copyCode": "npm install @tremor/react\n\nimport { Badge, BadgeDelta } from \"@tremor/react\";\n\nexport default () => (\n  <>\n    <Badge color=\"emerald\">Active</Badge>\n    <BadgeDelta deltaType=\"moderateIncrease\">12.5%</BadgeDelta>\n  </>\n);",
+      "copyPrompt": {
+        "text": "Use Tremor free Apache-2.0 React component `Badge` (slug `badges`) from https://npm.tremor.so/docs/ui/badges. Install with `npm install @tremor/react` (requires Tailwind CSS). Import from `@tremor/react`. Home: https://tremor.so. NPM docs: https://npm.tremor.so. Repo: https://github.com/tremorlabs/tremor-npm. License: Apache-2.0 (https://raw.githubusercontent.com/tremorlabs/tremor-npm/main/License). Pricing freemium \u2014 free npm/open-source components only; do not use paid Blocks/templates.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @tremor/react",
+        "packages": [
+          "@tremor/react"
+        ]
+      }
+    }
+  ]
+}

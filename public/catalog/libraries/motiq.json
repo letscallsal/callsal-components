@@ -1,0 +1,607 @@
+{
+  "id": "motiq",
+  "name": "Motiq",
+  "aliases": [
+    "motiq.dev",
+    "RMahammad/motiq",
+    "@motiq"
+  ],
+  "summary": "Free MIT animated React/shadcn components as editable source \u2014 app owns state.",
+  "homeUrl": "https://motiq.dev",
+  "docsUrl": "https://motiq.dev/getting-started",
+  "repoUrl": "https://github.com/RMahammad/motiq",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @motiq/<component>",
+    "registryUrl": "https://motiq.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://motiq.dev/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "motion"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of ~86 components / 100 registry items \u2014 not a full inventory.",
+    "Source is app-owned: Motiq installs editable presentation UI; your app supplies state/data (no Motiq backend lock-in).",
+    "Import path after CLI: `@/components/motiq/{slug}`; utils/primitives pulled as registry deps.",
+    "kinetic-emphasis has no honest EffectType enum match beyond empty [] (motion emphasis, not a locked tag).",
+    "iframe demos only; component pages at /components/{slug}."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:05:00-04:00",
+  "components": [
+    {
+      "id": "motiq-decrypt-text",
+      "libraryId": "motiq",
+      "slug": "decrypt-text",
+      "name": "Decrypt Text",
+      "aliases": [
+        "scramble decrypt text",
+        "decode headline"
+      ],
+      "summary": "Copy that arrives decoded rather than typed \u2014 glyphs boil then resolve.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/decrypt-text",
+        "iframeSrc": "https://motiq.dev/components/decrypt-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Editable source; app owns state."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/decrypt-text\n\nimport { DecryptText } from \"@/components/motiq/decrypt-text\"\n\n<DecryptText text=\"Ship interfaces that feel alive.\" as=\"h1\" />",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Decrypt Text` (slug `decrypt-text`) from https://motiq.dev/components/decrypt-text. Install with `npx shadcn@latest add @motiq/decrypt-text` (or `npx shadcn@latest add https://motiq.dev/r/decrypt-text.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/decrypt-text.json. Import from `@/components/motiq/decrypt-text` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/decrypt-text",
+        "registryUrl": "https://motiq.dev/r/decrypt-text.json",
+        "registryItem": "@motiq/decrypt-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-blur-text",
+      "libraryId": "motiq",
+      "slug": "blur-text",
+      "name": "Blur Text",
+      "aliases": [
+        "deblur text",
+        "blur reveal text"
+      ],
+      "summary": "Reveals text segment-by-segment with a de-blur and drift (reduced-motion safe).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/blur-text",
+        "iframeSrc": "https://motiq.dev/components/blur-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/blur-text\n\nimport { BlurText } from \"@/components/motiq/blur-text\"\n\n<BlurText text=\"Ship animated interfaces\" as=\"h1\" animateBy=\"words\" delay={80} />",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Blur Text` (slug `blur-text`) from https://motiq.dev/components/blur-text. Install with `npx shadcn@latest add @motiq/blur-text` (or `npx shadcn@latest add https://motiq.dev/r/blur-text.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/blur-text.json. Import from `@/components/motiq/blur-text` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/blur-text",
+        "registryUrl": "https://motiq.dev/r/blur-text.json",
+        "registryItem": "@motiq/blur-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-kinetic-emphasis",
+      "libraryId": "motiq",
+      "slug": "kinetic-emphasis",
+      "name": "Kinetic Emphasis",
+      "aliases": [
+        "kinetic headline",
+        "emphasis travel text"
+      ],
+      "summary": "Headline where reading emphasis physically travels through the copy.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/kinetic-emphasis",
+        "iframeSrc": "https://motiq.dev/components/kinetic-emphasis",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion; children required."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/kinetic-emphasis\n\nimport { KineticEmphasis } from \"@/components/motiq/kinetic-emphasis\"\n\n<KineticEmphasis as=\"h1\" speed=\"normal\">Ship product interfaces that feel alive</KineticEmphasis>",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Kinetic Emphasis` (slug `kinetic-emphasis`) from https://motiq.dev/components/kinetic-emphasis. Install with `npx shadcn@latest add @motiq/kinetic-emphasis` (or `npx shadcn@latest add https://motiq.dev/r/kinetic-emphasis.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/kinetic-emphasis.json. Import from `@/components/motiq/kinetic-emphasis` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/kinetic-emphasis",
+        "registryUrl": "https://motiq.dev/r/kinetic-emphasis.json",
+        "registryItem": "@motiq/kinetic-emphasis"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-glass-refraction-panel",
+      "libraryId": "motiq",
+      "slug": "glass-refraction-panel",
+      "name": "Glass Refraction Panel",
+      "aliases": [
+        "frosted glass panel",
+        "refraction panes"
+      ],
+      "summary": "Frosted panes over a live scene with drifting gradient orbs.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "background"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/glass-refraction-panel",
+        "iframeSrc": "https://motiq.dev/components/glass-refraction-panel",
+        "aspectRatio": "16/9",
+        "peerNotes": "Editable source; app owns state."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/glass-refraction-panel\n\nimport { GlassRefractionPanel } from \"@/components/motiq/glass-refraction-panel\"\n\n<GlassRefractionPanel scene=\"orbs\" blur={18} className=\"min-h-[280px] rounded-2xl\">\n  <p>Content under glass</p>\n</GlassRefractionPanel>",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Glass Refraction Panel` (slug `glass-refraction-panel`) from https://motiq.dev/components/glass-refraction-panel. Install with `npx shadcn@latest add @motiq/glass-refraction-panel` (or `npx shadcn@latest add https://motiq.dev/r/glass-refraction-panel.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/glass-refraction-panel.json. Import from `@/components/motiq/glass-refraction-panel` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/glass-refraction-panel",
+        "registryUrl": "https://motiq.dev/r/glass-refraction-panel.json",
+        "registryItem": "@motiq/glass-refraction-panel"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-aurora-panel",
+      "libraryId": "motiq",
+      "slug": "aurora-panel",
+      "name": "Aurora Panel",
+      "aliases": [
+        "aurora ribbons panel",
+        "sky card"
+      ],
+      "summary": "Product card that carries its own sky \u2014 dual-sine aurora ribbons.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "background"
+      ],
+      "effectType": [
+        "aurora"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/aurora-panel",
+        "iframeSrc": "https://motiq.dev/components/aurora-panel",
+        "aspectRatio": "16/9",
+        "peerNotes": "Editable source; app owns state."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/aurora-panel\n\nimport { AuroraPanel } from \"@/components/motiq/aurora-panel\"\n\n<AuroraPanel roofHeight={210} ribbons={3} speed={1} className=\"rounded-2xl p-6\">\n  <h3>Aurora</h3>\n</AuroraPanel>",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Aurora Panel` (slug `aurora-panel`) from https://motiq.dev/components/aurora-panel. Install with `npx shadcn@latest add @motiq/aurora-panel` (or `npx shadcn@latest add https://motiq.dev/r/aurora-panel.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/aurora-panel.json. Import from `@/components/motiq/aurora-panel` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/aurora-panel",
+        "registryUrl": "https://motiq.dev/r/aurora-panel.json",
+        "registryItem": "@motiq/aurora-panel"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-border-beam-panel",
+      "libraryId": "motiq",
+      "slug": "border-beam-panel",
+      "name": "Border Beam Panel",
+      "aliases": [
+        "border comet panel",
+        "conic beam border"
+      ],
+      "summary": "Panel with twin comets orbiting a border ring from a rotating conic gradient.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "section"
+      ],
+      "effectType": [
+        "beam"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/border-beam-panel",
+        "iframeSrc": "https://motiq.dev/components/border-beam-panel",
+        "aspectRatio": "16/9",
+        "peerNotes": "Editable source; app owns state."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/border-beam-panel\n\nimport { BorderBeamPanel } from \"@/components/motiq/border-beam-panel\"\n\n<BorderBeamPanel beams={2} idleSpeed={42} hoverSpeed={240} glow className=\"p-7\">\n  <h3>One command, zero setup</h3>\n</BorderBeamPanel>",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Border Beam Panel` (slug `border-beam-panel`) from https://motiq.dev/components/border-beam-panel. Install with `npx shadcn@latest add @motiq/border-beam-panel` (or `npx shadcn@latest add https://motiq.dev/r/border-beam-panel.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/border-beam-panel.json. Import from `@/components/motiq/border-beam-panel` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/border-beam-panel",
+        "registryUrl": "https://motiq.dev/r/border-beam-panel.json",
+        "registryItem": "@motiq/border-beam-panel"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-holo-card",
+      "libraryId": "motiq",
+      "slug": "holo-card",
+      "name": "Holo Card",
+      "aliases": [
+        "holographic tilt card",
+        "foil card"
+      ],
+      "summary": "3D tilt card with holographic foil pass and glare.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/holo-card",
+        "iframeSrc": "https://motiq.dev/components/holo-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Editable source; app owns state."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/holo-card\n\nimport { HoloCard } from \"@/components/motiq/holo-card\"\n\n<HoloCard foil=\"spectral\" maxTilt={14} glare shadow className=\"p-6\">\n  <h3>Holo</h3>\n</HoloCard>",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Holo Card` (slug `holo-card`) from https://motiq.dev/components/holo-card. Install with `npx shadcn@latest add @motiq/holo-card` (or `npx shadcn@latest add https://motiq.dev/r/holo-card.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/holo-card.json. Import from `@/components/motiq/holo-card` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/holo-card",
+        "registryUrl": "https://motiq.dev/r/holo-card.json",
+        "registryItem": "@motiq/holo-card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-magnetic-dock",
+      "libraryId": "motiq",
+      "slug": "magnetic-dock",
+      "name": "Magnetic Dock",
+      "aliases": [
+        "launcher dock",
+        "gaussian dock"
+      ],
+      "summary": "Launcher dock whose icons share one gaussian attraction field.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/magnetic-dock",
+        "iframeSrc": "https://motiq.dev/components/magnetic-dock",
+        "aspectRatio": "16/9",
+        "peerNotes": "Editable source; app owns state."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/magnetic-dock\n\nimport { MagneticDock } from \"@/components/motiq/magnetic-dock\"\n\n<MagneticDock\n  items={[\n    { id: \"compose\", label: \"Compose\", icon: <span>\u270e</span> },\n    { id: \"search\", label: \"Search\", icon: <span>\u2315</span> },\n  ]}\n/>",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Magnetic Dock` (slug `magnetic-dock`) from https://motiq.dev/components/magnetic-dock. Install with `npx shadcn@latest add @motiq/magnetic-dock` (or `npx shadcn@latest add https://motiq.dev/r/magnetic-dock.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/magnetic-dock.json. Import from `@/components/motiq/magnetic-dock` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/magnetic-dock",
+        "registryUrl": "https://motiq.dev/r/magnetic-dock.json",
+        "registryItem": "@motiq/magnetic-dock"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-gooey-actions",
+      "libraryId": "motiq",
+      "slug": "gooey-actions",
+      "name": "Gooey Actions",
+      "aliases": [
+        "gooey fab",
+        "metaball actions"
+      ],
+      "summary": "FAB that blooms into satellite actions through a gooey metaball.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button",
+        "menu"
+      ],
+      "effectType": [
+        "gooey"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/gooey-actions",
+        "iframeSrc": "https://motiq.dev/components/gooey-actions",
+        "aspectRatio": "16/9",
+        "peerNotes": "Editable source; app owns state."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/gooey-actions\n\nimport { GooeyActions } from \"@/components/motiq/gooey-actions\"\n\n<GooeyActions\n  actions={[\n    { id: \"reply\", label: \"Reply\", icon: <span>\u21a9</span> },\n    { id: \"forward\", label: \"Forward\", icon: <span>\u21aa</span> },\n  ]}\n/>",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Gooey Actions` (slug `gooey-actions`) from https://motiq.dev/components/gooey-actions. Install with `npx shadcn@latest add @motiq/gooey-actions` (or `npx shadcn@latest add https://motiq.dev/r/gooey-actions.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/gooey-actions.json. Import from `@/components/motiq/gooey-actions` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/gooey-actions",
+        "registryUrl": "https://motiq.dev/r/gooey-actions.json",
+        "registryItem": "@motiq/gooey-actions"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-cursor-comet",
+      "libraryId": "motiq",
+      "slug": "cursor-comet",
+      "name": "Cursor Comet",
+      "aliases": [
+        "pointer comet",
+        "velocity particles"
+      ],
+      "summary": "Canvas particle comet that reads pointer velocity, not just position.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "background"
+      ],
+      "effectType": [
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/cursor-comet",
+        "iframeSrc": "https://motiq.dev/components/cursor-comet",
+        "aspectRatio": "16/9",
+        "peerNotes": "Editable source; app owns state."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/cursor-comet\n\nimport { CursorComet } from \"@/components/motiq/cursor-comet\"\n\n<div className=\"relative min-h-[280px] rounded-2xl border\">\n  <CursorComet sparkThreshold={900} seed={7} className=\"rounded-2xl\" />\n</div>",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Cursor Comet` (slug `cursor-comet`) from https://motiq.dev/components/cursor-comet. Install with `npx shadcn@latest add @motiq/cursor-comet` (or `npx shadcn@latest add https://motiq.dev/r/cursor-comet.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/cursor-comet.json. Import from `@/components/motiq/cursor-comet` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/cursor-comet",
+        "registryUrl": "https://motiq.dev/r/cursor-comet.json",
+        "registryItem": "@motiq/cursor-comet"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-depth-parallax-scene",
+      "libraryId": "motiq",
+      "slug": "depth-parallax-scene",
+      "name": "Depth Parallax Scene",
+      "aliases": [
+        "parallax layers",
+        "depth scene"
+      ],
+      "summary": "Consumer-supplied layers travel at depth-proportional scroll/pointer rates.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "section"
+      ],
+      "effectType": [
+        "parallax",
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/depth-parallax-scene",
+        "iframeSrc": "https://motiq.dev/components/depth-parallax-scene",
+        "aspectRatio": "16/9",
+        "peerNotes": "Editable source; app owns state."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/depth-parallax-scene\n\nimport { DepthParallaxScene } from \"@/components/motiq/depth-parallax-scene\"\n\n<DepthParallaxScene\n  height={420}\n  layers={[\n    { node: <div className=\"h-full w-full bg-slate-800\" />, depth: 0.2 },\n    { node: <div className=\"h-full w-full bg-slate-600/40\" />, depth: 0.6 },\n  ]}\n/>",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Depth Parallax Scene` (slug `depth-parallax-scene`) from https://motiq.dev/components/depth-parallax-scene. Install with `npx shadcn@latest add @motiq/depth-parallax-scene` (or `npx shadcn@latest add https://motiq.dev/r/depth-parallax-scene.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/depth-parallax-scene.json. Import from `@/components/motiq/depth-parallax-scene` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/depth-parallax-scene",
+        "registryUrl": "https://motiq.dev/r/depth-parallax-scene.json",
+        "registryItem": "@motiq/depth-parallax-scene"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motiq-sticky-zoom-hero",
+      "libraryId": "motiq",
+      "slug": "sticky-zoom-hero",
+      "name": "Sticky Zoom Hero",
+      "aliases": [
+        "scroll zoom hero",
+        "sticky frame hero"
+      ],
+      "summary": "Sticky framed hero that scales to full-bleed as you scroll.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "hero",
+        "section"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motiq/sticky-zoom-hero",
+        "iframeSrc": "https://motiq.dev/components/sticky-zoom-hero",
+        "aspectRatio": "16/9",
+        "peerNotes": "children + stages required."
+      },
+      "copyCode": "npx shadcn@latest add @motiq/sticky-zoom-hero\n\nimport { StickyZoomHero } from \"@/components/motiq/sticky-zoom-hero\"\n\n<StickyZoomHero\n  stages={[{ id: \"open\", label: \"Open\" }, { id: \"full\", label: \"Full bleed\" }]}\n  startScale={0.45}\n  scrollLength={3.2}\n>\n  <div className=\"aspect-video rounded-2xl bg-zinc-900\" />\n</StickyZoomHero>",
+      "copyPrompt": {
+        "text": "Use Motiq free component `Sticky Zoom Hero` (slug `sticky-zoom-hero`) from https://motiq.dev/components/sticky-zoom-hero. Install with `npx shadcn@latest add @motiq/sticky-zoom-hero` (or `npx shadcn@latest add https://motiq.dev/r/sticky-zoom-hero.json`). @motiq is listed in the shadcn registry directory \u2014 no components.json entry required on current CLI. Registry item: https://motiq.dev/r/sticky-zoom-hero.json. Import from `@/components/motiq/sticky-zoom-hero` after CLI add (path may follow project aliases). Editable source lands in your app \u2014 Motiq is presentation/UI; your application owns state/data (no backend lock-in). Requires React + TypeScript + Tailwind; some items also need `motion`. Free & open source MIT (https://raw.githubusercontent.com/RMahammad/motiq/main/LICENSE).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @motiq/sticky-zoom-hero",
+        "registryUrl": "https://motiq.dev/r/sticky-zoom-hero.json",
+        "registryItem": "@motiq/sticky-zoom-hero"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

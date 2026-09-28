@@ -1,0 +1,623 @@
+{
+  "id": "fancy-components",
+  "name": "Fancy Components",
+  "aliases": [
+    "fancy",
+    "fancycomponents",
+    "fancy-components",
+    "danielpetho/fancy"
+  ],
+  "summary": "Free open-source fun/weird React microinteractions (Tailwind + Motion) via @fancy shadcn registry.",
+  "homeUrl": "https://fancycomponents.dev",
+  "docsUrl": "https://fancycomponents.dev/docs/introduction",
+  "repoUrl": "https://github.com/danielpetho/fancy",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @fancy/<component>",
+    "registryUrl": "https://fancycomponents.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://fancycomponents.dev/docs/components/{category}/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "motion",
+      "tailwindcss",
+      "matter-js",
+      "uuid"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free registry components of ~40 listed in llms.txt; not a full inventory.",
+    "No paid/Pro tier found on fancycomponents.dev or danielpetho/fancy \u2014 pricing=free; nothing gated/unlocked.",
+    "Finder gaps glass / liquid-glass / dither: Fancy has no glassmorphism or ordered-dither components in this inventory \u2014 not tagged. text-scramble filled via scramble-hover + scramble-in.",
+    "Pixel Trail / Pixelate SVG Filter are pixelation effects, not dither \u2014 pixelate-svg-filter omitted this batch; pixel-trail tagged particles only.",
+    "animated-gradient-with-svg: registry/CLI slug differs from docs path `animated-gradient-svg` \u2014 iframeSrc uses docs path; install uses registry slug.",
+    "ARCHITECTURE \u00a75 prefers iframe for unusual/tactile motion; all demos are docs iframes (no dynamic-import smoke mounts).",
+    "Docs CLI often `npx shadcn add @fancy/...` without @latest; catalog uses portable `npx shadcn@latest`. Additional deps may need a separate package-manager install after CLI."
+  ],
+  "featured": true,
+  "updatedAt": "2026-09-28T14:30:45-04:00",
+  "components": [
+    {
+      "id": "fancy-components-scramble-hover",
+      "libraryId": "fancy-components",
+      "slug": "scramble-hover",
+      "name": "Scramble Hover",
+      "aliases": [
+        "text scramble hover",
+        "scramble text",
+        "hover scramble"
+      ],
+      "summary": "Scrambles characters on hover; original or custom character sets.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/scramble-hover",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/text/scramble-hover",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/scramble-hover\n\nimport ScrambleHover from \"@/components/fancy/text/scramble-hover\"\n\n<ScrambleHover text=\"original characters\" scrambleSpeed={50} maxIterations={8} useOriginalCharsOnly={true} className=\"cursor-pointer\" />",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Scramble Hover` (slug `scramble-hover`) from https://fancycomponents.dev/docs/components/text/scramble-hover. Install with `npx shadcn@latest add @fancy/scramble-hover` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/scramble-hover.json. Import from `@/components/fancy/text/scramble-hover` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; registry/docs also need `motion`. All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/scramble-hover`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/scramble-hover",
+        "registryUrl": "https://fancycomponents.dev/r/scramble-hover.json",
+        "registryItem": "@fancy/scramble-hover"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-scramble-in",
+      "libraryId": "fancy-components",
+      "slug": "scramble-in",
+      "name": "Scramble In",
+      "aliases": [
+        "scramble reveal",
+        "text scramble in",
+        "scramble entrance"
+      ],
+      "summary": "Reveals text with a scrambled prefix that resolves into the final string.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/scramble-in",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/text/scramble-in",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @fancy/scramble-in\n\nimport ScrambleIn from \"@/components/fancy/text/scramble-in\"\n\n<ScrambleIn text=\"Harder, Better, Faster, Stronger\" scrambleSpeed={25} scrambledLetterCount={5} autoStart={true} />",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Scramble In` (slug `scramble-in`) from https://fancycomponents.dev/docs/components/text/scramble-in. Install with `npx shadcn@latest add @fancy/scramble-in` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/scramble-in.json. Import from `@/components/fancy/text/scramble-in` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS. All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/scramble-in`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/scramble-in",
+        "registryUrl": "https://fancycomponents.dev/r/scramble-in.json",
+        "registryItem": "@fancy/scramble-in"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-gooey-svg-filter",
+      "libraryId": "fancy-components",
+      "slug": "gooey-svg-filter",
+      "name": "Gooey SVG Filter",
+      "aliases": [
+        "gooey filter",
+        "fluid svg filter",
+        "metaball filter"
+      ],
+      "summary": "SVG filter for gooey/fluid merging of shapes; limited Safari support.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "background"
+      ],
+      "effectType": [
+        "gooey",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/gooey-svg-filter",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/filter/gooey-svg-filter",
+        "aspectRatio": "16/9",
+        "peerNotes": "Safari SVG filter support is limited; demos often disable motion/filter on Safari."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/gooey-svg-filter\n\nimport GooeySvgFilter from \"@/components/fancy/filter/gooey-svg-filter\"\n\n<GooeySvgFilter id=\"gooey-filter\" strength={15} />\n<div style={{ filter: \"url(#gooey-filter)\" }}>{/* filtered content */}</div>",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Gooey SVG Filter` (slug `gooey-svg-filter`) from https://fancycomponents.dev/docs/components/filter/gooey-svg-filter. Install with `npx shadcn@latest add @fancy/gooey-svg-filter` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/gooey-svg-filter.json. Import from `@/components/fancy/filter/gooey-svg-filter` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS. All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/gooey-svg-filter`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/gooey-svg-filter",
+        "registryUrl": "https://fancycomponents.dev/r/gooey-svg-filter.json",
+        "registryItem": "@fancy/gooey-svg-filter"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-elastic-line",
+      "libraryId": "fancy-components",
+      "slug": "elastic-line",
+      "name": "Elastic Line",
+      "aliases": [
+        "wobbly line",
+        "spring line",
+        "elastic svg line"
+      ],
+      "summary": "Wobbly SVG quadratic line that springs when the cursor grabs it.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "morph",
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/elastic-line",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/physics/elastic-line",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs `motion`; CLI pulls registry hooks `use-dimensions` / `use-elastic-line-events`."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/elastic-line\n\nimport ElasticLine from \"@/components/fancy/physics/elastic-line\"\n\n<ElasticLine releaseThreshold={50} strokeWidth={1} />",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Elastic Line` (slug `elastic-line`) from https://fancycomponents.dev/docs/components/physics/elastic-line. Install with `npx shadcn@latest add @fancy/elastic-line` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/elastic-line.json. Import from `@/components/fancy/physics/elastic-line` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; registry/docs also need `motion` (plus registry hooks). All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/elastic-line`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/elastic-line",
+        "registryUrl": "https://fancycomponents.dev/r/elastic-line.json",
+        "registryItem": "@fancy/elastic-line"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-gravity",
+      "libraryId": "fancy-components",
+      "slug": "gravity",
+      "name": "Gravity",
+      "aliases": [
+        "matter gravity",
+        "physics gravity",
+        "matter-js bodies"
+      ],
+      "summary": "Matter.js gravity world wrappers (Gravity + MatterBody) for draggable physics UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "section"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/gravity",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/physics/gravity",
+        "aspectRatio": "16/9",
+        "peerNotes": "Heavy: matter-js, lodash, svg-path-commander, poly-decomp; prefer iframe for demos."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/gravity\n\nimport Gravity, { MatterBody } from \"@/components/fancy/physics/gravity\"\n\n<Gravity gravity={{ x: 0, y: 1 }} className=\"w-full h-full\">\n  <MatterBody matterBodyOptions={{ friction: 0.5, restitution: 0.2 }} x=\"50%\" y=\"10%\">\n    <div className=\"rounded-full bg-blue-600 px-8 py-4 text-white\">react</div>\n  </MatterBody>\n</Gravity>",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Gravity` (slug `gravity`) from https://fancycomponents.dev/docs/components/physics/gravity. Install with `npx shadcn@latest add @fancy/gravity` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/gravity.json. Import from `@/components/fancy/physics/gravity` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; registry/docs also need `matter-js`, `@types/matter-js`, `poly-decomp`, `svg-path-commander`, `lodash` (install peers after CLI). All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/gravity`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/gravity",
+        "registryUrl": "https://fancycomponents.dev/r/gravity.json",
+        "registryItem": "@fancy/gravity"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-pixel-trail",
+      "libraryId": "fancy-components",
+      "slug": "pixel-trail",
+      "name": "Pixel Trail",
+      "aliases": [
+        "pixel cursor trail",
+        "grid pixel trail",
+        "pixelated trail"
+      ],
+      "summary": "Recolors a grid of pixels along the cursor path for a pixelated trail.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/pixel-trail",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/background/pixel-trail",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs `motion` + `uuid`; registry also pulls `use-dimensions`. Not a dither shader \u2014 do not tag `dither`."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/pixel-trail\n\nimport PixelTrail from \"@/components/fancy/background/pixel-trail\"\n\n<div className=\"relative h-[40rem] w-full bg-black\">\n  <PixelTrail pixelSize={24} fadeDuration={500} pixelClassName=\"bg-white\" />\n</div>",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Pixel Trail` (slug `pixel-trail`) from https://fancycomponents.dev/docs/components/background/pixel-trail. Install with `npx shadcn@latest add @fancy/pixel-trail` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/pixel-trail.json. Import from `@/components/fancy/background/pixel-trail` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; registry/docs also need `motion`, `uuid`. All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/pixel-trail`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/pixel-trail",
+        "registryUrl": "https://fancycomponents.dev/r/pixel-trail.json",
+        "registryItem": "@fancy/pixel-trail"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-letter-3d-swap",
+      "libraryId": "fancy-components",
+      "slug": "letter-3d-swap",
+      "name": "Letter 3D Swap",
+      "aliases": [
+        "3d letter swap",
+        "letter box flip",
+        "3d text hover"
+      ],
+      "summary": "Per-letter 3D box flip on hover with stagger and rotate direction.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/letter-3d-swap",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/text/letter-3d-swap",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/letter-3d-swap\n\nimport Letter3DSwap from \"@/components/fancy/text/letter-3d-swap\"\n\n<Letter3DSwap rotateDirection=\"right\" staggerDuration={0.05}>\n  Fancy Components\n</Letter3DSwap>",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Letter 3D Swap` (slug `letter-3d-swap`) from https://fancycomponents.dev/docs/components/text/letter-3d-swap. Install with `npx shadcn@latest add @fancy/letter-3d-swap` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/letter-3d-swap.json. Import from `@/components/fancy/text/letter-3d-swap` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; registry/docs also need `motion`. All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/letter-3d-swap`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/letter-3d-swap",
+        "registryUrl": "https://fancycomponents.dev/r/letter-3d-swap.json",
+        "registryItem": "@fancy/letter-3d-swap"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-image-trail",
+      "libraryId": "fancy-components",
+      "slug": "image-trail",
+      "name": "Image Trail",
+      "aliases": [
+        "cursor image trail",
+        "media trail",
+        "mouse trail images"
+      ],
+      "summary": "Cursor/touch trail that spawns images, video, or any HTML children.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "background"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/image-trail",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/image/image-trail",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`; keep media lightweight for perf."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/image-trail\n\nimport ImageTrail, { ImageTrailItem } from \"@/components/fancy/image/image-trail\"\n\n<ImageTrail threshold={80} repeatChildren={1}>\n  <ImageTrailItem>\n    <div className=\"h-20 w-20 overflow-hidden\"><img src=\"/example.jpg\" alt=\"\" className=\"h-full w-full object-cover\" /></div>\n  </ImageTrailItem>\n</ImageTrail>",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Image Trail` (slug `image-trail`) from https://fancycomponents.dev/docs/components/image/image-trail. Install with `npx shadcn@latest add @fancy/image-trail` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/image-trail.json. Import from `@/components/fancy/image/image-trail` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; registry/docs also need `motion`. All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/image-trail`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/image-trail",
+        "registryUrl": "https://fancycomponents.dev/r/image-trail.json",
+        "registryItem": "@fancy/image-trail"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-typewriter",
+      "libraryId": "fancy-components",
+      "slug": "typewriter",
+      "name": "Typewriter",
+      "aliases": [
+        "typing text",
+        "typewriter effect",
+        "delete typewriter"
+      ],
+      "summary": "Types and optionally deletes cycling strings with a configurable cursor.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/typewriter",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/text/typewriter",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion` for cursor animation."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/typewriter\n\nimport Typewriter from \"@/components/fancy/text/typewriter\"\n\n<Typewriter text={[\"experience\", \"dance\", \"love\"]} speed={70} waitTime={1500} deleteSpeed={40} cursorChar=\"_\" />",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Typewriter` (slug `typewriter`) from https://fancycomponents.dev/docs/components/text/typewriter. Install with `npx shadcn@latest add @fancy/typewriter` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/typewriter.json. Import from `@/components/fancy/text/typewriter` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; registry/docs also need `motion`. All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/typewriter`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/typewriter",
+        "registryUrl": "https://fancycomponents.dev/r/typewriter.json",
+        "registryItem": "@fancy/typewriter"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-parallax-floating",
+      "libraryId": "fancy-components",
+      "slug": "parallax-floating",
+      "name": "Parallax Floating",
+      "aliases": [
+        "parallax float",
+        "cursor parallax",
+        "floating parallax"
+      ],
+      "summary": "Parallax float of children based on cursor/touch movement.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "background"
+      ],
+      "effectType": [
+        "parallax"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/parallax-floating",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/image/parallax-floating",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs `motion`; registry pulls `use-mouse-position-ref`."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/parallax-floating\n\nimport Floating, { FloatingElement } from \"@/components/fancy/image/parallax-floating\"\n\n<Floating sensitivity={1}>\n  <FloatingElement depth={0.5}>\n    <img src=\"/example.jpg\" alt=\"\" />\n  </FloatingElement>\n</Floating>",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Parallax Floating` (slug `parallax-floating`) from https://fancycomponents.dev/docs/components/image/parallax-floating. Install with `npx shadcn@latest add @fancy/parallax-floating` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/parallax-floating.json. Import from `@/components/fancy/image/parallax-floating` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; registry/docs also need `motion`. All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/parallax-floating`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/parallax-floating",
+        "registryUrl": "https://fancycomponents.dev/r/parallax-floating.json",
+        "registryItem": "@fancy/parallax-floating"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-vertical-cut-reveal",
+      "libraryId": "fancy-components",
+      "slug": "vertical-cut-reveal",
+      "name": "Vertical Cut Reveal",
+      "aliases": [
+        "cut reveal text",
+        "vertical reveal",
+        "split cut text"
+      ],
+      "summary": "Reveals text with a vertical cut / slice animation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/vertical-cut-reveal",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/text/vertical-cut-reveal",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/vertical-cut-reveal\n\nimport VerticalCutReveal from \"@/components/fancy/text/vertical-cut-reveal\"\n\n<VerticalCutReveal>\n  Make the web fun again.\n</VerticalCutReveal>",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Vertical Cut Reveal` (slug `vertical-cut-reveal`) from https://fancycomponents.dev/docs/components/text/vertical-cut-reveal. Install with `npx shadcn@latest add @fancy/vertical-cut-reveal` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/vertical-cut-reveal.json. Import from `@/components/fancy/text/vertical-cut-reveal` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; registry/docs also need `motion`. All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/vertical-cut-reveal`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/vertical-cut-reveal",
+        "registryUrl": "https://fancycomponents.dev/r/vertical-cut-reveal.json",
+        "registryItem": "@fancy/vertical-cut-reveal"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "fancy-components-animated-gradient-with-svg",
+      "libraryId": "fancy-components",
+      "slug": "animated-gradient-with-svg",
+      "name": "Animated Gradient With SVG",
+      "aliases": [
+        "animated gradient svg",
+        "svg gradient background",
+        "animated-gradient-svg"
+      ],
+      "summary": "Animated multi-color gradient background built with SVG elements.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@fancy/animated-gradient-with-svg",
+        "iframeSrc": "https://fancycomponents.dev/docs/components/background/animated-gradient-svg",
+        "aspectRatio": "16/9",
+        "peerNotes": "Docs path slug is `animated-gradient-svg`; registry/CLI slug is `animated-gradient-with-svg`."
+      },
+      "copyCode": "npx shadcn@latest add @fancy/animated-gradient-with-svg\n\nimport AnimatedGradient from \"@/components/fancy/background/animated-gradient-with-svg\"\n\n<AnimatedGradient colors={[\"#a960ee\", \"#ff333d\", \"#90e0ff\", \"#ffcb57\"]} speed={10} blur=\"medium\" />",
+      "copyPrompt": {
+        "text": "Use Fancy Components free component `Animated Gradient With SVG` (slug `animated-gradient-with-svg`) from https://fancycomponents.dev/docs/components/background/animated-gradient-svg. Install with `npx shadcn@latest add @fancy/animated-gradient-with-svg` after `npx shadcn@latest init` and adding the `@fancy` registry (`\"@fancy\": \"https://fancycomponents.dev/r/{name}.json\"`) to `components.json` registries (see https://fancycomponents.dev/docs/installation). Registry item: https://fancycomponents.dev/r/animated-gradient-with-svg.json. Import from `@/components/fancy/background/animated-gradient-with-svg` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS. All Fancy Components are free & open source (MIT \u2014 https://github.com/danielpetho/fancy/blob/main/LICENSE); prefer free-tier only. Official docs CLI examples often omit `@latest` (`npx shadcn add @fancy/animated-gradient-with-svg`); catalog uses portable `npx shadcn@latest`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fancy/animated-gradient-with-svg",
+        "registryUrl": "https://fancycomponents.dev/r/animated-gradient-with-svg.json",
+        "registryItem": "@fancy/animated-gradient-with-svg"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

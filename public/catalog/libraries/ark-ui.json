@@ -1,0 +1,607 @@
+{
+  "id": "ark-ui",
+  "name": "Ark UI",
+  "aliases": [
+    "ark-ui",
+    "Ark UI",
+    "@ark-ui/react",
+    "chakra-ui/ark",
+    "ark-ui.com"
+  ],
+  "summary": "Headless accessible components for React (also Vue, Solid, Svelte) with interactive docs demos.",
+  "homeUrl": "https://ark-ui.com",
+  "docsUrl": "https://ark-ui.com/react/docs/overview/getting-started",
+  "repoUrl": "https://github.com/chakra-ui/ark",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install @ark-ui/react",
+    "packages": [
+      "@ark-ui/react"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://ark-ui.com/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Headless/unstyled \u2014 Basic examples reference CSS modules (styles/*.module.css) and sometimes lucide-react icons.",
+    "Pilot includes 12 of 52 documented components (React docs).",
+    "Also supports Vue, Solid, Svelte \u2014 catalog frameworks list React primary only.",
+    "Distinct from Park UI (styled Ark + Panda) already in SoT.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:50:00-04:00",
+  "components": [
+    {
+      "id": "ark-ui-accordion",
+      "libraryId": "ark-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "ark accordion",
+        "ark-ui accordion",
+        "@ark-ui/react/accordion"
+      ],
+      "summary": "Collapsible accordion sections.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/accordion",
+        "iframeSrc": "https://ark-ui.com/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Accordion } from '@ark-ui/react/accordion'\nimport { ChevronDownIcon } from 'lucide-react'\nimport styles from 'styles/accordion.module.css'\n\nexport const Basic = () => {\n  return (\n    <Accordion.Root className={styles.Root} defaultValue={['ark-ui']}>\n      {items.map((item) => (\n        <Accordion.Item className={styles.Item} key={item.value} value={item.value}>\n          <Accordion.ItemTrigger className={styles.ItemTrigger}>\n            {item.title}\n            <Accordion.ItemIndicator className={styles.ItemIndicator}>\n              <ChevronDownIcon />\n            </Accordion.ItemIndicator>\n          </Accordion.ItemTrigger>\n          <Accordion.ItemContent className={styles.ItemContent}>\n            <div className={styles.ItemBody}>{item.content}</div>\n          </Accordion.ItemContent>\n        </Accordion.Item>\n      ))}\n    </Accordion.Root>\n  )\n}\n\nconst items = [\n  {\n    value: 'ark-ui',\n    title: 'What is Ark UI?',\n    content: 'A headless component library for building accessible web apps.',\n  },\n  {\n    value: 'getting-started',\n    title: 'How to get started?',\n    content: 'Install the package and import the components you need.',\n  },\n  {\n    value: 'maintainers',\n    title: 'Who maintains this project?',\n    content: 'Ark UI is maintained by the Chakra UI team.',\n  },\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Accordion` (slug `accordion`) from https://ark-ui.com/docs/components/accordion. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/accordion`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-dialog",
+      "libraryId": "ark-ui",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "ark dialog",
+        "ark-ui dialog",
+        "@ark-ui/react/dialog"
+      ],
+      "summary": "Modal dialog with portal.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/dialog",
+        "iframeSrc": "https://ark-ui.com/docs/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Dialog } from '@ark-ui/react/dialog'\nimport { Portal } from '@ark-ui/react/portal'\nimport { XIcon } from 'lucide-react'\nimport button from 'styles/button.module.css'\nimport styles from 'styles/dialog.module.css'\n\nexport const Basic = () => (\n  <Dialog.Root>\n    <Dialog.Trigger className={button.Root}>Open Dialog</Dialog.Trigger>\n    <Portal>\n      <Dialog.Backdrop className={styles.Backdrop} />\n      <Dialog.Positioner className={styles.Positioner}>\n        <Dialog.Content className={styles.Content}>\n          <Dialog.CloseTrigger className={styles.CloseTrigger}>\n            <XIcon />\n          </Dialog.CloseTrigger>\n          <Dialog.Title className={styles.Title}>Welcome Back</Dialog.Title>\n          <Dialog.Description className={styles.Description}>Sign in to your account to continue.</Dialog.Description>\n        </Dialog.Content>\n      </Dialog.Positioner>\n    </Portal>\n  </Dialog.Root>\n)",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Dialog` (slug `dialog`) from https://ark-ui.com/docs/components/dialog. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/dialog`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-menu",
+      "libraryId": "ark-ui",
+      "slug": "menu",
+      "name": "Menu",
+      "aliases": [
+        "menu",
+        "ark menu",
+        "ark-ui menu",
+        "@ark-ui/react/menu"
+      ],
+      "summary": "Dropdown menu.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/menu",
+        "iframeSrc": "https://ark-ui.com/docs/components/menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Menu } from '@ark-ui/react/menu'\nimport { ChevronDownIcon } from 'lucide-react'\nimport styles from 'styles/menu.module.css'\n\nexport const Basic = () => (\n  <Menu.Root>\n    <Menu.Trigger className={styles.Trigger}>\n      File\n      <Menu.Indicator className={styles.Indicator}>\n        <ChevronDownIcon />\n      </Menu.Indicator>\n    </Menu.Trigger>\n    <Menu.Positioner>\n      <Menu.Content className={styles.Content}>\n        <Menu.Arrow className={styles.Arrow}>\n          <Menu.ArrowTip className={styles.ArrowTip} />\n        </Menu.Arrow>\n        <Menu.Item className={styles.Item} value=\"new-file\">\n          New File\n        </Menu.Item>\n        <Menu.Item className={styles.Item} value=\"open\">\n          Open...\n        </Menu.Item>\n        <Menu.Item className={styles.Item} value=\"save\">\n          Save\n        </Menu.Item>\n        <Menu.Item className={styles.Item} value=\"save-as\">\n          Save As...\n        </Menu.Item>\n      </Menu.Content>\n    </Menu.Positioner>\n  </Menu.Root>\n)",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Menu` (slug `menu`) from https://ark-ui.com/docs/components/menu. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/menu`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-select",
+      "libraryId": "ark-ui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "ark select",
+        "ark-ui select",
+        "@ark-ui/react/select"
+      ],
+      "summary": "Custom select with collection helpers.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/select",
+        "iframeSrc": "https://ark-ui.com/docs/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Portal } from '@ark-ui/react/portal'\nimport { Select, createListCollection } from '@ark-ui/react/select'\nimport { ChevronsUpDownIcon, XIcon } from 'lucide-react'\nimport styles from 'styles/select.module.css'\n\nconst frameworks = createListCollection({\n  items: [\n    { label: 'React', value: 'react' },\n    { label: 'Solid', value: 'solid' },\n    { label: 'Vue', value: 'vue' },\n    { label: 'Svelte', value: 'svelte' },\n  ],\n})\n\nexport const Basic = () => {\n  return (\n    <Select.Root className={styles.Root} collection={frameworks}>\n      <Select.Label className={styles.Label}>Framework</Select.Label>\n      <Select.Control className={styles.Control}>\n        <Select.Trigger className={styles.Trigger}>\n          <Select.ValueText className={styles.ValueText} placeholder=\"Select\" />\n        </Select.Trigger>\n        <div className={styles.Indicators}>\n          <Select.ClearTrigger className={styles.ClearTrigger}>\n            <XIcon />\n          </Select.ClearTrigger>\n          <Select.Indicator className={styles.Indicator}>\n            <ChevronsUpDownIcon />\n          </Select.Indicator>\n        </div>\n      </Select.Control>\n      <Portal>\n        <Select.Positioner>\n          <Select.Content className={styles.Content}>\n            <Select.ItemGroup className={styles.ItemGroup}>\n              <Select.ItemGroupLabel className={styles.ItemGroupLabel}>Frameworks</Select.ItemGroupLabel>\n              {frameworks.items.map((item) => (\n                <Select.Item className={styles.Item} key={item.value} item={item}>\n                  <Select.ItemText className={styles.ItemText}>{item.label}</Select.ItemText>\n                  <Select.ItemIndicator className={styles.ItemIndicator}>\u2713</Select.ItemIndicator>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Select` (slug `select`) from https://ark-ui.com/docs/components/select. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/select`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-combobox",
+      "libraryId": "ark-ui",
+      "slug": "combobox",
+      "name": "Combobox",
+      "aliases": [
+        "combobox",
+        "ark combobox",
+        "ark-ui combobox",
+        "@ark-ui/react/combobox"
+      ],
+      "summary": "Combobox with filtering helpers.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/combobox",
+        "iframeSrc": "https://ark-ui.com/docs/components/combobox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Combobox, useListCollection } from '@ark-ui/react/combobox'\nimport { useFilter } from '@ark-ui/react/locale'\nimport { Portal } from '@ark-ui/react/portal'\nimport { CheckIcon, ChevronsUpDownIcon, XIcon } from 'lucide-react'\nimport styles from 'styles/combobox.module.css'\n\nexport const Basic = () => {\n  const { contains } = useFilter({ sensitivity: 'base' })\n\n  const { collection, filter } = useListCollection({\n    initialItems: [\n      { label: 'Apple', value: 'apple' },\n      { label: 'Banana', value: 'banana' },\n      { label: 'Orange', value: 'orange' },\n      { label: 'Mango', value: 'mango' },\n      { label: 'Pineapple', value: 'pineapple' },\n      { label: 'Strawberry', value: 'strawberry' },\n    ],\n    filter: contains,\n  })\n\n  const handleInputChange = (details: Combobox.InputValueChangeDetails) => {\n    filter(details.inputValue)\n  }\n\n  return (\n    <Combobox.Root className={styles.Root} collection={collection} onInputValueChange={handleInputChange}>\n      <Combobox.Label className={styles.Label}>Favorite Fruit</Combobox.Label>\n      <Combobox.Control className={styles.Control}>\n        <Combobox.Input className={styles.Input} placeholder=\"e.g. Apple\" />\n        <div className={styles.Indicators}>\n          <Combobox.ClearTrigger className={styles.ClearTrigger}>\n            <XIcon />\n          </Combobox.ClearTrigger>\n          <Combobox.Trigger className={styles.Trigger}>\n            <ChevronsUpDownIcon />\n          </Combobox.Trigger>\n        </div>\n      </Combobox.Control>\n      <Portal>\n/* \u2026 truncated; full example on docs */",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Combobox` (slug `combobox`) from https://ark-ui.com/docs/components/combobox. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/combobox`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-checkbox",
+      "libraryId": "ark-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "ark checkbox",
+        "ark-ui checkbox",
+        "@ark-ui/react/checkbox"
+      ],
+      "summary": "Checkbox with indicator slots.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/checkbox",
+        "iframeSrc": "https://ark-ui.com/docs/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Checkbox } from '@ark-ui/react/checkbox'\nimport { CheckIcon } from 'lucide-react'\nimport styles from 'styles/checkbox.module.css'\n\nexport const Basic = () => (\n  <Checkbox.Root className={styles.Root}>\n    <Checkbox.Control className={styles.Control}>\n      <Checkbox.Indicator className={styles.Indicator}>\n        <CheckIcon />\n      </Checkbox.Indicator>\n    </Checkbox.Control>\n    <Checkbox.Label className={styles.Label}>Checkbox</Checkbox.Label>\n    <Checkbox.HiddenInput />\n  </Checkbox.Root>\n)",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Checkbox` (slug `checkbox`) from https://ark-ui.com/docs/components/checkbox. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/checkbox`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-tabs",
+      "libraryId": "ark-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "ark tabs",
+        "ark-ui tabs",
+        "@ark-ui/react/tabs"
+      ],
+      "summary": "Tabs with trigger/content parts.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/tabs",
+        "iframeSrc": "https://ark-ui.com/docs/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Tabs } from '@ark-ui/react/tabs'\nimport styles from 'styles/tabs.module.css'\n\nexport const Basic = () => (\n  <Tabs.Root className={styles.Root} defaultValue=\"account\">\n    <Tabs.List className={styles.List}>\n      <Tabs.Trigger className={styles.Trigger} value=\"account\">\n        Account\n      </Tabs.Trigger>\n      <Tabs.Trigger className={styles.Trigger} value=\"password\">\n        Password\n      </Tabs.Trigger>\n      <Tabs.Trigger className={styles.Trigger} value=\"billing\">\n        Billing\n      </Tabs.Trigger>\n    </Tabs.List>\n    <Tabs.Content className={styles.Content} value=\"account\">\n      Make changes to your account here.\n    </Tabs.Content>\n    <Tabs.Content className={styles.Content} value=\"password\">\n      Change your password here.\n    </Tabs.Content>\n    <Tabs.Content className={styles.Content} value=\"billing\">\n      Manage your billing and payment details.\n    </Tabs.Content>\n  </Tabs.Root>\n)",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Tabs` (slug `tabs`) from https://ark-ui.com/docs/components/tabs. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/tabs`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-popover",
+      "libraryId": "ark-ui",
+      "slug": "popover",
+      "name": "Popover",
+      "aliases": [
+        "popover",
+        "ark popover",
+        "ark-ui popover",
+        "@ark-ui/react/popover"
+      ],
+      "summary": "Anchored popover.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/popover",
+        "iframeSrc": "https://ark-ui.com/docs/components/popover",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Popover } from '@ark-ui/react/popover'\nimport { Portal } from '@ark-ui/react/portal'\nimport button from 'styles/button.module.css'\nimport styles from 'styles/popover.module.css'\n\nexport const Basic = () => (\n  <Popover.Root>\n    <Popover.Trigger className={button.Root}>Click Me</Popover.Trigger>\n    <Portal>\n      <Popover.Positioner className={styles.Positioner}>\n        <Popover.Content className={styles.Content}>\n          <Popover.Title className={styles.Title}>Favorite Frameworks</Popover.Title>\n          <Popover.Description className={styles.Description}>\n            Manage and organize your favorite web frameworks.\n          </Popover.Description>\n        </Popover.Content>\n      </Popover.Positioner>\n    </Portal>\n  </Popover.Root>\n)",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Popover` (slug `popover`) from https://ark-ui.com/docs/components/popover. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/popover`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-tooltip",
+      "libraryId": "ark-ui",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "tooltip",
+        "ark tooltip",
+        "ark-ui tooltip",
+        "@ark-ui/react/tooltip"
+      ],
+      "summary": "Tooltip with positioning.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/tooltip",
+        "iframeSrc": "https://ark-ui.com/docs/components/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Tooltip } from '@ark-ui/react/tooltip'\nimport { Portal } from '@ark-ui/react/portal'\nimport styles from 'styles/tooltip.module.css'\n\nexport const Basic = () => (\n  <Tooltip.Root>\n    <Tooltip.Trigger className={styles.Trigger}>Hover Me</Tooltip.Trigger>\n    <Portal>\n      <Tooltip.Positioner>\n        <Tooltip.Content className={styles.Content}>I am a tooltip!</Tooltip.Content>\n      </Tooltip.Positioner>\n    </Portal>\n  </Tooltip.Root>\n)",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Tooltip` (slug `tooltip`) from https://ark-ui.com/docs/components/tooltip. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/tooltip`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-switch",
+      "libraryId": "ark-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "switch",
+        "ark switch",
+        "ark-ui switch",
+        "@ark-ui/react/switch"
+      ],
+      "summary": "Toggle switch.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/switch",
+        "iframeSrc": "https://ark-ui.com/docs/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Switch } from '@ark-ui/react/switch'\nimport styles from 'styles/switch.module.css'\n\nexport const Basic = () => (\n  <Switch.Root className={styles.Root}>\n    <Switch.Control className={styles.Control}>\n      <Switch.Thumb className={styles.Thumb} />\n    </Switch.Control>\n    <Switch.Label className={styles.Label}>Label</Switch.Label>\n    <Switch.HiddenInput />\n  </Switch.Root>\n)",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Switch` (slug `switch`) from https://ark-ui.com/docs/components/switch. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/switch`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-slider",
+      "libraryId": "ark-ui",
+      "slug": "slider",
+      "name": "Slider",
+      "aliases": [
+        "slider",
+        "ark slider",
+        "ark-ui slider",
+        "@ark-ui/react/slider"
+      ],
+      "summary": "Range slider.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/slider",
+        "iframeSrc": "https://ark-ui.com/docs/components/slider",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Slider } from '@ark-ui/react/slider'\nimport styles from 'styles/slider.module.css'\n\nexport const Basic = () => {\n  return (\n    <Slider.Root className={styles.Root} defaultValue={[40]}>\n      <div style={{ display: 'flex', justifyContent: 'space-between' }}>\n        <Slider.Label className={styles.Label}>Label</Slider.Label>\n        <Slider.ValueText className={styles.ValueText} />\n      </div>\n      <Slider.Control className={styles.Control}>\n        <Slider.Track className={styles.Track}>\n          <Slider.Range className={styles.Range} />\n        </Slider.Track>\n        <Slider.Thumb index={0} className={styles.Thumb}>\n          <Slider.HiddenInput />\n        </Slider.Thumb>\n      </Slider.Control>\n    </Slider.Root>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Slider` (slug `slider`) from https://ark-ui.com/docs/components/slider. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/slider`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    },
+    {
+      "id": "ark-ui-avatar",
+      "libraryId": "ark-ui",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "avatar",
+        "ark avatar",
+        "ark-ui avatar",
+        "@ark-ui/react/avatar"
+      ],
+      "summary": "Avatar with image/fallback.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ark-ui/react/avatar",
+        "iframeSrc": "https://ark-ui.com/docs/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Headless MIT for React (also Vue/Solid/Svelte). Style via data-scope/data-part or CSS modules. Docs host live demos; Basic examples from official repo."
+      },
+      "copyCode": "npm install @ark-ui/react\n\nimport { Avatar } from '@ark-ui/react/avatar'\nimport styles from 'styles/avatar.module.css'\n\nexport const Basic = () => (\n  <Avatar.Root className={styles.Root}>\n    <Avatar.Fallback className={styles.Fallback}>PA</Avatar.Fallback>\n    <Avatar.Image className={styles.Image} src=\"https://i.pravatar.cc/300?u=a\" alt=\"avatar\" />\n  </Avatar.Root>\n)",
+      "copyPrompt": {
+        "text": "Use Ark UI free MIT React headless component `Avatar` (slug `avatar`) from https://ark-ui.com/docs/components/avatar. Install with `npm install @ark-ui/react`. Import from `@ark-ui/react/avatar`. Headless \u2014 style via data attributes / CSS modules. Home: https://ark-ui.com. Docs: https://ark-ui.com/react/docs/overview/getting-started. Repo: https://github.com/chakra-ui/ark. License: MIT (https://raw.githubusercontent.com/chakra-ui/ark/main/LICENSE; Copyright (c) 2024 Chakra Systems Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @ark-ui/react",
+        "packages": [
+          "@ark-ui/react"
+        ]
+      }
+    }
+  ]
+}

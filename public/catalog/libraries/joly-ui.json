@@ -1,0 +1,599 @@
+{
+  "id": "joly-ui",
+  "name": "Joly UI",
+  "aliases": [
+    "jolyui",
+    "Johuniq/jolyui",
+    "jolyui/ui",
+    "Joly"
+  ],
+  "summary": "Free MIT shadcn/ui extension with 50+ accessible animated React components.",
+  "homeUrl": "https://jolyui.dev",
+  "docsUrl": "https://www.jolyui.dev/docs",
+  "repoUrl": "https://github.com/Johuniq/jolyui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://jolyui.dev/r/{name}",
+    "registryUrl": "https://www.jolyui.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.jolyui.dev/docs/components/{category}/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 600
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 43 registry:ui items (199 registry entries including style/deps).",
+    "Docs paths are category-nested (/docs/components/{category}/{slug}); registry slugs are flat.",
+    "Registry slug typewritter-text keeps upstream spelling (typo).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:50:00-04:00",
+  "components": [
+    {
+      "id": "joly-ui-button",
+      "libraryId": "joly-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "joly button"
+      ],
+      "summary": "Motion-enhanced button with variants for shadcn projects.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "glow",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/button",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/buttons/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/button\n# or: npx shadcn@latest add https://www.jolyui.dev/r/button.json\n\nimport { Button } from \"@/components/ui/button\"\n\n<Button />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Button` (slug `button`) from https://www.jolyui.dev/docs/components/buttons/button. Install with `npx shadcn@latest add https://jolyui.dev/r/button` (registry JSON https://www.jolyui.dev/r/button.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/button",
+        "registryUrl": "https://www.jolyui.dev/r/button.json",
+        "registryItem": "button"
+      }
+    },
+    {
+      "id": "joly-ui-rainbow-button",
+      "libraryId": "joly-ui",
+      "slug": "rainbow-button",
+      "name": "Rainbow Button",
+      "aliases": [
+        "joly rainbow button"
+      ],
+      "summary": "Animated rainbow gradient border button.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "gradient",
+        "shimmer",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/rainbow-button",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/buttons/rainbow-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/rainbow-button\n# or: npx shadcn@latest add https://www.jolyui.dev/r/rainbow-button.json\n\nimport { RainbowButton } from \"@/components/ui/rainbow-button\"\n\n<RainbowButton />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Rainbow Button` (slug `rainbow-button`) from https://www.jolyui.dev/docs/components/buttons/rainbow-button. Install with `npx shadcn@latest add https://jolyui.dev/r/rainbow-button` (registry JSON https://www.jolyui.dev/r/rainbow-button.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/rainbow-button",
+        "registryUrl": "https://www.jolyui.dev/r/rainbow-button.json",
+        "registryItem": "rainbow-button"
+      }
+    },
+    {
+      "id": "joly-ui-dock",
+      "libraryId": "joly-ui",
+      "slug": "dock",
+      "name": "Dock",
+      "aliases": [
+        "joly dock",
+        "mac dock"
+      ],
+      "summary": "macOS-style magnification dock navigation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "hover-reveal",
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/dock",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/navigation/dock",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/dock\n# or: npx shadcn@latest add https://www.jolyui.dev/r/dock.json\n\nimport { Dock } from \"@/components/ui/dock\"\n\n<Dock />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Dock` (slug `dock`) from https://www.jolyui.dev/docs/components/navigation/dock. Install with `npx shadcn@latest add https://jolyui.dev/r/dock` (registry JSON https://www.jolyui.dev/r/dock.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/dock",
+        "registryUrl": "https://www.jolyui.dev/r/dock.json",
+        "registryItem": "dock"
+      }
+    },
+    {
+      "id": "joly-ui-bento-grid",
+      "libraryId": "joly-ui",
+      "slug": "bento-grid",
+      "name": "Bento Grid",
+      "aliases": [
+        "joly bento"
+      ],
+      "summary": "Responsive bento grid surface layout.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "bento",
+        "layout",
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/bento-grid",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/surfaces/bento-grid",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/bento-grid\n# or: npx shadcn@latest add https://www.jolyui.dev/r/bento-grid.json\n\nimport { BentoGrid } from \"@/components/ui/bento-grid\"\n\n<BentoGrid />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Bento Grid` (slug `bento-grid`) from https://www.jolyui.dev/docs/components/surfaces/bento-grid. Install with `npx shadcn@latest add https://jolyui.dev/r/bento-grid` (registry JSON https://www.jolyui.dev/r/bento-grid.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/bento-grid",
+        "registryUrl": "https://www.jolyui.dev/r/bento-grid.json",
+        "registryItem": "bento-grid"
+      }
+    },
+    {
+      "id": "joly-ui-animated-beam",
+      "libraryId": "joly-ui",
+      "slug": "animated-beam",
+      "name": "Animated Beam",
+      "aliases": [
+        "joly animated beam"
+      ],
+      "summary": "SVG beam connecting UI nodes.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "background"
+      ],
+      "effectType": [
+        "beam",
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/animated-beam",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/creative/animated-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/animated-beam\n# or: npx shadcn@latest add https://www.jolyui.dev/r/animated-beam.json\n\nimport { AnimatedBeam } from \"@/components/ui/animated-beam\"\n\n<AnimatedBeam />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Animated Beam` (slug `animated-beam`) from https://www.jolyui.dev/docs/components/creative/animated-beam. Install with `npx shadcn@latest add https://jolyui.dev/r/animated-beam` (registry JSON https://www.jolyui.dev/r/animated-beam.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/animated-beam",
+        "registryUrl": "https://www.jolyui.dev/r/animated-beam.json",
+        "registryItem": "animated-beam"
+      }
+    },
+    {
+      "id": "joly-ui-animated-toast",
+      "libraryId": "joly-ui",
+      "slug": "animated-toast",
+      "name": "Animated Toast",
+      "aliases": [
+        "joly toast"
+      ],
+      "summary": "Motion toast notifications.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/animated-toast",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/feedback/animated-toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/animated-toast\n# or: npx shadcn@latest add https://www.jolyui.dev/r/animated-toast.json\n\nimport { AnimatedToastProvider, MinimalToast, useAnimatedToast } from \"@/components/ui/animated-toast\"\n\n<AnimatedToastProvider>\n  <MinimalToast />\n</AnimatedToastProvider>",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Animated Toast` (slug `animated-toast`) from https://www.jolyui.dev/docs/components/feedback/animated-toast. Install with `npx shadcn@latest add https://jolyui.dev/r/animated-toast` (registry JSON https://www.jolyui.dev/r/animated-toast.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/animated-toast",
+        "registryUrl": "https://www.jolyui.dev/r/animated-toast.json",
+        "registryItem": "animated-toast"
+      }
+    },
+    {
+      "id": "joly-ui-vercel-tabs",
+      "libraryId": "joly-ui",
+      "slug": "vercel-tabs",
+      "name": "Vercel Tabs",
+      "aliases": [
+        "joly vercel tabs"
+      ],
+      "summary": "Vercel-style animated tab indicator.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/vercel-tabs",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/navigation/vercel-tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/vercel-tabs\n# or: npx shadcn@latest add https://www.jolyui.dev/r/vercel-tabs.json\n\nimport { VercelTabs } from \"@/components/ui/vercel-tabs\"\n\n<VercelTabs />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Vercel Tabs` (slug `vercel-tabs`) from https://www.jolyui.dev/docs/components/navigation/vercel-tabs. Install with `npx shadcn@latest add https://jolyui.dev/r/vercel-tabs` (registry JSON https://www.jolyui.dev/r/vercel-tabs.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/vercel-tabs",
+        "registryUrl": "https://www.jolyui.dev/r/vercel-tabs.json",
+        "registryItem": "vercel-tabs"
+      }
+    },
+    {
+      "id": "joly-ui-glitch-text",
+      "libraryId": "joly-ui",
+      "slug": "glitch-text",
+      "name": "Glitch Text",
+      "aliases": [
+        "joly glitch text"
+      ],
+      "summary": "Glitchy text distortion animation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble",
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/glitch-text",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/text-animations/glitch-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/glitch-text\n# or: npx shadcn@latest add https://www.jolyui.dev/r/glitch-text.json\n\nimport { GlitchText } from \"@/components/ui/glitch-text\"\n\n<GlitchText />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Glitch Text` (slug `glitch-text`) from https://www.jolyui.dev/docs/components/text-animations/glitch-text. Install with `npx shadcn@latest add https://jolyui.dev/r/glitch-text` (registry JSON https://www.jolyui.dev/r/glitch-text.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/glitch-text",
+        "registryUrl": "https://www.jolyui.dev/r/glitch-text.json",
+        "registryItem": "glitch-text"
+      }
+    },
+    {
+      "id": "joly-ui-typewritter-text",
+      "libraryId": "joly-ui",
+      "slug": "typewritter-text",
+      "name": "Typewriter Text",
+      "aliases": [
+        "joly typewriter",
+        "typewritter-text"
+      ],
+      "summary": "Typewriter text animation (registry slug typewritter-text).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/typewritter-text",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/text-animations/typewritter-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/typewritter-text\n# or: npx shadcn@latest add https://www.jolyui.dev/r/typewritter-text.json\n\nimport { TypewriterText } from \"@/components/ui/typewritter-text\"\n\n<TypewriterText />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Typewriter Text` (slug `typewritter-text`) from https://www.jolyui.dev/docs/components/text-animations/typewritter-text. Install with `npx shadcn@latest add https://jolyui.dev/r/typewritter-text` (registry JSON https://www.jolyui.dev/r/typewritter-text.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/typewritter-text",
+        "registryUrl": "https://www.jolyui.dev/r/typewritter-text.json",
+        "registryItem": "typewritter-text"
+      }
+    },
+    {
+      "id": "joly-ui-scroll-text",
+      "libraryId": "joly-ui",
+      "slug": "scroll-text",
+      "name": "Scroll Text",
+      "aliases": [
+        "joly scroll text"
+      ],
+      "summary": "Scroll-driven text reveal.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/scroll-text",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/text-animations/scroll-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/scroll-text\n# or: npx shadcn@latest add https://www.jolyui.dev/r/scroll-text.json\n\nimport { ScrollText } from \"@/components/ui/scroll-text\"\n\n<ScrollText />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Scroll Text` (slug `scroll-text`) from https://www.jolyui.dev/docs/components/text-animations/scroll-text. Install with `npx shadcn@latest add https://jolyui.dev/r/scroll-text` (registry JSON https://www.jolyui.dev/r/scroll-text.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/scroll-text",
+        "registryUrl": "https://www.jolyui.dev/r/scroll-text.json",
+        "registryItem": "scroll-text"
+      }
+    },
+    {
+      "id": "joly-ui-magnetic",
+      "libraryId": "joly-ui",
+      "slug": "magnetic",
+      "name": "Magnetic",
+      "aliases": [
+        "joly magnetic"
+      ],
+      "summary": "Magnetic cursor pull wrapper.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal",
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/magnetic",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/creative/magnetic",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/magnetic\n# or: npx shadcn@latest add https://www.jolyui.dev/r/magnetic.json\n\nimport { Magnetic } from \"@/components/ui/magnetic\"\n\n<Magnetic />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Magnetic` (slug `magnetic`) from https://www.jolyui.dev/docs/components/creative/magnetic. Install with `npx shadcn@latest add https://jolyui.dev/r/magnetic` (registry JSON https://www.jolyui.dev/r/magnetic.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/magnetic",
+        "registryUrl": "https://www.jolyui.dev/r/magnetic.json",
+        "registryItem": "magnetic"
+      }
+    },
+    {
+      "id": "joly-ui-image-comparison",
+      "libraryId": "joly-ui",
+      "slug": "image-comparison",
+      "name": "Image Comparison",
+      "aliases": [
+        "joly image comparison",
+        "before after"
+      ],
+      "summary": "Draggable before/after image comparison.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/image-comparison",
+        "iframeSrc": "https://www.jolyui.dev/docs/components/creative/image-comparison",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui project. Install via `npx shadcn@latest add https://jolyui.dev/r/{slug}` (registry also on www.jolyui.dev/r/)."
+      },
+      "copyCode": "npx shadcn@latest add https://jolyui.dev/r/image-comparison\n# or: npx shadcn@latest add https://www.jolyui.dev/r/image-comparison.json\n\nimport { ImageComparison } from \"@/components/ui/image-comparison\"\n\n<ImageComparison />",
+      "copyPrompt": {
+        "text": "Use Joly UI free MIT React component `Image Comparison` (slug `image-comparison`) from https://www.jolyui.dev/docs/components/creative/image-comparison. Install with `npx shadcn@latest add https://jolyui.dev/r/image-comparison` (registry JSON https://www.jolyui.dev/r/image-comparison.json; registry index https://www.jolyui.dev/r/registry.json). Requires an existing shadcn/ui + Tailwind project. Home: https://jolyui.dev / https://www.jolyui.dev. Repo: https://github.com/Johuniq/jolyui. License: MIT (https://raw.githubusercontent.com/Johuniq/jolyui/main/LICENSE; Copyright (c) 2025 Johuniq). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://jolyui.dev/r/image-comparison",
+        "registryUrl": "https://www.jolyui.dev/r/image-comparison.json",
+        "registryItem": "image-comparison"
+      }
+    }
+  ]
+}

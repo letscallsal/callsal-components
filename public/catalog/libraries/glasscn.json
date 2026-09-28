@@ -1,0 +1,599 @@
+{
+  "id": "glasscn",
+  "name": "GlassCN",
+  "aliases": [
+    "glasscn-components",
+    "kostyniuk/glasscn-components",
+    "@glasscn",
+    "Glass CN"
+  ],
+  "summary": "Apple-inspired glassmorphic components on shadcn and Base UI via registry.",
+  "homeUrl": "https://glasscn.vercel.app",
+  "docsUrl": "https://glasscn.vercel.app/components",
+  "repoUrl": "https://github.com/kostyniuk/glasscn-components",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @glasscn/{name}",
+    "registryUrl": "https://glasscn-components.vercel.app/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://glasscn.vercel.app/components#{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 26 glass-* registry items (plus non-glass shadcn primitives in same registry \u2014 excluded).",
+    "Demos are single-page gallery anchors on /components \u2014 not per-route docs.",
+    "Live demo host is glasscn.vercel.app; registry host is glasscn-components.vercel.app (same project; shadcn @glasscn namespace).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:05:00-04:00",
+  "components": [
+    {
+      "id": "glasscn-glass-button",
+      "libraryId": "glasscn",
+      "slug": "glass-button",
+      "name": "Glass Button",
+      "aliases": [
+        "glasscn button",
+        "frosted button"
+      ],
+      "summary": "Apple-inspired glassmorphic button with clear/frosted/liquid variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "glass",
+        "liquid-glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-button",
+        "iframeSrc": "https://glasscn.vercel.app/components#button",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-button\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-button.json\n\nimport { GlassButton } from \"@/components/ui/glasscn/glass-button\"\n\n<GlassButton />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Button` (slug `glass-button`) from https://glasscn.vercel.app/components#button. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-button` (or direct https://glasscn-components.vercel.app/r/glass-button.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-button",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-button.json",
+        "registryItem": "glass-button"
+      }
+    },
+    {
+      "id": "glasscn-glass-badge",
+      "libraryId": "glasscn",
+      "slug": "glass-badge",
+      "name": "Glass Badge",
+      "aliases": [
+        "glasscn badge"
+      ],
+      "summary": "Translucent glass badge for status and labels.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-badge",
+        "iframeSrc": "https://glasscn.vercel.app/components#badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-badge\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-badge.json\n\nimport { GlassBadge } from \"@/components/ui/glasscn/glass-badge\"\n\n<GlassBadge />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Badge` (slug `glass-badge`) from https://glasscn.vercel.app/components#badge. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-badge` (or direct https://glasscn-components.vercel.app/r/glass-badge.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-badge",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-badge.json",
+        "registryItem": "glass-badge"
+      }
+    },
+    {
+      "id": "glasscn-glass-card",
+      "libraryId": "glasscn",
+      "slug": "glass-card",
+      "name": "Glass Card",
+      "aliases": [
+        "glasscn card",
+        "frosted card"
+      ],
+      "summary": "Frosted glass card container with blur and sheen.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "glass",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-card",
+        "iframeSrc": "https://glasscn.vercel.app/components#card",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-card\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-card.json\n\nimport { GlassCard } from \"@/components/ui/glasscn/glass-card\"\n\n<GlassCard />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Card` (slug `glass-card`) from https://glasscn.vercel.app/components#card. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-card` (or direct https://glasscn-components.vercel.app/r/glass-card.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-card",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-card.json",
+        "registryItem": "glass-card"
+      }
+    },
+    {
+      "id": "glasscn-glass-checkbox",
+      "libraryId": "glasscn",
+      "slug": "glass-checkbox",
+      "name": "Glass Checkbox",
+      "aliases": [
+        "glasscn checkbox"
+      ],
+      "summary": "Glass-styled checkbox control.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-checkbox",
+        "iframeSrc": "https://glasscn.vercel.app/components#checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-checkbox\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-checkbox.json\n\nimport { GlassCheckbox } from \"@/components/ui/glasscn/glass-checkbox\"\n\n<GlassCheckbox />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Checkbox` (slug `glass-checkbox`) from https://glasscn.vercel.app/components#checkbox. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-checkbox` (or direct https://glasscn-components.vercel.app/r/glass-checkbox.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-checkbox",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-checkbox.json",
+        "registryItem": "glass-checkbox"
+      }
+    },
+    {
+      "id": "glasscn-glass-command",
+      "libraryId": "glasscn",
+      "slug": "glass-command",
+      "name": "Glass Command",
+      "aliases": [
+        "glasscn command",
+        "command palette"
+      ],
+      "summary": "Glass command palette / combobox surface.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu",
+        "input"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-command",
+        "iframeSrc": "https://glasscn.vercel.app/components#command",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-command\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-command.json\n\nimport { GlassCommand } from \"@/components/ui/glasscn/glass-command\"\n\n<GlassCommand />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Command` (slug `glass-command`) from https://glasscn.vercel.app/components#command. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-command` (or direct https://glasscn-components.vercel.app/r/glass-command.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-command",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-command.json",
+        "registryItem": "glass-command"
+      }
+    },
+    {
+      "id": "glasscn-glass-input",
+      "libraryId": "glasscn",
+      "slug": "glass-input",
+      "name": "Glass Input",
+      "aliases": [
+        "glasscn input"
+      ],
+      "summary": "Translucent glass text input.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-input",
+        "iframeSrc": "https://glasscn.vercel.app/components#input",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-input\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-input.json\n\nimport { GlassInput } from \"@/components/ui/glasscn/glass-input\"\n\n<GlassInput />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Input` (slug `glass-input`) from https://glasscn.vercel.app/components#input. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-input` (or direct https://glasscn-components.vercel.app/r/glass-input.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-input",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-input.json",
+        "registryItem": "glass-input"
+      }
+    },
+    {
+      "id": "glasscn-glass-select",
+      "libraryId": "glasscn",
+      "slug": "glass-select",
+      "name": "Glass Select",
+      "aliases": [
+        "glasscn select"
+      ],
+      "summary": "Glass-styled select trigger and content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-select",
+        "iframeSrc": "https://glasscn.vercel.app/components#select",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-select\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-select.json\n\nimport { GlassSelect } from \"@/components/ui/glasscn/glass-select\"\n\n<GlassSelect />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Select` (slug `glass-select`) from https://glasscn.vercel.app/components#select. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-select` (or direct https://glasscn-components.vercel.app/r/glass-select.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-select",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-select.json",
+        "registryItem": "glass-select"
+      }
+    },
+    {
+      "id": "glasscn-glass-popover",
+      "libraryId": "glasscn",
+      "slug": "glass-popover",
+      "name": "Glass Popover",
+      "aliases": [
+        "glasscn popover"
+      ],
+      "summary": "Glass popover content overlay.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu",
+        "other"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-popover",
+        "iframeSrc": "https://glasscn.vercel.app/components#popover",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-popover\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-popover.json\n\nimport { GlassPopoverContent } from \"@/components/ui/glasscn/glass-popover\"\n\n<GlassPopoverContent />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Popover` (slug `glass-popover`) from https://glasscn.vercel.app/components#popover. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-popover` (or direct https://glasscn-components.vercel.app/r/glass-popover.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-popover",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-popover.json",
+        "registryItem": "glass-popover"
+      }
+    },
+    {
+      "id": "glasscn-glass-radio-group",
+      "libraryId": "glasscn",
+      "slug": "glass-radio-group",
+      "name": "Glass Radio Group",
+      "aliases": [
+        "glasscn radio"
+      ],
+      "summary": "Glass radio group items.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-radio-group",
+        "iframeSrc": "https://glasscn.vercel.app/components#radio-group",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-radio-group\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-radio-group.json\n\nimport { GlassRadioGroupItem } from \"@/components/ui/glasscn/glass-radio-group\"\n\n<GlassRadioGroupItem />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Radio Group` (slug `glass-radio-group`) from https://glasscn.vercel.app/components#radio-group. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-radio-group` (or direct https://glasscn-components.vercel.app/r/glass-radio-group.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-radio-group",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-radio-group.json",
+        "registryItem": "glass-radio-group"
+      }
+    },
+    {
+      "id": "glasscn-glass-separator",
+      "libraryId": "glasscn",
+      "slug": "glass-separator",
+      "name": "Glass Separator",
+      "aliases": [
+        "glasscn separator"
+      ],
+      "summary": "Subtle glass separator divider.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "layout"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-separator",
+        "iframeSrc": "https://glasscn.vercel.app/components#separator",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-separator\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-separator.json\n\nimport { GlassSeparator } from \"@/components/ui/glasscn/glass-separator\"\n\n<GlassSeparator />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Separator` (slug `glass-separator`) from https://glasscn.vercel.app/components#separator. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-separator` (or direct https://glasscn-components.vercel.app/r/glass-separator.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-separator",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-separator.json",
+        "registryItem": "glass-separator"
+      }
+    },
+    {
+      "id": "glasscn-glass-button-group",
+      "libraryId": "glasscn",
+      "slug": "glass-button-group",
+      "name": "Glass Button Group",
+      "aliases": [
+        "glasscn button group"
+      ],
+      "summary": "Grouped glass buttons with shared chrome.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-button-group",
+        "iframeSrc": "https://glasscn.vercel.app/components#button-group",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-button-group\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-button-group.json\n\nimport { GlassButtonGroup } from \"@/components/ui/glasscn/glass-button-group\"\n\n<GlassButtonGroup />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Button Group` (slug `glass-button-group`) from https://glasscn.vercel.app/components#button-group. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-button-group` (or direct https://glasscn-components.vercel.app/r/glass-button-group.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-button-group",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-button-group.json",
+        "registryItem": "glass-button-group"
+      }
+    },
+    {
+      "id": "glasscn-glass-dropdown-menu",
+      "libraryId": "glasscn",
+      "slug": "glass-dropdown-menu",
+      "name": "Glass Dropdown Menu",
+      "aliases": [
+        "glasscn dropdown",
+        "glass menu"
+      ],
+      "summary": "Glass dropdown menu content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@glasscn/glass-dropdown-menu",
+        "iframeSrc": "https://glasscn.vercel.app/components#dropdown-menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn/Base UI project; registry @glasscn resolves to glasscn-components.vercel.app/r/{name}.json"
+      },
+      "copyCode": "# components.json registries:\n# \"@glasscn\": \"https://glasscn-components.vercel.app/r/{name}.json\"\nnpx shadcn@latest add @glasscn/glass-dropdown-menu\n# or: npx shadcn@latest add https://glasscn-components.vercel.app/r/glass-dropdown-menu.json\n\nimport { GlassDropdownMenuContent } from \"@/components/ui/glasscn/glass-dropdown-menu\"\n\n<GlassDropdownMenuContent />",
+      "copyPrompt": {
+        "text": "Use GlassCN free MIT React component `Glass Dropdown Menu` (slug `glass-dropdown-menu`) from https://glasscn.vercel.app/components#dropdown-menu. Configure shadcn registry `@glasscn` \u2192 `https://glasscn-components.vercel.app/r/{name}.json`, then install with `npx shadcn@latest add @glasscn/glass-dropdown-menu` (or direct https://glasscn-components.vercel.app/r/glass-dropdown-menu.json). Home: https://glasscn.vercel.app. Registry homepage: https://glasscn-components.vercel.app/. Repo: https://github.com/kostyniuk/glasscn-components. License: MIT (https://raw.githubusercontent.com/kostyniuk/glasscn-components/master/LICENSE; Copyright (c) 2026 Alex Kostyniuk). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @glasscn/glass-dropdown-menu",
+        "registryUrl": "https://glasscn-components.vercel.app/r/glass-dropdown-menu.json",
+        "registryItem": "glass-dropdown-menu"
+      }
+    }
+  ]
+}

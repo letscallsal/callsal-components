@@ -1,0 +1,546 @@
+{
+  "id": "vayu-ui",
+  "name": "Vayu UI",
+  "aliases": [
+    "vayu-ui",
+    "Vayu UI",
+    "vayu.design",
+    "vayu-ui-cli"
+  ],
+  "summary": "MIT React 19 + Tailwind v4 UI toolkit with 60+ accessible components, hooks, CLI, and MCP.",
+  "homeUrl": "https://vayu.design/",
+  "docsUrl": "https://vayu.design/docs",
+  "repoUrl": "https://github.com/Rugved1652/vayu-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx vayu-ui-cli@latest add {name}"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://vayu.design/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 60+ free Vayu UI components.",
+    "CLI copies source into project UI dir (default components/ui) \u2014 not an npm runtime package of components.",
+    "Requires React 19+ and Tailwind CSS v4 design tokens via `npx vayu-ui-cli init`.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:30:00-04:00",
+  "components": [
+    {
+      "id": "vayu-ui-button",
+      "libraryId": "vayu-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "Button",
+        "Vayu Button"
+      ],
+      "summary": "Primary action button with variants, sizes, icons, and loading.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Button` (slug `button`) from https://vayu.design/docs/components/button"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add button\n\nimport { Button } from \"@/components/ui/button\"\n\nexport default function Example() {\n  return <Button variant=\"primary\">Primary</Button>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Button` (slug `button`) from https://vayu.design/docs/components/button. Install with `npx vayu-ui-cli@latest add button` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add button"
+      }
+    },
+    {
+      "id": "vayu-ui-modal",
+      "libraryId": "vayu-ui",
+      "slug": "modal",
+      "name": "Modal",
+      "aliases": [
+        "modal",
+        "Modal",
+        "Vayu Modal",
+        "dialog"
+      ],
+      "summary": "Accessible dialog with focus trapping and overlay.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Modal` (slug `modal`) from https://vayu.design/docs/components/modal"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add modal\n\nimport { Modal } from \"@/components/ui/modal\"\n\nexport default function Example() {\n  return <Modal>Modal</Modal>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Modal` (slug `modal`) from https://vayu.design/docs/components/modal. Install with `npx vayu-ui-cli@latest add modal` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add modal"
+      }
+    },
+    {
+      "id": "vayu-ui-card",
+      "libraryId": "vayu-ui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "card",
+        "Card",
+        "Vayu Card"
+      ],
+      "summary": "Surface card container for content grouping.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Card` (slug `card`) from https://vayu.design/docs/components/card"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add card\n\nimport { Card } from \"@/components/ui/card\"\n\nexport default function Example() {\n  return <Card>Card</Card>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Card` (slug `card`) from https://vayu.design/docs/components/card. Install with `npx vayu-ui-cli@latest add card` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add card"
+      }
+    },
+    {
+      "id": "vayu-ui-navbar",
+      "libraryId": "vayu-ui",
+      "slug": "navbar",
+      "name": "Navbar",
+      "aliases": [
+        "navbar",
+        "Navbar",
+        "Vayu Navbar",
+        "nav"
+      ],
+      "summary": "Top navigation bar layout.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/navbar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Navbar` (slug `navbar`) from https://vayu.design/docs/components/navbar"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add navbar\n\nimport { Navbar } from \"@/components/ui/navbar\"\n\nexport default function Example() {\n  return <Navbar>Navbar</Navbar>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Navbar` (slug `navbar`) from https://vayu.design/docs/components/navbar. Install with `npx vayu-ui-cli@latest add navbar` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add navbar"
+      }
+    },
+    {
+      "id": "vayu-ui-drawer",
+      "libraryId": "vayu-ui",
+      "slug": "drawer",
+      "name": "Drawer",
+      "aliases": [
+        "drawer",
+        "Drawer",
+        "Vayu Drawer"
+      ],
+      "summary": "Slide-over panel overlay.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/drawer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Drawer` (slug `drawer`) from https://vayu.design/docs/components/drawer"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add drawer\n\nimport { Drawer } from \"@/components/ui/drawer\"\n\nexport default function Example() {\n  return <Drawer>Drawer</Drawer>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Drawer` (slug `drawer`) from https://vayu.design/docs/components/drawer. Install with `npx vayu-ui-cli@latest add drawer` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add drawer"
+      }
+    },
+    {
+      "id": "vayu-ui-accordion",
+      "libraryId": "vayu-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "Accordion"
+      ],
+      "summary": "Collapsible disclosure panels.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Accordion` (slug `accordion`) from https://vayu.design/docs/components/accordion"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add accordion\n\nimport { Accordion } from \"@/components/ui/accordion\"\n\nexport default function Example() {\n  return <Accordion>Accordion</Accordion>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Accordion` (slug `accordion`) from https://vayu.design/docs/components/accordion. Install with `npx vayu-ui-cli@latest add accordion` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add accordion"
+      }
+    },
+    {
+      "id": "vayu-ui-checkbox",
+      "libraryId": "vayu-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "Checkbox"
+      ],
+      "summary": "Accessible checkbox control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Checkbox` (slug `checkbox`) from https://vayu.design/docs/components/checkbox"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add checkbox\n\nimport { Checkbox } from \"@/components/ui/checkbox\"\n\nexport default function Example() {\n  return <Checkbox>Checkbox</Checkbox>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Checkbox` (slug `checkbox`) from https://vayu.design/docs/components/checkbox. Install with `npx vayu-ui-cli@latest add checkbox` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add checkbox"
+      }
+    },
+    {
+      "id": "vayu-ui-switch",
+      "libraryId": "vayu-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "switch",
+        "Switch",
+        "toggle"
+      ],
+      "summary": "On/off switch control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Switch` (slug `switch`) from https://vayu.design/docs/components/switch"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add switch\n\nimport { Switch } from \"@/components/ui/switch\"\n\nexport default function Example() {\n  return <Switch>Switch</Switch>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Switch` (slug `switch`) from https://vayu.design/docs/components/switch. Install with `npx vayu-ui-cli@latest add switch` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add switch"
+      }
+    },
+    {
+      "id": "vayu-ui-select",
+      "libraryId": "vayu-ui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "Select",
+        "dropdown select"
+      ],
+      "summary": "Accessible select / listbox control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Select` (slug `select`) from https://vayu.design/docs/components/select"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add select\n\nimport { Select } from \"@/components/ui/select\"\n\nexport default function Example() {\n  return <Select>Select</Select>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Select` (slug `select`) from https://vayu.design/docs/components/select. Install with `npx vayu-ui-cli@latest add select` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add select"
+      }
+    },
+    {
+      "id": "vayu-ui-slider",
+      "libraryId": "vayu-ui",
+      "slug": "slider",
+      "name": "Slider",
+      "aliases": [
+        "slider",
+        "Slider",
+        "range"
+      ],
+      "summary": "Range slider input.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/slider",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Slider` (slug `slider`) from https://vayu.design/docs/components/slider"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add slider\n\nimport { Slider } from \"@/components/ui/slider\"\n\nexport default function Example() {\n  return <Slider>Slider</Slider>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Slider` (slug `slider`) from https://vayu.design/docs/components/slider. Install with `npx vayu-ui-cli@latest add slider` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add slider"
+      }
+    },
+    {
+      "id": "vayu-ui-avatar",
+      "libraryId": "vayu-ui",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "avatar",
+        "Avatar"
+      ],
+      "summary": "User avatar image/fallback.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Avatar` (slug `avatar`) from https://vayu.design/docs/components/avatar"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add avatar\n\nimport { Avatar } from \"@/components/ui/avatar\"\n\nexport default function Example() {\n  return <Avatar>Avatar</Avatar>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Avatar` (slug `avatar`) from https://vayu.design/docs/components/avatar. Install with `npx vayu-ui-cli@latest add avatar` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add avatar"
+      }
+    },
+    {
+      "id": "vayu-ui-marquee",
+      "libraryId": "vayu-ui",
+      "slug": "marquee",
+      "name": "Marquee",
+      "aliases": [
+        "marquee",
+        "Marquee"
+      ],
+      "summary": "Scrolling marquee content strip.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "marquee"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "vayu-ui",
+        "iframeSrc": "https://vayu.design/docs/components/marquee",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Vayu UI free MIT component `Marquee` (slug `marquee`) from https://vayu.design/docs/components/marquee"
+      },
+      "copyCode": "npx vayu-ui-cli@latest add marquee\n\nimport { Marquee } from \"@/components/ui/marquee\"\n\nexport default function Example() {\n  return <Marquee>Marquee</Marquee>\n}",
+      "copyPrompt": {
+        "text": "Use Vayu UI free MIT component `Marquee` (slug `marquee`) from https://vayu.design/docs/components/marquee. Install with `npx vayu-ui-cli@latest add marquee` (copies source into your UI dir; React 19+ + Tailwind v4 tokens). Home/docs: https://vayu.design. Repo: https://github.com/Rugved1652/vayu-ui. License: MIT (https://raw.githubusercontent.com/Rugved1652/vayu-ui/main/LICENSE; Copyright 2026 Rugved1652). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx vayu-ui-cli@latest add marquee"
+      }
+    }
+  ]
+}

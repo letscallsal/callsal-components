@@ -1,0 +1,597 @@
+{
+  "id": "eldora-ui",
+  "name": "Eldora UI",
+  "aliases": [
+    "eldoraui",
+    "eldora",
+    "karthikmudunuri/eldoraui",
+    "@eldoraui"
+  ],
+  "summary": "Free MIT animated React landing-page components via shadcn registry.",
+  "homeUrl": "https://www.eldoraui.site",
+  "docsUrl": "https://www.eldoraui.site/docs",
+  "repoUrl": "https://github.com/karthikmudunuri/eldoraui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @eldoraui/<component>",
+    "registryUrl": "https://eldoraui.site/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.eldoraui.site/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free UI items of ~40 registry:ui entries (115 total registry items incl. examples) \u2014 not a full inventory.",
+    "Some llms.txt-listed comps (marquee, holographic-card, orbit-rotation, animated-grid-pattern, svg-ripple-effect) returned docs HTTP 404 at research time \u2014 excluded; registry JSON may still 200.",
+    "Import paths are @/components/eldoraui/{slug}; export names vary (default vs named \u2014 PhotonBeam, Cobe, Novatrix, BlurIn, DockText).",
+    "photon-beam docs show URL-form install; others prefer @eldoraui/{slug} namespace.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet.",
+    "Heavy peers on some comps (three for photon-beam / cobe-globe / novatrix)."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:15:00-04:00",
+  "components": [
+    {
+      "id": "eldora-ui-photon-beam",
+      "libraryId": "eldora-ui",
+      "slug": "photon-beam",
+      "name": "Photon Beam",
+      "aliases": [
+        "webgl light trails",
+        "photon trails",
+        "bloom background"
+      ],
+      "summary": "WebGL background with animated light trails, bloom, and customizable colors.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "beam",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/photon-beam",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/photon-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs three (react). Docs also show URL install: npx shadcn@latest add \"https://eldoraui.site/r/photon-beam\"."
+      },
+      "copyCode": "npx shadcn@latest add \"https://eldoraui.site/r/photon-beam\"\n\nimport PhotonBeam from \"@/components/eldoraui/photon-beam\"\n\n<PhotonBeam />",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Photon Beam` (slug `photon-beam`) from https://www.eldoraui.site/docs/components/photon-beam. Install with `npx shadcn@latest add \"https://eldoraui.site/r/photon-beam\"` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/photon-beam.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs three (react). Docs also show URL install: npx shadcn@latest add \"https://eldoraui.site/r/photon-beam\".. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add \"https://eldoraui.site/r/photon-beam\"",
+        "registryUrl": "https://eldoraui.site/r/photon-beam.json",
+        "registryItem": "@eldoraui/photon-beam"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-animated-shiny-button",
+      "libraryId": "eldora-ui",
+      "slug": "animated-shiny-button",
+      "name": "Animated Shiny Button",
+      "aliases": [
+        "shiny button",
+        "cyan shimmer button"
+      ],
+      "summary": "Animated button with cyan shimmer effects and automatic light/dark theme support.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/animated-shiny-button",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/animated-shiny-button",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/animated-shiny-button\n\nimport { AnimatedShinyButton } from \"@/components/eldoraui/animated-shiny-button\"\n\n<AnimatedShinyButton>Get Started</AnimatedShinyButton>",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Animated Shiny Button` (slug `animated-shiny-button`) from https://www.eldoraui.site/docs/components/animated-shiny-button. Install with `npx shadcn@latest add @eldoraui/animated-shiny-button` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/animated-shiny-button.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/animated-shiny-button",
+        "registryUrl": "https://eldoraui.site/r/animated-shiny-button.json",
+        "registryItem": "@eldoraui/animated-shiny-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-hacker-background",
+      "libraryId": "eldora-ui",
+      "slug": "hacker-background",
+      "name": "Hacker Background",
+      "aliases": [
+        "matrix background",
+        "falling characters",
+        "digital rain"
+      ],
+      "summary": "Matrix-style falling characters background animation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/hacker-background",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/hacker-background",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/hacker-background\n\nimport { HackerBackground } from \"@/components/eldoraui/hacker-background\"\n\n<HackerBackground />",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Hacker Background` (slug `hacker-background`) from https://www.eldoraui.site/docs/components/hacker-background. Install with `npx shadcn@latest add @eldoraui/hacker-background` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/hacker-background.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/hacker-background",
+        "registryUrl": "https://eldoraui.site/r/hacker-background.json",
+        "registryItem": "@eldoraui/hacker-background"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-cobe-globe",
+      "libraryId": "eldora-ui",
+      "slug": "cobe-globe",
+      "name": "Cobe Globe",
+      "aliases": [
+        "3d globe",
+        "cobe earth",
+        "location markers globe"
+      ],
+      "summary": "Interactive 3D globe with variants, settings, and colorful location markers.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "section",
+        "other"
+      ],
+      "effectType": [
+        "3d",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/cobe-globe",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/cobe-globe",
+        "aspectRatio": "16/9",
+        "peerNotes": "Export name is Cobe per docs usage."
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/cobe-globe\n\nimport { Cobe } from \"@/components/eldoraui/cobe-globe\"\n\n<Cobe />",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Cobe Globe` (slug `cobe-globe`) from https://www.eldoraui.site/docs/components/cobe-globe. Install with `npx shadcn@latest add @eldoraui/cobe-globe` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/cobe-globe.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Export name is Cobe per docs usage.. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/cobe-globe",
+        "registryUrl": "https://eldoraui.site/r/cobe-globe.json",
+        "registryItem": "@eldoraui/cobe-globe"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-animated-list",
+      "libraryId": "eldora-ui",
+      "slug": "animated-list",
+      "name": "Animated List",
+      "aliases": [
+        "scrolling list",
+        "notification list column"
+      ],
+      "summary": "Dynamic list that forms a column and scrolls through items continuously.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "section",
+        "other"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/animated-list",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/animated-list",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/animated-list\n\nimport { AnimatedList } from \"@/components/eldoraui/animated-list\"\n\n<AnimatedList>{/* items */}</AnimatedList>",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Animated List` (slug `animated-list`) from https://www.eldoraui.site/docs/components/animated-list. Install with `npx shadcn@latest add @eldoraui/animated-list` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/animated-list.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/animated-list",
+        "registryUrl": "https://eldoraui.site/r/animated-list.json",
+        "registryItem": "@eldoraui/animated-list"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-novatrix-background",
+      "libraryId": "eldora-ui",
+      "slug": "novatrix-background",
+      "name": "Novatrix Background",
+      "aliases": [
+        "webgl novatrix",
+        "mouse interactive background"
+      ],
+      "summary": "Animated WebGL background with customizable colors, speed, and mouse interaction.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/novatrix-background",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/novatrix-background",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/novatrix-background\n\nimport Novatrix from \"@/components/eldoraui/novatrix-background\"\n\n<Novatrix />",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Novatrix Background` (slug `novatrix-background`) from https://www.eldoraui.site/docs/components/novatrix-background. Install with `npx shadcn@latest add @eldoraui/novatrix-background` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/novatrix-background.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/novatrix-background",
+        "registryUrl": "https://eldoraui.site/r/novatrix-background.json",
+        "registryItem": "@eldoraui/novatrix-background"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-live-button",
+      "libraryId": "eldora-ui",
+      "slug": "live-button",
+      "name": "Live Button",
+      "aliases": [
+        "ripple button",
+        "hover ripple cta"
+      ],
+      "summary": "Animated button with hover effects, ripple animations, and customizable text/URL.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/live-button",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/live-button",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/live-button\n\nimport { LiveButton } from \"@/components/eldoraui/live-button\"\n\n<LiveButton text=\"Get Started\" url=\"https://example.com\" />",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Live Button` (slug `live-button`) from https://www.eldoraui.site/docs/components/live-button. Install with `npx shadcn@latest add @eldoraui/live-button` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/live-button.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/live-button",
+        "registryUrl": "https://eldoraui.site/r/live-button.json",
+        "registryItem": "@eldoraui/live-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-card-flip-hover",
+      "libraryId": "eldora-ui",
+      "slug": "card-flip-hover",
+      "name": "Card Flip Hover",
+      "aliases": [
+        "3d flip card",
+        "hover flip card"
+      ],
+      "summary": "3D card flip animation that triggers on hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/card-flip-hover",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/card-flip-hover",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/card-flip-hover\n\nimport { CardFlipHover } from \"@/components/eldoraui/card-flip-hover\"\n\n<CardFlipHover imageUrl=\"https://example.com/image.jpg\" />",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Card Flip Hover` (slug `card-flip-hover`) from https://www.eldoraui.site/docs/components/card-flip-hover. Install with `npx shadcn@latest add @eldoraui/card-flip-hover` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/card-flip-hover.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/card-flip-hover",
+        "registryUrl": "https://eldoraui.site/r/card-flip-hover.json",
+        "registryItem": "@eldoraui/card-flip-hover"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-wavy-text",
+      "libraryId": "eldora-ui",
+      "slug": "wavy-text",
+      "name": "Wavy Text",
+      "aliases": [
+        "wave text",
+        "undulating characters"
+      ],
+      "summary": "Text with wavy motion \u2014 each character moves up and down in sequence.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/wavy-text",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/wavy-text",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/wavy-text\n\nimport { WavyText } from \"@/components/eldoraui/wavy-text\"\n\n<WavyText text=\"Wavy Text\" className=\"text-blue-600\" />",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Wavy Text` (slug `wavy-text`) from https://www.eldoraui.site/docs/components/wavy-text. Install with `npx shadcn@latest add @eldoraui/wavy-text` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/wavy-text.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/wavy-text",
+        "registryUrl": "https://eldoraui.site/r/wavy-text.json",
+        "registryItem": "@eldoraui/wavy-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-blur-in-text",
+      "libraryId": "eldora-ui",
+      "slug": "blur-in-text",
+      "name": "Blur In Text",
+      "aliases": [
+        "blur reveal text",
+        "blur-in heading"
+      ],
+      "summary": "Animated text that reveals with a blur-in effect using Framer Motion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/blur-in-text",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/blur-in-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Export name is BlurIn per docs usage."
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/blur-in-text\n\nimport { BlurIn } from \"@/components/eldoraui/blur-in-text\"\n\n<BlurIn text=\"Welcome to EldoraUI\" className=\"text-white\" />",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Blur In Text` (slug `blur-in-text`) from https://www.eldoraui.site/docs/components/blur-in-text. Install with `npx shadcn@latest add @eldoraui/blur-in-text` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/blur-in-text.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Export name is BlurIn per docs usage.. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/blur-in-text",
+        "registryUrl": "https://eldoraui.site/r/blur-in-text.json",
+        "registryItem": "@eldoraui/blur-in-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-logo-timeline",
+      "libraryId": "eldora-ui",
+      "slug": "logo-timeline",
+      "name": "Logo Timeline",
+      "aliases": [
+        "logo marquee",
+        "partner logos scroll",
+        "logo rows"
+      ],
+      "summary": "Animated logo timeline with horizontal scrolling rows for partners/tech stacks.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "marquee",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/logo-timeline",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/logo-timeline",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/logo-timeline\n\nimport { LogoTimeline, type LogoItem } from \"@/components/eldoraui/logo-timeline\"\n\n<LogoTimeline items={logos} />",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Logo Timeline` (slug `logo-timeline`) from https://www.eldoraui.site/docs/components/logo-timeline. Install with `npx shadcn@latest add @eldoraui/logo-timeline` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/logo-timeline.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/logo-timeline",
+        "registryUrl": "https://eldoraui.site/r/logo-timeline.json",
+        "registryItem": "@eldoraui/logo-timeline"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "eldora-ui-dock-text",
+      "libraryId": "eldora-ui",
+      "slug": "dock-text",
+      "name": "Dock Text",
+      "aliases": [
+        "dock hover text",
+        "magnify letters"
+      ],
+      "summary": "Interactive text with dock-like hover effects that scale letters by mouse position.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@eldoraui/dock-text",
+        "iframeSrc": "https://www.eldoraui.site/docs/components/dock-text",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @eldoraui/dock-text\n\nimport DockText from \"@/components/eldoraui/dock-text\"\n\n<DockText />",
+      "copyPrompt": {
+        "text": "Use Eldora UI free component `Dock Text` (slug `dock-text`) from https://www.eldoraui.site/docs/components/dock-text. Install with `npx shadcn@latest add @eldoraui/dock-text` after `npx shadcn@latest init`. Registry item: https://eldoraui.site/r/dock-text.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/karthikmudunuri/eldoraui/main/LICENSE.md). Free open-source landing-page components; no Pro unlock observed on eldoraui.site.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @eldoraui/dock-text",
+        "registryUrl": "https://eldoraui.site/r/dock-text.json",
+        "registryItem": "@eldoraui/dock-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

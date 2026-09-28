@@ -1,0 +1,582 @@
+{
+  "id": "syntax-ui",
+  "name": "SyntaxUI",
+  "aliases": [
+    "syntaxui",
+    "syntax-ui",
+    "syntaxui.com",
+    "Syntax UI"
+  ],
+  "summary": "Free React + Tailwind + Framer Motion UI components and animations (copy-paste).",
+  "homeUrl": "https://syntaxui.com",
+  "docsUrl": "https://syntaxui.com/components/accordion",
+  "repoUrl": "https://github.com/SyntaxUI/syntaxui",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "copy-paste",
+    "command": "Open https://syntaxui.com/components/{slug} and copy the React + Tailwind code"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://syntaxui.com/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "framer-motion",
+      "tailwindcss",
+      "lucide-react"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "docsUrl points to /components/accordion because /components and /docs returned HTTP 500 at research time.",
+    "Some parent category routes (/components/button, /docs) return HTTP 500 at research time; leaf demo pages used for iframeSrc return 200.",
+    "Pilot includes 12 free showcase comps; SyntaxUI Pro blocks/templates excluded.",
+    "Copy-paste only (no npm package / shadcn registry).",
+    "iframe demos only."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:40:00-04:00",
+  "components": [
+    {
+      "id": "syntax-ui-shimmer-button",
+      "libraryId": "syntax-ui",
+      "slug": "shimmer-button",
+      "name": "Shimmer Button",
+      "aliases": [
+        "shimmer-button",
+        "syntaxui shimmer-button",
+        "syntax shimmer button"
+      ],
+      "summary": "Button with continuous shimmer gradient sweep via Framer Motion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/button/ShimmerButton",
+        "iframeSrc": "https://syntaxui.com/components/button/shimmer-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Uses Framer Motion. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/button/shimmer-button and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/ShimmerButton.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/ShimmerButton.tsx\nimport ShimmerButton from '@/components/ShimmerButton'\n\n<ShimmerButton />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Shimmer Button` (slug `shimmer-button`) from https://syntaxui.com/components/button/shimmer-button. Copy-paste from the docs preview/code tab or GitHub showcase `components/button/ShimmerButton.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/ShimmerButton.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/button/shimmer-button and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/ShimmerButton.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-magnetic-button",
+      "libraryId": "syntax-ui",
+      "slug": "magnetic-button",
+      "name": "Magnetic Button",
+      "aliases": [
+        "magnetic-button",
+        "syntaxui magnetic-button",
+        "syntax magnetic button"
+      ],
+      "summary": "Button that magnetically follows the cursor on hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/button/MagneticButton",
+        "iframeSrc": "https://syntaxui.com/components/button/magnetic-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Uses Framer Motion. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/button/magnetic-button and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/MagneticButton.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/MagneticButton.tsx\nimport MagneticButton from '@/components/MagneticButton'\n\n<MagneticButton />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Magnetic Button` (slug `magnetic-button`) from https://syntaxui.com/components/button/magnetic-button. Copy-paste from the docs preview/code tab or GitHub showcase `components/button/MagneticButton.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/MagneticButton.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/button/magnetic-button and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/MagneticButton.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-neubrutalism-button",
+      "libraryId": "syntax-ui",
+      "slug": "neubrutalism-button",
+      "name": "Neubrutalism Button",
+      "aliases": [
+        "neubrutalism-button",
+        "syntaxui neubrutalism-button",
+        "syntax neubrutalism button"
+      ],
+      "summary": "Hard-shadow neubrutalist button with offset press.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/button/NeubrutalismButton",
+        "iframeSrc": "https://syntaxui.com/components/button/neubrutalism-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/button/neubrutalism-button and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/NeubrutalismButton.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/NeubrutalismButton.tsx\nimport NeubrutalismButton from '@/components/NeubrutalismButton'\n\n<NeubrutalismButton />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Neubrutalism Button` (slug `neubrutalism-button`) from https://syntaxui.com/components/button/neubrutalism-button. Copy-paste from the docs preview/code tab or GitHub showcase `components/button/NeubrutalismButton.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/NeubrutalismButton.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/button/neubrutalism-button and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/NeubrutalismButton.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-border-glow-button",
+      "libraryId": "syntax-ui",
+      "slug": "border-glow-button",
+      "name": "Border Glow Button",
+      "aliases": [
+        "border-glow-button",
+        "syntaxui border-glow-button",
+        "syntax border glow button"
+      ],
+      "summary": "Button with cursor-tracking glowing border.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/button/BorderGlowButton",
+        "iframeSrc": "https://syntaxui.com/components/button/border-glow-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/button/border-glow-button and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/BorderGlowButton.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/BorderGlowButton.tsx\nimport BorderGlowButton from '@/components/BorderGlowButton'\n\n<BorderGlowButton />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Border Glow Button` (slug `border-glow-button`) from https://syntaxui.com/components/button/border-glow-button. Copy-paste from the docs preview/code tab or GitHub showcase `components/button/BorderGlowButton.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/BorderGlowButton.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/button/border-glow-button and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/BorderGlowButton.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-heartbeat-button",
+      "libraryId": "syntax-ui",
+      "slug": "heartbeat-button",
+      "name": "Heartbeat Button",
+      "aliases": [
+        "heartbeat-button",
+        "syntaxui heartbeat-button",
+        "syntax heartbeat button"
+      ],
+      "summary": "Button with heartbeat pulse animation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/button/HeartbeatButton",
+        "iframeSrc": "https://syntaxui.com/components/button/heartbeat-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/button/heartbeat-button and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/HeartbeatButton.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/HeartbeatButton.tsx\nimport HeartbeatButton from '@/components/HeartbeatButton'\n\n<HeartbeatButton />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Heartbeat Button` (slug `heartbeat-button`) from https://syntaxui.com/components/button/heartbeat-button. Copy-paste from the docs preview/code tab or GitHub showcase `components/button/HeartbeatButton.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/HeartbeatButton.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/button/heartbeat-button and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/HeartbeatButton.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-3d-button",
+      "libraryId": "syntax-ui",
+      "slug": "3d-button",
+      "name": "3D Button",
+      "aliases": [
+        "3d-button",
+        "syntaxui 3d-button",
+        "syntax 3d button"
+      ],
+      "summary": "Pressable 3D extruded button with depth.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/button/3DButton",
+        "iframeSrc": "https://syntaxui.com/components/button/3d-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Uses Framer Motion. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/button/3d-button and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/3DButton.tsx\n// Peer: framer-motion\n\n// File: src/showcase/components/button/3DButton.tsx (default export)\nimport ThreeDButton from '@/components/3DButton'\n\n<ThreeDButton />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `3D Button` (slug `3d-button`) from https://syntaxui.com/components/button/3d-button. Copy-paste from the docs preview/code tab or GitHub showcase `components/button/3DButton.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/3DButton.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/button/3d-button and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/button/3DButton.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-text-scramble",
+      "libraryId": "syntax-ui",
+      "slug": "text-scramble",
+      "name": "Text Scramble",
+      "aliases": [
+        "text-scramble",
+        "syntaxui text-scramble",
+        "syntax text scramble"
+      ],
+      "summary": "Text that scrambles random characters then resolves.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/text/TextScramble",
+        "iframeSrc": "https://syntaxui.com/components/text/text-scramble",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/text/text-scramble and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/text/TextScramble.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/TextScramble.tsx\nimport TextScramble from '@/components/TextScramble'\n\n<TextScramble />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Text Scramble` (slug `text-scramble`) from https://syntaxui.com/components/text/text-scramble. Copy-paste from the docs preview/code tab or GitHub showcase `components/text/TextScramble.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/text/TextScramble.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/text/text-scramble and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/text/TextScramble.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-text-gradient",
+      "libraryId": "syntax-ui",
+      "slug": "text-gradient",
+      "name": "Text Gradient",
+      "aliases": [
+        "text-gradient",
+        "syntaxui text-gradient",
+        "syntax text gradient"
+      ],
+      "summary": "Animated gradient text clip.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/text/TextGradient",
+        "iframeSrc": "https://syntaxui.com/components/text/text-gradient",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/text/text-gradient and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/text/TextGradient.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/TextGradient.tsx\nimport TextGradient from '@/components/TextGradient'\n\n<TextGradient />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Text Gradient` (slug `text-gradient`) from https://syntaxui.com/components/text/text-gradient. Copy-paste from the docs preview/code tab or GitHub showcase `components/text/TextGradient.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/text/TextGradient.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/text/text-gradient and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/text/TextGradient.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-accordion",
+      "libraryId": "syntax-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "syntaxui accordion",
+        "syntax accordion"
+      ],
+      "summary": "Minimal Framer Motion accordion with chevron.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/accordion/MinimalAccordion",
+        "iframeSrc": "https://syntaxui.com/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Uses Framer Motion. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/accordion and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/accordion/MinimalAccordion.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/MinimalAccordion.tsx\nimport MinimalAccordion from '@/components/MinimalAccordion'\n\n<MinimalAccordion />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Accordion` (slug `accordion`) from https://syntaxui.com/components/accordion. Copy-paste from the docs preview/code tab or GitHub showcase `components/accordion/MinimalAccordion.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/accordion/MinimalAccordion.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/accordion and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/accordion/MinimalAccordion.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-tabs",
+      "libraryId": "syntax-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "syntaxui tabs",
+        "syntax tabs"
+      ],
+      "summary": "Simple animated tabs with underline/shape variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/tabs/SimpleTabs",
+        "iframeSrc": "https://syntaxui.com/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/tabs and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/tabs/SimpleTabs.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/SimpleTabs.tsx\nimport SimpleTabs from '@/components/SimpleTabs'\n\n<SimpleTabs />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Tabs` (slug `tabs`) from https://syntaxui.com/components/tabs. Copy-paste from the docs preview/code tab or GitHub showcase `components/tabs/SimpleTabs.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/tabs/SimpleTabs.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/tabs and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/tabs/SimpleTabs.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-stepper",
+      "libraryId": "syntax-ui",
+      "slug": "stepper",
+      "name": "Stepper",
+      "aliases": [
+        "stepper",
+        "syntaxui stepper",
+        "syntax stepper"
+      ],
+      "summary": "Checked stepper with animated step transitions.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/stepper/CheckedStepper",
+        "iframeSrc": "https://syntaxui.com/components/stepper",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Uses Framer Motion. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/stepper and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/stepper/CheckedStepper.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/CheckedStepper.tsx\nimport CheckedStepper from '@/components/CheckedStepper'\n\n<CheckedStepper />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Stepper` (slug `stepper`) from https://syntaxui.com/components/stepper. Copy-paste from the docs preview/code tab or GitHub showcase `components/stepper/CheckedStepper.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/stepper/CheckedStepper.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/stepper and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/stepper/CheckedStepper.tsx)"
+      }
+    },
+    {
+      "id": "syntax-ui-simple-toggle",
+      "libraryId": "syntax-ui",
+      "slug": "simple-toggle",
+      "name": "Simple Toggle",
+      "aliases": [
+        "simple-toggle",
+        "syntaxui simple-toggle",
+        "syntax simple toggle"
+      ],
+      "summary": "Compact animated on/off toggle switch.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/showcase/components/toggle/SimpleToggle",
+        "iframeSrc": "https://syntaxui.com/components/toggle/simple-toggle",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free copy-paste from docs/GitHub showcase. Pro blocks at pro.syntaxui.com excluded."
+      },
+      "copyCode": "// SyntaxUI is copy-paste (MIT). Open https://syntaxui.com/components/toggle/simple-toggle and copy the React + Tailwind code.\n// Source: https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/toggle/SimpleToggle.tsx\n// Peer: framer-motion (when using Framer variants); lucide-react for some comps.\n\n// Drop the showcase component into your project, e.g. components/SimpleToggle.tsx\nimport SimpleToggle from '@/components/SimpleToggle'\n\n<SimpleToggle />",
+      "copyPrompt": {
+        "text": "Use SyntaxUI free MIT React component `Simple Toggle` (slug `simple-toggle`) from https://syntaxui.com/components/toggle/simple-toggle. Copy-paste from the docs preview/code tab or GitHub showcase `components/toggle/SimpleToggle.tsx` (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/toggle/SimpleToggle.tsx). Peers often include framer-motion, lucide-react, Tailwind CSS. Home: https://syntaxui.com. Repo: https://github.com/SyntaxUI/syntaxui. License: MIT (https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/LICENSE; Copyright (c) 2024 SyntaxUI). Pricing freemium — free comps only; SyntaxUI Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Open https://syntaxui.com/components/toggle/simple-toggle and copy the React + Tailwind code (source https://raw.githubusercontent.com/SyntaxUI/syntaxui/main/src/showcase/components/toggle/SimpleToggle.tsx)"
+      }
+    }
+  ]
+}

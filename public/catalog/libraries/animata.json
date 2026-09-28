@@ -1,0 +1,596 @@
+{
+  "id": "animata",
+  "name": "Animata",
+  "aliases": [
+    "animata.design",
+    "codse/animata",
+    "animata design"
+  ],
+  "summary": "Free open-source animated React components (Tailwind) via shadcn registry URLs from animata.design.",
+  "homeUrl": "https://animata.design",
+  "docsUrl": "https://animata.design/docs",
+  "repoUrl": "https://github.com/codse/animata",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://animata.design/r/{category}/{name}.json",
+    "registryUrl": "https://animata.design/r/{category}/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://animata.design/docs/{category}/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "clsx",
+      "tailwind-merge"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free registry components of ~130 listed in llms.txt; not a full inventory.",
+    "No paid/Pro tier found on animata.design or codse/animata — pricing=free; nothing gated/unlocked.",
+    "Docs usage sometimes imports `@/animata/...`; registry files land under `components/animata/...` — catalog copyCode uses `@/components/animata/...` (path may follow project aliases).",
+    "Docs prefer `pnpm dlx shadcn@latest add https://animata.design/r/...`; catalog uses portable `npx shadcn@latest`.",
+    "ARCHITECTURE §5 prefers iframe for unusual/tactile motion; all demos are docs iframes (no dynamic-import smoke mounts).",
+    "gooey-tabs needs `motion` + `@phosphor-icons/react`; shining-button needs `lucide-react` — install via CLI deps / docs."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T14:45:00-04:00",
+  "components": [
+    {
+      "id": "animata-typing-text",
+      "libraryId": "animata",
+      "slug": "typing-text",
+      "name": "Typing Text",
+      "aliases": [
+        "typewriter text",
+        "typing effect",
+        "animated typing"
+      ],
+      "summary": "Types text character-by-character with optional repeat, cursor, and smooth word mode.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/text/typing-text",
+        "iframeSrc": "https://animata.design/docs/text/typing-text",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/text/typing-text.json\n\nimport TypingText from \"@/components/animata/text/typing-text\"\n\n<TypingText text=\"Made with Love\" repeat={true} delay={32} />",
+      "copyPrompt": {
+        "text": "Use Animata free component `Typing Text` (slug `typing-text`) from https://animata.design/docs/text/typing-text. Install with `npx shadcn@latest add https://animata.design/r/text/typing-text.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/text/typing-text.json. Import from `@/components/animata/text/typing-text` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/text/typing-text.json",
+        "registryUrl": "https://animata.design/r/text/typing-text.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-gibberish-text",
+      "libraryId": "animata",
+      "slug": "gibberish-text",
+      "name": "Gibberish Text",
+      "aliases": [
+        "gibberish reveal",
+        "scramble resolve text",
+        "random letter reveal"
+      ],
+      "summary": "Shows gibberish characters that resolve into the final text letter by letter.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/text/gibberish-text",
+        "iframeSrc": "https://animata.design/docs/text/gibberish-text",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/text/gibberish-text.json\n\nimport GibberishText from \"@/components/animata/text/gibberish-text\"\n\n<GibberishText text=\"Animata\" className=\"text-4xl font-bold\" />",
+      "copyPrompt": {
+        "text": "Use Animata free component `Gibberish Text` (slug `gibberish-text`) from https://animata.design/docs/text/gibberish-text. Install with `npx shadcn@latest add https://animata.design/r/text/gibberish-text.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/text/gibberish-text.json. Import from `@/components/animata/text/gibberish-text` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/text/gibberish-text.json",
+        "registryUrl": "https://animata.design/r/text/gibberish-text.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-animated-gradient-text",
+      "libraryId": "animata",
+      "slug": "animated-gradient-text",
+      "name": "Animated Gradient Text",
+      "aliases": [
+        "gradient text",
+        "animated text gradient",
+        "rainbow text"
+      ],
+      "summary": "Animates a multi-color gradient across text.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/text/animated-gradient-text",
+        "iframeSrc": "https://animata.design/docs/text/animated-gradient-text",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/text/animated-gradient-text.json\n\nimport AnimatedGradientText from \"@/components/animata/text/animated-gradient-text\"\n\n<AnimatedGradientText className=\"text-4xl font-bold\">Animata</AnimatedGradientText>",
+      "copyPrompt": {
+        "text": "Use Animata free component `Animated Gradient Text` (slug `animated-gradient-text`) from https://animata.design/docs/text/animated-gradient-text. Install with `npx shadcn@latest add https://animata.design/r/text/animated-gradient-text.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/text/animated-gradient-text.json. Import from `@/components/animata/text/animated-gradient-text` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/text/animated-gradient-text.json",
+        "registryUrl": "https://animata.design/r/text/animated-gradient-text.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-scroll-reveal",
+      "libraryId": "animata",
+      "slug": "scroll-reveal",
+      "name": "Scroll Reveal",
+      "aliases": [
+        "scroll text reveal",
+        "scroll-driven text",
+        "reveal on scroll"
+      ],
+      "summary": "Reveals text based on scroll position inside its container.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/text/scroll-reveal",
+        "iframeSrc": "https://animata.design/docs/text/scroll-reveal",
+        "aspectRatio": "16/9",
+        "peerNotes": "Demo needs a scrollable parent; scroll inside the preview to see the effect."
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/text/scroll-reveal.json\n\nimport ScrollReveal from \"@/components/animata/text/scroll-reveal\"\n\n<div className=\"h-64 overflow-y-auto\">\n  <ScrollReveal className=\"text-4xl font-bold\">Scroll to reveal this text.</ScrollReveal>\n</div>",
+      "copyPrompt": {
+        "text": "Use Animata free component `Scroll Reveal` (slug `scroll-reveal`) from https://animata.design/docs/text/scroll-reveal. Install with `npx shadcn@latest add https://animata.design/r/text/scroll-reveal.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/text/scroll-reveal.json. Import from `@/components/animata/text/scroll-reveal` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/text/scroll-reveal.json",
+        "registryUrl": "https://animata.design/r/text/scroll-reveal.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-shimmer-sweep",
+      "libraryId": "animata",
+      "slug": "shimmer-sweep",
+      "name": "Shimmer Sweep",
+      "aliases": [
+        "shimmer text",
+        "text shimmer sweep",
+        "headline shimmer"
+      ],
+      "summary": "Subtle shimmer sweep across a headline using Animata’s shared text-animator runtime.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/text/shimmer-sweep",
+        "iframeSrc": "https://animata.design/docs/text/shimmer-sweep",
+        "aspectRatio": "16/9",
+        "peerNotes": "Registry also installs shared text-animator.tsx + CSS."
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/text/shimmer-sweep.json\n\nimport ShimmerSweep from \"@/components/animata/text/shimmer-sweep\"\n\n<ShimmerSweep text=\"Ship faster. Look better.\" className=\"text-4xl font-bold\" />",
+      "copyPrompt": {
+        "text": "Use Animata free component `Shimmer Sweep` (slug `shimmer-sweep`) from https://animata.design/docs/text/shimmer-sweep. Install with `npx shadcn@latest add https://animata.design/r/text/shimmer-sweep.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/text/shimmer-sweep.json. Import from `@/components/animata/text/shimmer-sweep` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/text/shimmer-sweep.json",
+        "registryUrl": "https://animata.design/r/text/shimmer-sweep.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-animated-beam",
+      "libraryId": "animata",
+      "slug": "animated-beam",
+      "name": "Animated Beam",
+      "aliases": [
+        "light beams background",
+        "meteor beams",
+        "diagonal beam bg"
+      ],
+      "summary": "Dark section background where light beams streak diagonally on a faint grid.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "beam"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/background/animated-beam",
+        "iframeSrc": "https://animata.design/docs/background/animated-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "Registry includes animated-beam.css keyframes."
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/background/animated-beam.json\n\nimport AnimatedBeam from \"@/components/animata/background/animated-beam\"\n\n<AnimatedBeam className=\"min-h-[24rem]\">\n  <div className=\"relative z-10 p-8 text-white\">Your content</div>\n</AnimatedBeam>",
+      "copyPrompt": {
+        "text": "Use Animata free component `Animated Beam` (slug `animated-beam`) from https://animata.design/docs/background/animated-beam. Install with `npx shadcn@latest add https://animata.design/r/background/animated-beam.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/background/animated-beam.json. Import from `@/components/animata/background/animated-beam` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/background/animated-beam.json",
+        "registryUrl": "https://animata.design/r/background/animated-beam.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-moving-gradient",
+      "libraryId": "animata",
+      "slug": "moving-gradient",
+      "name": "Moving Gradient",
+      "aliases": [
+        "animated gradient background",
+        "moving gradient bg",
+        "gradient mesh bg"
+      ],
+      "summary": "Animated moving gradient background wrapper for section content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/background/moving-gradient",
+        "iframeSrc": "https://animata.design/docs/background/moving-gradient",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/background/moving-gradient.json\n\nimport MovingGradient from \"@/components/animata/background/moving-gradient\"\n\n<MovingGradient className=\"min-h-[16rem] rounded-xl p-8\" animated={true}>\n  Content over gradient\n</MovingGradient>",
+      "copyPrompt": {
+        "text": "Use Animata free component `Moving Gradient` (slug `moving-gradient`) from https://animata.design/docs/background/moving-gradient. Install with `npx shadcn@latest add https://animata.design/r/background/moving-gradient.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/background/moving-gradient.json. Import from `@/components/animata/background/moving-gradient` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/background/moving-gradient.json",
+        "registryUrl": "https://animata.design/r/background/moving-gradient.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-marquee",
+      "libraryId": "animata",
+      "slug": "marquee",
+      "name": "Marquee",
+      "aliases": [
+        "infinite marquee",
+        "scrolling marquee",
+        "logo marquee"
+      ],
+      "summary": "Horizontal or vertical repeating marquee with pause-on-hover and mask options.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "marquee"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/container/marquee",
+        "iframeSrc": "https://animata.design/docs/container/marquee",
+        "aspectRatio": "16/9",
+        "peerNotes": "Registry includes marquee.css animation utilities."
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/container/marquee.json\n\nimport Marquee from \"@/components/animata/container/marquee\"\n\n<Marquee pauseOnHover={true} repeat={5} className=\"[--gap:2rem]\">\n  <span className=\"mx-4\">Animata</span>\n  <span className=\"mx-4\">React</span>\n  <span className=\"mx-4\">Tailwind</span>\n</Marquee>",
+      "copyPrompt": {
+        "text": "Use Animata free component `Marquee` (slug `marquee`) from https://animata.design/docs/container/marquee. Install with `npx shadcn@latest add https://animata.design/r/container/marquee.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/container/marquee.json. Import from `@/components/animata/container/marquee` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/container/marquee.json",
+        "registryUrl": "https://animata.design/r/container/marquee.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-gooey-tabs",
+      "libraryId": "animata",
+      "slug": "gooey-tabs",
+      "name": "Gooey Tabs",
+      "aliases": [
+        "gooey tab bar",
+        "svg goo tabs",
+        "fluid tabs gooey"
+      ],
+      "summary": "Icon tabs that merge with an SVG goo filter when a label expands.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu",
+        "nav"
+      ],
+      "effectType": [
+        "gooey"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/tabs/gooey-tabs",
+        "iframeSrc": "https://animata.design/docs/tabs/gooey-tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion + @phosphor-icons/react; registry bundles shared.ts."
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/tabs/gooey-tabs.json\n\nimport GooeyTabs from \"@/components/animata/tabs/gooey-tabs\"\nimport { HouseIcon } from \"@phosphor-icons/react\"\n\n<GooeyTabs defaultActiveIndex={0}>\n  <GooeyTabs.List>\n    <GooeyTabs.Tab color=\"bg-violet-500 hover:bg-violet-600\" label=\"Home\">\n      <GooeyTabs.Icon>\n        <HouseIcon weight=\"duotone\" aria-hidden />\n      </GooeyTabs.Icon>\n      <GooeyTabs.Label>Home</GooeyTabs.Label>\n    </GooeyTabs.Tab>\n  </GooeyTabs.List>\n</GooeyTabs>",
+      "copyPrompt": {
+        "text": "Use Animata free component `Gooey Tabs` (slug `gooey-tabs`) from https://animata.design/docs/tabs/gooey-tabs. Install with `npx shadcn@latest add https://animata.design/r/tabs/gooey-tabs.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/tabs/gooey-tabs.json. Import from `@/components/animata/tabs/gooey-tabs` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only. Docs usage example uses compound `GooeyTabs.List` / `.Tab` / `.Icon` / `.Label`.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/tabs/gooey-tabs.json",
+        "registryUrl": "https://animata.design/r/tabs/gooey-tabs.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-glowing-card",
+      "libraryId": "animata",
+      "slug": "glowing-card",
+      "name": "Glowing Card",
+      "aliases": [
+        "glow card",
+        "gradient glow card",
+        "hover glow card"
+      ],
+      "summary": "Card that glows in gradient colours on hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "glow",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/card/glowing-card",
+        "iframeSrc": "https://animata.design/docs/card/glowing-card",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/card/glowing-card.json\n\nimport GlowingCard from \"@/components/animata/card/glowing-card\"\n\n<GlowingCard fromColor=\"#4158D0\" viaColor=\"#C850C0\" toColor=\"#FFCC70\" className=\"h-40 w-64\" />",
+      "copyPrompt": {
+        "text": "Use Animata free component `Glowing Card` (slug `glowing-card`) from https://animata.design/docs/card/glowing-card. Install with `npx shadcn@latest add https://animata.design/r/card/glowing-card.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/card/glowing-card.json. Import from `@/components/animata/card/glowing-card` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/card/glowing-card.json",
+        "registryUrl": "https://animata.design/r/card/glowing-card.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-shining-button",
+      "libraryId": "animata",
+      "slug": "shining-button",
+      "name": "Shining Button",
+      "aliases": [
+        "shine button",
+        "shimmer button",
+        "cta shine hover"
+      ],
+      "summary": "CTA button with a sweeping shine highlight on hover (docs demo label “See Calendar”).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/button/shining-button",
+        "iframeSrc": "https://animata.design/docs/button/shining-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs lucide-react; demo button label is hardcoded in component source."
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/button/shining-button.json\n\nimport ShiningButton from \"@/components/animata/button/shining-button\"\n\n<ShiningButton />",
+      "copyPrompt": {
+        "text": "Use Animata free component `Shining Button` (slug `shining-button`) from https://animata.design/docs/button/shining-button. Install with `npx shadcn@latest add https://animata.design/r/button/shining-button.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/button/shining-button.json. Import from `@/components/animata/button/shining-button` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/button/shining-button.json",
+        "registryUrl": "https://animata.design/r/button/shining-button.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animata-orbiting-items",
+      "libraryId": "animata",
+      "slug": "orbiting-items",
+      "name": "Orbiting Items",
+      "aliases": [
+        "orbit list",
+        "orbiting icons",
+        "circular orbit items"
+      ],
+      "summary": "Items orbit around the center of the list container.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "orb"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "animata/list/orbiting-items",
+        "iframeSrc": "https://animata.design/docs/list/orbiting-items",
+        "aspectRatio": "16/9",
+        "peerNotes": "Default `items` uses exported `testOrbitingItems` from the same module when omitted."
+      },
+      "copyCode": "npx shadcn@latest add https://animata.design/r/list/orbiting-items.json\n\nimport OrbitingItems from \"@/components/animata/list/orbiting-items\"\n\n<OrbitingItems radius={50} pauseOnHover={true} />",
+      "copyPrompt": {
+        "text": "Use Animata free component `Orbiting Items` (slug `orbiting-items`) from https://animata.design/docs/list/orbiting-items. Install with `npx shadcn@latest add https://animata.design/r/list/orbiting-items.json` (docs often show `pnpm dlx shadcn@latest add ...`). Registry item: https://animata.design/r/list/orbiting-items.json. Import from `@/components/animata/list/orbiting-items` after CLI add (path may follow project aliases; some docs use `@/animata/...`). Requires React + TypeScript + Tailwind CSS. All Animata components researched are free & open source (MIT — https://raw.githubusercontent.com/codse/animata/main/LICENSE.md); prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animata.design/r/list/orbiting-items.json",
+        "registryUrl": "https://animata.design/r/list/orbiting-items.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

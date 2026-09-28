@@ -1,0 +1,625 @@
+{
+  "id": "canvas-ui",
+  "name": "Canvas UI",
+  "aliases": [
+    "canvasui",
+    "canvasui.dev",
+    "DavidHDev/canvas-ui",
+    "@canvas-ui"
+  ],
+  "summary": "Open-source HTML-in-canvas WebGL/WebGPU effects over live interactive UI (shadcn registry).",
+  "homeUrl": "https://canvasui.dev",
+  "docsUrl": "https://canvasui.dev/docs",
+  "repoUrl": "https://github.com/DavidHDev/canvas-ui",
+  "license": "MIT + Commons Clause",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @canvas-ui/{name}-react",
+    "registryUrl": "https://canvasui.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://canvasui.dev/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 35 React WebGL builds \u2014 not full inventory; WebGPU (-webgpu) and non-React flavors not ingested.",
+    "License is MIT + Commons Clause \u2014 free personal/commercial use in apps; reselling/redistributing components as a library restricted (LICENSE.md).",
+    "html-in-canvas API is experimental (Chrome flag / origin trial); components degrade gracefully without it.",
+    "Install uses namespaced @canvas-ui registry (https://canvasui.dev/r/{name}.json) or full URL.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:46:00-04:00",
+  "components": [
+    {
+      "id": "canvas-ui-particle-reveal",
+      "libraryId": "canvas-ui",
+      "slug": "particle-reveal",
+      "name": "Particle Reveal",
+      "aliases": [
+        "particle reveal",
+        "html particles"
+      ],
+      "summary": "Live HTML as fine particles that merge into crisp UI around the cursor.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "particles",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/particle-reveal-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/particle-reveal",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/particle-reveal-react\n# or: npx shadcn@latest add https://canvasui.dev/r/particle-reveal-react.json\n\nimport { ParticleReveal } from \"@/components/canvasui/ParticleReveal\";\n\n<ParticleReveal>\n  <YourContent />\n</ParticleReveal>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Particle Reveal` (React WebGL build, registry `particle-reveal-react`) from https://canvasui.dev/docs/components/particle-reveal. Install with `npx shadcn@latest add @canvas-ui/particle-reveal-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/particle-reveal-react.json`. Registry item: https://canvasui.dev/r/particle-reveal-react.json. Import from `@/components/canvasui/ParticleReveal`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/particle-reveal-react",
+        "registryUrl": "https://canvasui.dev/r/particle-reveal-react.json",
+        "registryItem": "particle-reveal-react"
+      }
+    },
+    {
+      "id": "canvas-ui-liquid",
+      "libraryId": "canvas-ui",
+      "slug": "liquid",
+      "name": "Liquid",
+      "aliases": [
+        "fluid simulation",
+        "gpu liquid"
+      ],
+      "summary": "Pointer-driven GPU fluid simulation over live HTML.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "gooey",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/liquid-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/liquid",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/liquid-react\n# or: npx shadcn@latest add https://canvasui.dev/r/liquid-react.json\n\nimport { Liquid } from \"@/components/canvasui/Liquid\";\n\n<Liquid>\n  <YourContent />\n</Liquid>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Liquid` (React WebGL build, registry `liquid-react`) from https://canvasui.dev/docs/components/liquid. Install with `npx shadcn@latest add @canvas-ui/liquid-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/liquid-react.json`. Registry item: https://canvasui.dev/r/liquid-react.json. Import from `@/components/canvasui/Liquid`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/liquid-react",
+        "registryUrl": "https://canvasui.dev/r/liquid-react.json",
+        "registryItem": "liquid-react"
+      }
+    },
+    {
+      "id": "canvas-ui-glass",
+      "libraryId": "canvas-ui",
+      "slug": "glass",
+      "name": "Glass",
+      "aliases": [
+        "glass lens",
+        "refraction lens"
+      ],
+      "summary": "Cursor-following glass lens that refracts live HTML.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "glass",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/glass-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/glass",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/glass-react\n# or: npx shadcn@latest add https://canvasui.dev/r/glass-react.json\n\nimport { Glass } from \"@/components/canvasui/Glass\";\n\n<Glass>\n  <YourContent />\n</Glass>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Glass` (React WebGL build, registry `glass-react`) from https://canvasui.dev/docs/components/glass. Install with `npx shadcn@latest add @canvas-ui/glass-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/glass-react.json`. Registry item: https://canvasui.dev/r/glass-react.json. Import from `@/components/canvasui/Glass`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/glass-react",
+        "registryUrl": "https://canvasui.dev/r/glass-react.json",
+        "registryItem": "glass-react"
+      }
+    },
+    {
+      "id": "canvas-ui-shatter",
+      "libraryId": "canvas-ui",
+      "slug": "shatter",
+      "name": "Shatter",
+      "aliases": [
+        "glass shards",
+        "3d shatter"
+      ],
+      "summary": "Breaks live HTML into 3D glass shards around the cursor.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "3d",
+        "glass",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/shatter-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/shatter",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/shatter-react\n# or: npx shadcn@latest add https://canvasui.dev/r/shatter-react.json\n\nimport { Shatter } from \"@/components/canvasui/Shatter\";\n\n<Shatter>\n  <YourContent />\n</Shatter>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Shatter` (React WebGL build, registry `shatter-react`) from https://canvasui.dev/docs/components/shatter. Install with `npx shadcn@latest add @canvas-ui/shatter-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/shatter-react.json`. Registry item: https://canvasui.dev/r/shatter-react.json. Import from `@/components/canvasui/Shatter`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/shatter-react",
+        "registryUrl": "https://canvasui.dev/r/shatter-react.json",
+        "registryItem": "shatter-react"
+      }
+    },
+    {
+      "id": "canvas-ui-blaze",
+      "libraryId": "canvas-ui",
+      "slug": "blaze",
+      "name": "Blaze",
+      "aliases": [
+        "fire sparks",
+        "heat distortion"
+      ],
+      "summary": "Fire sparks, smoke, and heat distortion over live HTML.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "glow",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/blaze-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/blaze",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/blaze-react\n# or: npx shadcn@latest add https://canvasui.dev/r/blaze-react.json\n\nimport { Blaze } from \"@/components/canvasui/Blaze\";\n\n<Blaze>\n  <YourContent />\n</Blaze>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Blaze` (React WebGL build, registry `blaze-react`) from https://canvasui.dev/docs/components/blaze. Install with `npx shadcn@latest add @canvas-ui/blaze-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/blaze-react.json`. Registry item: https://canvasui.dev/r/blaze-react.json. Import from `@/components/canvasui/Blaze`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/blaze-react",
+        "registryUrl": "https://canvasui.dev/r/blaze-react.json",
+        "registryItem": "blaze-react"
+      }
+    },
+    {
+      "id": "canvas-ui-vhs",
+      "libraryId": "canvas-ui",
+      "slug": "vhs",
+      "name": "VHS",
+      "aliases": [
+        "vhs tape",
+        "chroma bleed"
+      ],
+      "summary": "Worn tape playback with wave, head-switching noise, and grain.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/vhs-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/vhs",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/vhs-react\n# or: npx shadcn@latest add https://canvasui.dev/r/vhs-react.json\n\nimport { Vhs } from \"@/components/canvasui/Vhs\";\n\n<Vhs>\n  <YourContent />\n</Vhs>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `VHS` (React WebGL build, registry `vhs-react`) from https://canvasui.dev/docs/components/vhs. Install with `npx shadcn@latest add @canvas-ui/vhs-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/vhs-react.json`. Registry item: https://canvasui.dev/r/vhs-react.json. Import from `@/components/canvasui/Vhs`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/vhs-react",
+        "registryUrl": "https://canvasui.dev/r/vhs-react.json",
+        "registryItem": "vhs-react"
+      }
+    },
+    {
+      "id": "canvas-ui-frost",
+      "libraryId": "canvas-ui",
+      "slug": "frost",
+      "name": "Frost",
+      "aliases": [
+        "ice melt",
+        "frozen pane"
+      ],
+      "summary": "Frozen ice pane that melts under the cursor and refreezes.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "blur",
+        "glass",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/frost-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/frost",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/frost-react\n# or: npx shadcn@latest add https://canvasui.dev/r/frost-react.json\n\nimport { Frost } from \"@/components/canvasui/Frost\";\n\n<Frost>\n  <YourContent />\n</Frost>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Frost` (React WebGL build, registry `frost-react`) from https://canvasui.dev/docs/components/frost. Install with `npx shadcn@latest add @canvas-ui/frost-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/frost-react.json`. Registry item: https://canvasui.dev/r/frost-react.json. Import from `@/components/canvasui/Frost`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/frost-react",
+        "registryUrl": "https://canvasui.dev/r/frost-react.json",
+        "registryItem": "frost-react"
+      }
+    },
+    {
+      "id": "canvas-ui-ripple",
+      "libraryId": "canvas-ui",
+      "slug": "ripple",
+      "name": "Ripple",
+      "aliases": [
+        "water ripples",
+        "click ripples"
+      ],
+      "summary": "Water ripples from clicks that refract live HTML.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/ripple-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/ripple",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/ripple-react\n# or: npx shadcn@latest add https://canvasui.dev/r/ripple-react.json\n\nimport { Ripple } from \"@/components/canvasui/Ripple\";\n\n<Ripple>\n  <YourContent />\n</Ripple>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Ripple` (React WebGL build, registry `ripple-react`) from https://canvasui.dev/docs/components/ripple. Install with `npx shadcn@latest add @canvas-ui/ripple-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/ripple-react.json`. Registry item: https://canvasui.dev/r/ripple-react.json. Import from `@/components/canvasui/Ripple`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/ripple-react",
+        "registryUrl": "https://canvasui.dev/r/ripple-react.json",
+        "registryItem": "ripple-react"
+      }
+    },
+    {
+      "id": "canvas-ui-laser",
+      "libraryId": "canvas-ui",
+      "slug": "laser",
+      "name": "Laser",
+      "aliases": [
+        "scroll laser reveal"
+      ],
+      "summary": "Laser beam that reveals live HTML from behind it on scroll.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "beam",
+        "scroll",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/laser-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/laser",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/laser-react\n# or: npx shadcn@latest add https://canvasui.dev/r/laser-react.json\n\nimport { Laser } from \"@/components/canvasui/Laser\";\n\n<Laser>\n  <YourContent />\n</Laser>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Laser` (React WebGL build, registry `laser-react`) from https://canvasui.dev/docs/components/laser. Install with `npx shadcn@latest add @canvas-ui/laser-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/laser-react.json`. Registry item: https://canvasui.dev/r/laser-react.json. Import from `@/components/canvasui/Laser`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/laser-react",
+        "registryUrl": "https://canvasui.dev/r/laser-react.json",
+        "registryItem": "laser-react"
+      }
+    },
+    {
+      "id": "canvas-ui-clouds",
+      "libraryId": "canvas-ui",
+      "slug": "clouds",
+      "name": "Clouds",
+      "aliases": [
+        "mist clouds",
+        "cursor wind"
+      ],
+      "summary": "Theme-aware mist that blurs and refracts HTML, parted by cursor wind.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "blur",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/clouds-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/clouds",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/clouds-react\n# or: npx shadcn@latest add https://canvasui.dev/r/clouds-react.json\n\nimport { Clouds } from \"@/components/canvasui/Clouds\";\n\n<Clouds>\n  <YourContent />\n</Clouds>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Clouds` (React WebGL build, registry `clouds-react`) from https://canvasui.dev/docs/components/clouds. Install with `npx shadcn@latest add @canvas-ui/clouds-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/clouds-react.json`. Registry item: https://canvasui.dev/r/clouds-react.json. Import from `@/components/canvasui/Clouds`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/clouds-react",
+        "registryUrl": "https://canvasui.dev/r/clouds-react.json",
+        "registryItem": "clouds-react"
+      }
+    },
+    {
+      "id": "canvas-ui-bubble",
+      "libraryId": "canvas-ui",
+      "slug": "bubble",
+      "name": "Bubble",
+      "aliases": [
+        "metaball droplet",
+        "glass bubble"
+      ],
+      "summary": "Glassy droplet trailing the cursor as blending metaballs.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "glass",
+        "gooey",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/bubble-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/bubble",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/bubble-react\n# or: npx shadcn@latest add https://canvasui.dev/r/bubble-react.json\n\nimport { Bubble } from \"@/components/canvasui/Bubble\";\n\n<Bubble>\n  <YourContent />\n</Bubble>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Bubble` (React WebGL build, registry `bubble-react`) from https://canvasui.dev/docs/components/bubble. Install with `npx shadcn@latest add @canvas-ui/bubble-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/bubble-react.json`. Registry item: https://canvasui.dev/r/bubble-react.json. Import from `@/components/canvasui/Bubble`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/bubble-react",
+        "registryUrl": "https://canvasui.dev/r/bubble-react.json",
+        "registryItem": "bubble-react"
+      }
+    },
+    {
+      "id": "canvas-ui-decrypt-reveal",
+      "libraryId": "canvas-ui",
+      "slug": "decrypt-reveal",
+      "name": "Decrypt Reveal",
+      "aliases": [
+        "ascii decrypt",
+        "cipher reveal"
+      ],
+      "summary": "Live HTML as ASCII cipher that decrypts around the cursor.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text",
+        "background"
+      ],
+      "effectType": [
+        "text-scramble",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@canvas-ui/decrypt-reveal-react",
+        "iframeSrc": "https://canvasui.dev/docs/components/decrypt-reveal",
+        "aspectRatio": "16/9",
+        "peerNotes": "React 19 recommended; html-in-canvas may need Chrome flag/origin trial \u2014 graceful HTML fallback elsewhere"
+      },
+      "copyCode": "npx shadcn@latest add @canvas-ui/decrypt-reveal-react\n# or: npx shadcn@latest add https://canvasui.dev/r/decrypt-reveal-react.json\n\nimport { DecryptReveal } from \"@/components/canvasui/DecryptReveal\";\n\n<DecryptReveal>\n  <YourContent />\n</DecryptReveal>",
+      "copyPrompt": {
+        "text": "Use Canvas UI free component `Decrypt Reveal` (React WebGL build, registry `decrypt-reveal-react`) from https://canvasui.dev/docs/components/decrypt-reveal. Install with `npx shadcn@latest add @canvas-ui/decrypt-reveal-react` after configuring `\"registries\": {\"@canvas-ui\": \"https://canvasui.dev/r/{name}.json\"}` in components.json, or `npx shadcn@latest add https://canvasui.dev/r/decrypt-reveal-react.json`. Registry item: https://canvasui.dev/r/decrypt-reveal-react.json. Import from `@/components/canvasui/DecryptReveal`. Some effects need Chrome html-in-canvas (flag/origin trial); others degrade to HTML + GPU overlay. License: MIT + Commons Clause (https://raw.githubusercontent.com/DavidHDev/canvas-ui/main/LICENSE.md; Copyright (c) 2026 David Haz) \u2014 free in apps; no reselling components as a library. Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @canvas-ui/decrypt-reveal-react",
+        "registryUrl": "https://canvasui.dev/r/decrypt-reveal-react.json",
+        "registryItem": "decrypt-reveal-react"
+      }
+    }
+  ]
+}

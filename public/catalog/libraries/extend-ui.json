@@ -1,0 +1,586 @@
+{
+  "id": "extend-ui",
+  "name": "Extend UI",
+  "aliases": [
+    "extend.ai/ui",
+    "extend-hq/ui",
+    "@extend",
+    "Extend document UI"
+  ],
+  "summary": "Open-source React document UI kit: PDF/DOCX/XLSX viewers, citations, file system, e-sign.",
+  "homeUrl": "https://www.extend.ai/ui",
+  "docsUrl": "https://www.extend.ai/ui/docs",
+  "repoUrl": "https://github.com/extend-hq/ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @extend/{name}",
+    "registryUrl": "https://www.extend.ai/ui/r/styles/{style}/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.extend.ai/ui/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 800
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 14+ document-specific registry items (plus many shared shadcn primitives in the same registry \u2014 excluded).",
+    "csv-viewer registry item; docs route is /docs/components/csv-tsv-viewer.",
+    "Heavy PDF deps (EmbedPDF / pdfjs) \u2014 peer budget higher than typical UI kits.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:55:00-04:00",
+  "components": [
+    {
+      "id": "extend-ui-pdf-viewer",
+      "libraryId": "extend-ui",
+      "slug": "pdf-viewer",
+      "name": "PDF Viewer",
+      "aliases": [
+        "extend pdf viewer",
+        "pdf viewer"
+      ],
+      "summary": "React PDF viewer with zoom, search, thumbnails, and text selection (EmbedPDF).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/pdf-viewer",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/pdf-viewer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/pdf-viewer\n\nimport { PDFViewer } from \"@/components/extend/pdf-viewer\"\n\n<PDFViewer />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `PDF Viewer` (slug `pdf-viewer`) from https://www.extend.ai/ui/docs/components/pdf-viewer. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/pdf-viewer`. Legacy item URL: https://www.extend.ai/ui/r/pdf-viewer.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/pdf-viewer",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/pdf-viewer.json",
+        "registryItem": "pdf-viewer"
+      }
+    },
+    {
+      "id": "extend-ui-pdf-editor",
+      "libraryId": "extend-ui",
+      "slug": "pdf-editor",
+      "name": "PDF Editor",
+      "aliases": [
+        "extend pdf editor"
+      ],
+      "summary": "Full PDF editor: annotations, redaction, forms, signatures, stamps.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/pdf-editor",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/pdf-editor",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/pdf-editor\n\nimport { PDFEditor } from \"@/components/extend/pdf-editor\"\n\n<PDFEditor />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `PDF Editor` (slug `pdf-editor`) from https://www.extend.ai/ui/docs/components/pdf-editor. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/pdf-editor`. Legacy item URL: https://www.extend.ai/ui/r/pdf-editor.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/pdf-editor",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/pdf-editor.json",
+        "registryItem": "pdf-editor"
+      }
+    },
+    {
+      "id": "extend-ui-docx-viewer",
+      "libraryId": "extend-ui",
+      "slug": "docx-viewer",
+      "name": "DOCX Viewer",
+      "aliases": [
+        "extend docx viewer",
+        "word viewer"
+      ],
+      "summary": "React DOCX viewer for Word documents in document workflows.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/docx-viewer",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/docx-viewer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/docx-viewer\n\nimport { DOCXViewer } from \"@/components/extend/docx-viewer\"\n\n<DOCXViewer />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `DOCX Viewer` (slug `docx-viewer`) from https://www.extend.ai/ui/docs/components/docx-viewer. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/docx-viewer`. Legacy item URL: https://www.extend.ai/ui/r/docx-viewer.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/docx-viewer",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/docx-viewer.json",
+        "registryItem": "docx-viewer"
+      }
+    },
+    {
+      "id": "extend-ui-xlsx-viewer",
+      "libraryId": "extend-ui",
+      "slug": "xlsx-viewer",
+      "name": "Excel Viewer",
+      "aliases": [
+        "extend xlsx viewer",
+        "spreadsheet viewer"
+      ],
+      "summary": "React Excel/XLSX sheet viewer for document products.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "chart"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/xlsx-viewer",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/xlsx-viewer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/xlsx-viewer\n\nimport { XLSXViewer } from \"@/components/extend/xlsx-viewer\"\n\n<XLSXViewer />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `Excel Viewer` (slug `xlsx-viewer`) from https://www.extend.ai/ui/docs/components/xlsx-viewer. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/xlsx-viewer`. Legacy item URL: https://www.extend.ai/ui/r/xlsx-viewer.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/xlsx-viewer",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/xlsx-viewer.json",
+        "registryItem": "xlsx-viewer"
+      }
+    },
+    {
+      "id": "extend-ui-csv-viewer",
+      "libraryId": "extend-ui",
+      "slug": "csv-viewer",
+      "name": "CSV Viewer",
+      "aliases": [
+        "extend csv viewer",
+        "tsv viewer",
+        "csv-tsv-viewer"
+      ],
+      "summary": "CSV/TSV tabular viewer for extracted document data.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "chart"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/csv-viewer",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/csv-tsv-viewer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/csv-viewer\n\nimport { CSVViewer } from \"@/components/extend/csv-viewer\"\n\n<CSVViewer />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `CSV Viewer` (slug `csv-viewer`) from https://www.extend.ai/ui/docs/components/csv-tsv-viewer. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/csv-viewer`. Legacy item URL: https://www.extend.ai/ui/r/csv-viewer.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/csv-viewer",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/csv-viewer.json",
+        "registryItem": "csv-viewer"
+      }
+    },
+    {
+      "id": "extend-ui-pptx-viewer",
+      "libraryId": "extend-ui",
+      "slug": "pptx-viewer",
+      "name": "PowerPoint Viewer",
+      "aliases": [
+        "extend pptx viewer"
+      ],
+      "summary": "PowerPoint (.pptx) viewer for document packets.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/pptx-viewer",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/pptx-viewer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/pptx-viewer\n\nimport { PPTXViewer } from \"@/components/extend/pptx-viewer\"\n\n<PPTXViewer />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `PowerPoint Viewer` (slug `pptx-viewer`) from https://www.extend.ai/ui/docs/components/pptx-viewer. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/pptx-viewer`. Legacy item URL: https://www.extend.ai/ui/r/pptx-viewer.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/pptx-viewer",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/pptx-viewer.json",
+        "registryItem": "pptx-viewer"
+      }
+    },
+    {
+      "id": "extend-ui-file-upload",
+      "libraryId": "extend-ui",
+      "slug": "file-upload",
+      "name": "File Upload",
+      "aliases": [
+        "extend file upload",
+        "document upload"
+      ],
+      "summary": "File upload dropzone for document intake flows.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/file-upload",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/file-upload",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/file-upload\n\nimport { FileUpload } from \"@/components/extend/file-upload\"\n\n<FileUpload />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `File Upload` (slug `file-upload`) from https://www.extend.ai/ui/docs/components/file-upload. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/file-upload`. Legacy item URL: https://www.extend.ai/ui/r/file-upload.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/file-upload",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/file-upload.json",
+        "registryItem": "file-upload"
+      }
+    },
+    {
+      "id": "extend-ui-file-thumbnail",
+      "libraryId": "extend-ui",
+      "slug": "file-thumbnail",
+      "name": "File Thumbnail",
+      "aliases": [
+        "extend file thumbnail"
+      ],
+      "summary": "Document thumbnail preview tile without embedding renderers.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/file-thumbnail",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/file-thumbnail",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/file-thumbnail\n\nimport { FileThumbnail } from \"@/components/extend/file-thumbnail\"\n\n<FileThumbnail />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `File Thumbnail` (slug `file-thumbnail`) from https://www.extend.ai/ui/docs/components/file-thumbnail. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/file-thumbnail`. Legacy item URL: https://www.extend.ai/ui/r/file-thumbnail.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/file-thumbnail",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/file-thumbnail.json",
+        "registryItem": "file-thumbnail"
+      }
+    },
+    {
+      "id": "extend-ui-file-system",
+      "libraryId": "extend-ui",
+      "slug": "file-system",
+      "name": "File System",
+      "aliases": [
+        "extend file system",
+        "finder",
+        "document browser"
+      ],
+      "summary": "macOS Finder-style browser for object-store file manifests.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "layout",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/file-system",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/file-system",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/file-system\n\nimport { FileSystem } from \"@/components/extend/file-system\"\n\n<FileSystem />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `File System` (slug `file-system`) from https://www.extend.ai/ui/docs/components/file-system. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/file-system`. Legacy item URL: https://www.extend.ai/ui/r/file-system.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/file-system",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/file-system.json",
+        "registryItem": "file-system"
+      }
+    },
+    {
+      "id": "extend-ui-e-signature",
+      "libraryId": "extend-ui",
+      "slug": "e-signature",
+      "name": "E-Signature",
+      "aliases": [
+        "extend e-signature",
+        "esign"
+      ],
+      "summary": "E-signature fields and signing surface for document completion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/e-signature",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/e-signature",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/e-signature\n\nimport { ESignature } from \"@/components/extend/e-signature\"\n\n<ESignature />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `E-Signature` (slug `e-signature`) from https://www.extend.ai/ui/docs/components/e-signature. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/e-signature`. Legacy item URL: https://www.extend.ai/ui/r/e-signature.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/e-signature",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/e-signature.json",
+        "registryItem": "e-signature"
+      }
+    },
+    {
+      "id": "extend-ui-layout-blocks",
+      "libraryId": "extend-ui",
+      "slug": "layout-blocks",
+      "name": "Layout Blocks",
+      "aliases": [
+        "extend layout blocks",
+        "ocr blocks"
+      ],
+      "summary": "OCR/layout block inspector with confidence and PDF overlays.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "layout",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/layout-blocks",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/layout-blocks",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/layout-blocks\n\nimport { LayoutBlocks } from \"@/components/extend/layout-blocks\"\n\n<LayoutBlocks />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `Layout Blocks` (slug `layout-blocks`) from https://www.extend.ai/ui/docs/components/layout-blocks. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/layout-blocks`. Legacy item URL: https://www.extend.ai/ui/r/layout-blocks.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/layout-blocks",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/layout-blocks.json",
+        "registryItem": "layout-blocks"
+      }
+    },
+    {
+      "id": "extend-ui-bounding-box-citations",
+      "libraryId": "extend-ui",
+      "slug": "bounding-box-citations",
+      "name": "Bounding Box Citations",
+      "aliases": [
+        "extend citations",
+        "human review",
+        "bbox citations"
+      ],
+      "summary": "Field-level citation review with bbox overlays on source PDFs.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@extend/bounding-box-citations",
+        "iframeSrc": "https://www.extend.ai/ui/docs/components/bounding-box-citations",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn primitives in project; style-aware registry selects Base UI or Radix"
+      },
+      "copyCode": "# components.json registries:\n# \"@extend\": \"https://www.extend.ai/ui/r/styles/{style}/{name}.json\"\nnpx shadcn@latest add @extend/bounding-box-citations\n\nimport { BoundingBoxCitations } from \"@/components/extend/bounding-box-citations\"\n\n<BoundingBoxCitations />",
+      "copyPrompt": {
+        "text": "Use Extend UI free MIT React component `Bounding Box Citations` (slug `bounding-box-citations`) from https://www.extend.ai/ui/docs/components/bounding-box-citations. Configure shadcn registry `@extend` \u2192 `https://www.extend.ai/ui/r/styles/{style}/{name}.json`, then install with `npx shadcn@latest add @extend/bounding-box-citations`. Legacy item URL: https://www.extend.ai/ui/r/bounding-box-citations.json. Registry index: https://www.extend.ai/ui/r/registry.json. Home/docs: https://www.extend.ai/ui / https://www.extend.ai/ui/docs. Repo: https://github.com/extend-hq/ui. License: MIT (https://raw.githubusercontent.com/extend-hq/ui/main/LICENSE.md; Copyright (c) 2026 CrowdView Inc, dba Extend; portions Copyright (c) 2023 shadcn). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @extend/bounding-box-citations",
+        "registryUrl": "https://www.extend.ai/ui/r/styles/new-york-v4/bounding-box-citations.json",
+        "registryItem": "bounding-box-citations"
+      }
+    }
+  ]
+}

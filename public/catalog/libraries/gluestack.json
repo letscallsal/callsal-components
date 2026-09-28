@@ -1,0 +1,544 @@
+{
+  "id": "gluestack",
+  "name": "gluestack-ui",
+  "aliases": [
+    "gluestack",
+    "gluestack-ui",
+    "GeekyAnts gluestack",
+    "@gluestack-ui/core"
+  ],
+  "summary": "Universal copy-paste UI for React and React Native with NativeWind/Tailwind.",
+  "homeUrl": "https://gluestack.io",
+  "docsUrl": "https://gluestack.io/ui/docs/home/overview/introduction",
+  "repoUrl": "https://github.com/gluestack/gluestack-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "react-native"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx gluestack-ui@latest add {name}"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://gluestack.io/ui/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-native",
+      "nativewind",
+      "tailwindcss"
+    ],
+    "budgetKb": 800
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 40+ documented components from the public sitemap.",
+    "gluestack-ui v5 (`npx gluestack-ui@latest`) targets Expo/React Native; Next.js web support is not current on v5 — use v4 docs for Next until NativeWind v5 web lands.",
+    "LICENSE file lives at packages/gluestack-ui/LICENSE (root LICENSE 404); npm @gluestack-ui/core also MIT.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:50:00-04:00",
+  "components": [
+    {
+      "id": "gluestack-button",
+      "libraryId": "gluestack",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "gluestack button"
+      ],
+      "summary": "Accessible pressable button with text, icon, spinner, and group.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/button",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add button\n\nimport { Button, ButtonText } from \"@/components/ui/button\"\n\n<Button />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Button` (slug `button`) from https://gluestack.io/ui/docs/components/button. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add button` (copies into `@/components/ui/button`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add button"
+      }
+    },
+    {
+      "id": "gluestack-input",
+      "libraryId": "gluestack",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "gluestack input"
+      ],
+      "summary": "Text input field with icons and accessories for forms.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/input",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add input\n\nimport { Input, InputField } from \"@/components/ui/input\"\n\n<Input />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Input` (slug `input`) from https://gluestack.io/ui/docs/components/input. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add input` (copies into `@/components/ui/input`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add input"
+      }
+    },
+    {
+      "id": "gluestack-checkbox",
+      "libraryId": "gluestack",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "gluestack checkbox"
+      ],
+      "summary": "Accessible checkbox with label and indicator.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/checkbox",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add checkbox\n\nimport { Checkbox, CheckboxIndicator, CheckboxLabel } from \"@/components/ui/checkbox\"\n\n<Checkbox />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Checkbox` (slug `checkbox`) from https://gluestack.io/ui/docs/components/checkbox. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add checkbox` (copies into `@/components/ui/checkbox`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add checkbox"
+      }
+    },
+    {
+      "id": "gluestack-switch",
+      "libraryId": "gluestack",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "gluestack switch"
+      ],
+      "summary": "Toggle switch for binary settings.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/switch",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add switch\n\nimport { Switch } from \"@/components/ui/switch\"\n\n<Switch />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Switch` (slug `switch`) from https://gluestack.io/ui/docs/components/switch. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add switch` (copies into `@/components/ui/switch`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add switch"
+      }
+    },
+    {
+      "id": "gluestack-select",
+      "libraryId": "gluestack",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "gluestack select"
+      ],
+      "summary": "Select trigger with portal list of options.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/select",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add select\n\nimport { Select, SelectTrigger, SelectInput } from \"@/components/ui/select\"\n\n<Select />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Select` (slug `select`) from https://gluestack.io/ui/docs/components/select. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add select` (copies into `@/components/ui/select`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add select"
+      }
+    },
+    {
+      "id": "gluestack-card",
+      "libraryId": "gluestack",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "gluestack card"
+      ],
+      "summary": "Surface card for grouping content.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/card",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add card\n\nimport { Card } from \"@/components/ui/card\"\n\n<Card />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Card` (slug `card`) from https://gluestack.io/ui/docs/components/card. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add card` (copies into `@/components/ui/card`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add card"
+      }
+    },
+    {
+      "id": "gluestack-modal",
+      "libraryId": "gluestack",
+      "slug": "modal",
+      "name": "Modal",
+      "aliases": [
+        "gluestack modal"
+      ],
+      "summary": "Centered modal overlay with backdrop.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/modal",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add modal\n\nimport { Modal, ModalBackdrop, ModalContent } from \"@/components/ui/modal\"\n\n<Modal />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Modal` (slug `modal`) from https://gluestack.io/ui/docs/components/modal. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add modal` (copies into `@/components/ui/modal`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add modal"
+      }
+    },
+    {
+      "id": "gluestack-toast",
+      "libraryId": "gluestack",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "gluestack toast"
+      ],
+      "summary": "Transient toast notifications.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/toast",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add toast\n\nimport { Toast, ToastTitle, useToast } from \"@/components/ui/toast\"\n\n<Toast />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Toast` (slug `toast`) from https://gluestack.io/ui/docs/components/toast. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add toast` (copies into `@/components/ui/toast`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add toast"
+      }
+    },
+    {
+      "id": "gluestack-avatar",
+      "libraryId": "gluestack",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "gluestack avatar"
+      ],
+      "summary": "User avatar with image and fallback.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/avatar",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add avatar\n\nimport { Avatar, AvatarImage, AvatarFallbackText } from \"@/components/ui/avatar\"\n\n<Avatar />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Avatar` (slug `avatar`) from https://gluestack.io/ui/docs/components/avatar. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add avatar` (copies into `@/components/ui/avatar`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add avatar"
+      }
+    },
+    {
+      "id": "gluestack-badge",
+      "libraryId": "gluestack",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "gluestack badge"
+      ],
+      "summary": "Compact status badge.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/badge",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add badge\n\nimport { Badge, BadgeText } from \"@/components/ui/badge\"\n\n<Badge />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Badge` (slug `badge`) from https://gluestack.io/ui/docs/components/badge. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add badge` (copies into `@/components/ui/badge`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add badge"
+      }
+    },
+    {
+      "id": "gluestack-accordion",
+      "libraryId": "gluestack",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "gluestack accordion"
+      ],
+      "summary": "Expandable disclosure sections.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "section",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/accordion",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add accordion\n\nimport { Accordion, AccordionItem, AccordionTrigger } from \"@/components/ui/accordion\"\n\n<Accordion />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Accordion` (slug `accordion`) from https://gluestack.io/ui/docs/components/accordion. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add accordion` (copies into `@/components/ui/accordion`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add accordion"
+      }
+    },
+    {
+      "id": "gluestack-tooltip",
+      "libraryId": "gluestack",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "gluestack tooltip"
+      ],
+      "summary": "Hover/focus tooltip overlay.",
+      "frameworks": [
+        "react",
+        "react-native"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/tooltip",
+        "iframeSrc": "https://gluestack.io/ui/docs/components/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "CLI copies into @/components/ui; GluestackUIProvider required after `npx gluestack-ui@latest init`. v5 targets Expo/RN; Next.js → v4 docs."
+      },
+      "copyCode": "npx gluestack-ui@latest init\nnpx gluestack-ui@latest add tooltip\n\nimport { Tooltip, TooltipContent, TooltipText } from \"@/components/ui/tooltip\"\n\n<Tooltip />",
+      "copyPrompt": {
+        "text": "Use gluestack-ui free MIT React/React Native component `Tooltip` (slug `tooltip`) from https://gluestack.io/ui/docs/components/tooltip. Initialize with `npx gluestack-ui@latest init`, then `npx gluestack-ui@latest add tooltip` (copies into `@/components/ui/tooltip`). Docs: https://gluestack.io/ui/docs/home/getting-started/installation. Home: https://gluestack.io. Repo: https://github.com/gluestack/gluestack-ui. License: MIT (https://raw.githubusercontent.com/gluestack/gluestack-ui/main/packages/gluestack-ui/LICENSE; Copyright (c) 2023 mayank-96). Pricing free. Note: v5 focuses on Expo/React Native; Next.js projects should use gluestack-ui v4 docs until NativeWind v5 web lands.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx gluestack-ui@latest add tooltip"
+      }
+    }
+  ]
+}

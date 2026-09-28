@@ -1,0 +1,610 @@
+{
+  "id": "rare-ui",
+  "name": "Rare UI",
+  "aliases": [
+    "RareUI",
+    "rareui.com",
+    "swamimalode07/rare-ui"
+  ],
+  "summary": "Free shadcn registry of rare animated React pieces; MIT + Commons Clause + Attribution.",
+  "homeUrl": "https://rareui.com",
+  "docsUrl": "https://rareui.com/components",
+  "repoUrl": "https://github.com/swamimalode07/rare-ui",
+  "license": "MIT + Commons Clause + Attribution",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add swamimalode07/rare-ui/{name}",
+    "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "static-preview",
+    "iframeSrcTemplate": "https://rareui.com/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "motion"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 22 registry:ui items — not a full inventory.",
+    "License is MIT + Commons Clause + Attribution (not plain MIT); attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves.",
+    "rareui.com returns Vercel Security Checkpoint 403 even to Playwright Chrome from this network — demos use official gallery preview MP4s via jsDelivr (static-preview); docs URLs remain rareui.com/components/{path} in copyPrompt.",
+    "Registry JSON verified HTTP 200 via jsDelivr GitHub mirror (public/r/{slug}.json); rareui.com/r/{slug}.json also 403 to bots. Install still uses official `npx shadcn@latest add swamimalode07/rare-ui/{name}`.",
+    "family-drawer exists in registry.json but is commented out of the gallery list — excluded this packet.",
+    "No dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:35:00-04:00",
+  "components": [
+    {
+      "id": "rare-ui-fluid-orb",
+      "libraryId": "rare-ui",
+      "slug": "fluid-orb",
+      "name": "Fluid Orb",
+      "aliases": [
+        "webgl fluid orb",
+        "rare fluid orb"
+      ],
+      "summary": "Animated WebGL orb with drifting fluid shading.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/fluid-orb",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/fluidorb.mp4",
+        "iframeSrc": "https://rareui.com/components/fluidorb",
+        "aspectRatio": "16/9",
+        "peerNotes": "static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/fluid-orb\n\nimport FluidOrb from \"@/components/ui/fluid-orb\"\n\n<FluidOrb size={280} color=\"#F75001\" />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Fluid Orb` (slug `fluid-orb`) from https://rareui.com/components/fluidorb. Install with `npx shadcn@latest add swamimalode07/rare-ui/fluid-orb` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/fluid-orb.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/fluid-orb`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/fluid-orb",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/fluid-orb.json",
+        "registryItem": "fluid-orb"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-matrix-orb",
+      "libraryId": "rare-ui",
+      "slug": "matrix-orb",
+      "name": "Matrix Orb",
+      "aliases": [
+        "dot matrix orb",
+        "ai matrix orb"
+      ],
+      "summary": "Dot-matrix orb that animates idle, listening, and thinking states.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "orb"
+      ],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/matrix-orb",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/matrixorb.mp4",
+        "iframeSrc": "https://rareui.com/components/matrixorb",
+        "aspectRatio": "16/9",
+        "peerNotes": "static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/matrix-orb\n\nimport MatrixOrb from \"@/components/ui/matrix-orb\"\n\n<MatrixOrb state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Matrix Orb` (slug `matrix-orb`) from https://rareui.com/components/matrixorb. Install with `npx shadcn@latest add swamimalode07/rare-ui/matrix-orb` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/matrix-orb.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/matrix-orb`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/matrix-orb",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/matrix-orb.json",
+        "registryItem": "matrix-orb"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-gooey-nav",
+      "libraryId": "rare-ui",
+      "slug": "gooey-nav",
+      "name": "Gooey Nav",
+      "aliases": [
+        "gooey navbar",
+        "gooey navigation"
+      ],
+      "summary": "Gooey navigation bar that separates the selected item from the group.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [
+        "gooey"
+      ],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/gooey-nav",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/gooeynav.mp4",
+        "iframeSrc": "https://rareui.com/components/gooeynav",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion; static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/gooey-nav\n\nimport { GooeyNav } from \"@/components/ui/gooey-nav\"\n\n<GooeyNav items={[{ label: \"Home\", href: \"/\" }]} />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Gooey Nav` (slug `gooey-nav`) from https://rareui.com/components/gooeynav. Install with `npx shadcn@latest add swamimalode07/rare-ui/gooey-nav` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/gooey-nav.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/gooey-nav`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/gooey-nav",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/gooey-nav.json",
+        "registryItem": "gooey-nav"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-gravity-letters",
+      "libraryId": "rare-ui",
+      "slug": "gravity-letters",
+      "name": "Gravity Letters",
+      "aliases": [
+        "falling letters",
+        "physics letters"
+      ],
+      "summary": "Playful gravity field where letters or glyphs fall and pile up.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/gravity-letters",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/gravityletters.mp4",
+        "iframeSrc": "https://rareui.com/components/gravityletters",
+        "aspectRatio": "16/9",
+        "peerNotes": "static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/gravity-letters\n\nimport GravityLetters from \"@/components/ui/gravity-letters\"\n\n<GravityLetters type=\"letters\" className=\"h-96 w-full\" />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Gravity Letters` (slug `gravity-letters`) from https://rareui.com/components/gravityletters. Install with `npx shadcn@latest add swamimalode07/rare-ui/gravity-letters` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/gravity-letters.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/gravity-letters`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/gravity-letters",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/gravity-letters.json",
+        "registryItem": "gravity-letters"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-folder-component",
+      "libraryId": "rare-ui",
+      "slug": "folder-component",
+      "name": "Folder Component",
+      "aliases": [
+        "animated folder",
+        "folder cards"
+      ],
+      "summary": "Animated folder whose cards fan out on hover and lift open on click.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/folder-component",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/foldercomponent.mp4",
+        "iframeSrc": "https://rareui.com/components/foldercomponent",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion; static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/folder-component\n\nimport { Folder } from \"@/components/ui/folder-component\"\n\n<Folder color=\"blue\" size=\"md\" />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Folder Component` (slug `folder-component`) from https://rareui.com/components/foldercomponent. Install with `npx shadcn@latest add swamimalode07/rare-ui/folder-component` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/folder-component.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/folder-component`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/folder-component",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/folder-component.json",
+        "registryItem": "folder-component"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-bounce-sidebar",
+      "libraryId": "rare-ui",
+      "slug": "bounce-sidebar",
+      "name": "Bounce Sidebar",
+      "aliases": [
+        "bouncy sidebar",
+        "spring sidebar"
+      ],
+      "summary": "Vertical nav list with a bouncy spring-animated active indicator.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/bounce-sidebar",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/bouncesidebar.mp4",
+        "iframeSrc": "https://rareui.com/components/bouncesidebar",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion; static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/bounce-sidebar\n\nimport { BounceSidebar } from \"@/components/ui/bounce-sidebar\"\n\n<BounceSidebar items={[\"Home\", \"About\"]} dotColor=\"#FC4C01\" />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Bounce Sidebar` (slug `bounce-sidebar`) from https://rareui.com/components/bouncesidebar. Install with `npx shadcn@latest add swamimalode07/rare-ui/bounce-sidebar` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/bounce-sidebar.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/bounce-sidebar`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/bounce-sidebar",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/bounce-sidebar.json",
+        "registryItem": "bounce-sidebar"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-scroll-progress",
+      "libraryId": "rare-ui",
+      "slug": "scroll-progress",
+      "name": "Scroll Progress",
+      "aliases": [
+        "scroll progress pill",
+        "section jump progress"
+      ],
+      "summary": "Scroll progress pill that expands into a squircle menu of jump sections.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/scroll-progress",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/scrollprogress.mp4",
+        "iframeSrc": "https://rareui.com/components/scrollprogressindicator",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion; static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/scroll-progress\n\nimport ScrollProgress from \"@/components/ui/scroll-progress\"\n\n<ScrollProgress sections={[{ id: \"intro\", label: \"Introduction\" }]} />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Scroll Progress` (slug `scroll-progress`) from https://rareui.com/components/scrollprogressindicator. Install with `npx shadcn@latest add swamimalode07/rare-ui/scroll-progress` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/scroll-progress.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/scroll-progress`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/scroll-progress",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/scroll-progress.json",
+        "registryItem": "scroll-progress"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-duration-picker",
+      "libraryId": "rare-ui",
+      "slug": "duration-picker",
+      "name": "Duration Picker",
+      "aliases": [
+        "gooey duration picker",
+        "hours minutes picker"
+      ],
+      "summary": "Gooey spring-animated picker for entering a duration in hours and minutes.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "gooey",
+        "morph"
+      ],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/duration-picker",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/durationpicker.mp4",
+        "iframeSrc": "https://rareui.com/components/durationpicker",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, figma-squircle, flubber; static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/duration-picker\n\nimport DurationPicker from \"@/components/ui/duration-picker\"\n\n<DurationPicker value={{ hours: 1, minutes: 30 }} onChange={() => {}} />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Duration Picker` (slug `duration-picker`) from https://rareui.com/components/durationpicker. Install with `npx shadcn@latest add swamimalode07/rare-ui/duration-picker` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/duration-picker.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/duration-picker`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/duration-picker",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/duration-picker.json",
+        "registryItem": "duration-picker"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-otp-input",
+      "libraryId": "rare-ui",
+      "slug": "otp-input",
+      "name": "OTP Input",
+      "aliases": [
+        "one time code input",
+        "otp slots"
+      ],
+      "summary": "One-time-code input whose characters roll in behind a sliding caret.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/otp-input",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/otpinput.mp4",
+        "iframeSrc": "https://rareui.com/components/otpinput",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion; static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/otp-input\n\nimport OtpInput from \"@/components/ui/otp-input\"\n\n<OtpInput length={6} />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `OTP Input` (slug `otp-input`) from https://rareui.com/components/otpinput. Install with `npx shadcn@latest add swamimalode07/rare-ui/otp-input` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/otp-input.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/otp-input`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/otp-input",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/otp-input.json",
+        "registryItem": "otp-input"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-grid-reveal",
+      "libraryId": "rare-ui",
+      "slug": "grid-reveal",
+      "name": "Grid Reveal",
+      "aliases": [
+        "ai image grid reveal",
+        "loading grid reveal"
+      ],
+      "summary": "Loading grid that resolves into the real image when the source arrives.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/grid-reveal",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/imagegen.mp4",
+        "iframeSrc": "https://rareui.com/components/gridreveal",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion; static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/grid-reveal\n\nimport GridReveal from \"@/components/ui/grid-reveal\"\n\n<GridReveal src={url} />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Grid Reveal` (slug `grid-reveal`) from https://rareui.com/components/gridreveal. Install with `npx shadcn@latest add swamimalode07/rare-ui/grid-reveal` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/grid-reveal.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/grid-reveal`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/grid-reveal",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/grid-reveal.json",
+        "registryItem": "grid-reveal"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-emoji-reaction",
+      "libraryId": "rare-ui",
+      "slug": "emoji-reaction",
+      "name": "Emoji Reaction",
+      "aliases": [
+        "tapback reaction",
+        "emoji reaction bar"
+      ],
+      "summary": "Tapback-style reaction button that opens a bar of Apple emoji.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/emoji-reaction",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/emojireaction.mp4",
+        "iframeSrc": "https://rareui.com/components/emojireaction",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, react-apple-emojis; static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/emoji-reaction\n\nimport { EmojiReaction } from \"@/components/ui/emoji-reaction\"\n\n<EmojiReaction onReact={(name) => console.log(name)} />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Emoji Reaction` (slug `emoji-reaction`) from https://rareui.com/components/emojireaction. Install with `npx shadcn@latest add swamimalode07/rare-ui/emoji-reaction` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/emoji-reaction.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/emoji-reaction`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/emoji-reaction",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/emoji-reaction.json",
+        "registryItem": "emoji-reaction"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "rare-ui-voice-note",
+      "libraryId": "rare-ui",
+      "slug": "voice-note",
+      "name": "Voice Note",
+      "aliases": [
+        "voice message bar",
+        "waveform player"
+      ],
+      "summary": "Voice message bar with a scrubbable waveform and play control.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "static",
+        "adapterKind": "static-preview",
+        "entry": "@rare-ui/voice-note",
+        "staticSrc": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/componentdemos/voicenote.mp4",
+        "iframeSrc": "https://rareui.com/components/voicenote",
+        "aspectRatio": "16/9",
+        "peerNotes": "static demo via upstream gallery MP4 (rareui.com bot-challenged)"
+      },
+      "copyCode": "npx shadcn@latest add swamimalode07/rare-ui/voice-note\n\nimport { VoiceNote } from \"@/components/ui/voice-note\"\n\n<VoiceNote src=\"/audio/note.mp3\" className=\"w-[340px]\" />",
+      "copyPrompt": {
+        "text": "Use Rare UI free component `Voice Note` (slug `voice-note`) from https://rareui.com/components/voicenote. Install with `npx shadcn@latest add swamimalode07/rare-ui/voice-note` (shadcn GitHub registry namespace). Registry JSON (HTTP-verified): https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/voice-note.json (mirrors repo public/r; rareui.com/r bot-challenged from some networks). Imports land under `@/components/ui/voice-note`. Requires React + TypeScript + Tailwind + Motion where noted. License: MIT + Commons Clause + Attribution (https://raw.githubusercontent.com/swamimalode07/rare-ui/main/LICENSE) — attribution to rareui.com required; Commons Clause restricts selling/redistributing the components themselves. Pricing free. Do not strip credit/copyright from copied source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add swamimalode07/rare-ui/voice-note",
+        "registryUrl": "https://cdn.jsdelivr.net/gh/swamimalode07/rare-ui@main/public/r/voice-note.json",
+        "registryItem": "voice-note"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

@@ -1,0 +1,671 @@
+{
+  "id": "orbkit",
+  "name": "Orbkit",
+  "aliases": [
+    "orbkit",
+    "zzzzshawn/orbkit",
+    "orbkit.zzzzshawn.cloud",
+    "@orbkit"
+  ],
+  "summary": "WebGL shader orbs for React via shadcn registry; MIT original orbs for agent states.",
+  "homeUrl": "https://orbkit.zzzzshawn.cloud",
+  "docsUrl": "https://orbkit.zzzzshawn.cloud/getting-started/usage",
+  "repoUrl": "https://github.com/zzzzshawn/orbkit",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add zzzzshawn/orbkit/{slug}",
+    "registryUrl": "https://orbkit.zzzzshawn.cloud/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://orbkit.zzzzshawn.cloud/playground?orb={slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 14 MIT original orbs (shdr-32 Galaxy and shdr-33 Thermal omitted to keep 12).",
+    "19 XorDev-ported orbs are non-commercial-with-attribution \u2014 excluded (CREDITS.md / LICENSE-SHADERS.md).",
+    "Library markets overall as free for non-commercial; LICENSE + original orbs are MIT \u2014 catalog license string is MIT for ingested comps only.",
+    "Requires WebGL; not SSR-renderable (client runtime).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:20:00-04:00",
+  "components": [
+    {
+      "id": "orbkit-shdr-11",
+      "libraryId": "orbkit",
+      "slug": "shdr-11",
+      "name": "Hydrogen",
+      "aliases": [
+        "shdr-11",
+        "Shdr11",
+        "orbkit hydrogen",
+        "Hydrogen orb"
+      ],
+      "summary": "Quantum orbital orb with rainbow chromatic bands over dark metal.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-11",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-11",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-11\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-11.json\n\nimport { Shdr11 } from \"@/components/ui/shdr-11\"\n\n<Shdr11 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `Hydrogen` (slug `shdr-11`, export `Shdr11`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-11. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-11` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-11.json`). Files land in `@/components/ui/shdr-11.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-11",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-11.json",
+        "registryItem": "shdr-11"
+      }
+    },
+    {
+      "id": "orbkit-shdr-12",
+      "libraryId": "orbkit",
+      "slug": "shdr-12",
+      "name": "SHDR-12",
+      "aliases": [
+        "shdr-12",
+        "Shdr12",
+        "orbkit shdr-12",
+        "SHDR-12 orb"
+      ],
+      "summary": "Glossy toy-brick orb that rebuilds itself while thinking.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-12",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-12",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-12\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-12.json\n\nimport { Shdr12 } from \"@/components/ui/shdr-12\"\n\n<Shdr12 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `SHDR-12` (slug `shdr-12`, export `Shdr12`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-12. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-12` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-12.json`). Files land in `@/components/ui/shdr-12.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-12",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-12.json",
+        "registryItem": "shdr-12"
+      }
+    },
+    {
+      "id": "orbkit-shdr-13",
+      "libraryId": "orbkit",
+      "slug": "shdr-13",
+      "name": "Ion",
+      "aliases": [
+        "shdr-13",
+        "Shdr13",
+        "orbkit ion",
+        "Ion orb"
+      ],
+      "summary": "Plasma-globe orb with crawling pink-to-violet lightning filaments.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "glow",
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-13",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-13",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-13\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-13.json\n\nimport { Shdr13 } from \"@/components/ui/shdr-13\"\n\n<Shdr13 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `Ion` (slug `shdr-13`, export `Shdr13`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-13. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-13` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-13.json`). Files land in `@/components/ui/shdr-13.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-13",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-13.json",
+        "registryItem": "shdr-13"
+      }
+    },
+    {
+      "id": "orbkit-shdr-14",
+      "libraryId": "orbkit",
+      "slug": "shdr-14",
+      "name": "Dither",
+      "aliases": [
+        "shdr-14",
+        "Shdr14",
+        "orbkit dither",
+        "Dither orb"
+      ],
+      "summary": "Plasma dome quantized to chunky two-tone Bayer dither pixels.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "dither"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-14",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-14",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-14\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-14.json\n\nimport { Shdr14 } from \"@/components/ui/shdr-14\"\n\n<Shdr14 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `Dither` (slug `shdr-14`, export `Shdr14`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-14. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-14` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-14.json`). Files land in `@/components/ui/shdr-14.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-14",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-14.json",
+        "registryItem": "shdr-14"
+      }
+    },
+    {
+      "id": "orbkit-shdr-16",
+      "libraryId": "orbkit",
+      "slug": "shdr-16",
+      "name": "SHDR-16",
+      "aliases": [
+        "shdr-16",
+        "Shdr16",
+        "orbkit shdr-16",
+        "SHDR-16 orb"
+      ],
+      "summary": "Sunlight-through-water caustic net crawling over the ball.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-16",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-16",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-16\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-16.json\n\nimport { Shdr16 } from \"@/components/ui/shdr-16\"\n\n<Shdr16 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `SHDR-16` (slug `shdr-16`, export `Shdr16`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-16. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-16` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-16.json`). Files land in `@/components/ui/shdr-16.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-16",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-16.json",
+        "registryItem": "shdr-16"
+      }
+    },
+    {
+      "id": "orbkit-shdr-17",
+      "libraryId": "orbkit",
+      "slug": "shdr-17",
+      "name": "SHDR-17",
+      "aliases": [
+        "shdr-17",
+        "Shdr17",
+        "orbkit shdr-17",
+        "SHDR-17 orb"
+      ],
+      "summary": "Grainy multi-colour storm orb with band shear and lightning.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-17",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-17",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-17\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-17.json\n\nimport { Shdr17 } from \"@/components/ui/shdr-17\"\n\n<Shdr17 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `SHDR-17` (slug `shdr-17`, export `Shdr17`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-17. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-17` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-17.json`). Files land in `@/components/ui/shdr-17.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-17",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-17.json",
+        "registryItem": "shdr-17"
+      }
+    },
+    {
+      "id": "orbkit-shdr-21",
+      "libraryId": "orbkit",
+      "slug": "shdr-21",
+      "name": "Nimbus",
+      "aliases": [
+        "shdr-21",
+        "Shdr21",
+        "orbkit nimbus",
+        "Nimbus orb"
+      ],
+      "summary": "Volumetric cloud orb with Beer-Lambert light diffusion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "glow",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-21",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-21",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-21\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-21.json\n\nimport { Shdr21 } from \"@/components/ui/shdr-21\"\n\n<Shdr21 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `Nimbus` (slug `shdr-21`, export `Shdr21`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-21. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-21` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-21.json`). Files land in `@/components/ui/shdr-21.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-21",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-21.json",
+        "registryItem": "shdr-21"
+      }
+    },
+    {
+      "id": "orbkit-shdr-23",
+      "libraryId": "orbkit",
+      "slug": "shdr-23",
+      "name": "Phosphor",
+      "aliases": [
+        "shdr-23",
+        "Shdr23",
+        "orbkit phosphor",
+        "Phosphor orb"
+      ],
+      "summary": "ASCII glyph matrix in CRT green wrapped on the ball.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "text"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-23",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-23",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-23\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-23.json\n\nimport { Shdr23 } from \"@/components/ui/shdr-23\"\n\n<Shdr23 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `Phosphor` (slug `shdr-23`, export `Shdr23`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-23. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-23` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-23.json`). Files land in `@/components/ui/shdr-23.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-23",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-23.json",
+        "registryItem": "shdr-23"
+      }
+    },
+    {
+      "id": "orbkit-shdr-24",
+      "libraryId": "orbkit",
+      "slug": "shdr-24",
+      "name": "SHDR-24",
+      "aliases": [
+        "shdr-24",
+        "Shdr24",
+        "orbkit shdr-24",
+        "SHDR-24 orb"
+      ],
+      "summary": "Voxel Earth orb with cycling biome/season worlds.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-24",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-24",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-24\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-24.json\n\nimport { Shdr24 } from \"@/components/ui/shdr-24\"\n\n<Shdr24 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `SHDR-24` (slug `shdr-24`, export `Shdr24`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-24. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-24` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-24.json`). Files land in `@/components/ui/shdr-24.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-24",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-24.json",
+        "registryItem": "shdr-24"
+      }
+    },
+    {
+      "id": "orbkit-shdr-27",
+      "libraryId": "orbkit",
+      "slug": "shdr-27",
+      "name": "SHDR-27",
+      "aliases": [
+        "shdr-27",
+        "Shdr27",
+        "orbkit shdr-27",
+        "SHDR-27 orb"
+      ],
+      "summary": "Weather-radar mosaic with coloured pixel fronts sweeping the ball.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-27",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-27",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-27\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-27.json\n\nimport { Shdr27 } from \"@/components/ui/shdr-27\"\n\n<Shdr27 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `SHDR-27` (slug `shdr-27`, export `Shdr27`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-27. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-27` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-27.json`). Files land in `@/components/ui/shdr-27.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-27",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-27.json",
+        "registryItem": "shdr-27"
+      }
+    },
+    {
+      "id": "orbkit-shdr-29",
+      "libraryId": "orbkit",
+      "slug": "shdr-29",
+      "name": "Mosaic",
+      "aliases": [
+        "shdr-29",
+        "Shdr29",
+        "orbkit mosaic",
+        "Mosaic orb"
+      ],
+      "summary": "LED tile wall lighting up in flowing blobs on the ball.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-29",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-29",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-29\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-29.json\n\nimport { Shdr29 } from \"@/components/ui/shdr-29\"\n\n<Shdr29 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `Mosaic` (slug `shdr-29`, export `Shdr29`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-29. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-29` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-29.json`). Files land in `@/components/ui/shdr-29.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-29",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-29.json",
+        "registryItem": "shdr-29"
+      }
+    },
+    {
+      "id": "orbkit-shdr-30",
+      "libraryId": "orbkit",
+      "slug": "shdr-30",
+      "name": "SHDR-30",
+      "aliases": [
+        "shdr-30",
+        "Shdr30",
+        "orbkit shdr-30",
+        "SHDR-30 orb"
+      ],
+      "summary": "Meadow folding into itself toward a blue vanishing point.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "orb",
+        "webgl",
+        "shader",
+        "parallax"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/shdr-30",
+        "iframeSrc": "https://orbkit.zzzzshawn.cloud/playground?orb=shdr-30",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn registry install; WebGL 1; zero npm deps beyond React. Client component (orbkit-core)."
+      },
+      "copyCode": "npx shadcn@latest add zzzzshawn/orbkit/shdr-30\n# or: npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-30.json\n\nimport { Shdr30 } from \"@/components/ui/shdr-30\"\n\n<Shdr30 size={320} state=\"idle\" />",
+      "copyPrompt": {
+        "text": "Use Orbkit free MIT React WebGL orb `SHDR-30` (slug `shdr-30`, export `Shdr30`) from https://orbkit.zzzzshawn.cloud/playground?orb=shdr-30. Install with `npx shadcn@latest add zzzzshawn/orbkit/shdr-30` (or `npx shadcn@latest add https://orbkit.zzzzshawn.cloud/r/shdr-30.json`). Files land in `@/components/ui/shdr-30.tsx` plus shared `@/components/ui/orbkit-core.tsx`. Drive with state=\"idle\"|\"thinking\"|\"speaking\". Home: https://orbkit.zzzzshawn.cloud. Docs: https://orbkit.zzzzshawn.cloud/getting-started/usage. Repo: https://github.com/zzzzshawn/orbkit. License: MIT for this original orb and runtime (https://raw.githubusercontent.com/zzzzshawn/orbkit/main/LICENSE; Copyright (c) 2026 zzzzshawn). Do not use XorDev-ported orbs (non-commercial). Pricing free for MIT orbs.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add zzzzshawn/orbkit/shdr-30",
+        "registryUrl": "https://orbkit.zzzzshawn.cloud/r/shdr-30.json",
+        "registryItem": "shdr-30"
+      }
+    }
+  ]
+}

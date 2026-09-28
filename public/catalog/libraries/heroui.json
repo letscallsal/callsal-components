@@ -1,0 +1,599 @@
+{
+  "id": "heroui",
+  "name": "HeroUI",
+  "aliases": [
+    "Hero UI",
+    "NextUI",
+    "heroui-inc/heroui",
+    "@heroui/react",
+    "nextui"
+  ],
+  "summary": "Accessible React UI on React Aria and Tailwind CSS v4 (formerly NextUI).",
+  "homeUrl": "https://www.heroui.com",
+  "docsUrl": "https://heroui.com/docs/react/getting-started",
+  "repoUrl": "https://github.com/heroui-inc/heroui",
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm i @heroui/styles @heroui/react",
+    "packages": [
+      "@heroui/styles",
+      "@heroui/react"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://heroui.com/docs/react/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 700
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 70+ React components listed in docs/sitemap.",
+    "Default branch v3 LICENSE is Apache-2.0; some package.json files still list MIT — catalog uses LICENSE file + docs FAQ (Apache-2.0).",
+    "Native (React Native) path is a separate product — this ingest is React web only.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:50:00-04:00",
+  "components": [
+    {
+      "id": "heroui-button",
+      "libraryId": "heroui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "heroui button",
+        "nextui button"
+      ],
+      "summary": "Clickable button with variants and states.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Button",
+        "iframeSrc": "https://heroui.com/docs/react/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Button } from \"@heroui/react\"\n\n<Button />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Button` (slug `button`) from https://heroui.com/docs/react/components/button. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Button } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-card",
+      "libraryId": "heroui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "heroui card"
+      ],
+      "summary": "Compound card with header, content, and footer slots.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Card",
+        "iframeSrc": "https://heroui.com/docs/react/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Card } from \"@heroui/react\"\n\n<Card />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Card` (slug `card`) from https://heroui.com/docs/react/components/card. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Card } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-input",
+      "libraryId": "heroui",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "heroui input"
+      ],
+      "summary": "Accessible text input on React Aria.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Input",
+        "iframeSrc": "https://heroui.com/docs/react/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Input } from \"@heroui/react\"\n\n<Input />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Input` (slug `input`) from https://heroui.com/docs/react/components/input. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Input } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-checkbox",
+      "libraryId": "heroui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "heroui checkbox"
+      ],
+      "summary": "Accessible checkbox control.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Checkbox",
+        "iframeSrc": "https://heroui.com/docs/react/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Checkbox } from \"@heroui/react\"\n\n<Checkbox />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Checkbox` (slug `checkbox`) from https://heroui.com/docs/react/components/checkbox. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Checkbox } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-switch",
+      "libraryId": "heroui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "heroui switch"
+      ],
+      "summary": "Toggle switch for settings.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Switch",
+        "iframeSrc": "https://heroui.com/docs/react/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Switch } from \"@heroui/react\"\n\n<Switch />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Switch` (slug `switch`) from https://heroui.com/docs/react/components/switch. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Switch } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-select",
+      "libraryId": "heroui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "heroui select"
+      ],
+      "summary": "Accessible select with list box.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Select",
+        "iframeSrc": "https://heroui.com/docs/react/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Select } from \"@heroui/react\"\n\n<Select />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Select` (slug `select`) from https://heroui.com/docs/react/components/select. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Select } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-modal",
+      "libraryId": "heroui",
+      "slug": "modal",
+      "name": "Modal",
+      "aliases": [
+        "heroui modal",
+        "heroui dialog"
+      ],
+      "summary": "Accessible modal dialog overlay.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Modal",
+        "iframeSrc": "https://heroui.com/docs/react/components/modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Modal } from \"@heroui/react\"\n\n<Modal />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Modal` (slug `modal`) from https://heroui.com/docs/react/components/modal. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Modal } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-tabs",
+      "libraryId": "heroui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "heroui tabs"
+      ],
+      "summary": "Tabbed navigation panels.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Tabs",
+        "iframeSrc": "https://heroui.com/docs/react/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Tabs } from \"@heroui/react\"\n\n<Tabs />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Tabs` (slug `tabs`) from https://heroui.com/docs/react/components/tabs. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Tabs } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-accordion",
+      "libraryId": "heroui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "heroui accordion"
+      ],
+      "summary": "Expandable disclosure group.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "section",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Accordion",
+        "iframeSrc": "https://heroui.com/docs/react/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Accordion } from \"@heroui/react\"\n\n<Accordion />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Accordion` (slug `accordion`) from https://heroui.com/docs/react/components/accordion. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Accordion } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-avatar",
+      "libraryId": "heroui",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "heroui avatar"
+      ],
+      "summary": "User avatar with image and fallback.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Avatar",
+        "iframeSrc": "https://heroui.com/docs/react/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Avatar } from \"@heroui/react\"\n\n<Avatar />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Avatar` (slug `avatar`) from https://heroui.com/docs/react/components/avatar. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Avatar } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-chip",
+      "libraryId": "heroui",
+      "slug": "chip",
+      "name": "Chip",
+      "aliases": [
+        "heroui chip"
+      ],
+      "summary": "Compact chip for tags and filters.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Chip",
+        "iframeSrc": "https://heroui.com/docs/react/components/chip",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Chip } from \"@heroui/react\"\n\n<Chip />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Chip` (slug `chip`) from https://heroui.com/docs/react/components/chip. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Chip } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    },
+    {
+      "id": "heroui-toast",
+      "libraryId": "heroui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "heroui toast"
+      ],
+      "summary": "Stacked toast notifications.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@heroui/react/Toast",
+        "iframeSrc": "https://heroui.com/docs/react/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "npm i @heroui/styles @heroui/react; import @heroui/styles after tailwindcss in CSS. React 19 + Tailwind v4."
+      },
+      "copyCode": "npm i @heroui/styles @heroui/react\n# CSS: @import \"tailwindcss\"; @import \"@heroui/styles\";\n\nimport { Toast } from \"@heroui/react\"\n\n<Toast />",
+      "copyPrompt": {
+        "text": "Use HeroUI free Apache-2.0 React component `Toast` (slug `toast`) from https://heroui.com/docs/react/components/toast. Install with `npm i @heroui/styles @heroui/react` (or pnpm/yarn/bun), add `@import \"@heroui/styles\"` after `@import \"tailwindcss\"` in globals.css, then `import { Toast } from \"@heroui/react\"`. Quick start: https://heroui.com/docs/react/getting-started/quick-start. Home: https://heroui.com. Repo: https://github.com/heroui-inc/heroui. License: Apache License 2.0 (https://raw.githubusercontent.com/heroui-inc/heroui/v3/LICENSE; docs FAQ confirms Apache-2.0). Pricing free. Previously NextUI.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i @heroui/styles @heroui/react",
+        "packages": [
+          "@heroui/styles",
+          "@heroui/react"
+        ]
+      }
+    }
+  ]
+}

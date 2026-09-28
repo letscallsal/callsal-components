@@ -1,0 +1,598 @@
+{
+  "id": "motion-primitives",
+  "name": "Motion Primitives",
+  "aliases": [
+    "motionprimitives",
+    "ibelick/motion-primitives",
+    "mp"
+  ],
+  "summary": "Open-source MIT motion components for React \u2014 CLI + registry JSON on motion-primitives.com.",
+  "homeUrl": "https://motion-primitives.com",
+  "docsUrl": "https://motion-primitives.com/docs",
+  "repoUrl": "https://github.com/ibelick/motion-primitives",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx motion-primitives@latest add <component>",
+    "registryUrl": "https://motion-primitives.com/c/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://motion-primitives.com/docs/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "motion",
+      "tailwindcss",
+      "lucide-react"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 33 registry items in https://motion-primitives.com/c/registry.json \u2014 not a full inventory.",
+    "Primary install path is the motion-primitives CLI; shadcn-compatible JSON also lives under /c/{name}.json.",
+    "Import path after CLI: `@/components/core/{slug}` per docs examples.",
+    "LICENSE file is LICENCE.md (British spelling) at repo root \u2014 MIT Copyright (c) 2024 ibelick.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:05:00-04:00",
+  "components": [
+    {
+      "id": "motion-primitives-text-scramble",
+      "libraryId": "motion-primitives",
+      "slug": "text-scramble",
+      "name": "Text Scramble",
+      "aliases": [
+        "scramble text",
+        "decode text"
+      ],
+      "summary": "Text that scrambles through random characters before revealing.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/text-scramble",
+        "iframeSrc": "https://motion-primitives.com/docs/text-scramble",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add text-scramble\n\nimport { TextScramble } from \"@/components/core/text-scramble\"\n\n<TextScramble className=\"font-mono text-sm uppercase\">Text Scramble</TextScramble>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Text Scramble` (slug `text-scramble`) from https://motion-primitives.com/docs/text-scramble. Install with `npx motion-primitives@latest add text-scramble` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/text-scramble.json. Import from `@/components/core/text-scramble` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add text-scramble",
+        "registryUrl": "https://motion-primitives.com/c/text-scramble.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-text-morph",
+      "libraryId": "motion-primitives",
+      "slug": "text-morph",
+      "name": "Text Morph",
+      "aliases": [
+        "morphing text",
+        "text morph button"
+      ],
+      "summary": "Smoothly morphs between text strings with layout animation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text",
+        "button"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/text-morph",
+        "iframeSrc": "https://motion-primitives.com/docs/text-morph",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add text-morph\n\nimport { TextMorph } from \"@/components/core/text-morph\"\n\n<TextMorph>Continue</TextMorph>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Text Morph` (slug `text-morph`) from https://motion-primitives.com/docs/text-morph. Install with `npx motion-primitives@latest add text-morph` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/text-morph.json. Import from `@/components/core/text-morph` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add text-morph",
+        "registryUrl": "https://motion-primitives.com/c/text-morph.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-text-shimmer",
+      "libraryId": "motion-primitives",
+      "slug": "text-shimmer",
+      "name": "Text Shimmer",
+      "aliases": [
+        "shimmer text",
+        "gradient shimmer"
+      ],
+      "summary": "Animated shimmer text with a looping gradient sweep.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/text-shimmer",
+        "iframeSrc": "https://motion-primitives.com/docs/text-shimmer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add text-shimmer\n\nimport { TextShimmer } from \"@/components/core/text-shimmer\"\n\n<TextShimmer className=\"font-mono text-sm\" duration={1}>Generating code...</TextShimmer>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Text Shimmer` (slug `text-shimmer`) from https://motion-primitives.com/docs/text-shimmer. Install with `npx motion-primitives@latest add text-shimmer` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/text-shimmer.json. Import from `@/components/core/text-shimmer` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add text-shimmer",
+        "registryUrl": "https://motion-primitives.com/c/text-shimmer.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-dock",
+      "libraryId": "motion-primitives",
+      "slug": "dock",
+      "name": "Dock",
+      "aliases": [
+        "macos dock",
+        "apple dock"
+      ],
+      "summary": "macOS-style dock with magnified icons and labels on hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/dock",
+        "iframeSrc": "https://motion-primitives.com/docs/dock",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add dock\n\nimport { Dock, DockIcon, DockItem, DockLabel } from \"@/components/core/dock\"\n\n<Dock>\n  <DockItem>\n    <DockLabel>Home</DockLabel>\n    <DockIcon>{/* icon */}</DockIcon>\n  </DockItem>\n</Dock>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Dock` (slug `dock`) from https://motion-primitives.com/docs/dock. Install with `npx motion-primitives@latest add dock` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/dock.json. Import from `@/components/core/dock` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add dock",
+        "registryUrl": "https://motion-primitives.com/c/dock.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-magnetic",
+      "libraryId": "motion-primitives",
+      "slug": "magnetic",
+      "name": "Magnetic",
+      "aliases": [
+        "magnet button",
+        "magnetic wrap"
+      ],
+      "summary": "Magnetic wrapper that pulls child elements toward the pointer.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button",
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/magnetic",
+        "iframeSrc": "https://motion-primitives.com/docs/magnetic",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add magnetic\n\nimport { Magnetic } from \"@/components/core/magnetic\"\n\n<Magnetic>\n  <button type=\"button\">Submit</button>\n</Magnetic>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Magnetic` (slug `magnetic`) from https://motion-primitives.com/docs/magnetic. Install with `npx motion-primitives@latest add magnetic` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/magnetic.json. Import from `@/components/core/magnetic` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add magnetic",
+        "registryUrl": "https://motion-primitives.com/c/magnetic.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-morphing-dialog",
+      "libraryId": "motion-primitives",
+      "slug": "morphing-dialog",
+      "name": "Morphing Dialog",
+      "aliases": [
+        "morph dialog",
+        "shared layout dialog"
+      ],
+      "summary": "Dialog that morphs from a trigger into expanded content via shared layout.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/morphing-dialog",
+        "iframeSrc": "https://motion-primitives.com/docs/morphing-dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add morphing-dialog\n\nimport {\n  MorphingDialog,\n  MorphingDialogTrigger,\n  MorphingDialogContent,\n  MorphingDialogContainer,\n  MorphingDialogTitle,\n  MorphingDialogClose,\n} from \"@/components/core/morphing-dialog\"\n\n<MorphingDialog transition={{ type: \"spring\", bounce: 0.05, duration: 0.25 }}>\n  <MorphingDialogTrigger>Open</MorphingDialogTrigger>\n  <MorphingDialogContainer>\n    <MorphingDialogContent>\n      <MorphingDialogTitle>Title</MorphingDialogTitle>\n      <MorphingDialogClose />\n    </MorphingDialogContent>\n  </MorphingDialogContainer>\n</MorphingDialog>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Morphing Dialog` (slug `morphing-dialog`) from https://motion-primitives.com/docs/morphing-dialog. Install with `npx motion-primitives@latest add morphing-dialog` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/morphing-dialog.json. Import from `@/components/core/morphing-dialog` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add morphing-dialog",
+        "registryUrl": "https://motion-primitives.com/c/morphing-dialog.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-progressive-blur",
+      "libraryId": "motion-primitives",
+      "slug": "progressive-blur",
+      "name": "Progressive Blur",
+      "aliases": [
+        "gradient blur",
+        "progressive blur overlay"
+      ],
+      "summary": "Progressive blur overlay that softens content along an edge.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/progressive-blur",
+        "iframeSrc": "https://motion-primitives.com/docs/progressive-blur",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add progressive-blur\n\nimport { ProgressiveBlur } from \"@/components/core/progressive-blur\"\n\n<ProgressiveBlur className=\"pointer-events-none absolute bottom-0 left-0 h-[50%] w-full\" blurIntensity={6} />",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Progressive Blur` (slug `progressive-blur`) from https://motion-primitives.com/docs/progressive-blur. Install with `npx motion-primitives@latest add progressive-blur` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/progressive-blur.json. Import from `@/components/core/progressive-blur` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add progressive-blur",
+        "registryUrl": "https://motion-primitives.com/c/progressive-blur.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-tilt",
+      "libraryId": "motion-primitives",
+      "slug": "tilt",
+      "name": "Tilt",
+      "aliases": [
+        "3d tilt card",
+        "perspective tilt"
+      ],
+      "summary": "3D tilt wrapper that follows pointer rotation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "other"
+      ],
+      "effectType": [
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/tilt",
+        "iframeSrc": "https://motion-primitives.com/docs/tilt",
+        "aspectRatio": "16/9",
+        "peerNotes": "Prop `isRevese` spelling is upstream (not reversed)."
+      },
+      "copyCode": "npx motion-primitives@latest add tilt\n\nimport { Tilt } from \"@/components/core/tilt\"\n\n<Tilt rotationFactor={8} isRevese>\n  <div className=\"rounded-xl border p-4\">Card</div>\n</Tilt>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Tilt` (slug `tilt`) from https://motion-primitives.com/docs/tilt. Install with `npx motion-primitives@latest add tilt` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/tilt.json. Import from `@/components/core/tilt` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add tilt",
+        "registryUrl": "https://motion-primitives.com/c/tilt.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-spotlight",
+      "libraryId": "motion-primitives",
+      "slug": "spotlight",
+      "name": "Spotlight",
+      "aliases": [
+        "pointer spotlight",
+        "hover spotlight"
+      ],
+      "summary": "Pointer-following spotlight glow inside a container.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "background"
+      ],
+      "effectType": [
+        "glow",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/spotlight",
+        "iframeSrc": "https://motion-primitives.com/docs/spotlight",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add spotlight\n\nimport { Spotlight } from \"@/components/core/spotlight\"\n\n<div className=\"relative aspect-video rounded-sm border\">\n  <Spotlight className=\"bg-zinc-700 blur-2xl\" size={64} />\n</div>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Spotlight` (slug `spotlight`) from https://motion-primitives.com/docs/spotlight. Install with `npx motion-primitives@latest add spotlight` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/spotlight.json. Import from `@/components/core/spotlight` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add spotlight",
+        "registryUrl": "https://motion-primitives.com/c/spotlight.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-glow-effect",
+      "libraryId": "motion-primitives",
+      "slug": "glow-effect",
+      "name": "Glow Effect",
+      "aliases": [
+        "color shift glow",
+        "glow backdrop"
+      ],
+      "summary": "Animated glow backdrop with color-shift modes behind content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button",
+        "background"
+      ],
+      "effectType": [
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/glow-effect",
+        "iframeSrc": "https://motion-primitives.com/docs/glow-effect",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add glow-effect\n\nimport { GlowEffect } from \"@/components/core/glow-effect\"\n\n<div className=\"relative\">\n  <GlowEffect colors={[\"#FF5733\", \"#33FF57\", \"#3357FF\", \"#F1C40F\"]} mode=\"colorShift\" blur=\"soft\" duration={3} scale={0.9} />\n  <button className=\"relative\">Explore</button>\n</div>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Glow Effect` (slug `glow-effect`) from https://motion-primitives.com/docs/glow-effect. Install with `npx motion-primitives@latest add glow-effect` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/glow-effect.json. Import from `@/components/core/glow-effect` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add glow-effect",
+        "registryUrl": "https://motion-primitives.com/c/glow-effect.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-scroll-progress",
+      "libraryId": "motion-primitives",
+      "slug": "scroll-progress",
+      "name": "Scroll Progress",
+      "aliases": [
+        "scroll progress bar",
+        "reading progress"
+      ],
+      "summary": "Scroll-linked progress indicator for a container or page.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "nav"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/scroll-progress",
+        "iframeSrc": "https://motion-primitives.com/docs/scroll-progress",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add scroll-progress\n\nimport { useRef } from \"react\"\nimport { ScrollProgress } from \"@/components/core/scroll-progress\"\n\nconst ref = useRef<HTMLDivElement>(null)\n<div ref={ref} className=\"h-[350px] overflow-auto\">\n  <ScrollProgress containerRef={ref} className=\"absolute top-0\" />\n  {/* content */}\n</div>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Scroll Progress` (slug `scroll-progress`) from https://motion-primitives.com/docs/scroll-progress. Install with `npx motion-primitives@latest add scroll-progress` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/scroll-progress.json. Import from `@/components/core/scroll-progress` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add scroll-progress",
+        "registryUrl": "https://motion-primitives.com/c/scroll-progress.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "motion-primitives-animated-background",
+      "libraryId": "motion-primitives",
+      "slug": "animated-background",
+      "name": "Animated Background",
+      "aliases": [
+        "tab animated background",
+        "layoutid background"
+      ],
+      "summary": "Shared-layout animated background that slides between hovered/selected items.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "background"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@motion-primitives/animated-background",
+        "iframeSrc": "https://motion-primitives.com/docs/animated-background",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx motion-primitives@latest add animated-background\n\nimport { AnimatedBackground } from \"@/components/core/animated-background\"\n\n<AnimatedBackground\n  className=\"rounded-lg bg-zinc-100\"\n  transition={{ type: \"spring\", bounce: 0.2, duration: 0.6 }}\n  enableHover\n>\n  {/* children with data-id */}\n</AnimatedBackground>",
+      "copyPrompt": {
+        "text": "Use Motion Primitives component `Animated Background` (slug `animated-background`) from https://motion-primitives.com/docs/animated-background. Install with `npx motion-primitives@latest add animated-background` after Tailwind + `npm install motion` (and typically lucide-react / cn utils \u2014 see https://motion-primitives.com/docs/installation). Registry JSON also published at https://motion-primitives.com/c/animated-background.json. Import from `@/components/core/animated-background` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS + `motion`. Free & open source MIT (https://raw.githubusercontent.com/ibelick/motion-primitives/main/LICENCE.md \u2014 note British spelling LICENCE.md).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx motion-primitives@latest add animated-background",
+        "registryUrl": "https://motion-primitives.com/c/animated-background.json"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

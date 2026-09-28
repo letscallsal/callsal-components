@@ -1,0 +1,580 @@
+{
+  "id": "origin-ui",
+  "name": "Origin UI",
+  "aliases": [
+    "originui",
+    "originui.com",
+    "coss ui",
+    "coss.com/ui",
+    "cosscom/coss"
+  ],
+  "summary": "Free MIT React+Tailwind components (now coss ui on Base UI); originui.com \u2192 coss.com/ui.",
+  "homeUrl": "https://originui.com",
+  "docsUrl": "https://coss.com/ui/docs",
+  "repoUrl": "https://github.com/cosscom/coss",
+  "license": "MIT (apps/ui + apps/origin; see LICENSING.md \u2014 repo default AGPLv3 elsewhere)",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @coss/{name}",
+    "registryUrl": "https://coss.com/ui/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://coss.com/ui/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "@base-ui/react"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "originui.com permanently redirects to https://coss.com/ui (Cal.com acquisition / rebrand).",
+    "Catalog id remains `origin-ui` per EXPAND-QUEUE; live docs/registry are coss ui (@coss).",
+    "Pilot includes 12 of 56+ registry:ui primitives \u2014 not full inventory; particles (p-*) and legacy /origin snapshot not ingested.",
+    "License honesty: MIT applies to apps/ui and apps/origin only; rest of monorepo is AGPLv3 (LICENSING.md).",
+    "Requires shadcn CLI with @coss registry (https://coss.com/ui/r/{name}.json).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:20:00-04:00",
+  "components": [
+    {
+      "id": "origin-ui-button",
+      "libraryId": "origin-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "coss button",
+        "origin button"
+      ],
+      "summary": "Base UI button with coss design tokens.",
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/button",
+        "iframeSrc": "https://coss.com/ui/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/button\n\nimport { Button } from \"@/components/ui/button\"\n\n<Button>Click me</Button>",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Button` (slug `button`) from https://coss.com/ui/docs/components/button (originui.com redirects here). Install with `npx shadcn@latest add @coss/button` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/button`. Exports: Button, buttonVariants. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/button",
+        "registryUrl": "https://coss.com/ui/r/button.json",
+        "registryItem": "button"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-card",
+      "libraryId": "origin-ui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "coss card",
+        "origin card"
+      ],
+      "summary": "Framed card container primitives.",
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/card",
+        "iframeSrc": "https://coss.com/ui/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/card\n\nimport { Card, CardFrame, CardFrameTitle } from \"@/components/ui/card\"\n\n<Card><CardFrame><CardFrameTitle>Title</CardFrameTitle></CardFrame></Card>",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Card` (slug `card`) from https://coss.com/ui/docs/components/card (originui.com redirects here). Install with `npx shadcn@latest add @coss/card` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/card`. Exports: Card, CardFrame, CardFrameHeader, CardFrameTitle, \u2026. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/card",
+        "registryUrl": "https://coss.com/ui/r/card.json",
+        "registryItem": "card"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-badge",
+      "libraryId": "origin-ui",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "coss badge",
+        "origin badge"
+      ],
+      "summary": "Badge chip built on Base UI.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/badge",
+        "iframeSrc": "https://coss.com/ui/docs/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/badge\n\nimport { Badge } from \"@/components/ui/badge\"\n\n<Badge>New</Badge>",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Badge` (slug `badge`) from https://coss.com/ui/docs/components/badge (originui.com redirects here). Install with `npx shadcn@latest add @coss/badge` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/badge`. Exports: Badge, badgeVariants. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/badge",
+        "registryUrl": "https://coss.com/ui/r/badge.json",
+        "registryItem": "badge"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-alert",
+      "libraryId": "origin-ui",
+      "slug": "alert",
+      "name": "Alert",
+      "aliases": [
+        "coss alert",
+        "origin alert"
+      ],
+      "summary": "Alert callout with title and description.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/alert",
+        "iframeSrc": "https://coss.com/ui/docs/components/alert",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/alert\n\nimport { Alert, AlertTitle, AlertDescription } from \"@/components/ui/alert\"\n\n<Alert><AlertTitle>Note</AlertTitle><AlertDescription>Details</AlertDescription></Alert>",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Alert` (slug `alert`) from https://coss.com/ui/docs/components/alert (originui.com redirects here). Install with `npx shadcn@latest add @coss/alert` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/alert`. Exports: Alert, AlertTitle, AlertDescription, AlertAction. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/alert",
+        "registryUrl": "https://coss.com/ui/r/alert.json",
+        "registryItem": "alert"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-dialog",
+      "libraryId": "origin-ui",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "coss dialog",
+        "origin dialog"
+      ],
+      "summary": "Accessible dialog / modal on Base UI.",
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/dialog",
+        "iframeSrc": "https://coss.com/ui/docs/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/dialog\n\nimport { Dialog, DialogTrigger, DialogPopup } from \"@/components/ui/dialog\"\n\n<Dialog><DialogTrigger>Open</DialogTrigger><DialogPopup>Content</DialogPopup></Dialog>",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Dialog` (slug `dialog`) from https://coss.com/ui/docs/components/dialog (originui.com redirects here). Install with `npx shadcn@latest add @coss/dialog` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/dialog`. Exports: Dialog, DialogTrigger, DialogClose, DialogBackdrop, DialogPopup, \u2026. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/dialog",
+        "registryUrl": "https://coss.com/ui/r/dialog.json",
+        "registryItem": "dialog"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-accordion",
+      "libraryId": "origin-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "coss accordion",
+        "origin accordion"
+      ],
+      "summary": "Accordion with AccordionPanel content.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/accordion",
+        "iframeSrc": "https://coss.com/ui/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/accordion\n\nimport { Accordion, AccordionItem, AccordionTrigger, AccordionPanel } from \"@/components/ui/accordion\"\n\n<Accordion><AccordionItem value=\"1\"><AccordionTrigger>Item</AccordionTrigger><AccordionPanel>Body</AccordionPanel></AccordionItem></Accordion>",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Accordion` (slug `accordion`) from https://coss.com/ui/docs/components/accordion (originui.com redirects here). Install with `npx shadcn@latest add @coss/accordion` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/accordion`. Exports: Accordion, AccordionItem, AccordionTrigger, AccordionPanel. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/accordion",
+        "registryUrl": "https://coss.com/ui/r/accordion.json",
+        "registryItem": "accordion"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-avatar",
+      "libraryId": "origin-ui",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "coss avatar",
+        "origin avatar"
+      ],
+      "summary": "Avatar image with fallback.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/avatar",
+        "iframeSrc": "https://coss.com/ui/docs/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/avatar\n\nimport { Avatar, AvatarImage, AvatarFallback } from \"@/components/ui/avatar\"\n\n<Avatar><AvatarImage src=\"/me.png\" /><AvatarFallback>SC</AvatarFallback></Avatar>",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Avatar` (slug `avatar`) from https://coss.com/ui/docs/components/avatar (originui.com redirects here). Install with `npx shadcn@latest add @coss/avatar` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/avatar`. Exports: Avatar, AvatarImage, AvatarFallback. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/avatar",
+        "registryUrl": "https://coss.com/ui/r/avatar.json",
+        "registryItem": "avatar"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-tabs",
+      "libraryId": "origin-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "coss tabs",
+        "origin tabs"
+      ],
+      "summary": "Tabs with segmented-control list styling.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/tabs",
+        "iframeSrc": "https://coss.com/ui/docs/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/tabs\n\nimport { Tabs, TabsList, TabsTab, TabsPanel } from \"@/components/ui/tabs\"\n\n<Tabs defaultValue=\"a\"><TabsList><TabsTab value=\"a\">A</TabsTab></TabsList><TabsPanel value=\"a\">Panel</TabsPanel></Tabs>",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Tabs` (slug `tabs`) from https://coss.com/ui/docs/components/tabs (originui.com redirects here). Install with `npx shadcn@latest add @coss/tabs` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/tabs`. Exports: Tabs, TabsList, TabsTab, TabsPanel. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/tabs",
+        "registryUrl": "https://coss.com/ui/r/tabs.json",
+        "registryItem": "tabs"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-toast",
+      "libraryId": "origin-ui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "coss toast",
+        "origin toast"
+      ],
+      "summary": "Toast manager + provider notifications.",
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/toast",
+        "iframeSrc": "https://coss.com/ui/docs/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/toast\n\nimport { ToastProvider, toastManager } from \"@/components/ui/toast\"\n\n// wrap app in <ToastProvider /> then use toastManager",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Toast` (slug `toast`) from https://coss.com/ui/docs/components/toast (originui.com redirects here). Install with `npx shadcn@latest add @coss/toast` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/toast`. Exports: ToastProvider, toastManager, anchoredToastManager. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/toast",
+        "registryUrl": "https://coss.com/ui/r/toast.json",
+        "registryItem": "toast"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-tooltip",
+      "libraryId": "origin-ui",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "coss tooltip",
+        "origin tooltip"
+      ],
+      "summary": "Hover/focus tooltip popup.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/tooltip",
+        "iframeSrc": "https://coss.com/ui/docs/components/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/tooltip\n\nimport { Tooltip, TooltipTrigger, TooltipPopup } from \"@/components/ui/tooltip\"\n\n<Tooltip><TooltipTrigger>Hover</TooltipTrigger><TooltipPopup>Hint</TooltipPopup></Tooltip>",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Tooltip` (slug `tooltip`) from https://coss.com/ui/docs/components/tooltip (originui.com redirects here). Install with `npx shadcn@latest add @coss/tooltip` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/tooltip`. Exports: Tooltip, TooltipTrigger, TooltipPopup (TooltipContent alias). Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/tooltip",
+        "registryUrl": "https://coss.com/ui/r/tooltip.json",
+        "registryItem": "tooltip"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-sheet",
+      "libraryId": "origin-ui",
+      "slug": "sheet",
+      "name": "Sheet",
+      "aliases": [
+        "coss sheet",
+        "origin sheet"
+      ],
+      "summary": "Side sheet flyout based on dialog.",
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/sheet",
+        "iframeSrc": "https://coss.com/ui/docs/components/sheet",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/sheet\n\nimport { Sheet, SheetTrigger, SheetPopup } from \"@/components/ui/sheet\"\n\n<Sheet><SheetTrigger>Open</SheetTrigger><SheetPopup>Content</SheetPopup></Sheet>",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Sheet` (slug `sheet`) from https://coss.com/ui/docs/components/sheet (originui.com redirects here). Install with `npx shadcn@latest add @coss/sheet` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/sheet`. Exports: Sheet, SheetTrigger, SheetClose, SheetBackdrop, SheetViewport, \u2026. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/sheet",
+        "registryUrl": "https://coss.com/ui/r/sheet.json",
+        "registryItem": "sheet"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "origin-ui-switch",
+      "libraryId": "origin-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "coss switch",
+        "origin switch"
+      ],
+      "summary": "On/off switch control.",
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@coss/switch",
+        "iframeSrc": "https://coss.com/ui/docs/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn CLI + @coss registry + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add @coss/switch\n\nimport { Switch } from \"@/components/ui/switch\"\n\n<Switch />",
+      "copyPrompt": {
+        "text": "Use Origin UI / coss ui free MIT component `Switch` (slug `switch`) from https://coss.com/ui/docs/components/switch (originui.com redirects here). Install with `npx shadcn@latest add @coss/switch` (@coss registry: https://coss.com/ui/r/{name}.json). Imports land under `@/components/ui/switch`. Exports: Switch. Requires React + TypeScript + Tailwind + Base UI. License: MIT for apps/ui and apps/origin (https://github.com/cosscom/coss/blob/main/LICENSING.md) \u2014 repo default AGPLv3 does NOT apply to these dirs. Pricing free. Prefer @coss primitives; legacy Origin particles remain at https://coss.com/origin.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @coss/switch",
+        "registryUrl": "https://coss.com/ui/r/switch.json",
+        "registryItem": "switch"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "id": "align-ui",
+  "name": "AlignUI",
+  "aliases": [
+    "align-ui",
+    "AlignUI",
+    "alignui",
+    "Align UI",
+    "alignui.com"
+  ],
+  "summary": "Freemium React/Tailwind/Radix design system; Base Components are free MIT copy-paste.",
+  "homeUrl": "https://alignui.com/",
+  "docsUrl": "https://alignui.com/docs/v1.2/introduction",
+  "repoUrl": "https://github.com/alignui/alignui-nextjs-typescript-starter",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "copy-paste",
+    "command": "Copy Base Component source from https://alignui.com/docs/v1.2/ui/{name} (optional tokens: npx @alignui/cli tailwind)"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://alignui.com/docs/v1.2/ui/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of ~49 free AlignUI Base Components under /docs/v1.2/ui/*.",
+    "Components & Blocks / Sectoral Templates / Figma File are PRO — not ingested (proOnly false Base only).",
+    "Install is copy-paste from docs (or starter template); @alignui/cli only scaffolds Tailwind v4.1 tokens.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:35:00-04:00",
+  "components": [
+    {
+      "id": "align-ui-button",
+      "libraryId": "align-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "Button",
+        "AlignUI Button"
+      ],
+      "summary": "Primary action button with variants, sizes, and polymorphic icons.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Button from https://alignui.com/docs/v1.2/ui/button"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/button\nnpm install @radix-ui/react-slot\n\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Button` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Button` (slug `button`) from https://alignui.com/docs/v1.2/ui/button. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `button` from https://alignui.com/docs/v1.2/ui/button (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-accordion",
+      "libraryId": "align-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "Accordion"
+      ],
+      "summary": "Collapsible accordion panels built on Radix Accordion.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Accordion from https://alignui.com/docs/v1.2/ui/accordion"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/accordion\nnpm install @radix-ui/react-accordion\n\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Accordion` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Accordion` (slug `accordion`) from https://alignui.com/docs/v1.2/ui/accordion. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `accordion` from https://alignui.com/docs/v1.2/ui/accordion (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-modal",
+      "libraryId": "align-ui",
+      "slug": "modal",
+      "name": "Modal",
+      "aliases": [
+        "modal",
+        "Modal",
+        "dialog"
+      ],
+      "summary": "Accessible modal dialog overlay.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Modal from https://alignui.com/docs/v1.2/ui/modal"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/modal\nnpm install @radix-ui/react-dialog\n\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Modal` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Modal` (slug `modal`) from https://alignui.com/docs/v1.2/ui/modal. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `modal` from https://alignui.com/docs/v1.2/ui/modal (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-input",
+      "libraryId": "align-ui",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "input",
+        "Input"
+      ],
+      "summary": "Text input with AlignUI tokens and sizes.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Input from https://alignui.com/docs/v1.2/ui/input"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/input\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Input` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Input` (slug `input`) from https://alignui.com/docs/v1.2/ui/input. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `input` from https://alignui.com/docs/v1.2/ui/input (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-select",
+      "libraryId": "align-ui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "Select"
+      ],
+      "summary": "Styled select control for forms.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Select from https://alignui.com/docs/v1.2/ui/select"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/select\nnpm install @radix-ui/react-select\n\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Select` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Select` (slug `select`) from https://alignui.com/docs/v1.2/ui/select. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `select` from https://alignui.com/docs/v1.2/ui/select (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-checkbox",
+      "libraryId": "align-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "Checkbox"
+      ],
+      "summary": "Accessible checkbox control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Checkbox from https://alignui.com/docs/v1.2/ui/checkbox"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/checkbox\nnpm install @radix-ui/react-checkbox\n\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Checkbox` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Checkbox` (slug `checkbox`) from https://alignui.com/docs/v1.2/ui/checkbox. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `checkbox` from https://alignui.com/docs/v1.2/ui/checkbox (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-switch",
+      "libraryId": "align-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "switch",
+        "Switch",
+        "toggle"
+      ],
+      "summary": "Toggle switch control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Switch from https://alignui.com/docs/v1.2/ui/switch"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/switch\nnpm install @radix-ui/react-switch\n\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Switch` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Switch` (slug `switch`) from https://alignui.com/docs/v1.2/ui/switch. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `switch` from https://alignui.com/docs/v1.2/ui/switch (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-toast",
+      "libraryId": "align-ui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "toast",
+        "Toast"
+      ],
+      "summary": "Toast notification feedback.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Toast from https://alignui.com/docs/v1.2/ui/toast"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/toast\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Toast` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Toast` (slug `toast`) from https://alignui.com/docs/v1.2/ui/toast. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `toast` from https://alignui.com/docs/v1.2/ui/toast (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-avatar",
+      "libraryId": "align-ui",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "avatar",
+        "Avatar"
+      ],
+      "summary": "User avatar with image and fallback.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Avatar from https://alignui.com/docs/v1.2/ui/avatar"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/avatar\nnpm install @radix-ui/react-avatar\n\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Avatar` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Avatar` (slug `avatar`) from https://alignui.com/docs/v1.2/ui/avatar. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `avatar` from https://alignui.com/docs/v1.2/ui/avatar (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-badge",
+      "libraryId": "align-ui",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "badge",
+        "Badge"
+      ],
+      "summary": "Status and label badges.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Badge from https://alignui.com/docs/v1.2/ui/badge"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/badge\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Badge` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Badge` (slug `badge`) from https://alignui.com/docs/v1.2/ui/badge. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `badge` from https://alignui.com/docs/v1.2/ui/badge (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-drawer",
+      "libraryId": "align-ui",
+      "slug": "drawer",
+      "name": "Drawer",
+      "aliases": [
+        "drawer",
+        "Drawer",
+        "sheet"
+      ],
+      "summary": "Slide-over drawer overlay.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/drawer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Drawer from https://alignui.com/docs/v1.2/ui/drawer"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/drawer\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Drawer` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Drawer` (slug `drawer`) from https://alignui.com/docs/v1.2/ui/drawer. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `drawer` from https://alignui.com/docs/v1.2/ui/drawer (optional: npx @alignui/cli tailwind)"
+      }
+    },
+    {
+      "id": "align-ui-dropdown",
+      "libraryId": "align-ui",
+      "slug": "dropdown",
+      "name": "Dropdown",
+      "aliases": [
+        "dropdown",
+        "Dropdown",
+        "dropdown-menu"
+      ],
+      "summary": "Dropdown menu overlay.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "align-ui",
+        "iframeSrc": "https://alignui.com/docs/v1.2/ui/dropdown",
+        "aspectRatio": "16/9",
+        "peerNotes": "Use Dropdown from https://alignui.com/docs/v1.2/ui/dropdown"
+      },
+      "copyCode": "# AlignUI Base Component (MIT free) — copy source from docs\n# Docs: https://alignui.com/docs/v1.2/ui/dropdown\nnpm install @radix-ui/react-dropdown-menu\n\n# 1) Optional tokens: npx @alignui/cli tailwind\n# 2) Copy `Dropdown` source from the docs page into your components/ui dir\n# Starter with all base comps: https://github.com/alignui/alignui-nextjs-typescript-starter",
+      "copyPrompt": {
+        "text": "Use AlignUI free MIT Base Component `Dropdown` (slug `dropdown`) from https://alignui.com/docs/v1.2/ui/dropdown. Copy/paste source from the docs (Base Components are FREE MIT; Pro covers blocks/templates/Figma). Optional Tailwind tokens: `npx @alignui/cli tailwind`. Home: https://alignui.com. Docs: https://alignui.com/docs/v1.2/introduction. Starter repo: https://github.com/alignui/alignui-nextjs-typescript-starter. License: MIT (https://www.alignui.com/license; starter Copyright (c) 2024 Doğukan Çavuş). Pricing freemium (ingest free Base only).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "copy-paste",
+        "command": "Copy AlignUI Base `dropdown` from https://alignui.com/docs/v1.2/ui/dropdown (optional: npx @alignui/cli tailwind)"
+      }
+    }
+  ]
+}

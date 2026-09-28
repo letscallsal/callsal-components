@@ -1,0 +1,633 @@
+{
+  "id": "aceternity-ui",
+  "name": "Aceternity UI",
+  "aliases": [
+    "aceternity",
+    "aceternity-ui",
+    "ui.aceternity"
+  ],
+  "summary": "Free animated React/Next components (Tailwind + Motion) via shadcn @aceternity registry; Pro blocks/templates excluded.",
+  "homeUrl": "https://ui.aceternity.com",
+  "docsUrl": "https://ui.aceternity.com/components",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @aceternity/<component>",
+    "registryUrl": "https://ui.aceternity.com/registry.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://ui.aceternity.com/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "motion",
+      "tailwindcss",
+      "@tabler/icons-react",
+      "simplex-noise",
+      "mini-svg-data-uri"
+    ],
+    "budgetKb": 400
+  },
+  "status": "verified",
+  "gaps": [
+    "No SPDX license string found on primary free-component sources; free-use terms in llms-full.txt + /licence (Pro-titled page). Field omitted rather than inventing MIT.",
+    "api/components meta.github https://github.com/aceternity/ui returned 404 during research — repoUrl omitted.",
+    "Pilot includes 12 free registry UI components of ~112 free components (ai-recommendations / api); not a full inventory.",
+    "Pro blocks (/blocks/*), pages, and templates excluded (proOnly / not unlocked).",
+    "Some popular free items use mismatched docs vs registry slugs (e.g. registry `lamp` → docs `/components/lamp-effect`, `3d-card` → `/3d-card-effect`, `glowing-stars` → `/glowing-stars-effect`) — excluded from this pilot set to keep slug==docs URL.",
+    "ARCHITECTURE §5 prefers iframe for Aceternity (heavy Motion previews); demos are docs iframes, not dynamic-import smoke mounts."
+  ],
+  "featured": true,
+  "updatedAt": "2026-09-28T14:20:03-04:00",
+  "components": [
+    {
+      "id": "aceternity-ui-background-beams",
+      "libraryId": "aceternity-ui",
+      "slug": "background-beams",
+      "name": "Background Beams",
+      "aliases": [
+        "beams background",
+        "svg beams",
+        "hero beams"
+      ],
+      "summary": "Animated SVG path beams for hero section backgrounds.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "hero"
+      ],
+      "effectType": [
+        "beam",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "background-beams",
+        "iframeSrc": "https://ui.aceternity.com/components/background-beams",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`."
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/background-beams\n\nimport { BackgroundBeams } from \"@/components/ui/background-beams\"\n\n<div className=\"relative h-[40rem] w-full overflow-hidden\">\n  <BackgroundBeams />\n</div>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Background Beams` (slug `background-beams`) from https://ui.aceternity.com/components/background-beams. Install with `npx shadcn@latest add @aceternity/background-beams` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/background-beams.json). Import `{ BackgroundBeams }` from `@/components/ui/background-beams` after CLI add (path may follow project aliases). Requires React + Tailwind; registry lists dependency `motion`. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/background-beams",
+        "registryUrl": "https://ui.aceternity.com/registry/background-beams.json",
+        "registryItem": "@aceternity/background-beams"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-spotlight",
+      "libraryId": "aceternity-ui",
+      "slug": "spotlight",
+      "name": "Spotlight",
+      "aliases": [
+        "svg spotlight",
+        "hero spotlight",
+        "attention spotlight"
+      ],
+      "summary": "SVG spotlight ellipse for drawing attention on heroes and sections.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "hero"
+      ],
+      "effectType": [
+        "glow",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "spotlight",
+        "iframeSrc": "https://ui.aceternity.com/components/spotlight",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/spotlight\n\nimport { Spotlight } from \"@/components/ui/spotlight\"\n\n<div className=\"relative h-[40rem] w-full overflow-hidden\">\n  <Spotlight className=\"-top-40 left-0 md:left-60 md:-top-20\" fill=\"white\" />\n</div>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Spotlight` (slug `spotlight`) from https://ui.aceternity.com/components/spotlight. Install with `npx shadcn@latest add @aceternity/spotlight` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/spotlight.json). Import `{ Spotlight }` from `@/components/ui/spotlight` after CLI add (path may follow project aliases). Requires React + Tailwind; often placed absolutely over a dark hero. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/spotlight",
+        "registryUrl": "https://ui.aceternity.com/registry/spotlight.json",
+        "registryItem": "@aceternity/spotlight"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-tracing-beam",
+      "libraryId": "aceternity-ui",
+      "slug": "tracing-beam",
+      "name": "Tracing Beam",
+      "aliases": [
+        "scroll beam",
+        "content beam",
+        "svg tracing beam"
+      ],
+      "summary": "Scroll-linked SVG beam that follows content height.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "section",
+        "layout"
+      ],
+      "effectType": [
+        "beam",
+        "scroll",
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "tracing-beam",
+        "iframeSrc": "https://ui.aceternity.com/components/tracing-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`; wrap long scroll content as children."
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/tracing-beam\n\nimport { TracingBeam } from \"@/components/ui/tracing-beam\"\n\n<TracingBeam>\n  <div className=\"max-w-2xl mx-auto antialiased pt-4 relative\">\n    {/* long scrollable content */}\n  </div>\n</TracingBeam>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Tracing Beam` (slug `tracing-beam`) from https://ui.aceternity.com/components/tracing-beam. Install with `npx shadcn@latest add @aceternity/tracing-beam` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/tracing-beam.json). Import `{ TracingBeam }` from `@/components/ui/tracing-beam` after CLI add (path may follow project aliases). Pass scrollable content as children. Requires React + Tailwind; registry lists dependency `motion`. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/tracing-beam",
+        "registryUrl": "https://ui.aceternity.com/registry/tracing-beam.json",
+        "registryItem": "@aceternity/tracing-beam"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-floating-navbar",
+      "libraryId": "aceternity-ui",
+      "slug": "floating-navbar",
+      "name": "Floating Navbar",
+      "aliases": [
+        "floating nav",
+        "hide on scroll navbar",
+        "sticky floating navbar"
+      ],
+      "summary": "Sticky floating navbar that hides on scroll down and reveals on scroll up.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [
+        "scroll",
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "floating-navbar",
+        "iframeSrc": "https://ui.aceternity.com/components/floating-navbar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`. Export name is `FloatingNav`."
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/floating-navbar\n\nimport { FloatingNav } from \"@/components/ui/floating-navbar\"\n\n<FloatingNav\n  navItems={[\n    { name: \"Home\", link: \"/\" },\n    { name: \"About\", link: \"/about\" },\n    { name: \"Contact\", link: \"/contact\" },\n  ]}\n/>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Floating Navbar` (slug `floating-navbar`) from https://ui.aceternity.com/components/floating-navbar. Install with `npx shadcn@latest add @aceternity/floating-navbar` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/floating-navbar.json). Import `{ FloatingNav }` (not FloatingNavbar) from `@/components/ui/floating-navbar` after CLI add. Pass `navItems: { name, link, icon? }[]`. Requires React + Tailwind; registry lists dependency `motion`. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/floating-navbar",
+        "registryUrl": "https://ui.aceternity.com/registry/floating-navbar.json",
+        "registryItem": "@aceternity/floating-navbar"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-bento-grid",
+      "libraryId": "aceternity-ui",
+      "slug": "bento-grid",
+      "name": "Bento Grid",
+      "aliases": [
+        "bento layout",
+        "feature bento",
+        "skewed bento grid"
+      ],
+      "summary": "Responsive bento grid with title, description, header, and icon slots.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "bento",
+        "layout",
+        "section"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "bento-grid",
+        "iframeSrc": "https://ui.aceternity.com/components/bento-grid",
+        "aspectRatio": "16/9",
+        "peerNotes": "Registry lists `@tabler/icons-react` for demo icons."
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/bento-grid\n\nimport { BentoGrid, BentoGridItem } from \"@/components/ui/bento-grid\"\n\n<BentoGrid>\n  <BentoGridItem\n    title=\"Feature\"\n    description=\"Short description\"\n    header={<div className=\"flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-neutral-100 dark:bg-neutral-900\" />}\n  />\n</BentoGrid>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Bento Grid` (slug `bento-grid`) from https://ui.aceternity.com/components/bento-grid. Install with `npx shadcn@latest add @aceternity/bento-grid` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/bento-grid.json). Import `{ BentoGrid, BentoGridItem }` from `@/components/ui/bento-grid` after CLI add. Requires React + Tailwind; registry lists `@tabler/icons-react` (icons optional for minimal usage). This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/bento-grid",
+        "registryUrl": "https://ui.aceternity.com/registry/bento-grid.json",
+        "registryItem": "@aceternity/bento-grid"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-infinite-moving-cards",
+      "libraryId": "aceternity-ui",
+      "slug": "infinite-moving-cards",
+      "name": "Infinite Moving Cards",
+      "aliases": [
+        "infinite cards",
+        "testimonial marquee",
+        "moving cards loop"
+      ],
+      "summary": "Infinite looping cards marquee for testimonials and quotes.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "marquee",
+        "section"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "infinite-moving-cards",
+        "iframeSrc": "https://ui.aceternity.com/components/infinite-moving-cards",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/infinite-moving-cards\n\nimport { InfiniteMovingCards } from \"@/components/ui/infinite-moving-cards\"\n\n<InfiniteMovingCards\n  items={[\n    { quote: \"Ship faster.\", name: \"Ada\", title: \"Founder\" },\n    { quote: \"Looks premium.\", name: \"Lin\", title: \"Designer\" },\n  ]}\n  direction=\"left\"\n  speed=\"fast\"\n/>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Infinite Moving Cards` (slug `infinite-moving-cards`) from https://ui.aceternity.com/components/infinite-moving-cards. Install with `npx shadcn@latest add @aceternity/infinite-moving-cards` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/infinite-moving-cards.json). Import `{ InfiniteMovingCards }` from `@/components/ui/infinite-moving-cards`. Pass `items: { quote, name, title }[]` with optional direction/speed/pauseOnHover. Requires React + Tailwind. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/infinite-moving-cards",
+        "registryUrl": "https://ui.aceternity.com/registry/infinite-moving-cards.json",
+        "registryItem": "@aceternity/infinite-moving-cards"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-text-generate-effect",
+      "libraryId": "aceternity-ui",
+      "slug": "text-generate-effect",
+      "name": "Text Generate Effect",
+      "aliases": [
+        "text fade generate",
+        "word reveal text",
+        "blur text generate"
+      ],
+      "summary": "Words fade/blur in one by one on load.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text",
+        "hero"
+      ],
+      "effectType": [
+        "blur",
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "text-generate-effect",
+        "iframeSrc": "https://ui.aceternity.com/components/text-generate-effect",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`."
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/text-generate-effect\n\nimport { TextGenerateEffect } from \"@/components/ui/text-generate-effect\"\n\n<TextGenerateEffect words=\"Aceternity UI makes landing pages feel alive.\" />",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Text Generate Effect` (slug `text-generate-effect`) from https://ui.aceternity.com/components/text-generate-effect. Install with `npx shadcn@latest add @aceternity/text-generate-effect` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/text-generate-effect.json). Import `{ TextGenerateEffect }` from `@/components/ui/text-generate-effect`. Pass a `words` string; optional `filter` and `duration`. Requires React + Tailwind; registry lists dependency `motion`. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/text-generate-effect",
+        "registryUrl": "https://ui.aceternity.com/registry/text-generate-effect.json",
+        "registryItem": "@aceternity/text-generate-effect"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-aurora-background",
+      "libraryId": "aceternity-ui",
+      "slug": "aurora-background",
+      "name": "Aurora Background",
+      "aliases": [
+        "aurora",
+        "northern lights background",
+        "southern lights background"
+      ],
+      "summary": "Subtle aurora / southern-lights animated background wrapper.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "hero"
+      ],
+      "effectType": [
+        "aurora",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "aurora-background",
+        "iframeSrc": "https://ui.aceternity.com/components/aurora-background",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/aurora-background\n\nimport { AuroraBackground } from \"@/components/ui/aurora-background\"\n\n<AuroraBackground>\n  <div className=\"relative flex flex-col gap-4 items-center justify-center px-4\">\n    <h1>Aurora</h1>\n  </div>\n</AuroraBackground>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Aurora Background` (slug `aurora-background`) from https://ui.aceternity.com/components/aurora-background. Install with `npx shadcn@latest add @aceternity/aurora-background` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/aurora-background.json). Import `{ AuroraBackground }` from `@/components/ui/aurora-background`. Wrap children; optional `showRadialGradient`. Requires React + Tailwind. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/aurora-background",
+        "registryUrl": "https://ui.aceternity.com/registry/aurora-background.json",
+        "registryItem": "@aceternity/aurora-background"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-card-hover-effect",
+      "libraryId": "aceternity-ui",
+      "slug": "card-hover-effect",
+      "name": "Card Hover Effect",
+      "aliases": [
+        "hover effect cards",
+        "feature hover cards",
+        "sliding hover highlight"
+      ],
+      "summary": "Grid of linked cards where a hover highlight slides to the active card.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "section"
+      ],
+      "effectType": [
+        "hover-reveal",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "card-hover-effect",
+        "iframeSrc": "https://ui.aceternity.com/components/card-hover-effect",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`. Primary export is `HoverEffect`."
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/card-hover-effect\n\nimport { HoverEffect } from \"@/components/ui/card-hover-effect\"\n\n<HoverEffect\n  items={[\n    { title: \"Auth\", description: \"Secure sign-in\", link: \"#\" },\n    { title: \"Billing\", description: \"Subscriptions\", link: \"#\" },\n    { title: \"Docs\", description: \"Guides & API\", link: \"#\" },\n  ]}\n/>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Card Hover Effect` (slug `card-hover-effect`) from https://ui.aceternity.com/components/card-hover-effect. Install with `npx shadcn@latest add @aceternity/card-hover-effect` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/card-hover-effect.json). Import `{ HoverEffect }` (also exports Card/CardTitle/CardDescription) from `@/components/ui/card-hover-effect`. Pass `items: { title, description, link }[]`. Requires React + Tailwind; registry lists dependency `motion`. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/card-hover-effect",
+        "registryUrl": "https://ui.aceternity.com/registry/card-hover-effect.json",
+        "registryItem": "@aceternity/card-hover-effect"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-meteors",
+      "libraryId": "aceternity-ui",
+      "slug": "meteors",
+      "name": "Meteors",
+      "aliases": [
+        "meteor effect",
+        "meteor beams",
+        "shooting meteor background"
+      ],
+      "summary": "Animated meteor streaks for container backgrounds.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "particles",
+        "beam"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "meteors",
+        "iframeSrc": "https://ui.aceternity.com/components/meteors",
+        "aspectRatio": "16/9",
+        "peerNotes": "Uses `motion` in source; place inside a relative overflow-hidden container."
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/meteors\n\nimport { Meteors } from \"@/components/ui/meteors\"\n\n<div className=\"relative h-80 w-full overflow-hidden\">\n  <Meteors number={20} />\n</div>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Meteors` (slug `meteors`) from https://ui.aceternity.com/components/meteors. Install with `npx shadcn@latest add @aceternity/meteors` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/meteors.json). Import `{ Meteors }` from `@/components/ui/meteors`. Optional `number` prop; place in a relative overflow-hidden container. Requires React + Tailwind; source imports `motion`. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/meteors",
+        "registryUrl": "https://ui.aceternity.com/registry/meteors.json",
+        "registryItem": "@aceternity/meteors"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-wavy-background",
+      "libraryId": "aceternity-ui",
+      "slug": "wavy-background",
+      "name": "Wavy Background",
+      "aliases": [
+        "wave canvas background",
+        "sine wave background",
+        "canvas waves"
+      ],
+      "summary": "Canvas wavy background using simplex-noise.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "hero"
+      ],
+      "effectType": [
+        "gradient",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "wavy-background",
+        "iframeSrc": "https://ui.aceternity.com/components/wavy-background",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs npm dependency `simplex-noise` (canvas 2D waves)."
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/wavy-background\n\nimport { WavyBackground } from \"@/components/ui/wavy-background\"\n\n<WavyBackground>\n  <p className=\"text-2xl text-white font-bold\">Wavy Background</p>\n</WavyBackground>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Wavy Background` (slug `wavy-background`) from https://ui.aceternity.com/components/wavy-background. Install with `npx shadcn@latest add @aceternity/wavy-background` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/wavy-background.json). Import `{ WavyBackground }` from `@/components/ui/wavy-background`. Optional props: colors, waveWidth, backgroundFill, blur, speed, waveOpacity. Requires React + Tailwind; registry lists dependency `simplex-noise`. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/wavy-background",
+        "registryUrl": "https://ui.aceternity.com/registry/wavy-background.json",
+        "registryItem": "@aceternity/wavy-background"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "aceternity-ui-hero-highlight",
+      "libraryId": "aceternity-ui",
+      "slug": "hero-highlight",
+      "name": "Hero Highlight",
+      "aliases": [
+        "dot highlight hero",
+        "text highlight hero",
+        "mouse highlight background"
+      ],
+      "summary": "Hero background with mouse-follow highlight and nested Highlight text.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "hero",
+        "text",
+        "background"
+      ],
+      "effectType": [
+        "hover-reveal",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "hero-highlight",
+        "iframeSrc": "https://ui.aceternity.com/components/hero-highlight",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs `motion` and `mini-svg-data-uri`; exports `HeroHighlight` and `Highlight`."
+      },
+      "copyCode": "npx shadcn@latest add @aceternity/hero-highlight\n\nimport { HeroHighlight, Highlight } from \"@/components/ui/hero-highlight\"\n\n<HeroHighlight>\n  <h1 className=\"text-3xl font-bold\">\n    Build with{' '}\n    <Highlight>Aceternity UI</Highlight>\n  </h1>\n</HeroHighlight>",
+      "copyPrompt": {
+        "text": "Use Aceternity UI free component `Hero Highlight` (slug `hero-highlight`) from https://ui.aceternity.com/components/hero-highlight. Install with `npx shadcn@latest add @aceternity/hero-highlight` after `npx shadcn@latest init` in a React/Next + Tailwind project (Aceternity is registered as the `@aceternity` shadcn namespace; registry item https://ui.aceternity.com/registry/hero-highlight.json). Import `{ HeroHighlight, Highlight }` from `@/components/ui/hero-highlight`. Wrap heading content; use `Highlight` for emphasized spans. Requires React + Tailwind; registry lists `mini-svg-data-uri` and `motion`. This entry is free-tier only — do not install Aceternity Pro blocks (`/blocks/*`), templates, or All-Access content unless the user has Pro. Prefer free components from https://ui.aceternity.com/components. License: free-use terms for personal/commercial projects; do not resell/redistribute as a competing library (see https://ui.aceternity.com/licence and https://ui.aceternity.com/llms-full.txt). No SPDX MIT claimed in catalog.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @aceternity/hero-highlight",
+        "registryUrl": "https://ui.aceternity.com/registry/hero-highlight.json",
+        "registryItem": "@aceternity/hero-highlight"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

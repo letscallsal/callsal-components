@@ -1,0 +1,598 @@
+{
+  "id": "8bitcn",
+  "name": "8bitcn",
+  "aliases": [
+    "8bitcn/ui",
+    "8bitcn-ui",
+    "TheOrcDev/8bitcn-ui"
+  ],
+  "summary": "Free MIT 8-bit styled shadcn/ui components, blocks, and game-ready React interfaces.",
+  "homeUrl": "https://www.8bitcn.com",
+  "docsUrl": "https://www.8bitcn.com/docs/components",
+  "repoUrl": "https://github.com/TheOrcDev/8bitcn-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @8bitcn/{name}",
+    "registryUrl": "https://8bitcn.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.8bitcn.com/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "shadcn"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of ~57 documented components (+ many blocks) \u2014 not a full inventory.",
+    "Distinctive game comps (health/xp/mana bars, enemy health, retro mode switcher) prioritized over plain shadcn restyles.",
+    "Registry namespace @8bitcn maps to https://8bitcn.com/r/{name}.json (also www.8bitcn.com).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:33:14-04:00",
+  "components": [
+    {
+      "id": "8bitcn-button",
+      "libraryId": "8bitcn",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "8bit button",
+        "pixel button"
+      ],
+      "summary": "Clickable 8-bit button with retro borders, variants, and Press Start styling.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/button",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/button\n\nimport { Button } from \"@/components/ui/8bit/button\"\n\n<Button>Press Start</Button>",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Button` (slug `button`) from https://www.8bitcn.com/docs/components/button. Install with `npx shadcn@latest add @8bitcn/button` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/button.json`. Registry item: https://8bitcn.com/r/button.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/button",
+        "registryUrl": "https://8bitcn.com/r/button.json",
+        "registryItem": "button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-health-bar",
+      "libraryId": "8bitcn",
+      "slug": "health-bar",
+      "name": "Health Bar",
+      "aliases": [
+        "hp bar",
+        "pixel health"
+      ],
+      "summary": "8-bit health bar progress indicator for game-style UIs.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/health-bar",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/health-bar",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/health-bar\n\nimport HealthBar from \"@/components/ui/8bit/health-bar\"\n\n<HealthBar value={72} />",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Health Bar` (slug `health-bar`) from https://www.8bitcn.com/docs/components/health-bar. Install with `npx shadcn@latest add @8bitcn/health-bar` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/health-bar.json`. Registry item: https://8bitcn.com/r/health-bar.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/health-bar",
+        "registryUrl": "https://8bitcn.com/r/health-bar.json",
+        "registryItem": "health-bar"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-xp-bar",
+      "libraryId": "8bitcn",
+      "slug": "xp-bar",
+      "name": "XP Bar",
+      "aliases": [
+        "experience bar",
+        "level xp bar"
+      ],
+      "summary": "8-bit XP bar with level-up animation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/xp-bar",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/xp-bar",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/xp-bar\n\nimport XpBar from \"@/components/ui/8bit/xp-bar\"\n\n<XpBar value={40} />",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `XP Bar` (slug `xp-bar`) from https://www.8bitcn.com/docs/components/xp-bar. Install with `npx shadcn@latest add @8bitcn/xp-bar` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/xp-bar.json`. Registry item: https://8bitcn.com/r/xp-bar.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/xp-bar",
+        "registryUrl": "https://8bitcn.com/r/xp-bar.json",
+        "registryItem": "xp-bar"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-mana-bar",
+      "libraryId": "8bitcn",
+      "slug": "mana-bar",
+      "name": "Mana Bar",
+      "aliases": [
+        "mp bar",
+        "pixel mana"
+      ],
+      "summary": "8-bit mana bar progress indicator.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/mana-bar",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/mana-bar",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/mana-bar\n\nimport ManaBar from \"@/components/ui/8bit/mana-bar\"\n\n<ManaBar value={55} />",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Mana Bar` (slug `mana-bar`) from https://www.8bitcn.com/docs/components/mana-bar. Install with `npx shadcn@latest add @8bitcn/mana-bar` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/mana-bar.json`. Registry item: https://8bitcn.com/r/mana-bar.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/mana-bar",
+        "registryUrl": "https://8bitcn.com/r/mana-bar.json",
+        "registryItem": "mana-bar"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-dialog",
+      "libraryId": "8bitcn",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "8bit dialog",
+        "pixel modal"
+      ],
+      "summary": "8-bit dialog / modal with retro chrome.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/dialog",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/dialog\n\nimport {\n  Dialog,\n  DialogTrigger,\n  DialogContent,\n  DialogHeader,\n  DialogTitle,\n} from \"@/components/ui/8bit/dialog\"\n\n<Dialog>\n  <DialogTrigger>Open</DialogTrigger>\n  <DialogContent>\n    <DialogHeader>\n      <DialogTitle>Quest log</DialogTitle>\n    </DialogHeader>\n  </DialogContent>\n</Dialog>",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Dialog` (slug `dialog`) from https://www.8bitcn.com/docs/components/dialog. Install with `npx shadcn@latest add @8bitcn/dialog` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/dialog.json`. Registry item: https://8bitcn.com/r/dialog.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/dialog",
+        "registryUrl": "https://8bitcn.com/r/dialog.json",
+        "registryItem": "dialog"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-toast",
+      "libraryId": "8bitcn",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "8bit toast",
+        "pixel toast"
+      ],
+      "summary": "8-bit toast notification helper.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/toast",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/toast\n\nimport { toast } from \"@/components/ui/8bit/toast\"\n\ntoast(\"Item saved\")",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Toast` (slug `toast`) from https://www.8bitcn.com/docs/components/toast. Install with `npx shadcn@latest add @8bitcn/toast` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/toast.json`. Registry item: https://8bitcn.com/r/toast.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/toast",
+        "registryUrl": "https://8bitcn.com/r/toast.json",
+        "registryItem": "toast"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-card",
+      "libraryId": "8bitcn",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "8bit card",
+        "pixel card"
+      ],
+      "summary": "8-bit card with retro borders for content blocks.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/card",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/card\n\nimport { Card, CardHeader, CardTitle, CardContent } from \"@/components/ui/8bit/card\"\n\n<Card>\n  <CardHeader>\n    <CardTitle>Inventory</CardTitle>\n  </CardHeader>\n  <CardContent>Loot goes here</CardContent>\n</Card>",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Card` (slug `card`) from https://www.8bitcn.com/docs/components/card. Install with `npx shadcn@latest add @8bitcn/card` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/card.json`. Registry item: https://8bitcn.com/r/card.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/card",
+        "registryUrl": "https://8bitcn.com/r/card.json",
+        "registryItem": "card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-badge",
+      "libraryId": "8bitcn",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "8bit badge",
+        "pixel badge"
+      ],
+      "summary": "8-bit badge for status and labels.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/badge",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/badge\n\nimport { Badge } from \"@/components/ui/8bit/badge\"\n\n<Badge>Lv. 12</Badge>",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Badge` (slug `badge`) from https://www.8bitcn.com/docs/components/badge. Install with `npx shadcn@latest add @8bitcn/badge` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/badge.json`. Registry item: https://8bitcn.com/r/badge.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/badge",
+        "registryUrl": "https://8bitcn.com/r/badge.json",
+        "registryItem": "badge"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-retro-mode-switcher",
+      "libraryId": "8bitcn",
+      "slug": "retro-mode-switcher",
+      "name": "Retro Mode Switcher",
+      "aliases": [
+        "theme toggle",
+        "pixel theme switch"
+      ],
+      "summary": "Retro-styled theme toggle with pixel sun and moon icons.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/retro-mode-switcher",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/retro-mode-switcher",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/retro-mode-switcher\n\nimport { RetroModeSwitcher } from \"@/components/ui/retro-mode-switcher\"\n\n<RetroModeSwitcher />",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Retro Mode Switcher` (slug `retro-mode-switcher`) from https://www.8bitcn.com/docs/components/retro-mode-switcher. Install with `npx shadcn@latest add @8bitcn/retro-mode-switcher` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/retro-mode-switcher.json`. Registry item: https://8bitcn.com/r/retro-mode-switcher.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/retro-mode-switcher",
+        "registryUrl": "https://8bitcn.com/r/retro-mode-switcher.json",
+        "registryItem": "retro-mode-switcher"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-enemy-health-display",
+      "libraryId": "8bitcn",
+      "slug": "enemy-health-display",
+      "name": "Enemy Health Display",
+      "aliases": [
+        "boss hp",
+        "enemy hp display"
+      ],
+      "summary": "Retro enemy health display with name, level, and health bar.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/enemy-health-display",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/enemy-health-display",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/enemy-health-display\n\nimport EnemyHealthDisplay from \"@/components/ui/8bit/enemy-health-display\"\n\n<EnemyHealthDisplay />",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Enemy Health Display` (slug `enemy-health-display`) from https://www.8bitcn.com/docs/components/enemy-health-display. Install with `npx shadcn@latest add @8bitcn/enemy-health-display` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/enemy-health-display.json`. Registry item: https://8bitcn.com/r/enemy-health-display.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/enemy-health-display",
+        "registryUrl": "https://8bitcn.com/r/enemy-health-display.json",
+        "registryItem": "enemy-health-display"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-skeleton",
+      "libraryId": "8bitcn",
+      "slug": "skeleton",
+      "name": "Skeleton",
+      "aliases": [
+        "8bit skeleton",
+        "pixel skeleton"
+      ],
+      "summary": "8-bit skeleton loading placeholder.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/skeleton",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/skeleton",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/skeleton\n\nimport { Skeleton } from \"@/components/ui/8bit/skeleton\"\n\n<Skeleton className=\"h-8 w-32\" />",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Skeleton` (slug `skeleton`) from https://www.8bitcn.com/docs/components/skeleton. Install with `npx shadcn@latest add @8bitcn/skeleton` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/skeleton.json`. Registry item: https://8bitcn.com/r/skeleton.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/skeleton",
+        "registryUrl": "https://8bitcn.com/r/skeleton.json",
+        "registryItem": "skeleton"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "8bitcn-progress",
+      "libraryId": "8bitcn",
+      "slug": "progress",
+      "name": "Progress",
+      "aliases": [
+        "8bit progress",
+        "pixel progress"
+      ],
+      "summary": "8-bit progress bar component.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@8bitcn/progress",
+        "iframeSrc": "https://www.8bitcn.com/docs/components/progress",
+        "aspectRatio": "16/9",
+        "peerNotes": "tailwindcss; Press Start 2P via retro.css"
+      },
+      "copyCode": "npx shadcn@latest add @8bitcn/progress\n\nimport { Progress } from \"@/components/ui/8bit/progress\"\n\n<Progress value={66} />",
+      "copyPrompt": {
+        "text": "Use 8bitcn free MIT component `Progress` (slug `progress`) from https://www.8bitcn.com/docs/components/progress. Install with `npx shadcn@latest add @8bitcn/progress` (official shadcn registry namespace @8bitcn \u2192 https://8bitcn.com/r/{name}.json) or `npx shadcn@latest add https://8bitcn.com/r/progress.json`. Registry item: https://8bitcn.com/r/progress.json. Primary files land under `@/components/ui/8bit/` (retro-mode-switcher under `@/components/ui/retro-mode-switcher`) plus shared `styles/retro.css`. Requires React + TypeScript + Tailwind / shadcn. License: MIT (https://raw.githubusercontent.com/TheOrcDev/8bitcn-ui/main/license.md). Pricing free \u2014 open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @8bitcn/progress",
+        "registryUrl": "https://8bitcn.com/r/progress.json",
+        "registryItem": "progress"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

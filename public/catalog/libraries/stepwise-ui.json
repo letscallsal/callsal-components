@@ -1,0 +1,605 @@
+{
+  "id": "stepwise-ui",
+  "name": "Stepwise UI",
+  "aliases": [
+    "stepwise",
+    "stepwise-ui",
+    "ui.stepwise.studio",
+    "Stepwise Studio",
+    "stepwise-ui cli"
+  ],
+  "summary": "60+ free open-source React components with squircle surfaces via stepwise-ui CLI.",
+  "homeUrl": "https://ui.stepwise.studio",
+  "docsUrl": "https://ui.stepwise.studio/docs/introduction",
+  "repoUrl": "https://github.com/Stepwise-Studio/stepwise-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx stepwise-ui add {name}",
+    "registryUrl": "https://ui.stepwise.studio/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://ui.stepwise.studio/docs/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "motion",
+      "clsx",
+      "tailwind-merge",
+      "@lisse/react"
+    ],
+    "budgetKb": 600
+  },
+  "status": "verified",
+  "gaps": [
+    "No root LICENSE file in GitHub repo; MIT confirmed from README License section, docs introduction, and cli/package.json license field.",
+    "Pilot includes 12 of 60+ registry components.",
+    "Requires React 19 + Tailwind CSS v4.",
+    "iframe demos only (docs live previews)."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:40:00-04:00",
+  "components": [
+    {
+      "id": "stepwise-ui-button",
+      "libraryId": "stepwise-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "stepwise button",
+        "stepwise button"
+      ],
+      "summary": "Squircle button in three sizes and five variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/button",
+        "iframeSrc": "https://ui.stepwise.studio/docs/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add button\n\nimport { Button } from '@/components/stepwise/button'\n\n<Button variant=\"solid\">Ship it</Button>",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Button` (slug `button`) from https://ui.stepwise.studio/docs/button. Install with `npx stepwise-ui add button` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/button.json). Import from `@/components/stepwise/button`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add button",
+        "registryUrl": "https://ui.stepwise.studio/r/button.json",
+        "registryItem": "button"
+      }
+    },
+    {
+      "id": "stepwise-ui-glow-button",
+      "libraryId": "stepwise-ui",
+      "slug": "glow-button",
+      "name": "Glow Button",
+      "aliases": [
+        "glow-button",
+        "stepwise glow-button",
+        "stepwise glow button"
+      ],
+      "summary": "CTA button with a colour glow along the inside bottom edge.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/glow-button",
+        "iframeSrc": "https://ui.stepwise.studio/docs/glow-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add glow-button\n\nimport { GlowButton } from '@/components/stepwise/glow-button'\n\n<GlowButton>Install on Figma</GlowButton>",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Glow Button` (slug `glow-button`) from https://ui.stepwise.studio/docs/glow-button. Install with `npx stepwise-ui add glow-button` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/glow-button.json). Import from `@/components/stepwise/glow-button`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add glow-button",
+        "registryUrl": "https://ui.stepwise.studio/r/glow-button.json",
+        "registryItem": "glow-button"
+      }
+    },
+    {
+      "id": "stepwise-ui-input",
+      "libraryId": "stepwise-ui",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "input",
+        "stepwise input",
+        "stepwise input"
+      ],
+      "summary": "Text field with name, email, username, password, and plain text variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/input",
+        "iframeSrc": "https://ui.stepwise.studio/docs/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add input\n\nimport { Input } from '@/components/stepwise/input'\n\n<Input variant=\"email\" />",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Input` (slug `input`) from https://ui.stepwise.studio/docs/input. Install with `npx stepwise-ui add input` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/input.json). Import from `@/components/stepwise/input`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add input",
+        "registryUrl": "https://ui.stepwise.studio/r/input.json",
+        "registryItem": "input"
+      }
+    },
+    {
+      "id": "stepwise-ui-toast",
+      "libraryId": "stepwise-ui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "toast",
+        "stepwise toast",
+        "stepwise toast"
+      ],
+      "summary": "Global notification toasts in four types: success, warning, error, info.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/toast",
+        "iframeSrc": "https://ui.stepwise.studio/docs/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add toast\n\nimport { Toaster, toast } from '@/components/stepwise/toast'\n\n<Toaster />\ntoast.success('Saved')",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Toast` (slug `toast`) from https://ui.stepwise.studio/docs/toast. Install with `npx stepwise-ui add toast` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/toast.json). Import from `@/components/stepwise/toast`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add toast",
+        "registryUrl": "https://ui.stepwise.studio/r/toast.json",
+        "registryItem": "toast"
+      }
+    },
+    {
+      "id": "stepwise-ui-modal",
+      "libraryId": "stepwise-ui",
+      "slug": "modal",
+      "name": "Modal",
+      "aliases": [
+        "modal",
+        "stepwise modal",
+        "stepwise modal"
+      ],
+      "summary": "Confirmation dialog that blocks the page until the user chooses.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/modal",
+        "iframeSrc": "https://ui.stepwise.studio/docs/modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add modal\n\nimport { Modal } from '@/components/stepwise/modal'\n\n<Modal open={open} onClose={() => setOpen(false)} title=\"Save changes?\" confirmLabel=\"Save\" onConfirm={save} />",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Modal` (slug `modal`) from https://ui.stepwise.studio/docs/modal. Install with `npx stepwise-ui add modal` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/modal.json). Import from `@/components/stepwise/modal`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add modal",
+        "registryUrl": "https://ui.stepwise.studio/r/modal.json",
+        "registryItem": "modal"
+      }
+    },
+    {
+      "id": "stepwise-ui-accordion",
+      "libraryId": "stepwise-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "stepwise accordion",
+        "stepwise accordion"
+      ],
+      "summary": "Collapsible panels with spring-eased height animation and rotating chevron.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/accordion",
+        "iframeSrc": "https://ui.stepwise.studio/docs/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add accordion\n\nimport { Accordion } from '@/components/stepwise/accordion'\n\n<Accordion items={[{ id: 'q1', title: 'Why?', content: 'Because…' }]} />",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Accordion` (slug `accordion`) from https://ui.stepwise.studio/docs/accordion. Install with `npx stepwise-ui add accordion` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/accordion.json). Import from `@/components/stepwise/accordion`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add accordion",
+        "registryUrl": "https://ui.stepwise.studio/r/accordion.json",
+        "registryItem": "accordion"
+      }
+    },
+    {
+      "id": "stepwise-ui-avatar",
+      "libraryId": "stepwise-ui",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "avatar",
+        "stepwise avatar",
+        "stepwise avatar"
+      ],
+      "summary": "Circular user representation: neutral initial or photo, plus AvatarGroup.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/avatar",
+        "iframeSrc": "https://ui.stepwise.studio/docs/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add avatar\n\nimport { Avatar } from '@/components/stepwise/avatar'\n\n<Avatar name=\"Asta\" />",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Avatar` (slug `avatar`) from https://ui.stepwise.studio/docs/avatar. Install with `npx stepwise-ui add avatar` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/avatar.json). Import from `@/components/stepwise/avatar`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add avatar",
+        "registryUrl": "https://ui.stepwise.studio/r/avatar.json",
+        "registryItem": "avatar"
+      }
+    },
+    {
+      "id": "stepwise-ui-checkbox",
+      "libraryId": "stepwise-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "stepwise checkbox",
+        "stepwise checkbox"
+      ],
+      "summary": "Squircle checkbox in three sizes with indeterminate support.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/checkbox",
+        "iframeSrc": "https://ui.stepwise.studio/docs/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add checkbox\n\nimport { Checkbox } from '@/components/stepwise/checkbox'\n\n<Checkbox label=\"Accept terms\" defaultChecked />",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Checkbox` (slug `checkbox`) from https://ui.stepwise.studio/docs/checkbox. Install with `npx stepwise-ui add checkbox` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/checkbox.json). Import from `@/components/stepwise/checkbox`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add checkbox",
+        "registryUrl": "https://ui.stepwise.studio/r/checkbox.json",
+        "registryItem": "checkbox"
+      }
+    },
+    {
+      "id": "stepwise-ui-select",
+      "libraryId": "stepwise-ui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "stepwise select",
+        "stepwise select"
+      ],
+      "summary": "Single-option selector with input-like trigger and floating panel.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/select",
+        "iframeSrc": "https://ui.stepwise.studio/docs/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add select\n\nimport { Select } from '@/components/stepwise/select'\n\n<Select options={[{ value: 'next', label: 'Next.js' }]} placeholder=\"Choose\" />",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Select` (slug `select`) from https://ui.stepwise.studio/docs/select. Install with `npx stepwise-ui add select` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/select.json). Import from `@/components/stepwise/select`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add select",
+        "registryUrl": "https://ui.stepwise.studio/r/select.json",
+        "registryItem": "select"
+      }
+    },
+    {
+      "id": "stepwise-ui-slider",
+      "libraryId": "stepwise-ui",
+      "slug": "slider",
+      "name": "Slider",
+      "aliases": [
+        "slider",
+        "stepwise slider",
+        "stepwise slider"
+      ],
+      "summary": "Inline labelled squircle slider matching Input corner radius.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/slider",
+        "iframeSrc": "https://ui.stepwise.studio/docs/slider",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add slider\n\nimport { Slider } from '@/components/stepwise/slider'\n\n<Slider label=\"Width\" value={width} onChange={setWidth} min={0} max={100} />",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Slider` (slug `slider`) from https://ui.stepwise.studio/docs/slider. Install with `npx stepwise-ui add slider` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/slider.json). Import from `@/components/stepwise/slider`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add slider",
+        "registryUrl": "https://ui.stepwise.studio/r/slider.json",
+        "registryItem": "slider"
+      }
+    },
+    {
+      "id": "stepwise-ui-tooltip",
+      "libraryId": "stepwise-ui",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "tooltip",
+        "stepwise tooltip",
+        "stepwise tooltip"
+      ],
+      "summary": "Edge-aware tooltip that flips placement when it would clip.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/tooltip",
+        "iframeSrc": "https://ui.stepwise.studio/docs/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add tooltip\n\nimport { Tooltip } from '@/components/stepwise/tooltip'\n\n<Tooltip content=\"Save to cloud\"><button>Save</button></Tooltip>",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Tooltip` (slug `tooltip`) from https://ui.stepwise.studio/docs/tooltip. Install with `npx stepwise-ui add tooltip` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/tooltip.json). Import from `@/components/stepwise/tooltip`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add tooltip",
+        "registryUrl": "https://ui.stepwise.studio/r/tooltip.json",
+        "registryItem": "tooltip"
+      }
+    },
+    {
+      "id": "stepwise-ui-scramble-text",
+      "libraryId": "stepwise-ui",
+      "slug": "scramble-text",
+      "name": "Scramble Text",
+      "aliases": [
+        "scramble-text",
+        "stepwise scramble-text",
+        "stepwise scramble text"
+      ],
+      "summary": "Scramble reveal: characters churn then lock left to right.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/stepwise/scramble-text",
+        "iframeSrc": "https://ui.stepwise.studio/docs/scramble-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install via `npx stepwise-ui add {slug}`. Requires React 19, Tailwind CSS v4, TypeScript. Registry JSON at https://ui.stepwise.studio/r/{slug}.json."
+      },
+      "copyCode": "npx stepwise-ui add scramble-text\n\nimport { ScrambleText } from '@/components/stepwise/scramble-text'\n\n<ScrambleText>Stepwise Interface Kit</ScrambleText>",
+      "copyPrompt": {
+        "text": "Use Stepwise UI free MIT React component `Scramble Text` (slug `scramble-text`) from https://ui.stepwise.studio/docs/scramble-text. Install with `npx stepwise-ui add scramble-text` (writes source into `components/stepwise/`; registry https://ui.stepwise.studio/r/scramble-text.json). Import from `@/components/stepwise/scramble-text`. Peers commonly include motion, clsx, tailwind-merge, @lisse/react (squircle). Requirements: React 19, Tailwind CSS v4, TypeScript. Home: https://ui.stepwise.studio. Docs: https://ui.stepwise.studio/docs/introduction. Quick start: https://ui.stepwise.studio/docs/quick-start. Repo: https://github.com/Stepwise-Studio/stepwise-ui. License: MIT (README License section + docs introduction + cli package.json license field; no root LICENSE file in repo). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx stepwise-ui add scramble-text",
+        "registryUrl": "https://ui.stepwise.studio/r/scramble-text.json",
+        "registryItem": "scramble-text"
+      }
+    }
+  ]
+}

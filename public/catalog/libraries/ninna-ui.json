@@ -1,0 +1,602 @@
+{
+  "id": "ninna-ui",
+  "name": "Ninna UI",
+  "aliases": [
+    "ninna",
+    "ninna-ui.dev",
+    "@ninna-ui",
+    "ninna-ui/ninna-ui"
+  ],
+  "summary": "Zero-runtime React UI with native Tailwind v4, CSS theming, and Radix accessibility.",
+  "homeUrl": "https://ninna-ui.dev",
+  "docsUrl": "https://www.ninna-ui.dev/docs",
+  "repoUrl": "https://github.com/ninna-ui/ninna-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "pnpm add @ninna-ui/core @ninna-ui/primitives",
+    "packages": [
+      "@ninna-ui/core",
+      "@ninna-ui/primitives",
+      "@ninna-ui/feedback",
+      "@ninna-ui/forms",
+      "@ninna-ui/layout",
+      "@ninna-ui/overlays",
+      "@ninna-ui/navigation",
+      "@ninna-ui/data-display"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.ninna-ui.dev/{package}/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss"
+    ],
+    "budgetKb": 700
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of ~69 production components across 12 npm packages.",
+    "Docs routes are package-prefixed (/primitives/button) rather than /docs/components/*.",
+    "CLI `npx @ninna-ui/cli init` scaffolds apps; catalog copyCode uses per-package pnpm add.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:05:00-04:00",
+  "components": [
+    {
+      "id": "ninna-ui-button",
+      "libraryId": "ninna-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "ninna button"
+      ],
+      "summary": "Accessible button with color and size variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/primitives/Button",
+        "iframeSrc": "https://www.ninna-ui.dev/primitives/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/primitives\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Button } from \"@ninna-ui/primitives\"\n\n<Button color=\"primary\">Click me</Button>",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Button` (slug `button`) from https://www.ninna-ui.dev/primitives/button. Install with `pnpm add @ninna-ui/primitives` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Button } from \"@ninna-ui/primitives\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/primitives",
+        "packages": [
+          "@ninna-ui/primitives",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-badge",
+      "libraryId": "ninna-ui",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "ninna badge"
+      ],
+      "summary": "Compact status badge for labels and counts.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/primitives/Badge",
+        "iframeSrc": "https://www.ninna-ui.dev/primitives/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/primitives\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Badge } from \"@ninna-ui/primitives\"\n\n<Badge color=\"primary\">New</Badge>",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Badge` (slug `badge`) from https://www.ninna-ui.dev/primitives/badge. Install with `pnpm add @ninna-ui/primitives` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Badge } from \"@ninna-ui/primitives\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/primitives",
+        "packages": [
+          "@ninna-ui/primitives",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-avatar",
+      "libraryId": "ninna-ui",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "ninna avatar"
+      ],
+      "summary": "User avatar with image and fallback initials.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/primitives/Avatar",
+        "iframeSrc": "https://www.ninna-ui.dev/primitives/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/primitives\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Avatar } from \"@ninna-ui/primitives\"\n\n<Avatar name=\"Ada Lovelace\" />",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Avatar` (slug `avatar`) from https://www.ninna-ui.dev/primitives/avatar. Install with `pnpm add @ninna-ui/primitives` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Avatar } from \"@ninna-ui/primitives\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/primitives",
+        "packages": [
+          "@ninna-ui/primitives",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-input",
+      "libraryId": "ninna-ui",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "ninna input"
+      ],
+      "summary": "Text input control with field styling.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/forms/Input",
+        "iframeSrc": "https://www.ninna-ui.dev/forms/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/forms\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Input } from \"@ninna-ui/forms\"\n\n<Input placeholder=\"Email\" />",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Input` (slug `input`) from https://www.ninna-ui.dev/forms/input. Install with `pnpm add @ninna-ui/forms` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Input } from \"@ninna-ui/forms\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/forms",
+        "packages": [
+          "@ninna-ui/forms",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-switch",
+      "libraryId": "ninna-ui",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "ninna switch"
+      ],
+      "summary": "Accessible on/off switch control.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/forms/Switch",
+        "iframeSrc": "https://www.ninna-ui.dev/forms/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/forms\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Switch } from \"@ninna-ui/forms\"\n\n<Switch />",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Switch` (slug `switch`) from https://www.ninna-ui.dev/forms/switch. Install with `pnpm add @ninna-ui/forms` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Switch } from \"@ninna-ui/forms\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/forms",
+        "packages": [
+          "@ninna-ui/forms",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-alert",
+      "libraryId": "ninna-ui",
+      "slug": "alert",
+      "name": "Alert",
+      "aliases": [
+        "ninna alert"
+      ],
+      "summary": "Inline alert for status and messaging.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/feedback/Alert",
+        "iframeSrc": "https://www.ninna-ui.dev/feedback/alert",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/feedback\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Alert } from \"@ninna-ui/feedback\"\n\n<Alert status=\"info\">Heads up</Alert>",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Alert` (slug `alert`) from https://www.ninna-ui.dev/feedback/alert. Install with `pnpm add @ninna-ui/feedback` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Alert } from \"@ninna-ui/feedback\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/feedback",
+        "packages": [
+          "@ninna-ui/feedback",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-toast",
+      "libraryId": "ninna-ui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "ninna toast"
+      ],
+      "summary": "Toast notifications via toast helpers and Toaster.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/feedback",
+        "iframeSrc": "https://www.ninna-ui.dev/feedback/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/feedback\n# also: import theme CSS from @ninna-ui/core (see getting-started/styling)\n\nimport { toast, Toaster } from \"@ninna-ui/feedback\"\n\n<Toaster />\ntoast.success(\"Saved\")",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Toast` (slug `toast`) from https://www.ninna-ui.dev/feedback/toast. Install with `pnpm add @ninna-ui/feedback` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { toast } from \"@ninna-ui/feedback\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/feedback",
+        "packages": [
+          "@ninna-ui/feedback",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-modal",
+      "libraryId": "ninna-ui",
+      "slug": "modal",
+      "name": "Modal",
+      "aliases": [
+        "ninna modal",
+        "ninna dialog"
+      ],
+      "summary": "Accessible modal dialog with focus trap.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/overlays/Modal",
+        "iframeSrc": "https://www.ninna-ui.dev/overlays/modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/overlays\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Modal } from \"@ninna-ui/overlays\"\n\n<Modal>\u2026</Modal>",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Modal` (slug `modal`) from https://www.ninna-ui.dev/overlays/modal. Install with `pnpm add @ninna-ui/overlays` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Modal } from \"@ninna-ui/overlays\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/overlays",
+        "packages": [
+          "@ninna-ui/overlays",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-tooltip",
+      "libraryId": "ninna-ui",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "ninna tooltip"
+      ],
+      "summary": "Accessible hover/focus tooltip.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/overlays/Tooltip",
+        "iframeSrc": "https://www.ninna-ui.dev/overlays/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/overlays\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Tooltip } from \"@ninna-ui/overlays\"\n\n<Tooltip content=\"Info\"><Button>Hover</Button></Tooltip>",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Tooltip` (slug `tooltip`) from https://www.ninna-ui.dev/overlays/tooltip. Install with `pnpm add @ninna-ui/overlays` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Tooltip } from \"@ninna-ui/overlays\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/overlays",
+        "packages": [
+          "@ninna-ui/overlays",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-tabs",
+      "libraryId": "ninna-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "ninna tabs"
+      ],
+      "summary": "Accessible tabbed navigation panels.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/navigation/Tabs",
+        "iframeSrc": "https://www.ninna-ui.dev/navigation/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/navigation\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Tabs } from \"@ninna-ui/navigation\"\n\n<Tabs>\u2026</Tabs>",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Tabs` (slug `tabs`) from https://www.ninna-ui.dev/navigation/tabs. Install with `pnpm add @ninna-ui/navigation` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Tabs } from \"@ninna-ui/navigation\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/navigation",
+        "packages": [
+          "@ninna-ui/navigation",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-accordion",
+      "libraryId": "ninna-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "ninna accordion"
+      ],
+      "summary": "Expandable accordion disclosure sections.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/navigation/Accordion",
+        "iframeSrc": "https://www.ninna-ui.dev/navigation/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/navigation\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Accordion } from \"@ninna-ui/navigation\"\n\n<Accordion>\u2026</Accordion>",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Accordion` (slug `accordion`) from https://www.ninna-ui.dev/navigation/accordion. Install with `pnpm add @ninna-ui/navigation` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Accordion } from \"@ninna-ui/navigation\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/navigation",
+        "packages": [
+          "@ninna-ui/navigation",
+          "@ninna-ui/core"
+        ]
+      }
+    },
+    {
+      "id": "ninna-ui-card",
+      "libraryId": "ninna-ui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "ninna card"
+      ],
+      "summary": "Content card surface for grouped UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ninna-ui/data-display/Card",
+        "iframeSrc": "https://www.ninna-ui.dev/data-display/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Install matching @ninna-ui/* package + @ninna-ui/core theme CSS. React 19 + Tailwind CSS v4."
+      },
+      "copyCode": "pnpm add @ninna-ui/data-display\n# Theme CSS (once): @import \"@ninna-ui/core/theme/presets/default.css\";\n\nimport { Card } from \"@ninna-ui/data-display\"\n\n<Card>\u2026</Card>",
+      "copyPrompt": {
+        "text": "Use Ninna UI free MIT React component `Card` (slug `card`) from https://www.ninna-ui.dev/data-display/card. Install with `pnpm add @ninna-ui/data-display` (or npm/yarn), import theme CSS from `@ninna-ui/core/theme/presets/default.css` after Tailwind, then `import { Card } from \"@ninna-ui/data-display\"`. CLI scaffold: `npx @ninna-ui/cli init my-app`. Docs installation: https://www.ninna-ui.dev/getting-started/installation. Home: https://ninna-ui.dev. Repo: https://github.com/ninna-ui/ninna-ui. License: MIT (https://raw.githubusercontent.com/ninna-ui/ninna-ui/main/LICENSE; Copyright (c) 2026 Ninna-UI Team). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "pnpm add @ninna-ui/data-display",
+        "packages": [
+          "@ninna-ui/data-display",
+          "@ninna-ui/core"
+        ]
+      }
+    }
+  ]
+}

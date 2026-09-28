@@ -1,0 +1,619 @@
+{
+  "id": "fluid-functionalism",
+  "name": "Fluid Functionalism",
+  "aliases": [
+    "fluid",
+    "fluidfunctionalism",
+    "@fluid",
+    "mickadesign/fluid-functionalism"
+  ],
+  "summary": "MIT shadcn registry of spring/hover React components (Radix + Base UI flavors).",
+  "homeUrl": "https://www.fluidfunctionalism.com",
+  "docsUrl": "https://www.fluidfunctionalism.com/docs",
+  "repoUrl": "https://github.com/mickadesign/fluid-functionalism",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @fluid/{name}",
+    "registryUrl": "https://www.fluidfunctionalism.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.fluidfunctionalism.com/docs/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "framer-motion",
+      "lucide-react"
+    ],
+    "budgetKb": 600
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 47 registry:ui items (71 total registry entries including themes/libs/hooks).",
+    "Radix flavor used for pilot; Base UI alternate at @fluid/base/{slug} / r/base/{slug}.json not listed separately.",
+    "Stock shadcn filenames overlap \u2014 CLI may need --overwrite.",
+    "Font-weight animations expect Inter variable font with wght+opsz axes.",
+    "iframe demos only."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:45:00-04:00",
+  "components": [
+    {
+      "id": "fluid-functionalism-button",
+      "libraryId": "fluid-functionalism",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "fluid button",
+        "fluid-functionalism button",
+        "button"
+      ],
+      "summary": "Animated button with fluid font-weight hover and variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/button",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/button\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/button.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { Button } from \"@/components/ui/button\"\n\n<Button />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Button` (slug `button`) from https://www.fluidfunctionalism.com/docs/button. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/button` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/button.json`). Default flavor is Radix; Base UI via `@fluid/base/button`. Import from `@/components/ui/button`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/button",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/button.json",
+        "registryItem": "button"
+      }
+    },
+    {
+      "id": "fluid-functionalism-accordion",
+      "libraryId": "fluid-functionalism",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "fluid accordion",
+        "fluid-functionalism accordion",
+        "accordion"
+      ],
+      "summary": "Accordion with spring height and fluid hover highlight.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/accordion",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/accordion\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/accordion.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { Accordion } from \"@/components/ui/accordion\"\n\n<Accordion />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Accordion` (slug `accordion`) from https://www.fluidfunctionalism.com/docs/accordion. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/accordion` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/accordion.json`). Default flavor is Radix; Base UI via `@fluid/base/accordion`. Import from `@/components/ui/accordion`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/accordion",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/accordion.json",
+        "registryItem": "accordion"
+      }
+    },
+    {
+      "id": "fluid-functionalism-badge",
+      "libraryId": "fluid-functionalism",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "badge",
+        "fluid badge",
+        "fluid-functionalism badge",
+        "badge"
+      ],
+      "summary": "Badge with surface tokens and fluid hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/badge",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/badge\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/badge.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { Badge } from \"@/components/ui/badge\"\n\n<Badge />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Badge` (slug `badge`) from https://www.fluidfunctionalism.com/docs/badge. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/badge` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/badge.json`). Default flavor is Radix; Base UI via `@fluid/base/badge`. Import from `@/components/ui/badge`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/badge",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/badge.json",
+        "registryItem": "badge"
+      }
+    },
+    {
+      "id": "fluid-functionalism-card",
+      "libraryId": "fluid-functionalism",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "card",
+        "fluid card",
+        "fluid-functionalism card",
+        "card"
+      ],
+      "summary": "Card surfaces with elevation ladder and hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/card",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/card\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/card.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { Card } from \"@/components/ui/card\"\n\n<Card />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Card` (slug `card`) from https://www.fluidfunctionalism.com/docs/card. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/card` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/card.json`). Default flavor is Radix; Base UI via `@fluid/base/card`. Import from `@/components/ui/card`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/card",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/card.json",
+        "registryItem": "card"
+      }
+    },
+    {
+      "id": "fluid-functionalism-dialog",
+      "libraryId": "fluid-functionalism",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "fluid dialog",
+        "fluid-functionalism dialog",
+        "dialog"
+      ],
+      "summary": "Dialog with spring motion on Radix (or Base UI flavor).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/dialog",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/dialog\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/dialog.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { Dialog } from \"@/components/ui/dialog\"\n\n<Dialog />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Dialog` (slug `dialog`) from https://www.fluidfunctionalism.com/docs/dialog. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/dialog` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/dialog.json`). Default flavor is Radix; Base UI via `@fluid/base/dialog`. Import from `@/components/ui/dialog`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/dialog",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/dialog.json",
+        "registryItem": "dialog"
+      }
+    },
+    {
+      "id": "fluid-functionalism-tabs",
+      "libraryId": "fluid-functionalism",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "fluid tabs",
+        "fluid-functionalism tabs",
+        "tabs"
+      ],
+      "summary": "Tabs with fluid hover highlight and springs.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/tabs",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/tabs\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/tabs.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { Tabs } from \"@/components/ui/tabs\"\n\n<Tabs />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Tabs` (slug `tabs`) from https://www.fluidfunctionalism.com/docs/tabs. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/tabs` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/tabs.json`). Default flavor is Radix; Base UI via `@fluid/base/tabs`. Import from `@/components/ui/tabs`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/tabs",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/tabs.json",
+        "registryItem": "tabs"
+      }
+    },
+    {
+      "id": "fluid-functionalism-select",
+      "libraryId": "fluid-functionalism",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "fluid select",
+        "fluid-functionalism select",
+        "select"
+      ],
+      "summary": "Select with fluid hover and spring popover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/select",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/select\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/select.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { Select } from \"@/components/ui/select\"\n\n<Select />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Select` (slug `select`) from https://www.fluidfunctionalism.com/docs/select. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/select` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/select.json`). Default flavor is Radix; Base UI via `@fluid/base/select`. Import from `@/components/ui/select`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/select",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/select.json",
+        "registryItem": "select"
+      }
+    },
+    {
+      "id": "fluid-functionalism-table",
+      "libraryId": "fluid-functionalism",
+      "slug": "table",
+      "name": "Table",
+      "aliases": [
+        "table",
+        "fluid table",
+        "fluid-functionalism table",
+        "table"
+      ],
+      "summary": "Table rows with fluid nearest-item hover highlight.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/table",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/table",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/table\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/table.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { Table } from \"@/components/ui/table\"\n\n<Table />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Table` (slug `table`) from https://www.fluidfunctionalism.com/docs/table. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/table` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/table.json`). Default flavor is Radix; Base UI via `@fluid/base/table`. Import from `@/components/ui/table`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/table",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/table.json",
+        "registryItem": "table"
+      }
+    },
+    {
+      "id": "fluid-functionalism-tooltip",
+      "libraryId": "fluid-functionalism",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "tooltip",
+        "fluid tooltip",
+        "fluid-functionalism tooltip",
+        "tooltip"
+      ],
+      "summary": "Tooltip with spring open/close.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/tooltip",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/tooltip\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/tooltip.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { Tooltip } from \"@/components/ui/tooltip\"\n\n<Tooltip />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Tooltip` (slug `tooltip`) from https://www.fluidfunctionalism.com/docs/tooltip. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/tooltip` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/tooltip.json`). Default flavor is Radix; Base UI via `@fluid/base/tooltip`. Import from `@/components/ui/tooltip`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/tooltip",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/tooltip.json",
+        "registryItem": "tooltip"
+      }
+    },
+    {
+      "id": "fluid-functionalism-switch",
+      "libraryId": "fluid-functionalism",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "switch",
+        "fluid switch",
+        "fluid-functionalism switch",
+        "switch"
+      ],
+      "summary": "Switch with interruptible spring thumb.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/switch",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/switch\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/switch.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { Switch } from \"@/components/ui/switch\"\n\n<Switch />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Switch` (slug `switch`) from https://www.fluidfunctionalism.com/docs/switch. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/switch` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/switch.json`). Default flavor is Radix; Base UI via `@fluid/base/switch`. Import from `@/components/ui/switch`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/switch",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/switch.json",
+        "registryItem": "switch"
+      }
+    },
+    {
+      "id": "fluid-functionalism-radio-group",
+      "libraryId": "fluid-functionalism",
+      "slug": "radio-group",
+      "name": "Radio Group",
+      "aliases": [
+        "radio-group",
+        "fluid radio-group",
+        "fluid-functionalism radio-group",
+        "radio group"
+      ],
+      "summary": "Radio group with fluid hover highlight.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/radio-group",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/radio-group",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/radio-group\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/radio-group.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { RadioGroup } from \"@/components/ui/radio-group\"\n\n<RadioGroup />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Radio Group` (slug `radio-group`) from https://www.fluidfunctionalism.com/docs/radio-group. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/radio-group` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/radio-group.json`). Default flavor is Radix; Base UI via `@fluid/base/radio-group`. Import from `@/components/ui/radio-group`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/radio-group",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/radio-group.json",
+        "registryItem": "radio-group"
+      }
+    },
+    {
+      "id": "fluid-functionalism-checkbox-group",
+      "libraryId": "fluid-functionalism",
+      "slug": "checkbox-group",
+      "name": "Checkbox Group",
+      "aliases": [
+        "checkbox-group",
+        "fluid checkbox-group",
+        "fluid-functionalism checkbox-group",
+        "checkbox group"
+      ],
+      "summary": "Checkbox group with fluid hover highlight.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/checkbox-group",
+        "iframeSrc": "https://www.fluidfunctionalism.com/docs/checkbox-group",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry @fluid. Radix flavor is default; Base UI via @fluid/base/{slug}. May need --overwrite on stock shadcn files. Inter variable font recommended for weight animations."
+      },
+      "copyCode": "npx shadcn@latest add @fluid/checkbox-group\n# or: npx shadcn@latest add https://www.fluidfunctionalism.com/r/checkbox-group.json\n# First: npx shadcn@latest registry add @fluid\n# Use --overwrite if replacing stock shadcn files.\n\nimport { CheckboxGroup } from \"@/components/ui/checkbox-group\"\n\n<CheckboxGroup />",
+      "copyPrompt": {
+        "text": "Use Fluid Functionalism free MIT React component `Checkbox Group` (slug `checkbox-group`) from https://www.fluidfunctionalism.com/docs/checkbox-group. Install with `npx shadcn@latest registry add @fluid` then `npx shadcn@latest add @fluid/checkbox-group` (or `npx shadcn@latest add https://www.fluidfunctionalism.com/r/checkbox-group.json`). Default flavor is Radix; Base UI via `@fluid/base/checkbox-group`. Import from `@/components/ui/checkbox-group`. Peers include framer-motion / motion springs, lucide-react, Tailwind, shadcn tokens. Home: https://www.fluidfunctionalism.com. Docs: https://www.fluidfunctionalism.com/docs. Repo: https://github.com/mickadesign/fluid-functionalism. License: MIT (https://raw.githubusercontent.com/mickadesign/fluid-functionalism/main/LICENSE; Copyright (c) 2026 Micka Touillaud). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @fluid/checkbox-group",
+        "registryUrl": "https://www.fluidfunctionalism.com/r/checkbox-group.json",
+        "registryItem": "checkbox-group"
+      }
+    }
+  ]
+}

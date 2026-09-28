@@ -1,0 +1,593 @@
+{
+  "id": "cube-ui-kit",
+  "name": "Cube UI Kit",
+  "aliases": [
+    "cube-ui-kit",
+    "Cube UI Kit",
+    "@cube-dev/ui-kit",
+    "cube-js/cube-ui-kit",
+    "cube ui kit"
+  ],
+  "summary": "Open-source React Aria kit with 100+ components and a token-aware Tasty style engine.",
+  "homeUrl": "https://cube-ui-kit.vercel.app/",
+  "docsUrl": "https://cube-ui-kit.vercel.app/?path=/docs/getting-started-overview--docs",
+  "repoUrl": "https://github.com/cube-js/cube-ui-kit",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install @cube-dev/ui-kit",
+    "packages": [
+      "@cube-dev/ui-kit"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://cube-ui-kit.vercel.app/?path=/docs/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Storybook iframe demos (SPA); story IDs are actions-*/forms-*/overlays-* docs paths, not short slugs.",
+    "Pilot includes 12 of 100+ documented components.",
+    "Requires Root provider + Tasty/Glaze token system (not drop-in unstyled).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T17:05:00-04:00",
+  "components": [
+    {
+      "id": "cube-ui-kit-button",
+      "libraryId": "cube-ui-kit",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "cube button",
+        "cube-ui-kit button",
+        "@cube-dev/ui-kit Button"
+      ],
+      "summary": "Primary action button with React Aria press handling.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/actions-button--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n# or: npm install @cube-dev/ui-kit\n\nimport { Root, Button, Space } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <Space gap=\"1x\">\n        <Button type=\"primary\" onPress={() => console.log('clicked')}>\n          Submit\n        </Button>\n      </Space>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Button` (slug `button`) from https://cube-ui-kit.vercel.app/?path=/docs/actions-button--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/actions-button--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-dialog",
+      "libraryId": "cube-ui-kit",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "cube dialog",
+        "modal",
+        "@cube-dev/ui-kit Dialog"
+      ],
+      "summary": "Accessible dialog overlay.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/overlays-dialog--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, Button, Dialog } from '@cube-dev/ui-kit';\nimport { useState } from 'react';\n\nexport default function Example() {\n  const [open, setOpen] = useState(false);\n  return (\n    <Root>\n      <Button onPress={() => setOpen(true)}>Open dialog</Button>\n      <Dialog isOpen={open} onClose={() => setOpen(false)} title=\"Notifications\">\n        You are all caught up.\n      </Dialog>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Dialog` (slug `dialog`) from https://cube-ui-kit.vercel.app/?path=/docs/overlays-dialog--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/overlays-dialog--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-menu",
+      "libraryId": "cube-ui-kit",
+      "slug": "menu",
+      "name": "Menu",
+      "aliases": [
+        "menu",
+        "cube menu",
+        "@cube-dev/ui-kit Menu"
+      ],
+      "summary": "Accessible menu with keyboard navigation.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/actions-menu--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, Menu, MenuTrigger, Button, Item } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <MenuTrigger>\n        <Button>Actions</Button>\n        <Menu onAction={(key) => console.log(key)}>\n          <Item key=\"edit\">Edit</Item>\n          <Item key=\"delete\">Delete</Item>\n        </Menu>\n      </MenuTrigger>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Menu` (slug `menu`) from https://cube-ui-kit.vercel.app/?path=/docs/actions-menu--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/actions-menu--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-select",
+      "libraryId": "cube-ui-kit",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "cube select",
+        "@cube-dev/ui-kit Select"
+      ],
+      "summary": "Accessible select field.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/forms-select--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, Select, Item } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <Select label=\"Status\" defaultSelectedKey=\"active\">\n        <Item key=\"active\">Active</Item>\n        <Item key=\"paused\">Paused</Item>\n        <Item key=\"delayed\">Delayed</Item>\n      </Select>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Select` (slug `select`) from https://cube-ui-kit.vercel.app/?path=/docs/forms-select--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/forms-select--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-checkbox",
+      "libraryId": "cube-ui-kit",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "cube checkbox",
+        "@cube-dev/ui-kit Checkbox"
+      ],
+      "summary": "Accessible checkbox.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/forms-checkbox--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, Checkbox } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <Checkbox>Accept terms</Checkbox>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Checkbox` (slug `checkbox`) from https://cube-ui-kit.vercel.app/?path=/docs/forms-checkbox--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/forms-checkbox--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-switch",
+      "libraryId": "cube-ui-kit",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "switch",
+        "toggle",
+        "cube switch",
+        "@cube-dev/ui-kit Switch"
+      ],
+      "summary": "Accessible switch toggle.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/forms-switch--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, Switch } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <Switch>Enable notifications</Switch>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Switch` (slug `switch`) from https://cube-ui-kit.vercel.app/?path=/docs/forms-switch--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/forms-switch--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-tabs",
+      "libraryId": "cube-ui-kit",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "cube tabs",
+        "@cube-dev/ui-kit Tabs"
+      ],
+      "summary": "Accessible tabs navigation.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/navigation-tabs--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, Tabs, Tab, TabList, TabPanel } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <Tabs defaultSelectedKey=\"one\">\n        <TabList>\n          <Tab id=\"one\">One</Tab>\n          <Tab id=\"two\">Two</Tab>\n        </TabList>\n        <TabPanel id=\"one\">Panel one</TabPanel>\n        <TabPanel id=\"two\">Panel two</TabPanel>\n      </Tabs>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Tabs` (slug `tabs`) from https://cube-ui-kit.vercel.app/?path=/docs/navigation-tabs--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/navigation-tabs--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-tooltip",
+      "libraryId": "cube-ui-kit",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "tooltip",
+        "cube tooltip",
+        "@cube-dev/ui-kit Tooltip"
+      ],
+      "summary": "Accessible tooltip.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/overlays-tooltip--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, TooltipProvider, TooltipTrigger, Button, Tooltip } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <TooltipProvider>\n        <TooltipTrigger>\n          <Button>Hover me</Button>\n          <Tooltip>More info</Tooltip>\n        </TooltipTrigger>\n      </TooltipProvider>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Tooltip` (slug `tooltip`) from https://cube-ui-kit.vercel.app/?path=/docs/overlays-tooltip--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/overlays-tooltip--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-toast",
+      "libraryId": "cube-ui-kit",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "toast",
+        "notification",
+        "cube toast",
+        "@cube-dev/ui-kit Toast"
+      ],
+      "summary": "Toast notification.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/overlays-toast--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, Button, toast } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <Button onPress={() => toast.success('Saved')}>\n        Show toast\n      </Button>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Toast` (slug `toast`) from https://cube-ui-kit.vercel.app/?path=/docs/overlays-toast--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/overlays-toast--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-alert",
+      "libraryId": "cube-ui-kit",
+      "slug": "alert",
+      "name": "Alert",
+      "aliases": [
+        "alert",
+        "cube alert",
+        "@cube-dev/ui-kit Alert"
+      ],
+      "summary": "Inline alert / status message.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/content-alert--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, Alert } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <Alert type=\"success\">Your changes have been saved.</Alert>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Alert` (slug `alert`) from https://cube-ui-kit.vercel.app/?path=/docs/content-alert--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/content-alert--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-badge",
+      "libraryId": "cube-ui-kit",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "badge",
+        "cube badge",
+        "@cube-dev/ui-kit Badge"
+      ],
+      "summary": "Status / label badge.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/content-badge--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, Badge, Space } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <Space gap=\"1x\">\n        <Badge type=\"success\">Active</Badge>\n        <Badge>Default</Badge>\n      </Space>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `Badge` (slug `badge`) from https://cube-ui-kit.vercel.app/?path=/docs/content-badge--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/content-badge--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    },
+    {
+      "id": "cube-ui-kit-text-input",
+      "libraryId": "cube-ui-kit",
+      "slug": "text-input",
+      "name": "TextInput",
+      "aliases": [
+        "text-input",
+        "input",
+        "textinput",
+        "cube text input",
+        "@cube-dev/ui-kit TextInput"
+      ],
+      "summary": "Labeled text input field.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cube-dev/ui-kit",
+        "iframeSrc": "https://cube-ui-kit.vercel.app/?path=/docs/forms-textinput--docs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Styled React Aria kit (MIT) with Tasty tokens. Storybook hosts live interactive demos + docs. Wrap app in Root."
+      },
+      "copyCode": "pnpm add @cube-dev/ui-kit\n\nimport { Root, TextInput, Space } from '@cube-dev/ui-kit';\n\nexport default function Example() {\n  return (\n    <Root>\n      <Space flow=\"column\" gap=\"2x\">\n        <TextInput label=\"Name\" placeholder=\"Enter your name\" />\n      </Space>\n    </Root>\n  );\n}",
+      "copyPrompt": {
+        "text": "Use Cube UI Kit free MIT React primitive `TextInput` (slug `text-input`) from https://cube-ui-kit.vercel.app/?path=/docs/forms-textinput--docs. Install with `pnpm add @cube-dev/ui-kit (or npm/yarn)`. Import from `@cube-dev/ui-kit`. Wrap with `Root`. Home: https://cube-ui-kit.vercel.app/. Docs: https://cube-ui-kit.vercel.app/?path=/docs/forms-textinput--docs. Repo: https://github.com/cube-js/cube-ui-kit. License: MIT (https://raw.githubusercontent.com/cube-js/cube-ui-kit/main/LICENSE; Copyright (c) 2024 Cube Dev, Inc.). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @cube-dev/ui-kit",
+        "packages": [
+          "@cube-dev/ui-kit"
+        ]
+      }
+    }
+  ]
+}

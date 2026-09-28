@@ -1,0 +1,625 @@
+{
+  "id": "animbits",
+  "name": "AnimBits",
+  "aliases": [
+    "animbits",
+    "Anim Bits",
+    "Garvit1000/AnimBits",
+    "animbits.dev"
+  ],
+  "summary": "Free MIT Framer Motion animation components and hooks via shadcn registry.",
+  "homeUrl": "https://animbits.dev",
+  "docsUrl": "https://animbits.dev/docs/installation",
+  "repoUrl": "https://github.com/Garvit1000/AnimBits",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://animbits.dev/r/{name}.json",
+    "registryUrl": "https://animbits.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://animbits.dev/docs/animations/{category}/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "framer-motion",
+      "tailwindcss"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 99 registry items (hooks + animation components).",
+    "Registry slugs are category-prefixed (e.g. buttons-lift); docs paths are nested (/docs/animations/buttons/lift).",
+    "iframe demos only."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:45:00-04:00",
+  "components": [
+    {
+      "id": "animbits-buttons-lift",
+      "libraryId": "animbits",
+      "slug": "buttons-lift",
+      "name": "Lift Button",
+      "aliases": [
+        "buttons-lift",
+        "lift",
+        "animbits lift",
+        "animbits lift button"
+      ],
+      "summary": "Button that lifts on hover with shadow via useHoverLift.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/buttons/lift",
+        "iframeSrc": "https://animbits.dev/docs/animations/buttons/lift",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/buttons-lift.json\n\nimport { LiftButton } from \"@/components/animations/buttons/lift\"\n\n<LiftButton />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Lift Button` (slug `buttons-lift`) from https://animbits.dev/docs/animations/buttons/lift. Install with `npx shadcn@latest add https://animbits.dev/r/buttons-lift.json`. Import `LiftButton` from `@/components/animations/buttons/lift`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/buttons-lift.json",
+        "registryUrl": "https://animbits.dev/r/buttons-lift.json",
+        "registryItem": "buttons-lift"
+      }
+    },
+    {
+      "id": "animbits-buttons-ripple",
+      "libraryId": "animbits",
+      "slug": "buttons-ripple",
+      "name": "Ripple Button",
+      "aliases": [
+        "buttons-ripple",
+        "ripple",
+        "animbits ripple",
+        "animbits ripple button"
+      ],
+      "summary": "Material-style ripple button expanding from click point.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/buttons/ripple",
+        "iframeSrc": "https://animbits.dev/docs/animations/buttons/ripple",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/buttons-ripple.json\n\nimport { RippleButton } from \"@/components/animations/buttons/ripple\"\n\n<RippleButton />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Ripple Button` (slug `buttons-ripple`) from https://animbits.dev/docs/animations/buttons/ripple. Install with `npx shadcn@latest add https://animbits.dev/r/buttons-ripple.json`. Import `RippleButton` from `@/components/animations/buttons/ripple`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/buttons-ripple.json",
+        "registryUrl": "https://animbits.dev/r/buttons-ripple.json",
+        "registryItem": "buttons-ripple"
+      }
+    },
+    {
+      "id": "animbits-buttons-magnetic",
+      "libraryId": "animbits",
+      "slug": "buttons-magnetic",
+      "name": "Magnetic Button",
+      "aliases": [
+        "buttons-magnetic",
+        "magnetic",
+        "animbits magnetic",
+        "animbits magnetic button"
+      ],
+      "summary": "Button that follows the cursor with spring physics.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/buttons/magnetic",
+        "iframeSrc": "https://animbits.dev/docs/animations/buttons/magnetic",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/buttons-magnetic.json\n\nimport { MagneticButton } from \"@/components/animations/buttons/magnetic\"\n\n<MagneticButton />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Magnetic Button` (slug `buttons-magnetic`) from https://animbits.dev/docs/animations/buttons/magnetic. Install with `npx shadcn@latest add https://animbits.dev/r/buttons-magnetic.json`. Import `MagneticButton` from `@/components/animations/buttons/magnetic`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/buttons-magnetic.json",
+        "registryUrl": "https://animbits.dev/r/buttons-magnetic.json",
+        "registryItem": "buttons-magnetic"
+      }
+    },
+    {
+      "id": "animbits-buttons-glow",
+      "libraryId": "animbits",
+      "slug": "buttons-glow",
+      "name": "Glow Button",
+      "aliases": [
+        "buttons-glow",
+        "glow",
+        "animbits glow",
+        "animbits glow button"
+      ],
+      "summary": "Button with colored glow on hover via useHoverGlow.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "glow",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/buttons/glow",
+        "iframeSrc": "https://animbits.dev/docs/animations/buttons/glow",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/buttons-glow.json\n\nimport { GlowButton } from \"@/components/animations/buttons/glow\"\n\n<GlowButton />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Glow Button` (slug `buttons-glow`) from https://animbits.dev/docs/animations/buttons/glow. Install with `npx shadcn@latest add https://animbits.dev/r/buttons-glow.json`. Import `GlowButton` from `@/components/animations/buttons/glow`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/buttons-glow.json",
+        "registryUrl": "https://animbits.dev/r/buttons-glow.json",
+        "registryItem": "buttons-glow"
+      }
+    },
+    {
+      "id": "animbits-text-shimmer",
+      "libraryId": "animbits",
+      "slug": "text-shimmer",
+      "name": "Shimmer Text",
+      "aliases": [
+        "text-shimmer",
+        "shimmer",
+        "animbits shimmer",
+        "animbits shimmer text"
+      ],
+      "summary": "Text with CSS shimmer/shine gradient sweep.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/text/shimmer",
+        "iframeSrc": "https://animbits.dev/docs/animations/text/shimmer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/text-shimmer.json\n\nimport { TextShimmer } from \"@/components/animations/text/shimmer\"\n\n<TextShimmer />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Shimmer Text` (slug `text-shimmer`) from https://animbits.dev/docs/animations/text/shimmer. Install with `npx shadcn@latest add https://animbits.dev/r/text-shimmer.json`. Import `TextShimmer` from `@/components/animations/text/shimmer`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/text-shimmer.json",
+        "registryUrl": "https://animbits.dev/r/text-shimmer.json",
+        "registryItem": "text-shimmer"
+      }
+    },
+    {
+      "id": "animbits-text-scramble",
+      "libraryId": "animbits",
+      "slug": "text-scramble",
+      "name": "Scramble Text",
+      "aliases": [
+        "text-scramble",
+        "scramble",
+        "animbits scramble",
+        "animbits scramble text"
+      ],
+      "summary": "Matrix-style scramble/decode text reveal.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/text/scramble",
+        "iframeSrc": "https://animbits.dev/docs/animations/text/scramble",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/text-scramble.json\n\nimport { TextScramble } from \"@/components/animations/text/scramble\"\n\n<TextScramble />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Scramble Text` (slug `text-scramble`) from https://animbits.dev/docs/animations/text/scramble. Install with `npx shadcn@latest add https://animbits.dev/r/text-scramble.json`. Import `TextScramble` from `@/components/animations/text/scramble`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/text-scramble.json",
+        "registryUrl": "https://animbits.dev/r/text-scramble.json",
+        "registryItem": "text-scramble"
+      }
+    },
+    {
+      "id": "animbits-text-typewriter",
+      "libraryId": "animbits",
+      "slug": "text-typewriter",
+      "name": "Typewriter Text",
+      "aliases": [
+        "text-typewriter",
+        "typewriter",
+        "animbits typewriter",
+        "animbits typewriter text"
+      ],
+      "summary": "Character-by-character typewriter text with optional cursor.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/text/typewriter",
+        "iframeSrc": "https://animbits.dev/docs/animations/text/typewriter",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/text-typewriter.json\n\nimport { TextTypewriter } from \"@/components/animations/text/typewriter\"\n\n<TextTypewriter />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Typewriter Text` (slug `text-typewriter`) from https://animbits.dev/docs/animations/text/typewriter. Install with `npx shadcn@latest add https://animbits.dev/r/text-typewriter.json`. Import `TextTypewriter` from `@/components/animations/text/typewriter`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/text-typewriter.json",
+        "registryUrl": "https://animbits.dev/r/text-typewriter.json",
+        "registryItem": "text-typewriter"
+      }
+    },
+    {
+      "id": "animbits-cards-parallax-tilt",
+      "libraryId": "animbits",
+      "slug": "cards-parallax-tilt",
+      "name": "Parallax Tilt Card",
+      "aliases": [
+        "cards-parallax-tilt",
+        "parallax-tilt",
+        "animbits parallax-tilt",
+        "animbits parallax tilt card"
+      ],
+      "summary": "Card with 3D parallax tilt from mouse position.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "parallax",
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/cards/parallax-tilt",
+        "iframeSrc": "https://animbits.dev/docs/animations/cards/parallax-tilt",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/cards-parallax-tilt.json\n\nimport { CardParallaxTilt } from \"@/components/animations/cards/parallax-tilt\"\n\n<CardParallaxTilt />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Parallax Tilt Card` (slug `cards-parallax-tilt`) from https://animbits.dev/docs/animations/cards/parallax-tilt. Install with `npx shadcn@latest add https://animbits.dev/r/cards-parallax-tilt.json`. Import `CardParallaxTilt` from `@/components/animations/cards/parallax-tilt`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/cards-parallax-tilt.json",
+        "registryUrl": "https://animbits.dev/r/cards-parallax-tilt.json",
+        "registryItem": "cards-parallax-tilt"
+      }
+    },
+    {
+      "id": "animbits-cards-hover-lift",
+      "libraryId": "animbits",
+      "slug": "cards-hover-lift",
+      "name": "Hover Lift Card",
+      "aliases": [
+        "cards-hover-lift",
+        "hover-lift",
+        "animbits hover-lift",
+        "animbits hover lift card"
+      ],
+      "summary": "Card that lifts with shadow on hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/cards/hover-lift",
+        "iframeSrc": "https://animbits.dev/docs/animations/cards/hover-lift",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/cards-hover-lift.json\n\nimport { CardHoverLift } from \"@/components/animations/cards/hover-lift\"\n\n<CardHoverLift />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Hover Lift Card` (slug `cards-hover-lift`) from https://animbits.dev/docs/animations/cards/hover-lift. Install with `npx shadcn@latest add https://animbits.dev/r/cards-hover-lift.json`. Import `CardHoverLift` from `@/components/animations/cards/hover-lift`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/cards-hover-lift.json",
+        "registryUrl": "https://animbits.dev/r/cards-hover-lift.json",
+        "registryItem": "cards-hover-lift"
+      }
+    },
+    {
+      "id": "animbits-loaders-orbit",
+      "libraryId": "animbits",
+      "slug": "loaders-orbit",
+      "name": "Orbit Loader",
+      "aliases": [
+        "loaders-orbit",
+        "orbit",
+        "animbits orbit",
+        "animbits orbit loader"
+      ],
+      "summary": "Loader with particles orbiting in a circle.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/loaders/orbit",
+        "iframeSrc": "https://animbits.dev/docs/animations/loaders/orbit",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/loaders-orbit.json\n\nimport { LoaderOrbit } from \"@/components/animations/loaders/orbit\"\n\n<LoaderOrbit />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Orbit Loader` (slug `loaders-orbit`) from https://animbits.dev/docs/animations/loaders/orbit. Install with `npx shadcn@latest add https://animbits.dev/r/loaders-orbit.json`. Import `LoaderOrbit` from `@/components/animations/loaders/orbit`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/loaders-orbit.json",
+        "registryUrl": "https://animbits.dev/r/loaders-orbit.json",
+        "registryItem": "loaders-orbit"
+      }
+    },
+    {
+      "id": "animbits-icons-heartbeat",
+      "libraryId": "animbits",
+      "slug": "icons-heartbeat",
+      "name": "Heartbeat Icon",
+      "aliases": [
+        "icons-heartbeat",
+        "heartbeat",
+        "animbits heartbeat",
+        "animbits heartbeat icon"
+      ],
+      "summary": "Icon with continuous heartbeat rhythm animation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/icons/heartbeat",
+        "iframeSrc": "https://animbits.dev/docs/animations/icons/heartbeat",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/icons-heartbeat.json\n\nimport { HeartbeatIcon } from \"@/components/animations/icons/heartbeat\"\n\n<HeartbeatIcon />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Heartbeat Icon` (slug `icons-heartbeat`) from https://animbits.dev/docs/animations/icons/heartbeat. Install with `npx shadcn@latest add https://animbits.dev/r/icons-heartbeat.json`. Import `HeartbeatIcon` from `@/components/animations/icons/heartbeat`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/icons-heartbeat.json",
+        "registryUrl": "https://animbits.dev/r/icons-heartbeat.json",
+        "registryItem": "icons-heartbeat"
+      }
+    },
+    {
+      "id": "animbits-specials-border-beam",
+      "libraryId": "animbits",
+      "slug": "specials-border-beam",
+      "name": "Border Beam",
+      "aliases": [
+        "specials-border-beam",
+        "border-beam",
+        "animbits border-beam",
+        "animbits border beam"
+      ],
+      "summary": "Animated gradient border beam that travels around a container.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "background"
+      ],
+      "effectType": [
+        "beam",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/animations/specials/border-beam",
+        "iframeSrc": "https://animbits.dev/docs/animations/specials/border-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free MIT via shadcn registry URL. Framer Motion peer. Copy-paste/registry install; respects prefers-reduced-motion."
+      },
+      "copyCode": "npx shadcn@latest add https://animbits.dev/r/specials-border-beam.json\n\nimport { BorderBeam } from \"@/components/animations/specials/border-beam\"\n\n<BorderBeam />",
+      "copyPrompt": {
+        "text": "Use AnimBits free MIT React component `Border Beam` (slug `specials-border-beam`) from https://animbits.dev/docs/animations/specials/border-beam. Install with `npx shadcn@latest add https://animbits.dev/r/specials-border-beam.json`. Import `BorderBeam` from `@/components/animations/specials/border-beam`. Peer: framer-motion (motion). Home: https://animbits.dev. Docs: https://animbits.dev/docs/installation. Repo: https://github.com/Garvit1000/AnimBits. License: MIT (https://raw.githubusercontent.com/Garvit1000/AnimBits/main/LICENSE; Copyright (c) 2025 Gravityy). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://animbits.dev/r/specials-border-beam.json",
+        "registryUrl": "https://animbits.dev/r/specials-border-beam.json",
+        "registryItem": "specials-border-beam"
+      }
+    }
+  ]
+}

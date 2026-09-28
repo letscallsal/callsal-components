@@ -1,0 +1,583 @@
+{
+  "id": "assistant-ui",
+  "name": "assistant-ui",
+  "aliases": [
+    "assistant-ui.com",
+    "@assistant-ui/react",
+    "AgentbaseAI assistant-ui"
+  ],
+  "summary": "Open-source React primitives and shadcn registry for production AI chat UIs.",
+  "homeUrl": "https://www.assistant-ui.com",
+  "docsUrl": "https://www.assistant-ui.com/docs",
+  "repoUrl": "https://github.com/assistant-ui/assistant-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx assistant-ui@latest add {name}",
+    "registryUrl": "https://r.assistant-ui.com/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.assistant-ui.com/elements/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "@assistant-ui/react",
+      "tailwindcss"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 high-signal registry comps with HTTP 200 on r.assistant-ui.com — not full elements inventory (~150 element pages).",
+    "Optional Assistant Cloud is a separate paid SaaS (Free/Pro plans); open-source UI comps remain free MIT — Cloud not ingested.",
+    "Many comps need AssistantRuntimeProvider / @assistant-ui/react context to render beyond static docs demos.",
+    "Style-aware registry also at https://r.assistant-ui.com/styles/{style}/{name}.json and /base/{name}.json; catalog uses plain r.assistant-ui.com/{name}.json.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:38:34-04:00",
+  "components": [
+    {
+      "id": "assistant-ui-thread",
+      "libraryId": "assistant-ui",
+      "slug": "thread",
+      "name": "Thread",
+      "aliases": [
+        "chat thread",
+        "message thread"
+      ],
+      "summary": "Main AI chat thread with messages, composer, and tool/reasoning slots.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/thread",
+        "iframeSrc": "https://www.assistant-ui.com/elements/thread",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add thread\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/thread.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/thread\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<Thread />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Thread` (slug `thread`) from https://www.assistant-ui.com/elements/thread. Install with `npx assistant-ui@latest add thread` or `npx shadcn@latest add https://r.assistant-ui.com/thread.json` (or `npx shadcn@latest add @assistant-ui/thread` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/thread.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add thread",
+        "registryUrl": "https://r.assistant-ui.com/thread.json",
+        "registryItem": "thread"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-thread-list",
+      "libraryId": "assistant-ui",
+      "slug": "thread-list",
+      "name": "Thread List",
+      "aliases": [
+        "conversation list",
+        "sidebar threads"
+      ],
+      "summary": "Sidebar list of chat threads for multi-conversation UIs.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/thread-list",
+        "iframeSrc": "https://www.assistant-ui.com/elements/thread-list",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add thread-list\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/thread-list.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/thread-list\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<ThreadList />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Thread List` (slug `thread-list`) from https://www.assistant-ui.com/elements/thread-list. Install with `npx assistant-ui@latest add thread-list` or `npx shadcn@latest add https://r.assistant-ui.com/thread-list.json` (or `npx shadcn@latest add @assistant-ui/thread-list` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/thread-list.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add thread-list",
+        "registryUrl": "https://r.assistant-ui.com/thread-list.json",
+        "registryItem": "thread-list"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-attachment",
+      "libraryId": "assistant-ui",
+      "slug": "attachment",
+      "name": "Attachment",
+      "aliases": [
+        "file attachment",
+        "composer attachment"
+      ],
+      "summary": "Attachment chips and previews for composer uploads.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/attachment",
+        "iframeSrc": "https://www.assistant-ui.com/elements/attachment",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add attachment\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/attachment.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/attachment\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<Attachment />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Attachment` (slug `attachment`) from https://www.assistant-ui.com/elements/attachment. Install with `npx assistant-ui@latest add attachment` or `npx shadcn@latest add https://r.assistant-ui.com/attachment.json` (or `npx shadcn@latest add @assistant-ui/attachment` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/attachment.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add attachment",
+        "registryUrl": "https://r.assistant-ui.com/attachment.json",
+        "registryItem": "attachment"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-reasoning",
+      "libraryId": "assistant-ui",
+      "slug": "reasoning",
+      "name": "Reasoning",
+      "aliases": [
+        "chain of thought",
+        "thinking panel"
+      ],
+      "summary": "Collapsible reasoning / chain-of-thought display for assistant turns.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/reasoning",
+        "iframeSrc": "https://www.assistant-ui.com/elements/reasoning",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add reasoning\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/reasoning.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/reasoning\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<Reasoning />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Reasoning` (slug `reasoning`) from https://www.assistant-ui.com/elements/reasoning. Install with `npx assistant-ui@latest add reasoning` or `npx shadcn@latest add https://r.assistant-ui.com/reasoning.json` (or `npx shadcn@latest add @assistant-ui/reasoning` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/reasoning.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add reasoning",
+        "registryUrl": "https://r.assistant-ui.com/reasoning.json",
+        "registryItem": "reasoning"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-tool-fallback",
+      "libraryId": "assistant-ui",
+      "slug": "tool-fallback",
+      "name": "Tool Fallback",
+      "aliases": [
+        "tool call ui",
+        "tool result"
+      ],
+      "summary": "Default UI for tool calls when no custom tool renderer is registered.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/tool-fallback",
+        "iframeSrc": "https://www.assistant-ui.com/elements/tool-fallback",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add tool-fallback\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/tool-fallback.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/tool-fallback\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<ToolFallback />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Tool Fallback` (slug `tool-fallback`) from https://www.assistant-ui.com/elements/tool-fallback. Install with `npx assistant-ui@latest add tool-fallback` or `npx shadcn@latest add https://r.assistant-ui.com/tool-fallback.json` (or `npx shadcn@latest add @assistant-ui/tool-fallback` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/tool-fallback.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add tool-fallback",
+        "registryUrl": "https://r.assistant-ui.com/tool-fallback.json",
+        "registryItem": "tool-fallback"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-tool-group",
+      "libraryId": "assistant-ui",
+      "slug": "tool-group",
+      "name": "Tool Group",
+      "aliases": [
+        "grouped tools",
+        "tool batch"
+      ],
+      "summary": "Groups related tool invocations in a single collapsible block.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/tool-group",
+        "iframeSrc": "https://www.assistant-ui.com/elements/tool-group",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add tool-group\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/tool-group.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/tool-group\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<ToolGroup />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Tool Group` (slug `tool-group`) from https://www.assistant-ui.com/elements/tool-group. Install with `npx assistant-ui@latest add tool-group` or `npx shadcn@latest add https://r.assistant-ui.com/tool-group.json` (or `npx shadcn@latest add @assistant-ui/tool-group` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/tool-group.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add tool-group",
+        "registryUrl": "https://r.assistant-ui.com/tool-group.json",
+        "registryItem": "tool-group"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-markdown-text",
+      "libraryId": "assistant-ui",
+      "slug": "markdown-text",
+      "name": "Markdown Text",
+      "aliases": [
+        "assistant markdown",
+        "md renderer"
+      ],
+      "summary": "Markdown renderer for assistant message text with GFM support.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/markdown-text",
+        "iframeSrc": "https://www.assistant-ui.com/elements/markdown-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add markdown-text\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/markdown-text.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/markdown-text\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<MarkdownText />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Markdown Text` (slug `markdown-text`) from https://www.assistant-ui.com/elements/markdown-text. Install with `npx assistant-ui@latest add markdown-text` or `npx shadcn@latest add https://r.assistant-ui.com/markdown-text.json` (or `npx shadcn@latest add @assistant-ui/markdown-text` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/markdown-text.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add markdown-text",
+        "registryUrl": "https://r.assistant-ui.com/markdown-text.json",
+        "registryItem": "markdown-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-assistant-modal",
+      "libraryId": "assistant-ui",
+      "slug": "assistant-modal",
+      "name": "Assistant Modal",
+      "aliases": [
+        "chat modal",
+        "floating assistant"
+      ],
+      "summary": "Floating modal chat shell wrapping a Thread.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/assistant-modal",
+        "iframeSrc": "https://www.assistant-ui.com/elements/assistant-modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add assistant-modal\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/assistant-modal.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/assistant-modal\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<AssistantModal />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Assistant Modal` (slug `assistant-modal`) from https://www.assistant-ui.com/elements/assistant-modal. Install with `npx assistant-ui@latest add assistant-modal` or `npx shadcn@latest add https://r.assistant-ui.com/assistant-modal.json` (or `npx shadcn@latest add @assistant-ui/assistant-modal` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/assistant-modal.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add assistant-modal",
+        "registryUrl": "https://r.assistant-ui.com/assistant-modal.json",
+        "registryItem": "assistant-modal"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-follow-up-suggestions",
+      "libraryId": "assistant-ui",
+      "slug": "follow-up-suggestions",
+      "name": "Follow-up Suggestions",
+      "aliases": [
+        "suggested prompts",
+        "followups"
+      ],
+      "summary": "Clickable follow-up suggestion chips under an assistant message.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/follow-up-suggestions",
+        "iframeSrc": "https://www.assistant-ui.com/elements/follow-up-suggestions",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add follow-up-suggestions\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/follow-up-suggestions.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/follow-up-suggestions\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<FollowUpSuggestions />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Follow-up Suggestions` (slug `follow-up-suggestions`) from https://www.assistant-ui.com/elements/follow-up-suggestions. Install with `npx assistant-ui@latest add follow-up-suggestions` or `npx shadcn@latest add https://r.assistant-ui.com/follow-up-suggestions.json` (or `npx shadcn@latest add @assistant-ui/follow-up-suggestions` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/follow-up-suggestions.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add follow-up-suggestions",
+        "registryUrl": "https://r.assistant-ui.com/follow-up-suggestions.json",
+        "registryItem": "follow-up-suggestions"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-file",
+      "libraryId": "assistant-ui",
+      "slug": "file",
+      "name": "File",
+      "aliases": [
+        "file chip",
+        "attachment file"
+      ],
+      "summary": "File presentation chip used by attachments and downloads.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/file",
+        "iframeSrc": "https://www.assistant-ui.com/elements/file",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add file\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/file.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/file\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<File />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `File` (slug `file`) from https://www.assistant-ui.com/elements/file. Install with `npx assistant-ui@latest add file` or `npx shadcn@latest add https://r.assistant-ui.com/file.json` (or `npx shadcn@latest add @assistant-ui/file` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/file.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add file",
+        "registryUrl": "https://r.assistant-ui.com/file.json",
+        "registryItem": "file"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-tooltip-icon-button",
+      "libraryId": "assistant-ui",
+      "slug": "tooltip-icon-button",
+      "name": "Tooltip Icon Button",
+      "aliases": [
+        "icon button",
+        "aui icon btn"
+      ],
+      "summary": "Icon button with tooltip used across action bars.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/tooltip-icon-button",
+        "iframeSrc": "https://www.assistant-ui.com/elements/tooltip-icon-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add tooltip-icon-button\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/tooltip-icon-button.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/tooltip-icon-button\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<TooltipIconButton />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Tooltip Icon Button` (slug `tooltip-icon-button`) from https://www.assistant-ui.com/elements/tooltip-icon-button. Install with `npx assistant-ui@latest add tooltip-icon-button` or `npx shadcn@latest add https://r.assistant-ui.com/tooltip-icon-button.json` (or `npx shadcn@latest add @assistant-ui/tooltip-icon-button` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/tooltip-icon-button.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add tooltip-icon-button",
+        "registryUrl": "https://r.assistant-ui.com/tooltip-icon-button.json",
+        "registryItem": "tooltip-icon-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "assistant-ui-sources",
+      "libraryId": "assistant-ui",
+      "slug": "sources",
+      "name": "Sources",
+      "aliases": [
+        "citations",
+        "source list"
+      ],
+      "summary": "Source citation list for grounded assistant answers.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "text"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@assistant-ui/sources",
+        "iframeSrc": "https://www.assistant-ui.com/elements/sources",
+        "aspectRatio": "16/9",
+        "peerNotes": "requires @assistant-ui/react runtime context for most comps"
+      },
+      "copyCode": "npx assistant-ui@latest add sources\n\n# or: npx shadcn@latest add https://r.assistant-ui.com/sources.json\n# or with components.json registries.@assistant-ui configured:\n# npx shadcn@latest add @assistant-ui/sources\n# Lands under components/assistant-ui/elements/ (see registry JSON).\n\n<Sources />",
+      "copyPrompt": {
+        "text": "Use assistant-ui free MIT component `Sources` (slug `sources`) from https://www.assistant-ui.com/elements/sources. Install with `npx assistant-ui@latest add sources` or `npx shadcn@latest add https://r.assistant-ui.com/sources.json` (or `npx shadcn@latest add @assistant-ui/sources` when `@assistant-ui` registry is configured to `https://r.assistant-ui.com/styles/{style}/{name}.json` or plain `https://r.assistant-ui.com/{name}.json`). Registry item: https://r.assistant-ui.com/sources.json. Requires React/Next + `@assistant-ui/react` peers. License: MIT (https://raw.githubusercontent.com/assistant-ui/assistant-ui/main/LICENSE; Copyright (c) 2025 AgentbaseAI Inc.). Pricing free for open-source components (optional Assistant Cloud SaaS separate).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx assistant-ui@latest add sources",
+        "registryUrl": "https://r.assistant-ui.com/sources.json",
+        "registryItem": "sources"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

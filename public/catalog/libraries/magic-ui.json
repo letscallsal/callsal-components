@@ -1,0 +1,626 @@
+{
+  "id": "magic-ui",
+  "name": "Magic UI",
+  "aliases": [
+    "magicui",
+    "magic-ui",
+    "magic ui"
+  ],
+  "summary": "150+ free animated React components for shadcn/ui (Tailwind + Motion).",
+  "homeUrl": "https://magicui.design",
+  "docsUrl": "https://magicui.design/docs",
+  "repoUrl": "https://github.com/magicuidesign/magicui",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @magicui/<component>",
+    "registryUrl": "https://magicui.design/r/registry.json"
+  },
+  "adapter": {
+    "kind": "dynamic-import",
+    "module": "magic-ui",
+    "iframeSrcTemplate": "https://magicui.design/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "motion",
+      "tailwindcss",
+      "next-themes",
+      "cobe"
+    ],
+    "budgetKb": 300
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free registry UI components of ~78 registry:ui items; not a full inventory.",
+    "Pro templates/sections at pro.magicui.design are excluded (proOnly / not unlocked).",
+    "Library adapter prefers dynamic-import per ARCHITECTURE \u00a75 but component demos use iframe\u2192docs until Build smoke-certifies dynamic-import mounts.",
+    "Official docs often show `pnpm dlx shadcn@latest add @magicui/...`; catalog uses portable `npx shadcn@latest` equivalent from same docs/MDX."
+  ],
+  "featured": true,
+  "updatedAt": "2026-09-28T14:17:12-04:00",
+  "components": [
+    {
+      "id": "magic-ui-marquee",
+      "libraryId": "magic-ui",
+      "slug": "marquee",
+      "name": "Marquee",
+      "aliases": [
+        "infinite marquee",
+        "ticker",
+        "logo marquee",
+        "scrolling logos"
+      ],
+      "summary": "Infinite scrolling strip for text, images, or videos.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "marquee",
+        "section"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/marquee",
+        "iframeSrc": "https://magicui.design/docs/components/marquee",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @magicui/marquee\n\nimport { Marquee } from \"@/components/ui/marquee\"\n\n<Marquee>\n  <span>Next.js</span>\n  <span>React</span>\n  <span>TypeScript</span>\n  <span>Tailwind CSS</span>\n</Marquee>",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Marquee` (slug `marquee`) from https://magicui.design/docs/components/marquee. Install with `npx shadcn@latest add @magicui/marquee` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/marquee.json. Import from `@/components/ui/marquee` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/marquee",
+        "registryUrl": "https://magicui.design/r/marquee.json",
+        "registryItem": "@magicui/marquee"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-animated-beam",
+      "libraryId": "magic-ui",
+      "slug": "animated-beam",
+      "name": "Animated Beam",
+      "aliases": [
+        "beam path",
+        "integration beam",
+        "connecting beam"
+      ],
+      "summary": "Animated light beam along a path between DOM nodes (integrations).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "section"
+      ],
+      "effectType": [
+        "beam",
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/animated-beam",
+        "iframeSrc": "https://magicui.design/docs/components/animated-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion` and client refs for from/to/container."
+      },
+      "copyCode": "npx shadcn@latest add @magicui/animated-beam\n\nimport { AnimatedBeam } from \"@/components/ui/animated-beam\"\n\n<AnimatedBeam containerRef={containerRef} fromRef={fromRef} toRef={toRef} />",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Animated Beam` (slug `animated-beam`) from https://magicui.design/docs/components/animated-beam. Install with `npx shadcn@latest add @magicui/animated-beam` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/animated-beam.json. Import from `@/components/ui/animated-beam` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/animated-beam",
+        "registryUrl": "https://magicui.design/r/animated-beam.json",
+        "registryItem": "@magicui/animated-beam"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-shimmer-button",
+      "libraryId": "magic-ui",
+      "slug": "shimmer-button",
+      "name": "Shimmer Button",
+      "aliases": [
+        "shimmer cta",
+        "sparkle button",
+        "animated button"
+      ],
+      "summary": "Button with a shimmering light traveling around the perimeter.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "shimmer",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/shimmer-button",
+        "iframeSrc": "https://magicui.design/docs/components/shimmer-button",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @magicui/shimmer-button\n\nimport { ShimmerButton } from \"@/components/ui/shimmer-button\"\n\n<ShimmerButton>Shimmer Button</ShimmerButton>",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Shimmer Button` (slug `shimmer-button`) from https://magicui.design/docs/components/shimmer-button. Install with `npx shadcn@latest add @magicui/shimmer-button` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/shimmer-button.json. Import from `@/components/ui/shimmer-button` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/shimmer-button",
+        "registryUrl": "https://magicui.design/r/shimmer-button.json",
+        "registryItem": "@magicui/shimmer-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-border-beam",
+      "libraryId": "magic-ui",
+      "slug": "border-beam",
+      "name": "Border Beam",
+      "aliases": [
+        "border light",
+        "beam border",
+        "animated border"
+      ],
+      "summary": "Animated beam of light that travels along a container border.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "other"
+      ],
+      "effectType": [
+        "beam",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/border-beam",
+        "iframeSrc": "https://magicui.design/docs/components/border-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`. Place inside a relative overflow-hidden container."
+      },
+      "copyCode": "npx shadcn@latest add @magicui/border-beam\n\nimport { BorderBeam } from \"@/components/ui/border-beam\"\n\n<div className=\"relative h-[500px] w-full overflow-hidden\">\n  <BorderBeam />\n</div>",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Border Beam` (slug `border-beam`) from https://magicui.design/docs/components/border-beam. Install with `npx shadcn@latest add @magicui/border-beam` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/border-beam.json. Import from `@/components/ui/border-beam` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/border-beam",
+        "registryUrl": "https://magicui.design/r/border-beam.json",
+        "registryItem": "@magicui/border-beam"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-magic-card",
+      "libraryId": "magic-ui",
+      "slug": "magic-card",
+      "name": "Magic Card",
+      "aliases": [
+        "spotlight card",
+        "hover spotlight",
+        "gradient card"
+      ],
+      "summary": "Spotlight that follows the cursor and highlights card borders on hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "glow",
+        "hover-reveal",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/magic-card",
+        "iframeSrc": "https://magicui.design/docs/components/magic-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs `motion` and often `next-themes` for theme-aware gradientColor."
+      },
+      "copyCode": "npx shadcn@latest add @magicui/magic-card\n\nimport { MagicCard } from \"@/components/ui/magic-card\"\n\n<MagicCard>\n  <div className=\"p-4\">\n    <p>Hello World</p>\n    <span>Hover me</span>\n  </div>\n</MagicCard>",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Magic Card` (slug `magic-card`) from https://magicui.design/docs/components/magic-card. Install with `npx shadcn@latest add @magicui/magic-card` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/magic-card.json. Import from `@/components/ui/magic-card` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/magic-card",
+        "registryUrl": "https://magicui.design/r/magic-card.json",
+        "registryItem": "@magicui/magic-card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-animated-gradient-text",
+      "libraryId": "magic-ui",
+      "slug": "animated-gradient-text",
+      "name": "Animated Gradient Text",
+      "aliases": [
+        "gradient text",
+        "animated text gradient"
+      ],
+      "summary": "Text with an animated gradient background transitioning between colors.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "gradient",
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/animated-gradient-text",
+        "iframeSrc": "https://magicui.design/docs/components/animated-gradient-text",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @magicui/animated-gradient-text\n\nimport { AnimatedGradientText } from \"@/components/ui/animated-gradient-text\"\n\n<AnimatedGradientText>Animated Gradient Text</AnimatedGradientText>",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Animated Gradient Text` (slug `animated-gradient-text`) from https://magicui.design/docs/components/animated-gradient-text. Install with `npx shadcn@latest add @magicui/animated-gradient-text` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/animated-gradient-text.json. Import from `@/components/ui/animated-gradient-text` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/animated-gradient-text",
+        "registryUrl": "https://magicui.design/r/animated-gradient-text.json",
+        "registryItem": "@magicui/animated-gradient-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-typing-animation",
+      "libraryId": "magic-ui",
+      "slug": "typing-animation",
+      "name": "Typing Animation",
+      "aliases": [
+        "typewriter",
+        "typed text",
+        "typing effect"
+      ],
+      "summary": "Characters appear with a typed animation and optional cursor.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/typing-animation",
+        "iframeSrc": "https://magicui.design/docs/components/typing-animation",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`."
+      },
+      "copyCode": "npx shadcn@latest add @magicui/typing-animation\n\nimport { TypingAnimation } from \"@/components/ui/typing-animation\"\n\n<TypingAnimation>Hello World! \ud83d\udc4b</TypingAnimation>",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Typing Animation` (slug `typing-animation`) from https://magicui.design/docs/components/typing-animation. Install with `npx shadcn@latest add @magicui/typing-animation` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/typing-animation.json. Import from `@/components/ui/typing-animation` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/typing-animation",
+        "registryUrl": "https://magicui.design/r/typing-animation.json",
+        "registryItem": "@magicui/typing-animation"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-blur-fade",
+      "libraryId": "magic-ui",
+      "slug": "blur-fade",
+      "name": "Blur Fade",
+      "aliases": [
+        "fade in",
+        "blur in",
+        "scroll fade"
+      ],
+      "summary": "Blur fade in/out animation for smoothly revealing content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "section"
+      ],
+      "effectType": [
+        "blur",
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/blur-fade",
+        "iframeSrc": "https://magicui.design/docs/components/blur-fade",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion`."
+      },
+      "copyCode": "npx shadcn@latest add @magicui/blur-fade\n\nimport { BlurFade } from \"@/components/ui/blur-fade\"\n\n<BlurFade>\n  <img src=\"https://picsum.photos/300/200?random=1\" alt=\"Sample 1\" />\n</BlurFade>",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Blur Fade` (slug `blur-fade`) from https://magicui.design/docs/components/blur-fade. Install with `npx shadcn@latest add @magicui/blur-fade` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/blur-fade.json. Import from `@/components/ui/blur-fade` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/blur-fade",
+        "registryUrl": "https://magicui.design/r/blur-fade.json",
+        "registryItem": "@magicui/blur-fade"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-orbiting-circles",
+      "libraryId": "magic-ui",
+      "slug": "orbiting-circles",
+      "name": "Orbiting Circles",
+      "aliases": [
+        "orbit icons",
+        "circular orbit",
+        "satellite icons"
+      ],
+      "summary": "Icons/elements that move in orbit along a circular path.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "hero"
+      ],
+      "effectType": [
+        "orb",
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/orbiting-circles",
+        "iframeSrc": "https://magicui.design/docs/components/orbiting-circles",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @magicui/orbiting-circles\n\nimport { File, Search, Settings } from \"lucide-react\"\nimport { OrbitingCircles } from \"@/components/ui/orbiting-circles\"\n\n<div className=\"relative h-[500px] w-full overflow-hidden\">\n  <OrbitingCircles>\n    <File />\n    <Settings />\n    <File />\n  </OrbitingCircles>\n  <OrbitingCircles radius={100} reverse>\n    <File />\n    <Settings />\n    <File />\n    <Search />\n  </OrbitingCircles>\n</div>",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Orbiting Circles` (slug `orbiting-circles`) from https://magicui.design/docs/components/orbiting-circles. Install with `npx shadcn@latest add @magicui/orbiting-circles` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/orbiting-circles.json. Import from `@/components/ui/orbiting-circles` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/orbiting-circles",
+        "registryUrl": "https://magicui.design/r/orbiting-circles.json",
+        "registryItem": "@magicui/orbiting-circles"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-particles",
+      "libraryId": "magic-ui",
+      "slug": "particles",
+      "name": "Particles",
+      "aliases": [
+        "particle field",
+        "particle background",
+        "floating particles"
+      ],
+      "summary": "Canvas particle field for visual flair on backgrounds.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/particles",
+        "iframeSrc": "https://magicui.design/docs/components/particles",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @magicui/particles\n\nimport { Particles } from \"@/components/ui/particles\"\n\n<div className=\"relative h-[500px] w-full overflow-hidden\">\n  <Particles />\n</div>",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Particles` (slug `particles`) from https://magicui.design/docs/components/particles. Install with `npx shadcn@latest add @magicui/particles` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/particles.json. Import from `@/components/ui/particles` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/particles",
+        "registryUrl": "https://magicui.design/r/particles.json",
+        "registryItem": "@magicui/particles"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-globe",
+      "libraryId": "magic-ui",
+      "slug": "globe",
+      "name": "Globe",
+      "aliases": [
+        "cobe globe",
+        "3d globe",
+        "webgl globe"
+      ],
+      "summary": "Autorotating interactive WebGL globe built on Cobe.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "hero",
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "3d",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/globe",
+        "iframeSrc": "https://magicui.design/docs/components/globe",
+        "aspectRatio": "16/9",
+        "peerNotes": "Installs `cobe@^0.6.4` and `motion`. Client/WebGL environment required."
+      },
+      "copyCode": "npx shadcn@latest add @magicui/globe\n\nimport { Globe } from \"@/components/ui/globe\"\n\n<Globe />",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Globe` (slug `globe`) from https://magicui.design/docs/components/globe. Install with `npx shadcn@latest add @magicui/globe` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/globe.json. Import from `@/components/ui/globe` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/globe",
+        "registryUrl": "https://magicui.design/r/globe.json",
+        "registryItem": "@magicui/globe"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "magic-ui-dock",
+      "libraryId": "magic-ui",
+      "slug": "dock",
+      "name": "Dock",
+      "aliases": [
+        "macos dock",
+        "app dock",
+        "icon dock"
+      ],
+      "summary": "macOS-style dock with magnification using React, Tailwind, and Motion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "hover-reveal",
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@magicui/dock",
+        "iframeSrc": "https://magicui.design/docs/components/dock",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs peer dependency `motion` and lucide-react icons (or equivalents)."
+      },
+      "copyCode": "npx shadcn@latest add @magicui/dock\n\nimport { Home, Search, Settings } from \"lucide-react\"\nimport { Dock, DockIcon } from \"@/components/ui/dock\"\n\n<Dock>\n  <DockIcon>\n    <Home />\n  </DockIcon>\n  <DockIcon>\n    <Settings />\n  </DockIcon>\n  <DockIcon>\n    <Search />\n  </DockIcon>\n</Dock>",
+      "copyPrompt": {
+        "text": "Use Magic UI free component `Dock` (slug `dock`) from https://magicui.design/docs/components/dock. Install with `npx shadcn@latest add @magicui/dock` after `npx shadcn@latest init` in a React/Next + Tailwind project (same flow as shadcn/ui). Registry item: https://magicui.design/r/dock.json. Import from `@/components/ui/dock` after CLI add (path may follow project aliases). This component is on the free open-source registry (MIT); do not pull Magic UI Pro templates/sections from pro.magicui.design unless the user has Pro. Requires React + Tailwind; many items also need `motion` (and globe needs `cobe`). Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @magicui/dock",
+        "registryUrl": "https://magicui.design/r/dock.json",
+        "registryItem": "@magicui/dock"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

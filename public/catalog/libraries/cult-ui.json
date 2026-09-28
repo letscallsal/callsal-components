@@ -1,0 +1,616 @@
+{
+  "id": "cult-ui",
+  "name": "Cult UI",
+  "aliases": [
+    "cultui",
+    "cult/ui",
+    "nolly-studio/cult-ui",
+    "@cult-ui"
+  ],
+  "summary": "Free MIT animated shadcn/Tailwind components (Cult Pro templates/blocks excluded).",
+  "homeUrl": "https://www.cult-ui.com",
+  "docsUrl": "https://www.cult-ui.com/docs",
+  "repoUrl": "https://github.com/nolly-studio/cult-ui",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://cult-ui.com/r/<component>.json",
+    "registryUrl": "https://cult-ui.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.cult-ui.com/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "motion",
+      "tailwindcss"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free registry UI items of ~78 registry:ui entries in GitHub registry.json \u2014 not a full inventory.",
+    "Freemium: free MIT OSS at cult-ui.com / nolly-studio/cult-ui; Cult Pro at https://www.pro.cult-ui.com (paid blocks/templates/AI patterns) \u2014 Pro excluded; no paid unlock.",
+    "Live cult-ui.com returns Vercel Security Checkpoint 429 to plain curl/bots; docs + registry JSON verified HTTP 200 via Playwright (Chrome channel) and via GitHub raw / jsDelivr mirrors.",
+    "Some comps need peer packages (@paper-design/shaders-react, metal-fx, dither-plugin, three/jotai) and/or shadcn button/badge.",
+    "ARCHITECTURE \u00a75 prefers iframe for unusual/tactile motion; all demos are docs iframes.",
+    "Optional `@cult-ui` registry alias documented on installation page; catalog copyCode uses full registry URL form from MDX."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:05:00-04:00",
+  "components": [
+    {
+      "id": "cult-ui-hero-dithering",
+      "libraryId": "cult-ui",
+      "slug": "hero-dithering",
+      "name": "Hero Dithering",
+      "aliases": [
+        "dithering hero",
+        "shader dither hero",
+        "paper dither hero"
+      ],
+      "summary": "Split-layout hero with responsive dithering shader visuals, CTA, and tech badges.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "hero",
+        "background"
+      ],
+      "effectType": [
+        "dither",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/hero-dithering",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/hero-dithering",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs @paper-design/shaders-react + shadcn button/badge."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/hero-dithering.json\n\nimport { HeroDithering } from \"@/components/ui/hero-dithering\"\n\n<HeroDithering />",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Hero Dithering` (slug `hero-dithering`) from https://www.cult-ui.com/docs/components/hero-dithering. Install with `npx shadcn@latest add https://cult-ui.com/r/hero-dithering.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/hero-dithering`). Registry item: https://cult-ui.com/r/hero-dithering.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/hero-dithering` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/hero-dithering.json",
+        "registryUrl": "https://cult-ui.com/r/hero-dithering.json",
+        "registryItem": "@cult-ui/hero-dithering"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-hero-liquid-metal",
+      "libraryId": "cult-ui",
+      "slug": "hero-liquid-metal",
+      "name": "Hero Liquid Metal",
+      "aliases": [
+        "liquid metal hero",
+        "metal shader hero"
+      ],
+      "summary": "Split-layout hero with responsive LiquidMetal shader visuals and CTA content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "hero",
+        "background"
+      ],
+      "effectType": [
+        "metal",
+        "shader"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/hero-liquid-metal",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/hero-liquid-metal",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs @paper-design/shaders-react + shadcn button/badge."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/hero-liquid-metal.json\n\nimport { HeroLiquidMetal } from \"@/components/ui/hero-liquid-metal\"\n\n<HeroLiquidMetal\n  width={1280}\n  height={720}\n  image=\"https://shaders.paper.design/images/logos/diamond.svg\"\n  colorBack=\"#ffffff00\"\n  colorTint=\"#2c5d72\"\n/>",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Hero Liquid Metal` (slug `hero-liquid-metal`) from https://www.cult-ui.com/docs/components/hero-liquid-metal. Install with `npx shadcn@latest add https://cult-ui.com/r/hero-liquid-metal.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/hero-liquid-metal`). Registry item: https://cult-ui.com/r/hero-liquid-metal.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/hero-liquid-metal` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/hero-liquid-metal.json",
+        "registryUrl": "https://cult-ui.com/r/hero-liquid-metal.json",
+        "registryItem": "@cult-ui/hero-liquid-metal"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-distorted-glass",
+      "libraryId": "cult-ui",
+      "slug": "distorted-glass",
+      "name": "Distorted Glass",
+      "aliases": [
+        "glass morphism distorted",
+        "svg glass filter"
+      ],
+      "summary": "Glass morphism panel using SVG fractal-noise displacement filters.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "glass",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/distorted-glass",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/distorted-glass",
+        "aspectRatio": "16/9",
+        "peerNotes": "Self-contained SVG filter demo."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/distorted-glass.json\n\nimport { DistortedGlass } from \"@/components/ui/distorted-glass\"\n\n<DistortedGlass />",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Distorted Glass` (slug `distorted-glass`) from https://www.cult-ui.com/docs/components/distorted-glass. Install with `npx shadcn@latest add https://cult-ui.com/r/distorted-glass.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/distorted-glass`). Registry item: https://cult-ui.com/r/distorted-glass.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/distorted-glass` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/distorted-glass.json",
+        "registryUrl": "https://cult-ui.com/r/distorted-glass.json",
+        "registryItem": "@cult-ui/distorted-glass"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-metal-button",
+      "libraryId": "cult-ui",
+      "slug": "metal-button",
+      "name": "Metal Button",
+      "aliases": [
+        "liquid metal button",
+        "metal-fx button"
+      ],
+      "summary": "Shadcn Button wrapped in MetalFx animated liquid-metal ring.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "metal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/metal-button",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/metal-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs metal-fx + shadcn button."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/metal-button.json\n\nimport { MetalButton } from \"@/components/ui/metal-button\"\n\n<MetalButton type=\"button\" variant=\"outline\" preset=\"chromatic\">Continue</MetalButton>",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Metal Button` (slug `metal-button`) from https://www.cult-ui.com/docs/components/metal-button. Install with `npx shadcn@latest add https://cult-ui.com/r/metal-button.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/metal-button`). Registry item: https://cult-ui.com/r/metal-button.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/metal-button` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/metal-button.json",
+        "registryUrl": "https://cult-ui.com/r/metal-button.json",
+        "registryItem": "@cult-ui/metal-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-morph-surface",
+      "libraryId": "cult-ui",
+      "slug": "morph-surface",
+      "name": "Morph Surface",
+      "aliases": [
+        "morphing surface",
+        "morph panel"
+      ],
+      "summary": "Morphing surface with smooth dimension transitions.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "section"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/morph-surface",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/morph-surface",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/morph-surface.json\n\nimport { MorphSurface } from \"@/components/ui/morph-surface\"\n\n<MorphSurface />",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Morph Surface` (slug `morph-surface`) from https://www.cult-ui.com/docs/components/morph-surface. Install with `npx shadcn@latest add https://cult-ui.com/r/morph-surface.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/morph-surface`). Registry item: https://cult-ui.com/r/morph-surface.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/morph-surface` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/morph-surface.json",
+        "registryUrl": "https://cult-ui.com/r/morph-surface.json",
+        "registryItem": "@cult-ui/morph-surface"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-dither-image",
+      "libraryId": "cult-ui",
+      "slug": "dither-image",
+      "name": "Dither Image",
+      "aliases": [
+        "bayer dither image",
+        "dithered photo"
+      ],
+      "summary": "Compound Next.js image figure with CSS Bayer dither via dither-plugin.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "card"
+      ],
+      "effectType": [
+        "dither"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/dither-image",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/dither-image",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs dither-plugin + next/image."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/dither-image.json\n\nimport {\n  DitherImage,\n  DitherImageCaption,\n  DitherImageContent,\n  DitherImageFrame,\n} from \"@/components/ui/dither-image\"\n\n<DitherImage>\n  <DitherImageFrame aspectRatio=\"square\" size=\"md\">\n    <DitherImageContent src=\"/images/photo.jpg\" alt=\"Example\" fill sizes=\"(min-width: 768px) 33vw, 100vw\" />\n  </DitherImageFrame>\n  <DitherImageCaption>Caption stays crisp outside the filtered surface.</DitherImageCaption>\n</DitherImage>",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Dither Image` (slug `dither-image`) from https://www.cult-ui.com/docs/components/dither-image. Install with `npx shadcn@latest add https://cult-ui.com/r/dither-image.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/dither-image`). Registry item: https://cult-ui.com/r/dither-image.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/dither-image` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/dither-image.json",
+        "registryUrl": "https://cult-ui.com/r/dither-image.json",
+        "registryItem": "@cult-ui/dither-image"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-three-d-carousel",
+      "libraryId": "cult-ui",
+      "slug": "three-d-carousel",
+      "name": "3D Carousel",
+      "aliases": [
+        "3d photo carousel",
+        "perspective carousel"
+      ],
+      "summary": "3D perspective photo carousel with smooth item transitions.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "section"
+      ],
+      "effectType": [
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/three-d-carousel",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/three-d-carousel",
+        "aspectRatio": "16/9",
+        "peerNotes": "Default export ThreeDPhotoCarousel."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/three-d-carousel.json\n\nimport ThreeDPhotoCarousel from \"@/components/ui/three-d-carousel\"\n\n<div className=\"w-full max-w-4xl min-h-[500px]\">\n  <ThreeDPhotoCarousel />\n</div>",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `3D Carousel` (slug `three-d-carousel`) from https://www.cult-ui.com/docs/components/three-d-carousel. Install with `npx shadcn@latest add https://cult-ui.com/r/three-d-carousel.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/three-d-carousel`). Registry item: https://cult-ui.com/r/three-d-carousel.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/three-d-carousel` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/three-d-carousel.json",
+        "registryUrl": "https://cult-ui.com/r/three-d-carousel.json",
+        "registryItem": "@cult-ui/three-d-carousel"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-shader-lens-blur",
+      "libraryId": "cult-ui",
+      "slug": "shader-lens-blur",
+      "name": "Shader Lens Blur",
+      "aliases": [
+        "webgl lens blur",
+        "shader blur"
+      ],
+      "summary": "WebGL shader lens-blur effect with mouse interaction (three + jotai).",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background",
+        "other"
+      ],
+      "effectType": [
+        "shader",
+        "webgl",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/shader-lens-blur",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/shader-lens-blur",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs jotai, three, motion, next-themes."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/shader-lens-blur.json\n\nimport ShaderLensBlur from \"@/components/ui/shader-lens-blur\"\n\n<div className=\"w-full max-w-2xl\">\n  <ShaderLensBlur />\n</div>",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Shader Lens Blur` (slug `shader-lens-blur`) from https://www.cult-ui.com/docs/components/shader-lens-blur. Install with `npx shadcn@latest add https://cult-ui.com/r/shader-lens-blur.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/shader-lens-blur`). Registry item: https://cult-ui.com/r/shader-lens-blur.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/shader-lens-blur` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/shader-lens-blur.json",
+        "registryUrl": "https://cult-ui.com/r/shader-lens-blur.json",
+        "registryItem": "@cult-ui/shader-lens-blur"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-grid-beam",
+      "libraryId": "cult-ui",
+      "slug": "grid-beam",
+      "name": "Grid Beam",
+      "aliases": [
+        "canvas grid beam",
+        "beam grid"
+      ],
+      "summary": "Canvas grid beam animation with palette presets and SVG dividers.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "beam"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/grid-beam",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/grid-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "Named exports GridBeam + GridBeamCanvas/Content/Dividers."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/grid-beam.json\n\nimport { GridBeam } from \"@/components/ui/grid-beam\"\n\n<GridBeam rows={4} cols={4} colorVariant=\"colorful\" theme=\"dark\" active borderRadius={12} className=\"min-h-[280px] rounded-xl border\" />",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Grid Beam` (slug `grid-beam`) from https://www.cult-ui.com/docs/components/grid-beam. Install with `npx shadcn@latest add https://cult-ui.com/r/grid-beam.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/grid-beam`). Registry item: https://cult-ui.com/r/grid-beam.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/grid-beam` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/grid-beam.json",
+        "registryUrl": "https://cult-ui.com/r/grid-beam.json",
+        "registryItem": "@cult-ui/grid-beam"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-typewriter",
+      "libraryId": "cult-ui",
+      "slug": "typewriter",
+      "name": "Typewriter",
+      "aliases": [
+        "typing text",
+        "typewriter effect"
+      ],
+      "summary": "Typewriter text that cycles through sequences with configurable delay.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/typewriter",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/typewriter",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/typewriter.json\n\nimport { Typewriter } from \"@/components/ui/typewriter\"\n\n<Typewriter texts={[\"Testing 124\", \"Look at newcult.co\"]} delay={1} baseText=\"Yo \" />",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Typewriter` (slug `typewriter`) from https://www.cult-ui.com/docs/components/typewriter. Install with `npx shadcn@latest add https://cult-ui.com/r/typewriter.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/typewriter`). Registry item: https://cult-ui.com/r/typewriter.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/typewriter` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/typewriter.json",
+        "registryUrl": "https://cult-ui.com/r/typewriter.json",
+        "registryItem": "@cult-ui/typewriter"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-dynamic-island",
+      "libraryId": "cult-ui",
+      "slug": "dynamic-island",
+      "name": "Dynamic Island",
+      "aliases": [
+        "ios dynamic island",
+        "expandable island"
+      ],
+      "summary": "iOS-style dynamic island with expandable size presets and smooth motion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "nav"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/dynamic-island",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/dynamic-island",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion; size presets via useDynamicIslandSize."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/dynamic-island.json\n\nimport {\n  DynamicIsland,\n  DynamicIslandProvider,\n  DynamicContainer,\n  DynamicTitle,\n  useDynamicIslandSize,\n} from \"@/components/ui/dynamic-island\"\n\n<DynamicIslandProvider>\n  <DynamicIsland id=\"island\">\n    <DynamicContainer>\n      <DynamicTitle>Compact</DynamicTitle>\n    </DynamicContainer>\n  </DynamicIsland>\n</DynamicIslandProvider>",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Dynamic Island` (slug `dynamic-island`) from https://www.cult-ui.com/docs/components/dynamic-island. Install with `npx shadcn@latest add https://cult-ui.com/r/dynamic-island.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/dynamic-island`). Registry item: https://cult-ui.com/r/dynamic-island.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/dynamic-island` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/dynamic-island.json",
+        "registryUrl": "https://cult-ui.com/r/dynamic-island.json",
+        "registryItem": "@cult-ui/dynamic-island"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "cult-ui-dock",
+      "libraryId": "cult-ui",
+      "slug": "dock",
+      "name": "Dock",
+      "aliases": [
+        "macos dock",
+        "cult dock cards"
+      ],
+      "summary": "macOS-style dock with hover-scaling cards and dividers.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@cult-ui/dock",
+        "iframeSrc": "https://www.cult-ui.com/docs/components/dock",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion; exports Dock, DockCard, DockCardInner, DockDivider, useDock."
+      },
+      "copyCode": "npx shadcn@latest add https://cult-ui.com/r/dock.json\n\nimport { Dock, DockCard, DockDivider } from \"@/components/ui/dock\"\n\n<Dock>\n  <DockCard>...</DockCard>\n  <DockDivider />\n</Dock>",
+      "copyPrompt": {
+        "text": "Use Cult UI free component `Dock` (slug `dock`) from https://www.cult-ui.com/docs/components/dock. Install with `npx shadcn@latest add https://cult-ui.com/r/dock.json` after `npx shadcn@latest init` (or configure `@cult-ui` registry: `\"@cult-ui\": \"https://cult-ui.com/r/{name}.json\"` then `npx shadcn@beta add @cult-ui/dock`). Registry item: https://cult-ui.com/r/dock.json (GitHub mirror also publishes the same JSON under nolly-studio/cult-ui). Import from `@/components/ui/dock` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; many items need `motion` and/or peer deps listed in registry. Free & open source MIT (https://raw.githubusercontent.com/nolly-studio/cult-ui/main/LICENSE.md); Cult Pro (https://www.pro.cult-ui.com) is separate \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://cult-ui.com/r/dock.json",
+        "registryUrl": "https://cult-ui.com/r/dock.json",
+        "registryItem": "@cult-ui/dock"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

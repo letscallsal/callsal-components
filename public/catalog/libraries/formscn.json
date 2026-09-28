@@ -1,0 +1,571 @@
+{
+  "id": "formscn",
+  "name": "FormsCN",
+  "aliases": [
+    "formscn.space",
+    "Forms CN",
+    "AbdullahMukadam/formscn",
+    "@formscn"
+  ],
+  "summary": "Visual shadcn/ui form builder that exports typed React + Zod (RHF or TanStack Form).",
+  "homeUrl": "https://www.formscn.space",
+  "docsUrl": "https://www.formscn.space/docs",
+  "repoUrl": "https://github.com/AbdullahMukadam/formscn",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://www.formscn.space/r/{name}.json",
+    "registryUrl": "https://www.formscn.space/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.formscn.space/templates",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "zod"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 14 registry:block form templates (excludes base-form helper + detailed-application-form).",
+    "No per-template public docs routes \u2014 all demos share /templates (and /editor, /demo/form-registry).",
+    "No top-level LICENSE file in repo; MIT asserted via packages/ui/package.json and published npm packages.",
+    "Better Auth-specific templates (2FA/passkey) not all published as public /r/*.json in this sweep.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:55:00-04:00",
+  "components": [
+    {
+      "id": "formscn-login-form",
+      "libraryId": "formscn",
+      "slug": "login-form",
+      "name": "Login Form",
+      "aliases": [
+        "formscn login"
+      ],
+      "summary": "Simple email and password login form for shadcn/ui.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/login-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/login-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Login Form` (slug `login-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/login-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/login-form.json",
+        "registryUrl": "https://www.formscn.space/r/login-form.json",
+        "registryItem": "login-form"
+      }
+    },
+    {
+      "id": "formscn-signup-form",
+      "libraryId": "formscn",
+      "slug": "signup-form",
+      "name": "Signup Form",
+      "aliases": [
+        "formscn signup",
+        "register form"
+      ],
+      "summary": "User registration form with email and password.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/signup-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/signup-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Signup Form` (slug `signup-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/signup-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/signup-form.json",
+        "registryUrl": "https://www.formscn.space/r/signup-form.json",
+        "registryItem": "signup-form"
+      }
+    },
+    {
+      "id": "formscn-contact-form",
+      "libraryId": "formscn",
+      "slug": "contact-form",
+      "name": "Contact Form",
+      "aliases": [
+        "formscn contact"
+      ],
+      "summary": "Contact form with name, email, subject, and message.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/contact-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/contact-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Contact Form` (slug `contact-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/contact-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/contact-form.json",
+        "registryUrl": "https://www.formscn.space/r/contact-form.json",
+        "registryItem": "contact-form"
+      }
+    },
+    {
+      "id": "formscn-newsletter-form",
+      "libraryId": "formscn",
+      "slug": "newsletter-form",
+      "name": "Newsletter Form",
+      "aliases": [
+        "formscn newsletter"
+      ],
+      "summary": "Newsletter subscription form with email frequency selection.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/newsletter-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/newsletter-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Newsletter Form` (slug `newsletter-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/newsletter-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/newsletter-form.json",
+        "registryUrl": "https://www.formscn.space/r/newsletter-form.json",
+        "registryItem": "newsletter-form"
+      }
+    },
+    {
+      "id": "formscn-feedback-form",
+      "libraryId": "formscn",
+      "slug": "feedback-form",
+      "name": "Feedback Form",
+      "aliases": [
+        "formscn feedback"
+      ],
+      "summary": "Product feedback form with rating and comments.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/feedback-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/feedback-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Feedback Form` (slug `feedback-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/feedback-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/feedback-form.json",
+        "registryUrl": "https://www.formscn.space/r/feedback-form.json",
+        "registryItem": "feedback-form"
+      }
+    },
+    {
+      "id": "formscn-waitlist-form",
+      "libraryId": "formscn",
+      "slug": "waitlist-form",
+      "name": "Waitlist Form",
+      "aliases": [
+        "formscn waitlist"
+      ],
+      "summary": "Waitlist signup form for launch pages.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/waitlist-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/waitlist-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Waitlist Form` (slug `waitlist-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/waitlist-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/waitlist-form.json",
+        "registryUrl": "https://www.formscn.space/r/waitlist-form.json",
+        "registryItem": "waitlist-form"
+      }
+    },
+    {
+      "id": "formscn-support-ticket-form",
+      "libraryId": "formscn",
+      "slug": "support-ticket-form",
+      "name": "Support Ticket Form",
+      "aliases": [
+        "formscn support",
+        "ticket form"
+      ],
+      "summary": "Support ticket submission form.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/support-ticket-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/support-ticket-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Support Ticket Form` (slug `support-ticket-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/support-ticket-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/support-ticket-form.json",
+        "registryUrl": "https://www.formscn.space/r/support-ticket-form.json",
+        "registryItem": "support-ticket-form"
+      }
+    },
+    {
+      "id": "formscn-booking-request-form",
+      "libraryId": "formscn",
+      "slug": "booking-request-form",
+      "name": "Booking Request Form",
+      "aliases": [
+        "formscn booking"
+      ],
+      "summary": "Booking request form with date and service selection.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/booking-request-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/booking-request-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Booking Request Form` (slug `booking-request-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/booking-request-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/booking-request-form.json",
+        "registryUrl": "https://www.formscn.space/r/booking-request-form.json",
+        "registryItem": "booking-request-form"
+      }
+    },
+    {
+      "id": "formscn-job-application-form",
+      "libraryId": "formscn",
+      "slug": "job-application-form",
+      "name": "Job Application Form",
+      "aliases": [
+        "formscn job application"
+      ],
+      "summary": "Job application form with resume and cover letter fields.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/job-application-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/job-application-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Job Application Form` (slug `job-application-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/job-application-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/job-application-form.json",
+        "registryUrl": "https://www.formscn.space/r/job-application-form.json",
+        "registryItem": "job-application-form"
+      }
+    },
+    {
+      "id": "formscn-event-registration-form",
+      "libraryId": "formscn",
+      "slug": "event-registration-form",
+      "name": "Event Registration Form",
+      "aliases": [
+        "formscn event"
+      ],
+      "summary": "Event registration form with attendee details.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/event-registration-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/event-registration-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Event Registration Form` (slug `event-registration-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/event-registration-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/event-registration-form.json",
+        "registryUrl": "https://www.formscn.space/r/event-registration-form.json",
+        "registryItem": "event-registration-form"
+      }
+    },
+    {
+      "id": "formscn-ecommerce-checkout-form",
+      "libraryId": "formscn",
+      "slug": "ecommerce-checkout-form",
+      "name": "Ecommerce Checkout Form",
+      "aliases": [
+        "formscn checkout"
+      ],
+      "summary": "Checkout form with shipping and payment details.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/ecommerce-checkout-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/ecommerce-checkout-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Ecommerce Checkout Form` (slug `ecommerce-checkout-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/ecommerce-checkout-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/ecommerce-checkout-form.json",
+        "registryUrl": "https://www.formscn.space/r/ecommerce-checkout-form.json",
+        "registryItem": "ecommerce-checkout-form"
+      }
+    },
+    {
+      "id": "formscn-onboarding-wizard-form",
+      "libraryId": "formscn",
+      "slug": "onboarding-wizard-form",
+      "name": "Onboarding Wizard Form",
+      "aliases": [
+        "formscn onboarding",
+        "multi-step wizard"
+      ],
+      "summary": "Multi-step user onboarding wizard form.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@formscn/onboarding-wizard-form",
+        "iframeSrc": "https://www.formscn.space/templates",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui primitives; toggle RHF vs TanStack Form in builder"
+      },
+      "copyCode": "npx shadcn@latest add https://www.formscn.space/r/onboarding-wizard-form.json\n\n# Or open the visual builder: https://www.formscn.space/editor\n# Supports React Hook Form or TanStack Form + Zod export.\n# Demo registry playground: https://www.formscn.space/demo/form-registry",
+      "copyPrompt": {
+        "text": "Use FormsCN free MIT shadcn form template `Onboarding Wizard Form` (slug `onboarding-wizard-form`) from https://www.formscn.space. Install with `npx shadcn@latest add https://www.formscn.space/r/onboarding-wizard-form.json`. Registry index: https://www.formscn.space/r/registry.json. Visual builder: https://www.formscn.space/editor. Templates gallery: https://www.formscn.space/templates. Optional runtime: `npm i @formscn/form` (MIT). Repo: https://github.com/AbdullahMukadam/formscn. License: MIT (primary: packages/ui/package.json \"license\":\"MIT\" in https://github.com/AbdullahMukadam/formscn; also npm @formscn/ui@0.1.2 and @formscn/form@0.2.0 license MIT). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://www.formscn.space/r/onboarding-wizard-form.json",
+        "registryUrl": "https://www.formscn.space/r/onboarding-wizard-form.json",
+        "registryItem": "onboarding-wizard-form"
+      }
+    }
+  ]
+}

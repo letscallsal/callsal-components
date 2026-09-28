@@ -1,0 +1,537 @@
+{
+  "updatedAt": "2026-09-28T17:35:00-04:00",
+  "libraries": [
+    {
+      "id": "magic-ui",
+      "name": "Magic UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/magic-ui.json"
+    },
+    {
+      "id": "aceternity-ui",
+      "name": "Aceternity UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/aceternity-ui.json"
+    },
+    {
+      "id": "shadcn-ui",
+      "name": "shadcn/ui",
+      "status": "verified",
+      "componentCount": 11,
+      "path": "libraries/shadcn-ui.json"
+    },
+    {
+      "id": "fancy-components",
+      "name": "Fancy Components",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/fancy-components.json"
+    },
+    {
+      "id": "react-bits",
+      "name": "React Bits",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/react-bits.json"
+    },
+    {
+      "id": "animata",
+      "name": "Animata",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/animata.json"
+    },
+    {
+      "id": "animate-ui",
+      "name": "Animate UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/animate-ui.json"
+    },
+    {
+      "id": "kokonut-ui",
+      "name": "Kokonut UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/kokonut-ui.json"
+    },
+    {
+      "id": "cult-ui",
+      "name": "Cult UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/cult-ui.json"
+    },
+    {
+      "id": "motion-primitives",
+      "name": "Motion Primitives",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/motion-primitives.json"
+    },
+    {
+      "id": "motiq",
+      "name": "Motiq",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/motiq.json"
+    },
+    {
+      "id": "beui",
+      "name": "beUI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/beui.json"
+    },
+    {
+      "id": "easy-ui",
+      "name": "Easy UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/easy-ui.json"
+    },
+    {
+      "id": "eldora-ui",
+      "name": "Eldora UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/eldora-ui.json"
+    },
+    {
+      "id": "hover-dev",
+      "name": "Hover.dev",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/hover-dev.json"
+    },
+    {
+      "id": "kibo-ui",
+      "name": "Kibo UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/kibo-ui.json"
+    },
+    {
+      "id": "layouts",
+      "name": "Layouts",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/layouts.json"
+    },
+    {
+      "id": "libraries-dev",
+      "name": "Libraries.dev",
+      "status": "verified",
+      "componentCount": 9,
+      "path": "libraries/libraries-dev.json"
+    },
+    {
+      "id": "neobrutalism",
+      "name": "Neobrutalism",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/neobrutalism.json"
+    },
+    {
+      "id": "origin-ui",
+      "name": "Origin UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/origin-ui.json"
+    },
+    {
+      "id": "rare-ui",
+      "name": "Rare UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/rare-ui.json"
+    },
+    {
+      "id": "smoothui",
+      "name": "SmoothUI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/smoothui.json"
+    },
+    {
+      "id": "velora-ui",
+      "name": "Velora UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/velora-ui.json"
+    },
+    {
+      "id": "watermelon-ui",
+      "name": "Watermelon UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/watermelon-ui.json"
+    },
+    {
+      "id": "wensity-ui",
+      "name": "Wensity UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/wensity-ui.json"
+    },
+    {
+      "id": "8bitcn",
+      "name": "8bitcn",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/8bitcn.json"
+    },
+    {
+      "id": "ai-elements",
+      "name": "AI Elements",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/ai-elements.json"
+    },
+    {
+      "id": "aicss",
+      "name": "AICSS",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/aicss.json"
+    },
+    {
+      "id": "assistant-ui",
+      "name": "assistant-ui",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/assistant-ui.json"
+    },
+    {
+      "id": "balsa-ui",
+      "name": "Balsa UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/balsa-ui.json"
+    },
+    {
+      "id": "basecn",
+      "name": "basecn",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/basecn.json"
+    },
+    {
+      "id": "beautiful-ui",
+      "name": "Beautiful UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/beautiful-ui.json"
+    },
+    {
+      "id": "canvas-ui",
+      "name": "Canvas UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/canvas-ui.json"
+    },
+    {
+      "id": "drawably",
+      "name": "Drawably",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/drawably.json"
+    },
+    {
+      "id": "extend-ui",
+      "name": "Extend UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/extend-ui.json"
+    },
+    {
+      "id": "float-ui",
+      "name": "Float UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/float-ui.json"
+    },
+    {
+      "id": "formscn",
+      "name": "FormsCN",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/formscn.json"
+    },
+    {
+      "id": "fragments-ui",
+      "name": "Fragments UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/fragments-ui.json"
+    },
+    {
+      "id": "glasscn",
+      "name": "GlassCN",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/glasscn.json"
+    },
+    {
+      "id": "glin-ui",
+      "name": "Glin UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/glin-ui.json"
+    },
+    {
+      "id": "gluestack",
+      "name": "gluestack-ui",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/gluestack.json"
+    },
+    {
+      "id": "heroui",
+      "name": "HeroUI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/heroui.json"
+    },
+    {
+      "id": "joly-ui",
+      "name": "Joly UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/joly-ui.json"
+    },
+    {
+      "id": "ninna-ui",
+      "name": "Ninna UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/ninna-ui.json"
+    },
+    {
+      "id": "open-glass-ui",
+      "name": "OpenGlass UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/open-glass-ui.json"
+    },
+    {
+      "id": "opensource-ui",
+      "name": "Opensource UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/opensource-ui.json"
+    },
+    {
+      "id": "orbkit",
+      "name": "Orbkit",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/orbkit.json"
+    },
+    {
+      "id": "panel-ui",
+      "name": "Panel UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/panel-ui.json"
+    },
+    {
+      "id": "park-ui",
+      "name": "Park UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/park-ui.json"
+    },
+    {
+      "id": "reui",
+      "name": "ReUI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/reui.json"
+    },
+    {
+      "id": "shoelace",
+      "name": "Shoelace",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/shoelace.json"
+    },
+    {
+      "id": "skiper-ui",
+      "name": "Skiper UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/skiper-ui.json"
+    },
+    {
+      "id": "stepwise-ui",
+      "name": "Stepwise UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/stepwise-ui.json"
+    },
+    {
+      "id": "syntax-ui",
+      "name": "SyntaxUI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/syntax-ui.json"
+    },
+    {
+      "id": "tailgrids",
+      "name": "Tailgrids",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/tailgrids.json"
+    },
+    {
+      "id": "uiable",
+      "name": "UIAble",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/uiable.json"
+    },
+    {
+      "id": "fluid-functionalism",
+      "name": "Fluid Functionalism",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/fluid-functionalism.json"
+    },
+    {
+      "id": "animbits",
+      "name": "AnimBits",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/animbits.json"
+    },
+    {
+      "id": "ariakit",
+      "name": "Ariakit",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/ariakit.json"
+    },
+    {
+      "id": "ark-ui",
+      "name": "Ark UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/ark-ui.json"
+    },
+    {
+      "id": "base-ui",
+      "name": "Base UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/base-ui.json"
+    },
+    {
+      "id": "cube-ui-kit",
+      "name": "Cube UI Kit",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/cube-ui-kit.json"
+    },
+    {
+      "id": "headless-ui",
+      "name": "Headless UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/headless-ui.json"
+    },
+    {
+      "id": "radix-ui",
+      "name": "Radix UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/radix-ui.json"
+    },
+    {
+      "id": "react-aria",
+      "name": "React Aria",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/react-aria.json"
+    },
+    {
+      "id": "tremor",
+      "name": "Tremor",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/tremor.json"
+    },
+    {
+      "id": "heroicons-animated",
+      "name": "Heroicons Animated",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/heroicons-animated.json"
+    },
+    {
+      "id": "keep-react",
+      "name": "Keep React",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/keep-react.json"
+    },
+    {
+      "id": "bag-ui",
+      "name": "Bag UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/bag-ui.json"
+    },
+    {
+      "id": "primer-react",
+      "name": "Primer React",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/primer-react.json"
+    },
+    {
+      "id": "vayu-ui",
+      "name": "Vayu UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/vayu-ui.json"
+    },
+    {
+      "id": "intentui",
+      "name": "Intent UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/intentui.json"
+    },
+    {
+      "id": "spectrum-ui",
+      "name": "Spectrum UI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/spectrum-ui.json"
+    },
+    {
+      "id": "align-ui",
+      "name": "AlignUI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/align-ui.json"
+    },
+    {
+      "id": "boldkit",
+      "name": "BoldKit",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/boldkit.json"
+    },
+    {
+      "id": "seamui",
+      "name": "SeamUI",
+      "status": "verified",
+      "componentCount": 12,
+      "path": "libraries/seamui.json"
+    }
+  ]
+}

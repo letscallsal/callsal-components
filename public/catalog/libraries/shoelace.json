@@ -1,0 +1,607 @@
+{
+  "id": "shoelace",
+  "name": "Shoelace",
+  "aliases": [
+    "shoelace",
+    "shoelace.style",
+    "shoelace-style/shoelace",
+    "Sl",
+    "Web Awesome Shoelace"
+  ],
+  "summary": "MIT web-component UI kit with first-class React wrappers for every component.",
+  "homeUrl": "https://shoelace.style",
+  "docsUrl": "https://shoelace.style/getting-started/installation",
+  "repoUrl": "https://github.com/shoelace-style/shoelace",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm install @shoelace-style/shoelace",
+    "packages": [
+      "@shoelace-style/shoelace"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://shoelace.style/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "@shoelace-style/shoelace"
+    ],
+    "budgetKb": 600
+  },
+  "status": "verified",
+  "gaps": [
+    "Underlying tech is Lit web components; catalog frameworks lists React because official React wrappers are first-class (https://shoelace.style/frameworks/react).",
+    "Pilot includes 12 of 50+ documented components.",
+    "Requires theme CSS import + setBasePath for icons/assets.",
+    "iframe demos only; HTML/React toggle lives on docs pages."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:28:00-04:00",
+  "components": [
+    {
+      "id": "shoelace-button",
+      "libraryId": "shoelace",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "shoelace button",
+        "sl-button",
+        "SlButton",
+        "Button"
+      ],
+      "summary": "Action button with variants and loading states.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/button",
+        "iframeSrc": "https://shoelace.style/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlButton from '@shoelace-style/shoelace/dist/react/button'\n\n<SlButton>...</SlButton>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlButton` (slug `button`) from https://shoelace.style/components/button. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlButton from '@shoelace-style/shoelace/dist/react/button'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-alert",
+      "libraryId": "shoelace",
+      "slug": "alert",
+      "name": "Alert",
+      "aliases": [
+        "shoelace alert",
+        "sl-alert",
+        "SlAlert",
+        "Alert"
+      ],
+      "summary": "Inline alert / toast-style callout.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "toast",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/alert",
+        "iframeSrc": "https://shoelace.style/components/alert",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlAlert from '@shoelace-style/shoelace/dist/react/alert'\n\n<SlAlert>...</SlAlert>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlAlert` (slug `alert`) from https://shoelace.style/components/alert. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlAlert from '@shoelace-style/shoelace/dist/react/alert'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-avatar",
+      "libraryId": "shoelace",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "shoelace avatar",
+        "sl-avatar",
+        "SlAvatar",
+        "Avatar"
+      ],
+      "summary": "User avatar with image and initials fallback.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/avatar",
+        "iframeSrc": "https://shoelace.style/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlAvatar from '@shoelace-style/shoelace/dist/react/avatar'\n\n<SlAvatar>...</SlAvatar>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlAvatar` (slug `avatar`) from https://shoelace.style/components/avatar. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlAvatar from '@shoelace-style/shoelace/dist/react/avatar'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-badge",
+      "libraryId": "shoelace",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "shoelace badge",
+        "sl-badge",
+        "SlBadge",
+        "Badge"
+      ],
+      "summary": "Status badge and pill labels.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/badge",
+        "iframeSrc": "https://shoelace.style/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlBadge from '@shoelace-style/shoelace/dist/react/badge'\n\n<SlBadge>...</SlBadge>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlBadge` (slug `badge`) from https://shoelace.style/components/badge. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlBadge from '@shoelace-style/shoelace/dist/react/badge'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-card",
+      "libraryId": "shoelace",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "shoelace card",
+        "sl-card",
+        "SlCard",
+        "Card"
+      ],
+      "summary": "Content card with header/body/footer slots.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/card",
+        "iframeSrc": "https://shoelace.style/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlCard from '@shoelace-style/shoelace/dist/react/card'\n\n<SlCard>...</SlCard>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlCard` (slug `card`) from https://shoelace.style/components/card. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlCard from '@shoelace-style/shoelace/dist/react/card'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-checkbox",
+      "libraryId": "shoelace",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "shoelace checkbox",
+        "sl-checkbox",
+        "SlCheckbox",
+        "Checkbox"
+      ],
+      "summary": "Accessible checkbox control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/checkbox",
+        "iframeSrc": "https://shoelace.style/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlCheckbox from '@shoelace-style/shoelace/dist/react/checkbox'\n\n<SlCheckbox>...</SlCheckbox>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlCheckbox` (slug `checkbox`) from https://shoelace.style/components/checkbox. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlCheckbox from '@shoelace-style/shoelace/dist/react/checkbox'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-dialog",
+      "libraryId": "shoelace",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "shoelace dialog",
+        "sl-dialog",
+        "SlDialog",
+        "Dialog"
+      ],
+      "summary": "Modal dialog overlay.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/dialog",
+        "iframeSrc": "https://shoelace.style/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlDialog from '@shoelace-style/shoelace/dist/react/dialog'\n\n<SlDialog>...</SlDialog>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlDialog` (slug `dialog`) from https://shoelace.style/components/dialog. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlDialog from '@shoelace-style/shoelace/dist/react/dialog'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-drawer",
+      "libraryId": "shoelace",
+      "slug": "drawer",
+      "name": "Drawer",
+      "aliases": [
+        "shoelace drawer",
+        "sl-drawer",
+        "SlDrawer",
+        "Drawer"
+      ],
+      "summary": "Side drawer panel.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/drawer",
+        "iframeSrc": "https://shoelace.style/components/drawer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlDrawer from '@shoelace-style/shoelace/dist/react/drawer'\n\n<SlDrawer>...</SlDrawer>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlDrawer` (slug `drawer`) from https://shoelace.style/components/drawer. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlDrawer from '@shoelace-style/shoelace/dist/react/drawer'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-dropdown",
+      "libraryId": "shoelace",
+      "slug": "dropdown",
+      "name": "Dropdown",
+      "aliases": [
+        "shoelace dropdown",
+        "sl-dropdown",
+        "SlDropdown",
+        "Dropdown"
+      ],
+      "summary": "Dropdown trigger and menu panel.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/dropdown",
+        "iframeSrc": "https://shoelace.style/components/dropdown",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlDropdown from '@shoelace-style/shoelace/dist/react/dropdown'\n\n<SlDropdown>...</SlDropdown>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlDropdown` (slug `dropdown`) from https://shoelace.style/components/dropdown. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlDropdown from '@shoelace-style/shoelace/dist/react/dropdown'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-input",
+      "libraryId": "shoelace",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "shoelace input",
+        "sl-input",
+        "SlInput",
+        "Input"
+      ],
+      "summary": "Text input with clearable and password modes.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/input",
+        "iframeSrc": "https://shoelace.style/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlInput from '@shoelace-style/shoelace/dist/react/input'\n\n<SlInput>...</SlInput>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlInput` (slug `input`) from https://shoelace.style/components/input. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlInput from '@shoelace-style/shoelace/dist/react/input'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-select",
+      "libraryId": "shoelace",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "shoelace select",
+        "sl-select",
+        "SlSelect",
+        "Select"
+      ],
+      "summary": "Select / combobox control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/select",
+        "iframeSrc": "https://shoelace.style/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlSelect from '@shoelace-style/shoelace/dist/react/select'\n\n<SlSelect>...</SlSelect>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlSelect` (slug `select`) from https://shoelace.style/components/select. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlSelect from '@shoelace-style/shoelace/dist/react/select'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    },
+    {
+      "id": "shoelace-switch",
+      "libraryId": "shoelace",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "shoelace switch",
+        "sl-switch",
+        "SlSwitch",
+        "Switch"
+      ],
+      "summary": "Toggle switch control.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@shoelace-style/shoelace/dist/react/switch",
+        "iframeSrc": "https://shoelace.style/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Web components + official React wrappers. Docs pages toggle HTML/React examples. Theme CSS + setBasePath required."
+      },
+      "copyCode": "npm install @shoelace-style/shoelace\n# App setup: import '@shoelace-style/shoelace/dist/themes/light.css'\n# import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js'\n# setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/')\n\nimport SlSwitch from '@shoelace-style/shoelace/dist/react/switch'\n\n<SlSwitch>...</SlSwitch>",
+      "copyPrompt": {
+        "text": "Use Shoelace free MIT React wrapper `SlSwitch` (slug `switch`) from https://shoelace.style/components/switch. Shoelace is a web-component UI kit with first-class React wrappers (`@shoelace-style/shoelace/dist/react/...`). Install: `npm install @shoelace-style/shoelace`, import light theme + setBasePath, then `import SlSwitch from '@shoelace-style/shoelace/dist/react/switch'`. React guide: https://shoelace.style/frameworks/react. Home: https://shoelace.style. Repo: https://github.com/shoelace-style/shoelace. License: MIT (https://raw.githubusercontent.com/shoelace-style/shoelace/next/LICENSE.md; Copyright (c) 2020 A Beautiful Site, LLC). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm install @shoelace-style/shoelace",
+        "packages": [
+          "@shoelace-style/shoelace"
+        ]
+      }
+    }
+  ]
+}

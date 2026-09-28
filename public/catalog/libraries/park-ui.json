@@ -1,0 +1,558 @@
+{
+  "id": "park-ui",
+  "name": "Park UI",
+  "aliases": [
+    "park-ui",
+    "parkui",
+    "park-ui.com",
+    "cschroeter/park-ui",
+    "chakra-ui/park-ui"
+  ],
+  "summary": "Styled Ark UI components with Panda CSS; copy-paste/CLI source ownership for React.",
+  "homeUrl": "https://park-ui.com",
+  "docsUrl": "https://park-ui.com/docs/introduction",
+  "repoUrl": "https://github.com/cschroeter/park-ui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx @park-ui/cli add {name}"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://park-ui.com/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "@ark-ui/react",
+      "lucide-react",
+      "@pandacss/dev"
+    ],
+    "budgetKb": 600
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 58 documented components (React docs paths).",
+    "Also supports Vue and Solid via Ark UI \u2014 catalog frameworks list React primary only.",
+    "Requires Panda CSS toolchain; not a drop-in Tailwind kit.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:20:00-04:00",
+  "components": [
+    {
+      "id": "park-ui-button",
+      "libraryId": "park-ui",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "park button",
+        "park-ui button",
+        "Button"
+      ],
+      "summary": "Styled Ark button with Park UI Panda recipes.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/button",
+        "iframeSrc": "https://park-ui.com/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add button\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Button } from \"@/components/ui\"\n\n<Button />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Button` (slug `button`) from https://park-ui.com/docs/components/button. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add button` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add button"
+      }
+    },
+    {
+      "id": "park-ui-accordion",
+      "libraryId": "park-ui",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "park accordion",
+        "park-ui accordion",
+        "Accordion"
+      ],
+      "summary": "Collapsible accordion built on Ark UI.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "layout",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/accordion",
+        "iframeSrc": "https://park-ui.com/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add accordion\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Accordion } from \"@/components/ui\"\n\n<Accordion />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Accordion` (slug `accordion`) from https://park-ui.com/docs/components/accordion. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add accordion` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add accordion"
+      }
+    },
+    {
+      "id": "park-ui-avatar",
+      "libraryId": "park-ui",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "park avatar",
+        "park-ui avatar",
+        "Avatar"
+      ],
+      "summary": "User avatar with image and fallback.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/avatar",
+        "iframeSrc": "https://park-ui.com/docs/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add avatar\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Avatar } from \"@/components/ui\"\n\n<Avatar />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Avatar` (slug `avatar`) from https://park-ui.com/docs/components/avatar. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add avatar` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add avatar"
+      }
+    },
+    {
+      "id": "park-ui-card",
+      "libraryId": "park-ui",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "park card",
+        "park-ui card",
+        "Card"
+      ],
+      "summary": "Content card surface with Park styling.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/card",
+        "iframeSrc": "https://park-ui.com/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add card\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Card } from \"@/components/ui\"\n\n<Card />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Card` (slug `card`) from https://park-ui.com/docs/components/card. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add card` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add card"
+      }
+    },
+    {
+      "id": "park-ui-checkbox",
+      "libraryId": "park-ui",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "park checkbox",
+        "park-ui checkbox",
+        "Checkbox"
+      ],
+      "summary": "Accessible checkbox on Ark UI.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/checkbox",
+        "iframeSrc": "https://park-ui.com/docs/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add checkbox\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Checkbox } from \"@/components/ui\"\n\n<Checkbox />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Checkbox` (slug `checkbox`) from https://park-ui.com/docs/components/checkbox. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add checkbox` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add checkbox"
+      }
+    },
+    {
+      "id": "park-ui-dialog",
+      "libraryId": "park-ui",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "park dialog",
+        "park-ui dialog",
+        "Dialog"
+      ],
+      "summary": "Modal dialog overlay on Ark UI.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/dialog",
+        "iframeSrc": "https://park-ui.com/docs/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add dialog\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Dialog } from \"@/components/ui\"\n\n<Dialog />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Dialog` (slug `dialog`) from https://park-ui.com/docs/components/dialog. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add dialog` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add dialog"
+      }
+    },
+    {
+      "id": "park-ui-drawer",
+      "libraryId": "park-ui",
+      "slug": "drawer",
+      "name": "Drawer",
+      "aliases": [
+        "park drawer",
+        "park-ui drawer",
+        "Drawer"
+      ],
+      "summary": "Edge drawer panel on Ark UI.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "modal",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/drawer",
+        "iframeSrc": "https://park-ui.com/docs/components/drawer",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add drawer\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Drawer } from \"@/components/ui\"\n\n<Drawer />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Drawer` (slug `drawer`) from https://park-ui.com/docs/components/drawer. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add drawer` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add drawer"
+      }
+    },
+    {
+      "id": "park-ui-input",
+      "libraryId": "park-ui",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "park input",
+        "park-ui input",
+        "Input"
+      ],
+      "summary": "Text input field with Park UI Panda recipes.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/input",
+        "iframeSrc": "https://park-ui.com/docs/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add input\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Input } from \"@/components/ui\"\n\n<Input />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Input` (slug `input`) from https://park-ui.com/docs/components/input. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add input` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add input"
+      }
+    },
+    {
+      "id": "park-ui-menu",
+      "libraryId": "park-ui",
+      "slug": "menu",
+      "name": "Menu",
+      "aliases": [
+        "park menu",
+        "park-ui menu",
+        "Menu"
+      ],
+      "summary": "Dropdown menu built on Ark UI.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/menu",
+        "iframeSrc": "https://park-ui.com/docs/components/menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add menu\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Menu } from \"@/components/ui\"\n\n<Menu />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Menu` (slug `menu`) from https://park-ui.com/docs/components/menu. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add menu` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add menu"
+      }
+    },
+    {
+      "id": "park-ui-select",
+      "libraryId": "park-ui",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "park select",
+        "park-ui select",
+        "Select"
+      ],
+      "summary": "Accessible select / combobox-style picker.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "input",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/select",
+        "iframeSrc": "https://park-ui.com/docs/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add select\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Select } from \"@/components/ui\"\n\n<Select />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Select` (slug `select`) from https://park-ui.com/docs/components/select. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add select` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add select"
+      }
+    },
+    {
+      "id": "park-ui-tabs",
+      "libraryId": "park-ui",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "park tabs",
+        "park-ui tabs",
+        "Tabs"
+      ],
+      "summary": "Tabbed navigation on Ark UI.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/tabs",
+        "iframeSrc": "https://park-ui.com/docs/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add tabs\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Tabs } from \"@/components/ui\"\n\n<Tabs />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Tabs` (slug `tabs`) from https://park-ui.com/docs/components/tabs. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add tabs` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add tabs"
+      }
+    },
+    {
+      "id": "park-ui-toast",
+      "libraryId": "park-ui",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "park toast",
+        "park-ui toast",
+        "Toast"
+      ],
+      "summary": "Transient toast notifications.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/toast",
+        "iframeSrc": "https://park-ui.com/docs/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires Panda CSS + @ark-ui/react + lucide-react. CLI: npx @park-ui/cli init && npx @park-ui/cli add {slug}."
+      },
+      "copyCode": "npx @park-ui/cli init\nnpx @park-ui/cli add toast\n# peers: npm install @ark-ui/react lucide-react  (+ Panda CSS setup)\n\nimport { Toast } from \"@/components/ui\"\n\n<Toast />",
+      "copyPrompt": {
+        "text": "Use Park UI free MIT React component `Toast` (slug `toast`) from https://park-ui.com/docs/components/toast. Setup: Panda CSS, then `npm install @ark-ui/react lucide-react`, `npx @park-ui/cli init`, then `npx @park-ui/cli add toast` (copies source into the project). Also supports Vue and Solid via Ark. Docs: https://park-ui.com/docs/installation. Home: https://park-ui.com. Repo: https://github.com/cschroeter/park-ui (also chakra-ui/park-ui). License: MIT (https://raw.githubusercontent.com/cschroeter/park-ui/main/LICENSE; Copyright (c) 2025 cschroeter). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @park-ui/cli add toast"
+      }
+    }
+  ]
+}

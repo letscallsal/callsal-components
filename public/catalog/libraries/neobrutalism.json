@@ -1,0 +1,601 @@
+{
+  "id": "neobrutalism",
+  "name": "Neobrutalism",
+  "aliases": [
+    "neobrutalism.dev",
+    "ekmas neobrutalism",
+    "neobrutalism-components"
+  ],
+  "summary": "Free MIT neobrutalism shadcn/ui components: thick borders, hard shadows, loud type.",
+  "homeUrl": "https://www.neobrutalism.dev",
+  "docsUrl": "https://www.neobrutalism.dev/docs",
+  "repoUrl": "https://github.com/ekmas/neobrutalism-components",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add https://neobrutalism.dev/r/{name}.json",
+    "registryUrl": "https://www.neobrutalism.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.neobrutalism.dev/docs/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "shadcn",
+      "@base-ui/react"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of ~64 documented comps \u2014 not a full inventory.",
+    "Upstream maintainer announced project no longer actively maintained (GitHub discussion #100, Jul 2025); MIT license remains; site + registry still HTTP 200.",
+    "Requires neo styling init (e.g. npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json) or add styling registry before comps.",
+    "Built on shadcn/ui + Base UI + Tailwind v4; some comps have registryDependencies (e.g. toast \u2192 nbutton).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:20:00-04:00",
+  "components": [
+    {
+      "id": "neobrutalism-button",
+      "libraryId": "neobrutalism",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "neo button",
+        "brutal button"
+      ],
+      "summary": "Thick-border hard-shadow neobrutalism button.",
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/button",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/button.json\n\nimport { Button } from \"@/components/ui/button\"\n\n<Button>Click me</Button>",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Button` (slug `button`) from https://www.neobrutalism.dev/docs/button. Install with `npx shadcn@latest add https://neobrutalism.dev/r/button.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/button`. Exports: Button. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/button.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/button.json",
+        "registryItem": "button"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-card",
+      "libraryId": "neobrutalism",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "neo card",
+        "brutal card"
+      ],
+      "summary": "Neobrutalism card with border and hard shadow.",
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/card",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/card.json\n\nimport { Card, CardHeader, CardTitle, CardContent } from \"@/components/ui/card\"\n\n<Card><CardHeader><CardTitle>Title</CardTitle></CardHeader><CardContent>Body</CardContent></Card>",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Card` (slug `card`) from https://www.neobrutalism.dev/docs/card. Install with `npx shadcn@latest add https://neobrutalism.dev/r/card.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/card`. Exports: Card, CardHeader, CardTitle, CardContent, CardFooter, CardDescription, CardAction. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/card.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/card.json",
+        "registryItem": "card"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-badge",
+      "libraryId": "neobrutalism",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "neo badge",
+        "brutal badge"
+      ],
+      "summary": "Loud neobrutalism badge chip.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/badge",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/badge.json\n\nimport { Badge } from \"@/components/ui/badge\"\n\n<Badge>New</Badge>",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Badge` (slug `badge`) from https://www.neobrutalism.dev/docs/badge. Install with `npx shadcn@latest add https://neobrutalism.dev/r/badge.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/badge`. Exports: Badge, badgeVariants. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/badge.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/badge.json",
+        "registryItem": "badge"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-alert",
+      "libraryId": "neobrutalism",
+      "slug": "alert",
+      "name": "Alert",
+      "aliases": [
+        "neo alert",
+        "brutal alert"
+      ],
+      "summary": "Callout alert with thick border neobrutalism styling.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/alert",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/alert",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/alert.json\n\nimport { Alert, AlertTitle, AlertDescription } from \"@/components/ui/alert\"\n\n<Alert><AlertTitle>Heads up</AlertTitle><AlertDescription>Message</AlertDescription></Alert>",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Alert` (slug `alert`) from https://www.neobrutalism.dev/docs/alert. Install with `npx shadcn@latest add https://neobrutalism.dev/r/alert.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/alert`. Exports: Alert, AlertTitle, AlertDescription. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/alert.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/alert.json",
+        "registryItem": "alert"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-dialog",
+      "libraryId": "neobrutalism",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "neo dialog",
+        "brutal modal"
+      ],
+      "summary": "Neobrutalism dialog / modal primitives.",
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/dialog",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/dialog.json\n\nimport { Dialog, DialogTrigger, DialogContent, DialogTitle } from \"@/components/ui/dialog\"\n\n<Dialog><DialogTrigger>Open</DialogTrigger><DialogContent><DialogTitle>Title</DialogTitle></DialogContent></Dialog>",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Dialog` (slug `dialog`) from https://www.neobrutalism.dev/docs/dialog. Install with `npx shadcn@latest add https://neobrutalism.dev/r/dialog.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/dialog`. Exports: Dialog, DialogTrigger, DialogContent, DialogHeader, DialogFooter, DialogTitle, DialogDescription, DialogClose. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/dialog.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/dialog.json",
+        "registryItem": "dialog"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-accordion",
+      "libraryId": "neobrutalism",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "neo accordion",
+        "brutal accordion"
+      ],
+      "summary": "Collapsible accordion with hard borders.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/accordion",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/accordion.json\n\nimport { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from \"@/components/ui/accordion\"\n\n<Accordion><AccordionItem value=\"1\"><AccordionTrigger>Item</AccordionTrigger><AccordionContent>Body</AccordionContent></AccordionItem></Accordion>",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Accordion` (slug `accordion`) from https://www.neobrutalism.dev/docs/accordion. Install with `npx shadcn@latest add https://neobrutalism.dev/r/accordion.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/accordion`. Exports: Accordion, AccordionItem, AccordionTrigger, AccordionContent. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/accordion.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/accordion.json",
+        "registryItem": "accordion"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-marquee",
+      "libraryId": "neobrutalism",
+      "slug": "marquee",
+      "name": "Marquee",
+      "aliases": [
+        "neo marquee",
+        "brutal marquee"
+      ],
+      "summary": "Horizontal scrolling marquee with thick borders.",
+      "uiCategory": [
+        "marquee"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/marquee",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/marquee",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/marquee.json\n\nimport Marquee from \"@/components/ui/marquee\"\n\n<Marquee items={[\"Item 1\", \"Item 2\", \"Item 3\"]} />",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Marquee` (slug `marquee`) from https://www.neobrutalism.dev/docs/marquee. Install with `npx shadcn@latest add https://neobrutalism.dev/r/marquee.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/marquee`. Exports: Marquee (default export). Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/marquee.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/marquee.json",
+        "registryItem": "marquee"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-toast",
+      "libraryId": "neobrutalism",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "neo toast",
+        "brutal toast"
+      ],
+      "summary": "Toast notifications with neobrutalism chrome.",
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/toast",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/toast.json\n\nimport { ToastProvider, toast } from \"@/components/ui/toast\"\n\n// wrap app in <ToastProvider /> then call toast(...)",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Toast` (slug `toast`) from https://www.neobrutalism.dev/docs/toast. Install with `npx shadcn@latest add https://neobrutalism.dev/r/toast.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/toast`. Exports: ToastProvider, toast, createToastManager, useToastManager. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/toast.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/toast.json",
+        "registryItem": "toast"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-sheet",
+      "libraryId": "neobrutalism",
+      "slug": "sheet",
+      "name": "Sheet",
+      "aliases": [
+        "neo sheet",
+        "brutal sheet"
+      ],
+      "summary": "Side sheet / drawer with hard shadow borders.",
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/sheet",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/sheet",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/sheet.json\n\nimport { Sheet, SheetTrigger, SheetContent, SheetTitle } from \"@/components/ui/sheet\"\n\n<Sheet><SheetTrigger>Open</SheetTrigger><SheetContent><SheetTitle>Title</SheetTitle></SheetContent></Sheet>",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Sheet` (slug `sheet`) from https://www.neobrutalism.dev/docs/sheet. Install with `npx shadcn@latest add https://neobrutalism.dev/r/sheet.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/sheet`. Exports: Sheet, SheetTrigger, SheetContent, SheetHeader, SheetFooter, SheetTitle, SheetDescription, SheetClose. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/sheet.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/sheet.json",
+        "registryItem": "sheet"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-tooltip",
+      "libraryId": "neobrutalism",
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "aliases": [
+        "neo tooltip",
+        "brutal tooltip"
+      ],
+      "summary": "Tooltip with neobrutalism border treatment.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/tooltip",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/tooltip",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/tooltip.json\n\nimport { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from \"@/components/ui/tooltip\"\n\n<TooltipProvider><Tooltip><TooltipTrigger>Hover</TooltipTrigger><TooltipContent>Hint</TooltipContent></Tooltip></TooltipProvider>",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Tooltip` (slug `tooltip`) from https://www.neobrutalism.dev/docs/tooltip. Install with `npx shadcn@latest add https://neobrutalism.dev/r/tooltip.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/tooltip`. Exports: Tooltip, TooltipTrigger, TooltipContent, TooltipProvider. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/tooltip.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/tooltip.json",
+        "registryItem": "tooltip"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-bubble",
+      "libraryId": "neobrutalism",
+      "slug": "bubble",
+      "name": "Bubble",
+      "aliases": [
+        "neo bubble",
+        "chat bubble",
+        "brutal bubble"
+      ],
+      "summary": "Chat-style bubble group with reactions.",
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/bubble",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/bubble",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/bubble.json\n\nimport { BubbleGroup, Bubble, BubbleContent, BubbleReactions } from \"@/components/ui/bubble\"\n\n<BubbleGroup><Bubble><BubbleContent>Hey</BubbleContent></Bubble></BubbleGroup>",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Bubble` (slug `bubble`) from https://www.neobrutalism.dev/docs/bubble. Install with `npx shadcn@latest add https://neobrutalism.dev/r/bubble.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/bubble`. Exports: BubbleGroup, Bubble, BubbleContent, BubbleReactions. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/bubble.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/bubble.json",
+        "registryItem": "bubble"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "neobrutalism-chart",
+      "libraryId": "neobrutalism",
+      "slug": "chart",
+      "name": "Chart",
+      "aliases": [
+        "neo chart",
+        "brutal chart"
+      ],
+      "summary": "Recharts-backed chart primitives with neo styling.",
+      "uiCategory": [
+        "chart"
+      ],
+      "effectType": [
+        "neo-brutal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@neobrutalism/chart",
+        "iframeSrc": "https://www.neobrutalism.dev/docs/chart",
+        "aspectRatio": "16/9",
+        "peerNotes": "shadcn + Tailwind v4 + Base UI"
+      },
+      "copyCode": "npx shadcn@latest add https://neobrutalism.dev/r/chart.json\n\nimport { ChartContainer, ChartTooltip, ChartTooltipContent } from \"@/components/ui/chart\"\n\n<ChartContainer config={chartConfig}>{/* Recharts children */}</ChartContainer>",
+      "copyPrompt": {
+        "text": "Use Neobrutalism free MIT component `Chart` (slug `chart`) from https://www.neobrutalism.dev/docs/chart. Install with `npx shadcn@latest add https://neobrutalism.dev/r/chart.json` after neo styling init (`npx shadcn@latest init https://neobrutalism.dev/r/styling/blue.json` or add styling). Imports land under `@/components/ui/chart`. Exports: ChartContainer, ChartTooltip, ChartTooltipContent, ChartLegend, ChartLegendContent, ChartStyle. Requires React + TypeScript + Tailwind + shadcn/ui (Base UI). License: MIT (https://raw.githubusercontent.com/ekmas/neobrutalism-components/main/LICENSE). Pricing free. Note: upstream announced no longer actively maintained (Jul 2025) but MIT sources + site/registry remain live.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add https://neobrutalism.dev/r/chart.json",
+        "registryUrl": "https://www.neobrutalism.dev/r/chart.json",
+        "registryItem": "chart"
+      },
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

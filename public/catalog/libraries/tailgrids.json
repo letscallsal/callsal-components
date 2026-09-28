@@ -1,0 +1,581 @@
+{
+  "id": "tailgrids",
+  "name": "Tailgrids",
+  "aliases": [
+    "tailgrids",
+    "TailGrids",
+    "tailgrids-ui",
+    "tailgrids.com",
+    "@tailgrids/cli"
+  ],
+  "summary": "100+ free MIT React + Tailwind components via Tailgrids CLI; freemium Pro blocks.",
+  "homeUrl": "https://tailgrids.com",
+  "docsUrl": "https://tailgrids.com/docs",
+  "repoUrl": "https://github.com/TailGrids/tailgrids",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx @tailgrids/cli add {name}"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://tailgrids.com/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "react-aria-components"
+    ],
+    "budgetKb": 600
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free core comps from 100+; Pro blocks/templates excluded.",
+    "Docs import paths vary slightly by component (e.g. accordion anatomy uses `@/components/accordion`; badge usage shows `@/components/badge`; most others use `@/components/tailgrids/core/{slug}`). CLI resolves install paths.",
+    "Requires `npx @tailgrids/cli@latest init` (config + base styles) before `add`.",
+    "iframe demos only."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:40:00-04:00",
+  "components": [
+    {
+      "id": "tailgrids-button",
+      "libraryId": "tailgrids",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "tailgrids button",
+        "tailgrids button"
+      ],
+      "summary": "React Aria button with primary/danger/success/ghost variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/button",
+        "iframeSrc": "https://tailgrids.com/docs/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add button\n\nimport { Button } from \"@/components/tailgrids/core/button\"\n\nexport const ButtonExample = () => <Button variant=\"primary\">Click me</Button>",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Button` (slug `button`) from https://tailgrids.com/docs/components/button. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add button`. Import pattern from docs: `@/components/tailgrids/core/button`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add button",
+        "registryItem": "button"
+      }
+    },
+    {
+      "id": "tailgrids-input",
+      "libraryId": "tailgrids",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "input",
+        "tailgrids input",
+        "tailgrids input"
+      ],
+      "summary": "Accessible text input with label pairing and validation states.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/input",
+        "iframeSrc": "https://tailgrids.com/docs/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add input\n\nimport { Input } from \"@/components/tailgrids/core/input\"\nimport { Label } from \"@/components/tailgrids/core/label\"\nimport { useId } from \"react\"\n\nexport default function InputPreview() {\n  const id = useId()\n  return (\n    <div className=\"grid gap-2\">\n      <Label htmlFor={id}>Email</Label>\n      <Input id={id} type=\"email\" placeholder=\"Enter your email\" autoComplete=\"email\" />\n    </div>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Input` (slug `input`) from https://tailgrids.com/docs/components/input. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add input`. Import pattern from docs: `@/components/tailgrids/core/input`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add input",
+        "registryItem": "input"
+      }
+    },
+    {
+      "id": "tailgrids-accordion",
+      "libraryId": "tailgrids",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "tailgrids accordion",
+        "tailgrids accordion"
+      ],
+      "summary": "Collapsible accordion panels for React + Tailwind.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/accordion",
+        "iframeSrc": "https://tailgrids.com/docs/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add accordion\n\nimport {\n  AccordionRoot,\n  AccordionItem,\n  AccordionTrigger,\n  AccordionContent\n} from \"@/components/accordion\"\n\nexport const AccordionExample = () => (\n  <AccordionRoot>\n    <AccordionItem>\n      <AccordionTrigger>Section</AccordionTrigger>\n      <AccordionContent>Content</AccordionContent>\n    </AccordionItem>\n  </AccordionRoot>\n)",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Accordion` (slug `accordion`) from https://tailgrids.com/docs/components/accordion. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add accordion`. Import pattern from docs: `@/components/tailgrids/core/accordion`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add accordion",
+        "registryItem": "accordion"
+      }
+    },
+    {
+      "id": "tailgrids-avatar",
+      "libraryId": "tailgrids",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "avatar",
+        "tailgrids avatar",
+        "tailgrids avatar"
+      ],
+      "summary": "User avatar with image and fallback variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/avatar",
+        "iframeSrc": "https://tailgrids.com/docs/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add avatar\n\nimport {\n  Avatar,\n  AvatarImage,\n  AvatarFallback,\n  AvatarBadge\n} from \"@/components/tailgrids/core/avatar\"\n\nexport const AvatarExample = () => (\n  <Avatar size=\"md\">\n    <AvatarImage src=\"path/to/image.jpg\" alt=\"Profile picture\" />\n    <AvatarFallback>JD</AvatarFallback>\n    <AvatarBadge status=\"online\" />\n  </Avatar>\n)",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Avatar` (slug `avatar`) from https://tailgrids.com/docs/components/avatar. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add avatar`. Import pattern from docs: `@/components/tailgrids/core/avatar`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add avatar",
+        "registryItem": "avatar"
+      }
+    },
+    {
+      "id": "tailgrids-badge",
+      "libraryId": "tailgrids",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "badge",
+        "tailgrids badge",
+        "tailgrids badge"
+      ],
+      "summary": "Status and label badges for React interfaces.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/badge",
+        "iframeSrc": "https://tailgrids.com/docs/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add badge\n\nimport { Badge } from \"@/components/badge\"\n\nexport const BadgeExample = () => <Badge color=\"primary\">New</Badge>",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Badge` (slug `badge`) from https://tailgrids.com/docs/components/badge. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add badge`. Import pattern from docs: `@/components/tailgrids/core/badge`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add badge",
+        "registryItem": "badge"
+      }
+    },
+    {
+      "id": "tailgrids-card",
+      "libraryId": "tailgrids",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "card",
+        "tailgrids card",
+        "tailgrids card"
+      ],
+      "summary": "Content card surfaces for layouts and dashboards.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/card",
+        "iframeSrc": "https://tailgrids.com/docs/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add card\n\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardTitle\n} from \"@/components/tailgrids/core/card\"\n\nexport function CardDemo() {\n  return (\n    <Card className=\"w-87.5\">\n      <CardHeader>\n        <CardTitle>Create project</CardTitle>\n        <CardDescription>Deploy your new project in one-click.</CardDescription>\n      </CardHeader>\n      <CardContent>{/* content */}</CardContent>\n      <CardFooter className=\"flex justify-between\">\n        <button>Cancel</button>\n        <button>Deploy</button>\n      </CardFooter>\n    </Card>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Card` (slug `card`) from https://tailgrids.com/docs/components/card. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add card`. Import pattern from docs: `@/components/tailgrids/core/card`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add card",
+        "registryItem": "card"
+      }
+    },
+    {
+      "id": "tailgrids-checkbox",
+      "libraryId": "tailgrids",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "tailgrids checkbox",
+        "tailgrids checkbox"
+      ],
+      "summary": "Accessible checkbox built on React Aria.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/checkbox",
+        "iframeSrc": "https://tailgrids.com/docs/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add checkbox\n\nimport { Checkbox } from \"@/components/tailgrids/core/checkbox\"\nimport { Label } from \"@/components/tailgrids/core/label\"\nimport { useId } from \"react\"\n\nexport default function CheckboxExample() {\n  const id = useId()\n  return (\n    <div className=\"flex items-center gap-3\">\n      <Checkbox id={id} defaultChecked />\n      <Label htmlFor={id}>Accept terms and conditions</Label>\n    </div>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Checkbox` (slug `checkbox`) from https://tailgrids.com/docs/components/checkbox. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add checkbox`. Import pattern from docs: `@/components/tailgrids/core/checkbox`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add checkbox",
+        "registryItem": "checkbox"
+      }
+    },
+    {
+      "id": "tailgrids-dialog",
+      "libraryId": "tailgrids",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "tailgrids dialog",
+        "tailgrids dialog"
+      ],
+      "summary": "Modal dialog for confirmations and focused tasks.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/dialog",
+        "iframeSrc": "https://tailgrids.com/docs/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add dialog\n\nimport { OverlayWrapper, Backdrop } from \"@/components/tailgrids/core/overlay\"\nimport {\n  Dialog,\n  DialogHeader,\n  DialogTitle,\n  DialogDescription,\n  DialogBody,\n  DialogFooter,\n  DialogClose\n} from \"@/components/tailgrids/core/dialog\"\n\n// See docs for full OverlayWrapper + Backdrop + Dialog composition",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Dialog` (slug `dialog`) from https://tailgrids.com/docs/components/dialog. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add dialog`. Import pattern from docs: `@/components/tailgrids/core/dialog`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add dialog",
+        "registryItem": "dialog"
+      }
+    },
+    {
+      "id": "tailgrids-progress",
+      "libraryId": "tailgrids",
+      "slug": "progress",
+      "name": "Progress",
+      "aliases": [
+        "progress",
+        "tailgrids progress",
+        "tailgrids progress"
+      ],
+      "summary": "Progress indicator for loading and completion states.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/progress",
+        "iframeSrc": "https://tailgrids.com/docs/components/progress",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add progress\n\nimport { Progress } from \"@/components/tailgrids/core/progress\"\n\nexport default function ProgressBasic() {\n  return <Progress progress={50} withLabel />\n}",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Progress` (slug `progress`) from https://tailgrids.com/docs/components/progress. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add progress`. Import pattern from docs: `@/components/tailgrids/core/progress`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add progress",
+        "registryItem": "progress"
+      }
+    },
+    {
+      "id": "tailgrids-select",
+      "libraryId": "tailgrids",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "tailgrids select",
+        "tailgrids select"
+      ],
+      "summary": "Accessible select/combobox-style control for options.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/select",
+        "iframeSrc": "https://tailgrids.com/docs/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add select\n\nimport {\n  Select,\n  SelectContent,\n  SelectValue,\n  SelectIndicator,\n  SelectItem,\n  SelectTrigger\n} from \"@/components/tailgrids/core/select\"\n\nexport default function SelectExample() {\n  return (\n    <Select>\n      <SelectTrigger>\n        <SelectValue />\n        <SelectIndicator />\n      </SelectTrigger>\n      <SelectContent>\n        <SelectItem id=\"apple\">Apple</SelectItem>\n        <SelectItem id=\"banana\">Banana</SelectItem>\n      </SelectContent>\n    </Select>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Select` (slug `select`) from https://tailgrids.com/docs/components/select. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add select`. Import pattern from docs: `@/components/tailgrids/core/select`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add select",
+        "registryItem": "select"
+      }
+    },
+    {
+      "id": "tailgrids-tabs",
+      "libraryId": "tailgrids",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "tailgrids tabs",
+        "tailgrids tabs"
+      ],
+      "summary": "Tabbed navigation panels for sectioned content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/tabs",
+        "iframeSrc": "https://tailgrids.com/docs/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add tabs\n\nimport {\n  TabContent,\n  TabList,\n  TabRoot,\n  TabTrigger\n} from \"@/components/tailgrids/core/tabs\"\n\nexport default function TabsExample() {\n  return (\n    <TabRoot defaultValue=\"overview\">\n      <TabList>\n        <TabTrigger value=\"overview\">Overview</TabTrigger>\n        <TabTrigger value=\"analytics\">Analytics</TabTrigger>\n      </TabList>\n      <TabContent value=\"overview\"><p>Overview content</p></TabContent>\n      <TabContent value=\"analytics\"><p>Analytics content</p></TabContent>\n    </TabRoot>\n  )\n}",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Tabs` (slug `tabs`) from https://tailgrids.com/docs/components/tabs. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add tabs`. Import pattern from docs: `@/components/tailgrids/core/tabs`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add tabs",
+        "registryItem": "tabs"
+      }
+    },
+    {
+      "id": "tailgrids-toast",
+      "libraryId": "tailgrids",
+      "slug": "toast",
+      "name": "Toast",
+      "aliases": [
+        "toast",
+        "tailgrids toast",
+        "tailgrids toast"
+      ],
+      "summary": "Transient toast notifications for feedback.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/tailgrids/core/toast",
+        "iframeSrc": "https://tailgrids.com/docs/components/toast",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free core component via `npx @tailgrids/cli add {slug}` after `npx @tailgrids/cli@latest init`. Requires React + Tailwind. Premium blocks/templates excluded."
+      },
+      "copyCode": "npx @tailgrids/cli add toast\n\nimport { Toast } from \"@/components/tailgrids/core/toast\"\n\nexport const ToastExample = () => (\n  <Toast\n    variant=\"success\"\n    message={{ title: \"Success\", description: \"Your changes have been saved.\" }}\n  />\n)",
+      "copyPrompt": {
+        "text": "Use Tailgrids free MIT React component `Toast` (slug `toast`) from https://tailgrids.com/docs/components/toast. Init with `npx @tailgrids/cli@latest init`, then `npx @tailgrids/cli add toast`. Import pattern from docs: `@/components/tailgrids/core/toast`. Built with React Aria + Tailwind CSS. Home: https://tailgrids.com. Docs: https://tailgrids.com/docs. Components index: https://tailgrids.com/docs/components. Repo: https://github.com/TailGrids/tailgrids. License: MIT (https://raw.githubusercontent.com/TailGrids/tailgrids/main/LICENSE.md; Copyright (c) 2025 Tailgrids). Pricing freemium — free core components only; Pro blocks/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "cli",
+        "command": "npx @tailgrids/cli add toast",
+        "registryItem": "toast"
+      }
+    }
+  ]
+}

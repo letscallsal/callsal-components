@@ -1,0 +1,617 @@
+{
+  "id": "beui",
+  "name": "beUI",
+  "aliases": [
+    "be-ui",
+    "be ui",
+    "starc007/ui-components",
+    "@beui"
+  ],
+  "summary": "Free MIT accessible animated React components (beUI Pro templates/blocks excluded).",
+  "homeUrl": "https://beui.dev",
+  "docsUrl": "https://beui.dev/llms.txt",
+  "repoUrl": "https://github.com/starc007/ui-components",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @beui/<component>",
+    "registryUrl": "https://beui.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://beui.dev/components/{category}/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "motion",
+      "tailwindcss"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free registry items of ~127 items in https://beui.dev/r/registry.json \u2014 not a full inventory.",
+    "Freemium: free MIT OSS at beui.dev / starc007/ui-components; beUI Pro at https://pro.beui.dev ($129 yearly / $179 lifetime premium blocks/templates) \u2014 Pro excluded; no paid unlock.",
+    "Some motion comps need @paper-design/shaders-react, lucide-react, and/or motion peers.",
+    "Text Scramble / Text Shimmer demos share the Text Animation docs page iframe.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet.",
+    "Category paths vary: motion vs blocks (e.g. dynamic-island is blocks)."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:15:00-04:00",
+  "components": [
+    {
+      "id": "beui-tilt-card",
+      "libraryId": "beui",
+      "slug": "tilt-card",
+      "name": "Tilt Card",
+      "aliases": [
+        "3d tilt card",
+        "perspective tilt",
+        "glare card"
+      ],
+      "summary": "3D perspective tilt on hover with cursor-tracked glare.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/tilt-card",
+        "iframeSrc": "https://beui.dev/components/motion/tilt-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add @beui/tilt-card\n\nimport { TiltCard } from \"@/components/motion/tilt-card\"\n\n<TiltCard className=\"w-[280px] border p-8\">Tilt me</TiltCard>",
+      "copyPrompt": {
+        "text": "Use beUI free component `Tilt Card` (slug `tilt-card`) from https://beui.dev/components/motion/tilt-card. Install with `npx shadcn@latest add @beui/tilt-card` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/tilt-card.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs motion.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/tilt-card",
+        "registryUrl": "https://beui.dev/r/tilt-card.json",
+        "registryItem": "@beui/tilt-card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-marquee",
+      "libraryId": "beui",
+      "slug": "marquee",
+      "name": "Marquee",
+      "aliases": [
+        "infinite marquee",
+        "logo marquee",
+        "ticker"
+      ],
+      "summary": "Infinite horizontal or vertical scroll with pause-on-hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "marquee"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/marquee",
+        "iframeSrc": "https://beui.dev/components/motion/marquee",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @beui/marquee\n\nimport { Marquee } from \"@/components/motion/marquee\"\n\n<Marquee speed={25}>{/* children */}</Marquee>",
+      "copyPrompt": {
+        "text": "Use beUI free component `Marquee` (slug `marquee`) from https://beui.dev/components/motion/marquee. Install with `npx shadcn@latest add @beui/marquee` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/marquee.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/marquee",
+        "registryUrl": "https://beui.dev/r/marquee.json",
+        "registryItem": "@beui/marquee"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-dock",
+      "libraryId": "beui",
+      "slug": "dock",
+      "name": "Dock",
+      "aliases": [
+        "macos dock",
+        "app dock",
+        "magnification dock"
+      ],
+      "summary": "macOS-style dock with grouped actions and a gliding active pill.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "menu"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/dock",
+        "iframeSrc": "https://beui.dev/components/motion/dock",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion + lucide-react."
+      },
+      "copyCode": "npx shadcn@latest add @beui/dock\n\nimport { Dock, DockItem, DockSeparator } from \"@/components/motion/dock\"\n\n<Dock><DockItem aria-label=\"Home\">\u2026</DockItem></Dock>",
+      "copyPrompt": {
+        "text": "Use beUI free component `Dock` (slug `dock`) from https://beui.dev/components/motion/dock. Install with `npx shadcn@latest add @beui/dock` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/dock.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs motion + lucide-react.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/dock",
+        "registryUrl": "https://beui.dev/r/dock.json",
+        "registryItem": "@beui/dock"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-shader-background",
+      "libraryId": "beui",
+      "slug": "shader-background",
+      "name": "Shader Background",
+      "aliases": [
+        "mesh gradient background",
+        "canvas shader",
+        "grain gradient"
+      ],
+      "summary": "Canvas shader backgrounds (mesh, grain, warp, waves, voronoi, and more) via typed variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "shader",
+        "gradient",
+        "webgl"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/shader-background",
+        "iframeSrc": "https://beui.dev/components/motion/shader-background",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs @paper-design/shaders-react + motion."
+      },
+      "copyCode": "npx shadcn@latest add @beui/shader-background\n\nimport { ShaderBackground } from \"@/components/motion/shader-background\"\n\n<ShaderBackground variant=\"mesh-gradient\" />",
+      "copyPrompt": {
+        "text": "Use beUI free component `Shader Background` (slug `shader-background`) from https://beui.dev/components/motion/shader-background. Install with `npx shadcn@latest add @beui/shader-background` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/shader-background.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs @paper-design/shaders-react + motion.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/shader-background",
+        "registryUrl": "https://beui.dev/r/shader-background.json",
+        "registryItem": "@beui/shader-background"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-popover",
+      "libraryId": "beui",
+      "slug": "popover",
+      "name": "Popover",
+      "aliases": [
+        "gooey popover",
+        "liquid popover",
+        "morph popover"
+      ],
+      "summary": "Gooey popover with SVG goo liquid neck, plus Morph variant that clip-morphs from the trigger.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [
+        "gooey",
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/popover",
+        "iframeSrc": "https://beui.dev/components/motion/popover",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion. Optional Morph variant: @beui/popover-morph."
+      },
+      "copyCode": "npx shadcn@latest add @beui/popover\n\nimport { Popover, PopoverTrigger, PopoverContent } from \"@/components/motion/popover\"\n\n<Popover><PopoverTrigger>Open</PopoverTrigger><PopoverContent>\u2026</PopoverContent></Popover>",
+      "copyPrompt": {
+        "text": "Use beUI free component `Popover` (slug `popover`) from https://beui.dev/components/motion/popover. Install with `npx shadcn@latest add @beui/popover` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/popover.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs motion. Optional Morph variant: @beui/popover-morph.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/popover",
+        "registryUrl": "https://beui.dev/r/popover.json",
+        "registryItem": "@beui/popover"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-morphing-modal",
+      "libraryId": "beui",
+      "slug": "morphing-modal",
+      "name": "Morphing Modal",
+      "aliases": [
+        "family modal",
+        "height morph modal",
+        "view morph dialog"
+      ],
+      "summary": "Modal panel that morphs height as you navigate between inner views, with blur cross-fade.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [
+        "morph",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/morphing-modal",
+        "iframeSrc": "https://beui.dev/components/motion/morphing-modal",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add @beui/morphing-modal\n\nimport { MorphingModal } from \"@/components/motion/morphing-modal\"\n\n<MorphingModal viewId={view} onClose={\u2026}>{/* views */}</MorphingModal>",
+      "copyPrompt": {
+        "text": "Use beUI free component `Morphing Modal` (slug `morphing-modal`) from https://beui.dev/components/motion/morphing-modal. Install with `npx shadcn@latest add @beui/morphing-modal` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/morphing-modal.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs motion.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/morphing-modal",
+        "registryUrl": "https://beui.dev/r/morphing-modal.json",
+        "registryItem": "@beui/morphing-modal"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-cylinder-carousel",
+      "libraryId": "beui",
+      "slug": "cylinder-carousel",
+      "name": "Cylinder Carousel",
+      "aliases": [
+        "3d cylinder carousel",
+        "cylindrical gallery"
+      ],
+      "summary": "Carousel items lining the inside of a cylinder; drag/scroll/arrow-key with spring snap.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "section",
+        "other"
+      ],
+      "effectType": [
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/cylinder-carousel",
+        "iframeSrc": "https://beui.dev/components/motion/cylinder-carousel",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion; demos may also use @paper-design/shaders-react."
+      },
+      "copyCode": "npx shadcn@latest add @beui/cylinder-carousel\n\nimport { CylinderCarousel } from \"@/components/motion/cylinder-carousel\"\n\n<CylinderCarousel>{/* slides */}</CylinderCarousel>",
+      "copyPrompt": {
+        "text": "Use beUI free component `Cylinder Carousel` (slug `cylinder-carousel`) from https://beui.dev/components/motion/cylinder-carousel. Install with `npx shadcn@latest add @beui/cylinder-carousel` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/cylinder-carousel.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs motion; demos may also use @paper-design/shaders-react.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/cylinder-carousel",
+        "registryUrl": "https://beui.dev/r/cylinder-carousel.json",
+        "registryItem": "@beui/cylinder-carousel"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-dynamic-island",
+      "libraryId": "beui",
+      "slug": "dynamic-island",
+      "name": "Dynamic Island",
+      "aliases": [
+        "ios island",
+        "live activity island",
+        "morphing island"
+      ],
+      "summary": "iOS-style island pill that morphs between live activity views with bouncy resize and blur crossfades.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "morph",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/dynamic-island",
+        "iframeSrc": "https://beui.dev/components/blocks/dynamic-island",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion + lucide-react. Block category."
+      },
+      "copyCode": "npx shadcn@latest add @beui/dynamic-island\n\nimport { DynamicIsland, DynamicIslandView } from \"@/components/motion/dynamic-island\"\n\n<DynamicIsland>{/* views */}</DynamicIsland>",
+      "copyPrompt": {
+        "text": "Use beUI free component `Dynamic Island` (slug `dynamic-island`) from https://beui.dev/components/blocks/dynamic-island. Install with `npx shadcn@latest add @beui/dynamic-island` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/dynamic-island.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs motion + lucide-react. Block category.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/dynamic-island",
+        "registryUrl": "https://beui.dev/r/dynamic-island.json",
+        "registryItem": "@beui/dynamic-island"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-animated-toast-stack",
+      "libraryId": "beui",
+      "slug": "animated-toast-stack",
+      "name": "Animated Toast Stack",
+      "aliases": [
+        "toast stack",
+        "swipe toast",
+        "status toast"
+      ],
+      "summary": "Stacked toasts with status morphs, swipe dismissal, actions, and layout-aware motion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/animated-toast-stack",
+        "iframeSrc": "https://beui.dev/components/motion/animated-toast-stack",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion + lucide-react."
+      },
+      "copyCode": "npx shadcn@latest add @beui/animated-toast-stack\n\nimport { AnimatedToastStack, useAnimatedToastStack } from \"@/components/motion/animated-toast-stack\"\n\n<AnimatedToastStack />",
+      "copyPrompt": {
+        "text": "Use beUI free component `Animated Toast Stack` (slug `animated-toast-stack`) from https://beui.dev/components/motion/animated-toast-stack. Install with `npx shadcn@latest add @beui/animated-toast-stack` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/animated-toast-stack.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs motion + lucide-react.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/animated-toast-stack",
+        "registryUrl": "https://beui.dev/r/animated-toast-stack.json",
+        "registryItem": "@beui/animated-toast-stack"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-text-scramble",
+      "libraryId": "beui",
+      "slug": "text-scramble",
+      "name": "Text Scramble",
+      "aliases": [
+        "scramble text",
+        "decode text",
+        "character scramble"
+      ],
+      "summary": "Controlled character scramble that resolves changed text while keeping the final value accessible.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/text-scramble",
+        "iframeSrc": "https://beui.dev/components/motion/text-animation",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion. Demo lives on the Text Animation docs page."
+      },
+      "copyCode": "npx shadcn@latest add @beui/text-scramble\n\nimport { TextScramble } from \"@/components/motion/text-scramble\"\n\n<TextScramble text=\"Inspecting the repository\" className=\"font-mono\" />",
+      "copyPrompt": {
+        "text": "Use beUI free component `Text Scramble` (slug `text-scramble`) from https://beui.dev/components/motion/text-animation. Install with `npx shadcn@latest add @beui/text-scramble` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/text-scramble.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs motion. Demo lives on the Text Animation docs page.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/text-scramble",
+        "registryUrl": "https://beui.dev/r/text-scramble.json",
+        "registryItem": "@beui/text-scramble"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-text-shimmer",
+      "libraryId": "beui",
+      "slug": "text-shimmer",
+      "name": "Text Shimmer",
+      "aliases": [
+        "shimmer text",
+        "loading shimmer text",
+        "gradient sweep text"
+      ],
+      "summary": "Gradient sweep across text for loading or emphasis.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/text-shimmer",
+        "iframeSrc": "https://beui.dev/components/motion/text-animation",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion. Demo lives on the Text Animation docs page."
+      },
+      "copyCode": "npx shadcn@latest add @beui/text-shimmer\n\nimport { TextShimmer } from \"@/components/motion/text-shimmer\"\n\n<TextShimmer className=\"text-3xl font-semibold\">Loading projects\u2026</TextShimmer>",
+      "copyPrompt": {
+        "text": "Use beUI free component `Text Shimmer` (slug `text-shimmer`) from https://beui.dev/components/motion/text-animation. Install with `npx shadcn@latest add @beui/text-shimmer` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/text-shimmer.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs motion. Demo lives on the Text Animation docs page.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/text-shimmer",
+        "registryUrl": "https://beui.dev/r/text-shimmer.json",
+        "registryItem": "@beui/text-shimmer"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "beui-bottom-sheet",
+      "libraryId": "beui",
+      "slug": "bottom-sheet",
+      "name": "Bottom Sheet",
+      "aliases": [
+        "drawer sheet",
+        "snap sheet",
+        "vaul sheet"
+      ],
+      "summary": "Vaul-inspired draggable bottom sheet with snap points, inertia, and glass surface.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [
+        "glass"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@beui/bottom-sheet",
+        "iframeSrc": "https://beui.dev/components/motion/bottom-sheet",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add @beui/bottom-sheet\n\nimport { BottomSheet } from \"@/components/motion/bottom-sheet\"\n\n<BottomSheet open={open} onOpenChange={setOpen} snapPoints={[0.4, 0.85]} title=\"Quick actions\">\u2026</BottomSheet>",
+      "copyPrompt": {
+        "text": "Use beUI free component `Bottom Sheet` (slug `bottom-sheet`) from https://beui.dev/components/motion/bottom-sheet. Install with `npx shadcn@latest add @beui/bottom-sheet` after `npx shadcn@latest init`. Registry item: https://beui.dev/r/bottom-sheet.json. Import path after CLI follows project aliases (see docs). Requires React + TypeScript + Tailwind CSS; peers: Needs motion.. License: MIT (https://raw.githubusercontent.com/starc007/ui-components/main/LICENSE). Free OSS motion/blocks registry on beui.dev; beUI Pro (https://pro.beui.dev, $129/yr or $179 lifetime) excluded \u2014 prefer free-tier only; do not unlock Pro.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @beui/bottom-sheet",
+        "registryUrl": "https://beui.dev/r/bottom-sheet.json",
+        "registryItem": "@beui/bottom-sheet"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

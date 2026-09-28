@@ -1,0 +1,596 @@
+{
+  "id": "smoothui",
+  "name": "SmoothUI",
+  "aliases": [
+    "Smooth UI",
+    "smoothui.dev",
+    "educlopez/smoothui"
+  ],
+  "summary": "Free MIT animated React components on Motion and GSAP for shadcn/ui.",
+  "homeUrl": "https://smoothui.dev",
+  "docsUrl": "https://smoothui.dev/docs/components",
+  "repoUrl": "https://github.com/educlopez/smoothui",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @smoothui/{name}",
+    "registryUrl": "https://smoothui.dev/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://smoothui.dev/docs/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "motion"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of ~200 registry:ui items — not a full inventory (blocks/templates not ingested).",
+    "Also installable via SmoothUI CLI (`npx smoothui-cli@latest add <name>`); catalog prefers official @smoothui shadcn namespace.",
+    "Some comps pull GSAP or WebGL peers beyond Motion — check per-item registry dependencies.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:35:00-04:00",
+  "components": [
+    {
+      "id": "smoothui-dynamic-island",
+      "libraryId": "smoothui",
+      "slug": "dynamic-island",
+      "name": "Dynamic Island",
+      "aliases": [
+        "ios dynamic island",
+        "morph island"
+      ],
+      "summary": "iOS-style Dynamic Island that morphs between compact and expanded states.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/dynamic-island",
+        "iframeSrc": "https://smoothui.dev/docs/components/dynamic-island",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, lucide-react"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/dynamic-island\n\nimport DynamicIsland from \"@/components/smoothui/dynamic-island\"\n\n<DynamicIsland />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Dynamic Island` (slug `dynamic-island`) from https://smoothui.dev/docs/components/dynamic-island. Install with `npx shadcn@latest add @smoothui/dynamic-island` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add dynamic-island`. Registry item: https://smoothui.dev/r/dynamic-island.json. Imports land under `@/components/smoothui/dynamic-island`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/dynamic-island",
+        "registryUrl": "https://smoothui.dev/r/dynamic-island.json",
+        "registryItem": "dynamic-island"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-siri-orb",
+      "libraryId": "smoothui",
+      "slug": "siri-orb",
+      "name": "Siri Orb",
+      "aliases": [
+        "siri orb",
+        "voice orb"
+      ],
+      "summary": "Animated orb inspired by Siri's visual design.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "orb"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/siri-orb",
+        "iframeSrc": "https://smoothui.dev/docs/components/siri-orb",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/siri-orb\n\nimport SiriOrb from \"@/components/smoothui/siri-orb\"\n\n<SiriOrb />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Siri Orb` (slug `siri-orb`) from https://smoothui.dev/docs/components/siri-orb. Install with `npx shadcn@latest add @smoothui/siri-orb` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add siri-orb`. Registry item: https://smoothui.dev/r/siri-orb.json. Imports land under `@/components/smoothui/siri-orb`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/siri-orb",
+        "registryUrl": "https://smoothui.dev/r/siri-orb.json",
+        "registryItem": "siri-orb"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-wave-text",
+      "libraryId": "smoothui",
+      "slug": "wave-text",
+      "name": "Wave Text",
+      "aliases": [
+        "wavy text",
+        "wave letters"
+      ],
+      "summary": "Text animation where characters wave in sequence.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/wave-text",
+        "iframeSrc": "https://smoothui.dev/docs/components/wave-text",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/wave-text\n\nimport WaveText from \"@/components/smoothui/wave-text\"\n\n<WaveText />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Wave Text` (slug `wave-text`) from https://smoothui.dev/docs/components/wave-text. Install with `npx shadcn@latest add @smoothui/wave-text` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add wave-text`. Registry item: https://smoothui.dev/r/wave-text.json. Imports land under `@/components/smoothui/wave-text`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/wave-text",
+        "registryUrl": "https://smoothui.dev/r/wave-text.json",
+        "registryItem": "wave-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-typewriter-text",
+      "libraryId": "smoothui",
+      "slug": "typewriter-text",
+      "name": "Typewriter Text",
+      "aliases": [
+        "typewriter",
+        "typing text"
+      ],
+      "summary": "Typewriter text animation for headlines and prompts.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/typewriter-text",
+        "iframeSrc": "https://smoothui.dev/docs/components/typewriter-text",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/typewriter-text\n\nimport TypewriterText from \"@/components/smoothui/typewriter-text\"\n\n<TypewriterText />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Typewriter Text` (slug `typewriter-text`) from https://smoothui.dev/docs/components/typewriter-text. Install with `npx shadcn@latest add @smoothui/typewriter-text` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add typewriter-text`. Registry item: https://smoothui.dev/r/typewriter-text.json. Imports land under `@/components/smoothui/typewriter-text`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/typewriter-text",
+        "registryUrl": "https://smoothui.dev/r/typewriter-text.json",
+        "registryItem": "typewriter-text"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-aurora-curtain",
+      "libraryId": "smoothui",
+      "slug": "aurora-curtain",
+      "name": "Aurora Curtain",
+      "aliases": [
+        "aurora background",
+        "aurora curtain"
+      ],
+      "summary": "Aurora curtain background with flowing color bands.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "aurora",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/aurora-curtain",
+        "iframeSrc": "https://smoothui.dev/docs/components/aurora-curtain",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/aurora-curtain\n\nimport AuroraCurtain from \"@/components/smoothui/aurora-curtain\"\n\n<AuroraCurtain />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Aurora Curtain` (slug `aurora-curtain`) from https://smoothui.dev/docs/components/aurora-curtain. Install with `npx shadcn@latest add @smoothui/aurora-curtain` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add aurora-curtain`. Registry item: https://smoothui.dev/r/aurora-curtain.json. Imports land under `@/components/smoothui/aurora-curtain`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/aurora-curtain",
+        "registryUrl": "https://smoothui.dev/r/aurora-curtain.json",
+        "registryItem": "aurora-curtain"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-glass-card",
+      "libraryId": "smoothui",
+      "slug": "glass-card",
+      "name": "Glass Card",
+      "aliases": [
+        "glassmorphism card",
+        "frosted card"
+      ],
+      "summary": "Glassmorphic card with soft motion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "glass",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/glass-card",
+        "iframeSrc": "https://smoothui.dev/docs/components/glass-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/glass-card\n\nimport GlassCard from \"@/components/smoothui/glass-card\"\n\n<GlassCard />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Glass Card` (slug `glass-card`) from https://smoothui.dev/docs/components/glass-card. Install with `npx shadcn@latest add @smoothui/glass-card` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add glass-card`. Registry item: https://smoothui.dev/r/glass-card.json. Imports land under `@/components/smoothui/glass-card`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/glass-card",
+        "registryUrl": "https://smoothui.dev/r/glass-card.json",
+        "registryItem": "glass-card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-border-beam",
+      "libraryId": "smoothui",
+      "slug": "border-beam",
+      "name": "Border Beam",
+      "aliases": [
+        "moving border beam",
+        "beam border"
+      ],
+      "summary": "Animated beam that travels around a border.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "beam",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/border-beam",
+        "iframeSrc": "https://smoothui.dev/docs/components/border-beam",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/border-beam\n\nimport BorderBeam from \"@/components/smoothui/border-beam\"\n\n<BorderBeam />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Border Beam` (slug `border-beam`) from https://smoothui.dev/docs/components/border-beam. Install with `npx shadcn@latest add @smoothui/border-beam` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add border-beam`. Registry item: https://smoothui.dev/r/border-beam.json. Imports land under `@/components/smoothui/border-beam`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/border-beam",
+        "registryUrl": "https://smoothui.dev/r/border-beam.json",
+        "registryItem": "border-beam"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-magnetic-button",
+      "libraryId": "smoothui",
+      "slug": "magnetic-button",
+      "name": "Magnetic Button",
+      "aliases": [
+        "magnet button",
+        "cursor magnetic button"
+      ],
+      "summary": "Button that subtly follows the cursor with a magnetic effect.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/magnetic-button",
+        "iframeSrc": "https://smoothui.dev/docs/components/magnetic-button",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion, @radix-ui/react-slot"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/magnetic-button\n\nimport MagneticButton from \"@/components/smoothui/magnetic-button\"\n\n<MagneticButton />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Magnetic Button` (slug `magnetic-button`) from https://smoothui.dev/docs/components/magnetic-button. Install with `npx shadcn@latest add @smoothui/magnetic-button` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add magnetic-button`. Registry item: https://smoothui.dev/r/magnetic-button.json. Imports land under `@/components/smoothui/magnetic-button`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/magnetic-button",
+        "registryUrl": "https://smoothui.dev/r/magnetic-button.json",
+        "registryItem": "magnetic-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-scroll-progress",
+      "libraryId": "smoothui",
+      "slug": "scroll-progress",
+      "name": "Scroll Progress",
+      "aliases": [
+        "scroll progress bar",
+        "reading progress"
+      ],
+      "summary": "Reading-progress indicator with bar, ring, number, and segmented variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/scroll-progress",
+        "iframeSrc": "https://smoothui.dev/docs/components/scroll-progress",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/scroll-progress\n\nimport ScrollProgress from \"@/components/smoothui/scroll-progress\"\n\n<ScrollProgress />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Scroll Progress` (slug `scroll-progress`) from https://smoothui.dev/docs/components/scroll-progress. Install with `npx shadcn@latest add @smoothui/scroll-progress` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add scroll-progress`. Registry item: https://smoothui.dev/r/scroll-progress.json. Imports land under `@/components/smoothui/scroll-progress`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/scroll-progress",
+        "registryUrl": "https://smoothui.dev/r/scroll-progress.json",
+        "registryItem": "scroll-progress"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-liquid-metal",
+      "libraryId": "smoothui",
+      "slug": "liquid-metal",
+      "name": "Liquid Metal",
+      "aliases": [
+        "chrome metal",
+        "liquid metal surface"
+      ],
+      "summary": "Liquid metal surface effect with chrome/gold/mercury/oil variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "metal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/liquid-metal",
+        "iframeSrc": "https://smoothui.dev/docs/components/liquid-metal",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/liquid-metal\n\nimport LiquidMetal from \"@/components/smoothui/liquid-metal\"\n\n<LiquidMetal />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Liquid Metal` (slug `liquid-metal`) from https://smoothui.dev/docs/components/liquid-metal. Install with `npx shadcn@latest add @smoothui/liquid-metal` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add liquid-metal`. Registry item: https://smoothui.dev/r/liquid-metal.json. Imports land under `@/components/smoothui/liquid-metal`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/liquid-metal",
+        "registryUrl": "https://smoothui.dev/r/liquid-metal.json",
+        "registryItem": "liquid-metal"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-dither-image",
+      "libraryId": "smoothui",
+      "slug": "dither-image",
+      "name": "Dither Image",
+      "aliases": [
+        "dithered image",
+        "bitmap dither"
+      ],
+      "summary": "Image rendered through dither algorithms with motion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "dither"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/dither-image",
+        "iframeSrc": "https://smoothui.dev/docs/components/dither-image",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/dither-image\n\nimport DitherImage from \"@/components/smoothui/dither-image\"\n\n<DitherImage />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Dither Image` (slug `dither-image`) from https://smoothui.dev/docs/components/dither-image. Install with `npx shadcn@latest add @smoothui/dither-image` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add dither-image`. Registry item: https://smoothui.dev/r/dither-image.json. Imports land under `@/components/smoothui/dither-image`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/dither-image",
+        "registryUrl": "https://smoothui.dev/r/dither-image.json",
+        "registryItem": "dither-image"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "smoothui-scramble-hover",
+      "libraryId": "smoothui",
+      "slug": "scramble-hover",
+      "name": "Scramble Hover",
+      "aliases": [
+        "text scramble hover",
+        "hover scramble"
+      ],
+      "summary": "Text that scrambles on hover then resolves back.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "text-scramble",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@smoothui/scramble-hover",
+        "iframeSrc": "https://smoothui.dev/docs/components/scramble-hover",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx shadcn@latest add @smoothui/scramble-hover\n\nimport ScrambleHover from \"@/components/smoothui/scramble-hover\"\n\n<ScrambleHover />",
+      "copyPrompt": {
+        "text": "Use SmoothUI free MIT component `Scramble Hover` (slug `scramble-hover`) from https://smoothui.dev/docs/components/scramble-hover. Install with `npx shadcn@latest add @smoothui/scramble-hover` (official shadcn registry namespace @smoothui) or `npx smoothui-cli@latest add scramble-hover`. Registry item: https://smoothui.dev/r/scramble-hover.json. Imports land under `@/components/smoothui/scramble-hover`. Requires React + TypeScript + Tailwind; Motion/GSAP peers as listed in registry. License: MIT (https://raw.githubusercontent.com/educlopez/smoothui/main/LICENSE). Pricing free — open source.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @smoothui/scramble-hover",
+        "registryUrl": "https://smoothui.dev/r/scramble-hover.json",
+        "registryItem": "scramble-hover"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

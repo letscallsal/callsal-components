@@ -1,0 +1,595 @@
+{
+  "id": "uiable",
+  "name": "UIAble",
+  "aliases": [
+    "uiable",
+    "UI Able",
+    "codedthemes/uiable",
+    "uiable.com"
+  ],
+  "summary": "Freemium shadcn + Base UI React components; Community MIT free via @uiable registry.",
+  "homeUrl": "https://uiable.com",
+  "docsUrl": "https://uiable.com/doc/introduction",
+  "repoUrl": "https://github.com/codedthemes/uiable",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @uiable/{name}",
+    "registryUrl": "https://uiable.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://uiable.com/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "@base-ui/react",
+      "class-variance-authority"
+    ],
+    "budgetKb": 600
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free Community comps; Pro blocks/templates and @uiable-pro token-gated items excluded.",
+    "Requires Next.js 16+ / React 19 / Tailwind CSS v4 per installation docs.",
+    "components.json must register @uiable \u2192 https://uiable.com/r/{name}.json (documented in https://uiable.com/doc/cli).",
+    "iframe demos only."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:45:00-04:00",
+  "components": [
+    {
+      "id": "uiable-button",
+      "libraryId": "uiable",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "button",
+        "uiable button",
+        "uiable button"
+      ],
+      "summary": "React Aria/Base UI button with CVA variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/button",
+        "iframeSrc": "https://uiable.com/components/button",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/button\n# or: npx shadcn@latest add https://uiable.com/r/button.json\n# Registry: add \"@uiable\": \"https://uiable.com/r/{name}.json\" to components.json\n\nimport { Button } from \"@/components/ui/button\"\n\nexport const Example = () => <Button variant=\"default\">Click me</Button>",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Button` (slug `button`) from https://uiable.com/components/button. Install with `npx shadcn@latest add @uiable/button` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/button.json`). Import from `@/components/ui/button`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/button",
+        "registryUrl": "https://uiable.com/r/button.json",
+        "registryItem": "button"
+      }
+    },
+    {
+      "id": "uiable-accordion",
+      "libraryId": "uiable",
+      "slug": "accordion",
+      "name": "Accordion",
+      "aliases": [
+        "accordion",
+        "uiable accordion",
+        "uiable accordion"
+      ],
+      "summary": "Accessible accordion on Base UI with fluid height.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/accordion",
+        "iframeSrc": "https://uiable.com/components/accordion",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/accordion\n# or: npx shadcn@latest add https://uiable.com/r/accordion.json\n\nimport { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from \"@/components/ui/accordion\"\n\n<Accordion>\n  <AccordionItem>\n    <AccordionTrigger>Item</AccordionTrigger>\n    <AccordionContent>Content</AccordionContent>\n  </AccordionItem>\n</Accordion>",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Accordion` (slug `accordion`) from https://uiable.com/components/accordion. Install with `npx shadcn@latest add @uiable/accordion` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/accordion.json`). Import from `@/components/ui/accordion`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/accordion",
+        "registryUrl": "https://uiable.com/r/accordion.json",
+        "registryItem": "accordion"
+      }
+    },
+    {
+      "id": "uiable-avatar",
+      "libraryId": "uiable",
+      "slug": "avatar",
+      "name": "Avatar",
+      "aliases": [
+        "avatar",
+        "uiable avatar",
+        "uiable avatar"
+      ],
+      "summary": "Avatar with image, fallback, group, and badge.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/avatar",
+        "iframeSrc": "https://uiable.com/components/avatar",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/avatar\n# or: npx shadcn@latest add https://uiable.com/r/avatar.json\n\nimport { Avatar, AvatarImage, AvatarFallback } from \"@/components/ui/avatar\"\n\n<Avatar>\n  <AvatarImage src=\"/avatar.png\" alt=\"User\" />\n  <AvatarFallback>UA</AvatarFallback>\n</Avatar>",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Avatar` (slug `avatar`) from https://uiable.com/components/avatar. Install with `npx shadcn@latest add @uiable/avatar` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/avatar.json`). Import from `@/components/ui/avatar`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/avatar",
+        "registryUrl": "https://uiable.com/r/avatar.json",
+        "registryItem": "avatar"
+      }
+    },
+    {
+      "id": "uiable-badge",
+      "libraryId": "uiable",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "badge",
+        "uiable badge",
+        "uiable badge"
+      ],
+      "summary": "Badge with CVA size/variant styles.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/badge",
+        "iframeSrc": "https://uiable.com/components/badge",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/badge\n# or: npx shadcn@latest add https://uiable.com/r/badge.json\n\nimport { Badge } from \"@/components/ui/badge\"\n\n<Badge>New</Badge>",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Badge` (slug `badge`) from https://uiable.com/components/badge. Install with `npx shadcn@latest add @uiable/badge` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/badge.json`). Import from `@/components/ui/badge`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/badge",
+        "registryUrl": "https://uiable.com/r/badge.json",
+        "registryItem": "badge"
+      }
+    },
+    {
+      "id": "uiable-card",
+      "libraryId": "uiable",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "card",
+        "uiable card",
+        "uiable card"
+      ],
+      "summary": "Composable card with header, content, footer.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/card",
+        "iframeSrc": "https://uiable.com/components/card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/card\n# or: npx shadcn@latest add https://uiable.com/r/card.json\n\nimport { Card, CardHeader, CardTitle, CardContent } from \"@/components/ui/card\"\n\n<Card>\n  <CardHeader><CardTitle>Title</CardTitle></CardHeader>\n  <CardContent>Body</CardContent>\n</Card>",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Card` (slug `card`) from https://uiable.com/components/card. Install with `npx shadcn@latest add @uiable/card` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/card.json`). Import from `@/components/ui/card`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/card",
+        "registryUrl": "https://uiable.com/r/card.json",
+        "registryItem": "card"
+      }
+    },
+    {
+      "id": "uiable-checkbox",
+      "libraryId": "uiable",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "checkbox",
+        "uiable checkbox",
+        "uiable checkbox"
+      ],
+      "summary": "Accessible checkbox on Base UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/checkbox",
+        "iframeSrc": "https://uiable.com/components/checkbox",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/checkbox\n# or: npx shadcn@latest add https://uiable.com/r/checkbox.json\n\nimport { Checkbox } from \"@/components/ui/checkbox\"\n\n<Checkbox aria-label=\"Accept terms\" />",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Checkbox` (slug `checkbox`) from https://uiable.com/components/checkbox. Install with `npx shadcn@latest add @uiable/checkbox` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/checkbox.json`). Import from `@/components/ui/checkbox`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/checkbox",
+        "registryUrl": "https://uiable.com/r/checkbox.json",
+        "registryItem": "checkbox"
+      }
+    },
+    {
+      "id": "uiable-dialog",
+      "libraryId": "uiable",
+      "slug": "dialog",
+      "name": "Dialog",
+      "aliases": [
+        "dialog",
+        "uiable dialog",
+        "uiable dialog"
+      ],
+      "summary": "Accessible dialog/modal on Base UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/dialog",
+        "iframeSrc": "https://uiable.com/components/dialog",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/dialog\n# or: npx shadcn@latest add https://uiable.com/r/dialog.json\n\nimport { Dialog, DialogTrigger, DialogContent, DialogTitle } from \"@/components/ui/dialog\"\n\n<Dialog>\n  <DialogTrigger>Open</DialogTrigger>\n  <DialogContent><DialogTitle>Hello</DialogTitle></DialogContent>\n</Dialog>",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Dialog` (slug `dialog`) from https://uiable.com/components/dialog. Install with `npx shadcn@latest add @uiable/dialog` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/dialog.json`). Import from `@/components/ui/dialog`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/dialog",
+        "registryUrl": "https://uiable.com/r/dialog.json",
+        "registryItem": "dialog"
+      }
+    },
+    {
+      "id": "uiable-input",
+      "libraryId": "uiable",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "input",
+        "uiable input",
+        "uiable input"
+      ],
+      "summary": "Styled text input on Base UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/input",
+        "iframeSrc": "https://uiable.com/components/input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/input\n# or: npx shadcn@latest add https://uiable.com/r/input.json\n\nimport { Input } from \"@/components/ui/input\"\n\n<Input type=\"email\" placeholder=\"you@example.com\" />",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Input` (slug `input`) from https://uiable.com/components/input. Install with `npx shadcn@latest add @uiable/input` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/input.json`). Import from `@/components/ui/input`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/input",
+        "registryUrl": "https://uiable.com/r/input.json",
+        "registryItem": "input"
+      }
+    },
+    {
+      "id": "uiable-select",
+      "libraryId": "uiable",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "select",
+        "uiable select",
+        "uiable select"
+      ],
+      "summary": "Accessible select on Base UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/select",
+        "iframeSrc": "https://uiable.com/components/select",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/select\n# or: npx shadcn@latest add https://uiable.com/r/select.json\n\nimport { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from \"@/components/ui/select\"\n\n<Select>\n  <SelectTrigger><SelectValue placeholder=\"Pick\" /></SelectTrigger>\n  <SelectContent><SelectItem value=\"a\">A</SelectItem></SelectContent>\n</Select>",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Select` (slug `select`) from https://uiable.com/components/select. Install with `npx shadcn@latest add @uiable/select` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/select.json`). Import from `@/components/ui/select`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/select",
+        "registryUrl": "https://uiable.com/r/select.json",
+        "registryItem": "select"
+      }
+    },
+    {
+      "id": "uiable-switch",
+      "libraryId": "uiable",
+      "slug": "switch",
+      "name": "Switch",
+      "aliases": [
+        "switch",
+        "uiable switch",
+        "uiable switch"
+      ],
+      "summary": "Toggle switch on Base UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/switch",
+        "iframeSrc": "https://uiable.com/components/switch",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/switch\n# or: npx shadcn@latest add https://uiable.com/r/switch.json\n\nimport { Switch } from \"@/components/ui/switch\"\n\n<Switch aria-label=\"Notifications\" />",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Switch` (slug `switch`) from https://uiable.com/components/switch. Install with `npx shadcn@latest add @uiable/switch` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/switch.json`). Import from `@/components/ui/switch`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/switch",
+        "registryUrl": "https://uiable.com/r/switch.json",
+        "registryItem": "switch"
+      }
+    },
+    {
+      "id": "uiable-tabs",
+      "libraryId": "uiable",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "tabs",
+        "uiable tabs",
+        "uiable tabs"
+      ],
+      "summary": "Tabs list/trigger/content on Base UI.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "nav",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/tabs",
+        "iframeSrc": "https://uiable.com/components/tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/tabs\n# or: npx shadcn@latest add https://uiable.com/r/tabs.json\n\nimport { Tabs, TabsList, TabsTrigger, TabsContent } from \"@/components/ui/tabs\"\n\n<Tabs defaultValue=\"one\">\n  <TabsList>\n    <TabsTrigger value=\"one\">One</TabsTrigger>\n  </TabsList>\n  <TabsContent value=\"one\">Panel</TabsContent>\n</Tabs>",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Tabs` (slug `tabs`) from https://uiable.com/components/tabs. Install with `npx shadcn@latest add @uiable/tabs` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/tabs.json`). Import from `@/components/ui/tabs`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/tabs",
+        "registryUrl": "https://uiable.com/r/tabs.json",
+        "registryItem": "tabs"
+      }
+    },
+    {
+      "id": "uiable-alert",
+      "libraryId": "uiable",
+      "slug": "alert",
+      "name": "Alert",
+      "aliases": [
+        "alert",
+        "uiable alert",
+        "uiable alert"
+      ],
+      "summary": "Inline alert with title and description.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/ui/alert",
+        "iframeSrc": "https://uiable.com/components/alert",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free Community MIT tier via shadcn registry @uiable. Requires React 19 + Next.js 16+ + Tailwind v4 + Base UI peers. Pro (@uiable-pro) excluded."
+      },
+      "copyCode": "npx shadcn@latest add @uiable/alert\n# or: npx shadcn@latest add https://uiable.com/r/alert.json\n\nimport { Alert, AlertTitle, AlertDescription } from \"@/components/ui/alert\"\n\n<Alert>\n  <AlertTitle>Heads up</AlertTitle>\n  <AlertDescription>Something happened.</AlertDescription>\n</Alert>",
+      "copyPrompt": {
+        "text": "Use UIAble free MIT React component `Alert` (slug `alert`) from https://uiable.com/components/alert. Install with `npx shadcn@latest add @uiable/alert` after adding `@uiable` registry `https://uiable.com/r/{name}.json` to components.json (or `npx shadcn@latest add https://uiable.com/r/alert.json`). Import from `@/components/ui/alert`. Built on shadcn/ui + Base UI + Tailwind CSS v4. Home: https://uiable.com. Docs: https://uiable.com/doc/introduction. CLI: https://uiable.com/doc/cli. Repo: https://github.com/codedthemes/uiable. License: MIT (https://raw.githubusercontent.com/codedthemes/uiable/master/LICENSE; Copyright (c) 2026 CodedThemes). Pricing freemium \u2014 Community free comps only; Pro blocks/templates/@uiable-pro excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @uiable/alert",
+        "registryUrl": "https://uiable.com/r/alert.json",
+        "registryItem": "alert"
+      }
+    }
+  ]
+}

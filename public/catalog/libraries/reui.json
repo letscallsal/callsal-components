@@ -1,0 +1,598 @@
+{
+  "id": "reui",
+  "name": "ReUI",
+  "aliases": [
+    "reui",
+    "reui.io",
+    "keenthemes/reui",
+    "ReUI",
+    "keenthemes reui"
+  ],
+  "summary": "Design-forward freemium shadcn/ui registry: 1,000+ free components plus custom free primitives; Pro blocks/icons gated.",
+  "homeUrl": "https://reui.io",
+  "docsUrl": "https://reui.io/docs/installation",
+  "repoUrl": "https://github.com/keenthemes/reui",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @reui/{name}",
+    "registryUrl": "https://reui.io/r/{style}/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://reui.io/docs/components/base/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "shadcn"
+    ],
+    "budgetKb": 600
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free ReUI custom primitives (Base UI docs paths); 1,000+ free c-* examples and Pro blocks/icons/templates not ingested.",
+    "Freemium: Pro blocks, icons, and paid templates require license \u2014 excluded (proOnly false only).",
+    "Dual Base UI + Radix docs; catalog demos use /docs/components/base/{slug}.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:28:00-04:00",
+  "components": [
+    {
+      "id": "reui-alert",
+      "libraryId": "reui",
+      "slug": "alert",
+      "name": "Alert",
+      "aliases": [
+        "reui alert",
+        "reui alert",
+        "Alert",
+        "@reui/alert"
+      ],
+      "summary": "Extended shadcn alert with success/info/warning/invert variants.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "toast",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/alert",
+        "iframeSrc": "https://reui.io/docs/components/base/alert",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/alert\n\nimport { Alert } from \"@/components/reui/alert\"\n\n<Alert />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Alert` (slug `alert`) from https://reui.io/docs/components/base/alert. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/alert` (copies source; Base UI and Radix variants available under /docs/components/base|radix/alert). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/alert",
+        "registryUrl": "https://reui.io/r/default/alert.json",
+        "registryItem": "@reui/alert"
+      }
+    },
+    {
+      "id": "reui-data-grid",
+      "libraryId": "reui",
+      "slug": "data-grid",
+      "name": "Data Grid",
+      "aliases": [
+        "reui data-grid",
+        "reui data grid",
+        "Data Grid",
+        "@reui/data-grid"
+      ],
+      "summary": "Sortable filterable paginated table on TanStack Table.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "layout",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/data-grid",
+        "iframeSrc": "https://reui.io/docs/components/base/data-grid",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/data-grid\n\nimport { DataGrid } from \"@/components/reui/data-grid\"\n\n<DataGrid />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Data Grid` (slug `data-grid`) from https://reui.io/docs/components/base/data-grid. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/data-grid` (copies source; Base UI and Radix variants available under /docs/components/base|radix/data-grid). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/data-grid",
+        "registryUrl": "https://reui.io/r/default/data-grid.json",
+        "registryItem": "@reui/data-grid"
+      }
+    },
+    {
+      "id": "reui-kanban",
+      "libraryId": "reui",
+      "slug": "kanban",
+      "name": "Kanban",
+      "aliases": [
+        "reui kanban",
+        "reui kanban",
+        "Kanban",
+        "@reui/kanban"
+      ],
+      "summary": "Drag-and-drop kanban board across customizable columns.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "layout",
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/kanban",
+        "iframeSrc": "https://reui.io/docs/components/base/kanban",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/kanban\n\nimport { Kanban } from \"@/components/reui/kanban\"\n\n<Kanban />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Kanban` (slug `kanban`) from https://reui.io/docs/components/base/kanban. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/kanban` (copies source; Base UI and Radix variants available under /docs/components/base|radix/kanban). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/kanban",
+        "registryUrl": "https://reui.io/r/default/kanban.json",
+        "registryItem": "@reui/kanban"
+      }
+    },
+    {
+      "id": "reui-filters",
+      "libraryId": "reui",
+      "slug": "filters",
+      "name": "Filters",
+      "aliases": [
+        "reui filters",
+        "reui filters",
+        "Filters",
+        "@reui/filters"
+      ],
+      "summary": "Composable search bar with chips and facets.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/filters",
+        "iframeSrc": "https://reui.io/docs/components/base/filters",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/filters\n\nimport { Filters } from \"@/components/reui/filters\"\n\n<Filters />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Filters` (slug `filters`) from https://reui.io/docs/components/base/filters. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/filters` (copies source; Base UI and Radix variants available under /docs/components/base|radix/filters). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/filters",
+        "registryUrl": "https://reui.io/r/default/filters.json",
+        "registryItem": "@reui/filters"
+      }
+    },
+    {
+      "id": "reui-stepper",
+      "libraryId": "reui",
+      "slug": "stepper",
+      "name": "Stepper",
+      "aliases": [
+        "reui stepper",
+        "reui stepper",
+        "Stepper",
+        "@reui/stepper"
+      ],
+      "summary": "Multi-step wizard / progress stepper.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "form",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/stepper",
+        "iframeSrc": "https://reui.io/docs/components/base/stepper",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/stepper\n\nimport { Stepper } from \"@/components/reui/stepper\"\n\n<Stepper />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Stepper` (slug `stepper`) from https://reui.io/docs/components/base/stepper. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/stepper` (copies source; Base UI and Radix variants available under /docs/components/base|radix/stepper). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/stepper",
+        "registryUrl": "https://reui.io/r/default/stepper.json",
+        "registryItem": "@reui/stepper"
+      }
+    },
+    {
+      "id": "reui-tree",
+      "libraryId": "reui",
+      "slug": "tree",
+      "name": "Tree",
+      "aliases": [
+        "reui tree",
+        "reui tree",
+        "Tree",
+        "@reui/tree"
+      ],
+      "summary": "Hierarchical tree navigation.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "menu",
+        "nav"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/tree",
+        "iframeSrc": "https://reui.io/docs/components/base/tree",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/tree\n\nimport { Tree } from \"@/components/reui/tree\"\n\n<Tree />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Tree` (slug `tree`) from https://reui.io/docs/components/base/tree. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/tree` (copies source; Base UI and Radix variants available under /docs/components/base|radix/tree). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/tree",
+        "registryUrl": "https://reui.io/r/default/tree.json",
+        "registryItem": "@reui/tree"
+      }
+    },
+    {
+      "id": "reui-rating",
+      "libraryId": "reui",
+      "slug": "rating",
+      "name": "Rating",
+      "aliases": [
+        "reui rating",
+        "reui rating",
+        "Rating",
+        "@reui/rating"
+      ],
+      "summary": "Star/score rating input.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/rating",
+        "iframeSrc": "https://reui.io/docs/components/base/rating",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/rating\n\nimport { Rating } from \"@/components/reui/rating\"\n\n<Rating />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Rating` (slug `rating`) from https://reui.io/docs/components/base/rating. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/rating` (copies source; Base UI and Radix variants available under /docs/components/base|radix/rating). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/rating",
+        "registryUrl": "https://reui.io/r/default/rating.json",
+        "registryItem": "@reui/rating"
+      }
+    },
+    {
+      "id": "reui-timeline",
+      "libraryId": "reui",
+      "slug": "timeline",
+      "name": "Timeline",
+      "aliases": [
+        "reui timeline",
+        "reui timeline",
+        "Timeline",
+        "@reui/timeline"
+      ],
+      "summary": "Vertical/horizontal event timeline.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "section",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/timeline",
+        "iframeSrc": "https://reui.io/docs/components/base/timeline",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/timeline\n\nimport { Timeline } from \"@/components/reui/timeline\"\n\n<Timeline />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Timeline` (slug `timeline`) from https://reui.io/docs/components/base/timeline. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/timeline` (copies source; Base UI and Radix variants available under /docs/components/base|radix/timeline). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/timeline",
+        "registryUrl": "https://reui.io/r/default/timeline.json",
+        "registryItem": "@reui/timeline"
+      }
+    },
+    {
+      "id": "reui-autocomplete",
+      "libraryId": "reui",
+      "slug": "autocomplete",
+      "name": "Autocomplete",
+      "aliases": [
+        "reui autocomplete",
+        "reui autocomplete",
+        "Autocomplete",
+        "@reui/autocomplete"
+      ],
+      "summary": "Searchable autocomplete combobox.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/autocomplete",
+        "iframeSrc": "https://reui.io/docs/components/base/autocomplete",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/autocomplete\n\nimport { Autocomplete } from \"@/components/reui/autocomplete\"\n\n<Autocomplete />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Autocomplete` (slug `autocomplete`) from https://reui.io/docs/components/base/autocomplete. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/autocomplete` (copies source; Base UI and Radix variants available under /docs/components/base|radix/autocomplete). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/autocomplete",
+        "registryUrl": "https://reui.io/r/default/autocomplete.json",
+        "registryItem": "@reui/autocomplete"
+      }
+    },
+    {
+      "id": "reui-phone-input",
+      "libraryId": "reui",
+      "slug": "phone-input",
+      "name": "Phone Input",
+      "aliases": [
+        "reui phone-input",
+        "reui phone input",
+        "Phone Input",
+        "@reui/phone-input"
+      ],
+      "summary": "International phone number input.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/phone-input",
+        "iframeSrc": "https://reui.io/docs/components/base/phone-input",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/phone-input\n\nimport { PhoneInput } from \"@/components/reui/phone-input\"\n\n<PhoneInput />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Phone Input` (slug `phone-input`) from https://reui.io/docs/components/base/phone-input. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/phone-input` (copies source; Base UI and Radix variants available under /docs/components/base|radix/phone-input). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/phone-input",
+        "registryUrl": "https://reui.io/r/default/phone-input.json",
+        "registryItem": "@reui/phone-input"
+      }
+    },
+    {
+      "id": "reui-number-field",
+      "libraryId": "reui",
+      "slug": "number-field",
+      "name": "Number Field",
+      "aliases": [
+        "reui number-field",
+        "reui number field",
+        "Number Field",
+        "@reui/number-field"
+      ],
+      "summary": "Numeric stepper field.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/number-field",
+        "iframeSrc": "https://reui.io/docs/components/base/number-field",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/number-field\n\nimport { NumberField } from \"@/components/reui/number-field\"\n\n<NumberField />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Number Field` (slug `number-field`) from https://reui.io/docs/components/base/number-field. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/number-field` (copies source; Base UI and Radix variants available under /docs/components/base|radix/number-field). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/number-field",
+        "registryUrl": "https://reui.io/r/default/number-field.json",
+        "registryItem": "@reui/number-field"
+      }
+    },
+    {
+      "id": "reui-gantt",
+      "libraryId": "reui",
+      "slug": "gantt",
+      "name": "Gantt",
+      "aliases": [
+        "reui gantt",
+        "reui gantt",
+        "Gantt",
+        "@reui/gantt"
+      ],
+      "summary": "Headless-first horizontal resource Gantt timeline.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "chart",
+        "layout"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/reui/gantt",
+        "iframeSrc": "https://reui.io/docs/components/base/gantt",
+        "aspectRatio": "16/9",
+        "peerNotes": "Requires shadcn/ui + Tailwind. Free primitive via @reui registry (no license key). Base UI path used for demos; Radix twin at /docs/components/radix/{slug}."
+      },
+      "copyCode": "# components.json registries: \"@reui\": \"https://reui.io/r/{style}/{name}.json\"\nnpx shadcn@latest add @reui/gantt\n\nimport { Gantt } from \"@/components/reui/gantt\"\n\n<Gantt />",
+      "copyPrompt": {
+        "text": "Use ReUI free MIT React component `Gantt` (slug `gantt`) from https://reui.io/docs/components/base/gantt. Freemium library \u2014 this primitive is free forever (not a Pro block). Setup: shadcn/ui + React + Tailwind, add registry `\"@reui\": \"https://reui.io/r/{style}/{name}.json\"`, then `npx shadcn@latest add @reui/gantt` (copies source; Base UI and Radix variants available under /docs/components/base|radix/gantt). Home: https://reui.io. Docs: https://reui.io/docs/installation. Repo: https://github.com/keenthemes/reui. License: MIT (https://raw.githubusercontent.com/keenthemes/reui/main/LICENSE.md; Copyright (c) 2025 Keenthemes Inc). Pricing freemium \u2014 free comps/primitives only; Pro blocks/icons/templates excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @reui/gantt",
+        "registryUrl": "https://reui.io/r/default/gantt.json",
+        "registryItem": "@reui/gantt"
+      }
+    }
+  ]
+}

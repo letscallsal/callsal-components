@@ -1,0 +1,616 @@
+{
+  "id": "skiper-ui",
+  "name": "Skiper UI",
+  "aliases": [
+    "skiper-ui",
+    "skiper",
+    "skiper-ui.com",
+    "@skiper-ui",
+    "Skiper"
+  ],
+  "summary": "Freemium uncommon shadcn/ui components and scroll/motion blocks via trusted @skiper-ui registry.",
+  "homeUrl": "https://www.skiper-ui.com",
+  "docsUrl": "https://skiper-ui.com/docs/quick-start",
+  "license": "Free with attribution (Skiper UI docs; Pro removes attribution)",
+  "pricing": "freemium",
+  "frameworks": [
+    "react"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @skiper-ui/{name}",
+    "registryUrl": "https://skiper-ui.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.skiper-ui.com/v1/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "framer-motion",
+      "tailwindcss"
+    ],
+    "budgetKb": 600
+  },
+  "status": "verified",
+  "gaps": [
+    "No public GitHub primary LICENSE file; license string taken from docs License & Usage (free + attribution; Pro removes attribution).",
+    "Pilot includes 12 free registry items (HTTP 200 without auth); many Pro items (401) excluded.",
+    "Component slugs are numbered (skiperN) rather than semantic names.",
+    "iframe demos only."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T16:28:00-04:00",
+  "components": [
+    {
+      "id": "skiper-ui-skiper3",
+      "libraryId": "skiper-ui",
+      "slug": "skiper3",
+      "name": "Apple Play Button",
+      "aliases": [
+        "skiper3",
+        "skiper skiper3",
+        "apple play button",
+        "@skiper-ui/skiper3"
+      ],
+      "summary": "Elegant play button with Apple-inspired hover animations.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper3",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper3",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper3\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper3 } from '@/components/v1/skiper3'\n\n<Skiper3 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `Apple Play Button` (slug `skiper3`) from https://www.skiper-ui.com/v1/skiper3. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper3`. Import pattern from docs: `import { Skiper3 } from \"@/components/v1/skiper3\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper3",
+        "registryUrl": "https://skiper-ui.com/r/skiper3.json",
+        "registryItem": "@skiper-ui/skiper3"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper4",
+      "libraryId": "skiper-ui",
+      "slug": "skiper4",
+      "name": "Theme Toggle Buttons",
+      "aliases": [
+        "skiper4",
+        "skiper skiper4",
+        "theme toggle buttons",
+        "@skiper-ui/skiper4"
+      ],
+      "summary": "Interactive theme toggle button set with smooth transitions.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper4",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper4",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper4\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper4 } from '@/components/v1/skiper4'\n\n<Skiper4 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `Theme Toggle Buttons` (slug `skiper4`) from https://www.skiper-ui.com/v1/skiper4. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper4`. Import pattern from docs: `import { Skiper4 } from \"@/components/v1/skiper4\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper4",
+        "registryUrl": "https://skiper-ui.com/r/skiper4.json",
+        "registryItem": "@skiper-ui/skiper4"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper16",
+      "libraryId": "skiper-ui",
+      "slug": "skiper16",
+      "name": "Card Stack Scroll",
+      "aliases": [
+        "skiper16",
+        "skiper skiper16",
+        "card stack scroll",
+        "@skiper-ui/skiper16"
+      ],
+      "summary": "Stacked cards with scroll-triggered reveal and depth.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "card",
+        "section"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper16",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper16",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper16\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper16 } from '@/components/v1/skiper16'\n\n<Skiper16 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `Card Stack Scroll` (slug `skiper16`) from https://www.skiper-ui.com/v1/skiper16. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper16`. Import pattern from docs: `import { Skiper16 } from \"@/components/v1/skiper16\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper16",
+        "registryUrl": "https://skiper-ui.com/r/skiper16.json",
+        "registryItem": "@skiper-ui/skiper16"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper17",
+      "libraryId": "skiper-ui",
+      "slug": "skiper17",
+      "name": "Card Stack GSAP Rotate",
+      "aliases": [
+        "skiper17",
+        "skiper skiper17",
+        "card stack gsap rotate",
+        "@skiper-ui/skiper17"
+      ],
+      "summary": "GSAP card stack with rotation and scroll triggers.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "card",
+        "section"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper17",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper17",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper17\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper17 } from '@/components/v1/skiper17'\n\n<Skiper17 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `Card Stack GSAP Rotate` (slug `skiper17`) from https://www.skiper-ui.com/v1/skiper17. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper17`. Import pattern from docs: `import { Skiper17 } from \"@/components/v1/skiper17\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper17",
+        "registryUrl": "https://skiper-ui.com/r/skiper17.json",
+        "registryItem": "@skiper-ui/skiper17"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper19",
+      "libraryId": "skiper-ui",
+      "slug": "skiper19",
+      "name": "SVG Follow Scroll",
+      "aliases": [
+        "skiper19",
+        "skiper skiper19",
+        "svg follow scroll",
+        "@skiper-ui/skiper19"
+      ],
+      "summary": "SVG path animation that follows scroll progress.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "other",
+        "section"
+      ],
+      "effectType": [
+        "scroll",
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper19",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper19",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper19\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper19 } from '@/components/v1/skiper19'\n\n<Skiper19 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `SVG Follow Scroll` (slug `skiper19`) from https://www.skiper-ui.com/v1/skiper19. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper19`. Import pattern from docs: `import { Skiper19 } from \"@/components/v1/skiper19\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper19",
+        "registryUrl": "https://skiper-ui.com/r/skiper19.json",
+        "registryItem": "@skiper-ui/skiper19"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper25",
+      "libraryId": "skiper-ui",
+      "slug": "skiper25",
+      "name": "Music Toggle Button",
+      "aliases": [
+        "skiper25",
+        "skiper skiper25",
+        "music toggle button",
+        "@skiper-ui/skiper25"
+      ],
+      "summary": "Music player toggle with vinyl-inspired animation.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper25",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper25",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper25\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper25 } from '@/components/v1/skiper25'\n\n<Skiper25 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `Music Toggle Button` (slug `skiper25`) from https://www.skiper-ui.com/v1/skiper25. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper25`. Import pattern from docs: `import { Skiper25 } from \"@/components/v1/skiper25\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper25",
+        "registryUrl": "https://skiper-ui.com/r/skiper25.json",
+        "registryItem": "@skiper-ui/skiper25"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper26",
+      "libraryId": "skiper-ui",
+      "slug": "skiper26",
+      "name": "Theme Toggle Button",
+      "aliases": [
+        "skiper26",
+        "skiper skiper26",
+        "theme toggle button",
+        "@skiper-ui/skiper26"
+      ],
+      "summary": "Minimal theme toggle with smooth color transitions.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "button",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper26",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper26",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper26\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper26 } from '@/components/v1/skiper26'\n\n<Skiper26 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `Theme Toggle Button` (slug `skiper26`) from https://www.skiper-ui.com/v1/skiper26. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper26`. Import pattern from docs: `import { Skiper26 } from \"@/components/v1/skiper26\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper26",
+        "registryUrl": "https://skiper-ui.com/r/skiper26.json",
+        "registryItem": "@skiper-ui/skiper26"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper28",
+      "libraryId": "skiper-ui",
+      "slug": "skiper28",
+      "name": "3D Perspective Text",
+      "aliases": [
+        "skiper28",
+        "skiper skiper28",
+        "3d perspective text",
+        "@skiper-ui/skiper28"
+      ],
+      "summary": "3D text with scroll-based perspective transforms.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "3d",
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper28",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper28",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper28\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper28 } from '@/components/v1/skiper28'\n\n<Skiper28 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `3D Perspective Text` (slug `skiper28`) from https://www.skiper-ui.com/v1/skiper28. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper28`. Import pattern from docs: `import { Skiper28 } from \"@/components/v1/skiper28\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper28",
+        "registryUrl": "https://skiper-ui.com/r/skiper28.json",
+        "registryItem": "@skiper-ui/skiper28"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper30",
+      "libraryId": "skiper-ui",
+      "slug": "skiper30",
+      "name": "Oliver Parallax",
+      "aliases": [
+        "skiper30",
+        "skiper skiper30",
+        "oliver parallax",
+        "@skiper-ui/skiper30"
+      ],
+      "summary": "Multi-layer parallax depth scroll effect.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "background",
+        "section"
+      ],
+      "effectType": [
+        "parallax",
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper30",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper30",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper30\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper30 } from '@/components/v1/skiper30'\n\n<Skiper30 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `Oliver Parallax` (slug `skiper30`) from https://www.skiper-ui.com/v1/skiper30. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper30`. Import pattern from docs: `import { Skiper30 } from \"@/components/v1/skiper30\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper30",
+        "registryUrl": "https://skiper-ui.com/r/skiper30.json",
+        "registryItem": "@skiper-ui/skiper30"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper31",
+      "libraryId": "skiper-ui",
+      "slug": "skiper31",
+      "name": "Text Scroll Animation",
+      "aliases": [
+        "skiper31",
+        "skiper skiper31",
+        "text scroll animation",
+        "@skiper-ui/skiper31"
+      ],
+      "summary": "Typography scroll with letter-by-letter reveals.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "scroll",
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper31",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper31",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper31\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper31 } from '@/components/v1/skiper31'\n\n<Skiper31 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `Text Scroll Animation` (slug `skiper31`) from https://www.skiper-ui.com/v1/skiper31. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper31`. Import pattern from docs: `import { Skiper31 } from \"@/components/v1/skiper31\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper31",
+        "registryUrl": "https://skiper-ui.com/r/skiper31.json",
+        "registryItem": "@skiper-ui/skiper31"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper37",
+      "libraryId": "skiper-ui",
+      "slug": "skiper37",
+      "name": "Animated Number",
+      "aliases": [
+        "skiper37",
+        "skiper skiper37",
+        "animated number",
+        "@skiper-ui/skiper37"
+      ],
+      "summary": "Number counter with smooth counting and easing.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "text",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper37",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper37",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper37\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper37 } from '@/components/v1/skiper37'\n\n<Skiper37 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `Animated Number` (slug `skiper37`) from https://www.skiper-ui.com/v1/skiper37. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper37`. Import pattern from docs: `import { Skiper37 } from \"@/components/v1/skiper37\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper37",
+        "registryUrl": "https://skiper-ui.com/r/skiper37.json",
+        "registryItem": "@skiper-ui/skiper37"
+      }
+    },
+    {
+      "id": "skiper-ui-skiper40",
+      "libraryId": "skiper-ui",
+      "slug": "skiper40",
+      "name": "CssLink",
+      "aliases": [
+        "skiper40",
+        "skiper skiper40",
+        "csslink",
+        "@skiper-ui/skiper40"
+      ],
+      "summary": "Stylized link with CSS hover animations.",
+      "frameworks": [
+        "react"
+      ],
+      "uiCategory": [
+        "nav",
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@/components/v1/skiper40",
+        "iframeSrc": "https://www.skiper-ui.com/v1/skiper40",
+        "aspectRatio": "16/9",
+        "peerNotes": "Free registry item (HTTP 200 without auth). Pro items return 401 without license \u2014 not ingested."
+      },
+      "copyCode": "npx shadcn@latest add @skiper-ui/skiper40\n# peers often include: pnpm add clsx framer-motion lucide-react tailwind-merge\n\nimport { Skiper40 } from '@/components/v1/skiper40'\n\n<Skiper40 />",
+      "copyPrompt": {
+        "text": "Use Skiper UI free React component `CssLink` (slug `skiper40`) from https://www.skiper-ui.com/v1/skiper40. Freemium shadcn registry \u2014 this item installs without a license key via `npx shadcn@latest add @skiper-ui/skiper40`. Import pattern from docs: `import { Skiper40 } from \"@/components/v1/skiper40\"`. Peers commonly: framer-motion, clsx, tailwind-merge, lucide-react (per component deps). Home: https://www.skiper-ui.com. Quick start: https://skiper-ui.com/docs/quick-start. License (docs): Free to use/modify in personal and commercial projects; attribution to Skiper UI required on free tier (https://skiper-ui.com/docs/quick-start License & Usage). No public GitHub SPDX LICENSE found. Pricing freemium \u2014 Pro comps require SKIPER_LICENSE_KEY; excluded.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @skiper-ui/skiper40",
+        "registryUrl": "https://skiper-ui.com/r/skiper40.json",
+        "registryItem": "@skiper-ui/skiper40"
+      }
+    }
+  ]
+}

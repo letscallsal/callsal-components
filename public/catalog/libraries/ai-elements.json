@@ -1,0 +1,571 @@
+{
+  "id": "ai-elements",
+  "name": "AI Elements",
+  "aliases": [
+    "Vercel AI Elements",
+    "elements.ai-sdk.dev",
+    "ai-elements"
+  ],
+  "summary": "Free Apache-2.0 shadcn registry of AI-native React components for the Vercel AI SDK.",
+  "homeUrl": "https://elements.ai-sdk.dev",
+  "docsUrl": "https://elements.ai-sdk.dev/docs",
+  "repoUrl": "https://github.com/vercel/ai-elements",
+  "license": "Apache-2.0",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx ai-elements@latest add {name}",
+    "registryUrl": "https://elements.ai-sdk.dev/api/registry/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://elements.ai-sdk.dev/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "shadcn",
+      "ai"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of ~45 documented chatbot/workflow components \u2014 not a full inventory.",
+    "Official registry is https://elements.ai-sdk.dev/api/registry/{name}.json (NOT ai-sdk.dev/r/* which 307s to /playground).",
+    "CLI `npx ai-elements@latest add` wraps shadcn add against that API registry; @ai-elements namespace also documented.",
+    "Some comps need AI SDK / Streamdown CSS (@source for streamdown) \u2014 see per-page docs.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:33:14-04:00",
+  "components": [
+    {
+      "id": "ai-elements-message",
+      "libraryId": "ai-elements",
+      "slug": "message",
+      "name": "Message",
+      "aliases": [
+        "chat message",
+        "ai message"
+      ],
+      "summary": "Chat message suite for user and assistant turns with actions and markdown responses.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/message",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/message",
+        "aspectRatio": "16/9",
+        "peerNotes": "ai SDK / streamdown for MessageResponse"
+      },
+      "copyCode": "npx ai-elements@latest add message\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/message.json\nimport { Message, MessageContent, MessageActions } from \"@/components/ai-elements/message\"\n\n<Message />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Message` (slug `message`) from https://elements.ai-sdk.dev/components/message. Install with `npx ai-elements@latest add message` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/message.json` (also `npx shadcn@latest add @ai-elements/message` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/message.json. Imports land under `@/components/ai-elements/message`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add message",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/message.json",
+        "registryItem": "message"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-prompt-input",
+      "libraryId": "ai-elements",
+      "slug": "prompt-input",
+      "name": "Prompt Input",
+      "aliases": [
+        "chat input",
+        "composer"
+      ],
+      "summary": "Composable prompt input with attachments, submit, and provider hooks.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/prompt-input",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/prompt-input",
+        "aspectRatio": "16/9",
+        "peerNotes": "@ai-sdk/react"
+      },
+      "copyCode": "npx ai-elements@latest add prompt-input\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/prompt-input.json\nimport { PromptInput, PromptInputTextarea, PromptInputSubmit } from \"@/components/ai-elements/prompt-input\"\n\n<PromptInput />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Prompt Input` (slug `prompt-input`) from https://elements.ai-sdk.dev/components/prompt-input. Install with `npx ai-elements@latest add prompt-input` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/prompt-input.json` (also `npx shadcn@latest add @ai-elements/prompt-input` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/prompt-input.json. Imports land under `@/components/ai-elements/prompt-input`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add prompt-input",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/prompt-input.json",
+        "registryItem": "prompt-input"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-conversation",
+      "libraryId": "ai-elements",
+      "slug": "conversation",
+      "name": "Conversation",
+      "aliases": [
+        "chat thread",
+        "message list"
+      ],
+      "summary": "Conversation scroller with empty state and scroll-to-bottom control.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "layout",
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/conversation",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/conversation",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx ai-elements@latest add conversation\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/conversation.json\nimport { Conversation, ConversationContent, ConversationScrollButton } from \"@/components/ai-elements/conversation\"\n\n<Conversation />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Conversation` (slug `conversation`) from https://elements.ai-sdk.dev/components/conversation. Install with `npx ai-elements@latest add conversation` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/conversation.json` (also `npx shadcn@latest add @ai-elements/conversation` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/conversation.json. Imports land under `@/components/ai-elements/conversation`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add conversation",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/conversation.json",
+        "registryItem": "conversation"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-reasoning",
+      "libraryId": "ai-elements",
+      "slug": "reasoning",
+      "name": "Reasoning",
+      "aliases": [
+        "think block",
+        "model reasoning"
+      ],
+      "summary": "Collapsible reasoning / thinking panel for model chain-of-thought display.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/reasoning",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/reasoning",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx ai-elements@latest add reasoning\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/reasoning.json\nimport { Reasoning, ReasoningTrigger, ReasoningContent } from \"@/components/ai-elements/reasoning\"\n\n<Reasoning />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Reasoning` (slug `reasoning`) from https://elements.ai-sdk.dev/components/reasoning. Install with `npx ai-elements@latest add reasoning` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/reasoning.json` (also `npx shadcn@latest add @ai-elements/reasoning` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/reasoning.json. Imports land under `@/components/ai-elements/reasoning`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add reasoning",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/reasoning.json",
+        "registryItem": "reasoning"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-suggestion",
+      "libraryId": "ai-elements",
+      "slug": "suggestion",
+      "name": "Suggestion",
+      "aliases": [
+        "prompt chips",
+        "suggested prompts"
+      ],
+      "summary": "Clickable suggestion chips for quick prompt starters.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/suggestion",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/suggestion",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx ai-elements@latest add suggestion\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/suggestion.json\nimport { Suggestions, Suggestion } from \"@/components/ai-elements/suggestion\"\n\n<Suggestions />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Suggestion` (slug `suggestion`) from https://elements.ai-sdk.dev/components/suggestion. Install with `npx ai-elements@latest add suggestion` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/suggestion.json` (also `npx shadcn@latest add @ai-elements/suggestion` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/suggestion.json. Imports land under `@/components/ai-elements/suggestion`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add suggestion",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/suggestion.json",
+        "registryItem": "suggestion"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-sources",
+      "libraryId": "ai-elements",
+      "slug": "sources",
+      "name": "Sources",
+      "aliases": [
+        "citations list",
+        "rag sources"
+      ],
+      "summary": "Sources accordion listing references used by an assistant response.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/sources",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/sources",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx ai-elements@latest add sources\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/sources.json\nimport { Sources, SourcesTrigger, SourcesContent, Source } from \"@/components/ai-elements/sources\"\n\n<Sources />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Sources` (slug `sources`) from https://elements.ai-sdk.dev/components/sources. Install with `npx ai-elements@latest add sources` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/sources.json` (also `npx shadcn@latest add @ai-elements/sources` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/sources.json. Imports land under `@/components/ai-elements/sources`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add sources",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/sources.json",
+        "registryItem": "sources"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-tool",
+      "libraryId": "ai-elements",
+      "slug": "tool",
+      "name": "Tool",
+      "aliases": [
+        "tool call",
+        "function call ui"
+      ],
+      "summary": "Tool-call card showing status, headers, and tool input/output.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/tool",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/tool",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx ai-elements@latest add tool\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/tool.json\nimport { Tool, ToolHeader, ToolContent } from \"@/components/ai-elements/tool\"\n\n<Tool />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Tool` (slug `tool`) from https://elements.ai-sdk.dev/components/tool. Install with `npx ai-elements@latest add tool` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/tool.json` (also `npx shadcn@latest add @ai-elements/tool` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/tool.json. Imports land under `@/components/ai-elements/tool`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add tool",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/tool.json",
+        "registryItem": "tool"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-shimmer",
+      "libraryId": "ai-elements",
+      "slug": "shimmer",
+      "name": "Shimmer",
+      "aliases": [
+        "loading shimmer",
+        "text shimmer"
+      ],
+      "summary": "Animated shimmer text for loading and thinking affordances.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/shimmer",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/shimmer",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx ai-elements@latest add shimmer\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/shimmer.json\nimport { Shimmer } from \"@/components/ai-elements/shimmer\"\n\n<Shimmer />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Shimmer` (slug `shimmer`) from https://elements.ai-sdk.dev/components/shimmer. Install with `npx ai-elements@latest add shimmer` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/shimmer.json` (also `npx shadcn@latest add @ai-elements/shimmer` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/shimmer.json. Imports land under `@/components/ai-elements/shimmer`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add shimmer",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/shimmer.json",
+        "registryItem": "shimmer"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-code-block",
+      "libraryId": "ai-elements",
+      "slug": "code-block",
+      "name": "Code Block",
+      "aliases": [
+        "syntax code",
+        "ai code block"
+      ],
+      "summary": "Syntax-highlighted code block with copy and header chrome.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/code-block",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/code-block",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx ai-elements@latest add code-block\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/code-block.json\nimport { CodeBlockContainer, CodeBlockHeader } from \"@/components/ai-elements/code-block\"\n\n<CodeBlockContainer />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Code Block` (slug `code-block`) from https://elements.ai-sdk.dev/components/code-block. Install with `npx ai-elements@latest add code-block` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/code-block.json` (also `npx shadcn@latest add @ai-elements/code-block` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/code-block.json. Imports land under `@/components/ai-elements/code-block`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add code-block",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/code-block.json",
+        "registryItem": "code-block"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-chain-of-thought",
+      "libraryId": "ai-elements",
+      "slug": "chain-of-thought",
+      "name": "Chain Of Thought",
+      "aliases": [
+        "cot steps",
+        "thought steps"
+      ],
+      "summary": "Stepwise chain-of-thought UI with search-result chips.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/chain-of-thought",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/chain-of-thought",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx ai-elements@latest add chain-of-thought\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/chain-of-thought.json\nimport { ChainOfThought, ChainOfThoughtHeader, ChainOfThoughtStep } from \"@/components/ai-elements/chain-of-thought\"\n\n<ChainOfThought />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Chain Of Thought` (slug `chain-of-thought`) from https://elements.ai-sdk.dev/components/chain-of-thought. Install with `npx ai-elements@latest add chain-of-thought` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/chain-of-thought.json` (also `npx shadcn@latest add @ai-elements/chain-of-thought` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/chain-of-thought.json. Imports land under `@/components/ai-elements/chain-of-thought`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add chain-of-thought",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/chain-of-thought.json",
+        "registryItem": "chain-of-thought"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-task",
+      "libraryId": "ai-elements",
+      "slug": "task",
+      "name": "Task",
+      "aliases": [
+        "agent task",
+        "todo task item"
+      ],
+      "summary": "Task list primitives for agent to-dos and file-linked items.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/task",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/task",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx ai-elements@latest add task\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/task.json\nimport { Task, TaskItem, TaskTrigger } from \"@/components/ai-elements/task\"\n\n<Task />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Task` (slug `task`) from https://elements.ai-sdk.dev/components/task. Install with `npx ai-elements@latest add task` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/task.json` (also `npx shadcn@latest add @ai-elements/task` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/task.json. Imports land under `@/components/ai-elements/task`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add task",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/task.json",
+        "registryItem": "task"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "ai-elements-inline-citation",
+      "libraryId": "ai-elements",
+      "slug": "inline-citation",
+      "name": "Inline Citation",
+      "aliases": [
+        "inline cite",
+        "hover citation"
+      ],
+      "summary": "Inline citation markers with hover card details.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other",
+        "text"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@ai-elements/inline-citation",
+        "iframeSrc": "https://elements.ai-sdk.dev/components/inline-citation",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx ai-elements@latest add inline-citation\n\n// or: npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/inline-citation.json\nimport { InlineCitation, InlineCitationCard } from \"@/components/ai-elements/inline-citation\"\n\n<InlineCitation />",
+      "copyPrompt": {
+        "text": "Use AI Elements free Apache-2.0 component `Inline Citation` (slug `inline-citation`) from https://elements.ai-sdk.dev/components/inline-citation. Install with `npx ai-elements@latest add inline-citation` or `npx shadcn@latest add https://elements.ai-sdk.dev/api/registry/inline-citation.json` (also `npx shadcn@latest add @ai-elements/inline-citation` when namespace is configured). Registry item: https://elements.ai-sdk.dev/api/registry/inline-citation.json. Imports land under `@/components/ai-elements/inline-citation`. Requires React/Next + shadcn/ui + Tailwind; peers as listed for AI SDK apps. License: Apache-2.0 (https://raw.githubusercontent.com/vercel/ai-elements/main/LICENSE; npm `ai-elements` Apache-2.0). Pricing free \u2014 open source (Vercel AI Elements).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx ai-elements@latest add inline-citation",
+        "registryUrl": "https://elements.ai-sdk.dev/api/registry/inline-citation.json",
+        "registryItem": "inline-citation"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

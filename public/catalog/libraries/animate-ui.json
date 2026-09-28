@@ -1,0 +1,615 @@
+{
+  "id": "animate-ui",
+  "name": "Animate UI",
+  "aliases": [
+    "animateui",
+    "imskyleen/animate-ui",
+    "Animate-UI"
+  ],
+  "summary": "Motion-powered open React components via @animate-ui shadcn registry (primitives + composed UI).",
+  "homeUrl": "https://animate-ui.com",
+  "docsUrl": "https://animate-ui.com/docs",
+  "repoUrl": "https://github.com/imskyleen/animate-ui",
+  "license": "MIT + Commons Clause",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "shadcn-registry",
+    "command": "npx shadcn@latest add @animate-ui/<name>",
+    "registryUrl": "https://animate-ui.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://animate-ui.com/docs/{kind}/{category}/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "motion",
+      "tailwindcss",
+      "class-variance-authority"
+    ],
+    "budgetKb": 450
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free registry items of ~580 listed in registry.json; not a full inventory.",
+    "License is MIT + Commons Clause (LICENSE.md) — not pure SPDX MIT; free use in apps/products, Commons Clause restricts selling/redistributing components themselves as a competing bundle.",
+    "No separate paid unlock found on animate-ui.com during research — pricing=free; Pro companion not observed (unlike React Bits / Kokonut).",
+    "Namespaced registry `@animate-ui` resolves via shadcn public registries (url https://animate-ui.com/r/{name}.json).",
+    "ARCHITECTURE §5 prefers iframe for unusual/tactile motion; all demos are docs iframes.",
+    "Some composed buttons (flip/ripple) pull extra @animate-ui registryDependencies (primitives + button base).",
+    "llms.txt returned 404; inventory taken from /r/registry.json + /docs/components + /docs/primitives."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T14:45:00-04:00",
+  "components": [
+    {
+      "id": "animate-ui-primitives-texts-typing",
+      "libraryId": "animate-ui",
+      "slug": "primitives-texts-typing",
+      "name": "Typing Text",
+      "aliases": [
+        "typewriter text",
+        "typing animation",
+        "animate-ui typing"
+      ],
+      "summary": "Typing text animation with optional cursor, loop, and in-view trigger.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "typewriter"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/primitives-texts-typing",
+        "iframeSrc": "https://animate-ui.com/docs/primitives/texts/typing",
+        "aspectRatio": "16/9",
+        "peerNotes": "Also exports TypingTextCursor; registry pulls hooks-use-is-in-view + lib-get-strict-context."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/primitives-texts-typing\n\nimport { TypingText } from \"@/components/animate-ui/primitives/texts/typing\"\n\n<TypingText text=\"Animate UI\" duration={100} loop={true} holdDelay={1000} />",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Typing Text` (registry `primitives-texts-typing`) from https://animate-ui.com/docs/primitives/texts/typing. Install with `npx shadcn@latest add @animate-ui/primitives-texts-typing` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/primitives-texts-typing.json. Import `TypingText` from `@/components/animate-ui/primitives/texts/typing` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/primitives-texts-typing",
+        "registryUrl": "https://animate-ui.com/r/primitives-texts-typing.json",
+        "registryItem": "@animate-ui/primitives-texts-typing"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-primitives-texts-shimmering",
+      "libraryId": "animate-ui",
+      "slug": "primitives-texts-shimmering",
+      "name": "Shimmering Text",
+      "aliases": [
+        "shimmer text",
+        "shimmering headline",
+        "text shimmer"
+      ],
+      "summary": "Shimmering text animation with configurable color and optional wave.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/primitives-texts-shimmering",
+        "iframeSrc": "https://animate-ui.com/docs/primitives/texts/shimmering",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion; registry pulls hooks-use-is-in-view."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/primitives-texts-shimmering\n\nimport { ShimmeringText } from \"@/components/animate-ui/primitives/texts/shimmering\"\n\n<ShimmeringText text=\"Shimmering Text\" duration={1} wave={false} />",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Shimmering Text` (registry `primitives-texts-shimmering`) from https://animate-ui.com/docs/primitives/texts/shimmering. Install with `npx shadcn@latest add @animate-ui/primitives-texts-shimmering` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/primitives-texts-shimmering.json. Import `ShimmeringText` from `@/components/animate-ui/primitives/texts/shimmering` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/primitives-texts-shimmering",
+        "registryUrl": "https://animate-ui.com/r/primitives-texts-shimmering.json",
+        "registryItem": "@animate-ui/primitives-texts-shimmering"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-primitives-texts-gradient",
+      "libraryId": "animate-ui",
+      "slug": "primitives-texts-gradient",
+      "name": "Gradient Text",
+      "aliases": [
+        "animated gradient text",
+        "neon gradient text",
+        "gradient headline"
+      ],
+      "summary": "Animated gradient text with optional neon glow.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "gradient",
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/primitives-texts-gradient",
+        "iframeSrc": "https://animate-ui.com/docs/primitives/texts/gradient",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/primitives-texts-gradient\n\nimport { GradientText } from \"@/components/animate-ui/primitives/texts/gradient\"\n\n<GradientText text=\"Gradient Text\" neon={false} />",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Gradient Text` (registry `primitives-texts-gradient`) from https://animate-ui.com/docs/primitives/texts/gradient. Install with `npx shadcn@latest add @animate-ui/primitives-texts-gradient` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/primitives-texts-gradient.json. Import `GradientText` from `@/components/animate-ui/primitives/texts/gradient` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/primitives-texts-gradient",
+        "registryUrl": "https://animate-ui.com/r/primitives-texts-gradient.json",
+        "registryItem": "@animate-ui/primitives-texts-gradient"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-primitives-texts-morphing",
+      "libraryId": "animate-ui",
+      "slug": "primitives-texts-morphing",
+      "name": "Morphing Text",
+      "aliases": [
+        "morph text",
+        "text morph blur",
+        "morphing headline"
+      ],
+      "summary": "Smoothly morphs characters with blur/scale when transitioning between strings.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "morph",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/primitives-texts-morphing",
+        "iframeSrc": "https://animate-ui.com/docs/primitives/texts/morphing",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion; registry pulls hooks-use-is-in-view."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/primitives-texts-morphing\n\nimport { MorphingText } from \"@/components/animate-ui/primitives/texts/morphing\"\n\n<MorphingText text=\"Morphing\" />",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Morphing Text` (registry `primitives-texts-morphing`) from https://animate-ui.com/docs/primitives/texts/morphing. Install with `npx shadcn@latest add @animate-ui/primitives-texts-morphing` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/primitives-texts-morphing.json. Import `MorphingText` from `@/components/animate-ui/primitives/texts/morphing` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/primitives-texts-morphing",
+        "registryUrl": "https://animate-ui.com/r/primitives-texts-morphing.json",
+        "registryItem": "@animate-ui/primitives-texts-morphing"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-primitives-effects-particles",
+      "libraryId": "animate-ui",
+      "slug": "primitives-effects-particles",
+      "name": "Particles",
+      "aliases": [
+        "particle effect",
+        "click particles",
+        "particle burst"
+      ],
+      "summary": "Particle-system effect primitive (Particles + ParticlesEffect) for burst/ambient particles.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "particles"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/primitives-effects-particles",
+        "iframeSrc": "https://animate-ui.com/docs/primitives/effects/particles",
+        "aspectRatio": "16/9",
+        "peerNotes": "Compound Particles + ParticlesEffect; needs motion + animate-slot / in-view hooks."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/primitives-effects-particles\n\nimport { Particles, ParticlesEffect } from \"@/components/animate-ui/primitives/effects/particles\"\n\n<Particles animate={true}>\n  <button type=\"button\">Click me</button>\n  <ParticlesEffect />\n</Particles>",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Particles` (registry `primitives-effects-particles`) from https://animate-ui.com/docs/primitives/effects/particles. Install with `npx shadcn@latest add @animate-ui/primitives-effects-particles` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/primitives-effects-particles.json. Import `Particles` from `@/components/animate-ui/primitives/effects/particles` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/primitives-effects-particles",
+        "registryUrl": "https://animate-ui.com/r/primitives-effects-particles.json",
+        "registryItem": "@animate-ui/primitives-effects-particles"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-primitives-effects-magnetic",
+      "libraryId": "animate-ui",
+      "slug": "primitives-effects-magnetic",
+      "name": "Magnetic",
+      "aliases": [
+        "magnetic cursor",
+        "magnetic pull",
+        "magnet effect"
+      ],
+      "summary": "Magnetic effect that pulls children toward the cursor within a range.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/primitives-effects-magnetic",
+        "iframeSrc": "https://animate-ui.com/docs/primitives/effects/magnetic",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion; registry pulls primitives-animate-slot."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/primitives-effects-magnetic\n\nimport { Magnetic } from \"@/components/animate-ui/primitives/effects/magnetic\"\n\n<Magnetic strength={0.5} range={120}>\n  <button type=\"button\">Magnetic</button>\n</Magnetic>",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Magnetic` (registry `primitives-effects-magnetic`) from https://animate-ui.com/docs/primitives/effects/magnetic. Install with `npx shadcn@latest add @animate-ui/primitives-effects-magnetic` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/primitives-effects-magnetic.json. Import `Magnetic` from `@/components/animate-ui/primitives/effects/magnetic` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/primitives-effects-magnetic",
+        "registryUrl": "https://animate-ui.com/r/primitives-effects-magnetic.json",
+        "registryItem": "@animate-ui/primitives-effects-magnetic"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-components-backgrounds-gradient",
+      "libraryId": "animate-ui",
+      "slug": "components-backgrounds-gradient",
+      "name": "Gradient Background",
+      "aliases": [
+        "animated gradient bg",
+        "motion gradient background"
+      ],
+      "summary": "Background with a subtle looping animated gradient.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/components-backgrounds-gradient",
+        "iframeSrc": "https://animate-ui.com/docs/components/backgrounds/gradient",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/components-backgrounds-gradient\n\nimport { GradientBackground } from \"@/components/animate-ui/components/backgrounds/gradient\"\n\n<GradientBackground className=\"min-h-[24rem] rounded-xl\" />",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Gradient Background` (registry `components-backgrounds-gradient`) from https://animate-ui.com/docs/components/backgrounds/gradient. Install with `npx shadcn@latest add @animate-ui/components-backgrounds-gradient` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/components-backgrounds-gradient.json. Import `GradientBackground` from `@/components/animate-ui/components/backgrounds/gradient` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/components-backgrounds-gradient",
+        "registryUrl": "https://animate-ui.com/r/components-backgrounds-gradient.json",
+        "registryItem": "@animate-ui/components-backgrounds-gradient"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-components-backgrounds-bubble",
+      "libraryId": "animate-ui",
+      "slug": "components-backgrounds-bubble",
+      "name": "Bubble Background",
+      "aliases": [
+        "gradient bubbles",
+        "bubble bg",
+        "interactive bubble background"
+      ],
+      "summary": "Interactive background of smoothly animated gradient bubbles.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "gradient",
+        "orb"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/components-backgrounds-bubble",
+        "iframeSrc": "https://animate-ui.com/docs/components/backgrounds/bubble",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion; set interactive for cursor response."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/components-backgrounds-bubble\n\nimport { BubbleBackground } from \"@/components/animate-ui/components/backgrounds/bubble\"\n\n<BubbleBackground interactive={true} className=\"min-h-[24rem] rounded-xl\" />",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Bubble Background` (registry `components-backgrounds-bubble`) from https://animate-ui.com/docs/components/backgrounds/bubble. Install with `npx shadcn@latest add @animate-ui/components-backgrounds-bubble` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/components-backgrounds-bubble.json. Import `BubbleBackground` from `@/components/animate-ui/components/backgrounds/bubble` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/components-backgrounds-bubble",
+        "registryUrl": "https://animate-ui.com/r/components-backgrounds-bubble.json",
+        "registryItem": "@animate-ui/components-backgrounds-bubble"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-components-buttons-liquid",
+      "libraryId": "animate-ui",
+      "slug": "components-buttons-liquid",
+      "name": "Liquid Button",
+      "aliases": [
+        "liquid fill button",
+        "fill on hover button"
+      ],
+      "summary": "Button that fills on hover with a liquid-style animation.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal",
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/components-buttons-liquid",
+        "iframeSrc": "https://animate-ui.com/docs/components/buttons/liquid",
+        "aspectRatio": "16/9",
+        "peerNotes": "Pulls @animate-ui/primitives-buttons-liquid; uses class-variance-authority."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/components-buttons-liquid\n\nimport { LiquidButton } from \"@/components/animate-ui/components/buttons/liquid\"\n\n<LiquidButton>Liquid</LiquidButton>",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Liquid Button` (registry `components-buttons-liquid`) from https://animate-ui.com/docs/components/buttons/liquid. Install with `npx shadcn@latest add @animate-ui/components-buttons-liquid` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/components-buttons-liquid.json. Import `LiquidButton` from `@/components/animate-ui/components/buttons/liquid` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/components-buttons-liquid",
+        "registryUrl": "https://animate-ui.com/r/components-buttons-liquid.json",
+        "registryItem": "@animate-ui/components-buttons-liquid"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-components-buttons-flip",
+      "libraryId": "animate-ui",
+      "slug": "components-buttons-flip",
+      "name": "Flip Button",
+      "aliases": [
+        "3d flip button",
+        "flip hover button"
+      ],
+      "summary": "Button that flips between front and back states on hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "3d",
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/components-buttons-flip",
+        "iframeSrc": "https://animate-ui.com/docs/components/buttons/flip",
+        "aspectRatio": "16/9",
+        "peerNotes": "Compound FlipButton + Front/Back; pulls button base + primitives-buttons-flip."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/components-buttons-flip\n\nimport { FlipButton, FlipButtonFront, FlipButtonBack } from \"@/components/animate-ui/components/buttons/flip\"\n\n<FlipButton>\n  <FlipButtonFront>Front</FlipButtonFront>\n  <FlipButtonBack>Back</FlipButtonBack>\n</FlipButton>",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Flip Button` (registry `components-buttons-flip`) from https://animate-ui.com/docs/components/buttons/flip. Install with `npx shadcn@latest add @animate-ui/components-buttons-flip` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/components-buttons-flip.json. Import `FlipButton` from `@/components/animate-ui/components/buttons/flip` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/components-buttons-flip",
+        "registryUrl": "https://animate-ui.com/r/components-buttons-flip.json",
+        "registryItem": "@animate-ui/components-buttons-flip"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-components-buttons-ripple",
+      "libraryId": "animate-ui",
+      "slug": "components-buttons-ripple",
+      "name": "Ripple Button",
+      "aliases": [
+        "tap ripple button",
+        "ripple click button"
+      ],
+      "summary": "Button that animates a ripple on tap.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/components-buttons-ripple",
+        "iframeSrc": "https://animate-ui.com/docs/components/buttons/ripple",
+        "aspectRatio": "16/9",
+        "peerNotes": "Compound RippleButton + RippleButtonRipples; pulls button base + primitives-buttons-ripple."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/components-buttons-ripple\n\nimport { RippleButton, RippleButtonRipples } from \"@/components/animate-ui/components/buttons/ripple\"\n\n<RippleButton>\n  Ripple\n  <RippleButtonRipples />\n</RippleButton>",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Ripple Button` (registry `components-buttons-ripple`) from https://animate-ui.com/docs/components/buttons/ripple. Install with `npx shadcn@latest add @animate-ui/components-buttons-ripple` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/components-buttons-ripple.json. Import `RippleButton` from `@/components/animate-ui/components/buttons/ripple` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/components-buttons-ripple",
+        "registryUrl": "https://animate-ui.com/r/components-buttons-ripple.json",
+        "registryItem": "@animate-ui/components-buttons-ripple"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "animate-ui-components-community-flip-card",
+      "libraryId": "animate-ui",
+      "slug": "components-community-flip-card",
+      "name": "Flip Card",
+      "aliases": [
+        "3d flip card",
+        "profile flip card",
+        "community flip card"
+      ],
+      "summary": "3D animated card that flips to reveal profile/stats content on the back.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "3d"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@animate-ui/components-community-flip-card",
+        "iframeSrc": "https://animate-ui.com/docs/components/community/flip-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "Needs motion, class-variance-authority, lucide-react. FlipCardData: name, username, image, bio, stats."
+      },
+      "copyCode": "npx shadcn@latest add @animate-ui/components-community-flip-card\n\nimport { FlipCard } from \"@/components/animate-ui/components/community/flip-card\"\n\n<FlipCard\n  data={{\n    name: \"Jane Doe\",\n    username: \"janedoe\",\n    image: \"/avatar.jpg\",\n    bio: \"Building animated UI\",\n    stats: { following: 120, followers: 980 },\n  }}\n/>",
+      "copyPrompt": {
+        "text": "Use Animate UI free component `Flip Card` (registry `components-community-flip-card`) from https://animate-ui.com/docs/components/community/flip-card. Install with `npx shadcn@latest add @animate-ui/components-community-flip-card` after `npx shadcn@latest init` (official registry namespace `@animate-ui` → `https://animate-ui.com/r/{name}.json`). Registry item: https://animate-ui.com/r/components-community-flip-card.json. Import `FlipCard` from `@/components/animate-ui/components/community/flip-card` after CLI add (path may follow project aliases). Requires React + TypeScript + Tailwind CSS; most items need `motion`. License: MIT + Commons Clause (https://raw.githubusercontent.com/imskyleen/animate-ui/main/LICENSE.md) — free for use in apps/websites/products; do not sell/redistribute the components themselves as a competing library/bundle. Prefer free-tier only.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx shadcn@latest add @animate-ui/components-community-flip-card",
+        "registryUrl": "https://animate-ui.com/r/components-community-flip-card.json",
+        "registryItem": "@animate-ui/components-community-flip-card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

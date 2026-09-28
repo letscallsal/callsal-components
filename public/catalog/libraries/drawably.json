@@ -1,0 +1,612 @@
+{
+  "id": "drawably",
+  "name": "Drawably",
+  "aliases": [
+    "drawably.dev",
+    "danielwh2/drawably",
+    "hand-drawn UI"
+  ],
+  "summary": "Hand-drawn React UI controls \u2014 fresh pen sketch every mount, boiling doodle strokes.",
+  "homeUrl": "https://www.drawably.dev",
+  "docsUrl": "https://www.drawably.dev",
+  "repoUrl": "https://github.com/danielwh2/drawably",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next",
+    "html"
+  ],
+  "install": {
+    "kind": "npm",
+    "command": "npm i drawably",
+    "packages": [
+      "drawably"
+    ]
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.drawably.dev",
+    "peerDeps": [
+      "react",
+      "react-dom"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 20+ React exports (controls + composites + decorations) \u2014 not full inventory.",
+    "All demos share the single marketing page iframe (no per-component docs routes).",
+    "Vanilla (non-React) attach API also available via `drawably` package root \u2014 catalog focuses on drawably/react.",
+    "Replacement for SKIPPED bg-ibelick (no primary LICENSE) in Packet 050 queue.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:46:00-04:00",
+  "components": [
+    {
+      "id": "drawably-button",
+      "libraryId": "drawably",
+      "slug": "button",
+      "name": "Button",
+      "aliases": [
+        "drawably button",
+        "hand-drawn button"
+      ],
+      "summary": "Hand-drawn button with outline/solid/scribble variants and async states.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyButton",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyButton } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyButton />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyButton` (slug `button`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyButton } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-checkbox",
+      "libraryId": "drawably",
+      "slug": "checkbox",
+      "name": "Checkbox",
+      "aliases": [
+        "drawably checkbox"
+      ],
+      "summary": "Sketched checkbox over a real accessible input.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyCheckbox",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyCheckbox } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyCheckbox />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyCheckbox` (slug `checkbox`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyCheckbox } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-toggle",
+      "libraryId": "drawably",
+      "slug": "toggle",
+      "name": "Toggle",
+      "aliases": [
+        "drawably toggle",
+        "hand-drawn switch"
+      ],
+      "summary": "Hand-drawn toggle switch on a native checkbox.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "form",
+        "input"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyToggle",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyToggle } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyToggle />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyToggle` (slug `toggle`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyToggle } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-input",
+      "libraryId": "drawably",
+      "slug": "input",
+      "name": "Input",
+      "aliases": [
+        "drawably input"
+      ],
+      "summary": "Sketched text input frame over a native input.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyInput",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyInput } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyInput />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyInput` (slug `input`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyInput } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-textarea",
+      "libraryId": "drawably",
+      "slug": "textarea",
+      "name": "Textarea",
+      "aliases": [
+        "drawably textarea"
+      ],
+      "summary": "Hand-drawn textarea frame over a native textarea.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyTextarea",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyTextarea } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyTextarea />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyTextarea` (slug `textarea`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyTextarea } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-select",
+      "libraryId": "drawably",
+      "slug": "select",
+      "name": "Select",
+      "aliases": [
+        "drawably select"
+      ],
+      "summary": "Sketched select with width reserved for widest option.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input",
+        "form",
+        "menu"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablySelect",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablySelect } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablySelect />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablySelect` (slug `select`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablySelect } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-card",
+      "libraryId": "drawably",
+      "slug": "card",
+      "name": "Card",
+      "aliases": [
+        "drawably card"
+      ],
+      "summary": "Hand-drawn card frame around any block content.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyCard",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyCard } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyCard />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyCard` (slug `card`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyCard } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-badge",
+      "libraryId": "drawably",
+      "slug": "badge",
+      "name": "Badge",
+      "aliases": [
+        "drawably badge"
+      ],
+      "summary": "Sketched badge with outline or scribble variants.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyBadge",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyBadge } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyBadge />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyBadge` (slug `badge`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyBadge } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-tabs",
+      "libraryId": "drawably",
+      "slug": "tabs",
+      "name": "Tabs",
+      "aliases": [
+        "drawably tabs"
+      ],
+      "summary": "Hand-drawn underline on the active tab.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu",
+        "nav"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyTabs",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyTabs } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyTabs />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyTabs` (slug `tabs`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyTabs } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-alert",
+      "libraryId": "drawably",
+      "slug": "alert",
+      "name": "Alert",
+      "aliases": [
+        "drawably alert"
+      ],
+      "summary": "Sketched alert card with optional tag badge.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "toast",
+        "other"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyAlert",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyAlert } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyAlert />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyAlert` (slug `alert`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyAlert } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-underline",
+      "libraryId": "drawably",
+      "slug": "underline",
+      "name": "Underline",
+      "aliases": [
+        "drawably underline",
+        "pen underline"
+      ],
+      "summary": "Rough pen underline under text; re-sketches on hover.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyUnderline",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyUnderline } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyUnderline />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyUnderline` (slug `underline`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyUnderline } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    },
+    {
+      "id": "drawably-chip",
+      "libraryId": "drawably",
+      "slug": "chip",
+      "name": "Chip",
+      "aliases": [
+        "drawably chip"
+      ],
+      "summary": "Sketched chip/badge around a checkbox label.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button",
+        "other"
+      ],
+      "effectType": [
+        "draw"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "drawably/react/DrawablyChip",
+        "iframeSrc": "https://www.drawably.dev",
+        "aspectRatio": "16/9",
+        "peerNotes": "import drawably/style.css; React >=18 peer optional for vanilla API"
+      },
+      "copyCode": "npm i drawably\n\nimport { DrawablyChip } from \"drawably/react\";\nimport \"drawably/style.css\";\n\n<DrawablyChip />",
+      "copyPrompt": {
+        "text": "Use drawably free MIT React component `DrawablyChip` (slug `chip`) from https://www.drawably.dev. Install with `npm i drawably`, then `import { DrawablyChip } from \"drawably/react\"` and `import \"drawably/style.css\"`. Optional pen font: `import \"drawably/font.css\"`. Zero runtime deps beyond optional React peer. Hand-drawn SVG sketches with boil animation. License: MIT (https://raw.githubusercontent.com/danielwh2/drawably/main/LICENSE; Copyright (c) 2026 Daniel Belyi; also https://cdn.jsdelivr.net/npm/drawably@0.4.2/LICENSE). Pricing free.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "proOnly": false,
+      "status": "verified",
+      "installOverride": {
+        "kind": "npm",
+        "command": "npm i drawably",
+        "packages": [
+          "drawably"
+        ]
+      }
+    }
+  ]
+}

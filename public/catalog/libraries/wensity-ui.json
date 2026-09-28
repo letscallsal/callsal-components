@@ -1,0 +1,595 @@
+{
+  "id": "wensity-ui",
+  "name": "Wensity UI",
+  "aliases": [
+    "Wensity",
+    "ui.wensity.com",
+    "wensity/registry"
+  ],
+  "summary": "Freemium motion-rich React components with a free MIT CLI tier.",
+  "homeUrl": "https://ui.wensity.com",
+  "docsUrl": "https://ui.wensity.com/docs",
+  "repoUrl": "https://github.com/wensity/registry",
+  "license": "MIT",
+  "pricing": "freemium",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "pnpm dlx wensity@latest add {name}",
+    "registryUrl": "https://ui.wensity.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://ui.wensity.com/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "framer-motion"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 free registry components of ~89 free items in https://ui.wensity.com/r/registry.json (plus fonts/base) \u2014 not a full inventory.",
+    "Freemium: Free ($0 forever) CLI + free MIT catalog; Pro Annual $169/yr and Pro Lifetime $199 unlock premium motion/agentic comps (HTTP 402 on /r/{slug} without license) \u2014 excluded.",
+    "Primary install is Wensity CLI (`pnpm dlx wensity@latest add`); registry JSON also fetchable for shadcn-compatible inspection.",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:26:09-04:00",
+  "components": [
+    {
+      "id": "wensity-ui-infinite-marquee",
+      "libraryId": "wensity-ui",
+      "slug": "infinite-marquee",
+      "name": "Infinite Marquee",
+      "aliases": [
+        "logo marquee",
+        "seamless marquee"
+      ],
+      "summary": "Seamless GPU-only logo strip that loops without stutter.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "marquee"
+      ],
+      "effectType": [
+        "scroll"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/infinite-marquee",
+        "iframeSrc": "https://ui.wensity.com/components/infinite-marquee",
+        "aspectRatio": "16/9",
+        "peerNotes": "clsx, tailwind-merge"
+      },
+      "copyCode": "pnpm dlx wensity@latest add infinite-marquee\n\nimport { InfiniteMarquee } from \"@/components/wensity/infinite-marquee\"\n\n<InfiniteMarquee />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `Infinite Marquee` (slug `infinite-marquee`) from https://ui.wensity.com/components/infinite-marquee. Install with `pnpm dlx wensity@latest add infinite-marquee` (free CLI tier) or `npx wensity@latest add infinite-marquee`. Registry item: https://ui.wensity.com/r/infinite-marquee.json. Imports land under `@/components/wensity/infinite-marquee` as `InfiniteMarquee`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add infinite-marquee",
+        "registryUrl": "https://ui.wensity.com/r/infinite-marquee.json",
+        "registryItem": "infinite-marquee"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-gooey-navigation-menu",
+      "libraryId": "wensity-ui",
+      "slug": "gooey-navigation-menu",
+      "name": "Gooey Navigation Menu",
+      "aliases": [
+        "gooey fab menu",
+        "liquid nav menu"
+      ],
+      "summary": "Liquid FAB whose child actions stretch out like molten metal.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "menu"
+      ],
+      "effectType": [
+        "gooey"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/gooey-navigation-menu",
+        "iframeSrc": "https://ui.wensity.com/components/gooey-navigation-menu",
+        "aspectRatio": "16/9",
+        "peerNotes": "framer-motion, @tabler/icons-react"
+      },
+      "copyCode": "pnpm dlx wensity@latest add gooey-navigation-menu\n\nimport { GooeyNavigationMenu } from \"@/components/wensity/gooey-navigation-menu\"\n\n<GooeyNavigationMenu />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `Gooey Navigation Menu` (slug `gooey-navigation-menu`) from https://ui.wensity.com/components/gooey-navigation-menu. Install with `pnpm dlx wensity@latest add gooey-navigation-menu` (free CLI tier) or `npx wensity@latest add gooey-navigation-menu`. Registry item: https://ui.wensity.com/r/gooey-navigation-menu.json. Imports land under `@/components/wensity/gooey-navigation-menu` as `GooeyNavigationMenu`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add gooey-navigation-menu",
+        "registryUrl": "https://ui.wensity.com/r/gooey-navigation-menu.json",
+        "registryItem": "gooey-navigation-menu"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-text-shimmer",
+      "libraryId": "wensity-ui",
+      "slug": "text-shimmer",
+      "name": "Text Shimmer",
+      "aliases": [
+        "shimmer headline",
+        "css text shimmer"
+      ],
+      "summary": "CSS shimmer sweep for headlines \u2014 single element, GPU-friendly.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/text-shimmer",
+        "iframeSrc": "https://ui.wensity.com/components/text-shimmer",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "pnpm dlx wensity@latest add text-shimmer\n\nimport { TextShimmer } from \"@/components/wensity/text-shimmer\"\n\n<TextShimmer />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `Text Shimmer` (slug `text-shimmer`) from https://ui.wensity.com/components/text-shimmer. Install with `pnpm dlx wensity@latest add text-shimmer` (free CLI tier) or `npx wensity@latest add text-shimmer`. Registry item: https://ui.wensity.com/r/text-shimmer.json. Imports land under `@/components/wensity/text-shimmer` as `TextShimmer`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add text-shimmer",
+        "registryUrl": "https://ui.wensity.com/r/text-shimmer.json",
+        "registryItem": "text-shimmer"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-voice-aurora-wave",
+      "libraryId": "wensity-ui",
+      "slug": "voice-aurora-wave",
+      "name": "Voice Aurora Wave",
+      "aliases": [
+        "voice orb",
+        "aurora voice wave"
+      ],
+      "summary": "Breathing voice orb that swells with speech and settles between turns.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "aurora",
+        "orb"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/voice-aurora-wave",
+        "iframeSrc": "https://ui.wensity.com/components/voice-aurora-wave",
+        "aspectRatio": "16/9",
+        "peerNotes": "framer-motion, @tabler/icons-react"
+      },
+      "copyCode": "pnpm dlx wensity@latest add voice-aurora-wave\n\nimport { VoiceAuroraWave } from \"@/components/wensity/voice-aurora-wave\"\n\n<VoiceAuroraWave />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `Voice Aurora Wave` (slug `voice-aurora-wave`) from https://ui.wensity.com/components/voice-aurora-wave. Install with `pnpm dlx wensity@latest add voice-aurora-wave` (free CLI tier) or `npx wensity@latest add voice-aurora-wave`. Registry item: https://ui.wensity.com/r/voice-aurora-wave.json. Imports land under `@/components/wensity/voice-aurora-wave` as `VoiceAuroraWave`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add voice-aurora-wave",
+        "registryUrl": "https://ui.wensity.com/r/voice-aurora-wave.json",
+        "registryItem": "voice-aurora-wave"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-morphing-shape-background",
+      "libraryId": "wensity-ui",
+      "slug": "morphing-shape-background",
+      "name": "Morphing Shape Background",
+      "aliases": [
+        "lava lamp background",
+        "morphing blobs"
+      ],
+      "summary": "Lava-lamp blobs that drift behind heroes without SVG morph cost.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "background"
+      ],
+      "effectType": [
+        "morph",
+        "gradient"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/morphing-shape-background",
+        "iframeSrc": "https://ui.wensity.com/components/morphing-shape-background",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "pnpm dlx wensity@latest add morphing-shape-background\n\nimport { MorphingShapeBackground } from \"@/components/wensity/morphing-shape-background\"\n\n<MorphingShapeBackground />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `Morphing Shape Background` (slug `morphing-shape-background`) from https://ui.wensity.com/components/morphing-shape-background. Install with `pnpm dlx wensity@latest add morphing-shape-background` (free CLI tier) or `npx wensity@latest add morphing-shape-background`. Registry item: https://ui.wensity.com/r/morphing-shape-background.json. Imports land under `@/components/wensity/morphing-shape-background` as `MorphingShapeBackground`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add morphing-shape-background",
+        "registryUrl": "https://ui.wensity.com/r/morphing-shape-background.json",
+        "registryItem": "morphing-shape-background"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-cool-button",
+      "libraryId": "wensity-ui",
+      "slug": "cool-button",
+      "name": "Cool Button",
+      "aliases": [
+        "orbit glow button",
+        "dual-layer glow button"
+      ],
+      "summary": "Dual-layer orbit glow that soft-spins around any button or link.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button"
+      ],
+      "effectType": [
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/cool-button",
+        "iframeSrc": "https://ui.wensity.com/components/cool-button",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "pnpm dlx wensity@latest add cool-button\n\nimport { CoolButton } from \"@/components/wensity/cool-button\"\n\n<CoolButton />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `Cool Button` (slug `cool-button`) from https://ui.wensity.com/components/cool-button. Install with `pnpm dlx wensity@latest add cool-button` (free CLI tier) or `npx wensity@latest add cool-button`. Registry item: https://ui.wensity.com/r/cool-button.json. Imports land under `@/components/wensity/cool-button` as `CoolButton`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add cool-button",
+        "registryUrl": "https://ui.wensity.com/r/cool-button.json",
+        "registryItem": "cool-button"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-shimmering-skeleton-wrapper",
+      "libraryId": "wensity-ui",
+      "slug": "shimmering-skeleton-wrapper",
+      "name": "Shimmering Skeleton Wrapper",
+      "aliases": [
+        "skeleton shimmer",
+        "shimmer skeleton"
+      ],
+      "summary": "One angled GPU shimmer sweep across any wrapped placeholder geometry.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "shimmer"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/shimmering-skeleton-wrapper",
+        "iframeSrc": "https://ui.wensity.com/components/shimmering-skeleton-wrapper",
+        "aspectRatio": "16/9",
+        "peerNotes": "framer-motion"
+      },
+      "copyCode": "pnpm dlx wensity@latest add shimmering-skeleton-wrapper\n\nimport { ShimmeringSkeletonWrapper } from \"@/components/wensity/shimmering-skeleton-wrapper\"\n\n<ShimmeringSkeletonWrapper />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `Shimmering Skeleton Wrapper` (slug `shimmering-skeleton-wrapper`) from https://ui.wensity.com/components/shimmering-skeleton-wrapper. Install with `pnpm dlx wensity@latest add shimmering-skeleton-wrapper` (free CLI tier) or `npx wensity@latest add shimmering-skeleton-wrapper`. Registry item: https://ui.wensity.com/r/shimmering-skeleton-wrapper.json. Imports land under `@/components/wensity/shimmering-skeleton-wrapper` as `ShimmeringSkeletonWrapper`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add shimmering-skeleton-wrapper",
+        "registryUrl": "https://ui.wensity.com/r/shimmering-skeleton-wrapper.json",
+        "registryItem": "shimmering-skeleton-wrapper"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-text-morphing",
+      "libraryId": "wensity-ui",
+      "slug": "text-morphing",
+      "name": "Text Morphing",
+      "aliases": [
+        "morphing headline",
+        "blur morph text"
+      ],
+      "summary": "Blur-morphing headlines that cycle phrases with a gooey crossfade.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "text"
+      ],
+      "effectType": [
+        "morph",
+        "blur"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/text-morphing",
+        "iframeSrc": "https://ui.wensity.com/components/text-morphing",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "pnpm dlx wensity@latest add text-morphing\n\nimport { TextMorphing } from \"@/components/wensity/text-morphing\"\n\n<TextMorphing />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `Text Morphing` (slug `text-morphing`) from https://ui.wensity.com/components/text-morphing. Install with `pnpm dlx wensity@latest add text-morphing` (free CLI tier) or `npx wensity@latest add text-morphing`. Registry item: https://ui.wensity.com/r/text-morphing.json. Imports land under `@/components/wensity/text-morphing` as `TextMorphing`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add text-morphing",
+        "registryUrl": "https://ui.wensity.com/r/text-morphing.json",
+        "registryItem": "text-morphing"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-liquid-multimodal-input",
+      "libraryId": "wensity-ui",
+      "slug": "liquid-multimodal-input",
+      "name": "AI Prompt Input",
+      "aliases": [
+        "liquid multimodal input",
+        "ai prompt box"
+      ],
+      "summary": "Expanding AI prompt area with glowing drop zone for text and files.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "input"
+      ],
+      "effectType": [
+        "glow"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/liquid-multimodal-input",
+        "iframeSrc": "https://ui.wensity.com/components/liquid-multimodal-input",
+        "aspectRatio": "16/9",
+        "peerNotes": "framer-motion, @tabler/icons-react"
+      },
+      "copyCode": "pnpm dlx wensity@latest add liquid-multimodal-input\n\nimport { LiquidMultimodalInput } from \"@/components/wensity/liquid-multimodal-input\"\n\n<LiquidMultimodalInput />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `AI Prompt Input` (slug `liquid-multimodal-input`) from https://ui.wensity.com/components/liquid-multimodal-input. Install with `pnpm dlx wensity@latest add liquid-multimodal-input` (free CLI tier) or `npx wensity@latest add liquid-multimodal-input`. Registry item: https://ui.wensity.com/r/liquid-multimodal-input.json. Imports land under `@/components/wensity/liquid-multimodal-input` as `LiquidMultimodalInput`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add liquid-multimodal-input",
+        "registryUrl": "https://ui.wensity.com/r/liquid-multimodal-input.json",
+        "registryItem": "liquid-multimodal-input"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-animated-tabs",
+      "libraryId": "wensity-ui",
+      "slug": "animated-tabs",
+      "name": "Animated Tabs",
+      "aliases": [
+        "photo card tabs",
+        "stacked tab cards"
+      ],
+      "summary": "Physical stack of photo cards shuffled forward by clipped tabs.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/animated-tabs",
+        "iframeSrc": "https://ui.wensity.com/components/animated-tabs",
+        "aspectRatio": "16/9",
+        "peerNotes": "framer-motion"
+      },
+      "copyCode": "pnpm dlx wensity@latest add animated-tabs\n\nimport { AnimatedTabs } from \"@/components/wensity/animated-tabs\"\n\n<AnimatedTabs />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `Animated Tabs` (slug `animated-tabs`) from https://ui.wensity.com/components/animated-tabs. Install with `pnpm dlx wensity@latest add animated-tabs` (free CLI tier) or `npx wensity@latest add animated-tabs`. Registry item: https://ui.wensity.com/r/animated-tabs.json. Imports land under `@/components/wensity/animated-tabs` as `AnimatedTabs`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add animated-tabs",
+        "registryUrl": "https://ui.wensity.com/r/animated-tabs.json",
+        "registryItem": "animated-tabs"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-before-after-card",
+      "libraryId": "wensity-ui",
+      "slug": "before-after-card",
+      "name": "Image Comparison Slider",
+      "aliases": [
+        "before after slider",
+        "image compare"
+      ],
+      "summary": "Drag handle to wipe between before and after images with zero lag.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/before-after-card",
+        "iframeSrc": "https://ui.wensity.com/components/before-after-card",
+        "aspectRatio": "16/9",
+        "peerNotes": "framer-motion"
+      },
+      "copyCode": "pnpm dlx wensity@latest add before-after-card\n\nimport { BeforeAfterCard } from \"@/components/wensity/before-after-card\"\n\n<BeforeAfterCard />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `Image Comparison Slider` (slug `before-after-card`) from https://ui.wensity.com/components/before-after-card. Install with `pnpm dlx wensity@latest add before-after-card` (free CLI tier) or `npx wensity@latest add before-after-card`. Registry item: https://ui.wensity.com/r/before-after-card.json. Imports land under `@/components/wensity/before-after-card` as `BeforeAfterCard`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add before-after-card",
+        "registryUrl": "https://ui.wensity.com/r/before-after-card.json",
+        "registryItem": "before-after-card"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "wensity-ui-github-activity-grid",
+      "libraryId": "wensity-ui",
+      "slug": "github-activity-grid",
+      "name": "GitHub-Style Activity Grid",
+      "aliases": [
+        "contribution grid",
+        "activity heatmap"
+      ],
+      "summary": "365-day activity grid with flying tooltip and backward ripple reveal.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@wensity/github-activity-grid",
+        "iframeSrc": "https://ui.wensity.com/components/github-activity-grid",
+        "aspectRatio": "16/9",
+        "peerNotes": "framer-motion"
+      },
+      "copyCode": "pnpm dlx wensity@latest add github-activity-grid\n\nimport { GitHubActivityGrid } from \"@/components/wensity/github-activity-grid\"\n\n<GitHubActivityGrid />",
+      "copyPrompt": {
+        "text": "Use Wensity UI free MIT component `GitHub-Style Activity Grid` (slug `github-activity-grid`) from https://ui.wensity.com/components/github-activity-grid. Install with `pnpm dlx wensity@latest add github-activity-grid` (free CLI tier) or `npx wensity@latest add github-activity-grid`. Registry item: https://ui.wensity.com/r/github-activity-grid.json. Imports land under `@/components/wensity/github-activity-grid` as `GitHubActivityGrid`. Requires React/Next + TypeScript + Tailwind; peers as listed in registry. License: MIT for free registry items (https://raw.githubusercontent.com/wensity/registry/main/LICENSE). Pricing freemium \u2014 free CLI tier only; Pro Annual $169/yr / Pro Lifetime $199 excluded (paid comps return HTTP 402).",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "cli",
+        "command": "pnpm dlx wensity@latest add github-activity-grid",
+        "registryUrl": "https://ui.wensity.com/r/github-activity-grid.json",
+        "registryItem": "github-activity-grid"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}

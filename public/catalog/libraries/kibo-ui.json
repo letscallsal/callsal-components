@@ -1,0 +1,579 @@
+{
+  "id": "kibo-ui",
+  "name": "Kibo UI",
+  "aliases": [
+    "kibo",
+    "kibo-ui.com",
+    "shadcnblocks/kibo",
+    "haydenbleasel/kibo"
+  ],
+  "summary": "Free MIT composable blocks and components designed for shadcn/ui.",
+  "homeUrl": "https://www.kibo-ui.com",
+  "docsUrl": "https://www.kibo-ui.com/docs",
+  "repoUrl": "https://github.com/shadcnblocks/kibo",
+  "license": "MIT",
+  "pricing": "free",
+  "frameworks": [
+    "react",
+    "next"
+  ],
+  "install": {
+    "kind": "cli",
+    "command": "npx kibo-ui add <component>",
+    "registryUrl": "https://www.kibo-ui.com/r/{name}.json"
+  },
+  "adapter": {
+    "kind": "iframe",
+    "iframeSrcTemplate": "https://www.kibo-ui.com/components/{slug}",
+    "peerDeps": [
+      "react",
+      "react-dom",
+      "tailwindcss",
+      "shadcn"
+    ],
+    "budgetKb": 500
+  },
+  "status": "verified",
+  "gaps": [
+    "Pilot includes 12 of 41 registry:ui items — not a full inventory.",
+    "Requires existing shadcn/ui (CSS Variables mode) before kibo-ui CLI.",
+    "Import path after CLI: @/components/kibo-ui/{slug}; also supports shadcn CLI per docs.",
+    "Some comps pull extra registryDependencies (avatar, button, carousel, hover-card, progress).",
+    "iframe demos only; no dynamic-import smoke mounts in this packet."
+  ],
+  "featured": false,
+  "updatedAt": "2026-09-28T15:25:00-04:00",
+  "components": [
+    {
+      "id": "kibo-ui-marquee",
+      "libraryId": "kibo-ui",
+      "slug": "marquee",
+      "name": "Marquee",
+      "aliases": [
+        "infinite marquee",
+        "logo ticker marquee"
+      ],
+      "summary": "Horizontal scrolling marquee built on react-fast-marquee.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "marquee"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/marquee",
+        "iframeSrc": "https://www.kibo-ui.com/components/marquee",
+        "aspectRatio": "16/9",
+        "peerNotes": "react-fast-marquee"
+      },
+      "copyCode": "npx kibo-ui add marquee\n\nimport { Marquee, MarqueeContent, MarqueeItem } from \"@/components/kibo-ui/marquee\"\n\n<Marquee />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Marquee` (slug `marquee`) from https://www.kibo-ui.com/components/marquee. Install with `npx kibo-ui add marquee` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/marquee.json. Imports land under `@/components/kibo-ui/marquee`. Requires React + TypeScript + Tailwind + shadcn/ui; peers: react-fast-marquee. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add marquee",
+        "registryUrl": "https://www.kibo-ui.com/r/marquee.json",
+        "registryItem": "marquee"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-ticker",
+      "libraryId": "kibo-ui",
+      "slug": "ticker",
+      "name": "Ticker",
+      "aliases": [
+        "finance ticker",
+        "price ticker"
+      ],
+      "summary": "Composable finance ticker for symbols, prices, and changes.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/ticker",
+        "iframeSrc": "https://www.kibo-ui.com/components/ticker",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx kibo-ui add ticker\n\nimport { Ticker, TickerIcon, TickerSymbol, TickerPrice } from \"@/components/kibo-ui/ticker\"\n\n<Ticker />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Ticker` (slug `ticker`) from https://www.kibo-ui.com/components/ticker. Install with `npx kibo-ui add ticker` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/ticker.json. Imports land under `@/components/kibo-ui/ticker`. Requires React + TypeScript + Tailwind + shadcn/ui. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add ticker",
+        "registryUrl": "https://www.kibo-ui.com/r/ticker.json",
+        "registryItem": "ticker"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-banner",
+      "libraryId": "kibo-ui",
+      "slug": "banner",
+      "name": "Banner",
+      "aliases": [
+        "site banner",
+        "announcement banner"
+      ],
+      "summary": "Full-width banner with message, action, and dismiss.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "section"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/banner",
+        "iframeSrc": "https://www.kibo-ui.com/components/banner",
+        "aspectRatio": "16/9",
+        "peerNotes": "lucide-react"
+      },
+      "copyCode": "npx kibo-ui add banner\n\nimport { Banner, BannerIcon, BannerTitle, BannerAction, BannerClose } from \"@/components/kibo-ui/banner\"\n\n<Banner />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Banner` (slug `banner`) from https://www.kibo-ui.com/components/banner. Install with `npx kibo-ui add banner` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/banner.json. Imports land under `@/components/kibo-ui/banner`. Requires React + TypeScript + Tailwind + shadcn/ui; peers: lucide-react. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add banner",
+        "registryUrl": "https://www.kibo-ui.com/r/banner.json",
+        "registryItem": "banner"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-cursor",
+      "libraryId": "kibo-ui",
+      "slug": "cursor",
+      "name": "Cursor",
+      "aliases": [
+        "custom cursor",
+        "realtime cursor"
+      ],
+      "summary": "Custom cursor compound for realtime collaborative UIs.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/cursor",
+        "iframeSrc": "https://www.kibo-ui.com/components/cursor",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx kibo-ui add cursor\n\nimport { Cursor, CursorPointer, CursorBody, CursorName } from \"@/components/kibo-ui/cursor\"\n\n<Cursor />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Cursor` (slug `cursor`) from https://www.kibo-ui.com/components/cursor. Install with `npx kibo-ui add cursor` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/cursor.json. Imports land under `@/components/kibo-ui/cursor`. Requires React + TypeScript + Tailwind + shadcn/ui. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add cursor",
+        "registryUrl": "https://www.kibo-ui.com/r/cursor.json",
+        "registryItem": "cursor"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-dialog-stack",
+      "libraryId": "kibo-ui",
+      "slug": "dialog-stack",
+      "name": "Dialog Stack",
+      "aliases": [
+        "stacked dialogs",
+        "wizard dialogs"
+      ],
+      "summary": "Composable stacked dialogs for wizards and nested forms.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "modal"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/dialog-stack",
+        "iframeSrc": "https://www.kibo-ui.com/components/dialog-stack",
+        "aspectRatio": "16/9",
+        "peerNotes": "radix-ui"
+      },
+      "copyCode": "npx kibo-ui add dialog-stack\n\nimport { DialogStack, DialogStackTrigger, DialogStackBody, DialogStackContent } from \"@/components/kibo-ui/dialog-stack\"\n\n<DialogStack />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Dialog Stack` (slug `dialog-stack`) from https://www.kibo-ui.com/components/dialog-stack. Install with `npx kibo-ui add dialog-stack` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/dialog-stack.json. Imports land under `@/components/kibo-ui/dialog-stack`. Requires React + TypeScript + Tailwind + shadcn/ui; peers: radix-ui. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add dialog-stack",
+        "registryUrl": "https://www.kibo-ui.com/r/dialog-stack.json",
+        "registryItem": "dialog-stack"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-stories",
+      "libraryId": "kibo-ui",
+      "slug": "stories",
+      "name": "Stories",
+      "aliases": [
+        "story carousel",
+        "ig stories"
+      ],
+      "summary": "Composable Stories carousel of video/image cards.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/stories",
+        "iframeSrc": "https://www.kibo-ui.com/components/stories",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx kibo-ui add stories\n\nimport { Stories, StoriesContent, Story } from \"@/components/kibo-ui/stories\"\n\n<Stories />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Stories` (slug `stories`) from https://www.kibo-ui.com/components/stories. Install with `npx kibo-ui add stories` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/stories.json. Imports land under `@/components/kibo-ui/stories`. Requires React + TypeScript + Tailwind + shadcn/ui. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add stories",
+        "registryUrl": "https://www.kibo-ui.com/r/stories.json",
+        "registryItem": "stories"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-reel",
+      "libraryId": "kibo-ui",
+      "slug": "reel",
+      "name": "Reel",
+      "aliases": [
+        "instagram reel",
+        "vertical video reel"
+      ],
+      "summary": "Full-height Instagram Stories-style reel with motion controls.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/reel",
+        "iframeSrc": "https://www.kibo-ui.com/components/reel",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion + lucide-react"
+      },
+      "copyCode": "npx kibo-ui add reel\n\nimport { Reel, ReelContent, ReelItem, ReelVideo } from \"@/components/kibo-ui/reel\"\n\n<Reel />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Reel` (slug `reel`) from https://www.kibo-ui.com/components/reel. Install with `npx kibo-ui add reel` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/reel.json. Imports land under `@/components/kibo-ui/reel`. Requires React + TypeScript + Tailwind + shadcn/ui; peers: motion + lucide-react. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add reel",
+        "registryUrl": "https://www.kibo-ui.com/r/reel.json",
+        "registryItem": "reel"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-theme-switcher",
+      "libraryId": "kibo-ui",
+      "slug": "theme-switcher",
+      "name": "Theme Switcher",
+      "aliases": [
+        "dark mode switch",
+        "theme toggle"
+      ],
+      "summary": "Animated switcher for light, dark, and system themes.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "button",
+        "menu"
+      ],
+      "effectType": [
+        "morph"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/theme-switcher",
+        "iframeSrc": "https://www.kibo-ui.com/components/theme-switcher",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion + lucide-react"
+      },
+      "copyCode": "npx kibo-ui add theme-switcher\n\nimport { ThemeSwitcher } from \"@/components/kibo-ui/theme-switcher\"\n\n<ThemeSwitcher />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Theme Switcher` (slug `theme-switcher`) from https://www.kibo-ui.com/components/theme-switcher. Install with `npx kibo-ui add theme-switcher` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/theme-switcher.json. Imports land under `@/components/kibo-ui/theme-switcher`. Requires React + TypeScript + Tailwind + shadcn/ui; peers: motion + lucide-react. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add theme-switcher",
+        "registryUrl": "https://www.kibo-ui.com/r/theme-switcher.json",
+        "registryItem": "theme-switcher"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-glimpse",
+      "libraryId": "kibo-ui",
+      "slug": "glimpse",
+      "name": "Glimpse",
+      "aliases": [
+        "link preview",
+        "hover card glimpse"
+      ],
+      "summary": "URL preview that appears when hovering a link.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "card",
+        "other"
+      ],
+      "effectType": [
+        "hover-reveal"
+      ],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/glimpse",
+        "iframeSrc": "https://www.kibo-ui.com/components/glimpse",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx kibo-ui add glimpse\n\nimport { Glimpse, GlimpseTrigger, GlimpseContent } from \"@/components/kibo-ui/glimpse\"\n\n<Glimpse />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Glimpse` (slug `glimpse`) from https://www.kibo-ui.com/components/glimpse. Install with `npx kibo-ui add glimpse` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/glimpse.json. Imports land under `@/components/kibo-ui/glimpse`. Requires React + TypeScript + Tailwind + shadcn/ui. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add glimpse",
+        "registryUrl": "https://www.kibo-ui.com/r/glimpse.json",
+        "registryItem": "glimpse"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-image-zoom",
+      "libraryId": "kibo-ui",
+      "slug": "image-zoom",
+      "name": "Image Zoom",
+      "aliases": [
+        "medium zoom",
+        "lightbox zoom"
+      ],
+      "summary": "Click-to-zoom image using react-medium-image-zoom.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/image-zoom",
+        "iframeSrc": "https://www.kibo-ui.com/components/image-zoom",
+        "aspectRatio": "16/9",
+        "peerNotes": "react-medium-image-zoom"
+      },
+      "copyCode": "npx kibo-ui add image-zoom\n\nimport { ImageZoom } from \"@/components/kibo-ui/image-zoom\"\n\n<ImageZoom />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Image Zoom` (slug `image-zoom`) from https://www.kibo-ui.com/components/image-zoom. Install with `npx kibo-ui add image-zoom` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/image-zoom.json. Imports land under `@/components/kibo-ui/image-zoom`. Requires React + TypeScript + Tailwind + shadcn/ui; peers: react-medium-image-zoom. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add image-zoom",
+        "registryUrl": "https://www.kibo-ui.com/r/image-zoom.json",
+        "registryItem": "image-zoom"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-comparison",
+      "libraryId": "kibo-ui",
+      "slug": "comparison",
+      "name": "Comparison",
+      "aliases": [
+        "image comparison slider",
+        "before after"
+      ],
+      "summary": "Slider-based overlay comparison of two items with motion.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/comparison",
+        "iframeSrc": "https://www.kibo-ui.com/components/comparison",
+        "aspectRatio": "16/9",
+        "peerNotes": "motion + lucide-react"
+      },
+      "copyCode": "npx kibo-ui add comparison\n\nimport { Comparison, ComparisonItem, ComparisonHandle } from \"@/components/kibo-ui/comparison\"\n\n<Comparison />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Comparison` (slug `comparison`) from https://www.kibo-ui.com/components/comparison. Install with `npx kibo-ui add comparison` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/comparison.json. Imports land under `@/components/kibo-ui/comparison`. Requires React + TypeScript + Tailwind + shadcn/ui; peers: motion + lucide-react. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add comparison",
+        "registryUrl": "https://www.kibo-ui.com/r/comparison.json",
+        "registryItem": "comparison"
+      },
+      "proOnly": false,
+      "status": "verified"
+    },
+    {
+      "id": "kibo-ui-announcement",
+      "libraryId": "kibo-ui",
+      "slug": "announcement",
+      "name": "Announcement",
+      "aliases": [
+        "announcement badge",
+        "compound badge"
+      ],
+      "summary": "Compound badge for product announcements and tags.",
+      "frameworks": [
+        "react",
+        "next"
+      ],
+      "uiCategory": [
+        "other"
+      ],
+      "effectType": [],
+      "demo": {
+        "kind": "interactive",
+        "adapterKind": "iframe",
+        "entry": "@kibo-ui/announcement",
+        "iframeSrc": "https://www.kibo-ui.com/components/announcement",
+        "aspectRatio": "16/9"
+      },
+      "copyCode": "npx kibo-ui add announcement\n\nimport { Announcement, AnnouncementTag, AnnouncementTitle } from \"@/components/kibo-ui/announcement\"\n\n<Announcement />",
+      "copyPrompt": {
+        "text": "Use Kibo UI free component `Announcement` (slug `announcement`) from https://www.kibo-ui.com/components/announcement. Install with `npx kibo-ui add announcement` after shadcn init (CSS variables mode). Registry item: https://www.kibo-ui.com/r/announcement.json. Imports land under `@/components/kibo-ui/announcement`. Requires React + TypeScript + Tailwind + shadcn/ui. License: MIT (https://raw.githubusercontent.com/shadcnblocks/kibo/main/license.md). Pricing free — open source forever.",
+        "version": 1,
+        "variables": [
+          "framework",
+          "packageManager"
+        ]
+      },
+      "installOverride": {
+        "kind": "shadcn-registry",
+        "command": "npx kibo-ui add announcement",
+        "registryUrl": "https://www.kibo-ui.com/r/announcement.json",
+        "registryItem": "announcement"
+      },
+      "proOnly": false,
+      "status": "verified"
+    }
+  ]
+}
